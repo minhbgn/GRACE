@@ -1,0 +1,96 @@
+{
+  "config": {
+    "architectures": [
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "image_token_id": 151655,
+    "model_type": "qwen3_vl",
+    "text_config": {
+      "attention_bias": false,
+      "attention_dropout": 0.0,
+      "bos_token_id": 151643,
+      "dtype": "bfloat16",
+      "eos_token_id": 151645,
+      "head_dim": 128,
+      "hidden_act": "silu",
+      "hidden_size": 2048,
+      "initializer_range": 0.02,
+      "intermediate_size": 6144,
+      "max_position_embeddings": 262144,
+      "model_type": "qwen3_vl_text",
+      "num_attention_heads": 16,
+      "num_hidden_layers": 28,
+      "num_key_value_heads": 8,
+      "rms_norm_eps": 1e-06,
+      "rope_scaling": {
+        "mrope_interleaved": true,
+        "mrope_section": [
+          24,
+          20,
+          20
+        ],
+        "rope_type": "default"
+      },
+      "rope_theta": 5000000,
+      "tie_word_embeddings": true,
+      "use_cache": true,
+      "vocab_size": 151936
+    },
+    "tie_word_embeddings": true,
+    "transformers_version": "4.57.0.dev0",
+    "video_token_id": 151656,
+    "vision_config": {
+      "deepstack_visual_indexes": [
+        5,
+        11,
+        17
+      ],
+      "depth": 24,
+      "hidden_act": "gelu_pytorch_tanh",
+      "hidden_size": 1024,
+      "in_channels": 3,
+      "initializer_range": 0.02,
+      "intermediate_size": 4096,
+      "model_type": "qwen3_vl",
+      "num_heads": 16,
+      "num_position_embeddings": 2304,
+      "out_hidden_size": 2048,
+      "patch_size": 16,
+      "spatial_merge_size": 2,
+      "temporal_patch_size": 2
+    },
+    "vision_end_token_id": 151653,
+    "vision_start_token_id": 151652
+  },
+  "files_sha256": {
+    "README.md": "5fc5be1ca9a3910399bd6239ee5086ab5d82a2a59c5d2b00e887a8835cc110e4",
+    "chat_template.json": "6f8a6a55027e3da5160105556cda5dd69f6423f1c32645f6730d32de7773d0c4",
+    "config.json": "bec4b3d446efa05807365c9e1cec03ac590836879d02f3a6da879971154bdd3b",
+    "generation_config.json": "1e241830b48b397cb0900101421df5450baddc7adf01e5fc86b5615865f3bae4",
+    "model.safetensors": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+    "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+    "tokenizer.json": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+    "tokenizer_config.json": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+    "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "generation_config": {
+    "bos_token_id": 151643,
+    "do_sample": true,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "pad_token_id": 151643,
+    "repetition_penalty": 1.0,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "transformers_version": "4.56.0"
+  },
+  "identity_verification": "local download metadata and explicit repository mapping",
+  "loading_format": "unpacked floating-point safetensors, Transformers Qwen3VL",
+  "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+  "repository": "Qwen/Qwen3-VL-2B-Instruct",
+  "revision": "89644892e4d85e24eaac8bacfd4f463576704203"
+}

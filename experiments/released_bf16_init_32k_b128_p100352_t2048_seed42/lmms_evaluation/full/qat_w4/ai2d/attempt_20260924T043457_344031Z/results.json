@@ -1,0 +1,173 @@
+{
+  "results": {
+    "ai2d": {
+      "alias": "ai2d",
+      "exact_match,flexible-extract": 0.8063471502590673,
+      "exact_match_stderr,flexible-extract": 0.007112211436356014,
+      "exact_match_stderr_clt,flexible-extract": 0.007112211436356149,
+      "exact_match_stderr_clustered,flexible-extract": "N/A"
+    }
+  },
+  "group_subtasks": {
+    "ai2d": []
+  },
+  "configs": {
+    "ai2d": {
+      "task": "ai2d",
+      "tag": [
+        "public_eval_qwen3_5_family"
+      ],
+      "dataset_path": "lmms-lab-encoder/ai2d",
+      "dataset_kwargs": {
+        "token": null,
+        "revision": "c83a9b9692933aff8349157c88a413df9d02c4e5"
+      },
+      "test_split": "test",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function ai2d_doc_to_visual at 0x7fcf213c9da0>",
+      "doc_to_text": "<function ai2d_doc_to_text at 0x7fcf213c9c60>",
+      "doc_to_target": "<function ai2d_doc_to_target at 0x7fcf213c96c0>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "exact_match",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "ignore_case": true,
+          "ignore_punctuation": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 16,
+        "temperature": 0.0,
+        "do_sample": false,
+        "num_beams": 1,
+        "until": [
+          "\n\n"
+        ]
+      },
+      "repeats": 1,
+      "filter_list": [
+        {
+          "name": "flexible-extract",
+          "filter": [
+            {
+              "function": "<class 'utils.MultiChoiceRegexFilter'>",
+              "group_select": 0,
+              "ignore_case": true,
+              "ignore_punctuation": true,
+              "regex_pattern": "([A-Z])\\."
+            }
+          ]
+        }
+      ],
+      "should_decontaminate": false,
+      "score_key": "score",
+      "metadata": [
+        {
+          "version": 0.0
+        }
+      ],
+      "lmms_eval_specific_kwargs": {
+        "default": {
+          "prompt_format": "mcq",
+          "pre_prompt": "",
+          "post_prompt": "\nAnswer with the option's letter from the given choices directly."
+        },
+        "gpt4v": {
+          "prompt_format": "mcq",
+          "pre_prompt": "",
+          "post_prompt": "\nAbove choices are given in {option}. {content} format.\nPlease answer with the option letter from the given choices directly."
+        },
+        "qwen_vl": {
+          "prompt_format": "qa",
+          "pre_prompt": "",
+          "post_prompt": " Answer:"
+        },
+        "xcomposer2_4khd": {
+          "prompt_format": "mcq_xcomposer",
+          "pre_prompt": "[UNUSED_TOKEN_146]user\nQuestion: ",
+          "post_prompt": "[UNUSED_TOKEN_145]\n[UNUSED_TOKEN_146]assistant\nThe answer is"
+        },
+        "prompt_format": "mcq",
+        "pre_prompt": "",
+        "post_prompt": "\nAnswer with the option's letter from the given choices directly."
+      },
+      "model_specific_target_kwargs": {
+        "default": "mcq",
+        "qwen_vl": "qa"
+      }
+    }
+  },
+  "versions": {
+    "ai2d": "Yaml"
+  },
+  "n-shot": {
+    "ai2d": 0
+  },
+  "higher_is_better": {
+    "ai2d": {
+      "exact_match": true
+    }
+  },
+  "n-samples": {
+    "ai2d": {
+      "original": 3088,
+      "effective": 3088
+    }
+  },
+  "config": {
+    "model": "qwen3_vl",
+    "model_args": "pretrained=/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat,device_map=cuda:0,attn_implementation=sdpa,interleave_visuals=False,max_pixels=1605632,min_pixels=200704,system_prompt=You are a helpful assistant.",
+    "batch_size": 1,
+    "batch_sizes": [],
+    "device": "cuda:0",
+    "use_cache": null,
+    "limit": null,
+    "offset": 0,
+    "bootstrap_iters": 1000,
+    "gen_kwargs": null,
+    "random_seed": 42,
+    "numpy_seed": 42,
+    "torch_seed": 42,
+    "fewshot_seed": 42,
+    "resolved_cli_args": {
+      "output_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/lmms_evaluation/full/qat_w4/ai2d/attempt_20260924T043457_344031Z",
+      "process_with_media": false
+    }
+  },
+  "git_hash": "ebb8769",
+  "git_branch": "main",
+  "lmms_eval_version": "main@ebb8769",
+  "date": "20260924_123502",
+  "usage": {},
+  "efficiency": {
+    "by_task": {
+      "ai2d": {
+        "docs": 3088.0,
+        "docs_with_token_counts": 0.0,
+        "total_input_tokens": 0.0,
+        "total_output_tokens": 0.0,
+        "total_tokens": 0.0,
+        "total_correct_score": 2490.0,
+        "avg_output_tokens_per_sample": 0.0,
+        "tokens_per_correct_answer": 0.0
+      }
+    },
+    "overall": {
+      "docs": 3088.0,
+      "docs_with_token_counts": 0.0,
+      "total_input_tokens": 0.0,
+      "total_output_tokens": 0.0,
+      "total_tokens": 0.0,
+      "total_correct_score": 2490.0,
+      "avg_output_tokens_per_sample": 0.0,
+      "tokens_per_correct_answer": 0.0
+    }
+  }
+}

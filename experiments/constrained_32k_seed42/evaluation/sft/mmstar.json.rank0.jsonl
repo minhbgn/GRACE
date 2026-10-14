@@ -1,0 +1,750 @@
+{"index": 0, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 2, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 4, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 6, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 8, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 10, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 12, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 14, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 16, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 18, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 20, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 22, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 24, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 26, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 28, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 30, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 32, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 34, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 36, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 38, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 40, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 42, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 44, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 46, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 48, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 50, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 52, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 54, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 56, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 58, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 60, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 62, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 64, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 66, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 68, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 70, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 72, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 74, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 76, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 78, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 80, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 82, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 84, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 86, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 88, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 90, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 92, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 94, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 96, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 98, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 100, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 102, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 104, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 106, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 108, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 110, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 112, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 114, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 116, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 118, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 120, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 122, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 124, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 126, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 128, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 130, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 132, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 134, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 136, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 138, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 140, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 142, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 144, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 146, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 148, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 150, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 152, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 154, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 156, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 158, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 160, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 162, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 164, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 166, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 168, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 170, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 172, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 174, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 176, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 178, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 180, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 182, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 184, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 186, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 188, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 190, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 192, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 194, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 196, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 198, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 200, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 202, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 204, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 206, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 208, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 210, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 212, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 214, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 216, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 218, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 220, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 222, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 224, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 226, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 228, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 230, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 232, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 234, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 236, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 238, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 240, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 242, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image scene and topic", "n_options": 4, "error": null}
+{"index": 244, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 246, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "coarse perception", "l2_category": "image style & quality", "n_options": 4, "error": null}
+{"index": 248, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "coarse perception", "l2_category": "image emotion", "n_options": 4, "error": null}
+{"index": 250, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 252, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 254, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 256, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 258, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 260, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 262, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 264, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 266, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 268, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 270, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 272, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 274, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 276, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 278, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 280, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 282, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 284, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 286, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 288, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 290, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 292, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 294, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 296, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 298, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 300, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 302, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 304, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 306, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 308, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 310, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 312, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 314, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 316, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 318, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 320, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 322, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 324, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 326, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 328, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 330, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 332, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 334, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 336, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 338, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 340, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 342, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 344, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 346, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 348, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 350, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 352, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 354, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 356, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 358, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 360, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 362, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 364, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 366, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 368, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 370, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 372, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 374, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 376, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 378, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 380, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 382, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 384, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 386, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 388, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 390, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 392, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 394, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 396, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 398, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 400, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 402, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 404, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 406, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 408, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 410, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 412, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 414, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 416, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 418, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 420, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 422, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 424, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 426, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 428, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 430, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 432, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 434, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 436, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 438, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 440, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 442, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 444, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 446, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 448, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 450, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 452, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 454, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 456, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 458, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 460, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 462, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 464, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 466, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 468, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 470, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 472, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 474, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 476, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 478, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 480, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 482, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 484, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 486, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "object counting", "n_options": 4, "error": null}
+{"index": 488, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 490, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 492, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 494, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "fine-grained perception", "l2_category": "localization", "n_options": 4, "error": null}
+{"index": 496, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 498, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "fine-grained perception", "l2_category": "recognition", "n_options": 4, "error": null}
+{"index": 500, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 502, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 504, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 506, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 508, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 510, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 512, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 514, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 516, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 518, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 520, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 522, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 524, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 526, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 528, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 530, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 532, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 534, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 536, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 538, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 540, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 542, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 544, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 546, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 548, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 550, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 552, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 554, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 556, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 558, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 560, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 562, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 564, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 566, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 568, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 570, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 572, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 574, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 576, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 578, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 580, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 582, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 584, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 586, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 588, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 590, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 592, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 594, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 596, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 598, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 600, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 602, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 604, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 606, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 608, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 610, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 612, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 614, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 616, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 618, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 620, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 622, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 624, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 626, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 628, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 630, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 632, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 634, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 636, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 638, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 640, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 642, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 644, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 646, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 648, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 650, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 652, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 654, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 656, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 658, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 660, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 662, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 664, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 666, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 668, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 670, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 672, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 674, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 676, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 678, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 680, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 682, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 684, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 686, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 688, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 690, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 692, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 694, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 696, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 698, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 700, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 702, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 704, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 706, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 708, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 710, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 712, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 714, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 716, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 718, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 720, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 722, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 724, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 726, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 728, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 730, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 732, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 734, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "instance reasoning", "l2_category": "cross-instance relation reasoning", "n_options": 4, "error": null}
+{"index": 736, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 738, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 740, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 742, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "instance reasoning", "l2_category": "single-instance reasoning", "n_options": 4, "error": null}
+{"index": 744, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 746, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 748, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "instance reasoning", "l2_category": "cross-instance attribute reasoning", "n_options": 4, "error": null}
+{"index": 750, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 752, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 754, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 756, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 758, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 760, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 762, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 764, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 766, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 768, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 770, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 772, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 774, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 776, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 778, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 780, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 782, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 784, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 786, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 788, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 790, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 792, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 794, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 796, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 798, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 800, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 802, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 804, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 806, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 808, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 810, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 812, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 814, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 816, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 818, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 820, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 822, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 824, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 826, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 828, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 830, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 832, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 834, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 836, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 838, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 840, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 842, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 844, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 846, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 848, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 850, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 852, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 854, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 856, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 858, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 860, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 862, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 864, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 866, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 868, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 870, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 872, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 874, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 876, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 878, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 880, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 882, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 884, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 886, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 888, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 890, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 892, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 894, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 896, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 898, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 900, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 902, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 904, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 906, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 908, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 910, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 912, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 914, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 916, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 918, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 920, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 922, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 924, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 926, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 928, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 930, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 932, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 934, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 936, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 938, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 940, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 942, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 944, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 946, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 948, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 950, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 952, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 954, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 956, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 958, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 960, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 962, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 964, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 966, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 968, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 970, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 972, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 974, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 976, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 978, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 980, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 982, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 984, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 986, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 988, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 990, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 992, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 994, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "diagram reasoning", "n_options": 4, "error": null}
+{"index": 996, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "logical reasoning", "l2_category": "common reasoning", "n_options": 4, "error": null}
+{"index": 998, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "logical reasoning", "l2_category": "code & sequence reasoning", "n_options": 4, "error": null}
+{"index": 1000, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1002, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1004, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1006, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1008, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1010, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1012, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1014, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1016, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1018, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1020, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1022, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1024, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1026, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1028, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1030, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1032, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1034, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1036, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1038, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1040, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1042, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1044, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1046, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1048, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1050, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1052, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1054, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1056, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1058, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1060, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1062, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1064, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1066, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1068, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1070, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1072, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1074, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1076, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1078, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1080, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1082, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1084, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1086, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1088, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1090, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1092, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1094, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1096, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1098, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1100, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1102, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1104, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1106, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1108, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1110, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1112, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1114, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1116, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1118, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1120, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1122, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1124, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1126, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1128, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1130, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1132, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1134, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1136, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1138, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1140, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1142, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1144, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1146, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1148, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1150, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1152, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1154, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1156, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1158, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1160, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1162, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1164, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1166, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1168, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1170, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1172, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1174, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1176, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1178, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1180, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1182, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1184, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1186, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1188, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1190, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1192, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1194, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1196, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1198, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1200, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1202, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1204, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1206, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1208, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1210, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1212, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1214, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1216, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1218, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1220, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1222, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1224, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1226, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1228, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1230, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1232, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1234, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1236, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1238, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1240, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1242, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1244, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "math", "l2_category": "statistical reasoning", "n_options": 4, "error": null}
+{"index": 1246, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "math", "l2_category": "numeric commonsense and calculation", "n_options": 4, "error": null}
+{"index": 1248, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "math", "l2_category": "geometry", "n_options": 4, "error": null}
+{"index": 1250, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1252, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1254, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1256, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1258, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1260, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1262, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1264, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1266, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1268, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1270, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1272, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1274, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1276, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1278, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1280, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1282, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1284, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1286, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1288, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1290, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1292, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1294, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1296, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1298, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1300, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1302, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1304, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1306, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1308, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1310, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1312, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1314, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1316, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1318, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1320, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1322, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1324, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1326, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1328, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1330, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1332, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1334, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1336, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1338, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1340, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1342, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1344, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1346, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1348, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1350, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1352, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1354, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1356, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1358, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1360, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1362, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1364, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1366, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1368, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1370, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1372, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1374, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1376, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1378, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1380, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1382, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1384, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1386, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1388, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1390, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1392, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1394, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1396, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1398, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1400, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1402, "pred": "D", "gold": "C", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1404, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1406, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1408, "pred": "B", "gold": "C", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1410, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1412, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1414, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1416, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1418, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1420, "pred": "A", "gold": "B", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1422, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1424, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1426, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1428, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1430, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1432, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1434, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1436, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1438, "pred": "C", "gold": "A", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1440, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1442, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1444, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1446, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1448, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1450, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1452, "pred": "A", "gold": "D", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1454, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1456, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1458, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1460, "pred": "D", "gold": "B", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1462, "pred": "B", "gold": "D", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1464, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1466, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1468, "pred": "C", "gold": "C", "correct": true, "raw": "C", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1470, "pred": "A", "gold": "A", "correct": true, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1472, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1474, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1476, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1478, "pred": "C", "gold": "B", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1480, "pred": "D", "gold": "D", "correct": true, "raw": "D", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1482, "pred": "B", "gold": "B", "correct": true, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1484, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1486, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1488, "pred": "C", "gold": "D", "correct": false, "raw": "C", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1490, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}
+{"index": 1492, "pred": "D", "gold": "A", "correct": false, "raw": "D", "category": "science & technology", "l2_category": "geography & earth science & agriculture", "n_options": 4, "error": null}
+{"index": 1494, "pred": "B", "gold": "A", "correct": false, "raw": "B", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1496, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "biology & chemistry & physics", "n_options": 4, "error": null}
+{"index": 1498, "pred": "A", "gold": "C", "correct": false, "raw": "A", "category": "science & technology", "l2_category": "electronics & energy & mechanical eng.", "n_options": 4, "error": null}

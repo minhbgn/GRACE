@@ -1,0 +1,16 @@
+[
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/.venv-lmms-eval/bin/python",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/provenance/upstream_20260925/evaluation/mmmu/eval_mmmu.py",
+  "--model_path",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128",
+  "--output",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/full/released_grace_w4/mmmu/attempt_20260925T161801_961565Z/results.json",
+  "--attn",
+  "flash_attention_2",
+  "--max_new_tokens",
+  "32",
+  "--data_dir",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data",
+  "--split",
+  "validation"
+]

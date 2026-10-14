@@ -1,0 +1,16 @@
+{
+  "method": "grace",
+  "complete": true,
+  "profile": true,
+  "stop_reason": null,
+  "global_step": 3,
+  "metrics": {
+    "train_runtime": 110.1205,
+    "train_samples_per_second": 1.744,
+    "train_steps_per_second": 0.027,
+    "total_flos": 2166112665993216.0,
+    "train_loss": 17.263553619384766
+  },
+  "peak_reserved_gib": 23.84765625,
+  "native_checkpoint": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/constrained_32k_seed42/profiles/grace/checkpoint-3"
+}

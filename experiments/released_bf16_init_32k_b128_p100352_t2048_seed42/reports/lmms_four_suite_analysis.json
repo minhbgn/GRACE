@@ -1,0 +1,931 @@
+{
+  "bootstrap": {
+    "limitations": "Per-benchmark sample uncertainty only; no training-seed variability, no multiple-testing adjustment, no four-suite mean confidence interval",
+    "method": "paired correctness; fixed L2 strata for MMStar",
+    "replicates": 20000,
+    "seed": 42
+  },
+  "counts": {
+    "ai2d": {
+      "evaluated": 3088,
+      "groups": {
+        "all": 3088
+      },
+      "scored": 3088
+    },
+    "mmstar": {
+      "evaluated": 1500,
+      "groups": {
+        "biology & chemistry & physics": 146,
+        "code & sequence reasoning": 39,
+        "common reasoning": 101,
+        "cross-instance attribute reasoning": 89,
+        "cross-instance relation reasoning": 62,
+        "diagram reasoning": 110,
+        "electronics & energy & mechanical eng.": 46,
+        "geography & earth science & agriculture": 58,
+        "geometry": 116,
+        "image emotion": 31,
+        "image scene and topic": 141,
+        "image style & quality": 78,
+        "localization": 40,
+        "numeric commonsense and calculation": 48,
+        "object counting": 92,
+        "recognition": 118,
+        "single-instance reasoning": 99,
+        "statistical reasoning": 86
+      },
+      "scored": 1500
+    },
+    "scienceqa": {
+      "evaluated": 2017,
+      "groups": {
+        "all": 2017
+      },
+      "scored": 2017
+    },
+    "seedbench": {
+      "evaluated": 17990,
+      "groups": {
+        "all": 14233
+      },
+      "scored": 14233
+    }
+  },
+  "datasets": {
+    "ai2d": {
+      "evaluation_rows": 3088,
+      "source": {
+        "repo": "lmms-lab-encoder/ai2d",
+        "requested_repo": "lmms-lab/ai2d",
+        "revision": "c83a9b9692933aff8349157c88a413df9d02c4e5"
+      },
+      "splits": {
+        "test": {
+          "fingerprint": "e35d266d92deee31",
+          "rows": 3088
+        }
+      }
+    },
+    "mmstar": {
+      "evaluation_rows": 1500,
+      "source": {
+        "repo": "Lin-Chen/MMStar",
+        "requested_repo": "Lin-Chen/MMStar",
+        "revision": "bc98d668301da7b14f648724866e57302778ab27"
+      },
+      "splits": {
+        "val": {
+          "fingerprint": "f3f5f863ede2df94",
+          "rows": 1500
+        }
+      }
+    },
+    "scienceqa": {
+      "evaluation_rows": 2017,
+      "source": {
+        "repo": "lmms-lab-encoder/ScienceQA",
+        "requested_repo": "lmms-lab/ScienceQA",
+        "revision": "69dd4d6b67373d38f96a5badd5d24d0eb5bcdc50"
+      },
+      "splits": {
+        "test": {
+          "fingerprint": "0843bcb46676e939",
+          "rows": 2017
+        },
+        "validation": {
+          "fingerprint": "db98587348d366e3",
+          "rows": 2097
+        }
+      }
+    },
+    "seedbench": {
+      "evaluation_rows": 17990,
+      "source": {
+        "repo": "lmms-lab-encoder/SEED-Bench",
+        "requested_repo": "lmms-lab/SEED-Bench",
+        "revision": "74c4ea0cee96786739e4ccb97d227818a05ae752"
+      },
+      "splits": {
+        "test": {
+          "fingerprint": "9177fd0e444c35f9",
+          "rows": 17990
+        }
+      }
+    }
+  },
+  "date": "2026-09-25",
+  "mmstar_categories_percent": {
+    "grace_w4": {
+      "coarse perception,none": 77.09554229801313,
+      "fine-grained perception,none": 59.25202652910833,
+      "instance reasoning,none": 75.62675199500136,
+      "logical reasoning,none": 60.472354927800474,
+      "math,none": 58.2776441236746,
+      "micro_accuracy": 62.8,
+      "science & technology,none": 53.158694625290096
+    },
+    "grace_w8": {
+      "coarse perception,none": 78.29341405182174,
+      "fine-grained perception,none": 60.998526160648495,
+      "instance reasoning,none": 73.84025100589072,
+      "logical reasoning,none": 61.54907798472154,
+      "math,none": 61.21246547269001,
+      "micro_accuracy": 64.13333333333333,
+      "science & technology,none": 54.03325734393077
+    },
+    "qat_w4": {
+      "coarse perception,none": 83.72402020308677,
+      "fine-grained perception,none": 61.56288381233112,
+      "instance reasoning,none": 79.3081839294235,
+      "logical reasoning,none": 63.77791625316378,
+      "math,none": 62.520605007573735,
+      "micro_accuracy": 68.06666666666666,
+      "science & technology,none": 58.843523443757576
+    },
+    "qat_w8": {
+      "coarse perception,none": 82.9851761903924,
+      "fine-grained perception,none": 65.76578236305576,
+      "instance reasoning,none": 82.41921449605393,
+      "logical reasoning,none": 64.32997145868433,
+      "math,none": 66.50906620333245,
+      "micro_accuracy": 70.19999999999999,
+      "science & technology,none": 61.94539716443148
+    },
+    "released_bf16": {
+      "coarse perception,none": 82.36688195507688,
+      "fine-grained perception,none": 61.07774502579218,
+      "instance reasoning,none": 81.78364532115893,
+      "logical reasoning,none": 66.22877672382623,
+      "math,none": 63.76414505925331,
+      "micro_accuracy": 69.19999999999999,
+      "science & technology,none": 61.134501242529424
+    },
+    "released_grace_w4": {
+      "coarse perception,none": 85.34044313042254,
+      "fine-grained perception,none": 62.504912797838365,
+      "instance reasoning,none": 78.36325072642579,
+      "logical reasoning,none": 59.477793933239475,
+      "math,none": 60.62438741869375,
+      "micro_accuracy": 67.26666666666667,
+      "science & technology,none": 58.647046339843776
+    },
+    "released_grace_w8": {
+      "coarse perception,none": 84.50158093260357,
+      "fine-grained perception,none": 58.53537214443626,
+      "instance reasoning,none": 76.30015266840203,
+      "logical reasoning,none": 58.541700323878544,
+      "math,none": 58.73875077964894,
+      "micro_accuracy": 65.06666666666666,
+      "science & technology,none": 54.567236929480465
+    },
+    "sft_2b": {
+      "coarse perception,none": 73.01503499169937,
+      "fine-grained perception,none": 55.62208302628348,
+      "instance reasoning,none": 68.87212099245446,
+      "logical reasoning,none": 44.75085970135475,
+      "math,none": 54.515281119130364,
+      "micro_accuracy": 55.86666666666667,
+      "science & technology,none": 39.84240756334162
+    },
+    "vanilla_2b": {
+      "coarse perception,none": 72.8399298406162,
+      "fine-grained perception,none": 60.136330140014735,
+      "instance reasoning,none": 66.83635924302833,
+      "logical reasoning,none": 47.06593736296706,
+      "math,none": 43.49271585137664,
+      "micro_accuracy": 54.93333333333334,
+      "science & technology,none": 40.10939735611647
+    },
+    "vanilla_8b_teacher": {
+      "coarse perception,none": 77.94320374965537,
+      "fine-grained perception,none": 60.40469172193564,
+      "instance reasoning,none": 74.14418438340148,
+      "logical reasoning,none": 67.25672567256726,
+      "math,none": 57.04301434554041,
+      "micro_accuracy": 64.2,
+      "science & technology,none": 50.50214618718037
+    }
+  },
+  "old_image_aligned_percent": {
+    "grace_w4": {
+      "ai2d": 79.0479274611399,
+      "mean4": 73.24073153510653,
+      "mmstar": 55.400000000000006,
+      "scienceqa": 85.47347545860188,
+      "seedbench": 73.04152322068433
+    },
+    "grace_w8": {
+      "ai2d": 79.43652849740933,
+      "mean4": 73.00621234715186,
+      "mmstar": 53.2,
+      "scienceqa": 86.6137828458106,
+      "seedbench": 72.77453804538749
+    },
+    "qat_w4": {
+      "ai2d": 79.37176165803109,
+      "mean4": 74.98982785686798,
+      "mmstar": 63.866666666666674,
+      "scienceqa": 84.2835894893406,
+      "seedbench": 72.43729361343357
+    },
+    "qat_w8": {
+      "ai2d": 80.76424870466322,
+      "mean4": 76.3354324584486,
+      "mmstar": 65.73333333333333,
+      "scienceqa": 86.21715418939019,
+      "seedbench": 72.62699360640764
+    },
+    "released_bf16": {
+      "ai2d": 80.31088082901555,
+      "mean4": 76.10059544500878,
+      "mmstar": 65.73333333333333,
+      "scienceqa": 86.06841844323252,
+      "seedbench": 72.28974917445373
+    },
+    "released_grace_w4": {
+      "ai2d": 78.82124352331607,
+      "mean4": 75.31463946277415,
+      "mmstar": 64.66666666666666,
+      "scienceqa": 85.52305404065443,
+      "seedbench": 72.2475936204595
+    },
+    "released_grace_w8": {
+      "ai2d": 78.10880829015544,
+      "mean4": 74.64550026515519,
+      "mmstar": 63.6,
+      "scienceqa": 84.87853247397125,
+      "seedbench": 71.99466029649406
+    },
+    "sft_2b": {
+      "ai2d": 74.93523316062176,
+      "mean4": 71.310969033709,
+      "mmstar": 52.46666666666666,
+      "scienceqa": 84.77937530986614,
+      "seedbench": 73.06260099768144
+    },
+    "vanilla_2b": {
+      "ai2d": 74.80569948186529,
+      "mean4": 69.38823718593055,
+      "mmstar": 44.666666666666664,
+      "scienceqa": 85.62221120475955,
+      "seedbench": 72.45837139043068
+    },
+    "vanilla_8b_teacher": {
+      "ai2d": 82.0919689119171,
+      "mean4": 77.67691920953445,
+      "mmstar": 59.13333333333334,
+      "scienceqa": 93.35647000495786,
+      "seedbench": 76.12590458792945
+    }
+  },
+  "paired": {
+    "grace_w4_minus_qat_w4": {
+      "ai2d": {
+        "bootstrap_95_ci_pp": [
+          -2.072538860103627,
+          -0.032383419689119175
+        ],
+        "delta_pp": -1.0686528497409142,
+        "losses": 147,
+        "wins": 114
+      },
+      "mean4_delta_pp": -1.0200342475702513,
+      "mmstar": {
+        "bootstrap_95_ci_pp": [
+          -6.217738791819173,
+          -2.3858282064695557
+        ],
+        "delta_pp": -4.309019691741433,
+        "losses": 139,
+        "wins": 60
+      },
+      "scienceqa": {
+        "bootstrap_95_ci_pp": [
+          -0.495785820525533,
+          1.685671789786812
+        ],
+        "delta_pp": 0.5949429846306344,
+        "losses": 57,
+        "wins": 69
+      },
+      "seedbench": {
+        "bootstrap_95_ci_pp": [
+          0.2880629522939647,
+          1.1171221808473266
+        ],
+        "delta_pp": 0.702592566570658,
+        "losses": 395,
+        "wins": 495
+      }
+    },
+    "grace_w4_minus_released_grace_w4": {
+      "ai2d": {
+        "bootstrap_95_ci_pp": [
+          -2.1696891191709846,
+          0.45336787564766834
+        ],
+        "delta_pp": -0.8419689119170783,
+        "losses": 230,
+        "wins": 204
+      },
+      "mean4_delta_pp": -0.8399835652809031,
+      "mmstar": {
+        "bootstrap_95_ci_pp": [
+          -6.114930518534532,
+          -0.8721952753519412
+        ],
+        "delta_pp": -3.512469974595966,
+        "losses": 204,
+        "wins": 137
+      },
+      "scienceqa": {
+        "bootstrap_95_ci_pp": [
+          -1.8344075359444718,
+          1.0411502231036194
+        ],
+        "delta_pp": -0.39662865642043243,
+        "losses": 117,
+        "wins": 109
+      },
+      "seedbench": {
+        "bootstrap_95_ci_pp": [
+          0.8712147825476007,
+          1.9180777067378627
+        ],
+        "delta_pp": 1.3911332818098856,
+        "losses": 630,
+        "wins": 828
+      }
+    },
+    "grace_w8_minus_qat_w8": {
+      "ai2d": {
+        "bootstrap_95_ci_pp": [
+          -2.3639896373056994,
+          -0.22668393782383417
+        ],
+        "delta_pp": -1.2953367875647785,
+        "losses": 160,
+        "wins": 120
+      },
+      "mean4_delta_pp": -1.577802374516395,
+      "mmstar": {
+        "bootstrap_95_ci_pp": [
+          -7.717349364709419,
+          -3.5873061689470433
+        ],
+        "delta_pp": -5.671269309374523,
+        "losses": 155,
+        "wins": 64
+      },
+      "scienceqa": {
+        "bootstrap_95_ci_pp": [
+          -0.842835894893406,
+          1.3882002974714922
+        ],
+        "delta_pp": 0.24789291026274896,
+        "losses": 63,
+        "wins": 68
+      },
+      "seedbench": {
+        "bootstrap_95_ci_pp": [
+          -0.0491814796599452,
+          0.8641888568818942
+        ],
+        "delta_pp": 0.40750368861097286,
+        "losses": 524,
+        "wins": 582
+      }
+    },
+    "grace_w8_minus_released_grace_w8": {
+      "ai2d": {
+        "bootstrap_95_ci_pp": [
+          0.09715025906735751,
+          2.8173575129533677
+        ],
+        "delta_pp": 1.4572538860103492,
+        "losses": 202,
+        "wins": 247
+      },
+      "mean4_delta_pp": 1.055721388172131,
+      "mmstar": {
+        "bootstrap_95_ci_pp": [
+          -2.645484102608881,
+          2.2471503097052064
+        ],
+        "delta_pp": -0.20963362645774453,
+        "losses": 157,
+        "wins": 143
+      },
+      "scienceqa": {
+        "bootstrap_95_ci_pp": [
+          -0.1487357461576599,
+          2.7764005949429844
+        ],
+        "delta_pp": 1.289043133366377,
+        "losses": 101,
+        "wins": 127
+      },
+      "seedbench": {
+        "bootstrap_95_ci_pp": [
+          1.1592777348415655,
+          2.227218436028947
+        ],
+        "delta_pp": 1.6862221597695424,
+        "losses": 645,
+        "wins": 885
+      }
+    },
+    "released_grace_w4_minus_released_grace_w8": {
+      "ai2d": {
+        "bootstrap_95_ci_pp": [
+          0.06476683937823835,
+          1.6515544041450776
+        ],
+        "delta_pp": 0.8419689119170783,
+        "losses": 67,
+        "wins": 93
+      },
+      "mean4_delta_pp": 0.9573975775063701,
+      "mmstar": {
+        "bootstrap_95_ci_pp": [
+          0.48241247784103863,
+          4.112967564448102
+        ],
+        "delta_pp": 2.295506761335659,
+        "losses": 59,
+        "wins": 92
+      },
+      "scienceqa": {
+        "bootstrap_95_ci_pp": [
+          -0.5949429846306395,
+          1.487357461576599
+        ],
+        "delta_pp": 0.4462072384729794,
+        "losses": 54,
+        "wins": 63
+      },
+      "seedbench": {
+        "bootstrap_95_ci_pp": [
+          -0.15457036464554205,
+          0.6393592355792876
+        ],
+        "delta_pp": 0.24590739829972108,
+        "losses": 390,
+        "wins": 425
+      }
+    }
+  },
+  "paper_url": "https://arxiv.org/html/2601.22709v5#A1.T6",
+  "published_table6_percent": {
+    "released_bf16": {
+      "ai2d": 81.3,
+      "mean4": 77.875,
+      "mmstar": 67.3,
+      "scienceqa": 86.2,
+      "seedbench": 76.7
+    },
+    "released_grace_w4": {
+      "ai2d": 79.5,
+      "mean4": 76.175,
+      "mmstar": 65.8,
+      "scienceqa": 84.3,
+      "seedbench": 75.1
+    },
+    "released_grace_w8": {
+      "ai2d": 80.4,
+      "mean4": 77.025,
+      "mmstar": 66.5,
+      "scienceqa": 85.3,
+      "seedbench": 75.9
+    },
+    "vanilla_2b": {
+      "ai2d": 76.9,
+      "mean4": 71.95,
+      "mmstar": 58.3,
+      "scienceqa": 81.4,
+      "seedbench": 71.2
+    },
+    "vanilla_8b_teacher": {
+      "ai2d": 85.7,
+      "mean4": 79.775,
+      "mmstar": 70.9,
+      "scienceqa": 85.0,
+      "seedbench": 77.5
+    }
+  },
+  "saved_document_sha256": {
+    "ai2d": "4327d90feec32c4e3f5bdb1531c10fab8b29dd3ea5b66ab04e4d5ba9c5baee0a",
+    "mmstar": "51c0ae2e7cbdcfd9db719b2d840eb8c7ab2f3f20e85a237018b53566ba0ecaab",
+    "scienceqa": "13c1cf09761102c0d15f7793dcba8868724eb732c5bbcd9e0686f7de05db7443",
+    "seedbench": "3bcd57fd849b2132b3ee591dc5a154d345e94adef0007821936002975707d3cf"
+  },
+  "scope": "Four-suite descriptive mean only; seven-suite mean unavailable",
+  "scores_percent": {
+    "grace_w4": {
+      "ai2d": 79.56606217616581,
+      "mean4": 76.83699025167353,
+      "mmstar": 63.98050241648132,
+      "scienceqa": 86.71294000991571,
+      "seedbench": 77.08845640413125
+    },
+    "grace_w8": {
+      "ai2d": 81.02331606217616,
+      "mean4": 77.77529762762019,
+      "mmstar": 64.98783200328388,
+      "scienceqa": 87.95240456122954,
+      "seedbench": 77.13763788379119
+    },
+    "qat_w4": {
+      "ai2d": 80.63471502590673,
+      "mean4": 77.85702449924378,
+      "mmstar": 68.28952210822276,
+      "scienceqa": 86.11799702528508,
+      "seedbench": 76.38586383756059
+    },
+    "qat_w8": {
+      "ai2d": 82.31865284974094,
+      "mean4": 79.35310000213659,
+      "mmstar": 70.65910131265841,
+      "scienceqa": 87.7045116509668,
+      "seedbench": 76.73013419518021
+    },
+    "released_bf16": {
+      "ai2d": 81.80051813471503,
+      "mean4": 78.9415094212903,
+      "mmstar": 69.39261588793948,
+      "scienceqa": 88.29945463559741,
+      "seedbench": 76.27344902690929
+    },
+    "released_grace_w4": {
+      "ai2d": 80.4080310880829,
+      "mean4": 77.67697381695443,
+      "mmstar": 67.49297239107729,
+      "scienceqa": 87.10956866633614,
+      "seedbench": 75.69732312232136
+    },
+    "released_grace_w8": {
+      "ai2d": 79.56606217616581,
+      "mean4": 76.71957623944806,
+      "mmstar": 65.19746562974163,
+      "scienceqa": 86.66336142786317,
+      "seedbench": 75.45141572402164
+    },
+    "sft_2b": {
+      "ai2d": 77.52590673575129,
+      "mean4": 74.26808565223763,
+      "mmstar": 56.102964565710664,
+      "scienceqa": 86.76251859196827,
+      "seedbench": 76.68095271552026
+    },
+    "vanilla_2b": {
+      "ai2d": 76.13341968911918,
+      "mean4": 73.64065267339178,
+      "mmstar": 55.08011163235324,
+      "scienceqa": 87.2583044124938,
+      "seedbench": 76.09077495960092
+    },
+    "vanilla_8b_teacher": {
+      "ai2d": 84.00259067357513,
+      "mean4": 80.45088790139899,
+      "mmstar": 64.5489943433801,
+      "scienceqa": 94.6950917203768,
+      "seedbench": 78.55687486826389
+    }
+  },
+  "source_sha256": {
+    "evaluation/grace_w4/ai2d.json": "cdd6f283baae98ea28b43fc4b53ead92762da2e8e8067acd5d29fbc73ede497d",
+    "evaluation/grace_w4/mmstar.json": "c05596d477b1e0d69b20462ca3008c96404e84551de358c03a437f5f94f9bb0c",
+    "evaluation/grace_w4/scienceqa.json": "60464866709b3dcb571d1e10b6d5dd43ac37ad597a99ea25d3618b81cb831eb9",
+    "evaluation/grace_w4/seedbench_img.json": "ba1519fd032742b3d11509d5e8c1b2938af525372c666728f85e3505db79db39",
+    "evaluation/grace_w8/ai2d.json": "217c3df92309d45b9c53db716eedd2bfbf724ef7ac14a0bd4e4dbabf12be2cfa",
+    "evaluation/grace_w8/mmstar.json": "394560c81917acf0b568f2fb806216c7693ed3a9babfba1a2041d2a17d61ada5",
+    "evaluation/grace_w8/scienceqa.json": "fd3512b58c92895b966177ed50ca177bc7b982959c5953859e182d8c476d47c2",
+    "evaluation/grace_w8/seedbench_img.json": "005f5de4fcfecd73bd6b91adc03481ff0a06d83e7991f504336fc112450f1476",
+    "evaluation/qat_w4/ai2d.json": "d563b003569321c684d97401639a890d965feee974524b3f83377a25a46a8531",
+    "evaluation/qat_w4/mmstar.json": "385aebad5eddc878f8505bcd2aafc0a383d41357652eb257ad8804938f43abeb",
+    "evaluation/qat_w4/scienceqa.json": "0a65511a28d27dabee8573fcce6c1e3f7a9fb83fe405b073baf9183d6ebca670",
+    "evaluation/qat_w4/seedbench_img.json": "eb859cb4b33dc92b258bd031f1df07349fc06eabf7e02482af414d406e5ef994",
+    "evaluation/qat_w8/ai2d.json": "414e8e30daed6bf501924ff55513be0e9937c13f433a31108fe5e3a6069655dc",
+    "evaluation/qat_w8/mmstar.json": "761fcb03f427d6fa50b877f11686c58afae4f20d35d60eb95b615f598af702a5",
+    "evaluation/qat_w8/scienceqa.json": "1b35f8c9f157684866b24153919bc06bc327c8297ab4bee1fbab39a7d9a46ba1",
+    "evaluation/qat_w8/seedbench_img.json": "837e2d98638b045d7721218f7899c519163144134f95fa6e76bdc4185641404d",
+    "evaluation/released_bf16/ai2d.json": "7e906dead7e56dbce90ef9265a85c0c7595360cb5429e9827c5f8f28bd7cb475",
+    "evaluation/released_bf16/mmstar.json": "5b2618b3bfe49462eeacc92f36130863edd02926d9cb804fc3985c12a0138df4",
+    "evaluation/released_bf16/scienceqa.json": "2cb943259642dc5f2175c6be5d429b5ca5a4ecfb134d08962c6cfc75aec01558",
+    "evaluation/released_bf16/seedbench_img.json": "4f96d0d2702371de3e817f84d3bcc481fec4ef0d8aca622b844ce0271599781a",
+    "evaluation/released_grace_w4/ai2d.json": "c0cf097f20608d3a0b9e5a867522d1cbc752745b03a64cb021837802421ca379",
+    "evaluation/released_grace_w4/mmstar.json": "3c290b2016a689ca6ab189658a281d90be51662b57554f5c0c3919a3419c1404",
+    "evaluation/released_grace_w4/scienceqa.json": "66ddafa7e6019d2ff0f0a4cecb18377d57f00c533769d47c3a7b24aa992393dd",
+    "evaluation/released_grace_w4/seedbench_img.json": "c9199c97355b0f3c992991bdd66a4af4dead6902a32405e11a05d3118e894f2f",
+    "evaluation/released_grace_w8/ai2d.json": "5ddcf907860a4db48ae761165ae67bf1780367b9d691f76cfd0676a9d2120782",
+    "evaluation/released_grace_w8/mmstar.json": "ce16e4b7d79d923428064608538fd4a94d7cc9b215d437662d8ac0ad306a1421",
+    "evaluation/released_grace_w8/scienceqa.json": "f72c57580e95c9c610d4074d8c54c3362051fa4db5bbfc5b491842fdc045baef",
+    "evaluation/released_grace_w8/seedbench_img.json": "91b12b7c4a002cb3b37386c837da75375fd30d192ddfec3f8a09621de2400012",
+    "evaluation/sft_2b/ai2d.json": "cdbc42d94bc1e6e6117a9f645c4bc01a926234ff5ed9536d0037e4c1651ca20d",
+    "evaluation/sft_2b/mmstar.json": "302f84f89dfa758a419d971a31e4414ddf6cf59d2af389423dbf0da4e4354890",
+    "evaluation/sft_2b/scienceqa.json": "7363a1841ac71386d6c5bd7f8d72ffa9835ac6c007f89b93abed83e439286c79",
+    "evaluation/sft_2b/seedbench_img.json": "bb8da876de07df0f9074113b076ab49b0eae4390a716af67723d6ea6cd72a7e3",
+    "evaluation/vanilla_2b/ai2d.json": "f29cf082192b52d4f3624daf4be911af472988cfe3dcd8143d6a05baf01a178d",
+    "evaluation/vanilla_2b/mmstar.json": "b121bfdd9ccff0bc06d07d076402ed129136eb278af3de046976b29165550123",
+    "evaluation/vanilla_2b/scienceqa.json": "da1216c8347214b5160572264265d38ccd904a9ecb5e809361cf85fe494aa62c",
+    "evaluation/vanilla_2b/seedbench_img.json": "83d1fa297ef4afa6fe9f4e64216b43e779ea85e956963f02bb974f6a2939d73d",
+    "evaluation/vanilla_8b_teacher/ai2d.json": "a64269e7a7a76be5ed57f9e4eb7f63f763b199444c91a7ddf9dac932f6cda399",
+    "evaluation/vanilla_8b_teacher/mmstar.json": "8500e2ddef36904bb573537ff74d24297d51ec0a1d84c3b1a161947d248d4550",
+    "evaluation/vanilla_8b_teacher/scienceqa.json": "1af3469b5df0bd789af349427dc8b1011b89de9b08be56ef7570c77015969876",
+    "evaluation/vanilla_8b_teacher/seedbench_img.json": "9cf34291af1bc37e7b717356b1f52432eaa06de13cbfb1e4939119cc44c7f10c",
+    "lmms_evaluation/full/datasets.lock.json": "a3794c692bebd2ba9709f43fae14b2bbd6f6c3f73d51c9e07c4c41af7672dc88",
+    "lmms_evaluation/full/grace_w4/ai2d/COMPLETE.json": "14050cad0b501541943704b89c2f03735ae043b343e6c60934aceab097cfce98",
+    "lmms_evaluation/full/grace_w4/ai2d/attempt_20260924T061304_122565Z/dataset.json": "c445d99c42126d55bde61936c46479e627d77afcf2bbd8ba57b973f39463eef0",
+    "lmms_evaluation/full/grace_w4/ai2d/attempt_20260924T061304_122565Z/job.json": "79a79f1e275fb0e892456ae2d6febc6a9305f80c7d8e7191311c1705ab398fd4",
+    "lmms_evaluation/full/grace_w4/ai2d/attempt_20260924T061304_122565Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/grace_w4/ai2d/attempt_20260924T061304_122565Z/results.json": "a73541e49eb734e08764509dbd6e7e79db26e7f5263d71b24ccd93ba02e38364",
+    "lmms_evaluation/full/grace_w4/ai2d/attempt_20260924T061304_122565Z/samples.jsonl": "9f15b9374e8662dfea841e54772d3ddaaf70634fa6489dbaa0f668c71ee4f58e",
+    "lmms_evaluation/full/grace_w4/ai2d/attempt_20260924T061304_122565Z/validated.json": "3e42102dbdb56354dada2a84e3107042993effd0597f7637fa2dda8395a7fd89",
+    "lmms_evaluation/full/grace_w4/mmstar/COMPLETE.json": "2b78e9ccf4c613a279e1afd9cc408fbaac8ecbe8db8ef17f56293b293b92ee46",
+    "lmms_evaluation/full/grace_w4/mmstar/attempt_20260924T061946_111283Z/dataset.json": "ffb3217dc05741887bac45691a7c58b85080de320c5c984b4c56dbc1e5eca3d3",
+    "lmms_evaluation/full/grace_w4/mmstar/attempt_20260924T061946_111283Z/job.json": "9dc472654cf33f1e2028fa890bf3a6ed4830bfe6726daf1b9b2012e3409a2dd9",
+    "lmms_evaluation/full/grace_w4/mmstar/attempt_20260924T061946_111283Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/grace_w4/mmstar/attempt_20260924T061946_111283Z/results.json": "e447effd8cdd5f3fc196dc36045c79766f331ef8c1d7c15a9bcc9c63166e1f2f",
+    "lmms_evaluation/full/grace_w4/mmstar/attempt_20260924T061946_111283Z/samples.jsonl": "80d6e20ce9f7d57d9d4c3e3e7f65402ee8f182b0033344537a1aaabd36aa3a3f",
+    "lmms_evaluation/full/grace_w4/mmstar/attempt_20260924T061946_111283Z/validated.json": "bba565d91824800382b12008e38e511360068087ea8b1277953e12bcf0626fdb",
+    "lmms_evaluation/full/grace_w4/model_provenance.json": "fd3f73a6cfc16ce3060d30f1bd35a3ef163b3a38f4875ebc1eee308cd55efa39",
+    "lmms_evaluation/full/grace_w4/scienceqa/COMPLETE.json": "a985fda2637b9afb7e8f745b0098c7a74d2bbb35e0196ee19ae55a2053fd1b2d",
+    "lmms_evaluation/full/grace_w4/scienceqa/attempt_20260924T060904_863890Z/dataset.json": "ca41e59c3c5819aaeb9fd3aa3e308d177c21f70bbec0088cfeecbb99671569f9",
+    "lmms_evaluation/full/grace_w4/scienceqa/attempt_20260924T060904_863890Z/job.json": "f12f2af45910733c6f5afd23488c47887fbefc2bfae2ce8fa5fd431f5e58f986",
+    "lmms_evaluation/full/grace_w4/scienceqa/attempt_20260924T060904_863890Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/grace_w4/scienceqa/attempt_20260924T060904_863890Z/results.json": "68c1d8a48f18690626c6d0586cf1e0e8f6ab61d16b69d5748fa49097c16830b1",
+    "lmms_evaluation/full/grace_w4/scienceqa/attempt_20260924T060904_863890Z/samples.jsonl": "04daa6f97daedc2d57da1d81f8f256403c8de21d1f2df704fd23e195f48ceb63",
+    "lmms_evaluation/full/grace_w4/scienceqa/attempt_20260924T060904_863890Z/validated.json": "3f8b8bda766c9bac58a271ed0d9dcbd49d7fdab4cb037e1ff97a11ac281c68e6",
+    "lmms_evaluation/full/grace_w4/seedbench/COMPLETE.json": "630f00803cf93cf19d709e48d4afbb425a1ac95e8d123249f101b3aee0bc9f10",
+    "lmms_evaluation/full/grace_w4/seedbench/attempt_20260924T062254_966129Z/dataset.json": "3af374a8b29ad88c845cb408325123d6c87e6cbfd88ccd52b3b8d6710a92e5f0",
+    "lmms_evaluation/full/grace_w4/seedbench/attempt_20260924T062254_966129Z/job.json": "94684451d4297e07b564e0cfddb18b541ff3164c6188ecc0f6bd10cd0e8196e7",
+    "lmms_evaluation/full/grace_w4/seedbench/attempt_20260924T062254_966129Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/grace_w4/seedbench/attempt_20260924T062254_966129Z/results.json": "affddaa0f67dbab3234c49109264bc2bc6a3118ef6ef41dc02e2d5bbd592c6fc",
+    "lmms_evaluation/full/grace_w4/seedbench/attempt_20260924T062254_966129Z/samples.jsonl": "507a62089abfa2c0e235933fb4854f53738acec913d79d5e38414c219b887527",
+    "lmms_evaluation/full/grace_w4/seedbench/attempt_20260924T062254_966129Z/validated.json": "61ffd0b5c95815feb6cc849c31b11e7adc040c3deb03e42be2d52ebd76159eb5",
+    "lmms_evaluation/full/grace_w8/ai2d/COMPLETE.json": "ed8d6f67cc9c4f3fc915544977d31dbf54e81a5bb69692889f998c70afb22a06",
+    "lmms_evaluation/full/grace_w8/ai2d/attempt_20260924T092955_019404Z/dataset.json": "c445d99c42126d55bde61936c46479e627d77afcf2bbd8ba57b973f39463eef0",
+    "lmms_evaluation/full/grace_w8/ai2d/attempt_20260924T092955_019404Z/job.json": "0ba147940f2beb13295568df6bd27df9e15453de94d9a46144d24e2e333e4410",
+    "lmms_evaluation/full/grace_w8/ai2d/attempt_20260924T092955_019404Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/grace_w8/ai2d/attempt_20260924T092955_019404Z/results.json": "668ab4d2bb466a1942c903c1e8096a8f2f29997deffc5d1095ce47c21fb171ea",
+    "lmms_evaluation/full/grace_w8/ai2d/attempt_20260924T092955_019404Z/samples.jsonl": "bea77f80bb4d95e7569f82a7fcc7af723e18208d5dce947302040ebc4d147c87",
+    "lmms_evaluation/full/grace_w8/ai2d/attempt_20260924T092955_019404Z/validated.json": "08d58a81df98247276baaf1e0bc0eb217946a55c831396d68e58804b33847e16",
+    "lmms_evaluation/full/grace_w8/mmstar/COMPLETE.json": "8252ec4e3d21102c285eeaef23da30091103d97ea66ed4df4f37ed87787354da",
+    "lmms_evaluation/full/grace_w8/mmstar/attempt_20260924T093822_261378Z/dataset.json": "ffb3217dc05741887bac45691a7c58b85080de320c5c984b4c56dbc1e5eca3d3",
+    "lmms_evaluation/full/grace_w8/mmstar/attempt_20260924T093822_261378Z/job.json": "39d5cca3e1c3b9404ca5b6253f27b80a9d7b9e3a325bf9d5afd8b55fc67f87ec",
+    "lmms_evaluation/full/grace_w8/mmstar/attempt_20260924T093822_261378Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/grace_w8/mmstar/attempt_20260924T093822_261378Z/results.json": "c7697969be16248f637ed70e753f7a19ecb1ac5aade81267f0090a28aeea3329",
+    "lmms_evaluation/full/grace_w8/mmstar/attempt_20260924T093822_261378Z/samples.jsonl": "fb66a011199768b38be0da57223c82d75d733c1b554ca62f12cc743fe6f89047",
+    "lmms_evaluation/full/grace_w8/mmstar/attempt_20260924T093822_261378Z/validated.json": "d7f87f7a830d001c2d91f2d3b50028944091f254a199bf78b29157d204f798a4",
+    "lmms_evaluation/full/grace_w8/model_provenance.json": "ab469e091eb2cb7d6f1b88483d6856352b64ce42ddd116792cfae0c95591c850",
+    "lmms_evaluation/full/grace_w8/scienceqa/COMPLETE.json": "ba7c9933de3c68c36fc6a897aa02ac75452810f3f847a5a4a415fb7bd8421786",
+    "lmms_evaluation/full/grace_w8/scienceqa/attempt_20260924T092447_242071Z/dataset.json": "ca41e59c3c5819aaeb9fd3aa3e308d177c21f70bbec0088cfeecbb99671569f9",
+    "lmms_evaluation/full/grace_w8/scienceqa/attempt_20260924T092447_242071Z/job.json": "0228bb6564d5e1b9e93e528dd9f626c28b63ea130bd80338f08c9e47355556cd",
+    "lmms_evaluation/full/grace_w8/scienceqa/attempt_20260924T092447_242071Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/grace_w8/scienceqa/attempt_20260924T092447_242071Z/results.json": "39358324a7f57fac21cf3160098cb347037836c037fe9ee32bb45e75a2bec90b",
+    "lmms_evaluation/full/grace_w8/scienceqa/attempt_20260924T092447_242071Z/samples.jsonl": "ae51d70871c9a2cf105cd62b3c2ae31f7122992f6f56529b127a4d525e077b94",
+    "lmms_evaluation/full/grace_w8/scienceqa/attempt_20260924T092447_242071Z/validated.json": "a64306fd0c0d6defcb2e429513f60e41be5c716e5ec047ffe6045b2b75570838",
+    "lmms_evaluation/full/grace_w8/seedbench/COMPLETE.json": "b9763356cc59f8aca518486b231b586979547821d24869eec370c7d370707e0a",
+    "lmms_evaluation/full/grace_w8/seedbench/attempt_20260924T094133_397671Z/dataset.json": "3af374a8b29ad88c845cb408325123d6c87e6cbfd88ccd52b3b8d6710a92e5f0",
+    "lmms_evaluation/full/grace_w8/seedbench/attempt_20260924T094133_397671Z/job.json": "cd895f3039338d6169ad2b204ca2755f248e4a99acccde2c142a1224ec414626",
+    "lmms_evaluation/full/grace_w8/seedbench/attempt_20260924T094133_397671Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/grace_w8/seedbench/attempt_20260924T094133_397671Z/results.json": "6ff5572add139bb6a00c62d461152fdd22705b0cdf8fd03892d91e63500b5c6f",
+    "lmms_evaluation/full/grace_w8/seedbench/attempt_20260924T094133_397671Z/samples.jsonl": "b9a1cb12050ffde12a6da2b4ae3053d9092b72f6643bbd853c1cb00e7efe6b9e",
+    "lmms_evaluation/full/grace_w8/seedbench/attempt_20260924T094133_397671Z/validated.json": "ae05dc1003a26fa7ffeb0add1da3444d52593ad177fdd4365f795ef6f82ecab8",
+    "lmms_evaluation/full/protocol.json": "842c5711bed051db2eeb5282027a9640bebdc1fc5336ac2b287e944b342ecb39",
+    "lmms_evaluation/full/qat_w4/ai2d/COMPLETE.json": "f3fba501aa5d91d52dd8df920daed257487a778ccc56f4fcb90e9d113d00278a",
+    "lmms_evaluation/full/qat_w4/ai2d/attempt_20260924T043457_344031Z/dataset.json": "c445d99c42126d55bde61936c46479e627d77afcf2bbd8ba57b973f39463eef0",
+    "lmms_evaluation/full/qat_w4/ai2d/attempt_20260924T043457_344031Z/job.json": "1f40aed310275fc7ed7fad249bd12e363c198938876913126947c1e4cf08a6aa",
+    "lmms_evaluation/full/qat_w4/ai2d/attempt_20260924T043457_344031Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/qat_w4/ai2d/attempt_20260924T043457_344031Z/results.json": "e13be71fa8633704c700725b234520a1008135173f8d301fdccffc37eba9b9f3",
+    "lmms_evaluation/full/qat_w4/ai2d/attempt_20260924T043457_344031Z/samples.jsonl": "60c6f7de5692e446f0fb35954afa974e0f8cbc19aab9cfa46e2c9f8cb5e7cc6d",
+    "lmms_evaluation/full/qat_w4/ai2d/attempt_20260924T043457_344031Z/validated.json": "6d24d1654c029641e4bdc72a951fa22099774ee953f7add418ceb37401f62bd1",
+    "lmms_evaluation/full/qat_w4/mmstar/COMPLETE.json": "904a315c8feb05fc53b3cb3e81ab173be2316aa0379afad69ffe28f496c66b41",
+    "lmms_evaluation/full/qat_w4/mmstar/attempt_20260924T044110_630576Z/dataset.json": "ffb3217dc05741887bac45691a7c58b85080de320c5c984b4c56dbc1e5eca3d3",
+    "lmms_evaluation/full/qat_w4/mmstar/attempt_20260924T044110_630576Z/job.json": "99ab902868b9728e27226cb44b90b004c7360facb7b8f2349c1899867f1dc6f8",
+    "lmms_evaluation/full/qat_w4/mmstar/attempt_20260924T044110_630576Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/qat_w4/mmstar/attempt_20260924T044110_630576Z/results.json": "d0a817a70252dfc1fecbf58e06c5944fc4a388562a2aa93127f194c4bba883c9",
+    "lmms_evaluation/full/qat_w4/mmstar/attempt_20260924T044110_630576Z/samples.jsonl": "a270bf69897a0cb93fcdd6b7f21b2fef9178a5819a74d6322a33a4e018ddc308",
+    "lmms_evaluation/full/qat_w4/mmstar/attempt_20260924T044110_630576Z/validated.json": "e2d14ecd6a4031a0564e74d14b5d84cc70294f0c2dbe591bbbb608ba3388350d",
+    "lmms_evaluation/full/qat_w4/model_provenance.json": "7ed0f1551f4598fd10c9a6f0f3b386fdf86a0cee53a1240f6473ad6daed8ce8a",
+    "lmms_evaluation/full/qat_w4/scienceqa/COMPLETE.json": "6e9aa8f80b487cff9d1f1848b3c59de48003d6311966478cdfaed0b8d5da37f4",
+    "lmms_evaluation/full/qat_w4/scienceqa/attempt_20260924T043102_709047Z/dataset.json": "ca41e59c3c5819aaeb9fd3aa3e308d177c21f70bbec0088cfeecbb99671569f9",
+    "lmms_evaluation/full/qat_w4/scienceqa/attempt_20260924T043102_709047Z/job.json": "006fcfe9e79e14bba271777ac71b7a3b0add7ec373452f33d9858b9a6ed456e4",
+    "lmms_evaluation/full/qat_w4/scienceqa/attempt_20260924T043102_709047Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/qat_w4/scienceqa/attempt_20260924T043102_709047Z/results.json": "783514a01971aa5d7d6bad9cd0afcfd757e07645512844d7cdad5fa07925cf75",
+    "lmms_evaluation/full/qat_w4/scienceqa/attempt_20260924T043102_709047Z/samples.jsonl": "9c099111555db2268a7141ea243a4e5bea564adc7689923977fd3f24bbc3ad45",
+    "lmms_evaluation/full/qat_w4/scienceqa/attempt_20260924T043102_709047Z/validated.json": "683e1962b5b0c48ae2edbbdfb7ac2df3e86aecf92c8fdd80f34ef4b075259549",
+    "lmms_evaluation/full/qat_w4/seedbench/COMPLETE.json": "0d3849763a823ca3458a7bcf0ec03e285e6534b12281ff30333eeca328277e52",
+    "lmms_evaluation/full/qat_w4/seedbench/attempt_20260924T044419_202153Z/dataset.json": "3af374a8b29ad88c845cb408325123d6c87e6cbfd88ccd52b3b8d6710a92e5f0",
+    "lmms_evaluation/full/qat_w4/seedbench/attempt_20260924T044419_202153Z/job.json": "0c08c342158783fbbd93f9aaa843d564bc9a6232ad3eb32cdb130df3842a1f57",
+    "lmms_evaluation/full/qat_w4/seedbench/attempt_20260924T044419_202153Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/qat_w4/seedbench/attempt_20260924T044419_202153Z/results.json": "8ee28e3cbf3b6c22684d8a6c068dc64f3c396ee2ccd8790633a1a51fdf0bea55",
+    "lmms_evaluation/full/qat_w4/seedbench/attempt_20260924T044419_202153Z/samples.jsonl": "e59fbd7dc1c07f2138d69290112f1cad1da003acfe9b8d155b54a2a2bfa05e7d",
+    "lmms_evaluation/full/qat_w4/seedbench/attempt_20260924T044419_202153Z/validated.json": "36819d2d08090b24d7eb58431d29eadb0be04edf3c5045a90ce9770c4f99e4f7",
+    "lmms_evaluation/full/qat_w8/ai2d/COMPLETE.json": "f5af51a9bc0379f3a2a868186d3ebcb40a1a8599acd91c5084d7715841391486",
+    "lmms_evaluation/full/qat_w8/ai2d/attempt_20260924T075042_307872Z/dataset.json": "c445d99c42126d55bde61936c46479e627d77afcf2bbd8ba57b973f39463eef0",
+    "lmms_evaluation/full/qat_w8/ai2d/attempt_20260924T075042_307872Z/job.json": "532e774f6dcbd8386bb4ca78481545e0784fa5eeae4ad5390857fd24121148e6",
+    "lmms_evaluation/full/qat_w8/ai2d/attempt_20260924T075042_307872Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/qat_w8/ai2d/attempt_20260924T075042_307872Z/results.json": "b3353bfb48f9693c070af9797830b8fd76e7d8dd43e0f2d4cf5c1a60e5929a83",
+    "lmms_evaluation/full/qat_w8/ai2d/attempt_20260924T075042_307872Z/samples.jsonl": "9424e768fd069551fd3a1b80ebcd4b5e36612d679548a19f17651c6cd1433308",
+    "lmms_evaluation/full/qat_w8/ai2d/attempt_20260924T075042_307872Z/validated.json": "56f07c7e78fcff0f306b284245aa43f12aa347df6cb4746d1ba39130dd4414ed",
+    "lmms_evaluation/full/qat_w8/mmstar/COMPLETE.json": "538f3b735a4a18f958e0f5c0604386585c8f21be4b759431cc193db7e8fead19",
+    "lmms_evaluation/full/qat_w8/mmstar/attempt_20260924T075658_029557Z/dataset.json": "ffb3217dc05741887bac45691a7c58b85080de320c5c984b4c56dbc1e5eca3d3",
+    "lmms_evaluation/full/qat_w8/mmstar/attempt_20260924T075658_029557Z/job.json": "815fe559d2ea66b29265a939cebe26f095287f3096b143d44d60b95297a76295",
+    "lmms_evaluation/full/qat_w8/mmstar/attempt_20260924T075658_029557Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/qat_w8/mmstar/attempt_20260924T075658_029557Z/results.json": "1e197d1c234cba6ce2b7be3680292da3ada5979735daf736f7d24ecd9f655d89",
+    "lmms_evaluation/full/qat_w8/mmstar/attempt_20260924T075658_029557Z/samples.jsonl": "21d7702517ea98480ba70b464a2516c9d0e18c63641520e25c580cba61014768",
+    "lmms_evaluation/full/qat_w8/mmstar/attempt_20260924T075658_029557Z/validated.json": "abd5fc13f3239df5c639f1e6544a5cc4fd5d0718fa3a1fbf5cf75d39c247cb94",
+    "lmms_evaluation/full/qat_w8/model_provenance.json": "7a67b8381d6904f5ea06bd6bfbd6e16d92a4e2033a23eb9034b2b7e0e91ad795",
+    "lmms_evaluation/full/qat_w8/scienceqa/COMPLETE.json": "bc28a3138b79101ee83f286aff223d9b1f2ccd2bac2447b3243d0f914120bccb",
+    "lmms_evaluation/full/qat_w8/scienceqa/attempt_20260924T074642_831763Z/dataset.json": "ca41e59c3c5819aaeb9fd3aa3e308d177c21f70bbec0088cfeecbb99671569f9",
+    "lmms_evaluation/full/qat_w8/scienceqa/attempt_20260924T074642_831763Z/job.json": "1bf1360ddfafa361ed8cc88d50d09de6b7148e8b67e1ccf8cc830ed4af6ba704",
+    "lmms_evaluation/full/qat_w8/scienceqa/attempt_20260924T074642_831763Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/qat_w8/scienceqa/attempt_20260924T074642_831763Z/results.json": "d44bab1ddde67858054f337c480b17fade26ee19318eb0d1167ec0195f39006a",
+    "lmms_evaluation/full/qat_w8/scienceqa/attempt_20260924T074642_831763Z/samples.jsonl": "08ab55640ba5b73fbb93b75981b029e220744376ec9af7358f386d10fde248cb",
+    "lmms_evaluation/full/qat_w8/scienceqa/attempt_20260924T074642_831763Z/validated.json": "1e0a59611cab616e7b875b04ae2c1face5662e0fc5684d8708178c7eff35b1ef",
+    "lmms_evaluation/full/qat_w8/seedbench/COMPLETE.json": "64714d69ed23232abdf3180c5365802afb5cadff92f11da1d6d359ca9ca58903",
+    "lmms_evaluation/full/qat_w8/seedbench/attempt_20260924T080008_318576Z/dataset.json": "3af374a8b29ad88c845cb408325123d6c87e6cbfd88ccd52b3b8d6710a92e5f0",
+    "lmms_evaluation/full/qat_w8/seedbench/attempt_20260924T080008_318576Z/job.json": "3109a863da059c29b9e45d6899df75dc74f790499da179907d8e0ee80cfa5e72",
+    "lmms_evaluation/full/qat_w8/seedbench/attempt_20260924T080008_318576Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/qat_w8/seedbench/attempt_20260924T080008_318576Z/results.json": "a7386ffa9b40d98da5aae4167f50f9b86fe3c9ba52b8482b987632fc2ff26f05",
+    "lmms_evaluation/full/qat_w8/seedbench/attempt_20260924T080008_318576Z/samples.jsonl": "dd2be85ac74359978eebfc400a077b3abebf821556f58758902780cd07e72a84",
+    "lmms_evaluation/full/qat_w8/seedbench/attempt_20260924T080008_318576Z/validated.json": "24ae4b112aeba4eab63cde10898513624ad0dd8096b8240316ebfb3b876b3519",
+    "lmms_evaluation/full/released_bf16/ai2d/COMPLETE.json": "68574605f635a330cecec984ba49b5972d4986a8f314463c277df8fb3b07198a",
+    "lmms_evaluation/full/released_bf16/ai2d/attempt_20260923T233821_037617Z/dataset.json": "c445d99c42126d55bde61936c46479e627d77afcf2bbd8ba57b973f39463eef0",
+    "lmms_evaluation/full/released_bf16/ai2d/attempt_20260923T233821_037617Z/job.json": "ab3d131c5bb81992259789e79778706fc576bcf554089cec67384876505bc34d",
+    "lmms_evaluation/full/released_bf16/ai2d/attempt_20260923T233821_037617Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_bf16/ai2d/attempt_20260923T233821_037617Z/results.json": "566cad8b29dc36de9df97641f3fae213331aa68cdb0d07cedfde993d1aca53bd",
+    "lmms_evaluation/full/released_bf16/ai2d/attempt_20260923T233821_037617Z/samples.jsonl": "420e11dd515dedd07d6b30dcbf3bc02bc2ab2086964770cb045fb306e278828b",
+    "lmms_evaluation/full/released_bf16/ai2d/attempt_20260923T233821_037617Z/validated.json": "4999b4e091a3bd3ebbd4e26b8d3624e749fd2ddb7e3fbaa7d425bf2ad18afc76",
+    "lmms_evaluation/full/released_bf16/mmstar/COMPLETE.json": "b0f28e4d2bbbc17b244df430042a7d27a230a0966c00deb6d06d5a014150266d",
+    "lmms_evaluation/full/released_bf16/mmstar/attempt_20260923T234458_796395Z/dataset.json": "ffb3217dc05741887bac45691a7c58b85080de320c5c984b4c56dbc1e5eca3d3",
+    "lmms_evaluation/full/released_bf16/mmstar/attempt_20260923T234458_796395Z/job.json": "aaeee9640dd7a3c56ab4e63676dc08f36dcf1dffafb3679362dca12f9623347f",
+    "lmms_evaluation/full/released_bf16/mmstar/attempt_20260923T234458_796395Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_bf16/mmstar/attempt_20260923T234458_796395Z/results.json": "342d9962fba385cee9325ec95fca53e75130d735c034faf2a58a5d0cb4d9e893",
+    "lmms_evaluation/full/released_bf16/mmstar/attempt_20260923T234458_796395Z/samples.jsonl": "aeb8a48ef2b21d6507c7bb36c23b7a2b7a79bc2bcfdf4264a9f20d3ff49fcfdc",
+    "lmms_evaluation/full/released_bf16/mmstar/attempt_20260923T234458_796395Z/validated.json": "8b8c4b28e8314e2b2a8f3502f13f8e7ba4e123bf5fd75cd7d7a3d710104325b9",
+    "lmms_evaluation/full/released_bf16/model_provenance.json": "58377cf0d20c1293d8a75d46dd7be6d6c745a34f1ca4329fa1c92ea925881a5a",
+    "lmms_evaluation/full/released_bf16/scienceqa/COMPLETE.json": "d4070349bc3d849be90b1c25e7d5d0ed0e1bebf0eb50b60de9976c18be97a43c",
+    "lmms_evaluation/full/released_bf16/scienceqa/attempt_20260923T233422_308752Z/dataset.json": "ca41e59c3c5819aaeb9fd3aa3e308d177c21f70bbec0088cfeecbb99671569f9",
+    "lmms_evaluation/full/released_bf16/scienceqa/attempt_20260923T233422_308752Z/job.json": "771e2506f46d690ca13aef4413f1820ae01508e7b3b951a93297143c0dc64c56",
+    "lmms_evaluation/full/released_bf16/scienceqa/attempt_20260923T233422_308752Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_bf16/scienceqa/attempt_20260923T233422_308752Z/results.json": "51f732ff208f8d8769087aef857f821d8e1dd17d92c4c94c28dd106377064f32",
+    "lmms_evaluation/full/released_bf16/scienceqa/attempt_20260923T233422_308752Z/samples.jsonl": "31ea3b678dc294112fff517c7dbc5ccf52db3fb266245bd5b3dd48947580ee63",
+    "lmms_evaluation/full/released_bf16/scienceqa/attempt_20260923T233422_308752Z/validated.json": "d4dd0c8c6a6b449543a412e1f7c10a51d22b04d8c0941fba066d9caafd3ae5da",
+    "lmms_evaluation/full/released_bf16/seedbench/COMPLETE.json": "a1ae808e3212602be4bb2d7c8e6111a4c0ea496d081d2d30ca549e1689c9eba6",
+    "lmms_evaluation/full/released_bf16/seedbench/attempt_20260923T234810_423665Z/dataset.json": "3af374a8b29ad88c845cb408325123d6c87e6cbfd88ccd52b3b8d6710a92e5f0",
+    "lmms_evaluation/full/released_bf16/seedbench/attempt_20260923T234810_423665Z/job.json": "c7586e7fc8176a7f497014cfd55e56b265b4f7d7dce6d2f917ee11c125863247",
+    "lmms_evaluation/full/released_bf16/seedbench/attempt_20260923T234810_423665Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_bf16/seedbench/attempt_20260923T234810_423665Z/results.json": "c578b6ef295a4c6bfcbc0bf8ae93c4587f2cd8a6f4d4779045aa1150ae746ad1",
+    "lmms_evaluation/full/released_bf16/seedbench/attempt_20260923T234810_423665Z/samples.jsonl": "3cdbd9a0fcfd7931bae9827a3cc228c0b344087a381ba8907462d685eddaf5f4",
+    "lmms_evaluation/full/released_bf16/seedbench/attempt_20260923T234810_423665Z/validated.json": "079225eb1cfcda5696270230f09c66cdfa8f0b20beda51e183acaa3500b2e244",
+    "lmms_evaluation/full/released_grace_w4/ai2d/COMPLETE.json": "4111c1735244169adabc7f60c89693e43c0ac0def00b32768bd04a87006a2831",
+    "lmms_evaluation/full/released_grace_w4/ai2d/attempt_20260924T011714_497322Z/dataset.json": "c445d99c42126d55bde61936c46479e627d77afcf2bbd8ba57b973f39463eef0",
+    "lmms_evaluation/full/released_grace_w4/ai2d/attempt_20260924T011714_497322Z/job.json": "e127eea02f7a5c27675ae022f7f87c56683d255e8118d6f89a3ca143855cc579",
+    "lmms_evaluation/full/released_grace_w4/ai2d/attempt_20260924T011714_497322Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_grace_w4/ai2d/attempt_20260924T011714_497322Z/results.json": "b36069e6d3e0113574e2d6ef6200344c3a48adfc5cca6b5c57ba6d29d0415662",
+    "lmms_evaluation/full/released_grace_w4/ai2d/attempt_20260924T011714_497322Z/samples.jsonl": "15cb6bb82e57d318485a60782891910346713b1d2c7ec8d121cbbc4867c466e7",
+    "lmms_evaluation/full/released_grace_w4/ai2d/attempt_20260924T011714_497322Z/validated.json": "cc2262180b4b5b6618b9490289259397db0e9fa41f636610d81ef030c8457c90",
+    "lmms_evaluation/full/released_grace_w4/mmstar/COMPLETE.json": "0850b84d9be4463a727dc5910456cf92c2c082f97144965acb88ade914e390a2",
+    "lmms_evaluation/full/released_grace_w4/mmstar/attempt_20260924T012349_658896Z/dataset.json": "ffb3217dc05741887bac45691a7c58b85080de320c5c984b4c56dbc1e5eca3d3",
+    "lmms_evaluation/full/released_grace_w4/mmstar/attempt_20260924T012349_658896Z/job.json": "a1db027e448d8ce6793648cce005d0b13ac53cc2d921d4c1c293e53109985457",
+    "lmms_evaluation/full/released_grace_w4/mmstar/attempt_20260924T012349_658896Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_grace_w4/mmstar/attempt_20260924T012349_658896Z/results.json": "f11ae7d9c9e9f4dcbca0da9ca63dac8633c9bacf3f6543a8e7eed38c31fe7f25",
+    "lmms_evaluation/full/released_grace_w4/mmstar/attempt_20260924T012349_658896Z/samples.jsonl": "0d4bcb719db9cf84b66e75d24cde3578871058e8071761fede3396e9fc8a5f91",
+    "lmms_evaluation/full/released_grace_w4/mmstar/attempt_20260924T012349_658896Z/validated.json": "528fcd812b64ac1179de235987cc55e5c2a9005fd5a7b1a3b77d51b1089f1570",
+    "lmms_evaluation/full/released_grace_w4/model_provenance.json": "5b0153a8348a6837f580047954cb42c9f66ea8ae9934268a449a1450ec9cb720",
+    "lmms_evaluation/full/released_grace_w4/scienceqa/COMPLETE.json": "f7e97fc9a2363b2e42177677a599dc83a6fde1d84deb22e7c6b07d7be3080b5e",
+    "lmms_evaluation/full/released_grace_w4/scienceqa/attempt_20260924T011314_342332Z/dataset.json": "ca41e59c3c5819aaeb9fd3aa3e308d177c21f70bbec0088cfeecbb99671569f9",
+    "lmms_evaluation/full/released_grace_w4/scienceqa/attempt_20260924T011314_342332Z/job.json": "6851082f29973c7d072111aca3b259ffa17f3b92bf8ad8687d5b2f66852cdf43",
+    "lmms_evaluation/full/released_grace_w4/scienceqa/attempt_20260924T011314_342332Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_grace_w4/scienceqa/attempt_20260924T011314_342332Z/results.json": "1befc8e75fd0187a30ef928b3ccc122784eacd45a1a227ccbf23996c9da5d531",
+    "lmms_evaluation/full/released_grace_w4/scienceqa/attempt_20260924T011314_342332Z/samples.jsonl": "d1f8b799b4e4f58fe67b3a673c2f0b25873cdf865a80c30a509177c804935d1d",
+    "lmms_evaluation/full/released_grace_w4/scienceqa/attempt_20260924T011314_342332Z/validated.json": "60a183c85bf61dbe8550fe855f8da1caa77819a32c58c2db4376f0044feb3103",
+    "lmms_evaluation/full/released_grace_w4/seedbench/COMPLETE.json": "3f818d60b2db97a25259afe353198f205b37ef10f7f09db81b2c690bf5ecf715",
+    "lmms_evaluation/full/released_grace_w4/seedbench/attempt_20260924T012700_733448Z/dataset.json": "3af374a8b29ad88c845cb408325123d6c87e6cbfd88ccd52b3b8d6710a92e5f0",
+    "lmms_evaluation/full/released_grace_w4/seedbench/attempt_20260924T012700_733448Z/job.json": "05fe17ac8f3bf4fdb43b4ae3847b8f0b1c5ea001bb32772e960ea2f710023706",
+    "lmms_evaluation/full/released_grace_w4/seedbench/attempt_20260924T012700_733448Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_grace_w4/seedbench/attempt_20260924T012700_733448Z/results.json": "7c50bdef83909e74cfd2e92de457aad09f0a9220b5c1b9bc0dd2003aca060512",
+    "lmms_evaluation/full/released_grace_w4/seedbench/attempt_20260924T012700_733448Z/samples.jsonl": "461a5020e0a6f453f1db03e9245afdcbf3fd23a4f5e7277cf145fd1e272bdb62",
+    "lmms_evaluation/full/released_grace_w4/seedbench/attempt_20260924T012700_733448Z/validated.json": "6279ac672522dfeb27d2c5854736680240db2c0c72d9396d9111cd6fa7805aa5",
+    "lmms_evaluation/full/released_grace_w8/ai2d/COMPLETE.json": "5a117c2ca4865531ebfab4cd132c15345488e7d29247662fe008f1fcbc93b11e",
+    "lmms_evaluation/full/released_grace_w8/ai2d/attempt_20260924T025645_910806Z/dataset.json": "c445d99c42126d55bde61936c46479e627d77afcf2bbd8ba57b973f39463eef0",
+    "lmms_evaluation/full/released_grace_w8/ai2d/attempt_20260924T025645_910806Z/job.json": "1c9ee2b9c5563df5335fe6ff0ec626141bbe334ffd3ffdd9abd7e04e602ff801",
+    "lmms_evaluation/full/released_grace_w8/ai2d/attempt_20260924T025645_910806Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_grace_w8/ai2d/attempt_20260924T025645_910806Z/results.json": "49a85aa9beaa2a42b01cd8ac8bb905943709b59d2d3d0d1bcd7efa9a2a935546",
+    "lmms_evaluation/full/released_grace_w8/ai2d/attempt_20260924T025645_910806Z/samples.jsonl": "cc33fe76fd89c9617514fa8a72ace01e207f36f05eb021dc9aad9c8d426d10ef",
+    "lmms_evaluation/full/released_grace_w8/ai2d/attempt_20260924T025645_910806Z/validated.json": "3e42102dbdb56354dada2a84e3107042993effd0597f7637fa2dda8395a7fd89",
+    "lmms_evaluation/full/released_grace_w8/mmstar/COMPLETE.json": "657fd9b4365dd2442ff8397f39bcf4dc41e2057a2a67724467ecd33c03bf225a",
+    "lmms_evaluation/full/released_grace_w8/mmstar/attempt_20260924T030320_630585Z/dataset.json": "ffb3217dc05741887bac45691a7c58b85080de320c5c984b4c56dbc1e5eca3d3",
+    "lmms_evaluation/full/released_grace_w8/mmstar/attempt_20260924T030320_630585Z/job.json": "6e618cc64a6ae7b8b82a12f21d6d1f36a4c3fa60472d6a68375b84678515f7cd",
+    "lmms_evaluation/full/released_grace_w8/mmstar/attempt_20260924T030320_630585Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_grace_w8/mmstar/attempt_20260924T030320_630585Z/results.json": "aa563cffa8db6cb142a3c87f97a5b498bc0ff603b8d9810affe7b3a33c90aa85",
+    "lmms_evaluation/full/released_grace_w8/mmstar/attempt_20260924T030320_630585Z/samples.jsonl": "ebab19bd6bcc6049557fce98addc2d0917826f6a8eed0918294b3d527478512b",
+    "lmms_evaluation/full/released_grace_w8/mmstar/attempt_20260924T030320_630585Z/validated.json": "10c660975fa4ad3cdb1798ae325e3d6569c86f590aa1ef67ef6aed4b057a57d7",
+    "lmms_evaluation/full/released_grace_w8/model_provenance.json": "9de7543939d614dee23f00a9f686255a43922335f03137e5d86a54ea3bc878f5",
+    "lmms_evaluation/full/released_grace_w8/scienceqa/COMPLETE.json": "83c8c8ef68b7caf8030650b612480fa3faa6487a425592d4f42b7d775a8558e7",
+    "lmms_evaluation/full/released_grace_w8/scienceqa/attempt_20260924T025250_350979Z/dataset.json": "ca41e59c3c5819aaeb9fd3aa3e308d177c21f70bbec0088cfeecbb99671569f9",
+    "lmms_evaluation/full/released_grace_w8/scienceqa/attempt_20260924T025250_350979Z/job.json": "7713c04f20a2dbaf246d279607635fc77c64afe32102bdfe2a4f5b9ef5124f4b",
+    "lmms_evaluation/full/released_grace_w8/scienceqa/attempt_20260924T025250_350979Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_grace_w8/scienceqa/attempt_20260924T025250_350979Z/results.json": "61cb26a4d3e261304e2db771cbbe1dda031c032207facef71f4353aef6b803bb",
+    "lmms_evaluation/full/released_grace_w8/scienceqa/attempt_20260924T025250_350979Z/samples.jsonl": "23c280f41c37c67a4046f99fa27536ea91a02336456781c07e798b339da8d353",
+    "lmms_evaluation/full/released_grace_w8/scienceqa/attempt_20260924T025250_350979Z/validated.json": "5a83f5c48d7cd465b3ff9fb6ec3f7f5cbb0b33c2b3935a2c3dd83730c0f76614",
+    "lmms_evaluation/full/released_grace_w8/seedbench/COMPLETE.json": "b67ca74207022887e0029dffa96948d1b0b11aac918307dc2ce4fe3d71e97eb2",
+    "lmms_evaluation/full/released_grace_w8/seedbench/attempt_20260924T030630_431901Z/dataset.json": "3af374a8b29ad88c845cb408325123d6c87e6cbfd88ccd52b3b8d6710a92e5f0",
+    "lmms_evaluation/full/released_grace_w8/seedbench/attempt_20260924T030630_431901Z/job.json": "327f5cde121368f8f29168e4d7906b8fe9df4dcba99745d14583cc8731f277c3",
+    "lmms_evaluation/full/released_grace_w8/seedbench/attempt_20260924T030630_431901Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/released_grace_w8/seedbench/attempt_20260924T030630_431901Z/results.json": "4d784decc13982c688b42a5c4bd5043158ccc0694aeb19fcddb06dbe9d1181bf",
+    "lmms_evaluation/full/released_grace_w8/seedbench/attempt_20260924T030630_431901Z/samples.jsonl": "dc75f07bde3afaf3f71a960bd436a277b9e1d3662ff0ae893c772c8d7e3da3b1",
+    "lmms_evaluation/full/released_grace_w8/seedbench/attempt_20260924T030630_431901Z/validated.json": "63bcca6fb2a9e9a0875527737646f9aead57e906a6924afd9deee7f8f3681736",
+    "lmms_evaluation/full/sft_2b/ai2d/COMPLETE.json": "6c43bf0de190b1a52438f62065a8e481dca388ffd3dbeece82ccde272d262ebf",
+    "lmms_evaluation/full/sft_2b/ai2d/attempt_20260923T215937_897336Z/dataset.json": "c445d99c42126d55bde61936c46479e627d77afcf2bbd8ba57b973f39463eef0",
+    "lmms_evaluation/full/sft_2b/ai2d/attempt_20260923T215937_897336Z/job.json": "a9e830b1cca10b3aada2b424065c818f7d103e32584944049539364dfcfd238e",
+    "lmms_evaluation/full/sft_2b/ai2d/attempt_20260923T215937_897336Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/sft_2b/ai2d/attempt_20260923T215937_897336Z/results.json": "c41cd71e86137a7d79090be5c343992ed98491dd106785da11ed742f885b7788",
+    "lmms_evaluation/full/sft_2b/ai2d/attempt_20260923T215937_897336Z/samples.jsonl": "21e60aff47d94af65369264b9bbc88f53441b073fe01197abe15a8b64d156722",
+    "lmms_evaluation/full/sft_2b/ai2d/attempt_20260923T215937_897336Z/validated.json": "cefa7b1c16854106b23aae973b949c115aeb37a3a5116c4ce4689878ebdb200a",
+    "lmms_evaluation/full/sft_2b/mmstar/COMPLETE.json": "0ab581ef1ff4f7a45527b986761b9b4bbdb61d648652f5f8eedbd3da7fd119b4",
+    "lmms_evaluation/full/sft_2b/mmstar/attempt_20260923T220615_613590Z/dataset.json": "ffb3217dc05741887bac45691a7c58b85080de320c5c984b4c56dbc1e5eca3d3",
+    "lmms_evaluation/full/sft_2b/mmstar/attempt_20260923T220615_613590Z/job.json": "dfea5ef7c7a65692844ca5ffe650986c4c046ffb0a18b3a69983e03e8f0b8264",
+    "lmms_evaluation/full/sft_2b/mmstar/attempt_20260923T220615_613590Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/sft_2b/mmstar/attempt_20260923T220615_613590Z/results.json": "9ad9ddb0556643e236408fd00b150be084206f61dc12b55310573235b8f1ce59",
+    "lmms_evaluation/full/sft_2b/mmstar/attempt_20260923T220615_613590Z/samples.jsonl": "9b8be1dcb1970a97cf384134411b30223352ea89b2ea56874dbf7e2b39cae6ac",
+    "lmms_evaluation/full/sft_2b/mmstar/attempt_20260923T220615_613590Z/validated.json": "26ed9daed557012599603c279d068c2b3719f0767ccc0fc12d4403a9bfad7936",
+    "lmms_evaluation/full/sft_2b/model_provenance.json": "187f2da588b50afd23ee5d666bbad5d1ed94dfcb5cb8fe9ba9706af9a7644489",
+    "lmms_evaluation/full/sft_2b/scienceqa/COMPLETE.json": "a2a18168265a9005edadde2b97936298aa6edfa6bfb56eb4b56198873d5d0f6d",
+    "lmms_evaluation/full/sft_2b/scienceqa/attempt_20260923T215534_685302Z/dataset.json": "ca41e59c3c5819aaeb9fd3aa3e308d177c21f70bbec0088cfeecbb99671569f9",
+    "lmms_evaluation/full/sft_2b/scienceqa/attempt_20260923T215534_685302Z/job.json": "1e3d424cdef83e7ccde9293d95e0c401b22beba541645ac5057bb42922ef81f9",
+    "lmms_evaluation/full/sft_2b/scienceqa/attempt_20260923T215534_685302Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/sft_2b/scienceqa/attempt_20260923T215534_685302Z/results.json": "ee30a6e8e6d840dedb3e340efc58edaf8293cc0ecacc00d28c4e99e8670f440b",
+    "lmms_evaluation/full/sft_2b/scienceqa/attempt_20260923T215534_685302Z/samples.jsonl": "850f35dab5c3d93e9e03f76bbd7b839e7f0c9334e3021ac9fd72f05bd06aa1b6",
+    "lmms_evaluation/full/sft_2b/scienceqa/attempt_20260923T215534_685302Z/validated.json": "621ab474127cb75dc235a5aa2dbb199aeb154f3cfe10eff76c7eb3b4b9f4fba1",
+    "lmms_evaluation/full/sft_2b/seedbench/COMPLETE.json": "70f2be1d3bfaf978cc50ec38279136011c44f931ac7952df30c7b54ff0b562d8",
+    "lmms_evaluation/full/sft_2b/seedbench/attempt_20260923T220925_325487Z/dataset.json": "3af374a8b29ad88c845cb408325123d6c87e6cbfd88ccd52b3b8d6710a92e5f0",
+    "lmms_evaluation/full/sft_2b/seedbench/attempt_20260923T220925_325487Z/job.json": "69547acee497e863cc57e89851d90a26010f764e34613c61b9b874f3512a5d74",
+    "lmms_evaluation/full/sft_2b/seedbench/attempt_20260923T220925_325487Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/sft_2b/seedbench/attempt_20260923T220925_325487Z/results.json": "3c6464bda42163f1e7d2c371bcceeae68d32a2104ffd9cbe1d051086f0ee2926",
+    "lmms_evaluation/full/sft_2b/seedbench/attempt_20260923T220925_325487Z/samples.jsonl": "bbe7a99ed1ccac79a63d1ff93a31fa3e202988bd837c47cbeb349e5c5ad31843",
+    "lmms_evaluation/full/sft_2b/seedbench/attempt_20260923T220925_325487Z/validated.json": "03b53fe47dbdbc781ad52fa675d8f98494a5626bc0185aa7f86ed2cc1abc95ab",
+    "lmms_evaluation/full/vanilla_2b/ai2d/COMPLETE.json": "c997eabb7c570006b6b1df3c14ef3c3fe2555e96a3745486772f0c8863b5e969",
+    "lmms_evaluation/full/vanilla_2b/ai2d/attempt_20260923T162255_804227Z/dataset.json": "c445d99c42126d55bde61936c46479e627d77afcf2bbd8ba57b973f39463eef0",
+    "lmms_evaluation/full/vanilla_2b/ai2d/attempt_20260923T162255_804227Z/job.json": "ac9d7b63e332665a02d195caa9c970b38ec8512df9d42f7463ea5dc041c61aae",
+    "lmms_evaluation/full/vanilla_2b/ai2d/attempt_20260923T162255_804227Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/vanilla_2b/ai2d/attempt_20260923T162255_804227Z/results.json": "b726623c678c35f4a1d5ecb48bc85381a9d3f2f01db8ba9d889d5690382cb540",
+    "lmms_evaluation/full/vanilla_2b/ai2d/attempt_20260923T162255_804227Z/samples.jsonl": "8aa6a888f947839ae887f18c7c5970b9843181feded9ba268326b54304db45cc",
+    "lmms_evaluation/full/vanilla_2b/ai2d/attempt_20260923T162255_804227Z/validated.json": "5a85644dd3ac353eb2683675753acc0a7e884ef8f5d42161b4ef8e4b3c2542a8",
+    "lmms_evaluation/full/vanilla_2b/mmstar/COMPLETE.json": "d1fe895a080e2b5104ec0d4721fe142413cb2cfab7abf11a6b335c36261c2d9a",
+    "lmms_evaluation/full/vanilla_2b/mmstar/attempt_20260923T163336_001026Z/dataset.json": "ffb3217dc05741887bac45691a7c58b85080de320c5c984b4c56dbc1e5eca3d3",
+    "lmms_evaluation/full/vanilla_2b/mmstar/attempt_20260923T163336_001026Z/job.json": "ae946ce71206ed250ce2ec4fc148a80a21c26a672934faa1ba31fe03b3d630a1",
+    "lmms_evaluation/full/vanilla_2b/mmstar/attempt_20260923T163336_001026Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/vanilla_2b/mmstar/attempt_20260923T163336_001026Z/results.json": "e7cdcd68e4ca1a07969bf00b3d3927cb27f263e8e1eb6da4826c0d4f1203fef8",
+    "lmms_evaluation/full/vanilla_2b/mmstar/attempt_20260923T163336_001026Z/samples.jsonl": "b7cb7b544cfbe10bc82653cb0b2d2de93ffb9df9c388e73c7c074a83efb9fd3a",
+    "lmms_evaluation/full/vanilla_2b/mmstar/attempt_20260923T163336_001026Z/validated.json": "81ae109830bbe322e5421d71a324e6206881d95da10613ff894381d37a4dfa5a",
+    "lmms_evaluation/full/vanilla_2b/model_provenance.json": "b3e36b940faf7d569b43af6a947a6187a5335906d37fa27b3825cf97ef913e35",
+    "lmms_evaluation/full/vanilla_2b/scienceqa/COMPLETE.json": "20772928c087520fa42ad7965a51f42ebc3646e48c431c427a30e764304541f2",
+    "lmms_evaluation/full/vanilla_2b/scienceqa/attempt_20260923T161531_671147Z/dataset.json": "ca41e59c3c5819aaeb9fd3aa3e308d177c21f70bbec0088cfeecbb99671569f9",
+    "lmms_evaluation/full/vanilla_2b/scienceqa/attempt_20260923T161531_671147Z/job.json": "756688fe68478417658fc6c683fa887bb0bb0214efbb8be5813d98d25bc6f890",
+    "lmms_evaluation/full/vanilla_2b/scienceqa/attempt_20260923T161531_671147Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/vanilla_2b/scienceqa/attempt_20260923T161531_671147Z/results.json": "ec35bd61adbb61d1c46939be29be3c5b4119a0a07f809cd54a43116cb7238bb6",
+    "lmms_evaluation/full/vanilla_2b/scienceqa/attempt_20260923T161531_671147Z/samples.jsonl": "2ab45fb7f812b9bfc9ddaf6bb06877921bc603d5d0dafb07339942eeda97b396",
+    "lmms_evaluation/full/vanilla_2b/scienceqa/attempt_20260923T161531_671147Z/validated.json": "fd3b80086323166a36d2aecb3eb68c0d59ac8218de96608f1e043fd60d9721b7",
+    "lmms_evaluation/full/vanilla_2b/seedbench/COMPLETE.json": "e90866264acca06417dd35152c4aeafddf547d6583f340acb5a708e0b398fd33",
+    "lmms_evaluation/full/vanilla_2b/seedbench/attempt_20260923T164035_759286Z/dataset.json": "3af374a8b29ad88c845cb408325123d6c87e6cbfd88ccd52b3b8d6710a92e5f0",
+    "lmms_evaluation/full/vanilla_2b/seedbench/attempt_20260923T164035_759286Z/job.json": "7b3e0f9cdbc90998f9fd9e869b44708a2b1a7ae07e3c917be9d13ecc43ee63dd",
+    "lmms_evaluation/full/vanilla_2b/seedbench/attempt_20260923T164035_759286Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/vanilla_2b/seedbench/attempt_20260923T164035_759286Z/results.json": "caed181a51e835bcd2321d5364a550e4d96ce087f06b07ac997174979696e4d9",
+    "lmms_evaluation/full/vanilla_2b/seedbench/attempt_20260923T164035_759286Z/samples.jsonl": "e934803dfbfad0b7b5db4a7b53365bc2d079b9e84bd541dcaec98efa4f2dceec",
+    "lmms_evaluation/full/vanilla_2b/seedbench/attempt_20260923T164035_759286Z/validated.json": "04ca5e77a80623217121de12cb3d1b5ca900664fe5c08be048aa3729a49bdb0a",
+    "lmms_evaluation/full/vanilla_8b_teacher/ai2d/COMPLETE.json": "96dfe2bbe97fed02ed52ab456b0a98e5b37cadee689f74f9b579ec8fd31af4b3",
+    "lmms_evaluation/full/vanilla_8b_teacher/ai2d/attempt_20260923T184448_149528Z/dataset.json": "c445d99c42126d55bde61936c46479e627d77afcf2bbd8ba57b973f39463eef0",
+    "lmms_evaluation/full/vanilla_8b_teacher/ai2d/attempt_20260923T184448_149528Z/job.json": "7be39925ebdb7eb51dfddeb5f0eb3d58c03d946402e8a34de4c26ec7c0bc6a8f",
+    "lmms_evaluation/full/vanilla_8b_teacher/ai2d/attempt_20260923T184448_149528Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/vanilla_8b_teacher/ai2d/attempt_20260923T184448_149528Z/results.json": "843e499e5f0577c1d8d4ab8012c583ead7a69c7deed48321b3a76b0c0a59d694",
+    "lmms_evaluation/full/vanilla_8b_teacher/ai2d/attempt_20260923T184448_149528Z/samples.jsonl": "45ab58413f405b4e3e5d388553564ca8dc1fa85af32e560babe3d1e65cc4f876",
+    "lmms_evaluation/full/vanilla_8b_teacher/ai2d/attempt_20260923T184448_149528Z/validated.json": "b050fb2362d79686d5161429173fcf8cf54cc0872cdc80f359e492a4e1503648",
+    "lmms_evaluation/full/vanilla_8b_teacher/mmstar/COMPLETE.json": "93e4c0029ccdf37c6858a3fc32433fe9100fe574bc5d74316b0773f4d9131420",
+    "lmms_evaluation/full/vanilla_8b_teacher/mmstar/attempt_20260923T185832_579063Z/dataset.json": "ffb3217dc05741887bac45691a7c58b85080de320c5c984b4c56dbc1e5eca3d3",
+    "lmms_evaluation/full/vanilla_8b_teacher/mmstar/attempt_20260923T185832_579063Z/job.json": "8dd2f41d056cb52d1222b709b882b672028019d5d761e99655bb6312829d2e7c",
+    "lmms_evaluation/full/vanilla_8b_teacher/mmstar/attempt_20260923T185832_579063Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/vanilla_8b_teacher/mmstar/attempt_20260923T185832_579063Z/results.json": "858a5c8b59460aaf90967fa80432e57ecb670883905b3eba231140d19770ae53",
+    "lmms_evaluation/full/vanilla_8b_teacher/mmstar/attempt_20260923T185832_579063Z/samples.jsonl": "492dae318a48011054c9e09ea57fc65a7102b71d4f64466ab5e2df813886b641",
+    "lmms_evaluation/full/vanilla_8b_teacher/mmstar/attempt_20260923T185832_579063Z/validated.json": "619c4d7f7f07be4b48df8f66a588b6692967826e8c2d9c6cd95aef3bf5ee4962",
+    "lmms_evaluation/full/vanilla_8b_teacher/model_provenance.json": "6226ff8938599fa2b2393e0ffa2f4be0b5b93bcdc954c9bb86331e251e4e3338",
+    "lmms_evaluation/full/vanilla_8b_teacher/scienceqa/COMPLETE.json": "d49d135a75bf8da28cf1fed24fd8d5236340664dc316f8e3e567b6cd1eea7adc",
+    "lmms_evaluation/full/vanilla_8b_teacher/scienceqa/attempt_20260923T183757_734248Z/dataset.json": "ca41e59c3c5819aaeb9fd3aa3e308d177c21f70bbec0088cfeecbb99671569f9",
+    "lmms_evaluation/full/vanilla_8b_teacher/scienceqa/attempt_20260923T183757_734248Z/job.json": "d7baefde2cd13d1e15febccb4566634326eb2f50cb9b91e8f255b5609439ddbb",
+    "lmms_evaluation/full/vanilla_8b_teacher/scienceqa/attempt_20260923T183757_734248Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/vanilla_8b_teacher/scienceqa/attempt_20260923T183757_734248Z/results.json": "8b58e313a21107035d347346a44066f27ca7088bf4d891c02b1f7df3d848b4df",
+    "lmms_evaluation/full/vanilla_8b_teacher/scienceqa/attempt_20260923T183757_734248Z/samples.jsonl": "863060911af156ff2350a9e1d1ad747c5f513f3be34662507a93cce33e0c9138",
+    "lmms_evaluation/full/vanilla_8b_teacher/scienceqa/attempt_20260923T183757_734248Z/validated.json": "aafc51f444e32f278065a35afa85e2e14d340027fedd27fe0f1a2291b4d14287",
+    "lmms_evaluation/full/vanilla_8b_teacher/seedbench/COMPLETE.json": "a9103cbc4867171c48910845b1e66192344dd69493af1b3dd8a9ab2636a267b6",
+    "lmms_evaluation/full/vanilla_8b_teacher/seedbench/attempt_20260923T190323_793780Z/dataset.json": "3af374a8b29ad88c845cb408325123d6c87e6cbfd88ccd52b3b8d6710a92e5f0",
+    "lmms_evaluation/full/vanilla_8b_teacher/seedbench/attempt_20260923T190323_793780Z/job.json": "3152575ad9c2c0dcd6a6c12d6f0f52025ce2cf2be08edb0432f9d3009b679b68",
+    "lmms_evaluation/full/vanilla_8b_teacher/seedbench/attempt_20260923T190323_793780Z/judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "lmms_evaluation/full/vanilla_8b_teacher/seedbench/attempt_20260923T190323_793780Z/results.json": "1108850fc9ed7af13a85051bc96eab7dba2bcf30161fe275be47be24e5f7a5cc",
+    "lmms_evaluation/full/vanilla_8b_teacher/seedbench/attempt_20260923T190323_793780Z/samples.jsonl": "603ed267cc5891fa52d56273f92ce13dbde177249662ba5121a42a4aaa03fa5c",
+    "lmms_evaluation/full/vanilla_8b_teacher/seedbench/attempt_20260923T190323_793780Z/validated.json": "59f8806611f51fef92629befb98beb432bfb44baaf668e655e67bc653891f7a4",
+    "reports/compile_lmms_four_suite_report.py": "35aea4e234a2d70d20e2ceab570b63e51ed581900c376fd8ca13adc3591ce4ee"
+  }
+}

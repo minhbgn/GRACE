@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-05",
+  "status": "all_four_synthetic_memory_checks_passed",
+  "physical_gpu_ids": [
+    0,
+    4
+  ],
+  "gpu_type": "NVIDIA A100-SXM4-40GB",
+  "production_training_started": false,
+  "production_evaluation_started": false,
+  "profile_launch_gpu_hours": 0.48809445990456474,
+  "rows": [
+    {
+      "method": "grace",
+      "bits": 4,
+      "complete": true,
+      "updates": 3,
+      "peak_allocated_gib": 24.92949104309082,
+      "peak_reserved_gib": 25.560546875,
+      "device_peak_used_gib": {
+        "0": 26.615234375,
+        "4": 26.615234375
+      },
+      "training_seconds": 55.5545,
+      "launch_wall_seconds": 216.91048645973206,
+      "artifact": "memory_checks/grace_w4_20261005T072630065075Z",
+      "envelope": {
+        "accumulation": 1,
+        "grid": [
+          [
+            1,
+            48,
+            48
+          ]
+        ],
+        "rcka_warmup_steps": 1,
+        "sequence_tokens": 2048,
+        "supervised_tokens": 1458,
+        "synthetic_answer": true,
+        "updates": 3,
+        "visual_tokens": 576
+      }
+    },
+    {
+      "method": "qat",
+      "bits": 4,
+      "complete": true,
+      "updates": 3,
+      "peak_allocated_gib": 8.011964321136475,
+      "peak_reserved_gib": 9.09375,
+      "device_peak_used_gib": {
+        "0": 10.1484375,
+        "4": 10.1484375
+      },
+      "training_seconds": 55.0871,
+      "launch_wall_seconds": 227.4724817276001,
+      "artifact": "memory_checks/qat_w4_20261005T073903145713Z",
+      "envelope": {
+        "accumulation": 1,
+        "grid": [
+          [
+            1,
+            48,
+            48
+          ]
+        ],
+        "rcka_warmup_steps": 1,
+        "sequence_tokens": 2048,
+        "supervised_tokens": 1458,
+        "synthetic_answer": true,
+        "updates": 3,
+        "visual_tokens": 576
+      }
+    },
+    {
+      "method": "grace",
+      "bits": 8,
+      "complete": true,
+      "updates": 3,
+      "peak_allocated_gib": 24.92949104309082,
+      "peak_reserved_gib": 25.560546875,
+      "device_peak_used_gib": {
+        "0": 26.615234375,
+        "4": 26.615234375
+      },
+      "training_seconds": 54.1433,
+      "launch_wall_seconds": 215.29178309440613,
+      "artifact": "memory_checks/grace_w8_20261005T073441840651Z",
+      "envelope": {
+        "accumulation": 1,
+        "grid": [
+          [
+            1,
+            48,
+            48
+          ]
+        ],
+        "rcka_warmup_steps": 1,
+        "sequence_tokens": 2048,
+        "supervised_tokens": 1458,
+        "synthetic_answer": true,
+        "updates": 3,
+        "visual_tokens": 576
+      }
+    },
+    {
+      "method": "qat",
+      "bits": 8,
+      "complete": true,
+      "updates": 3,
+      "peak_allocated_gib": 8.011964321136475,
+      "peak_reserved_gib": 9.09375,
+      "device_peak_used_gib": {
+        "0": 10.1484375,
+        "4": 10.1484375
+      },
+      "training_seconds": 55.1185,
+      "launch_wall_seconds": 218.89527654647827,
+      "artifact": "memory_checks/qat_w8_20261005T074338504949Z",
+      "envelope": {
+        "accumulation": 1,
+        "grid": [
+          [
+            1,
+            48,
+            48
+          ]
+        ],
+        "rcka_warmup_steps": 1,
+        "sequence_tokens": 2048,
+        "supervised_tokens": 1458,
+        "synthetic_answer": true,
+        "updates": 3,
+        "visual_tokens": 576
+      }
+    }
+  ]
+}

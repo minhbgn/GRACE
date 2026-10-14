@@ -1,0 +1,12 @@
+{
+  "count": 3088,
+  "finish_reasons": {
+    "eos": 3088
+  },
+  "generated_tokens": 15803,
+  "metric": "accuracy_test",
+  "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+  "score_percent": 76.58678756476684,
+  "truncated": 0,
+  "unresolved": 3
+}

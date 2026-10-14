@@ -1,0 +1,13 @@
+{
+  "count": 4241,
+  "finish_reasons": {
+    "eos": 4236,
+    "length": 5
+  },
+  "generated_tokens": 17922,
+  "metric": "accuracy_test_all_image_and_text_rows",
+  "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+  "score_percent": 84.88564017920301,
+  "truncated": 5,
+  "unresolved": 6
+}

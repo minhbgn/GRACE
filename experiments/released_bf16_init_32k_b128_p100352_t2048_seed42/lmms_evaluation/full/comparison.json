@@ -1,0 +1,137 @@
+{
+  "completed": 40,
+  "expected": 70,
+  "rows": [
+    {
+      "mean_percent": null,
+      "method": "vanilla_2b",
+      "scores_percent": {
+        "ai2d": 76.13341968911918,
+        "hallusionbench": null,
+        "mmbench": null,
+        "mmmu": null,
+        "mmstar": 55.08011163235324,
+        "scienceqa": 87.2583044124938,
+        "seedbench": 76.09077495960092
+      }
+    },
+    {
+      "mean_percent": null,
+      "method": "vanilla_8b_teacher",
+      "scores_percent": {
+        "ai2d": 84.00259067357513,
+        "hallusionbench": null,
+        "mmbench": null,
+        "mmmu": null,
+        "mmstar": 64.5489943433801,
+        "scienceqa": 94.6950917203768,
+        "seedbench": 78.55687486826389
+      }
+    },
+    {
+      "mean_percent": null,
+      "method": "sft_2b",
+      "scores_percent": {
+        "ai2d": 77.52590673575129,
+        "hallusionbench": null,
+        "mmbench": null,
+        "mmmu": null,
+        "mmstar": 56.102964565710664,
+        "scienceqa": 86.76251859196827,
+        "seedbench": 76.68095271552026
+      }
+    },
+    {
+      "mean_percent": null,
+      "method": "released_bf16",
+      "scores_percent": {
+        "ai2d": 81.80051813471503,
+        "hallusionbench": null,
+        "mmbench": null,
+        "mmmu": null,
+        "mmstar": 69.39261588793948,
+        "scienceqa": 88.29945463559741,
+        "seedbench": 76.27344902690929
+      }
+    },
+    {
+      "mean_percent": null,
+      "method": "released_grace_w4",
+      "scores_percent": {
+        "ai2d": 80.4080310880829,
+        "hallusionbench": null,
+        "mmbench": null,
+        "mmmu": null,
+        "mmstar": 67.49297239107729,
+        "scienceqa": 87.10956866633614,
+        "seedbench": 75.69732312232136
+      }
+    },
+    {
+      "mean_percent": null,
+      "method": "released_grace_w8",
+      "scores_percent": {
+        "ai2d": 79.56606217616581,
+        "hallusionbench": null,
+        "mmbench": null,
+        "mmmu": null,
+        "mmstar": 65.19746562974163,
+        "scienceqa": 86.66336142786317,
+        "seedbench": 75.45141572402164
+      }
+    },
+    {
+      "mean_percent": null,
+      "method": "qat_w4",
+      "scores_percent": {
+        "ai2d": 80.63471502590673,
+        "hallusionbench": null,
+        "mmbench": null,
+        "mmmu": null,
+        "mmstar": 68.28952210822276,
+        "scienceqa": 86.11799702528508,
+        "seedbench": 76.38586383756059
+      }
+    },
+    {
+      "mean_percent": null,
+      "method": "grace_w4",
+      "scores_percent": {
+        "ai2d": 79.56606217616581,
+        "hallusionbench": null,
+        "mmbench": null,
+        "mmmu": null,
+        "mmstar": 63.98050241648132,
+        "scienceqa": 86.71294000991571,
+        "seedbench": 77.08845640413125
+      }
+    },
+    {
+      "mean_percent": null,
+      "method": "qat_w8",
+      "scores_percent": {
+        "ai2d": 82.31865284974094,
+        "hallusionbench": null,
+        "mmbench": null,
+        "mmmu": null,
+        "mmstar": 70.65910131265841,
+        "scienceqa": 87.7045116509668,
+        "seedbench": 76.73013419518021
+      }
+    },
+    {
+      "mean_percent": null,
+      "method": "grace_w8",
+      "scores_percent": {
+        "ai2d": 81.02331606217616,
+        "hallusionbench": null,
+        "mmbench": null,
+        "mmmu": null,
+        "mmstar": 64.98783200328388,
+        "scienceqa": 87.95240456122954,
+        "seedbench": 77.13763788379119
+      }
+    }
+  ],
+  "warning": "Harness protocol; not verified paper reproduction. Means require all seven suites."
+}

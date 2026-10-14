@@ -1,0 +1,90 @@
+{
+  "me": "air",
+  "mine_paths": [
+    "/raid/lvchengtao/Minh/Distillation"
+  ],
+  "sudo": true,
+  "gpus": {
+    "0": {
+      "index": "0",
+      "uuid": "GPU-b38dbb06-f7d7-d2bc-dd95-a97112c43445",
+      "name": "NVIDIA A100-SXM4-40GB",
+      "mem_used": 0,
+      "mem_total": 40960,
+      "util": 0,
+      "procs": []
+    },
+    "1": {
+      "index": "1",
+      "uuid": "GPU-87d9208a-b2c3-7ff6-fdbd-09f495484960",
+      "name": "NVIDIA A100-SXM4-40GB",
+      "mem_used": 27580,
+      "mem_total": 40960,
+      "util": 99,
+      "procs": [
+        {
+          "pid": 2875867,
+          "pgid": 2873191,
+          "mem_mib": 27570,
+          "owner": "raymond",
+          "owner_evidence": "mount:/home/raymond/advanced-fastbev-data",
+          "cwd": "",
+          "mine": false,
+          "etime_s": 290,
+          "cmd": "/usr/bin/python3 -u tools/train.py /control/a100_m23_192x512_to_m10_structural_kd_full_2gpu_wds_fp32.py --launcher pytorch --validate --seed 0 --deterministic --work-dir /workspace-runs/m10-structural-kd-local2-fp32-20260919 --resume-from /workspace-runs/m10-structural-kd-local2-fp32-20260919/latest.pth",
+          "container_id": "19232378e76968246bdd689c99a659e6a146a1c2be2e34667054891a5fb21ded",
+          "container": "m10-structural-kd-local2-fp32-20260919",
+          "image": "fastbev-raytrain-a100:2.9.3",
+          "started": "2026-10-05T07:36:21.063707657Z",
+          "kind": "container",
+          "killable": true
+        }
+      ]
+    },
+    "2": {
+      "index": "2",
+      "uuid": "GPU-322cd7e1-6ca9-5035-25d0-1c11a40ce8db",
+      "name": "NVIDIA A100-SXM4-40GB",
+      "mem_used": 27580,
+      "mem_total": 40960,
+      "util": 100,
+      "procs": [
+        {
+          "pid": 2875868,
+          "pgid": 2873191,
+          "mem_mib": 27570,
+          "owner": "raymond",
+          "owner_evidence": "mount:/home/raymond/advanced-fastbev-data",
+          "cwd": "",
+          "mine": false,
+          "etime_s": 290,
+          "cmd": "/usr/bin/python3 -u tools/train.py /control/a100_m23_192x512_to_m10_structural_kd_full_2gpu_wds_fp32.py --launcher pytorch --validate --seed 0 --deterministic --work-dir /workspace-runs/m10-structural-kd-local2-fp32-20260919 --resume-from /workspace-runs/m10-structural-kd-local2-fp32-20260919/latest.pth",
+          "container_id": "19232378e76968246bdd689c99a659e6a146a1c2be2e34667054891a5fb21ded",
+          "container": "m10-structural-kd-local2-fp32-20260919",
+          "image": "fastbev-raytrain-a100:2.9.3",
+          "started": "2026-10-05T07:36:21.063707657Z",
+          "kind": "container",
+          "killable": true
+        }
+      ]
+    },
+    "3": {
+      "index": "3",
+      "uuid": "GPU-7bcbd8b8-5b4c-59a9-6834-6aa50a18e498",
+      "name": "NVIDIA DGX Display",
+      "mem_used": 1,
+      "mem_total": 4096,
+      "util": 0,
+      "procs": []
+    },
+    "4": {
+      "index": "4",
+      "uuid": "GPU-1ff453c5-3e92-c318-2baf-617f7c9f34e2",
+      "name": "NVIDIA A100-SXM4-40GB",
+      "mem_used": 0,
+      "mem_total": 40960,
+      "util": 0,
+      "procs": []
+    }
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "config": {
+    "annotation": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/ShareGPT4V/sharegpt4v_mix665k_cap23k_coco-ap9k_lcs3k_sam9k_div2k.json",
+    "data_root": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/ShareGPT4V/data",
+    "deepspeed": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/qwen-vl-finetune/scripts/zero2_lora_memory_safe.json",
+    "dkd_alpha": 1.0,
+    "dkd_beta": 4.0,
+    "dkd_checkpoint_chunks": true,
+    "dkd_chunk_size": 128,
+    "dkd_temperature": 2.0,
+    "global_batch": 128,
+    "grad_accum": 64,
+    "ib_beta_init": 0.5,
+    "ib_beta_max": 1.0,
+    "ib_beta_min": 0.1,
+    "ib_eta": 0.003,
+    "ib_tau": 3.0,
+    "learning_rate": 0.0002,
+    "lora_alpha": 64,
+    "lora_dropout": 0.05,
+    "lora_r": 32,
+    "lora_targets": "q_proj,k_proj,v_proj,o_proj",
+    "max_pixels": 589824,
+    "max_steps": 256,
+    "max_train_hours": 5.0,
+    "min_pixels": 4096,
+    "mm_projector_lr": 1e-05,
+    "model_max_length": 4096,
+    "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+    "peak_memory_gib": 34.0,
+    "qat_bits": 4,
+    "qat_group_size": 128,
+    "qat_scale_lr": 0.0002,
+    "rcka_layer": -2,
+    "rcka_warmup_steps": 25,
+    "rcka_weight": 3.0,
+    "save_steps": 50,
+    "save_total_limit": 2,
+    "seed": 42,
+    "student_weights_sha256": "4b522cda73d4ebd792e97a89cbca51091287b65c87e705be53f56c035715bfd3",
+    "subset_seed": 2026,
+    "subset_size": 32768,
+    "teacher_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.0
+  },
+  "diagnostic_accumulation": 2,
+  "environment": {
+    "allocator": "expandable_segments:True",
+    "deepspeed": "0.15.4",
+    "torch": "2.5.1+cu121",
+    "transformers": "5.9.0"
+  },
+  "experiment_sha256": "7180e66d70eb6341376fac0c9ddc716c9206a5d13e197b7f5b2c7e1abfe74f26",
+  "fingerprint": "4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5",
+  "implementation": {
+    "qwenvl/data/__init__.py": "0f202c5b8e0e14ab06b1fe378ea19e57ca9aaaa21d269039d96265e0f2d93f89",
+    "qwenvl/data/constrained_data.py": "6294870d70916861213c1f4956c9d88bc952a233593e4cba2e24b36f3c63622f",
+    "qwenvl/data/data_processor.py": "971fc4407305ea3755dbe14949c5d112731e6cb26301190531b409a4d056108e",
+    "qwenvl/data/rope2d.py": "97c9f8f49a3a1f782f6dacea538e3032fadfe24e5b60a630d3ae62053250542c",
+    "qwenvl/train/argument.py": "4b26d47e27c440fce83012267088485805ac722249bc80f994981a07db317cb6",
+    "qwenvl/train/grace_modules.py": "e980d1b859b5dba5399a7677f7261ac25cfe1e0844cd0e258bf86d0dacefed6a",
+    "qwenvl/train/grace_profiler.py": "87b148ed5a32b0464b0675de5fe1eb675b4a1b0af5480e7ad3e073fc7f113902",
+    "qwenvl/train/grace_resume.py": "88d348b143de04401eb0ec903a23098fd01fb0270d34568f815e95f410938357",
+    "qwenvl/train/qat_modules.py": "aecfcb7626aef5705006738afdb105b1aca80ec9f1c79e1fc3e88d9c72fe6a50",
+    "qwenvl/train/train_qwen.py": "bd0aee79a42e181a5d1038141ba59d85171b704181544b788a109b19abfd9843",
+    "qwenvl/train/train_qwen_constrained.py": "1edcdad1b331481e59b41d27e375bbf59576b96431f8adb7a5ef8f3a6932d2d6",
+    "qwenvl/train/train_qwen_grace.py": "6dcd6a98c348ed655d1f84d8376a4d94d6fd4f0b3a231f497a979e1090651e2c",
+    "qwenvl/train/train_qwen_qat.py": "c9e70b85208b2c4cc1fd3cfb514371bf741160236be2c4eb0ea2ba4f952be697",
+    "qwenvl/train/trainer.py": "535b81c23dbcfcad749beb7342f15069e3dfa220d4d9182bb71e84a79df4b3e3",
+    "scripts/run_constrained.py": "d804197ef182c9f94c3b2a4292345428c0148eea2eeef26c9b0dca6529ffec96",
+    "scripts/zero2_lora_memory_safe.json": "59d4f377771bbb06eda394e4e62e8db36d9d47ef921636aa11827334c8db9473"
+  },
+  "models": {
+    "released_bf16": {
+      "config": {
+        "architectures": [
+          "Qwen3VLForConditionalGeneration"
+        ],
+        "bos_token_id": null,
+        "dtype": "bfloat16",
+        "eos_token_id": 151645,
+        "image_token_id": 151655,
+        "model_type": "qwen3_vl",
+        "pad_token_id": 151643,
+        "text_config": {
+          "attention_bias": false,
+          "attention_dropout": 0.0,
+          "bos_token_id": 151643,
+          "dtype": "bfloat16",
+          "eos_token_id": 151645,
+          "head_dim": 128,
+          "hidden_act": "silu",
+          "hidden_size": 2048,
+          "initializer_range": 0.02,
+          "intermediate_size": 6144,
+          "max_position_embeddings": 262144,
+          "model_type": "qwen3_vl_text",
+          "num_attention_heads": 16,
+          "num_hidden_layers": 28,
+          "num_key_value_heads": 8,
+          "pad_token_id": null,
+          "rms_norm_eps": 1e-06,
+          "rope_parameters": {
+            "mrope_interleaved": true,
+            "mrope_section": [
+              24,
+              20,
+              20
+            ],
+            "rope_theta": 5000000,
+            "rope_type": "default"
+          },
+          "tie_word_embeddings": true,
+          "use_cache": true,
+          "vocab_size": 151936
+        },
+        "tie_word_embeddings": true,
+        "transformers_version": "5.9.0",
+        "use_cache": true,
+        "video_token_id": 151656,
+        "vision_config": {
+          "deepstack_visual_indexes": [
+            5,
+            11,
+            17
+          ],
+          "depth": 24,
+          "dtype": "bfloat16",
+          "hidden_act": "gelu_pytorch_tanh",
+          "hidden_size": 1024,
+          "in_channels": 3,
+          "initializer_range": 0.02,
+          "intermediate_size": 4096,
+          "model_type": "qwen3_vl_vision",
+          "num_heads": 16,
+          "num_position_embeddings": 2304,
+          "out_hidden_size": 2048,
+          "patch_size": 16,
+          "spatial_merge_size": 2,
+          "temporal_patch_size": 2
+        },
+        "vision_end_token_id": 151653,
+        "vision_start_token_id": 151652
+      },
+      "files_sha256": {
+        "README.md": "b9948639bac771c5a169dcf60791a65aa05be983e30188b37f6d4c1056e41b0c",
+        "chat_template.jinja": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+        "config.json": "63f0e7827a19da447a1cc9258d348bbaa0a17933f19fc294a517531b50b1d752",
+        "generation_config.json": "f8b689677eaf828e409db5b063a055c92c17c58b12a4338f872858fb31c491c2",
+        "model.safetensors": "4b522cda73d4ebd792e97a89cbca51091287b65c87e705be53f56c035715bfd3",
+        "processor_config.json": "479b624a5b02852c3947d0b88e2570bb10464d583ad45092e2028099614bd820",
+        "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+        "tokenizer_config.json": "02d21d5b995f73c8757b09343c4b5e9294ef9413e36ebe37e01de8f225e490f4",
+        "trainer_state.json": "e8d0b0c77e6780c2bbbc8e306d081ff9d02ebbcba9bdbbd61235c859dd4117e7"
+      },
+      "generation_config": {
+        "do_sample": true,
+        "eos_token_id": [
+          151645,
+          151645,
+          151643
+        ],
+        "pad_token_id": 151643,
+        "repetition_penalty": 1.0,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8,
+        "transformers_version": "5.9.0"
+      },
+      "identity_verification": "pinned weight SHA256",
+      "loading_format": "unpacked floating-point safetensors, Transformers Qwen3VL",
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+      "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-BF16",
+      "revision": "82f9a267340f65a3619be0e19daf6582d3998a5f"
+    },
+    "vanilla_8b_teacher": {
+      "config": {
+        "architectures": [
+          "Qwen3VLForConditionalGeneration"
+        ],
+        "image_token_id": 151655,
+        "model_type": "qwen3_vl",
+        "text_config": {
+          "attention_bias": false,
+          "attention_dropout": 0.0,
+          "bos_token_id": 151643,
+          "dtype": "bfloat16",
+          "eos_token_id": 151645,
+          "head_dim": 128,
+          "hidden_act": "silu",
+          "hidden_size": 4096,
+          "initializer_range": 0.02,
+          "intermediate_size": 12288,
+          "max_position_embeddings": 262144,
+          "model_type": "qwen3_vl_text",
+          "num_attention_heads": 32,
+          "num_hidden_layers": 36,
+          "num_key_value_heads": 8,
+          "rms_norm_eps": 1e-06,
+          "rope_scaling": {
+            "mrope_interleaved": true,
+            "mrope_section": [
+              24,
+              20,
+              20
+            ],
+            "rope_type": "default"
+          },
+          "rope_theta": 5000000,
+          "use_cache": true,
+          "vocab_size": 151936
+        },
+        "tie_word_embeddings": false,
+        "transformers_version": "4.57.0.dev0",
+        "video_token_id": 151656,
+        "vision_config": {
+          "deepstack_visual_indexes": [
+            8,
+            16,
+            24
+          ],
+          "depth": 27,
+          "hidden_act": "gelu_pytorch_tanh",
+          "hidden_size": 1152,
+          "in_channels": 3,
+          "initializer_range": 0.02,
+          "intermediate_size": 4304,
+          "model_type": "qwen3_vl",
+          "num_heads": 16,
+          "num_position_embeddings": 2304,
+          "out_hidden_size": 4096,
+          "patch_size": 16,
+          "spatial_merge_size": 2,
+          "temporal_patch_size": 2
+        },
+        "vision_end_token_id": 151653,
+        "vision_start_token_id": 151652
+      },
+      "files_sha256": {
+        "README.md": "6d5d06e0c3f069097002445d30dce9ee107db3afaf15563f09e6df49b8dcb4d7",
+        "chat_template.json": "5c72a170d2a4a1a3bc5adad2e689ae28138a9700e5b8c96c0266331e86c0acce",
+        "config.json": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+        "generation_config.json": "8469742d1fce0de951c8909b26a2c0c0d8490837ce476efb114da9e0cefc4d44",
+        "model-00001-of-00004.safetensors": "d5d0aef0eb170fc7453a296c43c0849a56f510555d3588e4fd662bb35490aefa",
+        "model-00002-of-00004.safetensors": "8be88fb5501e4d5719a6d4cc212e6a13480330e74f3e8c77daa1a68f199106b5",
+        "model-00003-of-00004.safetensors": "83de00eafe6e0d57ccd009dbcf71c9974d74df2f016c27afb7e95aafd16b2192",
+        "model-00004-of-00004.safetensors": "0a88b98e9f96270973f567e6a2c103ede6ccdf915ca3075e21c755604d0377a5",
+        "model.safetensors.index.json": "520b2e05079402e9468a8701d03d1154d14b2599593afb6effa7fb60c1bff070",
+        "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+        "tokenizer.json": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+        "tokenizer_config.json": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+        "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "generation_config": {
+        "bos_token_id": 151643,
+        "do_sample": true,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "pad_token_id": 151643,
+        "repetition_penalty": 1.0,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8,
+        "transformers_version": "4.56.0"
+      },
+      "identity_verification": "local download metadata and explicit repository mapping",
+      "loading_format": "unpacked floating-point safetensors, Transformers Qwen3VL",
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+      "repository": "Qwen/Qwen3-VL-8B-Instruct",
+      "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b"
+    }
+  },
+  "previous_subset_sha256": "709f176e4fb5dfdbb8031a18ebe450c52210e2a13ddd1d17c7efb11e5abe546d",
+  "profiler_sha256": "2049830ca885da1a37394e8866465d82c2449d426acaec7cdd0e207819ff3cfd",
+  "runner_sha256": "700b734e1e267cf86bffd6b0eedae1c7cf2fb3cdeadb1c27a26cb7bf00af2a9a",
+  "status": "passed"
+}

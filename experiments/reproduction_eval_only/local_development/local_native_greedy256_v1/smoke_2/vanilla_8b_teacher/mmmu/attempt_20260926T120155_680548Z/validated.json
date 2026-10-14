@@ -1,0 +1,13 @@
+{
+  "count": 2,
+  "finish_reasons": {
+    "eos": 1,
+    "length": 1
+  },
+  "generated_tokens": 261,
+  "metric": "mc_and_open_micro_accuracy_validation",
+  "sample_identity": "bdaae05f1359e5dfb16575e220151da87208fca732e9e25a0ddc3717747e6ae9",
+  "score_percent": 0.0,
+  "truncated": 1,
+  "unresolved": 1
+}

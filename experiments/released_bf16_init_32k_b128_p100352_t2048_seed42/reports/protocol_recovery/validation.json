@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-25",
+  "gpu_inference_performed": false,
+  "live_judge_calls": 0,
+  "paper_tolerance_verified": false,
+  "regression_tests_passed": 10,
+  "upstream_plan_jobs": 35,
+  "standard_plan_jobs": 35,
+  "historical_result_schema_checks_passed": 35,
+  "historical_results_reclassified_as_new_protocol": false,
+  "mmmu_integration": "PASS: two real TaskManager YAML loads; MC/open numeric scoring; direct text, numeric, alternate gold and wrong-answer checks",
+  "blockers": [
+    "GPU smoke command declined",
+    "No OPENAI_API_KEY configured",
+    "Author Table 6 recipe ambiguous: README claims harness; supplied launchers use custom scripts"
+  ],
+  "sha256": {
+    "evaluation/run_upstream_matrix.py": "35739d1acde9ecfcf2738fa7bb35d7228fb8b51fb92292bcce40b4c3e812930b",
+    "evaluation/run_lmms_matrix.py": "aadd6ed424358326257d8b11246574562f4735aa57a0b67b4df7d432d8e7b158",
+    "evaluation/lmms_worker.py": "bebe1a6cdbee34a78c843d7470629b0f49d4572d2dbdeec3368f76c50439f18f",
+    "evaluation/paper_acceptance.py": "137470ff8a4a87e669b608fe785c586b5fc4f225977009f256d1738132e48531",
+    "evaluation/tests/test_paper_protocol.py": "ec80d0264fadd0fb5eb6db47ce1da6a11355f6f60acec8e4625f2a2193cc9b05",
+    "evaluation/tests/cpu_mmmu_integration.py": "caeacb9268223b8dc5c1323c7859026e44b5a3cb180e51f7a27a3f87b8c6b34f"
+  }
+}

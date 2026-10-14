@@ -1,0 +1,87 @@
+{
+  "summary": {
+    "evaluation_protocol": {
+      "version": 1,
+      "min_pixels": null,
+      "max_pixels": null,
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "num_beams": 1,
+      "repetition_penalty": 1.0,
+      "context": "no truncation; native model context",
+      "attention": "flash_attention_2"
+    },
+    "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+    "processor_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+    "image_processor_size": {
+      "longest_edge": 16777216,
+      "shortest_edge": 65536
+    },
+    "total": 2,
+    "correct": 2,
+    "overall_acc": 1.0,
+    "parse_fail": 0,
+    "errors": 0,
+    "scorer": "deterministic_local_v1",
+    "primary_metric": "accuracy_test",
+    "unresolved": 0,
+    "generation_unknown": 0,
+    "finish_reasons": {
+      "eos": 2
+    },
+    "truncated": 0,
+    "hit_token_cap": 0,
+    "generated_tokens": 8,
+    "primary_score": 1.0
+  },
+  "results": [
+    {
+      "idx": 0,
+      "pred": 1,
+      "gold": 1,
+      "correct": true,
+      "raw": "(B) D",
+      "generation": {
+        "token_ids": [
+          5349,
+          8,
+          422,
+          151645
+        ],
+        "generated_tokens": 4,
+        "max_new_tokens": 256,
+        "finish_reason": "eos",
+        "hit_token_cap": false,
+        "truncated": false
+      },
+      "n_choices": 4,
+      "error": null,
+      "extraction_method": "leading",
+      "unresolved": false
+    },
+    {
+      "idx": 1,
+      "pred": 3,
+      "gold": 3,
+      "correct": true,
+      "raw": "(D) k",
+      "generation": {
+        "token_ids": [
+          5432,
+          8,
+          595,
+          151645
+        ],
+        "generated_tokens": 4,
+        "max_new_tokens": 256,
+        "finish_reason": "eos",
+        "hit_token_cap": false,
+        "truncated": false
+      },
+      "n_choices": 4,
+      "error": null,
+      "extraction_method": "leading",
+      "unresolved": false
+    }
+  ]
+}

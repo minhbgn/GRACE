@@ -1,0 +1,237 @@
+{
+  "checkpoint_helper_sha256": "186c9297ae51cb54d944b7cb54554d545e7f3c19b2b1a1cba97f5bf41d0da851",
+  "environment": {
+    "packages": {
+      "Pillow": "12.2.0",
+      "accelerate": "1.13.0",
+      "datasets": "4.8.5",
+      "decord": "0.6.0",
+      "evaluate": "0.4.6",
+      "filelock": "3.29.0",
+      "huggingface-hub": "1.15.0",
+      "lmms-eval": "0.7.1",
+      "numpy": "2.4.4",
+      "qwen-vl-utils": "0.0.14",
+      "requests": "2.34.2",
+      "torch": "2.5.1+cu121",
+      "transformers": "5.9.0"
+    },
+    "python": "3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:27:40) [GCC 11.3.0]"
+  },
+  "experiment": {
+    "bit_widths": [
+      4,
+      8
+    ],
+    "comparisons": [
+      {
+        "label": "W4: distillation gain",
+        "left": "grace_w4",
+        "right": "qat_w4"
+      },
+      {
+        "label": "W4: gap to full method",
+        "left": "released_grace_w4",
+        "right": "grace_w4"
+      },
+      {
+        "label": "W4: gap to BF16 initialization",
+        "left": "released_bf16",
+        "right": "grace_w4"
+      },
+      {
+        "label": "W4: gain over vanilla 2B",
+        "left": "grace_w4",
+        "right": "vanilla_2b"
+      },
+      {
+        "label": "W4: difference from teacher",
+        "left": "grace_w4",
+        "right": "vanilla_8b_teacher"
+      },
+      {
+        "label": "W4: difference from previous SFT",
+        "left": "grace_w4",
+        "right": "sft_2b"
+      },
+      {
+        "label": "W8: distillation gain",
+        "left": "grace_w8",
+        "right": "qat_w8"
+      },
+      {
+        "label": "W8: gap to full method",
+        "left": "released_grace_w8",
+        "right": "grace_w8"
+      },
+      {
+        "label": "W8: gap to BF16 initialization",
+        "left": "released_bf16",
+        "right": "grace_w8"
+      },
+      {
+        "label": "W8: gain over vanilla 2B",
+        "left": "grace_w8",
+        "right": "vanilla_2b"
+      },
+      {
+        "label": "W8: difference from teacher",
+        "left": "grace_w8",
+        "right": "vanilla_8b_teacher"
+      },
+      {
+        "label": "W8: difference from previous SFT",
+        "left": "grace_w8",
+        "right": "sft_2b"
+      }
+    ],
+    "models": {
+      "grace_w4": {
+        "bits": 4,
+        "expected_steps": 256,
+        "kind": "trained",
+        "method": "grace",
+        "path": "w4g128/runs/grace",
+        "relative_to": "experiment"
+      },
+      "grace_w8": {
+        "bits": 8,
+        "expected_steps": 256,
+        "kind": "trained",
+        "method": "grace",
+        "path": "w8g128/runs/grace",
+        "relative_to": "experiment"
+      },
+      "qat_w4": {
+        "bits": 4,
+        "expected_steps": 256,
+        "kind": "trained",
+        "method": "qat",
+        "path": "w4g128/runs/qat",
+        "relative_to": "experiment"
+      },
+      "qat_w8": {
+        "bits": 8,
+        "expected_steps": 256,
+        "kind": "trained",
+        "method": "qat",
+        "path": "w8g128/runs/qat",
+        "relative_to": "experiment"
+      },
+      "released_bf16": {
+        "download": true,
+        "environment": "BASE_MODEL_DIR",
+        "path": "models/Qwen3-VL-2B-GRACE-BF16",
+        "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-BF16",
+        "revision": "82f9a267340f65a3619be0e19daf6582d3998a5f",
+        "weights_sha256": "4b522cda73d4ebd792e97a89cbca51091287b65c87e705be53f56c035715bfd3"
+      },
+      "released_grace_w4": {
+        "download": true,
+        "path": "models/Qwen3-VL-2B-GRACE-W4G128",
+        "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-W4G128"
+      },
+      "released_grace_w8": {
+        "download": true,
+        "path": "models/Qwen3-VL-2B-GRACE-W8G128",
+        "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-W8G128"
+      },
+      "sft_2b": {
+        "environment": "SFT_MODEL_DIR",
+        "expected_steps": 256,
+        "kind": "export",
+        "path": "experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft"
+      },
+      "vanilla_2b": {
+        "path": "models/Qwen3-VL-2B-Instruct",
+        "repository": "Qwen/Qwen3-VL-2B-Instruct"
+      },
+      "vanilla_8b_teacher": {
+        "environment": "TEACHER_MODEL_PATH",
+        "path": "models/Qwen3-VL-8B-Instruct",
+        "repository": "Qwen/Qwen3-VL-8B-Instruct"
+      }
+    },
+    "previous_experiment": "experiments/constrained_32k_b128_p100352_t2048_seed42",
+    "report_note": "sft_2b is the previous vanilla-initialized local SFT export; the four new low-bit runs start independently from released_bf16.",
+    "report_title": "Released-BF16 comparison",
+    "schema": 1,
+    "student": "released_bf16",
+    "teacher": "vanilla_8b_teacher"
+  },
+  "limit": null,
+  "protocol": {
+    "bootstrap_iters": 1000,
+    "harness_commit": "88b23e2bfa16a1edbc16e9e238ed82130b3a4f56",
+    "judge_endpoint": "https://api.openai.com/v1/chat/completions",
+    "judges": {
+      "hallusionbench": "gpt-4",
+      "mmbench": "gpt-4o-2024-11-20"
+    },
+    "model_args": {
+      "attn_implementation": "sdpa",
+      "interleave_visuals": false,
+      "max_pixels": 1605632,
+      "min_pixels": 200704,
+      "system_prompt": "You are a helpful assistant."
+    },
+    "name": "lmms_eval_v0.7.1_qwen3_vl_harness_defaults_v1",
+    "notes": [
+      "BF16 inference on merged grid-projected research weights; no additional quantization and no packed INT4/INT8 performance claim.",
+      "Zero-shot, greedy, batch size one, one GPU; pinned task-specific prompts, output caps, filters and scorers.",
+      "Image limits are the pinned qwen3_vl backend defaults, not the old constrained protocol or a recovered author setting.",
+      "SDPA explicitly selected for portability; source backend leaves attention implementation unspecified by default.",
+      "Public dataset token=True changed to optional cached authentication (token=None); revisions and fingerprints pinned.",
+      "Bootstrap iterations affect uncertainty estimates, not primary point estimates.",
+      "Judge model IDs are harness defaults. API availability and author judge identity are unverified."
+    ],
+    "seed": 42,
+    "status": "Independent pinned harness protocol; exact author protocol is not published"
+  },
+  "runner_sha256": "587c10ee4eec92014b94e4a0bbeb50b71a7946b7c6458ec15e046a1d5fb47e89",
+  "tasks": {
+    "ai2d": [
+      "ai2d",
+      "ai2d/ai2d.yaml",
+      "exact_match,flexible-extract",
+      100
+    ],
+    "hallusionbench": [
+      "hallusion_bench_image",
+      "hallusion_bench/hallusion_bench_image.yaml",
+      "aAcc,none",
+      1
+    ],
+    "mmbench": [
+      "mmbench_en_dev",
+      "mmbench/mmbench_en_dev.yaml",
+      "gpt_eval_score,none",
+      1
+    ],
+    "mmmu": [
+      "mmmu_val",
+      "mmmu/mmmu_val.yaml",
+      "mmmu_acc,none",
+      100
+    ],
+    "mmstar": [
+      "mmstar",
+      "mmstar/mmstar.yaml",
+      "average,none",
+      100
+    ],
+    "scienceqa": [
+      "scienceqa_img",
+      "scienceqa/scienceqa_img.yaml",
+      "exact_match,none",
+      100
+    ],
+    "seedbench": [
+      "seedbench",
+      "seedbench/seedbench.yaml",
+      "seed_image,none",
+      100
+    ]
+  },
+  "worker_sha256": "241f95b0586f5cf686f837bff00d7d8e93fa1ace8ff9d2a8caee4cfaf2f06d1e"
+}

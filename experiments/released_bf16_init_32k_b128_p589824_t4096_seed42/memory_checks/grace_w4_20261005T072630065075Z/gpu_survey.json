@@ -1,0 +1,90 @@
+{
+  "me": "air",
+  "mine_paths": [
+    "/raid/lvchengtao/Minh/Distillation"
+  ],
+  "sudo": true,
+  "gpus": {
+    "0": {
+      "index": "0",
+      "uuid": "GPU-b38dbb06-f7d7-d2bc-dd95-a97112c43445",
+      "name": "NVIDIA A100-SXM4-40GB",
+      "mem_used": 0,
+      "mem_total": 40960,
+      "util": 0,
+      "procs": []
+    },
+    "1": {
+      "index": "1",
+      "uuid": "GPU-87d9208a-b2c3-7ff6-fdbd-09f495484960",
+      "name": "NVIDIA A100-SXM4-40GB",
+      "mem_used": 27580,
+      "mem_total": 40960,
+      "util": 0,
+      "procs": [
+        {
+          "pid": 207624,
+          "pgid": 0,
+          "mem_mib": 27474,
+          "owner": "?",
+          "owner_evidence": "proc-uid",
+          "cwd": "",
+          "mine": false,
+          "etime_s": -1,
+          "cmd": "",
+          "container_id": null,
+          "container": null,
+          "image": null,
+          "started": null,
+          "kind": "bare",
+          "killable": true
+        }
+      ]
+    },
+    "2": {
+      "index": "2",
+      "uuid": "GPU-322cd7e1-6ca9-5035-25d0-1c11a40ce8db",
+      "name": "NVIDIA A100-SXM4-40GB",
+      "mem_used": 27580,
+      "mem_total": 40960,
+      "util": 0,
+      "procs": [
+        {
+          "pid": 207626,
+          "pgid": 0,
+          "mem_mib": 27570,
+          "owner": "?",
+          "owner_evidence": "proc-uid",
+          "cwd": "",
+          "mine": false,
+          "etime_s": -1,
+          "cmd": "",
+          "container_id": null,
+          "container": null,
+          "image": null,
+          "started": null,
+          "kind": "bare",
+          "killable": true
+        }
+      ]
+    },
+    "3": {
+      "index": "3",
+      "uuid": "GPU-7bcbd8b8-5b4c-59a9-6834-6aa50a18e498",
+      "name": "NVIDIA DGX Display",
+      "mem_used": 1,
+      "mem_total": 4096,
+      "util": 0,
+      "procs": []
+    },
+    "4": {
+      "index": "4",
+      "uuid": "GPU-1ff453c5-3e92-c318-2baf-617f7c9f34e2",
+      "name": "NVIDIA A100-SXM4-40GB",
+      "mem_used": 0,
+      "mem_total": 40960,
+      "util": 0,
+      "procs": []
+    }
+  }
+}

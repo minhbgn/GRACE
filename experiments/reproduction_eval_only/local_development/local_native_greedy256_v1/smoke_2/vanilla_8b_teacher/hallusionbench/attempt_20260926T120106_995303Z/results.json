@@ -1,0 +1,126 @@
+{
+  "summary": {
+    "evaluation_protocol": {
+      "version": 1,
+      "min_pixels": null,
+      "max_pixels": null,
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "num_beams": 1,
+      "repetition_penalty": 1.0,
+      "context": "no truncation; native model context",
+      "attention": "flash_attention_2"
+    },
+    "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+    "processor_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+    "image_processor_size": {
+      "longest_edge": 16777216,
+      "shortest_edge": 65536
+    },
+    "data_dir": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/HallusionBench/data",
+    "total": 2,
+    "correct": 2,
+    "aAcc": 1.0,
+    "qAcc": 1.0,
+    "qAcc_correct_groups": 2,
+    "qAcc_total_groups": 2,
+    "fAcc": 1.0,
+    "fAcc_correct_groups": 1,
+    "fAcc_total_groups": 1,
+    "parse_fail": 0,
+    "errors": 0,
+    "by_modality": {
+      "image": {
+        "acc": 1.0,
+        "correct": 2,
+        "total": 2
+      }
+    },
+    "by_category": {
+      "VS": {
+        "acc": 1.0,
+        "correct": 2,
+        "total": 2
+      }
+    },
+    "by_subcategory": {
+      "VS/chart": {
+        "acc": 1.0,
+        "correct": 2,
+        "total": 2
+      }
+    },
+    "scorer": "deterministic_local_v1",
+    "primary_metric": "rule_aAcc_all_image_and_text_rows",
+    "unresolved": 0,
+    "generation_unknown": 0,
+    "finish_reasons": {
+      "eos": 2
+    },
+    "truncated": 0,
+    "hit_token_cap": 0,
+    "generated_tokens": 4,
+    "primary_score": 1.0,
+    "population": {
+      "total": 2,
+      "image": 2,
+      "text": 0
+    }
+  },
+  "results": [
+    {
+      "category": "VS",
+      "subcategory": "chart",
+      "set_id": "0",
+      "figure_id": "1",
+      "question_id": "0",
+      "visual_input": "1",
+      "has_image": true,
+      "pred": "0",
+      "gold": "0",
+      "correct": true,
+      "raw": "No",
+      "generation": {
+        "token_ids": [
+          2753,
+          151645
+        ],
+        "generated_tokens": 2,
+        "max_new_tokens": 256,
+        "finish_reason": "eos",
+        "hit_token_cap": false,
+        "truncated": false
+      },
+      "error": null,
+      "extraction_method": "explicit_yesno",
+      "unresolved": false
+    },
+    {
+      "category": "VS",
+      "subcategory": "chart",
+      "set_id": "0",
+      "figure_id": "1",
+      "question_id": "1",
+      "visual_input": "1",
+      "has_image": true,
+      "pred": "1",
+      "gold": "1",
+      "correct": true,
+      "raw": "Yes",
+      "generation": {
+        "token_ids": [
+          9454,
+          151645
+        ],
+        "generated_tokens": 2,
+        "max_new_tokens": 256,
+        "finish_reason": "eos",
+        "hit_token_cap": false,
+        "truncated": false
+      },
+      "error": null,
+      "extraction_method": "explicit_yesno",
+      "unresolved": false
+    }
+  ]
+}

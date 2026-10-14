@@ -1,0 +1,152 @@
+{
+  "checks": {
+    "frozen_qat_scale_unchanged": true,
+    "gdkd_connected_to_backward": true,
+    "lora_B_parameter_changed": true,
+    "lora_B_received_gradient": true,
+    "qat_scale_parameter_changed": false,
+    "qat_scale_received_gradient": true,
+    "rcka_connected_to_backward_after_warmup": true,
+    "teacher_is_frozen": true
+  },
+  "final_parameter_deltas": {
+    "frozen_qat_scale": {
+      "sample_max_abs_delta_from_start": 0.0,
+      "sample_parameter": "model.language_model.layers.0.mlp.gate_proj.log_scale"
+    },
+    "lora_A": {
+      "sample_max_abs_delta_from_start": 0.0001220703125,
+      "sample_parameter": "model.language_model.layers.0.self_attn.q_proj.lora_A"
+    },
+    "lora_B": {
+      "sample_max_abs_delta_from_start": 0.000301361083984375,
+      "sample_parameter": "model.language_model.layers.0.self_attn.q_proj.lora_B"
+    },
+    "merger": {
+      "sample_max_abs_delta_from_start": 0.0,
+      "sample_parameter": "model.visual.merger.norm.weight"
+    },
+    "qat_scale": {
+      "sample_max_abs_delta_from_start": 0.0,
+      "sample_parameter": "model.language_model.layers.0.self_attn.q_proj.log_scale"
+    }
+  },
+  "last_step": {
+    "gradients": {
+      "lora_A": {
+        "backward_signal_l2": 2.0539352893829346,
+        "gradient_tensors_seen": 224
+      },
+      "lora_B": {
+        "backward_signal_l2": 21.900484085083008,
+        "gradient_tensors_seen": 224
+      },
+      "merger": {
+        "backward_signal_l2": 3.8775365352630615,
+        "gradient_tensors_seen": 12
+      },
+      "other": {
+        "backward_signal_l2": 0.0,
+        "gradient_tensors_seen": 0
+      },
+      "qat_scale": {
+        "backward_signal_l2": 0.17539262771606445,
+        "gradient_tensors_seen": 224
+      }
+    },
+    "parameter_deltas": {
+      "frozen_qat_scale": {
+        "sample_max_abs_delta_from_start": 0.0,
+        "sample_parameter": "model.language_model.layers.0.mlp.gate_proj.log_scale"
+      },
+      "lora_A": {
+        "sample_max_abs_delta_from_start": 0.0001220703125,
+        "sample_parameter": "model.language_model.layers.0.self_attn.q_proj.lora_A"
+      },
+      "lora_B": {
+        "sample_max_abs_delta_from_start": 0.000301361083984375,
+        "sample_parameter": "model.language_model.layers.0.self_attn.q_proj.lora_B"
+      },
+      "merger": {
+        "sample_max_abs_delta_from_start": 0.0,
+        "sample_parameter": "model.visual.merger.norm.weight"
+      },
+      "qat_scale": {
+        "sample_max_abs_delta_from_start": 0.0,
+        "sample_parameter": "model.language_model.layers.0.self_attn.q_proj.log_scale"
+      }
+    },
+    "step": 3,
+    "terms": {
+      "ce": {
+        "backward_multiplier_abs_sum": 1.0,
+        "coefficient_mean": 1.0,
+        "raw_loss_mean": 0.016336600296199322,
+        "requires_grad_fraction": 1.0
+      },
+      "gdkd": {
+        "backward_multiplier_abs_sum": 0.6209065318107605,
+        "coefficient_mean": 0.6209065190410614,
+        "raw_loss_mean": 14.060585021972656,
+        "requires_grad_fraction": 1.0
+      },
+      "rcka": {
+        "backward_multiplier_abs_sum": 3.0,
+        "coefficient_mean": 3.0,
+        "raw_loss_mean": 0.8159374892711639,
+        "requires_grad_fraction": 1.0
+      }
+    }
+  },
+  "runtime_setup_parameter_deltas": {
+    "frozen_qat_scale": {
+      "runtime_dtype": "torch.bfloat16",
+      "sample_max_abs_delta_during_setup": 0.015583992004394531,
+      "sample_parameter": "model.language_model.layers.0.mlp.gate_proj.log_scale"
+    },
+    "lora_A": {
+      "runtime_dtype": "torch.bfloat16",
+      "sample_max_abs_delta_during_setup": 0.0,
+      "sample_parameter": "model.language_model.layers.0.self_attn.q_proj.lora_A"
+    },
+    "lora_B": {
+      "runtime_dtype": "torch.bfloat16",
+      "sample_max_abs_delta_during_setup": 0.0,
+      "sample_parameter": "model.language_model.layers.0.self_attn.q_proj.lora_B"
+    },
+    "merger": {
+      "runtime_dtype": "torch.bfloat16",
+      "sample_max_abs_delta_during_setup": 0.0,
+      "sample_parameter": "model.visual.merger.norm.weight"
+    },
+    "qat_scale": {
+      "runtime_dtype": "torch.bfloat16",
+      "sample_max_abs_delta_during_setup": 0.029764175415039062,
+      "sample_parameter": "model.language_model.layers.0.self_attn.q_proj.log_scale"
+    }
+  },
+  "steps_recorded": 3,
+  "teacher_trainable_parameters": 0,
+  "trainable_inventory": {
+    "lora_A": {
+      "parameters": 7340032,
+      "tensors": 112
+    },
+    "lora_B": {
+      "parameters": 5505024,
+      "tensors": 112
+    },
+    "merger": {
+      "parameters": 25174016,
+      "tensors": 6
+    },
+    "other": {
+      "parameters": 0,
+      "tensors": 0
+    },
+    "qat_scale": {
+      "parameters": 2752512,
+      "tensors": 112
+    }
+  }
+}

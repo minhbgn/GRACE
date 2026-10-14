@@ -1,0 +1,10 @@
+{
+  "cache_regeneration_identical": true,
+  "cache_reuse_with_gpus_hidden": true,
+  "reused_checks": 4,
+  "unit_tests_passed": 3,
+  "concurrent_invocation_rejected": true,
+  "production_argument_change": "model_max_length: 2048 -> 4096 only",
+  "production_jobs_launched": false,
+  "documentation_links_valid": true
+}

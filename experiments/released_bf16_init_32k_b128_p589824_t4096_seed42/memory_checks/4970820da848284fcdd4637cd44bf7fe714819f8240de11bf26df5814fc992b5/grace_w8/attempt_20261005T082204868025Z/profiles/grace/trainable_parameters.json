@@ -1,0 +1,2280 @@
+{
+  "model.visual.merger.norm.weight": {
+    "shape": [
+      1024
+    ],
+    "parameters": 1024
+  },
+  "model.visual.merger.norm.bias": {
+    "shape": [
+      1024
+    ],
+    "parameters": 1024
+  },
+  "model.visual.merger.linear_fc1.weight": {
+    "shape": [
+      4096,
+      4096
+    ],
+    "parameters": 16777216
+  },
+  "model.visual.merger.linear_fc1.bias": {
+    "shape": [
+      4096
+    ],
+    "parameters": 4096
+  },
+  "model.visual.merger.linear_fc2.weight": {
+    "shape": [
+      2048,
+      4096
+    ],
+    "parameters": 8388608
+  },
+  "model.visual.merger.linear_fc2.bias": {
+    "shape": [
+      2048
+    ],
+    "parameters": 2048
+  },
+  "model.language_model.layers.0.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.0.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.0.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.0.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.0.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.0.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.0.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.0.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.0.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.0.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.0.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.0.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.1.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.1.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.1.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.1.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.1.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.1.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.1.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.1.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.1.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.1.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.1.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.1.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.2.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.2.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.2.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.2.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.2.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.2.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.2.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.2.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.2.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.2.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.2.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.2.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.3.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.3.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.3.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.3.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.3.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.3.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.3.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.3.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.3.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.3.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.3.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.3.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.4.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.4.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.4.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.4.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.4.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.4.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.4.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.4.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.4.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.4.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.4.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.4.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.5.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.5.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.5.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.5.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.5.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.5.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.5.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.5.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.5.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.5.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.5.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.5.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.6.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.6.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.6.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.6.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.6.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.6.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.6.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.6.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.6.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.6.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.6.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.6.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.7.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.7.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.7.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.7.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.7.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.7.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.7.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.7.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.7.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.7.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.7.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.7.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.8.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.8.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.8.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.8.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.8.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.8.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.8.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.8.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.8.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.8.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.8.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.8.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.9.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.9.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.9.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.9.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.9.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.9.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.9.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.9.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.9.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.9.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.9.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.9.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.10.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.10.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.10.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.10.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.10.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.10.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.10.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.10.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.10.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.10.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.10.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.10.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.11.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.11.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.11.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.11.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.11.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.11.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.11.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.11.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.11.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.11.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.11.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.11.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.12.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.12.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.12.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.12.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.12.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.12.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.12.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.12.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.12.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.12.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.12.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.12.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.13.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.13.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.13.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.13.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.13.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.13.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.13.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.13.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.13.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.13.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.13.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.13.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.14.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.14.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.14.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.14.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.14.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.14.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.14.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.14.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.14.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.14.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.14.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.14.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.15.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.15.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.15.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.15.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.15.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.15.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.15.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.15.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.15.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.15.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.15.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.15.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.16.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.16.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.16.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.16.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.16.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.16.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.16.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.16.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.16.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.16.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.16.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.16.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.17.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.17.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.17.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.17.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.17.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.17.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.17.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.17.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.17.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.17.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.17.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.17.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.18.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.18.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.18.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.18.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.18.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.18.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.18.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.18.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.18.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.18.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.18.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.18.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.19.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.19.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.19.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.19.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.19.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.19.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.19.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.19.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.19.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.19.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.19.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.19.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.20.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.20.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.20.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.20.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.20.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.20.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.20.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.20.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.20.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.20.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.20.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.20.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.21.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.21.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.21.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.21.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.21.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.21.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.21.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.21.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.21.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.21.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.21.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.21.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.22.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.22.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.22.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.22.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.22.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.22.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.22.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.22.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.22.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.22.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.22.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.22.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.23.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.23.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.23.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.23.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.23.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.23.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.23.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.23.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.23.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.23.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.23.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.23.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.24.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.24.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.24.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.24.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.24.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.24.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.24.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.24.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.24.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.24.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.24.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.24.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.25.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.25.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.25.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.25.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.25.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.25.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.25.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.25.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.25.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.25.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.25.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.25.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.26.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.26.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.26.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.26.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.26.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.26.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.26.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.26.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.26.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.26.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.26.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.26.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.27.self_attn.q_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.27.self_attn.q_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.27.self_attn.q_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.27.self_attn.k_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.27.self_attn.k_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.27.self_attn.k_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.27.self_attn.v_proj.log_scale": {
+    "shape": [
+      16384
+    ],
+    "parameters": 16384
+  },
+  "model.language_model.layers.27.self_attn.v_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.27.self_attn.v_proj.lora_B": {
+    "shape": [
+      1024,
+      32
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.27.self_attn.o_proj.log_scale": {
+    "shape": [
+      32768
+    ],
+    "parameters": 32768
+  },
+  "model.language_model.layers.27.self_attn.o_proj.lora_A": {
+    "shape": [
+      32,
+      2048
+    ],
+    "parameters": 65536
+  },
+  "model.language_model.layers.27.self_attn.o_proj.lora_B": {
+    "shape": [
+      2048,
+      32
+    ],
+    "parameters": 65536
+  }
+}

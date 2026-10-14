@@ -1,0 +1,114 @@
+{
+  "config": {
+    "architectures": [
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "dtype": "bfloat16",
+    "eos_token_id": 151645,
+    "image_token_id": 151655,
+    "model_type": "qwen3_vl",
+    "pad_token_id": 151643,
+    "qat": {
+      "bits": 4,
+      "group_size": 128,
+      "num_replaced": 196,
+      "skip_keywords": [
+        "visual",
+        "merger",
+        "lm_head",
+        "embed_tokens"
+      ]
+    },
+    "text_config": {
+      "attention_bias": false,
+      "attention_dropout": 0.0,
+      "bos_token_id": 151643,
+      "dtype": "bfloat16",
+      "eos_token_id": 151645,
+      "head_dim": 128,
+      "hidden_act": "silu",
+      "hidden_size": 2048,
+      "initializer_range": 0.02,
+      "intermediate_size": 6144,
+      "max_position_embeddings": 262144,
+      "model_type": "qwen3_vl_text",
+      "num_attention_heads": 16,
+      "num_hidden_layers": 28,
+      "num_key_value_heads": 8,
+      "rms_norm_eps": 1e-06,
+      "rope_scaling": {
+        "mrope_interleaved": true,
+        "mrope_section": [
+          24,
+          20,
+          20
+        ],
+        "rope_type": "default"
+      },
+      "rope_theta": 5000000,
+      "tie_word_embeddings": true,
+      "use_cache": true,
+      "vocab_size": 151936
+    },
+    "tie_word_embeddings": true,
+    "transformers_version": "4.57.0",
+    "use_cache": true,
+    "video_token_id": 151656,
+    "vision_config": {
+      "deepstack_visual_indexes": [
+        5,
+        11,
+        17
+      ],
+      "depth": 24,
+      "dtype": "bfloat16",
+      "hidden_act": "gelu_pytorch_tanh",
+      "hidden_size": 1024,
+      "in_channels": 3,
+      "initializer_range": 0.02,
+      "intermediate_size": 4096,
+      "model_type": "qwen3_vl",
+      "num_heads": 16,
+      "num_position_embeddings": 2304,
+      "out_hidden_size": 2048,
+      "patch_size": 16,
+      "spatial_merge_size": 2,
+      "temporal_patch_size": 2
+    },
+    "vision_end_token_id": 151653,
+    "vision_start_token_id": 151652
+  },
+  "files_sha256": {
+    "README.md": "b8f35e925f7b3fac090f64756283391b614768133754ee0ea6798e8a87607ca6",
+    "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+    "chat_template.jinja": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+    "config.json": "9e99f0af9792e5059a5716330d2b3d1f2905ee71a5edc52cbb926a79f99bd496",
+    "generation_config.json": "a0acd9cf47909f86b54951dbf2cfd2af3b0b36178211926760a3a27edb49378d",
+    "model.safetensors": "ae91abd697fb612024b1df73e725acc9fa322f7956a7e33d5a4d84d092604ed7",
+    "preprocessor_config.json": "f739d1302695368ad3bfb7f58bba1db3ca52512ab2801b4f1aeb592ac3ee8314",
+    "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+    "tokenizer.json": "3c3dfe474a8bbe89b0e83627fd9ff784ad71027f12fd8c618708c818e808789d",
+    "tokenizer_config.json": "f02f84273f92022291cf028f5fbb6478afa62413861ec2db44509faae378a4a3",
+    "trainer_state.json": "7dcebfe2fae6c1c7e5c82ae75eb427d6d4a2e5ff5cdfabf02988c3c8eee6cbd8",
+    "video_preprocessor_config.json": "c8c7e8b2836a658c8d7e4b0f4114909020498f2c7e60d2c4e9cf53fdc429ce10",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "generation_config": {
+    "do_sample": true,
+    "eos_token_id": [
+      151645,
+      151645,
+      151643
+    ],
+    "pad_token_id": 151643,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "transformers_version": "4.57.0"
+  },
+  "identity_verification": "local download metadata and explicit repository mapping",
+  "loading_format": "unpacked floating-point safetensors, Transformers Qwen3VL",
+  "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128",
+  "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-W4G128",
+  "revision": "57dcaeed3fd7739a0566bfc4b8651f451068825c"
+}

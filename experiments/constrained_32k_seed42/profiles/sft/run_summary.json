@@ -1,0 +1,16 @@
+{
+  "method": "sft",
+  "complete": true,
+  "profile": true,
+  "stop_reason": null,
+  "global_step": 3,
+  "metrics": {
+    "train_runtime": 83.4444,
+    "train_samples_per_second": 2.301,
+    "train_steps_per_second": 0.036,
+    "total_flos": 2156380270100480.0,
+    "train_loss": 0.5714892645676931
+  },
+  "peak_reserved_gib": 6.62109375,
+  "native_checkpoint": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/constrained_32k_seed42/profiles/sft/checkpoint-3"
+}

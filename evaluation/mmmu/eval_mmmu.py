@@ -10,14 +10,9 @@ The question text references images positionally as `<image 1>`, `<image 2>`,
 etc. We collect every referenced image in order and feed them to the model
 alongside the prompt; remaining image columns are ignored.
 
-Scoring:
-  - multiple-choice: extract first valid option letter from the response.
-  - open: case-insensitive normalized match against the gold answer
-          (also tries number extraction when the gold parses as a float).
-    This is a simple rule-based proxy for the official GPT-judge eval, so
-    open-ended numbers will roughly match but free-text recall will be
-    slightly under-counted. Use the gpt-judge path in evaluation/mmmu/ if
-    you need leaderboard-comparable open scores.
+Scoring: deterministic answer-position-aware MC extraction and pinned MMMU
+open-answer normalization/matching (typed candidate list). --local_scoring adds
+unified row diagnostics and primary-metric metadata. See README_local_development.md.
 
 Single-process or sharded over GPUs via torchrun. Each rank writes a JSONL
 shard; rank 0 merges and prints metrics at the end.
@@ -26,6 +21,11 @@ shard; rank 0 merges and prints metrics at the end.
 from __future__ import annotations
 
 import argparse
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from matched_protocol import add_protocol_arguments, apply_protocol, protocol_metadata
+from local_scoring import finalize_rows, generation_record, prepare_row
 import ast
 import io
 import json
@@ -146,42 +146,13 @@ def format_prompt_open(question) -> str:
 
 
 def parse_choice(response: str, n_choices: int) -> str:
-    valid = set(LETTERS[:n_choices])
-    for ch in response.strip().upper():
-        if ch in valid:
-            return ch
-    return ""
+    from local_scoring import choice
+    return choice(response, LETTERS[:n_choices])[0]
 
 
-def _normalize(s: str) -> str:
-    s = s.lower().strip()
-    s = s.translate(str.maketrans("", "", string.punctuation))
-    return " ".join(s.split())
-
-
-def _try_number(s: str):
-    try:
-        return float(s.strip().replace(",", "").rstrip("."))
-    except ValueError:
-        return None
-
-
-def score_open(response: str, gold: str) -> bool:
-    raw = response.strip()
-    if not raw or not gold:
-        return False
-    g_num = _try_number(gold)
-    if g_num is not None:
-        m = re.search(r"-?\d+(?:\.\d+)?", raw)
-        if m:
-            r_num = _try_number(m.group(0))
-            if r_num is not None and abs(r_num - g_num) < 1e-4:
-                return True
-    r_norm = _normalize(raw)
-    g_norm = _normalize(gold)
-    if not g_norm:
-        return False
-    return g_norm == r_norm or g_norm in r_norm.split()
+def score_open(response: str, gold) -> bool:
+    from local_scoring import open_answer
+    return open_answer(response, gold)[1]
 
 
 def build_inputs(processor, images, prompt_text, device):
@@ -201,16 +172,19 @@ def build_inputs(processor, images, prompt_text, device):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model_path", required=True)
+    ap.add_argument("--processor_path", default=None,
+                    help="Optional saved processor to match the comparison image budget.")
     ap.add_argument("--data_dir", required=True,
                     help="MMMU root containing per-subject folders with parquet files.")
     ap.add_argument("--split", default="validation",
                     choices=["validation", "dev", "test"])
     ap.add_argument("--output", required=True)
     ap.add_argument("--max_new_tokens", type=int, default=32,
-                    help="Used for open-ended; multiple-choice forces 8.")
+                    help="Open-answer cap; MC uses --mc_max_new_tokens (default 8).")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--attn", default="flash_attention_2",
                     choices=["flash_attention_2", "sdpa", "eager"])
+    add_protocol_arguments(ap)
     args = ap.parse_args()
 
     rank = int(os.environ.get("RANK", 0))
@@ -229,9 +203,10 @@ def main():
     ).to(device)
     model.eval()
 
-    processor = AutoProcessor.from_pretrained(args.model_path)
+    processor = AutoProcessor.from_pretrained(args.processor_path or args.model_path)
     if processor.tokenizer.pad_token_id is None:
         processor.tokenizer.pad_token_id = processor.tokenizer.eos_token_id
+    apply_protocol(args, model, processor)
 
     df = load_data(args.data_dir, args.split)
     if args.limit > 0:
@@ -251,6 +226,7 @@ def main():
         for row in tqdm(shard, disable=(rank != 0), desc=f"rank{rank}"):
             qtype = str(row.get("question_type") or "multiple-choice").lower()
             gold_raw = row.get("answer", "")
+            generation = None
             try:
                 images = collect_images(row)
                 if qtype.startswith("multi"):
@@ -258,7 +234,7 @@ def main():
                     if not options:
                         raise ValueError("multi-choice row has no options")
                     prompt = format_prompt_mc(row["question"], options)
-                    max_toks = 8
+                    max_toks = args.mc_max_new_tokens
                 else:
                     options = []
                     prompt = format_prompt_open(row["question"])
@@ -273,6 +249,7 @@ def main():
                         pad_token_id=processor.tokenizer.pad_token_id,
                     )
                 gen = out[0][inputs["input_ids"].shape[1]:]
+                generation = generation_record(gen.tolist(), model.generation_config.eos_token_id, max_toks)
                 raw = processor.tokenizer.decode(gen, skip_special_tokens=True)
 
                 if qtype.startswith("multi"):
@@ -285,9 +262,10 @@ def main():
                     correct = score_open(pred, gold)
                 err = None
             except Exception as e:
-                raw, pred, gold, correct, err = "", "", str(gold_raw), False, repr(e)
+                raw, pred, correct, err = "", "", False, repr(e)
+                gold = str(gold_raw).strip().upper() if qtype.startswith("multi") else str(gold_raw).strip()
 
-            fout.write(json.dumps({
+            fout.write(json.dumps(prepare_row(args, "mmmu", {
                 "id": row.get("id"),
                 "subject": row.get("__subject"),
                 "subfield": row.get("subfield"),
@@ -297,8 +275,9 @@ def main():
                 "gold": gold,
                 "correct": bool(correct),
                 "raw": raw,
+                "generation": generation,
                 "error": err,
-            }, ensure_ascii=False) + "\n")
+            }), ensure_ascii=False) + "\n")
             fout.flush()
 
     if rank == 0:
@@ -318,6 +297,7 @@ def main():
             for line in f:
                 all_results.append(json.loads(line))
 
+    local_summary = finalize_rows(args, "mmmu", all_results)
     n = len(all_results)
     correct = sum(1 for r in all_results if r["correct"])
     errors = sum(1 for r in all_results if r["error"] is not None)
@@ -337,7 +317,10 @@ def main():
                 for k, (c, n_) in sorted(d.items())}
 
     summary = {
+        **protocol_metadata(args, multiple_choice_max_new_tokens=args.mc_max_new_tokens),
         "model_path": args.model_path,
+        "processor_path": args.processor_path or args.model_path,
+        "image_processor_size": dict(processor.image_processor.size),
         "data_dir": args.data_dir,
         "split": args.split,
         "total": n,
@@ -347,6 +330,11 @@ def main():
         "by_subject": fmt(by_subj),
         "by_question_type": fmt(by_type),
     }
+    summary.update(local_summary)
+    if args.local_scoring:
+        score = summary['primary_score']
+        score_text = 'not reported for partial circular groups' if score is None else f'{100 * score:.3f}%'
+        print(f"Primary local metric: {summary['primary_metric']} = {score_text}")
     with open(args.output, "w") as f:
         json.dump({"summary": summary, "results": all_results}, f, indent=2)
 

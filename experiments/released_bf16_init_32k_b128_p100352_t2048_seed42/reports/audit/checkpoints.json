@@ -1,0 +1,1059 @@
+{
+  "checked_at_utc": "2026-09-25T03:40:26Z",
+  "models": {
+    "vanilla_2b": {
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+      "repository": "Qwen/Qwen3-VL-2B-Instruct",
+      "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "files": {
+        "README.md": {
+          "sha256": "5fc5be1ca9a3910399bd6239ee5086ab5d82a2a59c5d2b00e887a8835cc110e4",
+          "bytes": 7136,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "13afcb1d2c695b57ebe4ee740db48671069566ce",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "chat_template.json": {
+          "sha256": "6f8a6a55027e3da5160105556cda5dd69f6423f1c32645f6730d32de7773d0c4",
+          "bytes": 5502,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "e49e75bdda104c8de941eb20e0b3765184fb27bc",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "config.json": {
+          "sha256": "bec4b3d446efa05807365c9e1cec03ac590836879d02f3a6da879971154bdd3b",
+          "bytes": 1505,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "0cd8c646eb55794594b14fefcd1d3acea5cc000f",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "generation_config.json": {
+          "sha256": "1e241830b48b397cb0900101421df5450baddc7adf01e5fc86b5615865f3bae4",
+          "bytes": 269,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "7bb37933d2d86e4ceaabcc6540be989658f238e9",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "model.safetensors": {
+          "sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+          "bytes": 4255140312,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+          "hub_hash_type": "sha256",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "preprocessor_config.json": {
+          "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+          "bytes": 390,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "2ea84a437d448ff71b08df68fdd949d5cc4ebb64",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "tokenizer.json": {
+          "sha256": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+          "bytes": 7032403,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "c6cc1014128b19d1fc46b1d30a23e3b1d35db421",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "tokenizer_config.json": {
+          "sha256": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+          "bytes": 10868,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "d3d3763207692c78780f4bf42d4dadf49a5c8012",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "video_preprocessor_config.json": {
+          "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+          "bytes": 385,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "vocab.json": {
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "bytes": 2776833,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "4783fe10ac3adce15ac8f358ef5462739852c569",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        }
+      },
+      "resolved_repository": "Qwen/Qwen3-VL-2B-Instruct",
+      "verified_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "latest_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "tensor_count": 625,
+      "tensor_dtypes": [
+        "BF16"
+      ],
+      "adapter_or_packed_keys": [],
+      "qat_config": null,
+      "weights_sha256": {
+        "model.safetensors": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0"
+      },
+      "stored_tensor_elements": 2127532032
+    },
+    "vanilla_8b_teacher": {
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+      "repository": "Qwen/Qwen3-VL-8B-Instruct",
+      "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "files": {
+        "README.md": {
+          "sha256": "6d5d06e0c3f069097002445d30dce9ee107db3afaf15563f09e6df49b8dcb4d7",
+          "bytes": 7133,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "06fb2c8220b4fb51ccca87dd694ef9d240c36745",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "chat_template.json": {
+          "sha256": "5c72a170d2a4a1a3bc5adad2e689ae28138a9700e5b8c96c0266331e86c0acce",
+          "bytes": 5499,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "1081bacf1af7c7c6de4a585ce02cd0fd34e382da",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "config.json": {
+          "sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+          "bytes": 1474,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "0e2df614c5fe1ad2b6b540c8625bebf2d7ec43ca",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "generation_config.json": {
+          "sha256": "8469742d1fce0de951c8909b26a2c0c0d8490837ce476efb114da9e0cefc4d44",
+          "bytes": 269,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "e116347d7ef42621c7a5957f82c015c38d939c1f",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "model-00001-of-00004.safetensors": {
+          "sha256": "d5d0aef0eb170fc7453a296c43c0849a56f510555d3588e4fd662bb35490aefa",
+          "bytes": 4902275944,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "d5d0aef0eb170fc7453a296c43c0849a56f510555d3588e4fd662bb35490aefa",
+          "hub_hash_type": "sha256",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "model-00002-of-00004.safetensors": {
+          "sha256": "8be88fb5501e4d5719a6d4cc212e6a13480330e74f3e8c77daa1a68f199106b5",
+          "bytes": 4915962496,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "8be88fb5501e4d5719a6d4cc212e6a13480330e74f3e8c77daa1a68f199106b5",
+          "hub_hash_type": "sha256",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "model-00003-of-00004.safetensors": {
+          "sha256": "83de00eafe6e0d57ccd009dbcf71c9974d74df2f016c27afb7e95aafd16b2192",
+          "bytes": 4999831048,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "83de00eafe6e0d57ccd009dbcf71c9974d74df2f016c27afb7e95aafd16b2192",
+          "hub_hash_type": "sha256",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "model-00004-of-00004.safetensors": {
+          "sha256": "0a88b98e9f96270973f567e6a2c103ede6ccdf915ca3075e21c755604d0377a5",
+          "bytes": 2716270024,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "0a88b98e9f96270973f567e6a2c103ede6ccdf915ca3075e21c755604d0377a5",
+          "hub_hash_type": "sha256",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "model.safetensors.index.json": {
+          "sha256": "520b2e05079402e9468a8701d03d1154d14b2599593afb6effa7fb60c1bff070",
+          "bytes": 67759,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "5857ec62530eb589b1876034dd5386f1d98131a6",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "preprocessor_config.json": {
+          "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+          "bytes": 390,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "2ea84a437d448ff71b08df68fdd949d5cc4ebb64",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "tokenizer.json": {
+          "sha256": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+          "bytes": 7032403,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "c6cc1014128b19d1fc46b1d30a23e3b1d35db421",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "tokenizer_config.json": {
+          "sha256": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+          "bytes": 10868,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "d3d3763207692c78780f4bf42d4dadf49a5c8012",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "video_preprocessor_config.json": {
+          "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+          "bytes": 385,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "vocab.json": {
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "bytes": 2776833,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "4783fe10ac3adce15ac8f358ef5462739852c569",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        }
+      },
+      "resolved_repository": "Qwen/Qwen3-VL-8B-Instruct",
+      "verified_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "latest_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "tensor_count": 750,
+      "tensor_dtypes": [
+        "BF16"
+      ],
+      "adapter_or_packed_keys": [],
+      "qat_config": null,
+      "weights_sha256": {
+        "model-00001-of-00004.safetensors": "d5d0aef0eb170fc7453a296c43c0849a56f510555d3588e4fd662bb35490aefa",
+        "model-00002-of-00004.safetensors": "8be88fb5501e4d5719a6d4cc212e6a13480330e74f3e8c77daa1a68f199106b5",
+        "model-00003-of-00004.safetensors": "83de00eafe6e0d57ccd009dbcf71c9974d74df2f016c27afb7e95aafd16b2192",
+        "model-00004-of-00004.safetensors": "0a88b98e9f96270973f567e6a2c103ede6ccdf915ca3075e21c755604d0377a5"
+      },
+      "stored_tensor_elements": 8767123696
+    },
+    "sft_2b": {
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "chat_template.jinja": {
+          "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+          "bytes": 5292,
+          "matches_evaluation_manifest": true
+        },
+        "config.json": {
+          "sha256": "c359854110723183fa3c396cafa6bd225c0c4cb28bbc9d6be2e5e6add68d5dc2",
+          "bytes": 1912,
+          "matches_evaluation_manifest": true
+        },
+        "generation_config.json": {
+          "sha256": "f8b689677eaf828e409db5b063a055c92c17c58b12a4338f872858fb31c491c2",
+          "bytes": 227,
+          "matches_evaluation_manifest": true
+        },
+        "launch_recipe.json": {
+          "sha256": "c0cf3cb2b13f0d8971117c1932b417efd7f9920e19cb46139bdad91f27779464",
+          "bytes": 3613,
+          "matches_evaluation_manifest": true
+        },
+        "model.safetensors": {
+          "sha256": "671b70b92fe8936cda8204b98f57cf475073f43d0392bebca6315cda159c4874",
+          "bytes": 4877470336,
+          "matches_evaluation_manifest": true
+        },
+        "processor_config.json": {
+          "sha256": "f4d2a371205b86077b9f174dd44a2c45424c2ab2e0fbf54d977fb3b04cab6ce1",
+          "bytes": 1186,
+          "matches_evaluation_manifest": true
+        },
+        "run_summary.json": {
+          "sha256": "87d3e03c3688f2667dcdcf909ec4ffaa6793d34ba9264c62f5d4ccd6f24dbde8",
+          "bytes": 507,
+          "matches_evaluation_manifest": true
+        },
+        "tokenizer.json": {
+          "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+          "bytes": 11422650,
+          "matches_evaluation_manifest": true
+        },
+        "tokenizer_config.json": {
+          "sha256": "4dd535488728b5c62fba68d5e5ed0ea272cb040b9468d2a436f51f88f904738a",
+          "bytes": 731,
+          "matches_evaluation_manifest": true
+        },
+        "trainable_parameters.json": {
+          "sha256": "a5f9df6d5b5ade8eb771135c875958b98d567ea422d8232ba2ded4d2f78f947e",
+          "bytes": 30588,
+          "matches_evaluation_manifest": true
+        },
+        "trainer_state.json": {
+          "sha256": "b0b3a4f8b7e52d3abc5b4bf99620984d8d2ee33c730c77e933bb0325d424685a",
+          "bytes": 6244,
+          "matches_evaluation_manifest": true
+        }
+      },
+      "tensor_count": 626,
+      "tensor_dtypes": [
+        "BF16"
+      ],
+      "adapter_or_packed_keys": [],
+      "qat_config": null,
+      "weights_sha256": {
+        "model.safetensors": "671b70b92fe8936cda8204b98f57cf475073f43d0392bebca6315cda159c4874"
+      },
+      "stored_tensor_elements": 2438696960
+    },
+    "released_bf16": {
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+      "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-BF16",
+      "revision": "82f9a267340f65a3619be0e19daf6582d3998a5f",
+      "files": {
+        "README.md": {
+          "sha256": "b9948639bac771c5a169dcf60791a65aa05be983e30188b37f6d4c1056e41b0c",
+          "bytes": 7045,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "61369b8ac9fc50fb91fac894f189f6d975b380b8",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "chat_template.jinja": {
+          "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+          "bytes": 5292,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "124386803f142761528f710e77ae483f5f8c4fc4",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "config.json": {
+          "sha256": "63f0e7827a19da447a1cc9258d348bbaa0a17933f19fc294a517531b50b1d752",
+          "bytes": 1682,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "ff54c5718f9932bb86773ea06d2d422a6d239723",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "generation_config.json": {
+          "sha256": "f8b689677eaf828e409db5b063a055c92c17c58b12a4338f872858fb31c491c2",
+          "bytes": 227,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "2e7f38f15444edbe456de89157cc08dfa3dfcad3",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "model.safetensors": {
+          "sha256": "4b522cda73d4ebd792e97a89cbca51091287b65c87e705be53f56c035715bfd3",
+          "bytes": 4877470336,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "4b522cda73d4ebd792e97a89cbca51091287b65c87e705be53f56c035715bfd3",
+          "hub_hash_type": "sha256",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "processor_config.json": {
+          "sha256": "479b624a5b02852c3947d0b88e2570bb10464d583ad45092e2028099614bd820",
+          "bytes": 1189,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "4efd29be743a62da747b9ea2905eed648e928e92",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "tokenizer.json": {
+          "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+          "bytes": 11422650,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+          "hub_hash_type": "sha256",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "tokenizer_config.json": {
+          "sha256": "02d21d5b995f73c8757b09343c4b5e9294ef9413e36ebe37e01de8f225e490f4",
+          "bytes": 759,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "117a49ecdc45c3e78854311c8c909c9505cc37c2",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "trainer_state.json": {
+          "sha256": "e8d0b0c77e6780c2bbbc8e306d081ff9d02ebbcba9bdbbd61235c859dd4117e7",
+          "bytes": 62142,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "edce767f2c0421d67682033cb4855b8b1f3b0c52",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        }
+      },
+      "resolved_repository": "ForeverBlue/Qwen3-VL-2B-GRACE-BF16",
+      "verified_revision": "82f9a267340f65a3619be0e19daf6582d3998a5f",
+      "latest_revision": "82f9a267340f65a3619be0e19daf6582d3998a5f",
+      "tensor_count": 626,
+      "tensor_dtypes": [
+        "BF16"
+      ],
+      "adapter_or_packed_keys": [],
+      "qat_config": null,
+      "weights_sha256": {
+        "model.safetensors": "4b522cda73d4ebd792e97a89cbca51091287b65c87e705be53f56c035715bfd3"
+      },
+      "stored_tensor_elements": 2438696960
+    },
+    "released_grace_w4": {
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128",
+      "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-W4G128",
+      "revision": "57dcaeed3fd7739a0566bfc4b8651f451068825c",
+      "files": {
+        "README.md": {
+          "sha256": "b8f35e925f7b3fac090f64756283391b614768133754ee0ea6798e8a87607ca6",
+          "bytes": 9577,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "bea3e6af034a26b0b8e346878a45dce2c0a32584",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "added_tokens.json": {
+          "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+          "bytes": 707,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "b54f9135e44c1e81047e8d05cb027af8bc039eed",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "chat_template.jinja": {
+          "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+          "bytes": 5292,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "124386803f142761528f710e77ae483f5f8c4fc4",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "config.json": {
+          "sha256": "9e99f0af9792e5059a5716330d2b3d1f2905ee71a5edc52cbb926a79f99bd496",
+          "bytes": 1799,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "d466a0e5cb26ad25b03e85bfe5a334dc285997b1",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "generation_config.json": {
+          "sha256": "a0acd9cf47909f86b54951dbf2cfd2af3b0b36178211926760a3a27edb49378d",
+          "bytes": 199,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "88d651032395d7458030adcb771cf4748746cdaa",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "model.safetensors": {
+          "sha256": "ae91abd697fb612024b1df73e725acc9fa322f7956a7e33d5a4d84d092604ed7",
+          "bytes": 4877470336,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "ae91abd697fb612024b1df73e725acc9fa322f7956a7e33d5a4d84d092604ed7",
+          "hub_hash_type": "sha256",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "preprocessor_config.json": {
+          "sha256": "f739d1302695368ad3bfb7f58bba1db3ca52512ab2801b4f1aeb592ac3ee8314",
+          "bytes": 779,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "6101e28ccb2a1432b91e09b96da5ff40c597a826",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "special_tokens_map.json": {
+          "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+          "bytes": 613,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "ac23c0aaa2434523c494330aeb79c58395378103",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "tokenizer.json": {
+          "sha256": "3c3dfe474a8bbe89b0e83627fd9ff784ad71027f12fd8c618708c818e808789d",
+          "bytes": 11422648,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "3c3dfe474a8bbe89b0e83627fd9ff784ad71027f12fd8c618708c818e808789d",
+          "hub_hash_type": "sha256",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "tokenizer_config.json": {
+          "sha256": "f02f84273f92022291cf028f5fbb6478afa62413861ec2db44509faae378a4a3",
+          "bytes": 5470,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "9ca38285af5c4085fd1f1ea1493c445bdd9e21aa",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "trainer_state.json": {
+          "sha256": "7dcebfe2fae6c1c7e5c82ae75eb427d6d4a2e5ff5cdfabf02988c3c8eee6cbd8",
+          "bytes": 51016,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "bea3ce2029b2033ad5a92843b10e30ee50601b40",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "video_preprocessor_config.json": {
+          "sha256": "c8c7e8b2836a658c8d7e4b0f4114909020498f2c7e60d2c4e9cf53fdc429ce10",
+          "bytes": 815,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "a24521a3d9d2f99a8565f15c95232512271b6a39",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "vocab.json": {
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "bytes": 2776833,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "4783fe10ac3adce15ac8f358ef5462739852c569",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        }
+      },
+      "resolved_repository": "ForeverBlue/Qwen3-VL-2B-GRACE-W4G128",
+      "verified_revision": "57dcaeed3fd7739a0566bfc4b8651f451068825c",
+      "latest_revision": "57dcaeed3fd7739a0566bfc4b8651f451068825c",
+      "tensor_count": 626,
+      "tensor_dtypes": [
+        "BF16"
+      ],
+      "adapter_or_packed_keys": [],
+      "qat_config": {
+        "bits": 4,
+        "group_size": 128,
+        "num_replaced": 196,
+        "skip_keywords": [
+          "visual",
+          "merger",
+          "lm_head",
+          "embed_tokens"
+        ]
+      },
+      "weights_sha256": {
+        "model.safetensors": "ae91abd697fb612024b1df73e725acc9fa322f7956a7e33d5a4d84d092604ed7"
+      },
+      "stored_tensor_elements": 2438696960
+    },
+    "released_grace_w8": {
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W8G128",
+      "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-W8G128",
+      "revision": "32c351aed1388ae602d59f7c26101dd16aca8c80",
+      "files": {
+        "README.md": {
+          "sha256": "2895660a22fb32acdc5bef84dc0ccaedfe557dfa9e2f728d29f0355e12213111",
+          "bytes": 8760,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "2891cc826007bebcd8a63f1dab472a6e41b9f971",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "added_tokens.json": {
+          "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+          "bytes": 707,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "b54f9135e44c1e81047e8d05cb027af8bc039eed",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "chat_template.jinja": {
+          "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+          "bytes": 5292,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "124386803f142761528f710e77ae483f5f8c4fc4",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "config.json": {
+          "sha256": "e93ae361127a0c56b1b02f1a8903548b464501495e65e788a83b82a304794ee4",
+          "bytes": 1799,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "5483cfee361570142053ee737c0bdfd061b0a719",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "generation_config.json": {
+          "sha256": "a0acd9cf47909f86b54951dbf2cfd2af3b0b36178211926760a3a27edb49378d",
+          "bytes": 199,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "88d651032395d7458030adcb771cf4748746cdaa",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "model.safetensors": {
+          "sha256": "15fd60d2fe5ae96a739c8ae644dd34030f9cfda69c170f314f1ccb943763409f",
+          "bytes": 4877470336,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "15fd60d2fe5ae96a739c8ae644dd34030f9cfda69c170f314f1ccb943763409f",
+          "hub_hash_type": "sha256",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "preprocessor_config.json": {
+          "sha256": "8b2f11a694a5740977cf09939228b41275ac5265ea68efd2e6aaaeba0b08c1c3",
+          "bytes": 777,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "7acc6febc38ea513456f25d3800d3f0911d81694",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "special_tokens_map.json": {
+          "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+          "bytes": 613,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "ac23c0aaa2434523c494330aeb79c58395378103",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "tokenizer.json": {
+          "sha256": "3c3dfe474a8bbe89b0e83627fd9ff784ad71027f12fd8c618708c818e808789d",
+          "bytes": 11422648,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "3c3dfe474a8bbe89b0e83627fd9ff784ad71027f12fd8c618708c818e808789d",
+          "hub_hash_type": "sha256",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "tokenizer_config.json": {
+          "sha256": "f02f84273f92022291cf028f5fbb6478afa62413861ec2db44509faae378a4a3",
+          "bytes": 5470,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "9ca38285af5c4085fd1f1ea1493c445bdd9e21aa",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "trainer_state.json": {
+          "sha256": "26e3a55c073b210ca6485911a448606964c517753d28e70d80549de769d08887",
+          "bytes": 51106,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "b55e7d92bf58fb2caf88848ea7559f22c2b1b4fd",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "video_preprocessor_config.json": {
+          "sha256": "c8c7e8b2836a658c8d7e4b0f4114909020498f2c7e60d2c4e9cf53fdc429ce10",
+          "bytes": 815,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "a24521a3d9d2f99a8565f15c95232512271b6a39",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        },
+        "vocab.json": {
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "bytes": 2776833,
+          "matches_evaluation_manifest": true,
+          "hub_hash": "4783fe10ac3adce15ac8f358ef5462739852c569",
+          "hub_hash_type": "git_blob_sha1",
+          "matches_hub": true,
+          "same_as_latest_hub": true
+        }
+      },
+      "resolved_repository": "ForeverBlue/Qwen3-VL-2B-GRACE-W8G128",
+      "verified_revision": "32c351aed1388ae602d59f7c26101dd16aca8c80",
+      "latest_revision": "32c351aed1388ae602d59f7c26101dd16aca8c80",
+      "tensor_count": 626,
+      "tensor_dtypes": [
+        "BF16"
+      ],
+      "adapter_or_packed_keys": [],
+      "qat_config": {
+        "bits": 8,
+        "group_size": 128,
+        "num_replaced": 196,
+        "skip_keywords": [
+          "visual",
+          "merger",
+          "lm_head",
+          "embed_tokens"
+        ]
+      },
+      "weights_sha256": {
+        "model.safetensors": "15fd60d2fe5ae96a739c8ae644dd34030f9cfda69c170f314f1ccb943763409f"
+      },
+      "stored_tensor_elements": 2438696960
+    },
+    "qat_w4": {
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "chat_template.jinja": {
+          "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+          "bytes": 5292,
+          "matches_evaluation_manifest": true
+        },
+        "config.json": {
+          "sha256": "f1e1d2fd1a0813dcf499c25947698338926a63598714b80f6361115e17b3e817",
+          "bytes": 2090,
+          "matches_evaluation_manifest": true
+        },
+        "generation_config.json": {
+          "sha256": "f8b689677eaf828e409db5b063a055c92c17c58b12a4338f872858fb31c491c2",
+          "bytes": 227,
+          "matches_evaluation_manifest": true
+        },
+        "launch_recipe.json": {
+          "sha256": "04560f56a962d86f0c098acf88d697a91bfae3a23ca79ae776371989ca27560a",
+          "bytes": 4239,
+          "matches_evaluation_manifest": true
+        },
+        "model.safetensors": {
+          "sha256": "40658cb296583a7a1bf5b98f18749c5d258968ce17eaca89221f0dc5ca960768",
+          "bytes": 4877470336,
+          "matches_evaluation_manifest": true
+        },
+        "processor_config.json": {
+          "sha256": "f4d2a371205b86077b9f174dd44a2c45424c2ab2e0fbf54d977fb3b04cab6ce1",
+          "bytes": 1186,
+          "matches_evaluation_manifest": true
+        },
+        "run_summary.json": {
+          "sha256": "1004584078e5fb120e8a5f9b07e9213f5d58299d2622f3b856370476fdf9d632",
+          "bytes": 522,
+          "matches_evaluation_manifest": true
+        },
+        "tokenizer.json": {
+          "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+          "bytes": 11422650,
+          "matches_evaluation_manifest": true
+        },
+        "tokenizer_config.json": {
+          "sha256": "d634041a0870f37eb21586dea476bb1ef1ad41337e16eeace3a3427c3b2cc062",
+          "bytes": 758,
+          "matches_evaluation_manifest": true
+        },
+        "trainable_parameters.json": {
+          "sha256": "6b3d9b57bd4d2b0bdebafcccb5754d21a9b52c42e876893c8a81c2f4c7728ffb",
+          "bytes": 44884,
+          "matches_evaluation_manifest": true
+        },
+        "trainer_state.json": {
+          "sha256": "1fea91fc2083225f988f76581cc4f2522b68ed2ceaa3ded8e1af6ad010b58816",
+          "bytes": 6249,
+          "matches_evaluation_manifest": true
+        }
+      },
+      "tensor_count": 626,
+      "tensor_dtypes": [
+        "BF16"
+      ],
+      "adapter_or_packed_keys": [],
+      "qat_config": {
+        "bits": 4,
+        "group_size": 128,
+        "num_replaced": 196,
+        "skip_keywords": [
+          "visual",
+          "merger",
+          "lm_head",
+          "embed_tokens"
+        ]
+      },
+      "weights_sha256": {
+        "model.safetensors": "40658cb296583a7a1bf5b98f18749c5d258968ce17eaca89221f0dc5ca960768"
+      },
+      "stored_tensor_elements": 2438696960
+    },
+    "grace_w4": {
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "chat_template.jinja": {
+          "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+          "bytes": 5292,
+          "matches_evaluation_manifest": true
+        },
+        "config.json": {
+          "sha256": "f1e1d2fd1a0813dcf499c25947698338926a63598714b80f6361115e17b3e817",
+          "bytes": 2090,
+          "matches_evaluation_manifest": true
+        },
+        "generation_config.json": {
+          "sha256": "f8b689677eaf828e409db5b063a055c92c17c58b12a4338f872858fb31c491c2",
+          "bytes": 227,
+          "matches_evaluation_manifest": true
+        },
+        "launch_recipe.json": {
+          "sha256": "af8b83d49db0ea3822562d84b548046c9336f5b06d21dbc99cb9e6e505ffbc33",
+          "bytes": 4241,
+          "matches_evaluation_manifest": true
+        },
+        "model.safetensors": {
+          "sha256": "4ba2c770509e0c8d81cd4205f40edc5dc19fc2bba43f2197822c5ab4ce6d9eaf",
+          "bytes": 4877470336,
+          "matches_evaluation_manifest": true
+        },
+        "processor_config.json": {
+          "sha256": "f4d2a371205b86077b9f174dd44a2c45424c2ab2e0fbf54d977fb3b04cab6ce1",
+          "bytes": 1186,
+          "matches_evaluation_manifest": true
+        },
+        "run_summary.json": {
+          "sha256": "5f0360133e82de5a073e8635dd837777d00b44fe9fa35ef7f0b537a2c2368f3a",
+          "bytes": 525,
+          "matches_evaluation_manifest": true
+        },
+        "tokenizer.json": {
+          "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+          "bytes": 11422650,
+          "matches_evaluation_manifest": true
+        },
+        "tokenizer_config.json": {
+          "sha256": "d634041a0870f37eb21586dea476bb1ef1ad41337e16eeace3a3427c3b2cc062",
+          "bytes": 758,
+          "matches_evaluation_manifest": true
+        },
+        "trainable_parameters.json": {
+          "sha256": "6b3d9b57bd4d2b0bdebafcccb5754d21a9b52c42e876893c8a81c2f4c7728ffb",
+          "bytes": 44884,
+          "matches_evaluation_manifest": true
+        },
+        "trainer_state.json": {
+          "sha256": "a89f62cdf242f2baf6fe4f5cc29edbef472188b0c4ede0b6faeb60954b7f0605",
+          "bytes": 8806,
+          "matches_evaluation_manifest": true
+        }
+      },
+      "tensor_count": 626,
+      "tensor_dtypes": [
+        "BF16"
+      ],
+      "adapter_or_packed_keys": [],
+      "qat_config": {
+        "bits": 4,
+        "group_size": 128,
+        "num_replaced": 196,
+        "skip_keywords": [
+          "visual",
+          "merger",
+          "lm_head",
+          "embed_tokens"
+        ]
+      },
+      "weights_sha256": {
+        "model.safetensors": "4ba2c770509e0c8d81cd4205f40edc5dc19fc2bba43f2197822c5ab4ce6d9eaf"
+      },
+      "stored_tensor_elements": 2438696960
+    },
+    "qat_w8": {
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "chat_template.jinja": {
+          "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+          "bytes": 5292,
+          "matches_evaluation_manifest": true
+        },
+        "config.json": {
+          "sha256": "06f9bff87b3230678fdf07c316bd755654f7385716262fac456b3aa9f5b19408",
+          "bytes": 2090,
+          "matches_evaluation_manifest": true
+        },
+        "generation_config.json": {
+          "sha256": "f8b689677eaf828e409db5b063a055c92c17c58b12a4338f872858fb31c491c2",
+          "bytes": 227,
+          "matches_evaluation_manifest": true
+        },
+        "launch_recipe.json": {
+          "sha256": "e874b5db579e041aa0189de3339497d447ace10c7684e4804b5f80be8b42f4c2",
+          "bytes": 4239,
+          "matches_evaluation_manifest": true
+        },
+        "model.safetensors": {
+          "sha256": "e2e0cd27466c047876c0bd60cbbc26126bf43d5631d27c55c4b60f4f230177e6",
+          "bytes": 4877470336,
+          "matches_evaluation_manifest": true
+        },
+        "processor_config.json": {
+          "sha256": "f4d2a371205b86077b9f174dd44a2c45424c2ab2e0fbf54d977fb3b04cab6ce1",
+          "bytes": 1186,
+          "matches_evaluation_manifest": true
+        },
+        "run_summary.json": {
+          "sha256": "46b3e3c6344abdc8902052ab8b56c0897b4822f8cc51a82a32514e949b7a5b42",
+          "bytes": 522,
+          "matches_evaluation_manifest": true
+        },
+        "tokenizer.json": {
+          "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+          "bytes": 11422650,
+          "matches_evaluation_manifest": true
+        },
+        "tokenizer_config.json": {
+          "sha256": "d634041a0870f37eb21586dea476bb1ef1ad41337e16eeace3a3427c3b2cc062",
+          "bytes": 758,
+          "matches_evaluation_manifest": true
+        },
+        "trainable_parameters.json": {
+          "sha256": "6b3d9b57bd4d2b0bdebafcccb5754d21a9b52c42e876893c8a81c2f4c7728ffb",
+          "bytes": 44884,
+          "matches_evaluation_manifest": true
+        },
+        "trainer_state.json": {
+          "sha256": "4142b00623461f966ab7d86a3f8e1b99b220dcedd9deaccf7fa29c362bced116",
+          "bytes": 6254,
+          "matches_evaluation_manifest": true
+        }
+      },
+      "tensor_count": 626,
+      "tensor_dtypes": [
+        "BF16"
+      ],
+      "adapter_or_packed_keys": [],
+      "qat_config": {
+        "bits": 8,
+        "group_size": 128,
+        "num_replaced": 196,
+        "skip_keywords": [
+          "visual",
+          "merger",
+          "lm_head",
+          "embed_tokens"
+        ]
+      },
+      "weights_sha256": {
+        "model.safetensors": "e2e0cd27466c047876c0bd60cbbc26126bf43d5631d27c55c4b60f4f230177e6"
+      },
+      "stored_tensor_elements": 2438696960
+    },
+    "grace_w8": {
+      "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "chat_template.jinja": {
+          "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+          "bytes": 5292,
+          "matches_evaluation_manifest": true
+        },
+        "config.json": {
+          "sha256": "06f9bff87b3230678fdf07c316bd755654f7385716262fac456b3aa9f5b19408",
+          "bytes": 2090,
+          "matches_evaluation_manifest": true
+        },
+        "generation_config.json": {
+          "sha256": "f8b689677eaf828e409db5b063a055c92c17c58b12a4338f872858fb31c491c2",
+          "bytes": 227,
+          "matches_evaluation_manifest": true
+        },
+        "launch_recipe.json": {
+          "sha256": "858edeb3a5eb0cd3b4a822b35a940d2c584553f8b6b6c1b0826cc6f5fe85c783",
+          "bytes": 4241,
+          "matches_evaluation_manifest": true
+        },
+        "model.safetensors": {
+          "sha256": "67937c0c2784ba154194da241db7ea803ab75cb6f9c2fa8524b3357866e17b5f",
+          "bytes": 4877470336,
+          "matches_evaluation_manifest": true
+        },
+        "processor_config.json": {
+          "sha256": "f4d2a371205b86077b9f174dd44a2c45424c2ab2e0fbf54d977fb3b04cab6ce1",
+          "bytes": 1186,
+          "matches_evaluation_manifest": true
+        },
+        "run_summary.json": {
+          "sha256": "e3ad5bf16732e3dd699d9bfde044fe49262e479599ca31bd111fde8a3c3f3156",
+          "bytes": 525,
+          "matches_evaluation_manifest": true
+        },
+        "tokenizer.json": {
+          "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+          "bytes": 11422650,
+          "matches_evaluation_manifest": true
+        },
+        "tokenizer_config.json": {
+          "sha256": "d634041a0870f37eb21586dea476bb1ef1ad41337e16eeace3a3427c3b2cc062",
+          "bytes": 758,
+          "matches_evaluation_manifest": true
+        },
+        "trainable_parameters.json": {
+          "sha256": "6b3d9b57bd4d2b0bdebafcccb5754d21a9b52c42e876893c8a81c2f4c7728ffb",
+          "bytes": 44884,
+          "matches_evaluation_manifest": true
+        },
+        "trainer_state.json": {
+          "sha256": "5a9b9ee7c807caef497542803830ee23e52f91f0269fb214672b9f0961297c68",
+          "bytes": 8805,
+          "matches_evaluation_manifest": true
+        }
+      },
+      "tensor_count": 626,
+      "tensor_dtypes": [
+        "BF16"
+      ],
+      "adapter_or_packed_keys": [],
+      "qat_config": {
+        "bits": 8,
+        "group_size": 128,
+        "num_replaced": 196,
+        "skip_keywords": [
+          "visual",
+          "merger",
+          "lm_head",
+          "embed_tokens"
+        ]
+      },
+      "weights_sha256": {
+        "model.safetensors": "67937c0c2784ba154194da241db7ea803ab75cb6f9c2fa8524b3357866e17b5f"
+      },
+      "stored_tensor_elements": 2438696960
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "commit": "b73fa9b4d427aa64ed3ad274def641efb3145877",
+  "repository": "https://github.com/ForeverBlue816/GRACE",
+  "sha256": {
+    "README.md": "169755fc94823b43f62c81f217b25e14a257e57c8cc71c91d2bfaa708779bce6",
+    "requirements.txt": "f2f1423e6b2765e2c4a56d04bffb83dcce7df3eb0395cb65116b6ca42040c198",
+    "evaluation/ScienceQA/eval_scienceqa.py": "ad7756c76a281568721e153ce63724b267217772c59686de8e338e722551f993",
+    "evaluation/ScienceQA/eval_scienceqa.slurm": "59e6d36fe238a78309b41cbbc921377d00810f4248221202af55d8fcd010bedf",
+    "evaluation/AI2D/eval_ai2d.py": "7f072e47a89ab7e628383f561ccd0dea378d9aeb3612b7312e144748472be5fe",
+    "evaluation/AI2D/eval_ai2d.slurm": "54ee5ef8eb5d7170de1d51afe1a1dc1c917f6698e566731bbaaf237e72745f72",
+    "evaluation/MMStar/eval_mmstar.py": "817ea09fffb075605832a8782cfeb8fdfcd4135d25b28d8a8bfc5404d93e81f5",
+    "evaluation/MMStar/eval_mmstar.slurm": "f76227f3e8df0d37f64a97f1ba69215cd48d6e06a8073a6f6fb73e0023c7e330",
+    "evaluation/SEEDBench/eval_seedbench.py": "a7f095057fd4b9fc55311797af69c5bca1cd265fec186eb04285c217d813ff3c",
+    "evaluation/SEEDBench/eval_seedbench.slurm": "6f8caa2f709e096aa6d902308d89f277083f6b3d6c5bc98e48656afac252cc5c",
+    "evaluation/HallusionBench/eval_hallusion.py": "ee4f01c1f7aa89dca0e55f1ce46fbdb1faa19f4531e64712565dfd96a4fcf83a",
+    "evaluation/HallusionBench/eval_hallusion.slurm": "f4e8932f4362848c4a7ab04d1a8a857770e162e5a3107529b0097fcb06b469b8",
+    "evaluation/MMBench/eval_mmbench.py": "0e7ed0603a967d39cf96328a5dd6993876adc268fb8da2dded6c8c8e8da65014",
+    "evaluation/MMBench/eval_mmbench.slurm": "c35598326c80e5debacc33cdb67045cdfbb3ed06dfd209d4b542f9a4a643f048",
+    "evaluation/mmmu/eval_mmmu.py": "b80c8d60e11a28d85dbe67dfed45a55385e0b6947a4df7d67ed928ea5cf3bdec",
+    "evaluation/mmmu/eval_mmmu.slurm": "a311eec00be0af4eda410578325ea81446be4a84a90935b1e915f6361b5afcbf",
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  }
+}

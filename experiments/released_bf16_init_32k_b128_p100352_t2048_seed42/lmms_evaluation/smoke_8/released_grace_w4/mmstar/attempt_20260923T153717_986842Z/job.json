@@ -1,0 +1,41 @@
+{
+  "dataset": {
+    "repo": "Lin-Chen/MMStar",
+    "requested_repo": "Lin-Chen/MMStar",
+    "revision": "bc98d668301da7b14f648724866e57302778ab27"
+  },
+  "gpu": "0",
+  "limit": 8,
+  "method": "released_grace_w4",
+  "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128",
+  "output_root": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/lmms_evaluation/smoke_8",
+  "protocol": {
+    "bootstrap_iters": 1000,
+    "harness_commit": "88b23e2bfa16a1edbc16e9e238ed82130b3a4f56",
+    "judge_endpoint": "https://api.openai.com/v1/chat/completions",
+    "judges": {
+      "hallusionbench": "gpt-4",
+      "mmbench": "gpt-4o-2024-11-20"
+    },
+    "model_args": {
+      "attn_implementation": "sdpa",
+      "interleave_visuals": false,
+      "max_pixels": 1605632,
+      "min_pixels": 200704,
+      "system_prompt": "You are a helpful assistant."
+    },
+    "name": "lmms_eval_v0.7.1_qwen3_vl_harness_defaults_v1",
+    "notes": [
+      "BF16 inference on merged grid-projected research weights; no additional quantization and no packed INT4/INT8 performance claim.",
+      "Zero-shot, greedy, batch size one, one GPU; pinned task-specific prompts, output caps, filters and scorers.",
+      "Image limits are the pinned qwen3_vl backend defaults, not the old constrained protocol or a recovered author setting.",
+      "SDPA explicitly selected for portability; source backend leaves attention implementation unspecified by default.",
+      "Public dataset token=True changed to optional cached authentication (token=None); revisions and fingerprints pinned.",
+      "Bootstrap iterations affect uncertainty estimates, not primary point estimates.",
+      "Judge model IDs are harness defaults. API availability and author judge identity are unverified."
+    ],
+    "seed": 42,
+    "status": "Independent pinned harness protocol; exact author protocol is not published"
+  },
+  "suite": "mmstar"
+}

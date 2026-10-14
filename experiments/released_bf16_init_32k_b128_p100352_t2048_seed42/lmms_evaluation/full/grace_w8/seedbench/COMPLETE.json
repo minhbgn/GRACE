@@ -1,0 +1,14 @@
+{
+  "attempt": "attempt_20260924T094133_397671Z",
+  "count": 17990,
+  "sample_identity": "2c49f2d52fff4ee429bc9e30a45425778d56b4f3e1fb919a5a979233882f2cba",
+  "score_percent": 77.13763788379119,
+  "sha256": {
+    "dataset.json": "3af374a8b29ad88c845cb408325123d6c87e6cbfd88ccd52b3b8d6710a92e5f0",
+    "job.json": "cd895f3039338d6169ad2b204ca2755f248e4a99acccde2c142a1224ec414626",
+    "judge_audit.json": "91ce0f21d7d755b2ebf4d5af05e7180c78e96e52bf9ef53852dd09a0b164df72",
+    "results.json": "6ff5572add139bb6a00c62d461152fdd22705b0cdf8fd03892d91e63500b5c6f",
+    "samples.jsonl": "b9a1cb12050ffde12a6da2b4ae3053d9092b72f6643bbd853c1cb00e7efe6b9e",
+    "validated.json": "ae05dc1003a26fa7ffeb0add1da3444d52593ad177fdd4365f795ef6f82ecab8"
+  }
+}

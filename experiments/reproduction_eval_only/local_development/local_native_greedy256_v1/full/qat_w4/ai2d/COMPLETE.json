@@ -1,0 +1,21 @@
+{
+  "attempt": "attempt_20260926T223019_942658Z",
+  "count": 3088,
+  "finish_reasons": {
+    "eos": 3088
+  },
+  "generated_tokens": 6176,
+  "metric": "accuracy_test",
+  "model_provenance_sha256": "7ed0f1551f4598fd10c9a6f0f3b386fdf86a0cee53a1240f6473ad6daed8ce8a",
+  "processor_sha256": "86b59b0bc4927748ec221928f0cb3c7d6efe4d5f71535ae1b7a887fa518ac761",
+  "protocol_sha256": "b450e6e8148bf5fa093a4b4131158942475da0d35128aa61e11e34e386459ad7",
+  "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+  "score_percent": 79.37176165803109,
+  "sha256": {
+    "command.json": "802e04a55b57bca23fd5765bd3dadb70be07cb82eae40cebab7db1c12d8c9a63",
+    "results.json": "a19bf6126d6ae85b75714d14b607d24b38447d9a532186b6afb06c593d2b5436",
+    "validated.json": "788eb82900c4ddf305bac08816ab924babcf5aca3b34547565d2f3c74b609447"
+  },
+  "truncated": 0,
+  "unresolved": 0
+}

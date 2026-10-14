@@ -4,11 +4,9 @@ MMBench is multi-choice (2-4 options per question). The dev TSV ships gold
 answers inline, with images base64-encoded into the `image` column — same
 format VLMEvalKit/OpenCompass distribute.
 
-Per-row accuracy is reported here. The full MMBench leaderboard metric is the
-"circular evaluation" (CircularEval), which requires the model to answer the
-same question correctly under every cyclic permutation of options — that's a
-post-hoc reduction over per-row results and can be added on top of the JSONL
-output if needed.
+With --local_scoring, the primary metric is circular accuracy over all supplied
+rotations, using the validated pinned deterministic extraction. Row accuracy
+remains a diagnostic. Partial smoke runs do not report a circular score.
 
 Single-process or sharded over GPUs via torchrun. Each rank writes a JSONL
 shard; rank 0 merges and prints metrics at the end.
@@ -17,6 +15,11 @@ shard; rank 0 merges and prints metrics at the end.
 from __future__ import annotations
 
 import argparse
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from matched_protocol import add_protocol_arguments, apply_protocol, protocol_metadata
+from local_scoring import finalize_rows, generation_record, prepare_row
 import base64
 import io
 import json
@@ -86,6 +89,8 @@ def build_inputs(processor, image, prompt_text, device):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model_path", required=True)
+    ap.add_argument("--processor_path", default=None,
+                    help="Optional saved processor to match the comparison image budget.")
     ap.add_argument("--tsv", required=True,
                     help="Path to MMBench dev TSV (e.g. mmbench_dev_en_20231003.tsv).")
     ap.add_argument("--output", required=True)
@@ -93,6 +98,7 @@ def main():
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--attn", default="flash_attention_2",
                     choices=["flash_attention_2", "sdpa", "eager"])
+    add_protocol_arguments(ap)
     args = ap.parse_args()
 
     rank = int(os.environ.get("RANK", 0))
@@ -111,9 +117,10 @@ def main():
     ).to(device)
     model.eval()
 
-    processor = AutoProcessor.from_pretrained(args.model_path)
+    processor = AutoProcessor.from_pretrained(args.processor_path or args.model_path)
     if processor.tokenizer.pad_token_id is None:
         processor.tokenizer.pad_token_id = processor.tokenizer.eos_token_id
+    apply_protocol(args, model, processor)
 
     df = load_data(args.tsv)
     if args.limit > 0:
@@ -130,6 +137,7 @@ def main():
     t0 = time.time()
     with open(shard_path, "w") as fout:
         for row in tqdm(shard, disable=(rank != 0), desc=f"rank{rank}"):
+            generation = None
             try:
                 options = collect_options(row)
                 valid_letters = [l for l, _ in options]
@@ -146,23 +154,25 @@ def main():
                         pad_token_id=processor.tokenizer.pad_token_id,
                     )
                 gen = out[0][inputs["input_ids"].shape[1]:]
+                generation = generation_record(gen.tolist(), model.generation_config.eos_token_id, args.max_new_tokens)
                 raw = processor.tokenizer.decode(gen, skip_special_tokens=True)
                 pred = parse_choice(raw, valid_letters)
                 err = None
             except Exception as e:
                 raw, pred, gold, err = "", "", "", repr(e)
 
-            fout.write(json.dumps({
+            fout.write(json.dumps(prepare_row(args, "mmbench", {
                 "index": row.get("index"),
                 "pred": pred,
                 "gold": gold,
                 "correct": (pred != "" and pred == gold),
                 "raw": raw,
+                "generation": generation,
                 "category": row.get("category"),
                 "l2_category": row.get("l2-category"),
                 "n_options": len(valid_letters) if err is None else 0,
                 "error": err,
-            }, ensure_ascii=False) + "\n")
+            }), ensure_ascii=False) + "\n")
             fout.flush()
 
     if rank == 0:
@@ -182,6 +192,7 @@ def main():
             for line in f:
                 all_results.append(json.loads(line))
 
+    local_summary = finalize_rows(args, "mmbench", all_results)
     n = len(all_results)
     correct = sum(1 for r in all_results if r["correct"])
     parse_fail = sum(1 for r in all_results if r["pred"] == "" and r["error"] is None)
@@ -202,7 +213,10 @@ def main():
                 for k, (c, n_) in sorted(d.items())}
 
     summary = {
+        **protocol_metadata(args),
         "model_path": args.model_path,
+        "processor_path": args.processor_path or args.model_path,
+        "image_processor_size": dict(processor.image_processor.size),
         "tsv": args.tsv,
         "total": n,
         "correct": correct,
@@ -212,6 +226,11 @@ def main():
         "by_l2_category": fmt(by_l2),
         "by_category": fmt(by_cat),
     }
+    summary.update(local_summary)
+    if args.local_scoring:
+        score = summary['primary_score']
+        score_text = 'not reported for partial circular groups' if score is None else f'{100 * score:.3f}%'
+        print(f"Primary local metric: {summary['primary_metric']} = {score_text}")
     with open(args.output, "w") as f:
         json.dump({"summary": summary, "results": all_results}, f, indent=2)
 

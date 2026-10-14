@@ -1,0 +1,12 @@
+{
+  "count": 1129,
+  "finish_reasons": {
+    "eos": 1129
+  },
+  "generated_tokens": 2258,
+  "metric": "rule_aAcc_all_image_and_text_rows",
+  "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+  "score_percent": 67.0504871567759,
+  "truncated": 0,
+  "unresolved": 0
+}

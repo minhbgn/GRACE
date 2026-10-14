@@ -1,0 +1,2080 @@
+{
+  "purpose": "CPU preview only: first 256 rows of the shuffled historical subset, not the new training manifest",
+  "source_manifest": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/subset.json",
+  "source_records_sha256": "3cab4012409207fb29f1461eb1d1c9f8e0c6135f2283dfd34cfee1585dbd2342",
+  "min_pixels": 4096,
+  "patch_size": 16,
+  "merge_size": 2,
+  "summary": {
+    "100352": {
+      "count": 256,
+      "min": 12,
+      "mean": 89.76171875,
+      "median": 88.0,
+      "p90": 96.0,
+      "max": 98,
+      "at_least_400": 0,
+      "at_ceiling": 1
+    },
+    "589824": {
+      "count": 256,
+      "min": 12,
+      "mean": 250.83984375,
+      "median": 260.0,
+      "p90": 340.0,
+      "max": 576,
+      "at_least_400": 21,
+      "at_ceiling": 2
+    }
+  },
+  "records": [
+    {
+      "index": 241389,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 405,
+      "100352": 84,
+      "589824": 260
+    },
+    {
+      "index": 226267,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 59588,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 381,
+      "100352": 84,
+      "589824": 240
+    },
+    {
+      "index": 8255,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 360,
+      "100352": 91,
+      "589824": 220
+    },
+    {
+      "index": 379433,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 242,
+      "100352": 84,
+      "589824": 128
+    },
+    {
+      "index": 578987,
+      "source": "ocr_vqa/images",
+      "width": 363,
+      "height": 500,
+      "100352": 88,
+      "589824": 176
+    },
+    {
+      "index": 578252,
+      "source": "ocr_vqa/images",
+      "width": 445,
+      "height": 500,
+      "100352": 90,
+      "589824": 224
+    },
+    {
+      "index": 545888,
+      "source": "ocr_vqa/images",
+      "width": 331,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 201221,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 458,
+      "100352": 88,
+      "589824": 280
+    },
+    {
+      "index": 502256,
+      "source": "gqa/images",
+      "width": 375,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 260311,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 374,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 255952,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 357995,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 387364,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 597145,
+      "source": "ocr_vqa/images",
+      "width": 332,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 463473,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 178499,
+      "source": "coco/train2017",
+      "width": 375,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 591426,
+      "source": "ocr_vqa/images",
+      "width": 82,
+      "height": 130,
+      "100352": 12,
+      "589824": 12
+    },
+    {
+      "index": 298097,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 457,
+      "100352": 88,
+      "589824": 280
+    },
+    {
+      "index": 550193,
+      "source": "ocr_vqa/images",
+      "width": 324,
+      "height": 500,
+      "100352": 84,
+      "589824": 160
+    },
+    {
+      "index": 579262,
+      "source": "ocr_vqa/images",
+      "width": 379,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 458464,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 280182,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 246437,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 247888,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 98495,
+      "source": "coco/train2017",
+      "width": 400,
+      "height": 640,
+      "100352": 84,
+      "589824": 240
+    },
+    {
+      "index": 71304,
+      "source": "sam/images",
+      "width": 2250,
+      "height": 1500,
+      "100352": 96,
+      "589824": 551
+    },
+    {
+      "index": 316920,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 284677,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 524915,
+      "source": "ocr_vqa/images",
+      "width": 325,
+      "height": 500,
+      "100352": 84,
+      "589824": 160
+    },
+    {
+      "index": 530515,
+      "source": "ocr_vqa/images",
+      "width": 309,
+      "height": 500,
+      "100352": 84,
+      "589824": 160
+    },
+    {
+      "index": 97678,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 184758,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 383,
+      "100352": 84,
+      "589824": 240
+    },
+    {
+      "index": 348242,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 82617,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 79472,
+      "source": "share_textvqa/images",
+      "width": 1024,
+      "height": 683,
+      "100352": 96,
+      "589824": 551
+    },
+    {
+      "index": 406461,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 482189,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 74895,
+      "source": "sam/images",
+      "width": 2000,
+      "height": 1500,
+      "100352": 88,
+      "589824": 540
+    },
+    {
+      "index": 379518,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 357,
+      "100352": 88,
+      "589824": 176
+    },
+    {
+      "index": 55443,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 458397,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 380950,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 34130,
+      "source": "coco/train2017",
+      "width": 432,
+      "height": 308,
+      "100352": 88,
+      "589824": 140
+    },
+    {
+      "index": 327739,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 373876,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 330,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 420493,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 297,
+      "100352": 84,
+      "589824": 144
+    },
+    {
+      "index": 387218,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 82690,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 579,
+      "100352": 90,
+      "589824": 360
+    },
+    {
+      "index": 150331,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 428,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 615119,
+      "source": "textvqa/train_images",
+      "width": 768,
+      "height": 1024,
+      "100352": 88,
+      "589824": 540
+    },
+    {
+      "index": 153124,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 464,
+      "100352": 88,
+      "589824": 280
+    },
+    {
+      "index": 408748,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 544325,
+      "source": "ocr_vqa/images",
+      "width": 386,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 495841,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 297246,
+      "source": "coco/train2017",
+      "width": 332,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 125420,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 428,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 156190,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 614967,
+      "source": "textvqa/train_images",
+      "width": 1024,
+      "height": 1024,
+      "100352": 81,
+      "589824": 576
+    },
+    {
+      "index": 137417,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 157566,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 68358,
+      "source": "llava/llava_pretrain",
+      "width": 506,
+      "height": 336,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 212855,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 400,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 85145,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 195457,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 568786,
+      "source": "ocr_vqa/images",
+      "width": 323,
+      "height": 500,
+      "100352": 84,
+      "589824": 160
+    },
+    {
+      "index": 290900,
+      "source": "coco/train2017",
+      "width": 612,
+      "height": 612,
+      "100352": 81,
+      "589824": 361
+    },
+    {
+      "index": 230551,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 100832,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 196805,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 350920,
+      "source": "coco/train2017",
+      "width": 612,
+      "height": 612,
+      "100352": 81,
+      "589824": 361
+    },
+    {
+      "index": 66682,
+      "source": "llava/llava_pretrain",
+      "width": 336,
+      "height": 336,
+      "100352": 81,
+      "589824": 100
+    },
+    {
+      "index": 199609,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 428,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 186763,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 478,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 385323,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 235705,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 422353,
+      "source": "vg/VG_100K",
+      "width": 374,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 428802,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 281,
+      "100352": 91,
+      "589824": 144
+    },
+    {
+      "index": 578803,
+      "source": "ocr_vqa/images",
+      "width": 320,
+      "height": 500,
+      "100352": 84,
+      "589824": 160
+    },
+    {
+      "index": 49395,
+      "source": "coco/train2017",
+      "width": 475,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 488264,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 500,
+      "100352": 81,
+      "589824": 256
+    },
+    {
+      "index": 619932,
+      "source": "textvqa/train_images",
+      "width": 768,
+      "height": 1024,
+      "100352": 88,
+      "589824": 540
+    },
+    {
+      "index": 149536,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 406,
+      "100352": 80,
+      "589824": 208
+    },
+    {
+      "index": 144382,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 454984,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 334,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 14398,
+      "source": "coco/train2017",
+      "width": 425,
+      "height": 640,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 4037,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 374143,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 567928,
+      "source": "ocr_vqa/images",
+      "width": 321,
+      "height": 500,
+      "100352": 84,
+      "589824": 160
+    },
+    {
+      "index": 596189,
+      "source": "ocr_vqa/images",
+      "width": 325,
+      "height": 500,
+      "100352": 84,
+      "589824": 160
+    },
+    {
+      "index": 225551,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 474,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 577123,
+      "source": "ocr_vqa/images",
+      "width": 333,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 521351,
+      "source": "gqa/images",
+      "width": 333,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 529802,
+      "source": "ocr_vqa/images",
+      "width": 192,
+      "height": 276,
+      "100352": 54,
+      "589824": 54
+    },
+    {
+      "index": 533125,
+      "source": "ocr_vqa/images",
+      "width": 327,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 373807,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 332,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 334195,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 389,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 521677,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 317871,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 372527,
+      "source": "vg/VG_100K",
+      "width": 1024,
+      "height": 727,
+      "100352": 88,
+      "589824": 560
+    },
+    {
+      "index": 257716,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 383,
+      "100352": 84,
+      "589824": 240
+    },
+    {
+      "index": 400966,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 14201,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 433,
+      "100352": 96,
+      "589824": 280
+    },
+    {
+      "index": 478769,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 326356,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 55751,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 415064,
+      "source": "vg/VG_100K",
+      "width": 374,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 321822,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 559087,
+      "source": "ocr_vqa/images",
+      "width": 391,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 456468,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 49485,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 458,
+      "100352": 88,
+      "589824": 280
+    },
+    {
+      "index": 325202,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 426,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 299997,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 21023,
+      "source": "coco/train2017",
+      "width": 612,
+      "height": 612,
+      "100352": 81,
+      "589824": 361
+    },
+    {
+      "index": 414132,
+      "source": "vg/VG_100K",
+      "width": 333,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 39785,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 169254,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 305820,
+      "source": "coco/train2017",
+      "width": 495,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 432790,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 348,
+      "100352": 88,
+      "589824": 176
+    },
+    {
+      "index": 51743,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 360,
+      "100352": 91,
+      "589824": 220
+    },
+    {
+      "index": 317377,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 473,
+      "100352": 90,
+      "589824": 240
+    },
+    {
+      "index": 269604,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 428,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 113953,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 276821,
+      "source": "coco/train2017",
+      "width": 427,
+      "height": 640,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 379391,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 520387,
+      "source": "gqa/images",
+      "width": 334,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 610938,
+      "source": "textvqa/train_images",
+      "width": 1024,
+      "height": 768,
+      "100352": 88,
+      "589824": 540
+    },
+    {
+      "index": 464790,
+      "source": "gqa/images",
+      "width": 375,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 310137,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 138466,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 451,
+      "100352": 88,
+      "589824": 280
+    },
+    {
+      "index": 88710,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 259369,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 360,
+      "100352": 91,
+      "589824": 220
+    },
+    {
+      "index": 623621,
+      "source": "textvqa/train_images",
+      "width": 473,
+      "height": 1024,
+      "100352": 84,
+      "589824": 480
+    },
+    {
+      "index": 186816,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 428,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 133388,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 621790,
+      "source": "textvqa/train_images",
+      "width": 1024,
+      "height": 768,
+      "100352": 88,
+      "589824": 540
+    },
+    {
+      "index": 554761,
+      "source": "ocr_vqa/images",
+      "width": 359,
+      "height": 500,
+      "100352": 88,
+      "589824": 176
+    },
+    {
+      "index": 495486,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 417951,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 579039,
+      "source": "ocr_vqa/images",
+      "width": 333,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 257252,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 562205,
+      "source": "ocr_vqa/images",
+      "width": 310,
+      "height": 500,
+      "100352": 84,
+      "589824": 160
+    },
+    {
+      "index": 269424,
+      "source": "coco/train2017",
+      "width": 612,
+      "height": 612,
+      "100352": 81,
+      "589824": 361
+    },
+    {
+      "index": 18642,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 640,
+      "100352": 81,
+      "589824": 400
+    },
+    {
+      "index": 200581,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 640,
+      "100352": 81,
+      "589824": 400
+    },
+    {
+      "index": 596663,
+      "source": "ocr_vqa/images",
+      "width": 340,
+      "height": 500,
+      "100352": 96,
+      "589824": 176
+    },
+    {
+      "index": 254069,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 421,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 220659,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 458,
+      "100352": 88,
+      "589824": 280
+    },
+    {
+      "index": 122390,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 428,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 411366,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 345661,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 426,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 188974,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 428,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 26711,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 479018,
+      "source": "gqa/images",
+      "width": 375,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 371458,
+      "source": "vg/VG_100K",
+      "width": 1024,
+      "height": 768,
+      "100352": 88,
+      "589824": 540
+    },
+    {
+      "index": 419875,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 328,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 186678,
+      "source": "coco/train2017",
+      "width": 426,
+      "height": 640,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 245012,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 416164,
+      "source": "vg/VG_100K",
+      "width": 375,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 155300,
+      "source": "coco/train2017",
+      "width": 426,
+      "height": 640,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 427514,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 329,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 219090,
+      "source": "coco/train2017",
+      "width": 427,
+      "height": 640,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 293198,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 331450,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 300589,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 476067,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 383770,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 335,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 442748,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 15422,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 555202,
+      "source": "ocr_vqa/images",
+      "width": 333,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 257253,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 411,
+      "100352": 84,
+      "589824": 260
+    },
+    {
+      "index": 521944,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 480253,
+      "source": "gqa/images",
+      "width": 800,
+      "height": 600,
+      "100352": 88,
+      "589824": 475
+    },
+    {
+      "index": 167039,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 640,
+      "100352": 81,
+      "589824": 400
+    },
+    {
+      "index": 515904,
+      "source": "gqa/images",
+      "width": 349,
+      "height": 500,
+      "100352": 88,
+      "589824": 176
+    },
+    {
+      "index": 347659,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 286807,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 452353,
+      "source": "gqa/images",
+      "width": 1024,
+      "height": 612,
+      "100352": 84,
+      "589824": 558
+    },
+    {
+      "index": 98460,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 467403,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 611836,
+      "source": "textvqa/train_images",
+      "width": 768,
+      "height": 1024,
+      "100352": 88,
+      "589824": 540
+    },
+    {
+      "index": 101734,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 259,
+      "100352": 90,
+      "589824": 160
+    },
+    {
+      "index": 53734,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 425,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 319217,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 426,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 103778,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 490,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 385263,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 209452,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 160549,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 287781,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 331492,
+      "source": "coco/train2017",
+      "width": 504,
+      "height": 640,
+      "100352": 88,
+      "589824": 320
+    },
+    {
+      "index": 613245,
+      "source": "textvqa/train_images",
+      "width": 1024,
+      "height": 768,
+      "100352": 88,
+      "589824": 540
+    },
+    {
+      "index": 68126,
+      "source": "llava/llava_pretrain",
+      "width": 504,
+      "height": 336,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 305239,
+      "source": "coco/train2017",
+      "width": 464,
+      "height": 640,
+      "100352": 88,
+      "589824": 280
+    },
+    {
+      "index": 299738,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 571939,
+      "source": "ocr_vqa/images",
+      "width": 395,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 487965,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 303245,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 153885,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 443387,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 250,
+      "100352": 98,
+      "589824": 128
+    },
+    {
+      "index": 447581,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 332,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 603083,
+      "source": "textvqa/train_images",
+      "width": 1024,
+      "height": 1024,
+      "100352": 81,
+      "589824": 576
+    },
+    {
+      "index": 25746,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 512,
+      "100352": 88,
+      "589824": 320
+    },
+    {
+      "index": 420527,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 568437,
+      "source": "ocr_vqa/images",
+      "width": 288,
+      "height": 500,
+      "100352": 91,
+      "589824": 144
+    },
+    {
+      "index": 436842,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 191601,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 186618,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 17942,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 396,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 306808,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 428,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 575685,
+      "source": "ocr_vqa/images",
+      "width": 333,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 3230,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 64443,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 427,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 183795,
+      "source": "coco/train2017",
+      "width": 427,
+      "height": 640,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 432018,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 550604,
+      "source": "ocr_vqa/images",
+      "width": 375,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 384133,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 377,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 220692,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 49444,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 232300,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 298,
+      "100352": 84,
+      "589824": 135
+    },
+    {
+      "index": 61853,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 489,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 255243,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 334,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 473304,
+      "source": "gqa/images",
+      "width": 1024,
+      "height": 678,
+      "100352": 96,
+      "589824": 551
+    },
+    {
+      "index": 591288,
+      "source": "ocr_vqa/images",
+      "width": 332,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 109984,
+      "source": "coco/train2017",
+      "width": 480,
+      "height": 640,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 324683,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 469,
+      "100352": 90,
+      "589824": 240
+    },
+    {
+      "index": 125287,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 488161,
+      "source": "gqa/images",
+      "width": 333,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 401742,
+      "source": "vg/VG_100K",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 388657,
+      "source": "vg/VG_100K_2",
+      "width": 333,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 495143,
+      "source": "gqa/images",
+      "width": 375,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 253886,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 498,
+      "100352": 88,
+      "589824": 320
+    },
+    {
+      "index": 416344,
+      "source": "vg/VG_100K",
+      "width": 374,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 302283,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 426,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 246135,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 207902,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 311488,
+      "source": "coco/train2017",
+      "width": 639,
+      "height": 640,
+      "100352": 81,
+      "589824": 400
+    },
+    {
+      "index": 526227,
+      "source": "ocr_vqa/images",
+      "width": 423,
+      "height": 500,
+      "100352": 90,
+      "589824": 208
+    },
+    {
+      "index": 132579,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 428,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 474626,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 219554,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 428,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 561991,
+      "source": "ocr_vqa/images",
+      "width": 333,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 99525,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 514177,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 308872,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 406,
+      "100352": 84,
+      "589824": 260
+    },
+    {
+      "index": 310206,
+      "source": "coco/train2017",
+      "width": 427,
+      "height": 640,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 55158,
+      "source": "coco/train2017",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 287349,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 486091,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 253120,
+      "source": "coco/train2017",
+      "width": 429,
+      "height": 640,
+      "100352": 96,
+      "589824": 260
+    },
+    {
+      "index": 413416,
+      "source": "vg/VG_100K",
+      "width": 375,
+      "height": 500,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 593541,
+      "source": "ocr_vqa/images",
+      "width": 333,
+      "height": 500,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 328289,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 480,
+      "100352": 88,
+      "589824": 300
+    },
+    {
+      "index": 461140,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 207,
+      "100352": 96,
+      "589824": 96
+    },
+    {
+      "index": 453565,
+      "source": "gqa/images",
+      "width": 500,
+      "height": 375,
+      "100352": 88,
+      "589824": 192
+    },
+    {
+      "index": 396538,
+      "source": "vg/VG_100K_2",
+      "width": 500,
+      "height": 333,
+      "100352": 96,
+      "589824": 160
+    },
+    {
+      "index": 236452,
+      "source": "coco/train2017",
+      "width": 640,
+      "height": 428,
+      "100352": 96,
+      "589824": 260
+    }
+  ]
+}

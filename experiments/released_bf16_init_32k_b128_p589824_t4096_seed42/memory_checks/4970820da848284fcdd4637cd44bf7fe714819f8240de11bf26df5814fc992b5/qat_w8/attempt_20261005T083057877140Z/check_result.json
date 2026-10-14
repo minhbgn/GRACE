@@ -1,0 +1,44 @@
+{
+  "artifact": "memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w8/attempt_20261005T083057877140Z",
+  "bits": 8,
+  "complete": true,
+  "device_peak_used_gib": {
+    "0": 14.130859375,
+    "4": 14.130859375
+  },
+  "envelope": {
+    "accumulation": 2,
+    "grid": [
+      [
+        1,
+        48,
+        48
+      ]
+    ],
+    "rcka_warmup_steps": 1,
+    "sequence_tokens": 4096,
+    "supervised_tokens": 3506,
+    "synthetic_answer": true,
+    "updates": 3,
+    "visual_tokens": 576
+  },
+  "evidence_sha256": {
+    "comparison_recipe.json": "77f96570e7e9ea0fda22fa89cd0c7157b07582e80b8981881e222ebd3e7a1cff",
+    "device_memory.csv": "9554c1b6f2d0c4f29df94ce32ac469a2aa46f343d2c645412dabd71928572b09",
+    "input_envelope.json": "e635d6aed016dc127842d3365362cc277efce6eb63d9483fe6d75e6a8094e3f5",
+    "profiles/qat/EXPORT_COMPLETE": "79cbe861df37205166c4caef495e503c49315002f1db3492b536f3efa667c87f",
+    "profiles/qat/config.json": "06f9bff87b3230678fdf07c316bd755654f7385716262fac456b3aa9f5b19408",
+    "profiles/qat/invocations.jsonl": "353e1034c7c3e5436617de2f1b317d3a443aedbdca2ec439e2dabc1bd8576a1e",
+    "profiles/qat/launch_recipe.json": "90dd6e1ee2c616a88ba26dd2c48d9e96a0f93d3688deac316ce6283413e95d0c",
+    "profiles/qat/run_summary.json": "a3c7a87aa1dbd83afc9f9a0b696b9fbfd505d88849d9b0f2022e9ea8e736928d",
+    "profiles/qat/step_metrics.jsonl": "955bd7c3176f3a0bd9098cd08cf179c38fcdc19e63917f48722bdf77d0b31bcd",
+    "student_provenance.json": "58377cf0d20c1293d8a75d46dd7be6d6c745a34f1ca4329fa1c92ea925881a5a",
+    "teacher_provenance.json": "6226ff8938599fa2b2393e0ffa2f4be0b5b93bcdc954c9bb86331e251e4e3338"
+  },
+  "fingerprint": "4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5",
+  "launch_wall_seconds": 210.524986743927,
+  "method": "qat",
+  "peak_allocated_gib": 11.807504653930664,
+  "peak_reserved_gib": 13.076171875,
+  "updates": 3
+}

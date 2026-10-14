@@ -1,0 +1,14 @@
+[
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/.venv-lmms-eval/bin/python",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/provenance/upstream_20260925/evaluation/AI2D/eval_ai2d.py",
+  "--model_path",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+  "--output",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/full/vanilla_2b/ai2d/attempt_20260925T094453_862004Z/results.json",
+  "--attn",
+  "flash_attention_2",
+  "--max_new_tokens",
+  "8",
+  "--data_dir",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/AI2D/data"
+]

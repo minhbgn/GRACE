@@ -1,0 +1,18 @@
+{
+  "evaluation_rows": 2017,
+  "source": {
+    "repo": "lmms-lab-encoder/ScienceQA",
+    "requested_repo": "lmms-lab/ScienceQA",
+    "revision": "69dd4d6b67373d38f96a5badd5d24d0eb5bcdc50"
+  },
+  "splits": {
+    "test": {
+      "fingerprint": "0843bcb46676e939",
+      "rows": 2017
+    },
+    "validation": {
+      "fingerprint": "db98587348d366e3",
+      "rows": 2097
+    }
+  }
+}

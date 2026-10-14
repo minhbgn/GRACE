@@ -8,15 +8,21 @@ and token embeddings are intentionally left in bf16.
 
 Public API:
   - QuantizedLinear
+  - QATLoraLinear
   - replace_linears_with_qat
+  - replace_linears_with_qat_lora
   - collect_qat_param_groups
+  - merge_lora_weights_inplace
   - materialize_quantized_state_dict
   - bake_qat_weights_inplace
   - strip_log_scale_from_checkpoint_dir
+  - strip_lora_from_checkpoint_dir
+  - strip_qat_lora_from_checkpoint_dir
 """
 
 from __future__ import annotations
 
+import math
 import os
 from typing import Iterable, List, Optional, Tuple
 
@@ -87,6 +93,15 @@ class QuantizedLinear(nn.Module):
             torch.zeros((), dtype=torch.bool),
             persistent=False,
         )
+        # Avoid a CUDA-synchronizing ``Tensor.item()`` in every layer on every
+        # forward. The tensor is retained for compatibility/debug visibility;
+        # this Python flag is the hot-path readiness check.
+        self._scale_ready = False
+        # Plain Python flags are intentionally absent from state_dict. After a
+        # checkpoint load, a static quantizer must bake the restored weight on
+        # its first forward rather than trusting a stale cached state.
+        self._quantization_static = False
+        self._static_weight_baked = False
 
     @torch.no_grad()
     def init_scales_from_weight(self) -> None:
@@ -102,7 +117,10 @@ class QuantizedLinear(nn.Module):
         optimal trade-off is far from `max/qmax`. Runs once at init
         (and on the first forward for ZeRO-3 partitioned shards).
         """
+        if self._scale_ready:
+            return
         if bool(self._scale_initialized.item()):
+            self._scale_ready = True
             return
         W = self.weight.detach()
         if W.numel() == 0:
@@ -140,6 +158,7 @@ class QuantizedLinear(nn.Module):
         best_scale = best_scale.clamp(min=1e-8)
         self.log_scale.data.copy_(torch.log(best_scale))
         self._scale_initialized.fill_(True)
+        self._scale_ready = True
 
     @classmethod
     def from_linear(cls, lin: nn.Linear, bits: int = 4, group_size: int = 128) -> "QuantizedLinear":
@@ -155,9 +174,32 @@ class QuantizedLinear(nn.Module):
         w_dq = (w_q * scale).view_as(w)
         return w_dq.to(w.dtype)
 
+    def freeze_quantizer_(self) -> "QuantizedLinear":
+        """Freeze weight/scale and enable an in-place fake-quant cache.
+
+        With ordinary replicated parameters, the first forward bakes the
+        initialized fake-quantized value into the already-frozen weight and
+        later forwards use it directly. This avoids repeatedly quantizing
+        large frozen MLP matrices. ZeRO-3 parameters are gathered only for a
+        module invocation, so they safely fall back to dynamic fake quant.
+        """
+        self.weight.requires_grad_(False)
+        if self.bias is not None:
+            self.bias.requires_grad_(False)
+        self.log_scale.requires_grad_(False)
+        self._quantization_static = True
+        self._static_weight_baked = False
+        return self
+
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        if not bool(self._scale_initialized.item()):
+        if not self._scale_ready:
             self.init_scales_from_weight()
+        if self._quantization_static and not hasattr(self.weight, "ds_id"):
+            if not self._static_weight_baked:
+                with torch.no_grad():
+                    self.weight.copy_(self._quantize_weight())
+                self._static_weight_baked = True
+            return F.linear(x, self.weight, self.bias)
         w = self._quantize_weight()
         return F.linear(x, w, self.bias)
 
@@ -165,6 +207,97 @@ class QuantizedLinear(nn.Module):
         return (
             f"in_features={self.in_features}, out_features={self.out_features}, "
             f"bias={self.bias is not None}, bits={self.bits}, group_size={self.group_size}"
+        )
+
+
+class QATLoraLinear(QuantizedLinear):
+    """QAT linear with a trainable low-rank residual over a frozen base.
+
+    Training evaluates ``fake_quant(base_weight) @ x + LoRA(x)``. This is
+    the efficient QLoRA-style formulation: it avoids materializing a dense
+    ``base_weight + B @ A`` tensor on every forward. ``log_scale`` remains
+    trainable for these adapted layers, so the quantizer can follow the new
+    effective transformation. At export, :func:`merge_lora_weights_inplace`
+    folds ``B @ A`` into the base weight before the usual QAT bake.
+
+    Non-target linears use :class:`QuantizedLinear` with both their base
+    weight and initialized ``log_scale`` frozen.
+    """
+
+    def __init__(
+        self,
+        lin: nn.Linear,
+        bits: int = 4,
+        group_size: int = 128,
+        r: int = 64,
+        lora_alpha: float = 128.0,
+        lora_dropout: float = 0.0,
+    ):
+        if r <= 0:
+            raise ValueError(f"LoRA rank must be positive, got {r}")
+        if not 0.0 <= lora_dropout < 1.0:
+            raise ValueError(
+                f"LoRA dropout must be in [0, 1), got {lora_dropout}"
+            )
+        super().__init__(lin, bits=bits, group_size=group_size)
+        self.r = int(r)
+        self.lora_alpha = float(lora_alpha)
+        self.lora_scaling = self.lora_alpha / self.r
+        self.lora_dropout = nn.Dropout(float(lora_dropout))
+
+        factory_kwargs = {
+            "device": self.weight.device,
+            "dtype": self.weight.dtype,
+        }
+        self.lora_A = nn.Parameter(
+            torch.empty((self.r, self.in_features), **factory_kwargs)
+        )
+        self.lora_B = nn.Parameter(
+            torch.zeros((self.out_features, self.r), **factory_kwargs)
+        )
+        nn.init.kaiming_uniform_(self.lora_A, a=math.sqrt(5))
+
+        # LoRA changes the layer through A/B; the pretrained dense weight and
+        # bias never receive gradients. The layer's QAT scale is intentionally
+        # trainable and is placed in its own optimizer group by the collector.
+        self.weight.requires_grad_(False)
+        if self.bias is not None:
+            self.bias.requires_grad_(False)
+        self.log_scale.requires_grad_(True)
+
+    @classmethod
+    def from_linear(
+        cls,
+        lin: nn.Linear,
+        bits: int = 4,
+        group_size: int = 128,
+        r: int = 64,
+        lora_alpha: float = 128.0,
+        lora_dropout: float = 0.0,
+    ) -> "QATLoraLinear":
+        q = cls(
+            lin,
+            bits=bits,
+            group_size=group_size,
+            r=r,
+            lora_alpha=lora_alpha,
+            lora_dropout=lora_dropout,
+        )
+        q.init_scales_from_weight()
+        return q
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        base = super().forward(x)
+        lora_input = self.lora_dropout(x).to(self.lora_A.dtype)
+        lora_hidden = F.linear(lora_input, self.lora_A)
+        lora_output = F.linear(lora_hidden, self.lora_B)
+        return base + (lora_output * self.lora_scaling).to(base.dtype)
+
+    def extra_repr(self) -> str:
+        return (
+            super().extra_repr()
+            + f", lora_r={self.r}, lora_alpha={self.lora_alpha}, "
+              f"lora_dropout={self.lora_dropout.p}"
         )
 
 
@@ -220,6 +353,82 @@ def replace_linears_with_qat(
     return replaced
 
 
+def replace_linears_with_qat_lora(
+    model: nn.Module,
+    bits: int = 4,
+    group_size: int = 128,
+    target_modules: Iterable[str] = ("q_proj", "k_proj", "v_proj", "o_proj"),
+    r: int = 64,
+    lora_alpha: float = 128.0,
+    lora_dropout: float = 0.0,
+    skip_keywords: Iterable[str] = DEFAULT_QAT_SKIP_KEYWORDS,
+    verbose: bool = True,
+    method: str = "qat",
+) -> Tuple[List[str], List[str]]:
+    """Install QAT on eligible linears and LoRA on selected leaf modules.
+
+    Every eligible linear is fake-quantized. Selected modules get trainable
+    LoRA A/B parameters and a trainable QAT scale; all other modules get an
+    initialized, frozen scale. Dense base weights stay frozen in both cases.
+
+    Returns ``(quantized_names, lora_names)``.
+    """
+    targets = {name.strip() for name in target_modules if name.strip()}
+    if not targets:
+        raise ValueError("At least one LoRA target module name is required.")
+
+    quantized: List[str] = []
+    adapted: List[str] = []
+    for parent_name, parent in list(model.named_modules()):
+        for child_name, child in list(parent.named_children()):
+            full_name = f"{parent_name}.{child_name}" if parent_name else child_name
+            if not isinstance(child, nn.Linear):
+                continue
+            if _module_should_skip(full_name, skip_keywords):
+                continue
+
+            if child_name in targets:
+                replacement = QATLoraLinear.from_linear(
+                    child,
+                    bits=bits,
+                    group_size=group_size,
+                    r=r,
+                    lora_alpha=lora_alpha,
+                    lora_dropout=lora_dropout,
+                )
+                adapted.append(full_name)
+            else:
+                replacement = QuantizedLinear.from_linear(
+                    child, bits=bits, group_size=group_size
+                )
+                replacement.freeze_quantizer_()
+
+            setattr(parent, child_name, replacement)
+            quantized.append(full_name)
+
+    if not adapted:
+        raise ValueError(
+            "None of the requested LoRA target modules were found among the "
+            f"eligible QAT linears: {sorted(targets)}"
+        )
+
+    if verbose:
+        try:
+            rank = torch.distributed.get_rank() if torch.distributed.is_initialized() else 0
+        except Exception:
+            rank = 0
+        if rank == 0:
+            method_label = str(method).strip().upper()
+            if not method_label:
+                raise ValueError("method must be a non-empty name for verbose logging")
+            print(
+                f"[{method_label}-LoRA] Quantized {len(quantized)} linears; adapted "
+                f"{len(adapted)} linears (targets={sorted(targets)}, r={r}, "
+                f"alpha={lora_alpha}, bits={bits}, group_size={group_size})."
+            )
+    return quantized, adapted
+
+
 def collect_qat_param_groups(
     model: nn.Module,
     base_lr: float,
@@ -241,6 +450,55 @@ def collect_qat_param_groups(
         {"params": other_params, "lr": base_lr, "weight_decay": weight_decay},
         {"params": scale_params, "lr": scale_lr, "weight_decay": 0.0},
     ]
+
+
+@torch.no_grad()
+def merge_lora_weights_inplace(
+    model: nn.Module,
+    is_zero3: bool = False,
+    output_chunk_size: int = 1024,
+) -> int:
+    """Fold every QAT-LoRA residual into its frozen dense base weight.
+
+    The output-row chunks cap temporary memory during ``B @ A``. Adapter
+    parameters are zeroed after merging, making the operation idempotent for
+    the remainder of the process. Under ZeRO-3, parameters are gathered and
+    the rank-0 modification is redistributed on context exit.
+    """
+    if output_chunk_size <= 0:
+        raise ValueError("output_chunk_size must be positive")
+
+    def _merge(module: QATLoraLinear) -> None:
+        for start in range(0, module.out_features, output_chunk_size):
+            end = min(start + output_chunk_size, module.out_features)
+            delta = torch.matmul(module.lora_B[start:end], module.lora_A)
+            delta = delta.mul(module.lora_scaling).to(module.weight.dtype)
+            module.weight.data[start:end].add_(delta)
+        module.lora_A.zero_()
+        module.lora_B.zero_()
+
+    count = 0
+    if is_zero3:
+        import deepspeed
+        try:
+            rank = torch.distributed.get_rank()
+        except Exception:
+            rank = 0
+        for _, module in model.named_modules():
+            if not isinstance(module, QATLoraLinear):
+                continue
+            params = [module.weight, module.lora_A, module.lora_B]
+            with deepspeed.zero.GatheredParameters(params, modifier_rank=0):
+                if rank == 0:
+                    _merge(module)
+            count += 1
+    else:
+        for _, module in model.named_modules():
+            if not isinstance(module, QATLoraLinear):
+                continue
+            _merge(module)
+            count += 1
+    return count
 
 
 @torch.no_grad()
@@ -303,14 +561,17 @@ def _is_weight_shard(path: str) -> bool:
     return False
 
 
-def _strip_log_scale_from_file(path: str) -> int:
+def _strip_keys_from_file(path: str, key_fragments: Tuple[str, ...]) -> int:
     if path.endswith(".safetensors"):
         try:
             from safetensors.torch import load_file, save_file
         except ImportError:
             return 0
         sd = load_file(path)
-        keep = {k: v for k, v in sd.items() if "log_scale" not in k}
+        keep = {
+            k: v for k, v in sd.items()
+            if not any(fragment in k for fragment in key_fragments)
+        }
         removed = len(sd) - len(keep)
         if removed:
             save_file(keep, path, metadata={"format": "pt"})
@@ -320,7 +581,10 @@ def _strip_log_scale_from_file(path: str) -> int:
         sd = torch.load(path, map_location="cpu", weights_only=False)
         if not isinstance(sd, dict):
             return 0
-        keep = {k: v for k, v in sd.items() if "log_scale" not in k}
+        keep = {
+            k: v for k, v in sd.items()
+            if not any(fragment in k for fragment in key_fragments)
+        }
         removed = len(sd) - len(keep)
         if removed:
             torch.save(keep, path)
@@ -328,9 +592,10 @@ def _strip_log_scale_from_file(path: str) -> int:
     return 0
 
 
-def strip_log_scale_from_checkpoint_dir(output_dir: str) -> int:
-    """Walk a saved HF checkpoint dir on rank 0 and strip log_scale keys from
-    weight files (handles sharded saves and the index file)."""
+def _strip_keys_from_checkpoint_dir(
+    output_dir: str, key_fragments: Tuple[str, ...]
+) -> int:
+    """Strip matching auxiliary tensors from HF weight files and indexes."""
     import json
     import glob
     total = 0
@@ -339,7 +604,7 @@ def strip_log_scale_from_checkpoint_dir(output_dir: str) -> int:
     for path in candidates:
         if not _is_weight_shard(path):
             continue
-        total += _strip_log_scale_from_file(path)
+        total += _strip_keys_from_file(path, key_fragments)
     for idx_name in ("pytorch_model.bin.index.json", "model.safetensors.index.json"):
         idx_path = os.path.join(output_dir, idx_name)
         if not os.path.isfile(idx_path):
@@ -347,7 +612,10 @@ def strip_log_scale_from_checkpoint_dir(output_dir: str) -> int:
         with open(idx_path) as f:
             idx = json.load(f)
         wmap = idx.get("weight_map", {})
-        new_wmap = {k: v for k, v in wmap.items() if "log_scale" not in k}
+        new_wmap = {
+            k: v for k, v in wmap.items()
+            if not any(fragment in k for fragment in key_fragments)
+        }
         if len(new_wmap) != len(wmap):
             idx["weight_map"] = new_wmap
             if "metadata" in idx and "total_size" in idx["metadata"]:
@@ -355,3 +623,20 @@ def strip_log_scale_from_checkpoint_dir(output_dir: str) -> int:
             with open(idx_path, "w") as f:
                 json.dump(idx, f, indent=2)
     return total
+
+
+def strip_log_scale_from_checkpoint_dir(output_dir: str) -> int:
+    """Remove QAT scale tensors from a merged, vanilla HF checkpoint."""
+    return _strip_keys_from_checkpoint_dir(output_dir, ("log_scale",))
+
+
+def strip_lora_from_checkpoint_dir(output_dir: str) -> int:
+    """Remove already-merged native LoRA A/B tensors from an HF checkpoint."""
+    return _strip_keys_from_checkpoint_dir(output_dir, ("lora_A", "lora_B"))
+
+
+def strip_qat_lora_from_checkpoint_dir(output_dir: str) -> int:
+    """Remove QAT and merged-LoRA auxiliaries in one pass over large shards."""
+    return _strip_keys_from_checkpoint_dir(
+        output_dir, ("log_scale", "lora_A", "lora_B")
+    )

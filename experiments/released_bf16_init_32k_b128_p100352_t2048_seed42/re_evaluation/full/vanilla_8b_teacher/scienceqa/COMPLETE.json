@@ -1,0 +1,11 @@
+{
+  "attempt": "attempt_20260925T115431_347529Z",
+  "count": 4241,
+  "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+  "score_percent": 92.9497759962273,
+  "sha256": {
+    "command.json": "7fa0d4583eda7d2f0467921840e58538672ef05e318dcbf3fe94aede29741358",
+    "results.json": "a1318ad61cf2a03fd677dd83fefa490b866030712025d348d13808362a2cc94e",
+    "validated.json": "7b3e91b1cd179baacf97d69909c49210ffb70b2fcd6d391b4b10dc21122f9870"
+  }
+}

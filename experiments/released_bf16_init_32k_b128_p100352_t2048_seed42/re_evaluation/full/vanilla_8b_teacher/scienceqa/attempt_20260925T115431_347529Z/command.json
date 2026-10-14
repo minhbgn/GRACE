@@ -1,0 +1,20 @@
+[
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/.venv-lmms-eval/bin/python",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/provenance/upstream_20260925/evaluation/ScienceQA/eval_scienceqa.py",
+  "--model_path",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+  "--output",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/full/vanilla_8b_teacher/scienceqa/attempt_20260925T115431_347529Z/results.json",
+  "--attn",
+  "flash_attention_2",
+  "--max_new_tokens",
+  "8",
+  "--problems",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/ScienceQA/data/problems.json",
+  "--splits",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/ScienceQA/data/pid_splits.json",
+  "--image_root",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/ScienceQA/data/images",
+  "--split",
+  "test"
+]

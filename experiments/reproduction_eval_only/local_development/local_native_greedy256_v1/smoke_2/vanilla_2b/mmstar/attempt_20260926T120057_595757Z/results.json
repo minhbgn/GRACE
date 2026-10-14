@@ -1,0 +1,113 @@
+{
+  "summary": {
+    "evaluation_protocol": {
+      "version": 1,
+      "min_pixels": null,
+      "max_pixels": null,
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "num_beams": 1,
+      "repetition_penalty": 1.0,
+      "context": "no truncation; native model context",
+      "attention": "flash_attention_2"
+    },
+    "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+    "processor_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+    "image_processor_size": {
+      "longest_edge": 16777216,
+      "shortest_edge": 65536
+    },
+    "tsv": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/MMStar/MMStar.tsv",
+    "total": 2,
+    "correct": 0,
+    "overall_acc": 0.0,
+    "parse_fail": 0,
+    "errors": 0,
+    "by_category": {
+      "coarse perception": {
+        "acc": 0.0,
+        "correct": 0,
+        "total": 2
+      }
+    },
+    "by_l2_category": {
+      "image scene and topic": {
+        "acc": 0.0,
+        "correct": 0,
+        "total": 2
+      }
+    },
+    "scorer": "deterministic_local_v1",
+    "primary_metric": "overall_accuracy_1500",
+    "unresolved": 0,
+    "generation_unknown": 0,
+    "finish_reasons": {
+      "eos": 2
+    },
+    "truncated": 0,
+    "hit_token_cap": 0,
+    "generated_tokens": 15,
+    "primary_score": 0.0
+  },
+  "results": [
+    {
+      "index": 0,
+      "pred": "D",
+      "gold": "A",
+      "correct": false,
+      "raw": "D",
+      "generation": {
+        "token_ids": [
+          35,
+          151645
+        ],
+        "generated_tokens": 2,
+        "max_new_tokens": 256,
+        "finish_reason": "eos",
+        "hit_token_cap": false,
+        "truncated": false
+      },
+      "category": "coarse perception",
+      "l2_category": "image scene and topic",
+      "n_options": 4,
+      "error": null,
+      "extraction_method": "leading",
+      "unresolved": false
+    },
+    {
+      "index": 1,
+      "pred": "C",
+      "gold": "B",
+      "correct": false,
+      "raw": "C: A body of water and the Golden Gate Bridge.",
+      "generation": {
+        "token_ids": [
+          34,
+          25,
+          362,
+          2487,
+          315,
+          3015,
+          323,
+          279,
+          17809,
+          29243,
+          19874,
+          13,
+          151645
+        ],
+        "generated_tokens": 13,
+        "max_new_tokens": 256,
+        "finish_reason": "eos",
+        "hit_token_cap": false,
+        "truncated": false
+      },
+      "category": "coarse perception",
+      "l2_category": "image scene and topic",
+      "n_options": 4,
+      "error": null,
+      "extraction_method": "leading",
+      "unresolved": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "accumulation": 2,
+  "grid": [
+    [
+      1,
+      48,
+      48
+    ]
+  ],
+  "rcka_warmup_steps": 1,
+  "sequence_tokens": 4096,
+  "supervised_tokens": 3506,
+  "synthetic_answer": true,
+  "updates": 3,
+  "visual_tokens": 576
+}

@@ -1,0 +1,32 @@
+{
+  "snapshot_names": {
+    "frozen_qat_scale": "model.language_model.layers.0.mlp.gate_proj.log_scale",
+    "lora_A": "model.language_model.layers.0.self_attn.q_proj.lora_A",
+    "lora_B": "model.language_model.layers.0.self_attn.q_proj.lora_B",
+    "merger": "model.visual.merger.norm.weight",
+    "qat_scale": "model.language_model.layers.0.self_attn.q_proj.log_scale"
+  },
+  "teacher_trainable_parameters": 0,
+  "trainable_inventory": {
+    "lora_A": {
+      "parameters": 7340032,
+      "tensors": 112
+    },
+    "lora_B": {
+      "parameters": 5505024,
+      "tensors": 112
+    },
+    "merger": {
+      "parameters": 25174016,
+      "tensors": 6
+    },
+    "other": {
+      "parameters": 0,
+      "tensors": 0
+    },
+    "qat_scale": {
+      "parameters": 2752512,
+      "tensors": 112
+    }
+  }
+}

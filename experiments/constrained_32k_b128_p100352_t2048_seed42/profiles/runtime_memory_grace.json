@@ -1,0 +1,36 @@
+[
+  {
+    "method": "grace",
+    "complete": true,
+    "stop_reason": null,
+    "steps": 10,
+    "measured_steps": 9,
+    "global_batch": 128,
+    "max_pixels": 100352,
+    "model_max_length": 2048,
+    "median_update_seconds": 70.23482491075993,
+    "median_cycle_seconds": 88.88893380761147,
+    "examples_per_second": 1.8224577360680583,
+    "peak_allocated_gib": 24.69897747039795,
+    "peak_reserved_gib": 26.91015625,
+    "projected_update_hours": 4.994476438098483,
+    "latest_segment_training_hours": 0.24708838888888887,
+    "baseline": {
+      "method": "grace",
+      "complete": true,
+      "stop_reason": null,
+      "steps": 3,
+      "measured_steps": 2,
+      "global_batch": 64,
+      "max_pixels": 50176,
+      "model_max_length": 1024,
+      "median_update_seconds": 19.967193726450205,
+      "median_cycle_seconds": 36.13575237989426,
+      "examples_per_second": 3.205257627926967,
+      "peak_allocated_gib": 22.842034339904785,
+      "peak_reserved_gib": 23.84765625,
+      "projected_update_hours": 2.8397786633173623,
+      "latest_segment_training_hours": 0.03058902777777778
+    }
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "summary": {
+    "evaluation_protocol": {
+      "version": 1,
+      "min_pixels": null,
+      "max_pixels": null,
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "num_beams": 1,
+      "repetition_penalty": 1.0,
+      "context": "no truncation; native model context",
+      "attention": "flash_attention_2"
+    },
+    "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+    "processor_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+    "image_processor_size": {
+      "longest_edge": 16777216,
+      "shortest_edge": 65536
+    },
+    "tsv": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/MMBench/mmbench_dev_en_20231003.tsv",
+    "total": 2,
+    "correct": 2,
+    "overall_acc": 1.0,
+    "parse_fail": 0,
+    "errors": 0,
+    "by_l2_category": {
+      "attribute_reasoning": {
+        "acc": 1.0,
+        "correct": 2,
+        "total": 2
+      }
+    },
+    "by_category": {
+      "identity_reasoning": {
+        "acc": 1.0,
+        "correct": 1,
+        "total": 1
+      },
+      "physical_property_reasoning": {
+        "acc": 1.0,
+        "correct": 1,
+        "total": 1
+      }
+    },
+    "scorer": "deterministic_local_v1",
+    "primary_metric": "circular_accuracy_all_supplied_rotations",
+    "unresolved": 0,
+    "generation_unknown": 0,
+    "finish_reasons": {
+      "eos": 2
+    },
+    "truncated": 0,
+    "hit_token_cap": 0,
+    "generated_tokens": 16,
+    "primary_score": null,
+    "circular": null,
+    "partial": true
+  },
+  "results": [
+    {
+      "index": 241,
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "raw": "B",
+      "generation": {
+        "token_ids": [
+          33,
+          151645
+        ],
+        "generated_tokens": 2,
+        "max_new_tokens": 256,
+        "finish_reason": "eos",
+        "hit_token_cap": false,
+        "truncated": false
+      },
+      "category": "identity_reasoning",
+      "l2_category": "attribute_reasoning",
+      "n_options": 2,
+      "error": null,
+      "extraction_method": "pinned_mmbench_prefetch",
+      "unresolved": false
+    },
+    {
+      "index": 252,
+      "pred": "B",
+      "gold": "B",
+      "correct": true,
+      "raw": "(B) if a new batch of concrete was firm enough to use",
+      "generation": {
+        "token_ids": [
+          5349,
+          8,
+          421,
+          264,
+          501,
+          7162,
+          315,
+          14175,
+          572,
+          7474,
+          3322,
+          311,
+          990,
+          151645
+        ],
+        "generated_tokens": 14,
+        "max_new_tokens": 256,
+        "finish_reason": "eos",
+        "hit_token_cap": false,
+        "truncated": false
+      },
+      "category": "physical_property_reasoning",
+      "l2_category": "attribute_reasoning",
+      "n_options": 2,
+      "error": null,
+      "extraction_method": "pinned_mmbench_prefetch",
+      "unresolved": false
+    }
+  ]
+}

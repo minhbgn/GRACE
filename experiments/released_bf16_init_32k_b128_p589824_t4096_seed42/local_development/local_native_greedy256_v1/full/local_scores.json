@@ -1,0 +1,428 @@
+{
+  "artifact_ready": true,
+  "note": "Artifact readiness only; unresolved answers count as wrong and capped outputs remain visible. No paper-score gate. No claim of judge-equivalent semantic extraction.",
+  "protocol": "local_native_greedy256_v1",
+  "rows": [
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "qat_w4",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 65.72187776793623,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 4329,
+      "finish_reasons": {
+        "eos": 4329
+      },
+      "generated_tokens": 8658,
+      "metric": "circular_accuracy_all_supplied_rotations",
+      "model": "qat_w4",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "score_percent": 89.43298969072166,
+      "status": "complete",
+      "suite": "mmbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4241
+      },
+      "generated_tokens": 8482,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "qat_w4",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 83.6359349210092,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 6176,
+      "metric": "accuracy_test",
+      "model": "qat_w4",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 80.69948186528497,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 900
+      },
+      "generated_tokens": 1949,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "qat_w4",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 67.77777777777779,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 28466,
+      "metric": "accuracy_image_subset",
+      "model": "qat_w4",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 75.42331202135881,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1500
+      },
+      "generated_tokens": 3000,
+      "metric": "overall_accuracy_1500",
+      "model": "qat_w4",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 67.73333333333333,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "grace_w4",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 66.16474756421611,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 4329,
+      "finish_reasons": {
+        "eos": 4329
+      },
+      "generated_tokens": 8658,
+      "metric": "circular_accuracy_all_supplied_rotations",
+      "model": "grace_w4",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "score_percent": 88.31615120274914,
+      "status": "complete",
+      "suite": "mmbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4241
+      },
+      "generated_tokens": 8482,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "grace_w4",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 85.12143362414525,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 6176,
+      "metric": "accuracy_test",
+      "model": "grace_w4",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 79.85751295336787,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 900
+      },
+      "generated_tokens": 1953,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "grace_w4",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 66.22222222222223,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 28466,
+      "metric": "accuracy_image_subset",
+      "model": "grace_w4",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 76.43504531722054,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1500
+      },
+      "generated_tokens": 3000,
+      "metric": "overall_accuracy_1500",
+      "model": "grace_w4",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 59.8,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "qat_w8",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 65.27900797165633,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 4329,
+      "finish_reasons": {
+        "eos": 4329
+      },
+      "generated_tokens": 8868,
+      "metric": "circular_accuracy_all_supplied_rotations",
+      "model": "qat_w8",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "score_percent": 90.63573883161511,
+      "status": "complete",
+      "suite": "mmbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4239,
+        "length": 2
+      },
+      "generated_tokens": 15606,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "qat_w8",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 85.82881395897193,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 2,
+      "unresolved": 2
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 6176,
+      "metric": "accuracy_test",
+      "model": "qat_w8",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 81.83290155440415,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 900
+      },
+      "generated_tokens": 1957,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "qat_w8",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 72.44444444444444,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 28466,
+      "metric": "accuracy_image_subset",
+      "model": "qat_w8",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 75.83081570996978,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1500
+      },
+      "generated_tokens": 3000,
+      "metric": "overall_accuracy_1500",
+      "model": "qat_w8",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 69.73333333333333,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "grace_w8",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 66.34189548272808,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 4329,
+      "finish_reasons": {
+        "eos": 4329
+      },
+      "generated_tokens": 8658,
+      "metric": "circular_accuracy_all_supplied_rotations",
+      "model": "grace_w8",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "score_percent": 88.91752577319588,
+      "status": "complete",
+      "suite": "mmbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4241
+      },
+      "generated_tokens": 8482,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "grace_w8",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 86.48903560481018,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 6176,
+      "metric": "accuracy_test",
+      "model": "grace_w8",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 80.69948186528497,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 900
+      },
+      "generated_tokens": 1947,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "grace_w8",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 68.33333333333333,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 28466,
+      "metric": "accuracy_image_subset",
+      "model": "grace_w8",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 76.7160823438488,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1500
+      },
+      "generated_tokens": 3000,
+      "metric": "overall_accuracy_1500",
+      "model": "grace_w8",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 56.53333333333334,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 0,
+      "unresolved": 0
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+{"step": 1, "seconds": 3.1307424381375313, "peak_allocated_gib": 11.655617713928223, "peak_reserved_gib": 12.919921875, "elapsed_seconds": 3.4079406559467316, "cycle_seconds": 3.4079406559467316, "ce": 0.0152278495952487, "segment_start_step": 0}
+{"step": 2, "seconds": 1.3204014301300049, "peak_allocated_gib": 11.807504653930664, "peak_reserved_gib": 13.076171875, "elapsed_seconds": 22.162573166191578, "cycle_seconds": 18.754632510244846, "ce": 0.0152278495952487, "segment_start_step": 0}
+{"step": 3, "seconds": 1.3251269683241844, "peak_allocated_gib": 11.807504653930664, "peak_reserved_gib": 13.076171875, "elapsed_seconds": 38.8210708796978, "cycle_seconds": 16.65849771350622, "ce": 0.011468972079455853, "segment_start_step": 0}

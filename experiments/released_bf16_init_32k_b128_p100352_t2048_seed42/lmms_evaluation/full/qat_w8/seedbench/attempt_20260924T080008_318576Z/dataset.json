@@ -1,0 +1,14 @@
+{
+  "evaluation_rows": 17990,
+  "source": {
+    "repo": "lmms-lab-encoder/SEED-Bench",
+    "requested_repo": "lmms-lab/SEED-Bench",
+    "revision": "74c4ea0cee96786739e4ccb97d227818a05ae752"
+  },
+  "splits": {
+    "test": {
+      "fingerprint": "9177fd0e444c35f9",
+      "rows": 17990
+    }
+  }
+}

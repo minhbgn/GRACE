@@ -1,0 +1,1544 @@
+{"idx": 1, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 3, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 5, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 7, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 9, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 11, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 13, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 15, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 17, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 19, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 21, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 23, "pred": 1, "gold": 1, "correct": true, "raw": "(B) hawk", "n_choices": 4, "error": null}
+{"idx": 25, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 27, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 29, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 31, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 33, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 35, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 37, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 39, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 41, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 43, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 45, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 47, "pred": 0, "gold": 2, "correct": false, "raw": "(A) 3", "n_choices": 4, "error": null}
+{"idx": 49, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 51, "pred": 0, "gold": 0, "correct": true, "raw": "(A) pupa", "n_choices": 4, "error": null}
+{"idx": 53, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 55, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 57, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 59, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Squirrel population would decrease", "n_choices": 4, "error": null}
+{"idx": 61, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 63, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 65, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 67, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 69, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 71, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 73, "pred": 2, "gold": 2, "correct": true, "raw": "(C) sheep", "n_choices": 4, "error": null}
+{"idx": 75, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 77, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 79, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 81, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 83, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 85, "pred": 0, "gold": 2, "correct": false, "raw": "(A) Granite Intrusions", "n_choices": 4, "error": null}
+{"idx": 87, "pred": 0, "gold": 2, "correct": false, "raw": "(A) growing tadpole", "n_choices": 4, "error": null}
+{"idx": 89, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 91, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 93, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 95, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 97, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 99, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 101, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 103, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 105, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 107, "pred": 0, "gold": 0, "correct": true, "raw": "(A) sun", "n_choices": 4, "error": null}
+{"idx": 109, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 111, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 113, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 115, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 117, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 119, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 121, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 123, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 125, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Birds", "n_choices": 4, "error": null}
+{"idx": 127, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 129, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 131, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 133, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 135, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 137, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 139, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 141, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 143, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 145, "pred": 2, "gold": 3, "correct": false, "raw": "(C) Ribosome", "n_choices": 4, "error": null}
+{"idx": 147, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 149, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 151, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 153, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 155, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 157, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 159, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 161, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 163, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Acquatic insects", "n_choices": 4, "error": null}
+{"idx": 165, "pred": 2, "gold": 2, "correct": true, "raw": "(C) bass", "n_choices": 4, "error": null}
+{"idx": 167, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 169, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 171, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 173, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 175, "pred": 2, "gold": 2, "correct": true, "raw": "(C) ants and poison dart", "n_choices": 4, "error": null}
+{"idx": 177, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 179, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 181, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 183, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 185, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 187, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 189, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 191, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 193, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 195, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 197, "pred": 2, "gold": 3, "correct": false, "raw": "(C) 2", "n_choices": 4, "error": null}
+{"idx": 199, "pred": 3, "gold": 3, "correct": true, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 201, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 203, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 205, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 207, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 209, "pred": 0, "gold": 0, "correct": true, "raw": "(A) coyote", "n_choices": 4, "error": null}
+{"idx": 211, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 213, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 215, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 217, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 219, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 221, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 223, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 225, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 227, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 229, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 231, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 233, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 235, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 237, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 239, "pred": 0, "gold": 3, "correct": false, "raw": "(A) Earth", "n_choices": 4, "error": null}
+{"idx": 241, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 243, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Cricket", "n_choices": 4, "error": null}
+{"idx": 245, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 247, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 249, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 251, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 253, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 255, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 257, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 259, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 261, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 263, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 265, "pred": 3, "gold": 3, "correct": true, "raw": "(D) bird", "n_choices": 4, "error": null}
+{"idx": 267, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 269, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Hawk", "n_choices": 4, "error": null}
+{"idx": 271, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 273, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 275, "pred": 2, "gold": 2, "correct": true, "raw": "(C) mercury", "n_choices": 4, "error": null}
+{"idx": 277, "pred": 1, "gold": 1, "correct": true, "raw": "(B)", "n_choices": 4, "error": null}
+{"idx": 279, "pred": 0, "gold": 0, "correct": true, "raw": "(A) egg", "n_choices": 4, "error": null}
+{"idx": 281, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 283, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 285, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Wings", "n_choices": 4, "error": null}
+{"idx": 287, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 289, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 291, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 293, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 295, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 297, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 299, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 301, "pred": 2, "gold": 2, "correct": true, "raw": "(C) predatory mites", "n_choices": 4, "error": null}
+{"idx": 303, "pred": 1, "gold": 1, "correct": true, "raw": "(B) bacteria", "n_choices": 4, "error": null}
+{"idx": 305, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 307, "pred": 0, "gold": 0, "correct": true, "raw": "(A) P-Bacteria", "n_choices": 4, "error": null}
+{"idx": 309, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 311, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 313, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 315, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 317, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 319, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 321, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 323, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 325, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 327, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 329, "pred": 2, "gold": 1, "correct": false, "raw": "(C) decrease", "n_choices": 4, "error": null}
+{"idx": 331, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 333, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 335, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 337, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 339, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 341, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 343, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 345, "pred": 2, "gold": 2, "correct": true, "raw": "(C) decrease", "n_choices": 4, "error": null}
+{"idx": 347, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 349, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 351, "pred": 0, "gold": 0, "correct": true, "raw": "(A) dragonfly nymph", "n_choices": 4, "error": null}
+{"idx": 353, "pred": 2, "gold": 1, "correct": false, "raw": "(C) predator", "n_choices": 4, "error": null}
+{"idx": 355, "pred": 2, "gold": 2, "correct": true, "raw": "(C) shrimp", "n_choices": 4, "error": null}
+{"idx": 357, "pred": 0, "gold": 2, "correct": false, "raw": "(A) dragonfly nymph", "n_choices": 4, "error": null}
+{"idx": 359, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 361, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 363, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 365, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 367, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 369, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 371, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 373, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 375, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 377, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 379, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 381, "pred": 2, "gold": 2, "correct": true, "raw": "(C) hawk", "n_choices": 4, "error": null}
+{"idx": 383, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 385, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 387, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 389, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 391, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 393, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Berries and Plantain", "n_choices": 4, "error": null}
+{"idx": 395, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Rabbit and grasshopper", "n_choices": 4, "error": null}
+{"idx": 397, "pred": 2, "gold": 1, "correct": false, "raw": "(C) Last Quarter", "n_choices": 4, "error": null}
+{"idx": 399, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 401, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 403, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 405, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 407, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 409, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 411, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 413, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 415, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 417, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 419, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 421, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 423, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 425, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 427, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 429, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 431, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 433, "pred": 3, "gold": 3, "correct": true, "raw": "(D) B", "n_choices": 4, "error": null}
+{"idx": 435, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 437, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 439, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 441, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 443, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 445, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 447, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 449, "pred": 0, "gold": 1, "correct": false, "raw": "(A) peroxisome", "n_choices": 4, "error": null}
+{"idx": 451, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 453, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 455, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 457, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 459, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 461, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 463, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 465, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 467, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 469, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 471, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 473, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 475, "pred": 0, "gold": 0, "correct": true, "raw": "(A) waxing crescent", "n_choices": 4, "error": null}
+{"idx": 477, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 479, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 481, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 483, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 485, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 487, "pred": 2, "gold": 2, "correct": true, "raw": "(C) protozoa", "n_choices": 4, "error": null}
+{"idx": 489, "pred": 2, "gold": 2, "correct": true, "raw": "(C) arthropods", "n_choices": 4, "error": null}
+{"idx": 491, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 493, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 495, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 497, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 499, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 501, "pred": 3, "gold": 3, "correct": true, "raw": "(D) moon", "n_choices": 4, "error": null}
+{"idx": 503, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 505, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 507, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Weathering", "n_choices": 4, "error": null}
+{"idx": 509, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 511, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 513, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 515, "pred": 1, "gold": 1, "correct": true, "raw": "(B) Larva", "n_choices": 4, "error": null}
+{"idx": 517, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 519, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 521, "pred": 0, "gold": 0, "correct": true, "raw": "(A) scar", "n_choices": 4, "error": null}
+{"idx": 523, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 525, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 527, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 529, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 531, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 533, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 535, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 537, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Nucleolus", "n_choices": 4, "error": null}
+{"idx": 539, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 541, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 543, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 545, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 547, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 549, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 551, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 553, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 555, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 557, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 559, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 561, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 563, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 565, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 567, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 569, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 571, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 573, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 575, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 577, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 579, "pred": 3, "gold": 2, "correct": false, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 581, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Botany The stalk by which", "n_choices": 4, "error": null}
+{"idx": 583, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 585, "pred": 3, "gold": 2, "correct": false, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 587, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 589, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 591, "pred": 2, "gold": 2, "correct": true, "raw": "(C) crust", "n_choices": 4, "error": null}
+{"idx": 593, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 595, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 597, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 599, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 601, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 603, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 605, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 607, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 609, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 611, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 613, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 615, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Decrease", "n_choices": 4, "error": null}
+{"idx": 617, "pred": 2, "gold": 2, "correct": true, "raw": "(C) algae", "n_choices": 4, "error": null}
+{"idx": 619, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 621, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 623, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 625, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 627, "pred": 2, "gold": 2, "correct": true, "raw": "(C) decrease", "n_choices": 4, "error": null}
+{"idx": 629, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 631, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 633, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 635, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Cottontail", "n_choices": 4, "error": null}
+{"idx": 637, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 639, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 641, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 643, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 645, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 647, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 649, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 651, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 653, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 655, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 657, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 659, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 661, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 663, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 665, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 667, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 669, "pred": 0, "gold": 2, "correct": false, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 671, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 673, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 675, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 677, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 679, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 681, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 683, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 685, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 687, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 689, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 691, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 693, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 695, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 697, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 699, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 701, "pred": 0, "gold": 3, "correct": false, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 703, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 705, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 707, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 709, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 711, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 713, "pred": 2, "gold": 2, "correct": true, "raw": "(C) 3", "n_choices": 4, "error": null}
+{"idx": 715, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 717, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 719, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 721, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Killer Whale", "n_choices": 4, "error": null}
+{"idx": 723, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Plant", "n_choices": 4, "error": null}
+{"idx": 725, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 727, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 729, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 731, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 733, "pred": 3, "gold": 3, "correct": true, "raw": "(D) plants", "n_choices": 4, "error": null}
+{"idx": 735, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 737, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 739, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 741, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 743, "pred": 2, "gold": 2, "correct": true, "raw": "(C) It changes from a caterpillar", "n_choices": 4, "error": null}
+{"idx": 745, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 747, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 749, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 751, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 753, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 755, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 757, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 759, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 761, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 763, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 765, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 767, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 769, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 771, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 773, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 775, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 777, "pred": 3, "gold": 3, "correct": true, "raw": "(D) f", "n_choices": 4, "error": null}
+{"idx": 779, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 781, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 783, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 785, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 787, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 789, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 791, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 793, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 795, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 797, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 799, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Asteroid Belt", "n_choices": 4, "error": null}
+{"idx": 801, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 803, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 805, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 807, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 809, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 811, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 813, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 815, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 817, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 819, "pred": 3, "gold": 3, "correct": true, "raw": "(D) berries and floers", "n_choices": 4, "error": null}
+{"idx": 821, "pred": 3, "gold": 3, "correct": true, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 823, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 825, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 827, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 829, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Decomposers", "n_choices": 4, "error": null}
+{"idx": 831, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 833, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 835, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 837, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 839, "pred": 3, "gold": 3, "correct": true, "raw": "(D) snake", "n_choices": 4, "error": null}
+{"idx": 841, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 843, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 845, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 847, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 849, "pred": 2, "gold": 2, "correct": true, "raw": "(C) baleen whale", "n_choices": 4, "error": null}
+{"idx": 851, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 853, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 855, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 857, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 859, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 861, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 863, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Seal", "n_choices": 4, "error": null}
+{"idx": 865, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 867, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 869, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 871, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 873, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 875, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 877, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 879, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 881, "pred": 0, "gold": 0, "correct": true, "raw": "(A) gallbladder", "n_choices": 4, "error": null}
+{"idx": 883, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 885, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 887, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 889, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 891, "pred": 1, "gold": 2, "correct": false, "raw": "(B) Freshwater shrimp", "n_choices": 4, "error": null}
+{"idx": 893, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 895, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 897, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 899, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 901, "pred": 3, "gold": 1, "correct": false, "raw": "(D) Mercury", "n_choices": 4, "error": null}
+{"idx": 903, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 905, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 907, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 909, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Mouse", "n_choices": 4, "error": null}
+{"idx": 911, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 913, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 915, "pred": 1, "gold": 1, "correct": true, "raw": "(B) Trees and Grass", "n_choices": 4, "error": null}
+{"idx": 917, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 919, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 921, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Chickadee", "n_choices": 4, "error": null}
+{"idx": 923, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 925, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Heart", "n_choices": 4, "error": null}
+{"idx": 927, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 929, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 931, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 933, "pred": 2, "gold": 3, "correct": false, "raw": "(C) decrease in plankton", "n_choices": 4, "error": null}
+{"idx": 935, "pred": 2, "gold": 2, "correct": true, "raw": "(C) 3", "n_choices": 4, "error": null}
+{"idx": 937, "pred": 3, "gold": 3, "correct": true, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 939, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 941, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 943, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 945, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 947, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 949, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Kingfisher", "n_choices": 4, "error": null}
+{"idx": 951, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 953, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 955, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 957, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 959, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 961, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 963, "pred": 2, "gold": 2, "correct": true, "raw": "(C) producer", "n_choices": 4, "error": null}
+{"idx": 965, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 967, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 969, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Mushroom", "n_choices": 4, "error": null}
+{"idx": 971, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 973, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 975, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 977, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 979, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 981, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 983, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 985, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 987, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 989, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 991, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 993, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 995, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 997, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 999, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1001, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1003, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1005, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1007, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 1009, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1011, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1013, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1015, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1017, "pred": 0, "gold": 1, "correct": false, "raw": "(A) Dawn bat", "n_choices": 4, "error": null}
+{"idx": 1019, "pred": 0, "gold": 0, "correct": true, "raw": "(A) bengal tiger", "n_choices": 4, "error": null}
+{"idx": 1021, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1023, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1025, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1027, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1029, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1031, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1033, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1035, "pred": 0, "gold": 0, "correct": true, "raw": "(A) wheat", "n_choices": 4, "error": null}
+{"idx": 1037, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1039, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1041, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1043, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1045, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1047, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1049, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1051, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1053, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1055, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1057, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1059, "pred": 0, "gold": 0, "correct": true, "raw": "(A) 3", "n_choices": 4, "error": null}
+{"idx": 1061, "pred": 2, "gold": 2, "correct": true, "raw": "(C) young frog", "n_choices": 4, "error": null}
+{"idx": 1063, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1065, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1067, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1069, "pred": 2, "gold": 3, "correct": false, "raw": "(C) small fish", "n_choices": 4, "error": null}
+{"idx": 1071, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Phytoplankton", "n_choices": 4, "error": null}
+{"idx": 1073, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1075, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1077, "pred": 1, "gold": 1, "correct": true, "raw": "(B)", "n_choices": 4, "error": null}
+{"idx": 1079, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1081, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1083, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1085, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1087, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1089, "pred": 1, "gold": 3, "correct": false, "raw": "(B) Equator", "n_choices": 4, "error": null}
+{"idx": 1091, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1093, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1095, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1097, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1099, "pred": 2, "gold": 3, "correct": false, "raw": "(C) new moon", "n_choices": 4, "error": null}
+{"idx": 1101, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1103, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1105, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1107, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1109, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1111, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1113, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1115, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1117, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1119, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1121, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1123, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1125, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1127, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1129, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1131, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1133, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1135, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1137, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1139, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1141, "pred": 0, "gold": 1, "correct": false, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1143, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1145, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1147, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1149, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Phytoplankton", "n_choices": 4, "error": null}
+{"idx": 1151, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1153, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1155, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1157, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1159, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1161, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1163, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1165, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Going to the left", "n_choices": 4, "error": null}
+{"idx": 1167, "pred": 2, "gold": 1, "correct": false, "raw": "(C) herbivore", "n_choices": 4, "error": null}
+{"idx": 1169, "pred": 2, "gold": 2, "correct": true, "raw": "(C) sharks", "n_choices": 4, "error": null}
+{"idx": 1171, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1173, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1175, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1177, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1179, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1181, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1183, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1185, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1187, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1189, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1191, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1193, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Cougar", "n_choices": 4, "error": null}
+{"idx": 1195, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1197, "pred": 2, "gold": 2, "correct": true, "raw": "(C) krill", "n_choices": 4, "error": null}
+{"idx": 1199, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1201, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Krill", "n_choices": 4, "error": null}
+{"idx": 1203, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1205, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1207, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1209, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1211, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1213, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1215, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1217, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1219, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1221, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1223, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1225, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1227, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1229, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1231, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1233, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1235, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1237, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1239, "pred": 3, "gold": 3, "correct": true, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 1241, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1243, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1245, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1247, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1249, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1251, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1253, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1255, "pred": 3, "gold": 1, "correct": false, "raw": "(D) sun", "n_choices": 4, "error": null}
+{"idx": 1257, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1259, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1261, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1263, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1265, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1267, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1269, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1271, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1273, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Plant", "n_choices": 4, "error": null}
+{"idx": 1275, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1277, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1279, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1281, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1283, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1285, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1287, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1289, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1291, "pred": 1, "gold": 1, "correct": true, "raw": "(B) snake", "n_choices": 4, "error": null}
+{"idx": 1293, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1295, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1297, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1299, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1301, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 1303, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1305, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1307, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1309, "pred": 1, "gold": 1, "correct": true, "raw": "(B) rabbit", "n_choices": 4, "error": null}
+{"idx": 1311, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1313, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1315, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Pupa", "n_choices": 4, "error": null}
+{"idx": 1317, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1319, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1321, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1323, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1325, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1327, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1329, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1331, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1333, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1335, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Wings", "n_choices": 4, "error": null}
+{"idx": 1337, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1339, "pred": 2, "gold": 2, "correct": true, "raw": "(C) F", "n_choices": 4, "error": null}
+{"idx": 1341, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1343, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1345, "pred": 2, "gold": 2, "correct": true, "raw": "(C) rock", "n_choices": 4, "error": null}
+{"idx": 1347, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Phases of the moon", "n_choices": 4, "error": null}
+{"idx": 1349, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1351, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1353, "pred": 2, "gold": 2, "correct": true, "raw": "(C) berries", "n_choices": 4, "error": null}
+{"idx": 1355, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1357, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1359, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1361, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1363, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1365, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1367, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1369, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1371, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1373, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1375, "pred": 0, "gold": 0, "correct": true, "raw": "(A) roots", "n_choices": 4, "error": null}
+{"idx": 1377, "pred": 1, "gold": 0, "correct": false, "raw": "(B) frog", "n_choices": 4, "error": null}
+{"idx": 1379, "pred": 2, "gold": 3, "correct": false, "raw": "(C) frog", "n_choices": 4, "error": null}
+{"idx": 1381, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1383, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1385, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1387, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1389, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1391, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1393, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1395, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1397, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1399, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1401, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1403, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1405, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1407, "pred": 3, "gold": 3, "correct": true, "raw": "(D) monkey", "n_choices": 4, "error": null}
+{"idx": 1409, "pred": 0, "gold": 0, "correct": true, "raw": "(A) egg", "n_choices": 4, "error": null}
+{"idx": 1411, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1413, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1415, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1417, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1419, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1421, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1423, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1425, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1427, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1429, "pred": 2, "gold": 2, "correct": true, "raw": "(C) eggs", "n_choices": 4, "error": null}
+{"idx": 1431, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1433, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1435, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1437, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1439, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1441, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1443, "pred": 0, "gold": 0, "correct": true, "raw": "(A) aphid, caterpillar and", "n_choices": 4, "error": null}
+{"idx": 1445, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1447, "pred": 2, "gold": 2, "correct": true, "raw": "(C) plant", "n_choices": 4, "error": null}
+{"idx": 1449, "pred": 0, "gold": 0, "correct": true, "raw": "(A) vacuole", "n_choices": 4, "error": null}
+{"idx": 1451, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1453, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1455, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1457, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1459, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1461, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1463, "pred": 2, "gold": 2, "correct": true, "raw": "(C) December 21-2", "n_choices": 4, "error": null}
+{"idx": 1465, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1467, "pred": 0, "gold": 1, "correct": false, "raw": "(A) Sediments", "n_choices": 4, "error": null}
+{"idx": 1469, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1471, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1473, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1475, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Tertiary Consumers", "n_choices": 4, "error": null}
+{"idx": 1477, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Rabbit", "n_choices": 4, "error": null}
+{"idx": 1479, "pred": 0, "gold": 0, "correct": true, "raw": "(A) wolf", "n_choices": 4, "error": null}
+{"idx": 1481, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1483, "pred": 0, "gold": 3, "correct": false, "raw": "(A) 6", "n_choices": 4, "error": null}
+{"idx": 1485, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1487, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1489, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1491, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1493, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1495, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1497, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1499, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1501, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1503, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1505, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1507, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1509, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1511, "pred": 2, "gold": 3, "correct": false, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 1513, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1515, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1517, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1519, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1521, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1523, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1525, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1527, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1529, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1531, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1533, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1535, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1537, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1539, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1541, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1543, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1545, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1547, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1549, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1551, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1553, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Fingers", "n_choices": 4, "error": null}
+{"idx": 1555, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1557, "pred": 2, "gold": 2, "correct": true, "raw": "(C) far tidal bulge", "n_choices": 4, "error": null}
+{"idx": 1559, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1561, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1563, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1565, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1567, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1569, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Stem", "n_choices": 4, "error": null}
+{"idx": 1571, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1573, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1575, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1577, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1579, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1581, "pred": 3, "gold": 2, "correct": false, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 1583, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1585, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1587, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1589, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1591, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1593, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1595, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1597, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1599, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Mouse", "n_choices": 4, "error": null}
+{"idx": 1601, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1603, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1605, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1607, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1609, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1611, "pred": 0, "gold": 2, "correct": false, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1613, "pred": 2, "gold": 2, "correct": true, "raw": "(C) trachea", "n_choices": 4, "error": null}
+{"idx": 1615, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1617, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1619, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1621, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1623, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1625, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1627, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1629, "pred": 0, "gold": 2, "correct": false, "raw": "(A) Crescent", "n_choices": 4, "error": null}
+{"idx": 1631, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1633, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1635, "pred": 0, "gold": 2, "correct": false, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1637, "pred": 0, "gold": 0, "correct": true, "raw": "(A) turtle grass", "n_choices": 4, "error": null}
+{"idx": 1639, "pred": 3, "gold": 3, "correct": true, "raw": "(D) nurse sharks", "n_choices": 4, "error": null}
+{"idx": 1641, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1643, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1645, "pred": 1, "gold": 1, "correct": true, "raw": "(B) Green Sea Turtle", "n_choices": 4, "error": null}
+{"idx": 1647, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1649, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1651, "pred": 2, "gold": 2, "correct": true, "raw": "(C) G and D", "n_choices": 4, "error": null}
+{"idx": 1653, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1655, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1657, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1659, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1661, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1663, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1665, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1667, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1669, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Pluto", "n_choices": 4, "error": null}
+{"idx": 1671, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1673, "pred": 1, "gold": 1, "correct": true, "raw": "(B)", "n_choices": 4, "error": null}
+{"idx": 1675, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1677, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1679, "pred": 3, "gold": 3, "correct": true, "raw": "(D) orca", "n_choices": 4, "error": null}
+{"idx": 1681, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1683, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1685, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1687, "pred": 3, "gold": 3, "correct": true, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 1689, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1691, "pred": 0, "gold": 0, "correct": true, "raw": "(A) crust", "n_choices": 4, "error": null}
+{"idx": 1693, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1695, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1697, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1699, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1701, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1703, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1705, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Roots", "n_choices": 4, "error": null}
+{"idx": 1707, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1709, "pred": 1, "gold": 1, "correct": true, "raw": "(B) sea urchin", "n_choices": 4, "error": null}
+{"idx": 1711, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1713, "pred": 3, "gold": 3, "correct": true, "raw": "(D) eagles", "n_choices": 4, "error": null}
+{"idx": 1715, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1717, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1719, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1721, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1723, "pred": 2, "gold": 2, "correct": true, "raw": "(C) fungi", "n_choices": 4, "error": null}
+{"idx": 1725, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1727, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1729, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1731, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1733, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1735, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1737, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1739, "pred": 2, "gold": 3, "correct": false, "raw": "(C) A", "n_choices": 4, "error": null}
+{"idx": 1741, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1743, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1745, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1747, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1749, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1751, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1753, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1755, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1757, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1759, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Mantle", "n_choices": 4, "error": null}
+{"idx": 1761, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1763, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1765, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1767, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1769, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1771, "pred": 3, "gold": 3, "correct": true, "raw": "(D", "n_choices": 4, "error": null}
+{"idx": 1773, "pred": 1, "gold": 1, "correct": true, "raw": "(B)", "n_choices": 4, "error": null}
+{"idx": 1775, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1777, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1779, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1781, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1783, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1785, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1787, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1789, "pred": 0, "gold": 2, "correct": false, "raw": "(A) owl", "n_choices": 4, "error": null}
+{"idx": 1791, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1793, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1795, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1797, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1799, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1801, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1803, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Rabbit", "n_choices": 4, "error": null}
+{"idx": 1805, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1807, "pred": 3, "gold": 3, "correct": true, "raw": "(D", "n_choices": 4, "error": null}
+{"idx": 1809, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1811, "pred": 3, "gold": 1, "correct": false, "raw": "(D) from the egg", "n_choices": 4, "error": null}
+{"idx": 1813, "pred": 3, "gold": 0, "correct": false, "raw": "(D) Egg", "n_choices": 4, "error": null}
+{"idx": 1815, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1817, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1819, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1821, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1823, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1825, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1827, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1829, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1831, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1833, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1835, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1837, "pred": 1, "gold": 0, "correct": false, "raw": "(B) O and H", "n_choices": 4, "error": null}
+{"idx": 1839, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1841, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1843, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1845, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1847, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1849, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1851, "pred": 2, "gold": 2, "correct": true, "raw": "(C) harvested and bruned", "n_choices": 4, "error": null}
+{"idx": 1853, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1855, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1857, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1859, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1861, "pred": 1, "gold": 1, "correct": true, "raw": "(B) root", "n_choices": 4, "error": null}
+{"idx": 1863, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1865, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1867, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1869, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1871, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1873, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1875, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1877, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1879, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1881, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1883, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1885, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1887, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1889, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1891, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1893, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1895, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1897, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1899, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1901, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1903, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1905, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1907, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1909, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1911, "pred": 2, "gold": 2, "correct": true, "raw": "(C) tuna", "n_choices": 4, "error": null}
+{"idx": 1913, "pred": 2, "gold": 2, "correct": true, "raw": "(C) large shark", "n_choices": 4, "error": null}
+{"idx": 1915, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1917, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1919, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1921, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1923, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1925, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1927, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1929, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1931, "pred": 2, "gold": 3, "correct": false, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 1933, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1935, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1937, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Tiger", "n_choices": 4, "error": null}
+{"idx": 1939, "pred": 1, "gold": 1, "correct": true, "raw": "(B) cobra", "n_choices": 4, "error": null}
+{"idx": 1941, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1943, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 1945, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1947, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1949, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1951, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1953, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1955, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1957, "pred": 3, "gold": 2, "correct": false, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 1959, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1961, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1963, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1965, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1967, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1969, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 1971, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1973, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1975, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1977, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 1979, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1981, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1983, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1985, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1987, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1989, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1991, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1993, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 1995, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 1997, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 1999, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2001, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2003, "pred": 2, "gold": 2, "correct": true, "raw": "(C) mantle", "n_choices": 4, "error": null}
+{"idx": 2005, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2007, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2009, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2011, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2013, "pred": 2, "gold": 2, "correct": true, "raw": "(C) decreases", "n_choices": 4, "error": null}
+{"idx": 2015, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2017, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2019, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2021, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2023, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2025, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2027, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2029, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2031, "pred": 1, "gold": 3, "correct": false, "raw": "(B)", "n_choices": 4, "error": null}
+{"idx": 2033, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2035, "pred": 0, "gold": 1, "correct": false, "raw": "(A) Shark", "n_choices": 4, "error": null}
+{"idx": 2037, "pred": 1, "gold": 3, "correct": false, "raw": "(B) large shark", "n_choices": 4, "error": null}
+{"idx": 2039, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2041, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2043, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2045, "pred": 1, "gold": 1, "correct": true, "raw": "(B) large shark", "n_choices": 4, "error": null}
+{"idx": 2047, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2049, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2051, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2053, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2055, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2057, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2059, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2061, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2063, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2065, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2067, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 2069, "pred": 2, "gold": 2, "correct": true, "raw": "(C) owl", "n_choices": 4, "error": null}
+{"idx": 2071, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2073, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2075, "pred": 3, "gold": 3, "correct": true, "raw": "(D) H and F", "n_choices": 4, "error": null}
+{"idx": 2077, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2079, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2081, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2083, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2085, "pred": 2, "gold": 0, "correct": false, "raw": "(C) Carnivore", "n_choices": 4, "error": null}
+{"idx": 2087, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2089, "pred": 0, "gold": 2, "correct": false, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2091, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2093, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2095, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2097, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2099, "pred": 0, "gold": 1, "correct": false, "raw": "(A) killer whales", "n_choices": 4, "error": null}
+{"idx": 2101, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2103, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2105, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2107, "pred": 0, "gold": 3, "correct": false, "raw": "(A) killer whale", "n_choices": 4, "error": null}
+{"idx": 2109, "pred": 3, "gold": 3, "correct": true, "raw": "(D) soil", "n_choices": 4, "error": null}
+{"idx": 2111, "pred": 2, "gold": 2, "correct": true, "raw": "(C) animals", "n_choices": 4, "error": null}
+{"idx": 2113, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2115, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2117, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2119, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2121, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2123, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2125, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2127, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2129, "pred": 3, "gold": 3, "correct": true, "raw": "(D) C", "n_choices": 4, "error": null}
+{"idx": 2131, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2133, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2135, "pred": 3, "gold": 2, "correct": false, "raw": "(D) plankton", "n_choices": 4, "error": null}
+{"idx": 2137, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2139, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2141, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2143, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2145, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2147, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2149, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2151, "pred": 0, "gold": 2, "correct": false, "raw": "(A) squid", "n_choices": 4, "error": null}
+{"idx": 2153, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2155, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2157, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2159, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2161, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2163, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2165, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2167, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2169, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2171, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2173, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2175, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2177, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2179, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2181, "pred": 3, "gold": 0, "correct": false, "raw": "(D) Second Instar Nymph", "n_choices": 4, "error": null}
+{"idx": 2183, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2185, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2187, "pred": 3, "gold": 2, "correct": false, "raw": "(D) 6", "n_choices": 4, "error": null}
+{"idx": 2189, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2191, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2193, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2195, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2197, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Hawk and Wolf", "n_choices": 4, "error": null}
+{"idx": 2199, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2201, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2203, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2205, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2207, "pred": 2, "gold": 1, "correct": false, "raw": "(C) chuckwalla", "n_choices": 4, "error": null}
+{"idx": 2209, "pred": 2, "gold": 2, "correct": true, "raw": "(C) cottontail", "n_choices": 4, "error": null}
+{"idx": 2211, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 2213, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2215, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2217, "pred": 0, "gold": 0, "correct": true, "raw": "(A) adult breaking free of crysal", "n_choices": 4, "error": null}
+{"idx": 2219, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2221, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2223, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2225, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2227, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2229, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2231, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 2233, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2235, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2237, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2239, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2241, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2243, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2245, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2247, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2249, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2251, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2253, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Esophagus", "n_choices": 4, "error": null}
+{"idx": 2255, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2257, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2259, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2261, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2263, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2265, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2267, "pred": 2, "gold": 2, "correct": true, "raw": "(C) tree", "n_choices": 4, "error": null}
+{"idx": 2269, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2271, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2273, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2275, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2277, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2279, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2281, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2283, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2285, "pred": 1, "gold": 1, "correct": true, "raw": "(B)", "n_choices": 4, "error": null}
+{"idx": 2287, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 2289, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2291, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2293, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2295, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2297, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 2299, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2301, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2303, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2305, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2307, "pred": 1, "gold": 1, "correct": true, "raw": "(B) algae", "n_choices": 4, "error": null}
+{"idx": 2309, "pred": 0, "gold": 0, "correct": true, "raw": "(A) herbivore fishes", "n_choices": 4, "error": null}
+{"idx": 2311, "pred": 2, "gold": 2, "correct": true, "raw": "(C) The layers of the Earth", "n_choices": 4, "error": null}
+{"idx": 2313, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Fox, sparrow and hawk", "n_choices": 4, "error": null}
+{"idx": 2315, "pred": 3, "gold": 3, "correct": true, "raw": "(D) plants", "n_choices": 4, "error": null}
+{"idx": 2317, "pred": 3, "gold": 3, "correct": true, "raw": "(D) fox", "n_choices": 4, "error": null}
+{"idx": 2319, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2321, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2323, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2325, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2327, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2329, "pred": 2, "gold": 2, "correct": true, "raw": "(C) otter", "n_choices": 4, "error": null}
+{"idx": 2331, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2333, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2335, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2337, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2339, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2341, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2343, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2345, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2347, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Fungus Decomposer", "n_choices": 4, "error": null}
+{"idx": 2349, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2351, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2353, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2355, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2357, "pred": 1, "gold": 0, "correct": false, "raw": "(B) New", "n_choices": 4, "error": null}
+{"idx": 2359, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2361, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2363, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2365, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2367, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2369, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2371, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2373, "pred": 2, "gold": 0, "correct": false, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 2375, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2377, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2379, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2381, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2383, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2385, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2387, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Cellular Respiration in Mitochond", "n_choices": 4, "error": null}
+{"idx": 2389, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2391, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2393, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2395, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2397, "pred": 2, "gold": 2, "correct": true, "raw": "(C) mouse", "n_choices": 4, "error": null}
+{"idx": 2399, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2401, "pred": 1, "gold": 1, "correct": true, "raw": "(B) mouse", "n_choices": 4, "error": null}
+{"idx": 2403, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2405, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2407, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2409, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2411, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2413, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2415, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2417, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2419, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2421, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2423, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2425, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2427, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2429, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2431, "pred": 3, "gold": 1, "correct": false, "raw": "(D) water vapor", "n_choices": 4, "error": null}
+{"idx": 2433, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2435, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Goat and Deer", "n_choices": 4, "error": null}
+{"idx": 2437, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2439, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2441, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2443, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2445, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Mynah", "n_choices": 4, "error": null}
+{"idx": 2447, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2449, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2451, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2453, "pred": 1, "gold": 1, "correct": true, "raw": "(B) herbivore", "n_choices": 4, "error": null}
+{"idx": 2455, "pred": 1, "gold": 1, "correct": true, "raw": "(B) herbivore", "n_choices": 4, "error": null}
+{"idx": 2457, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2459, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Larve", "n_choices": 4, "error": null}
+{"idx": 2461, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2463, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2465, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2467, "pred": 0, "gold": 2, "correct": false, "raw": "(A) A beak that has a", "n_choices": 4, "error": null}
+{"idx": 2469, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2471, "pred": 1, "gold": 1, "correct": true, "raw": "(B) bronchus", "n_choices": 4, "error": null}
+{"idx": 2473, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2475, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2477, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2479, "pred": 0, "gold": 0, "correct": true, "raw": "(A) grasshopper", "n_choices": 4, "error": null}
+{"idx": 2481, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2483, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2485, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2487, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2489, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2491, "pred": 1, "gold": 1, "correct": true, "raw": "(B) bear", "n_choices": 4, "error": null}
+{"idx": 2493, "pred": 2, "gold": 0, "correct": false, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 2495, "pred": 2, "gold": 2, "correct": true, "raw": "(C) grass", "n_choices": 4, "error": null}
+{"idx": 2497, "pred": 0, "gold": 0, "correct": true, "raw": "(A) grass", "n_choices": 4, "error": null}
+{"idx": 2499, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2501, "pred": 3, "gold": 3, "correct": true, "raw": "(D) bird", "n_choices": 4, "error": null}
+{"idx": 2503, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2505, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2507, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2509, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2511, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Leg", "n_choices": 4, "error": null}
+{"idx": 2513, "pred": 2, "gold": 2, "correct": true, "raw": "(C) e-", "n_choices": 4, "error": null}
+{"idx": 2515, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2517, "pred": 0, "gold": 0, "correct": true, "raw": "(A) nymph", "n_choices": 4, "error": null}
+{"idx": 2519, "pred": 3, "gold": 3, "correct": true, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 2521, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2523, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2525, "pred": 0, "gold": 1, "correct": false, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2527, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2529, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2531, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2533, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2535, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2537, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2539, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2541, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2543, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2545, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2547, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2549, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2551, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2553, "pred": 3, "gold": 3, "correct": true, "raw": "(D) elephant", "n_choices": 4, "error": null}
+{"idx": 2555, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2557, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2559, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2561, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2563, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2565, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2567, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2569, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2571, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2573, "pred": 3, "gold": 3, "correct": true, "raw": "(D) F", "n_choices": 4, "error": null}
+{"idx": 2575, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2577, "pred": 2, "gold": 3, "correct": false, "raw": "(C) grazer", "n_choices": 4, "error": null}
+{"idx": 2579, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2581, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2583, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2585, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2587, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2589, "pred": 1, "gold": 1, "correct": true, "raw": "(B) A", "n_choices": 4, "error": null}
+{"idx": 2591, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2593, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2595, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2597, "pred": 3, "gold": 3, "correct": true, "raw": "(D) panther", "n_choices": 4, "error": null}
+{"idx": 2599, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2601, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Oxygen", "n_choices": 4, "error": null}
+{"idx": 2603, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2605, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2607, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2609, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2611, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2613, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2615, "pred": 2, "gold": 2, "correct": true, "raw": "(C)", "n_choices": 4, "error": null}
+{"idx": 2617, "pred": 2, "gold": 2, "correct": true, "raw": "(C) humans", "n_choices": 4, "error": null}
+{"idx": 2619, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2621, "pred": 2, "gold": 2, "correct": true, "raw": "(C) human", "n_choices": 4, "error": null}
+{"idx": 2623, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2625, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2627, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2629, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2631, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2633, "pred": 3, "gold": 1, "correct": false, "raw": "(D) G", "n_choices": 4, "error": null}
+{"idx": 2635, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2637, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2639, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2641, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2643, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2645, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2647, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2649, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2651, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2653, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2655, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2657, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2659, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2661, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2663, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2665, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2667, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2669, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2671, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2673, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2675, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2677, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2679, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2681, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2683, "pred": 0, "gold": 0, "correct": true, "raw": "(A) chrysalis", "n_choices": 4, "error": null}
+{"idx": 2685, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2687, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2689, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2691, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2693, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2695, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2697, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2699, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2701, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2703, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2705, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2707, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2709, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2711, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Stoneroller", "n_choices": 4, "error": null}
+{"idx": 2713, "pred": 0, "gold": 0, "correct": true, "raw": "(A) crayfish", "n_choices": 4, "error": null}
+{"idx": 2715, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2717, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2719, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2721, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2723, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2725, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2727, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2729, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2731, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2733, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2735, "pred": 0, "gold": 0, "correct": true, "raw": "(A) arganodus", "n_choices": 4, "error": null}
+{"idx": 2737, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2739, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2741, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2743, "pred": 2, "gold": 2, "correct": true, "raw": "(C) thyme", "n_choices": 4, "error": null}
+{"idx": 2745, "pred": 0, "gold": 0, "correct": true, "raw": "(A) thyme", "n_choices": 4, "error": null}
+{"idx": 2747, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2749, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2751, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2753, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2755, "pred": 0, "gold": 3, "correct": false, "raw": "(A) Caribou Moss", "n_choices": 4, "error": null}
+{"idx": 2757, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2759, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2761, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2763, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2765, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2767, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2769, "pred": 1, "gold": 1, "correct": true, "raw": "(B) snake", "n_choices": 4, "error": null}
+{"idx": 2771, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2773, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2775, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2777, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2779, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Rock", "n_choices": 4, "error": null}
+{"idx": 2781, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2783, "pred": 2, "gold": 1, "correct": false, "raw": "(C) A", "n_choices": 4, "error": null}
+{"idx": 2785, "pred": 0, "gold": 3, "correct": false, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2787, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2789, "pred": 0, "gold": 1, "correct": false, "raw": "(A) lobed", "n_choices": 4, "error": null}
+{"idx": 2791, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2793, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2795, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2797, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2799, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2801, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2803, "pred": 2, "gold": 2, "correct": true, "raw": "(C) leaves", "n_choices": 4, "error": null}
+{"idx": 2805, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2807, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2809, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Beatle", "n_choices": 4, "error": null}
+{"idx": 2811, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2813, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2815, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2817, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2819, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2821, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2823, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2825, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2827, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2829, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2831, "pred": 3, "gold": 3, "correct": true, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 2833, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2835, "pred": 0, "gold": 1, "correct": false, "raw": "(A) crab", "n_choices": 4, "error": null}
+{"idx": 2837, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2839, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2841, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2843, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2845, "pred": 0, "gold": 0, "correct": true, "raw": "(A) protozoa", "n_choices": 4, "error": null}
+{"idx": 2847, "pred": 3, "gold": 3, "correct": true, "raw": "(D) plant", "n_choices": 4, "error": null}
+{"idx": 2849, "pred": 0, "gold": 3, "correct": false, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 2851, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2853, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2855, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2857, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2859, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2861, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2863, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2865, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2867, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2869, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2871, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2873, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2875, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2877, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2879, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2881, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2883, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2885, "pred": 0, "gold": 1, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2887, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Esophagus", "n_choices": 4, "error": null}
+{"idx": 2889, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2891, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2893, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2895, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2897, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2899, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2901, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Mature plant", "n_choices": 4, "error": null}
+{"idx": 2903, "pred": 2, "gold": 1, "correct": false, "raw": "(C) Seed", "n_choices": 4, "error": null}
+{"idx": 2905, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2907, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2909, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2911, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2913, "pred": 3, "gold": 3, "correct": true, "raw": "(D) roots", "n_choices": 4, "error": null}
+{"idx": 2915, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2917, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2919, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2921, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2923, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2925, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2927, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2929, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2931, "pred": 2, "gold": 2, "correct": true, "raw": "(C) humans", "n_choices": 4, "error": null}
+{"idx": 2933, "pred": 1, "gold": 1, "correct": true, "raw": "(B) human", "n_choices": 4, "error": null}
+{"idx": 2935, "pred": 3, "gold": 1, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2937, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2939, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2941, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2943, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2945, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2947, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2949, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Ducks", "n_choices": 4, "error": null}
+{"idx": 2951, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2953, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2955, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2957, "pred": 0, "gold": 0, "correct": true, "raw": "(A) raccoons", "n_choices": 4, "error": null}
+{"idx": 2959, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2961, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2963, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2965, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2967, "pred": 3, "gold": 2, "correct": false, "raw": "(D) Plants", "n_choices": 4, "error": null}
+{"idx": 2969, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2971, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2973, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2975, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2977, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2979, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2981, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2983, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 2985, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2987, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2989, "pred": 2, "gold": 3, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2991, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2993, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 2995, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 2997, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 2999, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 3001, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 3003, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 3005, "pred": 1, "gold": 1, "correct": true, "raw": "(B) B", "n_choices": 4, "error": null}
+{"idx": 3007, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 3009, "pred": 2, "gold": 0, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 3011, "pred": 3, "gold": 3, "correct": true, "raw": "(D) Snake", "n_choices": 4, "error": null}
+{"idx": 3013, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 3015, "pred": 1, "gold": 1, "correct": true, "raw": "(B) grasshopper and cricket", "n_choices": 4, "error": null}
+{"idx": 3017, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 3019, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 3021, "pred": 0, "gold": 2, "correct": false, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 3023, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 3025, "pred": 1, "gold": 2, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 3027, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 3029, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 3031, "pred": 3, "gold": 2, "correct": false, "raw": "(D)", "n_choices": 4, "error": null}
+{"idx": 3033, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 3035, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 3037, "pred": 3, "gold": 0, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 3039, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 3041, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 3043, "pred": 3, "gold": 2, "correct": false, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 3045, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 3047, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Acicular", "n_choices": 4, "error": null}
+{"idx": 3049, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 3051, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 3053, "pred": 1, "gold": 3, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 3055, "pred": 3, "gold": 1, "correct": false, "raw": "(D) puma", "n_choices": 4, "error": null}
+{"idx": 3057, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 3059, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 3061, "pred": 1, "gold": 0, "correct": false, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 3063, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 3065, "pred": 0, "gold": 2, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 3067, "pred": 2, "gold": 2, "correct": true, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 3069, "pred": 0, "gold": 3, "correct": false, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 3071, "pred": 1, "gold": 1, "correct": true, "raw": "B", "n_choices": 4, "error": null}
+{"idx": 3073, "pred": 0, "gold": 0, "correct": true, "raw": "(A) Autumn Equinox", "n_choices": 4, "error": null}
+{"idx": 3075, "pred": 0, "gold": 0, "correct": true, "raw": "A", "n_choices": 4, "error": null}
+{"idx": 3077, "pred": 0, "gold": 0, "correct": true, "raw": "(A)", "n_choices": 4, "error": null}
+{"idx": 3079, "pred": 2, "gold": 2, "correct": true, "raw": "(C) Light from the Sun", "n_choices": 4, "error": null}
+{"idx": 3081, "pred": 2, "gold": 1, "correct": false, "raw": "C", "n_choices": 4, "error": null}
+{"idx": 3083, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 3085, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}
+{"idx": 3087, "pred": 3, "gold": 3, "correct": true, "raw": "D", "n_choices": 4, "error": null}

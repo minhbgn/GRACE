@@ -1,0 +1,2651 @@
+{
+  "scope": "Offline diagnostics from completed saved predictions. No inference, judge, random guessing, gate edits or resolution overrides.",
+  "label_key": {
+    "0": "No",
+    "1": "Yes"
+  },
+  "reference_scorer_sha256": {
+    "third_party/lmms-eval-v0.7.1/lmms_eval/tasks/mmbench/mmbench_evals.py": "abf1b0bad8842aff4711d7cf833bf42f42ca33a0803ecf70594a7c7dba4bb5fd",
+    "third_party/lmms-eval-v0.7.1/lmms_eval/tasks/mmstar/utils.py": "b5d5114a82deb7b350713396153a23efefdd33382233699f2b1baba49aa10058"
+  },
+  "models": {
+    "released_bf16": {
+      "hallusionbench": {
+        "all": {
+          "n": 1129,
+          "gold_counts": {
+            "0": 645,
+            "1": 484
+          },
+          "prediction_counts": {
+            "1": 298,
+            "0": 831
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "1": 93,
+              "0": 552
+            },
+            "1": {
+              "0": 279,
+              "1": 205
+            }
+          },
+          "accuracy": 67.0504871567759,
+          "majority_baseline": 57.13020372010629,
+          "balanced_accuracy": 63.96838362483183,
+          "macro_f1": 63.61320774333063,
+          "classes": {
+            "0": {
+              "precision": 66.4259927797834,
+              "recall": 85.5813953488372,
+              "f1": 74.79674796747967
+            },
+            "1": {
+              "precision": 68.79194630872483,
+              "recall": 42.35537190082645,
+              "f1": 52.429667519181585
+            }
+          }
+        },
+        "image_only": {
+          "n": 951,
+          "gold_counts": {
+            "0": 550,
+            "1": 401
+          },
+          "prediction_counts": {
+            "1": 264,
+            "0": 687
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "1": 85,
+              "0": 465
+            },
+            "1": {
+              "0": 222,
+              "1": 179
+            }
+          },
+          "accuracy": 67.71819137749738,
+          "majority_baseline": 57.83385909568875,
+          "balanced_accuracy": 64.59192926773974,
+          "macro_f1": 64.5082390697844,
+          "classes": {
+            "0": {
+              "precision": 67.68558951965065,
+              "recall": 84.54545454545455,
+              "f1": 75.18189167340338
+            },
+            "1": {
+              "precision": 67.8030303030303,
+              "recall": 44.63840399002494,
+              "f1": 53.83458646616542
+            }
+          }
+        },
+        "text_only": {
+          "n": 178,
+          "gold_counts": {
+            "0": 95,
+            "1": 83
+          },
+          "prediction_counts": {
+            "0": 144,
+            "1": 34
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "0": 87,
+              "1": 8
+            },
+            "1": {
+              "0": 57,
+              "1": 26
+            }
+          },
+          "accuracy": 63.48314606741573,
+          "majority_baseline": 53.37078651685393,
+          "balanced_accuracy": 61.45212428662016,
+          "macro_f1": 58.62389586238958,
+          "classes": {
+            "0": {
+              "precision": 60.416666666666664,
+              "recall": 91.57894736842105,
+              "f1": 72.80334728033472
+            },
+            "1": {
+              "precision": 76.47058823529412,
+              "recall": 31.325301204819276,
+              "f1": 44.44444444444444
+            }
+          }
+        },
+        "qAcc": 34.72527472527472,
+        "fAcc": 37.283236994219656
+      },
+      "mmbench": {
+        "rows": 4329,
+        "groups": 1164,
+        "unresolved_rows": 0,
+        "unresolved_indices": [],
+        "resolved_parser_conflicts": [],
+        "circular_lower_percent": 91.1512027491409,
+        "circular_upper_percent": 91.1512027491409,
+        "potentially_judge_dependent_groups": 0,
+        "row_lower_percent": 94.66389466389467,
+        "saved_choice_circular_percent": 91.1512027491409
+      },
+      "mmmu": {
+        "by_question_type": {
+          "multiple-choice": {
+            "acc": 0.7461629279811098,
+            "correct": 632,
+            "total": 847
+          },
+          "open": {
+            "acc": 0.3018867924528302,
+            "correct": 16,
+            "total": 53
+          }
+        },
+        "by_subject": {
+          "Accounting": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Agriculture": {
+            "acc": 0.7333333333333333,
+            "correct": 22,
+            "total": 30
+          },
+          "Architecture_and_Engineering": {
+            "acc": 0.6666666666666666,
+            "correct": 20,
+            "total": 30
+          },
+          "Art": {
+            "acc": 0.9333333333333333,
+            "correct": 28,
+            "total": 30
+          },
+          "Art_Theory": {
+            "acc": 0.8666666666666667,
+            "correct": 26,
+            "total": 30
+          },
+          "Basic_Medical_Science": {
+            "acc": 0.7666666666666667,
+            "correct": 23,
+            "total": 30
+          },
+          "Biology": {
+            "acc": 0.6333333333333333,
+            "correct": 19,
+            "total": 30
+          },
+          "Chemistry": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Clinical_Medicine": {
+            "acc": 0.8666666666666667,
+            "correct": 26,
+            "total": 30
+          },
+          "Computer_Science": {
+            "acc": 0.7333333333333333,
+            "correct": 22,
+            "total": 30
+          },
+          "Design": {
+            "acc": 0.8333333333333334,
+            "correct": 25,
+            "total": 30
+          },
+          "Diagnostics_and_Laboratory_Medicine": {
+            "acc": 0.7333333333333333,
+            "correct": 22,
+            "total": 30
+          },
+          "Economics": {
+            "acc": 0.8,
+            "correct": 24,
+            "total": 30
+          },
+          "Electronics": {
+            "acc": 0.6,
+            "correct": 18,
+            "total": 30
+          },
+          "Energy_and_Power": {
+            "acc": 0.6,
+            "correct": 18,
+            "total": 30
+          },
+          "Finance": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "Geography": {
+            "acc": 0.6,
+            "correct": 18,
+            "total": 30
+          },
+          "History": {
+            "acc": 0.9,
+            "correct": 27,
+            "total": 30
+          },
+          "Literature": {
+            "acc": 0.9666666666666667,
+            "correct": 29,
+            "total": 30
+          },
+          "Manage": {
+            "acc": 0.8,
+            "correct": 24,
+            "total": 30
+          },
+          "Marketing": {
+            "acc": 0.7333333333333333,
+            "correct": 22,
+            "total": 30
+          },
+          "Materials": {
+            "acc": 0.5,
+            "correct": 15,
+            "total": 30
+          },
+          "Math": {
+            "acc": 0.6666666666666666,
+            "correct": 20,
+            "total": 30
+          },
+          "Mechanical_Engineering": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Music": {
+            "acc": 0.4666666666666667,
+            "correct": 14,
+            "total": 30
+          },
+          "Pharmacy": {
+            "acc": 0.8,
+            "correct": 24,
+            "total": 30
+          },
+          "Physics": {
+            "acc": 0.7666666666666667,
+            "correct": 23,
+            "total": 30
+          },
+          "Psychology": {
+            "acc": 0.8333333333333334,
+            "correct": 25,
+            "total": 30
+          },
+          "Public_Health": {
+            "acc": 0.7666666666666667,
+            "correct": 23,
+            "total": 30
+          },
+          "Sociology": {
+            "acc": 0.8666666666666667,
+            "correct": 26,
+            "total": 30
+          }
+        }
+      },
+      "mmstar": {
+        "native_micro": 68.0,
+        "native_l2_macro": 68.17571939832393,
+        "reference_exact_micro": 68.0,
+        "reference_exact_l2_macro": 68.17571939832393,
+        "correct_to_wrong": 0,
+        "wrong_to_correct": 0,
+        "examples": []
+      }
+    },
+    "released_grace_w4": {
+      "hallusionbench": {
+        "all": {
+          "n": 1129,
+          "gold_counts": {
+            "0": 645,
+            "1": 484
+          },
+          "prediction_counts": {
+            "1": 476,
+            "0": 653
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "1": 196,
+              "0": 449
+            },
+            "1": {
+              "0": 204,
+              "1": 280
+            }
+          },
+          "accuracy": 64.5704162976085,
+          "majority_baseline": 57.13020372010629,
+          "balanced_accuracy": 63.73182138509834,
+          "macro_f1": 63.758346173600415,
+          "classes": {
+            "0": {
+              "precision": 68.75957120980092,
+              "recall": 69.6124031007752,
+              "f1": 69.18335901386749
+            },
+            "1": {
+              "precision": 58.8235294117647,
+              "recall": 57.85123966942149,
+              "f1": 58.333333333333336
+            }
+          }
+        },
+        "image_only": {
+          "n": 951,
+          "gold_counts": {
+            "0": 550,
+            "1": 401
+          },
+          "prediction_counts": {
+            "1": 395,
+            "0": 556
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "1": 155,
+              "0": 395
+            },
+            "1": {
+              "0": 161,
+              "1": 240
+            }
+          },
+          "accuracy": 66.77181913774973,
+          "majority_baseline": 57.83385909568875,
+          "balanced_accuracy": 65.83427794150987,
+          "macro_f1": 65.86503948312993,
+          "classes": {
+            "0": {
+              "precision": 71.0431654676259,
+              "recall": 71.81818181818181,
+              "f1": 71.42857142857143
+            },
+            "1": {
+              "precision": 60.75949367088607,
+              "recall": 59.85037406483791,
+              "f1": 60.30150753768844
+            }
+          }
+        },
+        "text_only": {
+          "n": 178,
+          "gold_counts": {
+            "0": 95,
+            "1": 83
+          },
+          "prediction_counts": {
+            "1": 81,
+            "0": 97
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "1": 41,
+              "0": 54
+            },
+            "1": {
+              "1": 40,
+              "0": 43
+            }
+          },
+          "accuracy": 52.80898876404494,
+          "majority_baseline": 53.37078651685393,
+          "balanced_accuracy": 52.51743817374762,
+          "macro_f1": 52.515243902439025,
+          "classes": {
+            "0": {
+              "precision": 55.670103092783506,
+              "recall": 56.8421052631579,
+              "f1": 56.25
+            },
+            "1": {
+              "precision": 49.382716049382715,
+              "recall": 48.19277108433735,
+              "f1": 48.78048780487805
+            }
+          }
+        },
+        "qAcc": 31.648351648351646,
+        "fAcc": 36.127167630057805
+      },
+      "mmbench": {
+        "rows": 4329,
+        "groups": 1164,
+        "unresolved_rows": 0,
+        "unresolved_indices": [],
+        "resolved_parser_conflicts": [],
+        "circular_lower_percent": 88.65979381443299,
+        "circular_upper_percent": 88.65979381443299,
+        "potentially_judge_dependent_groups": 0,
+        "row_lower_percent": 92.63109263109263,
+        "saved_choice_circular_percent": 88.65979381443299
+      },
+      "mmmu": {
+        "by_question_type": {
+          "multiple-choice": {
+            "acc": 0.641086186540732,
+            "correct": 543,
+            "total": 847
+          },
+          "open": {
+            "acc": 0.20754716981132076,
+            "correct": 11,
+            "total": 53
+          }
+        },
+        "by_subject": {
+          "Accounting": {
+            "acc": 0.4666666666666667,
+            "correct": 14,
+            "total": 30
+          },
+          "Agriculture": {
+            "acc": 0.7,
+            "correct": 21,
+            "total": 30
+          },
+          "Architecture_and_Engineering": {
+            "acc": 0.5,
+            "correct": 15,
+            "total": 30
+          },
+          "Art": {
+            "acc": 0.8,
+            "correct": 24,
+            "total": 30
+          },
+          "Art_Theory": {
+            "acc": 0.7333333333333333,
+            "correct": 22,
+            "total": 30
+          },
+          "Basic_Medical_Science": {
+            "acc": 0.6666666666666666,
+            "correct": 20,
+            "total": 30
+          },
+          "Biology": {
+            "acc": 0.6,
+            "correct": 18,
+            "total": 30
+          },
+          "Chemistry": {
+            "acc": 0.43333333333333335,
+            "correct": 13,
+            "total": 30
+          },
+          "Clinical_Medicine": {
+            "acc": 0.6666666666666666,
+            "correct": 20,
+            "total": 30
+          },
+          "Computer_Science": {
+            "acc": 0.6,
+            "correct": 18,
+            "total": 30
+          },
+          "Design": {
+            "acc": 0.8,
+            "correct": 24,
+            "total": 30
+          },
+          "Diagnostics_and_Laboratory_Medicine": {
+            "acc": 0.6333333333333333,
+            "correct": 19,
+            "total": 30
+          },
+          "Economics": {
+            "acc": 0.6666666666666666,
+            "correct": 20,
+            "total": 30
+          },
+          "Electronics": {
+            "acc": 0.4666666666666667,
+            "correct": 14,
+            "total": 30
+          },
+          "Energy_and_Power": {
+            "acc": 0.5,
+            "correct": 15,
+            "total": 30
+          },
+          "Finance": {
+            "acc": 0.43333333333333335,
+            "correct": 13,
+            "total": 30
+          },
+          "Geography": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "History": {
+            "acc": 0.8333333333333334,
+            "correct": 25,
+            "total": 30
+          },
+          "Literature": {
+            "acc": 0.9,
+            "correct": 27,
+            "total": 30
+          },
+          "Manage": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Marketing": {
+            "acc": 0.6,
+            "correct": 18,
+            "total": 30
+          },
+          "Materials": {
+            "acc": 0.6,
+            "correct": 18,
+            "total": 30
+          },
+          "Math": {
+            "acc": 0.6,
+            "correct": 18,
+            "total": 30
+          },
+          "Mechanical_Engineering": {
+            "acc": 0.4,
+            "correct": 12,
+            "total": 30
+          },
+          "Music": {
+            "acc": 0.4,
+            "correct": 12,
+            "total": 30
+          },
+          "Pharmacy": {
+            "acc": 0.6666666666666666,
+            "correct": 20,
+            "total": 30
+          },
+          "Physics": {
+            "acc": 0.6333333333333333,
+            "correct": 19,
+            "total": 30
+          },
+          "Psychology": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "Public_Health": {
+            "acc": 0.7,
+            "correct": 21,
+            "total": 30
+          },
+          "Sociology": {
+            "acc": 0.8,
+            "correct": 24,
+            "total": 30
+          }
+        }
+      },
+      "mmstar": {
+        "native_micro": 66.2,
+        "native_l2_macro": 66.85967276588352,
+        "reference_exact_micro": 66.2,
+        "reference_exact_l2_macro": 66.85967276588352,
+        "correct_to_wrong": 0,
+        "wrong_to_correct": 0,
+        "examples": []
+      }
+    },
+    "released_grace_w8": {
+      "hallusionbench": {
+        "all": {
+          "n": 1129,
+          "gold_counts": {
+            "0": 645,
+            "1": 484
+          },
+          "prediction_counts": {
+            "1": 542,
+            "0": 579,
+            "invalid": 8
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "1": 259,
+              "0": 385,
+              "invalid": 1
+            },
+            "1": {
+              "0": 194,
+              "1": 283,
+              "invalid": 7
+            }
+          },
+          "accuracy": 59.1674047829938,
+          "majority_baseline": 57.13020372010629,
+          "balanced_accuracy": 59.08049843039272,
+          "macro_f1": 59.037094369911706,
+          "classes": {
+            "0": {
+              "precision": 66.49395509499136,
+              "recall": 59.689922480620154,
+              "f1": 62.908496732026144
+            },
+            "1": {
+              "precision": 52.2140221402214,
+              "recall": 58.47107438016529,
+              "f1": 55.16569200779727
+            }
+          }
+        },
+        "image_only": {
+          "n": 951,
+          "gold_counts": {
+            "0": 550,
+            "1": 401
+          },
+          "prediction_counts": {
+            "1": 450,
+            "0": 493,
+            "invalid": 8
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "1": 209,
+              "0": 340,
+              "invalid": 1
+            },
+            "1": {
+              "0": 153,
+              "1": 241,
+              "invalid": 7
+            }
+          },
+          "accuracy": 61.09358569926393,
+          "majority_baseline": 57.83385909568875,
+          "balanced_accuracy": 60.958966220811604,
+          "macro_f1": 60.91789818081034,
+          "classes": {
+            "0": {
+              "precision": 68.96551724137932,
+              "recall": 61.81818181818182,
+              "f1": 65.19654841802492
+            },
+            "1": {
+              "precision": 53.55555555555556,
+              "recall": 60.099750623441395,
+              "f1": 56.63924794359577
+            }
+          }
+        },
+        "text_only": {
+          "n": 178,
+          "gold_counts": {
+            "0": 95,
+            "1": 83
+          },
+          "prediction_counts": {
+            "1": 92,
+            "0": 86
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "1": 50,
+              "0": 45
+            },
+            "1": {
+              "1": 42,
+              "0": 41
+            }
+          },
+          "accuracy": 48.87640449438202,
+          "majority_baseline": 53.37078651685393,
+          "balanced_accuracy": 48.9854153455929,
+          "macro_f1": 48.86187845303868,
+          "classes": {
+            "0": {
+              "precision": 52.325581395348834,
+              "recall": 47.36842105263158,
+              "f1": 49.723756906077355
+            },
+            "1": {
+              "precision": 45.65217391304348,
+              "recall": 50.602409638554214,
+              "f1": 48.0
+            }
+          }
+        },
+        "qAcc": 23.076923076923077,
+        "fAcc": 31.79190751445087
+      },
+      "mmbench": {
+        "rows": 4329,
+        "groups": 1164,
+        "unresolved_rows": 0,
+        "unresolved_indices": [],
+        "resolved_parser_conflicts": [],
+        "circular_lower_percent": 88.4020618556701,
+        "circular_upper_percent": 88.4020618556701,
+        "potentially_judge_dependent_groups": 0,
+        "row_lower_percent": 92.49249249249249,
+        "saved_choice_circular_percent": 88.4020618556701
+      },
+      "mmmu": {
+        "by_question_type": {
+          "multiple-choice": {
+            "acc": 0.6044864226682408,
+            "correct": 512,
+            "total": 847
+          },
+          "open": {
+            "acc": 0.20754716981132076,
+            "correct": 11,
+            "total": 53
+          }
+        },
+        "by_subject": {
+          "Accounting": {
+            "acc": 0.4666666666666667,
+            "correct": 14,
+            "total": 30
+          },
+          "Agriculture": {
+            "acc": 0.7,
+            "correct": 21,
+            "total": 30
+          },
+          "Architecture_and_Engineering": {
+            "acc": 0.4666666666666667,
+            "correct": 14,
+            "total": 30
+          },
+          "Art": {
+            "acc": 0.8,
+            "correct": 24,
+            "total": 30
+          },
+          "Art_Theory": {
+            "acc": 0.7666666666666667,
+            "correct": 23,
+            "total": 30
+          },
+          "Basic_Medical_Science": {
+            "acc": 0.6666666666666666,
+            "correct": 20,
+            "total": 30
+          },
+          "Biology": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Chemistry": {
+            "acc": 0.36666666666666664,
+            "correct": 11,
+            "total": 30
+          },
+          "Clinical_Medicine": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Computer_Science": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Design": {
+            "acc": 0.8,
+            "correct": 24,
+            "total": 30
+          },
+          "Diagnostics_and_Laboratory_Medicine": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Economics": {
+            "acc": 0.7333333333333333,
+            "correct": 22,
+            "total": 30
+          },
+          "Electronics": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "Energy_and_Power": {
+            "acc": 0.43333333333333335,
+            "correct": 13,
+            "total": 30
+          },
+          "Finance": {
+            "acc": 0.36666666666666664,
+            "correct": 11,
+            "total": 30
+          },
+          "Geography": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "History": {
+            "acc": 0.7333333333333333,
+            "correct": 22,
+            "total": 30
+          },
+          "Literature": {
+            "acc": 0.9,
+            "correct": 27,
+            "total": 30
+          },
+          "Manage": {
+            "acc": 0.4666666666666667,
+            "correct": 14,
+            "total": 30
+          },
+          "Marketing": {
+            "acc": 0.6,
+            "correct": 18,
+            "total": 30
+          },
+          "Materials": {
+            "acc": 0.4,
+            "correct": 12,
+            "total": 30
+          },
+          "Math": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "Mechanical_Engineering": {
+            "acc": 0.43333333333333335,
+            "correct": 13,
+            "total": 30
+          },
+          "Music": {
+            "acc": 0.3,
+            "correct": 9,
+            "total": 30
+          },
+          "Pharmacy": {
+            "acc": 0.6666666666666666,
+            "correct": 20,
+            "total": 30
+          },
+          "Physics": {
+            "acc": 0.6,
+            "correct": 18,
+            "total": 30
+          },
+          "Psychology": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Public_Health": {
+            "acc": 0.6666666666666666,
+            "correct": 20,
+            "total": 30
+          },
+          "Sociology": {
+            "acc": 0.7333333333333333,
+            "correct": 22,
+            "total": 30
+          }
+        }
+      },
+      "mmstar": {
+        "native_micro": 63.66666666666667,
+        "native_l2_macro": 64.24843875632263,
+        "reference_exact_micro": 63.666666666666664,
+        "reference_exact_l2_macro": 64.24843875632263,
+        "correct_to_wrong": 0,
+        "wrong_to_correct": 0,
+        "examples": []
+      }
+    },
+    "vanilla_2b": {
+      "hallusionbench": {
+        "all": {
+          "n": 1129,
+          "gold_counts": {
+            "0": 645,
+            "1": 484
+          },
+          "prediction_counts": {
+            "1": 680,
+            "0": 449
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "1": 310,
+              "0": 335
+            },
+            "1": {
+              "1": 370,
+              "0": 114
+            }
+          },
+          "accuracy": 62.44464127546501,
+          "majority_baseline": 57.13020372010629,
+          "balanced_accuracy": 64.19213274392979,
+          "macro_f1": 62.40851379282182,
+          "classes": {
+            "0": {
+              "precision": 74.61024498886414,
+              "recall": 51.93798449612403,
+              "f1": 61.24314442413162
+            },
+            "1": {
+              "precision": 54.411764705882355,
+              "recall": 76.44628099173553,
+              "f1": 63.57388316151203
+            }
+          }
+        },
+        "image_only": {
+          "n": 951,
+          "gold_counts": {
+            "0": 550,
+            "1": 401
+          },
+          "prediction_counts": {
+            "1": 559,
+            "0": 392
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "1": 249,
+              "0": 301
+            },
+            "1": {
+              "1": 310,
+              "0": 91
+            }
+          },
+          "accuracy": 64.24815983175604,
+          "majority_baseline": 57.83385909568875,
+          "balanced_accuracy": 66.01700294717752,
+          "macro_f1": 64.24495753715499,
+          "classes": {
+            "0": {
+              "precision": 76.78571428571429,
+              "recall": 54.72727272727273,
+              "f1": 63.90658174097665
+            },
+            "1": {
+              "precision": 55.456171735241504,
+              "recall": 77.3067331670823,
+              "f1": 64.58333333333333
+            }
+          }
+        },
+        "text_only": {
+          "n": 178,
+          "gold_counts": {
+            "0": 95,
+            "1": 83
+          },
+          "prediction_counts": {
+            "1": 121,
+            "0": 57
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "1": 61,
+              "0": 34
+            },
+            "1": {
+              "1": 60,
+              "0": 23
+            }
+          },
+          "accuracy": 52.80898876404494,
+          "majority_baseline": 53.37078651685393,
+          "balanced_accuracy": 54.03931515535828,
+          "macro_f1": 51.78018575851394,
+          "classes": {
+            "0": {
+              "precision": 59.64912280701754,
+              "recall": 35.78947368421053,
+              "f1": 44.73684210526316
+            },
+            "1": {
+              "precision": 49.586776859504134,
+              "recall": 72.28915662650603,
+              "f1": 58.82352941176471
+            }
+          }
+        },
+        "qAcc": 27.912087912087912,
+        "fAcc": 35.83815028901734
+      },
+      "mmbench": {
+        "rows": 4329,
+        "groups": 1164,
+        "unresolved_rows": 0,
+        "unresolved_indices": [],
+        "resolved_parser_conflicts": [
+          {
+            "index": 305,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 306,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 309,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 311,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 312,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 1189,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1192,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1193,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1198,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1200,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1204,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1205,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1208,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 1209,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1211,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1213,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1215,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 1217,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1218,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 1219,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1221,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "D"
+          },
+          {
+            "index": 1226,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1227,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1229,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1230,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 462,
+            "raw": "(C) A",
+            "old": "C",
+            "reference_prefetch": "A",
+            "gold": "D"
+          },
+          {
+            "index": 491,
+            "raw": "(A) B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 1670,
+            "raw": "The correct option is (A).",
+            "old": "C",
+            "reference_prefetch": "A",
+            "gold": "B"
+          },
+          {
+            "index": 1737,
+            "raw": "(A) Team A and Team B.",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 1000300,
+            "raw": "(B) sample A",
+            "old": "B",
+            "reference_prefetch": "A",
+            "gold": "B"
+          },
+          {
+            "index": 1000306,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 1000307,
+            "raw": "(B) Solution A",
+            "old": "B",
+            "reference_prefetch": "A",
+            "gold": "B"
+          },
+          {
+            "index": 1000311,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 1000312,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 1000318,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 1000319,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 1001189,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1001192,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 1001193,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 1001195,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1001198,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1001200,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 1001204,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1001205,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1001208,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1001209,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1001211,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 1001212,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 1001213,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1001214,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1001215,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1001217,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1001218,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 1001221,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "D"
+          },
+          {
+            "index": 1001227,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 1001229,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 1001230,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 1000462,
+            "raw": "(D) A",
+            "old": "D",
+            "reference_prefetch": "A",
+            "gold": "A"
+          },
+          {
+            "index": 1001667,
+            "raw": "The correct option is (B).",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 2000300,
+            "raw": "(C) sample A",
+            "old": "C",
+            "reference_prefetch": "A",
+            "gold": "C"
+          },
+          {
+            "index": 2000305,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 2000307,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 2000309,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 2000318,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 2000319,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 2001192,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 2001193,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 2001198,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 2001199,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 2001200,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 2001205,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 2001208,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 2001209,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 2001211,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 2001212,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 2001213,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 2001214,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 2001215,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 2001217,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 2001218,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 2001219,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 2001221,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "D"
+          },
+          {
+            "index": 2001224,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 2001226,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 2001227,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 2001229,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 2001230,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "A"
+          },
+          {
+            "index": 2000459,
+            "raw": "(C) B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "D"
+          },
+          {
+            "index": 2000491,
+            "raw": "(C) B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 2001737,
+            "raw": "(C) Team A and Team B.",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 3000459,
+            "raw": "(D) B",
+            "old": "D",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 3000462,
+            "raw": "(B) A",
+            "old": "B",
+            "reference_prefetch": "A",
+            "gold": "C"
+          },
+          {
+            "index": 3000491,
+            "raw": "(D) B",
+            "old": "D",
+            "reference_prefetch": "B",
+            "gold": "D"
+          },
+          {
+            "index": 3001664,
+            "raw": "The correct option is (B).",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "D"
+          },
+          {
+            "index": 3001670,
+            "raw": "The correct option is (A).",
+            "old": "C",
+            "reference_prefetch": "A",
+            "gold": "A"
+          },
+          {
+            "index": 3001737,
+            "raw": "(D) Team A and Team B.",
+            "old": "D",
+            "reference_prefetch": "B",
+            "gold": "D"
+          }
+        ],
+        "circular_lower_percent": 76.80412371134021,
+        "circular_upper_percent": 76.80412371134021,
+        "potentially_judge_dependent_groups": 0,
+        "row_lower_percent": 83.66828366828366,
+        "saved_choice_circular_percent": 77.7491408934708
+      },
+      "mmmu": {
+        "by_question_type": {
+          "multiple-choice": {
+            "acc": 0.4309327036599764,
+            "correct": 365,
+            "total": 847
+          },
+          "open": {
+            "acc": 0.11320754716981132,
+            "correct": 6,
+            "total": 53
+          }
+        },
+        "by_subject": {
+          "Accounting": {
+            "acc": 0.3333333333333333,
+            "correct": 10,
+            "total": 30
+          },
+          "Agriculture": {
+            "acc": 0.3333333333333333,
+            "correct": 10,
+            "total": 30
+          },
+          "Architecture_and_Engineering": {
+            "acc": 0.26666666666666666,
+            "correct": 8,
+            "total": 30
+          },
+          "Art": {
+            "acc": 0.4666666666666667,
+            "correct": 14,
+            "total": 30
+          },
+          "Art_Theory": {
+            "acc": 0.7666666666666667,
+            "correct": 23,
+            "total": 30
+          },
+          "Basic_Medical_Science": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "Biology": {
+            "acc": 0.3333333333333333,
+            "correct": 10,
+            "total": 30
+          },
+          "Chemistry": {
+            "acc": 0.23333333333333334,
+            "correct": 7,
+            "total": 30
+          },
+          "Clinical_Medicine": {
+            "acc": 0.4,
+            "correct": 12,
+            "total": 30
+          },
+          "Computer_Science": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Design": {
+            "acc": 0.6333333333333333,
+            "correct": 19,
+            "total": 30
+          },
+          "Diagnostics_and_Laboratory_Medicine": {
+            "acc": 0.43333333333333335,
+            "correct": 13,
+            "total": 30
+          },
+          "Economics": {
+            "acc": 0.3333333333333333,
+            "correct": 10,
+            "total": 30
+          },
+          "Electronics": {
+            "acc": 0.26666666666666666,
+            "correct": 8,
+            "total": 30
+          },
+          "Energy_and_Power": {
+            "acc": 0.26666666666666666,
+            "correct": 8,
+            "total": 30
+          },
+          "Finance": {
+            "acc": 0.16666666666666666,
+            "correct": 5,
+            "total": 30
+          },
+          "Geography": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "History": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "Literature": {
+            "acc": 0.8666666666666667,
+            "correct": 26,
+            "total": 30
+          },
+          "Manage": {
+            "acc": 0.3,
+            "correct": 9,
+            "total": 30
+          },
+          "Marketing": {
+            "acc": 0.4,
+            "correct": 12,
+            "total": 30
+          },
+          "Materials": {
+            "acc": 0.2,
+            "correct": 6,
+            "total": 30
+          },
+          "Math": {
+            "acc": 0.36666666666666664,
+            "correct": 11,
+            "total": 30
+          },
+          "Mechanical_Engineering": {
+            "acc": 0.26666666666666666,
+            "correct": 8,
+            "total": 30
+          },
+          "Music": {
+            "acc": 0.36666666666666664,
+            "correct": 11,
+            "total": 30
+          },
+          "Pharmacy": {
+            "acc": 0.43333333333333335,
+            "correct": 13,
+            "total": 30
+          },
+          "Physics": {
+            "acc": 0.3,
+            "correct": 9,
+            "total": 30
+          },
+          "Psychology": {
+            "acc": 0.5,
+            "correct": 15,
+            "total": 30
+          },
+          "Public_Health": {
+            "acc": 0.3333333333333333,
+            "correct": 10,
+            "total": 30
+          },
+          "Sociology": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          }
+        }
+      },
+      "mmstar": {
+        "native_micro": 46.86666666666667,
+        "native_l2_macro": 47.802538147941604,
+        "reference_exact_micro": 42.333333333333336,
+        "reference_exact_l2_macro": 42.53024924566052,
+        "correct_to_wrong": 83,
+        "wrong_to_correct": 15,
+        "examples": [
+          {
+            "index": 130,
+            "raw": "C: A forest",
+            "gold": "C",
+            "native_correct": false,
+            "reference_correct": true
+          },
+          {
+            "index": 353,
+            "raw": "B: Yes, a mustache",
+            "gold": "B",
+            "native_correct": false,
+            "reference_correct": true
+          },
+          {
+            "index": 464,
+            "raw": "C: On a log",
+            "gold": "C",
+            "native_correct": false,
+            "reference_correct": true
+          },
+          {
+            "index": 519,
+            "raw": "D: A grassy field",
+            "gold": "D",
+            "native_correct": false,
+            "reference_correct": true
+          },
+          {
+            "index": 553,
+            "raw": "To determine what Hazel and Xavier can trade to each get what they want, let's analyze their preferences:\n\n- **Hazel wants**: a sandwich, oranges, broccoli, water.\n- **Xavier wants**: a hot dog, tomatoes, almonds, water.\n\nNow, let's check each option:\n\n---\n\n**A:",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 567,
+            "raw": "C: Solution B",
+            "gold": "C",
+            "native_correct": false,
+            "reference_correct": true
+          },
+          {
+            "index": 573,
+            "raw": "C: Setting over a mountain range",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 635,
+            "raw": "C: Solution B",
+            "gold": "C",
+            "native_correct": false,
+            "reference_correct": true
+          },
+          {
+            "index": 671,
+            "raw": "C: D",
+            "gold": "D",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 676,
+            "raw": "To compare the average kinetic energies of the particles in Sample A and Sample B, we use the formula for the average kinetic energy of a particle:\n\n\\[\nKE_{\\text{avg}} = \\frac{1}{2} m v^2\n\\]\n\nwhere:\n- \\( KE_{\\text{avg}}",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 678,
+            "raw": "To compare the average kinetic energies of the particles in Sample A and Sample B, we use the formula for the average kinetic energy of a particle:\n\n\\[\nKE_{\\text{avg}} = \\frac{1}{2} m v^2\n\\]\n\nwhere:\n- \\( m \\) is the mass of",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 755,
+            "raw": "Let's carefully analyze the image and the instructions.\n\nFirst, identify all the objects in the image:\n- There are 3 small spheres (balls): two cyan and one green.\n- There are 3 cylinders: one yellow, one gray, one purple, and one large cyan.\n- There are 2 cubes:",
+            "gold": "B",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 764,
+            "raw": "B: A mix of trees and bushes",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 786,
+            "raw": "The image shows two tuples:\n- `tup1[0]: physics`\n- `tup2[1:5]: (2, 3, 4, 5)`\n\nLet's analyze the options:\n\n- **Option A**: `tup1 = ('physics', 'chemistry', 19",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 788,
+            "raw": "To solve this brain teaser, we need to determine the value of the red square based on the given equations.\n\nLet's denote:\n- The blue circle as $B$\n- The red square as $S$\n- The yellow triangle as $T$\n\nFrom the first equation:\n$$ B + S = 5 \\quad",
+            "gold": "B",
+            "native_correct": true,
+            "reference_correct": false
+          }
+        ]
+      }
+    },
+    "vanilla_8b_teacher": {
+      "hallusionbench": {
+        "all": {
+          "n": 1129,
+          "gold_counts": {
+            "0": 645,
+            "1": 484
+          },
+          "prediction_counts": {
+            "0": 677,
+            "1": 452
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "0": 508,
+              "1": 137
+            },
+            "1": {
+              "1": 315,
+              "0": 169
+            }
+          },
+          "accuracy": 72.8963684676705,
+          "majority_baseline": 57.13020372010629,
+          "balanced_accuracy": 71.92116727528989,
+          "macro_f1": 72.08047247759805,
+          "classes": {
+            "0": {
+              "precision": 75.03692762186115,
+              "recall": 78.75968992248062,
+              "f1": 76.8532526475038
+            },
+            "1": {
+              "precision": 69.69026548672566,
+              "recall": 65.08264462809917,
+              "f1": 67.3076923076923
+            }
+          }
+        },
+        "image_only": {
+          "n": 951,
+          "gold_counts": {
+            "0": 550,
+            "1": 401
+          },
+          "prediction_counts": {
+            "0": 565,
+            "1": 386
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "0": 433,
+              "1": 117
+            },
+            "1": {
+              "1": 269,
+              "0": 132
+            }
+          },
+          "accuracy": 73.81703470031546,
+          "majority_baseline": 57.83385909568875,
+          "balanced_accuracy": 72.90478349580594,
+          "macro_f1": 73.01451273781916,
+          "classes": {
+            "0": {
+              "precision": 76.63716814159292,
+              "recall": 78.72727272727273,
+              "f1": 77.66816143497759
+            },
+            "1": {
+              "precision": 69.68911917098445,
+              "recall": 67.08229426433915,
+              "f1": 68.36086404066073
+            }
+          }
+        },
+        "text_only": {
+          "n": 178,
+          "gold_counts": {
+            "0": 95,
+            "1": 83
+          },
+          "prediction_counts": {
+            "0": 112,
+            "1": 66
+          },
+          "confusion_gold_by_prediction": {
+            "0": {
+              "0": 75,
+              "1": 20
+            },
+            "1": {
+              "0": 37,
+              "1": 46
+            }
+          },
+          "accuracy": 67.97752808988764,
+          "majority_baseline": 53.37078651685393,
+          "balanced_accuracy": 67.18452758402029,
+          "macro_f1": 67.10436727944753,
+          "classes": {
+            "0": {
+              "precision": 66.96428571428571,
+              "recall": 78.94736842105263,
+              "f1": 72.46376811594203
+            },
+            "1": {
+              "precision": 69.6969696969697,
+              "recall": 55.42168674698795,
+              "f1": 61.744966442953015
+            }
+          }
+        },
+        "qAcc": 43.51648351648352,
+        "fAcc": 51.15606936416185
+      },
+      "mmbench": {
+        "rows": 4329,
+        "groups": 1164,
+        "unresolved_rows": 9,
+        "unresolved_indices": [
+          1671,
+          1913,
+          1001671,
+          1001913,
+          2001645,
+          2001671,
+          2001913,
+          3001908,
+          3001913
+        ],
+        "resolved_parser_conflicts": [
+          {
+            "index": 305,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 306,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 309,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 311,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 312,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 462,
+            "raw": "(D) C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "D"
+          },
+          {
+            "index": 1737,
+            "raw": "(A) Team A and Team B.",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 1000300,
+            "raw": "(B) sample A",
+            "old": "B",
+            "reference_prefetch": "A",
+            "gold": "B"
+          },
+          {
+            "index": 1000306,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 1000307,
+            "raw": "(B) Solution A",
+            "old": "B",
+            "reference_prefetch": "A",
+            "gold": "B"
+          },
+          {
+            "index": 1000311,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 1000312,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 1000318,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 1000319,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 1001217,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "B"
+          },
+          {
+            "index": 2000300,
+            "raw": "(C) sample A",
+            "old": "C",
+            "reference_prefetch": "A",
+            "gold": "C"
+          },
+          {
+            "index": 2000305,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 2000307,
+            "raw": "(C) Solution A",
+            "old": "C",
+            "reference_prefetch": "A",
+            "gold": "C"
+          },
+          {
+            "index": 2000309,
+            "raw": "(C) Solution B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 2000318,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 2000319,
+            "raw": "(A) Solution B",
+            "old": "A",
+            "reference_prefetch": "B",
+            "gold": "A"
+          },
+          {
+            "index": 2001210,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "C"
+          },
+          {
+            "index": 2001221,
+            "raw": "(D) both A,B, and C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "D"
+          },
+          {
+            "index": 2000459,
+            "raw": "(D) C",
+            "old": "D",
+            "reference_prefetch": "C",
+            "gold": "D"
+          },
+          {
+            "index": 2000491,
+            "raw": "(C) B",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 2001737,
+            "raw": "(C) Team A and Team B.",
+            "old": "C",
+            "reference_prefetch": "B",
+            "gold": "C"
+          },
+          {
+            "index": 3000491,
+            "raw": "(D) B",
+            "old": "D",
+            "reference_prefetch": "B",
+            "gold": "D"
+          },
+          {
+            "index": 3001737,
+            "raw": "(D) Team A and Team B.",
+            "old": "D",
+            "reference_prefetch": "B",
+            "gold": "D"
+          }
+        ],
+        "circular_lower_percent": 84.70790378006873,
+        "circular_upper_percent": 85.05154639175258,
+        "potentially_judge_dependent_groups": 4,
+        "row_lower_percent": 89.16608916608917,
+        "saved_choice_circular_percent": 85.82474226804123
+      },
+      "mmmu": {
+        "by_question_type": {
+          "multiple-choice": {
+            "acc": 0.5537190082644629,
+            "correct": 469,
+            "total": 847
+          },
+          "open": {
+            "acc": 0.11320754716981132,
+            "correct": 6,
+            "total": 53
+          }
+        },
+        "by_subject": {
+          "Accounting": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Agriculture": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "Architecture_and_Engineering": {
+            "acc": 0.36666666666666664,
+            "correct": 11,
+            "total": 30
+          },
+          "Art": {
+            "acc": 0.6333333333333333,
+            "correct": 19,
+            "total": 30
+          },
+          "Art_Theory": {
+            "acc": 0.9333333333333333,
+            "correct": 28,
+            "total": 30
+          },
+          "Basic_Medical_Science": {
+            "acc": 0.6333333333333333,
+            "correct": 19,
+            "total": 30
+          },
+          "Biology": {
+            "acc": 0.43333333333333335,
+            "correct": 13,
+            "total": 30
+          },
+          "Chemistry": {
+            "acc": 0.26666666666666666,
+            "correct": 8,
+            "total": 30
+          },
+          "Clinical_Medicine": {
+            "acc": 0.7,
+            "correct": 21,
+            "total": 30
+          },
+          "Computer_Science": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "Design": {
+            "acc": 0.8666666666666667,
+            "correct": 26,
+            "total": 30
+          },
+          "Diagnostics_and_Laboratory_Medicine": {
+            "acc": 0.36666666666666664,
+            "correct": 11,
+            "total": 30
+          },
+          "Economics": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "Electronics": {
+            "acc": 0.36666666666666664,
+            "correct": 11,
+            "total": 30
+          },
+          "Energy_and_Power": {
+            "acc": 0.4666666666666667,
+            "correct": 14,
+            "total": 30
+          },
+          "Finance": {
+            "acc": 0.3333333333333333,
+            "correct": 10,
+            "total": 30
+          },
+          "Geography": {
+            "acc": 0.4666666666666667,
+            "correct": 14,
+            "total": 30
+          },
+          "History": {
+            "acc": 0.6666666666666666,
+            "correct": 20,
+            "total": 30
+          },
+          "Literature": {
+            "acc": 0.8333333333333334,
+            "correct": 25,
+            "total": 30
+          },
+          "Manage": {
+            "acc": 0.43333333333333335,
+            "correct": 13,
+            "total": 30
+          },
+          "Marketing": {
+            "acc": 0.5666666666666667,
+            "correct": 17,
+            "total": 30
+          },
+          "Materials": {
+            "acc": 0.4,
+            "correct": 12,
+            "total": 30
+          },
+          "Math": {
+            "acc": 0.2,
+            "correct": 6,
+            "total": 30
+          },
+          "Mechanical_Engineering": {
+            "acc": 0.3333333333333333,
+            "correct": 10,
+            "total": 30
+          },
+          "Music": {
+            "acc": 0.43333333333333335,
+            "correct": 13,
+            "total": 30
+          },
+          "Pharmacy": {
+            "acc": 0.6,
+            "correct": 18,
+            "total": 30
+          },
+          "Physics": {
+            "acc": 0.5333333333333333,
+            "correct": 16,
+            "total": 30
+          },
+          "Psychology": {
+            "acc": 0.6333333333333333,
+            "correct": 19,
+            "total": 30
+          },
+          "Public_Health": {
+            "acc": 0.5,
+            "correct": 15,
+            "total": 30
+          },
+          "Sociology": {
+            "acc": 0.6333333333333333,
+            "correct": 19,
+            "total": 30
+          }
+        }
+      },
+      "mmstar": {
+        "native_micro": 62.73333333333333,
+        "native_l2_macro": 63.07809322807969,
+        "reference_exact_micro": 61.93333333333333,
+        "reference_exact_l2_macro": 62.288741432479554,
+        "correct_to_wrong": 13,
+        "wrong_to_correct": 1,
+        "examples": [
+          {
+            "index": 586,
+            "raw": "A: C",
+            "gold": "A",
+            "native_correct": false,
+            "reference_correct": true
+          },
+          {
+            "index": 797,
+            "raw": "To solve this, we need to interpret the stem-and-leaf plot.\n\n- The **stem** represents the tens digit.\n- The **leaf** represents the units digit.\n\nSo, for example:\n- Stem 2, Leaf 2 3 3 3 9 \u2192 movies with 22, ",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1013,
+            "raw": "To find the x-component of the net electrostatic force on particle 3, we analyze the forces exerted on it by the other three particles (q1, q2, q4). Note that q3 is at the bottom-left corner, and we are to find the x-component of the net force on it",
+            "gold": "C",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1021,
+            "raw": "To find out how much Karen spent, we need to calculate the cost of the silk scraps and the canvas scraps separately, then add them together.\n\nFrom the table:\n- Silk scraps cost $9.08 per pound.\n- Canvas scraps cost $8.17 per pound.\n\nKaren bought 4 pounds of each",
+            "gold": "C",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1030,
+            "raw": "To find $ m\\angle H $, we first need to use the fact that the sum of the interior angles of a polygon with $ n $ sides is $ (n-2) \\times 180^\\circ $.\n\nThe given polygon has 5 sides (it's a pentagon), so:\n\n",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1036,
+            "raw": "We are given that \u2220BAC = 110\u00b0, and that point A is symmetric to point B with respect to line MP, and symmetric to point C with respect to line NQ.\n\nThis means:\n- Line MP is the perpendicular bisector of segment AB. Therefore, \u2220AMP = \ufffd",
+            "gold": "C",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1102,
+            "raw": "To solve for $x$, we use the **Power of a Point Theorem**. This theorem states that if two secants are drawn from an external point to a circle, then the product of the entire secant segment and its external part is equal for both secants.\n\nIn the diagram:\n- One secant",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1117,
+            "raw": "We are given a circle with center O and radius 2.0. AB is a diameter, so AB = 4.0. Point C is on the extension of AB beyond B. CD is tangent to the circle at D. We are given \u2220DAC = 30\u00b0, and we need to",
+            "gold": "D",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1119,
+            "raw": "The problem states that lines $l$, $m$, and $n$ are the perpendicular bisectors of $\\triangle PQR$ and they meet at point $T$. This means that $T$ is the **circumcenter** of $\\triangle PQR$.\n\nA key property of the circumcenter is that it",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1161,
+            "raw": "To find the median, we first list the numbers in order: 6, 8, 9, 9, 10. Since there are 5 numbers (an odd count), the median is the middle number, which is 9.\n\nTherefore, the correct option is B.\n\nB",
+            "gold": "B",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1162,
+            "raw": "The problem states that $\\overline{CH} \\cong \\overline{KJ}$, but point C is not shown in the diagram. However, looking at the diagram, we have points G, J, H, K on the circle, and the center is L. The given angle measures are ",
+            "gold": "C",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1169,
+            "raw": "The problem states that \u2220O = 110.0, which likely refers to the central angle \u2220AOB = 110\u00b0 (since O is the center of the circle).\n\nIn a circle, the measure of an inscribed angle is half the measure of the central angle that subtends",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1193,
+            "raw": "The graph is a cubic polynomial, and cubic functions are symmetric about their inflection point. The inflection point is where the concavity changes, which is also the center of symmetry for the graph.\n\nLooking at the graph:\n- The curve goes from below the x-axis, crosses at x = -2, has a",
+            "gold": "A",
+            "native_correct": true,
+            "reference_correct": false
+          },
+          {
+            "index": 1212,
+            "raw": "To solve this, let's analyze the pattern in the triangles.\n\nEach triangle has three numbers: one at the top, one at the bottom-left, and one at the bottom-right.\n\nLet\u2019s denote them as:\n- Top: T\n- Bottom-left: BL\n- Bottom-right: BR\n\nWe need to find",
+            "gold": "D",
+            "native_correct": true,
+            "reference_correct": false
+          }
+        ]
+      }
+    }
+  },
+  "mmmu_mc_paired_against_bf16": {
+    "released_bf16": {
+      "same_prediction": 847,
+      "bf16_correct_other_wrong": 0,
+      "bf16_wrong_other_correct": 0
+    },
+    "released_grace_w4": {
+      "same_prediction": 571,
+      "bf16_correct_other_wrong": 152,
+      "bf16_wrong_other_correct": 63
+    },
+    "released_grace_w8": {
+      "same_prediction": 575,
+      "bf16_correct_other_wrong": 164,
+      "bf16_wrong_other_correct": 44
+    },
+    "vanilla_2b": {
+      "same_prediction": 397,
+      "bf16_correct_other_wrong": 319,
+      "bf16_wrong_other_correct": 52
+    },
+    "vanilla_8b_teacher": {
+      "same_prediction": 467,
+      "bf16_correct_other_wrong": 232,
+      "bf16_wrong_other_correct": 69
+    }
+  }
+}

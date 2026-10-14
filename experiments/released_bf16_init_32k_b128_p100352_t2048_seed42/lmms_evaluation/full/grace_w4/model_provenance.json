@@ -1,0 +1,129 @@
+{
+  "config": {
+    "architectures": [
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "bos_token_id": null,
+    "dtype": "bfloat16",
+    "eos_token_id": 151645,
+    "image_token_id": 151655,
+    "model_type": "qwen3_vl",
+    "pad_token_id": 151643,
+    "qat": {
+      "bits": 4,
+      "group_size": 128,
+      "num_replaced": 196,
+      "skip_keywords": [
+        "visual",
+        "merger",
+        "lm_head",
+        "embed_tokens"
+      ]
+    },
+    "qat_lora": {
+      "alpha": 64,
+      "dropout": 0.05,
+      "enabled": true,
+      "merged": true,
+      "num_adapted": 112,
+      "r": 32,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj"
+      ]
+    },
+    "text_config": {
+      "attention_bias": false,
+      "attention_dropout": 0.0,
+      "bos_token_id": 151643,
+      "dtype": "bfloat16",
+      "eos_token_id": 151645,
+      "head_dim": 128,
+      "hidden_act": "silu",
+      "hidden_size": 2048,
+      "initializer_range": 0.02,
+      "intermediate_size": 6144,
+      "max_position_embeddings": 262144,
+      "model_type": "qwen3_vl_text",
+      "num_attention_heads": 16,
+      "num_hidden_layers": 28,
+      "num_key_value_heads": 8,
+      "pad_token_id": null,
+      "rms_norm_eps": 1e-06,
+      "rope_parameters": {
+        "mrope_interleaved": true,
+        "mrope_section": [
+          24,
+          20,
+          20
+        ],
+        "rope_theta": 5000000,
+        "rope_type": "default"
+      },
+      "tie_word_embeddings": true,
+      "use_cache": true,
+      "vocab_size": 151936
+    },
+    "tie_word_embeddings": true,
+    "transformers_version": "5.9.0",
+    "use_cache": true,
+    "video_token_id": 151656,
+    "vision_config": {
+      "deepstack_visual_indexes": [
+        5,
+        11,
+        17
+      ],
+      "depth": 24,
+      "dtype": "bfloat16",
+      "hidden_act": "gelu_pytorch_tanh",
+      "hidden_size": 1024,
+      "in_channels": 3,
+      "initializer_range": 0.02,
+      "intermediate_size": 4096,
+      "model_type": "qwen3_vl_vision",
+      "num_heads": 16,
+      "num_position_embeddings": 2304,
+      "out_hidden_size": 2048,
+      "patch_size": 16,
+      "spatial_merge_size": 2,
+      "temporal_patch_size": 2
+    },
+    "vision_end_token_id": 151653,
+    "vision_start_token_id": 151652
+  },
+  "files_sha256": {
+    "chat_template.jinja": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+    "config.json": "f1e1d2fd1a0813dcf499c25947698338926a63598714b80f6361115e17b3e817",
+    "generation_config.json": "f8b689677eaf828e409db5b063a055c92c17c58b12a4338f872858fb31c491c2",
+    "launch_recipe.json": "af8b83d49db0ea3822562d84b548046c9336f5b06d21dbc99cb9e6e505ffbc33",
+    "model.safetensors": "4ba2c770509e0c8d81cd4205f40edc5dc19fc2bba43f2197822c5ab4ce6d9eaf",
+    "processor_config.json": "f4d2a371205b86077b9f174dd44a2c45424c2ab2e0fbf54d977fb3b04cab6ce1",
+    "run_summary.json": "5f0360133e82de5a073e8635dd837777d00b44fe9fa35ef7f0b537a2c2368f3a",
+    "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "tokenizer_config.json": "d634041a0870f37eb21586dea476bb1ef1ad41337e16eeace3a3427c3b2cc062",
+    "trainable_parameters.json": "6b3d9b57bd4d2b0bdebafcccb5754d21a9b52c42e876893c8a81c2f4c7728ffb",
+    "trainer_state.json": "a89f62cdf242f2baf6fe4f5cc29edbef472188b0c4ede0b6faeb60954b7f0605"
+  },
+  "generation_config": {
+    "do_sample": true,
+    "eos_token_id": [
+      151645,
+      151645,
+      151643
+    ],
+    "pad_token_id": 151643,
+    "repetition_penalty": 1.0,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "transformers_version": "5.9.0"
+  },
+  "identity_verification": "local download metadata and explicit repository mapping",
+  "loading_format": "unpacked floating-point safetensors, Transformers Qwen3VL",
+  "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace",
+  "repository": null,
+  "revision": null
+}

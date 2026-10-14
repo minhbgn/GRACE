@@ -1,0 +1,16 @@
+{
+  "method": "qat",
+  "complete": true,
+  "profile": true,
+  "stop_reason": null,
+  "global_step": 3,
+  "metrics": {
+    "train_runtime": 88.2572,
+    "train_samples_per_second": 2.175,
+    "train_steps_per_second": 0.034,
+    "total_flos": 2166112665993216.0,
+    "train_loss": 0.5789310534795126
+  },
+  "peak_reserved_gib": 6.650390625,
+  "native_checkpoint": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/constrained_32k_seed42/profiles/qat/checkpoint-3"
+}

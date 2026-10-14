@@ -1,0 +1,313 @@
+{
+  "all_within_maximum_tolerance": false,
+  "all_within_preferred_tolerance": false,
+  "paper_source": "https://arxiv.org/html/2601.22709v5#A1.T6",
+  "rows": [
+    {
+      "method": "vanilla_2b",
+      "suites": {
+        "ai2d": {
+          "delta_pp": -0.28082901554404316,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 76.9,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 76.61917098445596,
+          "status": "pass"
+        },
+        "hallusionbench": {
+          "delta_pp": 11.044641275465011,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 51.4,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 62.44464127546501,
+          "status": "fail"
+        },
+        "mmbench": {
+          "delta_pp": 5.406883806883798,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 78.4,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 83.8068838068838,
+          "status": "fail"
+        },
+        "mmmu": {
+          "delta_pp": -12.177777777777777,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 53.4,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 41.22222222222222,
+          "status": "fail"
+        },
+        "mmstar": {
+          "delta_pp": -11.43333333333333,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 58.3,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 46.86666666666667,
+          "status": "fail"
+        },
+        "scienceqa": {
+          "delta_pp": 1.787927375618949,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 81.4,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 83.18792737561895,
+          "status": "pass"
+        },
+        "seedbench_img": {
+          "delta_pp": 5.593367526171576,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 71.2,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 76.79336752617158,
+          "status": "fail"
+        }
+      }
+    },
+    {
+      "method": "vanilla_8b_teacher",
+      "suites": {
+        "ai2d": {
+          "delta_pp": -1.7297927461139864,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 85.7,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 83.97020725388602,
+          "status": "pass"
+        },
+        "hallusionbench": {
+          "delta_pp": 11.796368467670497,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 61.1,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 72.8963684676705,
+          "status": "fail"
+        },
+        "mmbench": {
+          "delta_pp": 5.289789789789793,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 84.5,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 89.7897897897898,
+          "status": "fail"
+        },
+        "mmmu": {
+          "delta_pp": -16.822222222222216,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 69.6,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 52.77777777777778,
+          "status": "fail"
+        },
+        "mmstar": {
+          "delta_pp": -8.166666666666671,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 70.9,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 62.733333333333334,
+          "status": "fail"
+        },
+        "scienceqa": {
+          "delta_pp": 7.949775996227302,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 85.0,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 92.9497759962273,
+          "status": "fail"
+        },
+        "seedbench_img": {
+          "delta_pp": 1.8859340968172518,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 77.5,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 79.38593409681725,
+          "status": "pass"
+        }
+      }
+    },
+    {
+      "method": "released_bf16",
+      "suites": {
+        "ai2d": {
+          "delta_pp": -0.17953367875647075,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 81.3,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 81.12046632124353,
+          "status": "pass"
+        },
+        "hallusionbench": {
+          "delta_pp": 0.15048715677589541,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 66.9,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 67.0504871567759,
+          "status": "pass"
+        },
+        "mmbench": {
+          "delta_pp": 8.26389466389466,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 86.4,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 94.66389466389467,
+          "status": "fail"
+        },
+        "mmmu": {
+          "delta_pp": -0.09999999999999432,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 72.1,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 72.0,
+          "status": "pass"
+        },
+        "mmstar": {
+          "delta_pp": 0.7000000000000028,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 67.3,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 68.0,
+          "status": "pass"
+        },
+        "scienceqa": {
+          "delta_pp": -0.01749587361472038,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 86.2,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 86.18250412638528,
+          "status": "pass"
+        },
+        "seedbench_img": {
+          "delta_pp": -0.4195250474249974,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 76.7,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 76.280474952575,
+          "status": "pass"
+        }
+      }
+    },
+    {
+      "method": "released_grace_w4",
+      "suites": {
+        "ai2d": {
+          "delta_pp": -0.09585492227979842,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 79.5,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 79.4041450777202,
+          "status": "pass"
+        },
+        "hallusionbench": {
+          "delta_pp": -0.8295837023915027,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 65.4,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 64.5704162976085,
+          "status": "pass"
+        },
+        "mmbench": {
+          "delta_pp": 8.031092631092633,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 84.6,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 92.63109263109263,
+          "status": "fail"
+        },
+        "mmmu": {
+          "delta_pp": -8.944444444444443,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 70.5,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 61.55555555555556,
+          "status": "fail"
+        },
+        "mmstar": {
+          "delta_pp": 0.4000000000000057,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 65.8,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 66.2,
+          "status": "pass"
+        },
+        "scienceqa": {
+          "delta_pp": -0.21605753360056212,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 84.3,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 84.08394246639944,
+          "status": "pass"
+        },
+        "seedbench_img": {
+          "delta_pp": -1.2364434764280077,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 75.1,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 73.86355652357199,
+          "status": "pass"
+        }
+      }
+    },
+    {
+      "method": "released_grace_w8",
+      "suites": {
+        "ai2d": {
+          "delta_pp": -4.460880829015551,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 80.4,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 75.93911917098445,
+          "status": "barely_acceptable"
+        },
+        "hallusionbench": {
+          "delta_pp": -6.932595217006195,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 66.1,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 59.1674047829938,
+          "status": "fail"
+        },
+        "mmbench": {
+          "delta_pp": 6.992492492492488,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 85.5,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 92.49249249249249,
+          "status": "fail"
+        },
+        "mmmu": {
+          "delta_pp": -13.188888888888883,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 71.3,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 58.111111111111114,
+          "status": "fail"
+        },
+        "mmstar": {
+          "delta_pp": -2.8333333333333357,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 66.5,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 63.666666666666664,
+          "status": "pass"
+        },
+        "scienceqa": {
+          "delta_pp": -2.8194529592077373,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 85.3,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 82.48054704079226,
+          "status": "pass"
+        },
+        "seedbench_img": {
+          "delta_pp": -5.816391484578105,
+          "maximum_tolerance_pp": 5,
+          "paper_percent": 75.9,
+          "preferred_tolerance_pp": 3,
+          "score_percent": 70.0836085154219,
+          "status": "fail"
+        }
+      }
+    }
+  ],
+  "warning": "Author-script replay; paper recipe unverified. No judges in these scripts. Smoke scores cannot pass acceptance."
+}

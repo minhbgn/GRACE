@@ -25,6 +25,11 @@ shard; rank 0 merges and prints metrics at the end.
 from __future__ import annotations
 
 import argparse
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from matched_protocol import add_protocol_arguments, apply_protocol, protocol_metadata
+from local_scoring import finalize_rows, generation_record, prepare_row
 import io
 import json
 import os
@@ -113,6 +118,8 @@ def build_inputs(processor, image, prompt_text, device):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model_path", required=True)
+    ap.add_argument("--processor_path", default=None,
+                    help="Optional saved processor to match the comparison image budget.")
     ap.add_argument("--data_dir", required=True,
                     help="Dir containing image-*.parquet and non_image-*.parquet.")
     ap.add_argument("--output", required=True)
@@ -120,6 +127,7 @@ def main():
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--attn", default="flash_attention_2",
                     choices=["flash_attention_2", "sdpa", "eager"])
+    add_protocol_arguments(ap)
     args = ap.parse_args()
 
     rank = int(os.environ.get("RANK", 0))
@@ -138,9 +146,10 @@ def main():
     ).to(device)
     model.eval()
 
-    processor = AutoProcessor.from_pretrained(args.model_path)
+    processor = AutoProcessor.from_pretrained(args.processor_path or args.model_path)
     if processor.tokenizer.pad_token_id is None:
         processor.tokenizer.pad_token_id = processor.tokenizer.eos_token_id
+    apply_protocol(args, model, processor)
 
     df = load_data(args.data_dir)
     if args.limit > 0:
@@ -157,6 +166,7 @@ def main():
     t0 = time.time()
     with open(shard_path, "w") as fout:
         for row in tqdm(shard, disable=(rank != 0), desc=f"rank{rank}"):
+            generation = None
             try:
                 image = _decode_image(row.get("image"))
                 # visual_input "1" means image-grounded; but trust the actual
@@ -171,6 +181,7 @@ def main():
                         pad_token_id=processor.tokenizer.pad_token_id,
                     )
                 gen = out[0][inputs["input_ids"].shape[1]:]
+                generation = generation_record(gen.tolist(), model.generation_config.eos_token_id, args.max_new_tokens)
                 raw = processor.tokenizer.decode(gen, skip_special_tokens=True)
                 pred = parse_yesno(raw)
                 err = None
@@ -178,7 +189,7 @@ def main():
                 raw, pred, image, err = "", "", None, repr(e)
 
             gold = str(row.get("gt_answer", "")).strip()
-            fout.write(json.dumps({
+            fout.write(json.dumps(prepare_row(args, "hallusionbench", {
                 "category": row.get("category"),
                 "subcategory": row.get("subcategory"),
                 "set_id": row.get("set_id"),
@@ -190,8 +201,9 @@ def main():
                 "gold": gold,
                 "correct": (pred != "" and pred == gold),
                 "raw": raw,
+                "generation": generation,
                 "error": err,
-            }, ensure_ascii=False) + "\n")
+            }), ensure_ascii=False) + "\n")
             fout.flush()
 
     if rank == 0:
@@ -211,6 +223,7 @@ def main():
             for line in f:
                 all_results.append(json.loads(line))
 
+    local_summary = finalize_rows(args, "hallusionbench", all_results)
     n = len(all_results)
     correct = sum(1 for r in all_results if r["correct"])
     parse_fail = sum(1 for r in all_results if r["pred"] == "" and r["error"] is None)
@@ -246,7 +259,10 @@ def main():
                 for k, (c, n_) in sorted(d.items())}
 
     summary = {
+        **protocol_metadata(args),
         "model_path": args.model_path,
+        "processor_path": args.processor_path or args.model_path,
+        "image_processor_size": dict(processor.image_processor.size),
         "data_dir": args.data_dir,
         "total": n,
         "correct": correct,
@@ -263,6 +279,11 @@ def main():
         "by_category": fmt(by_cat),
         "by_subcategory": fmt(by_subcat),
     }
+    summary.update(local_summary)
+    if args.local_scoring:
+        score = summary['primary_score']
+        score_text = 'not reported for partial circular groups' if score is None else f'{100 * score:.3f}%'
+        print(f"Primary local metric: {summary['primary_metric']} = {score_text}")
     with open(args.output, "w") as f:
         json.dump({"summary": summary, "results": all_results}, f, indent=2)
 

@@ -1,0 +1,20 @@
+[
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/.venv-lmms-eval/bin/python",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/HallusionBench/eval_hallusion.py",
+  "--model_path",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+  "--processor_path",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+  "--output",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/reproduction_eval_only/local_development/local_native_greedy256_v1/full/released_bf16/hallusionbench/attempt_20260926T190507_929359Z/results.json",
+  "--attn",
+  "flash_attention_2",
+  "--max_new_tokens",
+  "256",
+  "--mc_max_new_tokens",
+  "256",
+  "--fixed_generation",
+  "--local_scoring",
+  "--data_dir",
+  "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/HallusionBench/data"
+]

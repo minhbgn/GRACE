@@ -1,0 +1,69 @@
+# Local development results
+
+Artifact readiness only; unresolved answers count as wrong and capped outputs remain visible. No paper-score gate. No claim of judge-equivalent semantic extraction.
+
+| Model | Suite / metric | Score % | Unresolved | Length stops | Status |
+| --- | --- | ---: | ---: | ---: | --- |
+| vanilla_2b | hallusionbench / rule_aAcc_all_image_and_text_rows | 62.445 | 0 | 0 | complete |
+| vanilla_2b | mmbench / circular_accuracy_all_supplied_rotations | — | — | — | missing |
+| vanilla_2b | scienceqa / accuracy_test_all_image_and_text_rows | 83.259 | 10 | 4 | complete |
+| vanilla_2b | ai2d / accuracy_test | 76.587 | 3 | 0 | complete |
+| vanilla_2b | mmmu / mc_and_open_micro_accuracy_validation | 39.667 | 133 | 175 | complete |
+| vanilla_2b | seedbench_img / accuracy_image_subset | 76.793 | 0 | 0 | complete |
+| vanilla_2b | mmstar / overall_accuracy_1500 | 47.600 | 181 | 232 | complete |
+| vanilla_8b_teacher | hallusionbench / rule_aAcc_all_image_and_text_rows | 72.896 | 0 | 0 | complete |
+| vanilla_8b_teacher | mmbench / circular_accuracy_all_supplied_rotations | — | — | — | missing |
+| vanilla_8b_teacher | scienceqa / accuracy_test_all_image_and_text_rows | 92.738 | 17 | 10 | complete |
+| vanilla_8b_teacher | ai2d / accuracy_test | 83.970 | 3 | 1 | complete |
+| vanilla_8b_teacher | mmmu / mc_and_open_micro_accuracy_validation | 53.222 | 22 | 24 | complete |
+| vanilla_8b_teacher | seedbench_img / accuracy_image_subset | 79.365 | 5 | 0 | complete |
+| vanilla_8b_teacher | mmstar / overall_accuracy_1500 | 62.733 | 22 | 27 | complete |
+| released_bf16 | hallusionbench / rule_aAcc_all_image_and_text_rows | 67.050 | 0 | 0 | complete |
+| released_bf16 | mmbench / circular_accuracy_all_supplied_rotations | — | — | — | missing |
+| released_bf16 | scienceqa / accuracy_test_all_image_and_text_rows | 86.183 | 0 | 0 | complete |
+| released_bf16 | ai2d / accuracy_test | 81.120 | 0 | 0 | complete |
+| released_bf16 | mmmu / mc_and_open_micro_accuracy_validation | 72.000 | 0 | 0 | complete |
+| released_bf16 | seedbench_img / accuracy_image_subset | 76.280 | 0 | 0 | complete |
+| released_bf16 | mmstar / overall_accuracy_1500 | 68.000 | 0 | 0 | complete |
+| released_grace_w4 | hallusionbench / rule_aAcc_all_image_and_text_rows | 64.570 | 0 | 0 | complete |
+| released_grace_w4 | mmbench / circular_accuracy_all_supplied_rotations | — | — | — | missing |
+| released_grace_w4 | scienceqa / accuracy_test_all_image_and_text_rows | 84.084 | 0 | 0 | complete |
+| released_grace_w4 | ai2d / accuracy_test | 79.404 | 0 | 0 | complete |
+| released_grace_w4 | mmmu / mc_and_open_micro_accuracy_validation | 61.556 | 0 | 0 | complete |
+| released_grace_w4 | seedbench_img / accuracy_image_subset | 73.864 | 0 | 0 | complete |
+| released_grace_w4 | mmstar / overall_accuracy_1500 | 66.200 | 0 | 0 | complete |
+| released_grace_w8 | hallusionbench / rule_aAcc_all_image_and_text_rows | 59.167 | 8 | 0 | complete |
+| released_grace_w8 | mmbench / circular_accuracy_all_supplied_rotations | — | — | — | missing |
+| released_grace_w8 | scienceqa / accuracy_test_all_image_and_text_rows | 82.481 | 0 | 0 | complete |
+| released_grace_w8 | ai2d / accuracy_test | 75.939 | 0 | 0 | complete |
+| released_grace_w8 | mmmu / mc_and_open_micro_accuracy_validation | 58.111 | 0 | 1 | complete |
+| released_grace_w8 | seedbench_img / accuracy_image_subset | 70.084 | 0 | 0 | complete |
+| released_grace_w8 | mmstar / overall_accuracy_1500 | 63.667 | 0 | 0 | complete |
+| qat_w4 | hallusionbench / rule_aAcc_all_image_and_text_rows | 63.862 | 0 | 0 | complete |
+| qat_w4 | mmbench / circular_accuracy_all_supplied_rotations | — | — | — | missing |
+| qat_w4 | scienceqa / accuracy_test_all_image_and_text_rows | 82.881 | 0 | 0 | complete |
+| qat_w4 | ai2d / accuracy_test | 79.372 | 0 | 0 | complete |
+| qat_w4 | mmmu / mc_and_open_micro_accuracy_validation | 66.333 | 0 | 0 | complete |
+| qat_w4 | seedbench_img / accuracy_image_subset | 72.437 | 0 | 0 | complete |
+| qat_w4 | mmstar / overall_accuracy_1500 | 63.867 | 0 | 0 | complete |
+| grace_w4 | hallusionbench / rule_aAcc_all_image_and_text_rows | 64.925 | 0 | 0 | complete |
+| grace_w4 | mmbench / circular_accuracy_all_supplied_rotations | — | — | — | missing |
+| grace_w4 | scienceqa / accuracy_test_all_image_and_text_rows | 83.730 | 0 | 0 | complete |
+| grace_w4 | ai2d / accuracy_test | 79.048 | 0 | 0 | complete |
+| grace_w4 | mmmu / mc_and_open_micro_accuracy_validation | 64.667 | 0 | 0 | complete |
+| grace_w4 | seedbench_img / accuracy_image_subset | 73.042 | 0 | 0 | complete |
+| grace_w4 | mmstar / overall_accuracy_1500 | 55.400 | 0 | 0 | complete |
+| qat_w8 | hallusionbench / rule_aAcc_all_image_and_text_rows | 64.925 | 0 | 0 | complete |
+| qat_w8 | mmbench / circular_accuracy_all_supplied_rotations | — | — | — | missing |
+| qat_w8 | scienceqa / accuracy_test_all_image_and_text_rows | 84.886 | 6 | 5 | complete |
+| qat_w8 | ai2d / accuracy_test | 80.764 | 0 | 0 | complete |
+| qat_w8 | mmmu / mc_and_open_micro_accuracy_validation | 70.667 | 0 | 0 | complete |
+| qat_w8 | seedbench_img / accuracy_image_subset | 72.627 | 0 | 0 | complete |
+| qat_w8 | mmstar / overall_accuracy_1500 | 65.733 | 0 | 0 | complete |
+| grace_w8 | hallusionbench / rule_aAcc_all_image_and_text_rows | 66.430 | 0 | 0 | complete |
+| grace_w8 | mmbench / circular_accuracy_all_supplied_rotations | — | — | — | missing |
+| grace_w8 | scienceqa / accuracy_test_all_image_and_text_rows | 85.711 | 0 | 0 | complete |
+| grace_w8 | ai2d / accuracy_test | 79.437 | 0 | 0 | complete |
+| grace_w8 | mmmu / mc_and_open_micro_accuracy_validation | 67.444 | 0 | 0 | complete |
+| grace_w8 | seedbench_img / accuracy_image_subset | 72.775 | 0 | 0 | complete |
+| grace_w8 | mmstar / overall_accuracy_1500 | 53.200 | 0 | 0 | complete |

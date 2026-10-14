@@ -1,0 +1,855 @@
+{
+  "source_matches_run_lock": true,
+  "models": {
+    "grace_w4": {
+      "scienceqa": {
+        "harness_score": 86.71294000991571,
+        "strict_letter_score": 86.71294000991571,
+        "explicit_choice_score": 86.71294000991571,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 2017,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace",
+        "raw_prompt_arguments_sha256": "ef0edb99e32e9c6bd5d8fe288e8ca62c1c683cabd49f2ea4d2ed830ed432ca06",
+        "effective_config_sha256": "f15e59ed51ae7318c6bf7586fd04a0d09f501c89a568ea24499eda02d8a652c9"
+      },
+      "ai2d": {
+        "harness_score": 79.56606217616581,
+        "strict_letter_score": 79.56606217616581,
+        "explicit_choice_score": 79.56606217616581,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 3088,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace",
+        "raw_prompt_arguments_sha256": "c103b1f1f7a18d9c5183ee3d79bf63ba5b4ad2778864a9902ee57159520eadbc",
+        "effective_config_sha256": "0130f6f616af75775744c38da13871d53a32b2e1cdf3dbc818027da0c892c868"
+      },
+      "seedbench": {
+        "harness_score": 77.08845640413125,
+        "strict_letter_score": 77.08845640413125,
+        "explicit_choice_score": 77.08845640413125,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 14233,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace",
+        "raw_prompt_arguments_sha256": "ab505df8a1c3e2bec4cc851d5f42b6dd35bd04364da27e212c639bd6d042ad75",
+        "effective_config_sha256": "65eeb2f348ff86240e5d6331dffa040d0524aa6a3a4d883c1823f52ee07b49ee"
+      },
+      "mmstar": {
+        "harness_score": 63.98050241648132,
+        "strict_letter_score": 63.98050241648132,
+        "explicit_choice_score": 63.98050241648132,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 1500,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace",
+        "raw_prompt_arguments_sha256": "c0d319123c322a80365cf632f94e3b0a67d3c290a333550e388ca2f25729fcc8",
+        "effective_config_sha256": "d4bb0bed5abf9ea80929346268ad86d51c458ba72d9b340f88752f45a43e0106"
+      },
+      "explicit_mean4": 76.83699025167353,
+      "strict_mean4": 76.83699025167353
+    },
+    "grace_w8": {
+      "scienceqa": {
+        "harness_score": 87.95240456122954,
+        "strict_letter_score": 38.225086762518586,
+        "explicit_choice_score": 87.95240456122954,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 49.727317798710956,
+        "scored": 2017,
+        "non_single_letter": 1093,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 0,
+            "response": "B.",
+            "target": "B"
+          },
+          {
+            "doc_id": 1,
+            "response": "B. New Hampshire",
+            "target": "B"
+          },
+          {
+            "doc_id": 3,
+            "response": "B. 4:0",
+            "target": "B"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace",
+        "raw_prompt_arguments_sha256": "ef0edb99e32e9c6bd5d8fe288e8ca62c1c683cabd49f2ea4d2ed830ed432ca06",
+        "effective_config_sha256": "f15e59ed51ae7318c6bf7586fd04a0d09f501c89a568ea24499eda02d8a652c9"
+      },
+      "ai2d": {
+        "harness_score": 81.02331606217616,
+        "strict_letter_score": 35.33031088082901,
+        "explicit_choice_score": 81.02331606217616,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 45.693005181347154,
+        "scored": 3088,
+        "non_single_letter": 1670,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 0,
+            "response": "B. D",
+            "target": "B"
+          },
+          {
+            "doc_id": 2,
+            "response": "B.",
+            "target": "B"
+          },
+          {
+            "doc_id": 3,
+            "response": "C.",
+            "target": "C"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace",
+        "raw_prompt_arguments_sha256": "c103b1f1f7a18d9c5183ee3d79bf63ba5b4ad2778864a9902ee57159520eadbc",
+        "effective_config_sha256": "0130f6f616af75775744c38da13871d53a32b2e1cdf3dbc818027da0c892c868"
+      },
+      "seedbench": {
+        "harness_score": 77.13763788379119,
+        "strict_letter_score": 23.473617649125273,
+        "explicit_choice_score": 77.13763788379119,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 53.66402023466591,
+        "scored": 14233,
+        "non_single_letter": 9831,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 0,
+            "response": "B. Two",
+            "target": "A"
+          },
+          {
+            "doc_id": 1,
+            "response": "B. A house",
+            "target": "C"
+          },
+          {
+            "doc_id": 3,
+            "response": "A. White",
+            "target": "A"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace",
+        "raw_prompt_arguments_sha256": "ab505df8a1c3e2bec4cc851d5f42b6dd35bd04364da27e212c639bd6d042ad75",
+        "effective_config_sha256": "65eeb2f348ff86240e5d6331dffa040d0524aa6a3a4d883c1823f52ee07b49ee"
+      },
+      "mmstar": {
+        "harness_score": 64.98783200328388,
+        "strict_letter_score": 64.98783200328388,
+        "explicit_choice_score": 64.98783200328388,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 1500,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace",
+        "raw_prompt_arguments_sha256": "c0d319123c322a80365cf632f94e3b0a67d3c290a333550e388ca2f25729fcc8",
+        "effective_config_sha256": "d4bb0bed5abf9ea80929346268ad86d51c458ba72d9b340f88752f45a43e0106"
+      },
+      "explicit_mean4": 77.77529762762019,
+      "strict_mean4": 40.50421182393919
+    },
+    "qat_w4": {
+      "scienceqa": {
+        "harness_score": 86.11799702528508,
+        "strict_letter_score": 86.11799702528508,
+        "explicit_choice_score": 86.11799702528508,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 2017,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat",
+        "raw_prompt_arguments_sha256": "ef0edb99e32e9c6bd5d8fe288e8ca62c1c683cabd49f2ea4d2ed830ed432ca06",
+        "effective_config_sha256": "f15e59ed51ae7318c6bf7586fd04a0d09f501c89a568ea24499eda02d8a652c9"
+      },
+      "ai2d": {
+        "harness_score": 80.63471502590673,
+        "strict_letter_score": 80.63471502590673,
+        "explicit_choice_score": 80.63471502590673,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 3088,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat",
+        "raw_prompt_arguments_sha256": "c103b1f1f7a18d9c5183ee3d79bf63ba5b4ad2778864a9902ee57159520eadbc",
+        "effective_config_sha256": "0130f6f616af75775744c38da13871d53a32b2e1cdf3dbc818027da0c892c868"
+      },
+      "seedbench": {
+        "harness_score": 76.38586383756059,
+        "strict_letter_score": 76.38586383756059,
+        "explicit_choice_score": 76.38586383756059,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 14233,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat",
+        "raw_prompt_arguments_sha256": "ab505df8a1c3e2bec4cc851d5f42b6dd35bd04364da27e212c639bd6d042ad75",
+        "effective_config_sha256": "65eeb2f348ff86240e5d6331dffa040d0524aa6a3a4d883c1823f52ee07b49ee"
+      },
+      "mmstar": {
+        "harness_score": 68.28952210822276,
+        "strict_letter_score": 68.28952210822276,
+        "explicit_choice_score": 68.28952210822276,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 1500,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat",
+        "raw_prompt_arguments_sha256": "c0d319123c322a80365cf632f94e3b0a67d3c290a333550e388ca2f25729fcc8",
+        "effective_config_sha256": "d4bb0bed5abf9ea80929346268ad86d51c458ba72d9b340f88752f45a43e0106"
+      },
+      "explicit_mean4": 77.85702449924378,
+      "strict_mean4": 77.85702449924378
+    },
+    "qat_w8": {
+      "scienceqa": {
+        "harness_score": 87.7045116509668,
+        "strict_letter_score": 87.7045116509668,
+        "explicit_choice_score": 87.7045116509668,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 2017,
+        "non_single_letter": 2,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 55,
+            "response": "Igne rock, such as granite, form when hot magma cools and hard",
+            "target": "A"
+          },
+          {
+            "doc_id": 249,
+            "response": "Igneous rock is formed when melted rock cools and hardens into solid",
+            "target": "A"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat",
+        "raw_prompt_arguments_sha256": "ef0edb99e32e9c6bd5d8fe288e8ca62c1c683cabd49f2ea4d2ed830ed432ca06",
+        "effective_config_sha256": "f15e59ed51ae7318c6bf7586fd04a0d09f501c89a568ea24499eda02d8a652c9"
+      },
+      "ai2d": {
+        "harness_score": 82.31865284974094,
+        "strict_letter_score": 82.31865284974094,
+        "explicit_choice_score": 82.31865284974094,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 3088,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat",
+        "raw_prompt_arguments_sha256": "c103b1f1f7a18d9c5183ee3d79bf63ba5b4ad2778864a9902ee57159520eadbc",
+        "effective_config_sha256": "0130f6f616af75775744c38da13871d53a32b2e1cdf3dbc818027da0c892c868"
+      },
+      "seedbench": {
+        "harness_score": 76.73013419518021,
+        "strict_letter_score": 76.73013419518021,
+        "explicit_choice_score": 76.73013419518021,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 14233,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat",
+        "raw_prompt_arguments_sha256": "ab505df8a1c3e2bec4cc851d5f42b6dd35bd04364da27e212c639bd6d042ad75",
+        "effective_config_sha256": "65eeb2f348ff86240e5d6331dffa040d0524aa6a3a4d883c1823f52ee07b49ee"
+      },
+      "mmstar": {
+        "harness_score": 70.65910131265841,
+        "strict_letter_score": 70.6591013126584,
+        "explicit_choice_score": 70.6591013126584,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 1.4210854715202004e-14,
+        "scored": 1500,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat",
+        "raw_prompt_arguments_sha256": "c0d319123c322a80365cf632f94e3b0a67d3c290a333550e388ca2f25729fcc8",
+        "effective_config_sha256": "d4bb0bed5abf9ea80929346268ad86d51c458ba72d9b340f88752f45a43e0106"
+      },
+      "explicit_mean4": 79.35310000213659,
+      "strict_mean4": 79.35310000213659
+    },
+    "released_bf16": {
+      "scienceqa": {
+        "harness_score": 88.29945463559741,
+        "strict_letter_score": 88.29945463559741,
+        "explicit_choice_score": 88.29945463559741,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 2017,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+        "raw_prompt_arguments_sha256": "ef0edb99e32e9c6bd5d8fe288e8ca62c1c683cabd49f2ea4d2ed830ed432ca06",
+        "effective_config_sha256": "f15e59ed51ae7318c6bf7586fd04a0d09f501c89a568ea24499eda02d8a652c9"
+      },
+      "ai2d": {
+        "harness_score": 81.80051813471503,
+        "strict_letter_score": 81.80051813471503,
+        "explicit_choice_score": 81.80051813471503,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 3088,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+        "raw_prompt_arguments_sha256": "c103b1f1f7a18d9c5183ee3d79bf63ba5b4ad2778864a9902ee57159520eadbc",
+        "effective_config_sha256": "0130f6f616af75775744c38da13871d53a32b2e1cdf3dbc818027da0c892c868"
+      },
+      "seedbench": {
+        "harness_score": 76.27344902690929,
+        "strict_letter_score": 76.27344902690929,
+        "explicit_choice_score": 76.27344902690929,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 14233,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+        "raw_prompt_arguments_sha256": "ab505df8a1c3e2bec4cc851d5f42b6dd35bd04364da27e212c639bd6d042ad75",
+        "effective_config_sha256": "65eeb2f348ff86240e5d6331dffa040d0524aa6a3a4d883c1823f52ee07b49ee"
+      },
+      "mmstar": {
+        "harness_score": 69.39261588793948,
+        "strict_letter_score": 69.39261588793948,
+        "explicit_choice_score": 69.39261588793948,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 1500,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+        "raw_prompt_arguments_sha256": "c0d319123c322a80365cf632f94e3b0a67d3c290a333550e388ca2f25729fcc8",
+        "effective_config_sha256": "d4bb0bed5abf9ea80929346268ad86d51c458ba72d9b340f88752f45a43e0106"
+      },
+      "explicit_mean4": 78.9415094212903,
+      "strict_mean4": 78.9415094212903
+    },
+    "released_grace_w4": {
+      "scienceqa": {
+        "harness_score": 87.10956866633614,
+        "strict_letter_score": 87.10956866633614,
+        "explicit_choice_score": 87.10956866633614,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 2017,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128",
+        "raw_prompt_arguments_sha256": "ef0edb99e32e9c6bd5d8fe288e8ca62c1c683cabd49f2ea4d2ed830ed432ca06",
+        "effective_config_sha256": "f15e59ed51ae7318c6bf7586fd04a0d09f501c89a568ea24499eda02d8a652c9"
+      },
+      "ai2d": {
+        "harness_score": 80.4080310880829,
+        "strict_letter_score": 80.4080310880829,
+        "explicit_choice_score": 80.4080310880829,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 3088,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128",
+        "raw_prompt_arguments_sha256": "c103b1f1f7a18d9c5183ee3d79bf63ba5b4ad2778864a9902ee57159520eadbc",
+        "effective_config_sha256": "0130f6f616af75775744c38da13871d53a32b2e1cdf3dbc818027da0c892c868"
+      },
+      "seedbench": {
+        "harness_score": 75.69732312232136,
+        "strict_letter_score": 75.69732312232136,
+        "explicit_choice_score": 75.69732312232136,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 14233,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128",
+        "raw_prompt_arguments_sha256": "ab505df8a1c3e2bec4cc851d5f42b6dd35bd04364da27e212c639bd6d042ad75",
+        "effective_config_sha256": "65eeb2f348ff86240e5d6331dffa040d0524aa6a3a4d883c1823f52ee07b49ee"
+      },
+      "mmstar": {
+        "harness_score": 67.49297239107729,
+        "strict_letter_score": 67.49297239107729,
+        "explicit_choice_score": 67.49297239107729,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 1500,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128",
+        "raw_prompt_arguments_sha256": "c0d319123c322a80365cf632f94e3b0a67d3c290a333550e388ca2f25729fcc8",
+        "effective_config_sha256": "d4bb0bed5abf9ea80929346268ad86d51c458ba72d9b340f88752f45a43e0106"
+      },
+      "explicit_mean4": 77.67697381695443,
+      "strict_mean4": 77.67697381695443
+    },
+    "released_grace_w8": {
+      "scienceqa": {
+        "harness_score": 86.66336142786317,
+        "strict_letter_score": 86.66336142786317,
+        "explicit_choice_score": 86.66336142786317,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 2017,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W8G128",
+        "raw_prompt_arguments_sha256": "ef0edb99e32e9c6bd5d8fe288e8ca62c1c683cabd49f2ea4d2ed830ed432ca06",
+        "effective_config_sha256": "f15e59ed51ae7318c6bf7586fd04a0d09f501c89a568ea24499eda02d8a652c9"
+      },
+      "ai2d": {
+        "harness_score": 79.56606217616581,
+        "strict_letter_score": 79.56606217616581,
+        "explicit_choice_score": 79.56606217616581,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 3088,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W8G128",
+        "raw_prompt_arguments_sha256": "c103b1f1f7a18d9c5183ee3d79bf63ba5b4ad2778864a9902ee57159520eadbc",
+        "effective_config_sha256": "0130f6f616af75775744c38da13871d53a32b2e1cdf3dbc818027da0c892c868"
+      },
+      "seedbench": {
+        "harness_score": 75.45141572402164,
+        "strict_letter_score": 75.45141572402164,
+        "explicit_choice_score": 75.45141572402164,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 14233,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W8G128",
+        "raw_prompt_arguments_sha256": "ab505df8a1c3e2bec4cc851d5f42b6dd35bd04364da27e212c639bd6d042ad75",
+        "effective_config_sha256": "65eeb2f348ff86240e5d6331dffa040d0524aa6a3a4d883c1823f52ee07b49ee"
+      },
+      "mmstar": {
+        "harness_score": 65.19746562974163,
+        "strict_letter_score": 65.19746562974164,
+        "explicit_choice_score": 65.19746562974164,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": -1.4210854715202004e-14,
+        "scored": 1500,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W8G128",
+        "raw_prompt_arguments_sha256": "c0d319123c322a80365cf632f94e3b0a67d3c290a333550e388ca2f25729fcc8",
+        "effective_config_sha256": "d4bb0bed5abf9ea80929346268ad86d51c458ba72d9b340f88752f45a43e0106"
+      },
+      "explicit_mean4": 76.71957623944806,
+      "strict_mean4": 76.71957623944806
+    },
+    "sft_2b": {
+      "scienceqa": {
+        "harness_score": 86.76251859196827,
+        "strict_letter_score": 86.76251859196827,
+        "explicit_choice_score": 86.76251859196827,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 2017,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft",
+        "raw_prompt_arguments_sha256": "ef0edb99e32e9c6bd5d8fe288e8ca62c1c683cabd49f2ea4d2ed830ed432ca06",
+        "effective_config_sha256": "f15e59ed51ae7318c6bf7586fd04a0d09f501c89a568ea24499eda02d8a652c9"
+      },
+      "ai2d": {
+        "harness_score": 77.52590673575129,
+        "strict_letter_score": 77.52590673575129,
+        "explicit_choice_score": 77.52590673575129,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 3088,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft",
+        "raw_prompt_arguments_sha256": "c103b1f1f7a18d9c5183ee3d79bf63ba5b4ad2778864a9902ee57159520eadbc",
+        "effective_config_sha256": "0130f6f616af75775744c38da13871d53a32b2e1cdf3dbc818027da0c892c868"
+      },
+      "seedbench": {
+        "harness_score": 76.68095271552026,
+        "strict_letter_score": 76.68095271552026,
+        "explicit_choice_score": 76.68095271552026,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 14233,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft",
+        "raw_prompt_arguments_sha256": "ab505df8a1c3e2bec4cc851d5f42b6dd35bd04364da27e212c639bd6d042ad75",
+        "effective_config_sha256": "65eeb2f348ff86240e5d6331dffa040d0524aa6a3a4d883c1823f52ee07b49ee"
+      },
+      "mmstar": {
+        "harness_score": 56.102964565710664,
+        "strict_letter_score": 56.102964565710664,
+        "explicit_choice_score": 56.102964565710664,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 0.0,
+        "scored": 1500,
+        "non_single_letter": 0,
+        "empty": 0,
+        "non_letter_examples": [],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft",
+        "raw_prompt_arguments_sha256": "c0d319123c322a80365cf632f94e3b0a67d3c290a333550e388ca2f25729fcc8",
+        "effective_config_sha256": "d4bb0bed5abf9ea80929346268ad86d51c458ba72d9b340f88752f45a43e0106"
+      },
+      "explicit_mean4": 74.26808565223763,
+      "strict_mean4": 74.26808565223763
+    },
+    "vanilla_2b": {
+      "scienceqa": {
+        "harness_score": 87.2583044124938,
+        "strict_letter_score": 19.583539910758553,
+        "explicit_choice_score": 87.2583044124938,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 67.67476450173524,
+        "scored": 2017,
+        "non_single_letter": 1601,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 0,
+            "response": "B. how steady a parachute with a 1 m vent was at 2",
+            "target": "B"
+          },
+          {
+            "doc_id": 1,
+            "response": "B. New Hampshire",
+            "target": "B"
+          },
+          {
+            "doc_id": 2,
+            "response": "B. mushroom",
+            "target": "B"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+        "raw_prompt_arguments_sha256": "ef0edb99e32e9c6bd5d8fe288e8ca62c1c683cabd49f2ea4d2ed830ed432ca06",
+        "effective_config_sha256": "f15e59ed51ae7318c6bf7586fd04a0d09f501c89a568ea24499eda02d8a652c9"
+      },
+      "ai2d": {
+        "harness_score": 76.13341968911918,
+        "strict_letter_score": 9.099740932642488,
+        "explicit_choice_score": 76.13341968911918,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 67.03367875647669,
+        "scored": 3088,
+        "non_single_letter": 2766,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 0,
+            "response": "B. D",
+            "target": "B"
+          },
+          {
+            "doc_id": 1,
+            "response": "D. k",
+            "target": "D"
+          },
+          {
+            "doc_id": 2,
+            "response": "B. Fish population would decrease.",
+            "target": "B"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+        "raw_prompt_arguments_sha256": "c103b1f1f7a18d9c5183ee3d79bf63ba5b4ad2778864a9902ee57159520eadbc",
+        "effective_config_sha256": "0130f6f616af75775744c38da13871d53a32b2e1cdf3dbc818027da0c892c868"
+      },
+      "seedbench": {
+        "harness_score": 76.09077495960092,
+        "strict_letter_score": 12.042436591020866,
+        "explicit_choice_score": 76.09077495960092,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 64.04833836858006,
+        "scored": 14233,
+        "non_single_letter": 12125,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 0,
+            "response": "B. Two",
+            "target": "A"
+          },
+          {
+            "doc_id": 1,
+            "response": "B. A house",
+            "target": "C"
+          },
+          {
+            "doc_id": 2,
+            "response": "A. Standing with his arms crossed",
+            "target": "C"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+        "raw_prompt_arguments_sha256": "ab505df8a1c3e2bec4cc851d5f42b6dd35bd04364da27e212c639bd6d042ad75",
+        "effective_config_sha256": "65eeb2f348ff86240e5d6331dffa040d0524aa6a3a4d883c1823f52ee07b49ee"
+      },
+      "mmstar": {
+        "harness_score": 55.08011163235324,
+        "strict_letter_score": 37.83008892416039,
+        "explicit_choice_score": 55.11816338273375,
+        "explicit_choice_disagreements": 1,
+        "disagreement_examples": [
+          {
+            "doc_id": 1277,
+            "response": "The correct answer is (B) 1.2.",
+            "target": "B",
+            "harness_correct": 0.0,
+            "explicit_correct": 1.0
+          }
+        ],
+        "harness_minus_strict_pp": 17.250022708192844,
+        "scored": 1500,
+        "non_single_letter": 553,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 1,
+            "response": "C: A body of water and the Golden Gate Bridge.",
+            "target": "B"
+          },
+          {
+            "doc_id": 3,
+            "response": "B: The golf course",
+            "target": "C"
+          },
+          {
+            "doc_id": 4,
+            "response": "B: A boy with his head in his hands surrounded by books",
+            "target": "A"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+        "raw_prompt_arguments_sha256": "c0d319123c322a80365cf632f94e3b0a67d3c290a333550e388ca2f25729fcc8",
+        "effective_config_sha256": "d4bb0bed5abf9ea80929346268ad86d51c458ba72d9b340f88752f45a43e0106"
+      },
+      "explicit_mean4": 73.65016561098692,
+      "strict_mean4": 19.638951589645576
+    },
+    "vanilla_8b_teacher": {
+      "scienceqa": {
+        "harness_score": 94.6950917203768,
+        "strict_letter_score": 45.46355974219137,
+        "explicit_choice_score": 94.6950917203768,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 49.23153197818542,
+        "scored": 2017,
+        "non_single_letter": 1056,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 1,
+            "response": "B. New Hampshire",
+            "target": "B"
+          },
+          {
+            "doc_id": 3,
+            "response": "B. 4:0",
+            "target": "B"
+          },
+          {
+            "doc_id": 6,
+            "response": "D. Cheyenne",
+            "target": "D"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+        "raw_prompt_arguments_sha256": "ef0edb99e32e9c6bd5d8fe288e8ca62c1c683cabd49f2ea4d2ed830ed432ca06",
+        "effective_config_sha256": "f15e59ed51ae7318c6bf7586fd04a0d09f501c89a568ea24499eda02d8a652c9"
+      },
+      "ai2d": {
+        "harness_score": 84.00259067357513,
+        "strict_letter_score": 13.050518134715025,
+        "explicit_choice_score": 84.00259067357513,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 70.95207253886011,
+        "scored": 3088,
+        "non_single_letter": 2627,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 0,
+            "response": "B. D",
+            "target": "B"
+          },
+          {
+            "doc_id": 1,
+            "response": "D. k",
+            "target": "D"
+          },
+          {
+            "doc_id": 2,
+            "response": "B. Fish population would decrease.",
+            "target": "B"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+        "raw_prompt_arguments_sha256": "c103b1f1f7a18d9c5183ee3d79bf63ba5b4ad2778864a9902ee57159520eadbc",
+        "effective_config_sha256": "0130f6f616af75775744c38da13871d53a32b2e1cdf3dbc818027da0c892c868"
+      },
+      "seedbench": {
+        "harness_score": 78.55687486826389,
+        "strict_letter_score": 8.19222932621373,
+        "explicit_choice_score": 78.54282301693249,
+        "explicit_choice_disagreements": 2,
+        "disagreement_examples": [
+          {
+            "doc_id": 7917,
+            "response": "A, C",
+            "target": "A",
+            "harness_correct": 1.0,
+            "explicit_correct": 0.0
+          },
+          {
+            "doc_id": 8120,
+            "response": "C, D",
+            "target": "C",
+            "harness_correct": 1.0,
+            "explicit_correct": 0.0
+          }
+        ],
+        "harness_minus_strict_pp": 70.36464554205016,
+        "scored": 14233,
+        "non_single_letter": 12760,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 0,
+            "response": "A. One",
+            "target": "A"
+          },
+          {
+            "doc_id": 1,
+            "response": "B. A house",
+            "target": "C"
+          },
+          {
+            "doc_id": 2,
+            "response": "A. Standing with his arms crossed",
+            "target": "C"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+        "raw_prompt_arguments_sha256": "ab505df8a1c3e2bec4cc851d5f42b6dd35bd04364da27e212c639bd6d042ad75",
+        "effective_config_sha256": "65eeb2f348ff86240e5d6331dffa040d0524aa6a3a4d883c1823f52ee07b49ee"
+      },
+      "mmstar": {
+        "harness_score": 64.5489943433801,
+        "strict_letter_score": 63.42252553066606,
+        "explicit_choice_score": 64.54899434338012,
+        "explicit_choice_disagreements": 0,
+        "disagreement_examples": [],
+        "harness_minus_strict_pp": 1.1264688127140445,
+        "scored": 1500,
+        "non_single_letter": 40,
+        "empty": 0,
+        "non_letter_examples": [
+          {
+            "doc_id": 103,
+            "response": "D: Trees",
+            "target": "A"
+          },
+          {
+            "doc_id": 586,
+            "response": "A: C",
+            "target": "A"
+          },
+          {
+            "doc_id": 755,
+            "response": "(D) 6",
+            "target": "B"
+          }
+        ],
+        "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+        "raw_prompt_arguments_sha256": "c0d319123c322a80365cf632f94e3b0a67d3c290a333550e388ca2f25729fcc8",
+        "effective_config_sha256": "d4bb0bed5abf9ea80929346268ad86d51c458ba72d9b340f88752f45a43e0106"
+      },
+      "explicit_mean4": 80.44737493856614,
+      "strict_mean4": 32.53220818344655
+    }
+  }
+}

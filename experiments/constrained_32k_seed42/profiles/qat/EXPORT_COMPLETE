@@ -1,0 +1,1 @@
+BF16 storage; QAT weights lie on W4/W8 grid. Packed INT4 requires separate export.

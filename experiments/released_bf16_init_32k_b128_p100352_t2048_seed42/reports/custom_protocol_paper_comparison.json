@@ -1,0 +1,174 @@
+{
+  "local_protocol": "Original seven-suite custom Transformers evaluation; not lmms-eval",
+  "local_source": "reports/report_analysis.json",
+  "local_source_sha256": "6216b061e9c09963f32b6b1b67e5d56a94eb5c16913c753ea75ff2861992ee14",
+  "mean_delta_definition": "unrounded local mean minus paper reported one-decimal Avg.",
+  "rows": {
+    "released_bf16": {
+      "label": "Released BF16 initialization",
+      "local": {
+        "ai2d": 80.31088082901555,
+        "hallusionbench": 66.34189548272808,
+        "mean": 76.09392400288458,
+        "mmbench": 92.95449295449295,
+        "mmmu": 70.0,
+        "mmstar": 65.73333333333333,
+        "scienceqa": 85.02711624616836,
+        "seedbench_img": 72.28974917445373
+      },
+      "local_minus_paper_pp": {
+        "ai2d": -0.989119170984452,
+        "hallusionbench": -0.5581045172719286,
+        "mean": -0.6060759971154255,
+        "mmbench": 6.554492954492943,
+        "mmmu": -2.0999999999999943,
+        "mmstar": -1.5666666666666629,
+        "scienceqa": -1.1728837538316412,
+        "seedbench_img": -4.410250825546271
+      },
+      "paper": {
+        "ai2d": 81.3,
+        "hallusionbench": 66.9,
+        "mean": 76.7,
+        "mmbench": 86.4,
+        "mmmu": 72.1,
+        "mmstar": 67.3,
+        "scienceqa": 86.2,
+        "seedbench_img": 76.7
+      }
+    },
+    "released_grace_w4": {
+      "label": "Released full GRACE W4",
+      "local": {
+        "ai2d": 78.82124352331607,
+        "hallusionbench": 63.86182462356067,
+        "mean": 73.85314810508788,
+        "mmbench": 92.46939246939246,
+        "mmmu": 61.22222222222222,
+        "mmstar": 64.66666666666666,
+        "scienceqa": 83.68309360999764,
+        "seedbench_img": 72.2475936204595
+      },
+      "local_minus_paper_pp": {
+        "ai2d": -0.6787564766839296,
+        "hallusionbench": -1.5381753764393338,
+        "mean": -1.1468518949121176,
+        "mmbench": 7.869392469392466,
+        "mmmu": -9.277777777777779,
+        "mmstar": -1.13333333333334,
+        "scienceqa": -0.6169063900023559,
+        "seedbench_img": -2.852406379540497
+      },
+      "paper": {
+        "ai2d": 79.5,
+        "hallusionbench": 65.4,
+        "mean": 75.0,
+        "mmbench": 84.6,
+        "mmmu": 70.5,
+        "mmstar": 65.8,
+        "scienceqa": 84.3,
+        "seedbench_img": 75.1
+      }
+    },
+    "released_grace_w8": {
+      "label": "Released full GRACE W8",
+      "local": {
+        "ai2d": 78.10880829015544,
+        "hallusionbench": 60.8503100088574,
+        "mean": 72.27717042292343,
+        "mmbench": 91.54539154539154,
+        "mmmu": 56.888888888888886,
+        "mmstar": 63.6,
+        "scienceqa": 82.95213393067672,
+        "seedbench_img": 71.99466029649406
+      },
+      "local_minus_paper_pp": {
+        "ai2d": -2.2911917098445684,
+        "hallusionbench": -5.249689991142596,
+        "mean": -3.6228295770765726,
+        "mmbench": 6.045391545391539,
+        "mmmu": -14.411111111111111,
+        "mmstar": -2.8999999999999986,
+        "scienceqa": -2.347866069323274,
+        "seedbench_img": -3.9053397035059447
+      },
+      "paper": {
+        "ai2d": 80.4,
+        "hallusionbench": 66.1,
+        "mean": 75.9,
+        "mmbench": 85.5,
+        "mmmu": 71.3,
+        "mmstar": 66.5,
+        "scienceqa": 85.3,
+        "seedbench_img": 75.9
+      }
+    },
+    "vanilla_2b": {
+      "label": "Vanilla 2B, BF16",
+      "local": {
+        "ai2d": 74.80569948186529,
+        "hallusionbench": 59.87599645704162,
+        "mean": 65.4466930420949,
+        "mmbench": 83.36798336798337,
+        "mmmu": 40.0,
+        "mmstar": 44.666666666666664,
+        "scienceqa": 82.95213393067672,
+        "seedbench_img": 72.45837139043068
+      },
+      "local_minus_paper_pp": {
+        "ai2d": -2.094300518134716,
+        "hallusionbench": 8.475996457041624,
+        "mean": -1.8533069579050903,
+        "mmbench": 4.967983367983365,
+        "mmmu": -13.399999999999999,
+        "mmstar": -13.633333333333333,
+        "scienceqa": 1.5521339306767175,
+        "seedbench_img": 1.258371390430682
+      },
+      "paper": {
+        "ai2d": 76.9,
+        "hallusionbench": 51.4,
+        "mean": 67.3,
+        "mmbench": 78.4,
+        "mmmu": 53.4,
+        "mmstar": 58.3,
+        "scienceqa": 81.4,
+        "seedbench_img": 71.2
+      }
+    },
+    "vanilla_8b_teacher": {
+      "label": "Vanilla 8B teacher, BF16",
+      "local": {
+        "ai2d": 82.0919689119171,
+        "hallusionbench": 70.32772364924712,
+        "mean": 74.35276361377446,
+        "mmbench": 89.0967890967891,
+        "mmmu": 51.33333333333333,
+        "mmstar": 59.13333333333334,
+        "scienceqa": 92.36029238387174,
+        "seedbench_img": 76.12590458792945
+      },
+      "local_minus_paper_pp": {
+        "ai2d": -3.608031088082896,
+        "hallusionbench": 9.227723649247118,
+        "mean": -1.9472363862255406,
+        "mmbench": 4.596789096789095,
+        "mmmu": -18.266666666666666,
+        "mmstar": -11.766666666666666,
+        "scienceqa": 7.360292383871737,
+        "seedbench_img": -1.3740954120705453
+      },
+      "paper": {
+        "ai2d": 85.7,
+        "hallusionbench": 61.1,
+        "mean": 76.3,
+        "mmbench": 84.5,
+        "mmmu": 69.6,
+        "mmstar": 70.9,
+        "scienceqa": 85.0,
+        "seedbench_img": 77.5
+      }
+    }
+  },
+  "source": "https://arxiv.org/html/2601.22709v5#A1.T6"
+}

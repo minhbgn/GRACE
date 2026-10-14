@@ -13,11 +13,14 @@ unchanged: group-wise LSQ, log-scale optimizer group, weight baking, etc.
 
 from __future__ import annotations
 
+import gc
 import os
 import json
 import logging
 import pathlib
 import sys
+import time
+from contextlib import contextmanager
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
@@ -30,6 +33,11 @@ project_root = Path(__file__).parent.parent.parent
 sys.path.append(str(project_root))
 
 from transformers import Qwen3VLForConditionalGeneration, AutoProcessor, Trainer, TrainerCallback
+from transformers.integrations.deepspeed import (
+    is_deepspeed_zero3_enabled,
+    set_hf_deepspeed_config,
+    unset_hf_deepspeed_config,
+)
 
 from qwenvl.train.trainer import replace_qwen2_vl_attention_class
 from qwenvl.data.data_processor import (
@@ -43,12 +51,16 @@ from qwenvl.train.qat_modules import (
     bake_qat_weights_inplace,
     collect_qat_param_groups,
     materialize_quantized_state_dict,
+    merge_lora_weights_inplace,
     replace_linears_with_qat,
+    replace_linears_with_qat_lora,
     strip_log_scale_from_checkpoint_dir,
+    strip_qat_lora_from_checkpoint_dir,
 )
 from qwenvl.train.train_qwen_qat import (
     QATArguments,
     SaveProcessorCallback,
+    _qwen3vl_submodule,
     safe_save_model_for_hf_trainer,
     set_model,
 )
@@ -57,13 +69,34 @@ from qwenvl.train.grace_modules import (
     gated_dkd_loss,
     rcka_loss,
 )
+from qwenvl.train.grace_resume import CheckpointPauseCallback
+from qwenvl.train.grace_profiler import (
+    GraceLearningDiagnostics,
+    GraceLearningDiagnosticsCallback,
+    GraceProfilerCallback,
+    GraceStepProfiler,
+)
 
-local_rank = None
+def _is_world_process_zero() -> bool:
+    """Rank check that works across old and new Transformers releases."""
+    if dist.is_available() and dist.is_initialized():
+        return dist.get_rank() == 0
+    try:
+        return int(os.environ.get("RANK", "0")) == 0
+    except ValueError:
+        return True
 
 
 def rank0_print(*args):
-    if local_rank in (0, -1, None):
+    if _is_world_process_zero():
         print(*args)
+
+
+def _close_distributed_process_group() -> None:
+    """Synchronize successful exits and avoid stale NCCL process groups."""
+    if dist.is_available() and dist.is_initialized():
+        dist.barrier()
+        dist.destroy_process_group()
 
 
 # ----------------------------------------------------------------------
@@ -133,6 +166,10 @@ class GraceArguments:
     dkd_chunk_size: int = field(
         default=2048, metadata={"help": "Valid-token chunk for the KL pass."}
     )
+    dkd_checkpoint_chunks: bool = field(
+        default=False,
+        metadata={"help": "Recompute DKD chunks in backward to bound retained KL intermediates."},
+    )
     # --- Relational Centered Kernel Alignment ---
     rcka_weight: float = field(default=1.0, metadata={"help": "omega."})
     rcka_layer: int = field(
@@ -155,6 +192,28 @@ class GraceArguments:
     rcka_warmup_steps: int = field(
         default=0,
         metadata={"help": "Linear warmup (in optimizer steps) for the RCKA term."},
+    )
+    # --- Opt-in diagnostics. Disabled by default so reproduction runs retain
+    # their original execution path. ---
+    profile_steps: int = field(
+        default=0,
+        metadata={"help": "Profile the first N optimizer steps; 0 disables profiling."},
+    )
+    profile_deepspeed_comms: bool = field(
+        default=False,
+        metadata={"help": "Print the DeepSpeed collective summary at train end."},
+    )
+    skip_final_export: bool = field(
+        default=False,
+        metadata={
+            "help": "Skip merge/bake/model export after a profiling-only run."
+        },
+    )
+    learning_diagnostics_steps: int = field(
+        default=0,
+        metadata={
+            "help": "Record gradient/update/loss-connectivity checks for N steps."
+        },
     )
 
 
@@ -191,6 +250,35 @@ def _load_ib_state(controller: AdaptiveIBController, output_dir: str) -> None:
 # ----------------------------------------------------------------------
 # Model builders
 # ----------------------------------------------------------------------
+@contextmanager
+def _without_transformers_zero3_init(training_args):
+    """Temporarily keep ``from_pretrained`` out of ``deepspeed.zero.Init``.
+
+    Parsing ``TrainingArguments`` installs its DeepSpeed configuration in a
+    process-global weak reference used by Transformers model loading. That is
+    desirable for the student, but the frozen teacher is not handed to
+    DeepSpeed and must therefore be loaded as an ordinary, replicated module.
+    """
+    if not is_deepspeed_zero3_enabled():
+        yield
+        return
+
+    hf_deepspeed_config = getattr(training_args, "hf_deepspeed_config", None)
+    if hf_deepspeed_config is None:
+        raise RuntimeError(
+            "Transformers reports ZeRO-3 initialization is enabled, but "
+            "TrainingArguments does not retain its DeepSpeed configuration."
+        )
+
+    unset_hf_deepspeed_config()
+    try:
+        yield
+    finally:
+        # Restore ZeRO-3 before Trainer construction. Transformers stores only
+        # a weak reference here, while TrainingArguments owns the strong one.
+        set_hf_deepspeed_config(hf_deepspeed_config)
+
+
 def _build_student(model_args, training_args, attn_implementation):
     compute_dtype = torch.bfloat16 if training_args.bf16 else None
     model = Qwen3VLForConditionalGeneration.from_pretrained(
@@ -209,12 +297,13 @@ def _build_teacher(grace_args, training_args):
     teacher's RCKA-layer output after each forward — replacing the need for
     ``output_hidden_states=True`` (which would retain every layer's output).
     """
-    teacher = Qwen3VLForConditionalGeneration.from_pretrained(
-        grace_args.teacher_model_path,
-        cache_dir=training_args.cache_dir,
-        attn_implementation=grace_args.teacher_attn,
-        dtype=torch.bfloat16,
-    )
+    with _without_transformers_zero3_init(training_args):
+        teacher = Qwen3VLForConditionalGeneration.from_pretrained(
+            grace_args.teacher_model_path,
+            cache_dir=training_args.cache_dir,
+            attn_implementation=grace_args.teacher_attn,
+            dtype=torch.bfloat16,
+        )
     teacher.config.use_cache = False
     teacher.eval()
     for p in teacher.parameters():
@@ -231,10 +320,16 @@ class GraceTrainer(Trainer):
 
     def __init__(self, *args, teacher=None, teacher_pen_buf=None,
                  grace_args=None, ib_controller=None, merge_size=2,
-                 base_lr=2e-5, scale_lr=2e-5, **kwargs):
+                 base_lr=2e-5, scale_lr=2e-5, method="grace", **kwargs):
         super().__init__(*args, **kwargs)
-        self.teacher = teacher.to(self.args.device)
-        self.teacher.eval()
+        self.method = str(method).strip().lower()
+        if not self.method:
+            raise ValueError("method must be a non-empty name")
+        self.teacher = teacher.to(self.args.device) if teacher is not None else None
+        if self.teacher is not None:
+            self.teacher.eval()
+        if grace_args and grace_args.grace_enable and self.teacher is None:
+            raise ValueError("GRACE requires a teacher")
         self.teacher_pen_buf = teacher_pen_buf
         self.grace_args = grace_args
         self.ib = ib_controller
@@ -249,6 +344,37 @@ class GraceTrainer(Trainer):
         self._gdkd_accum: Optional[torch.Tensor] = None
         self._gdkd_count: int = 0
         self._micro_step: int = 0
+        self.grace_profiler = GraceStepProfiler(
+            enabled=bool(grace_args and grace_args.profile_steps > 0),
+            profile_steps=(grace_args.profile_steps if grace_args else 0),
+            output_dir=os.path.join(self.args.output_dir, "profiling"),
+            merge_size=merge_size,
+            method=self.method,
+        )
+        self.grace_profiler.install_model_hooks(self.model, self.teacher)
+        self.learning_diagnostics = GraceLearningDiagnostics(
+            enabled=bool(grace_args and grace_args.learning_diagnostics_steps > 0),
+            max_steps=(grace_args.learning_diagnostics_steps if grace_args else 0),
+            output_dir=os.path.join(self.args.output_dir, "profiling"),
+            method=self.method,
+        )
+        self.learning_diagnostics.install(self.model, self.teacher)
+
+    def get_batch_samples(self, epoch_iterator, num_batches, device):
+        started = time.perf_counter()
+        result = super().get_batch_samples(epoch_iterator, num_batches, device)
+        elapsed_ms = (time.perf_counter() - started) * 1000.0
+        self.grace_profiler.begin_step(
+            step_number=int(getattr(self.state, "global_step", 0)) + 1,
+            data_wait_ms=elapsed_ms,
+        )
+        return result
+
+    def training_step(self, model, inputs, num_items_in_batch=None):
+        self.grace_profiler.observe_inputs(inputs)
+        result = super().training_step(model, inputs, num_items_in_batch)
+        self.grace_profiler.finish_micro_step()
+        return result
 
     # --- optimizer: same QAT param-group split as train_qwen_qat ---
     def create_optimizer(self):
@@ -261,6 +387,30 @@ class GraceTrainer(Trainer):
             scale_lr=self._scale_lr,
             weight_decay=self.args.weight_decay,
         )
+        # LoRA commonly uses a much larger LR than full-rank modules. Keep the
+        # visual merger on its explicit projector LR so the LoRA comparison
+        # does not silently train that full-rank module 20x faster than the
+        # original GRACE setup.
+        mm_lr = getattr(self.args, "mm_projector_lr", None)
+        if mm_lr is not None:
+            merger_params = [
+                p for name, p in self.model.named_parameters()
+                if p.requires_grad and "merger" in name
+            ]
+            if merger_params:
+                merger_ids = {id(p) for p in merger_params}
+                for group in param_groups:
+                    group["params"] = [
+                        p for p in group["params"] if id(p) not in merger_ids
+                    ]
+                param_groups.append({
+                    "params": merger_params,
+                    "lr": mm_lr,
+                    "weight_decay": self.args.weight_decay,
+                })
+        # SFT has no trainable quantization scales. ZeRO must not receive an
+        # empty scale group (or an emptied base group after projector splitting).
+        param_groups = [group for group in param_groups if group["params"]]
         self.optimizer = opt_cls(param_groups, **opt_kwargs)
         return self.optimizer
 
@@ -276,6 +426,14 @@ class GraceTrainer(Trainer):
 
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         ga = self.grace_args
+
+        if not ga.grace_enable:
+            outputs = model(**inputs, use_cache=False)
+            loss = outputs.loss
+            self.learning_diagnostics.observe_term("ce", loss, 1.0)
+            self.grace_profiler.arm_backward(loss)
+            self._grace_logs = {"ce": float(loss.detach())}
+            return (loss, outputs) if return_outputs else loss
 
         # --- student forward (quantized, grad on) ---
         # Student keeps output_hidden_states=True: under gradient_checkpointing
@@ -302,12 +460,14 @@ class GraceTrainer(Trainer):
             self.teacher_pen_buf["hidden"] = None  # release ref promptly
 
         # --- 1) confidence-gated decoupled KD ---
-        l_gdkd = gated_dkd_loss(
-            student_logits, teacher_logits, inputs["labels"],
-            temperature=ga.dkd_temperature,
-            alpha=ga.dkd_alpha, beta_dkd=ga.dkd_beta,
-            chunk_size=ga.dkd_chunk_size,
-        )
+        with self.grace_profiler.cuda_region("gdkd"):
+            l_gdkd = gated_dkd_loss(
+                student_logits, teacher_logits, inputs["labels"],
+                temperature=ga.dkd_temperature,
+                alpha=ga.dkd_alpha, beta_dkd=ga.dkd_beta,
+                chunk_size=ga.dkd_chunk_size,
+                checkpoint_chunks=ga.dkd_checkpoint_chunks,
+            )
 
         # --- 2) relational CKA: per-modality alignment ---
         ids = inputs["input_ids"]
@@ -316,12 +476,13 @@ class GraceTrainer(Trainer):
         if teacher_hidden is None:
             l_rcka = student_hidden.new_zeros(())
         else:
-            l_rcka = rcka_loss(
-                student_hidden, teacher_hidden,
-                image_mask, video_mask,
-                inputs.get("image_grid_thw"), inputs.get("video_grid_thw"),
-                self.merge_size,
-            )
+            with self.grace_profiler.cuda_region("rcka"):
+                l_rcka = rcka_loss(
+                    student_hidden, teacher_hidden,
+                    image_mask, video_mask,
+                    inputs.get("image_grid_thw"), inputs.get("video_grid_thw"),
+                    self.merge_size,
+                )
 
         # --- 3) NaN/Inf guard on distill terms (CE is left alone — a NaN
         # there is a real bug we want the optimizer to surface). ---
@@ -360,6 +521,14 @@ class GraceTrainer(Trainer):
             + beta * dkd_scale * l_gdkd_clean
             + ga.rcka_weight * rcka_scale * l_rcka_clean
         )
+        self.learning_diagnostics.observe_term("ce", ce_loss, 1.0)
+        self.learning_diagnostics.observe_term(
+            "gdkd", l_gdkd_clean, beta * dkd_scale
+        )
+        self.learning_diagnostics.observe_term(
+            "rcka", l_rcka_clean, ga.rcka_weight * rcka_scale
+        )
+        self.grace_profiler.arm_backward(loss)
 
         self._grace_logs = {
             "ce": round(float(ce_loss.detach()), 4),
@@ -381,8 +550,6 @@ class GraceTrainer(Trainer):
 # Train
 # ----------------------------------------------------------------------
 def train(attn_implementation="flash_attention_2"):
-    global local_rank
-
     parser = transformers.HfArgumentParser(
         (ModelArguments, DataArguments, TrainingArguments, QATArguments, GraceArguments)
     )
@@ -390,15 +557,16 @@ def train(attn_implementation="flash_attention_2"):
         parser.parse_args_into_dataclasses()
     )
 
-    local_rank = training_args.local_rank
     os.makedirs(training_args.output_dir, exist_ok=True)
 
     if qat_args.qat_enable and qat_args.qat_bits not in (4, 8):
         raise ValueError(f"--qat_bits must be 4 or 8, got {qat_args.qat_bits}")
     if grace_args.grace_enable and not grace_args.teacher_model_path:
         raise ValueError("--teacher_model_path is required when --grace_enable True")
-    if training_args.lora_enable:
-        raise ValueError("GRACE QAT training does not support --lora_enable.")
+    if training_args.lora_enable and not qat_args.qat_enable:
+        raise ValueError("GRACE native LoRA requires --qat_enable True.")
+    if training_args.lora_enable and training_args.lora_r <= 0:
+        raise ValueError(f"--lora_r must be positive, got {training_args.lora_r}")
 
     # ---- student ----
     model, model_type = _build_student(model_args, training_args, attn_implementation), "qwen3vl"
@@ -406,6 +574,7 @@ def train(attn_implementation="flash_attention_2"):
     rank0_print(f"[GRACE] student = {model_args.model_name_or_path}")
 
     processor = AutoProcessor.from_pretrained(model_args.model_name_or_path)
+    processor.tokenizer.model_max_length = training_args.model_max_length
     merge_size = getattr(processor.image_processor, "merge_size", 2)
 
     if data_args.data_flatten or data_args.data_packing:
@@ -424,16 +593,54 @@ def train(attn_implementation="flash_attention_2"):
     )
 
     set_model(model_args, model)
+    if training_args.lora_enable:
+        # Keep the vision/merger choices established by set_model, but freeze
+        # every language-model base parameter. Targeted linears are changed
+        # only through LoRA A/B and their corresponding QAT log_scale.
+        language_model = _qwen3vl_submodule(model, "language_model")
+        for p in language_model.parameters():
+            p.requires_grad_(False)
+        lm_head = getattr(model, "lm_head", None) or getattr(model.model, "lm_head", None)
+        if lm_head is not None:
+            for p in lm_head.parameters():
+                p.requires_grad_(False)
 
     # ---- QAT swap on the student (before the trainer / DeepSpeed) ----
     if qat_args.qat_enable:
         skip = list(DEFAULT_QAT_SKIP_KEYWORDS)
         if qat_args.qat_skip_extra:
             skip.extend([s for s in qat_args.qat_skip_extra.split(",") if s.strip()])
-        replaced = replace_linears_with_qat(
-            model, bits=qat_args.qat_bits,
-            group_size=qat_args.qat_group_size, skip_keywords=skip,
-        )
+        if training_args.lora_enable:
+            lora_targets = [
+                name.strip()
+                for name in training_args.lora_target_modules.split(",")
+                if name.strip()
+            ]
+            replaced, adapted = replace_linears_with_qat_lora(
+                model,
+                bits=qat_args.qat_bits,
+                group_size=qat_args.qat_group_size,
+                target_modules=lora_targets,
+                r=training_args.lora_r,
+                lora_alpha=training_args.lora_alpha,
+                lora_dropout=training_args.lora_dropout,
+                skip_keywords=skip,
+                method="grace",
+            )
+            model.config.qat_lora = {
+                "enabled": True,
+                "r": training_args.lora_r,
+                "alpha": training_args.lora_alpha,
+                "dropout": training_args.lora_dropout,
+                "target_modules": lora_targets,
+                "num_adapted": len(adapted),
+                "merged": False,
+            }
+        else:
+            replaced = replace_linears_with_qat(
+                model, bits=qat_args.qat_bits,
+                group_size=qat_args.qat_group_size, skip_keywords=skip,
+            )
         model.config.qat = {
             "bits": qat_args.qat_bits, "group_size": qat_args.qat_group_size,
             "skip_keywords": skip, "num_replaced": len(replaced),
@@ -441,8 +648,20 @@ def train(attn_implementation="flash_attention_2"):
         rank0_print(f"[QAT] LLM linears quantized: {len(replaced)} layers, "
                     f"W{qat_args.qat_bits}, group={qat_args.qat_group_size}")
 
+    trainable = sum(
+        int(getattr(p, "ds_numel", p.numel()))
+        for p in model.parameters() if p.requires_grad
+    )
+    total = sum(int(getattr(p, "ds_numel", p.numel())) for p in model.parameters())
+    rank0_print(
+        f"[GRACE] trainable student parameters: {trainable:,} / {total:,} "
+        f"({100.0 * trainable / max(total, 1):.3f}%)"
+    )
+
     # ---- teacher (frozen, BF16, no QAT) ----
-    teacher, teacher_pen_buf = _build_teacher(grace_args, training_args)
+    teacher, teacher_pen_buf = (
+        _build_teacher(grace_args, training_args) if grace_args.grace_enable else (None, None)
+    )
     # transformers >=4.57 moves LLM-side config fields into a nested
     # ``text_config`` on multimodal configs; older releases kept them flat.
     def _llm_cfg_attr(cfg, name):
@@ -450,15 +669,16 @@ def train(attn_implementation="flash_attention_2"):
         if tc is not None and hasattr(tc, name):
             return getattr(tc, name)
         return getattr(cfg, name)
-    t_vocab = _llm_cfg_attr(teacher.config, "vocab_size")
-    s_vocab = _llm_cfg_attr(model.config, "vocab_size")
-    if t_vocab != s_vocab:
-        raise ValueError(
-            f"Teacher/student vocab mismatch ({t_vocab} vs {s_vocab}); "
-            f"logit distillation requires a shared vocab."
-        )
-    rank0_print(f"[GRACE] teacher = {grace_args.teacher_model_path} "
-                f"(layers={_llm_cfg_attr(teacher.config, 'num_hidden_layers')}, frozen BF16)")
+    if teacher is not None:
+        t_vocab = _llm_cfg_attr(teacher.config, "vocab_size")
+        s_vocab = _llm_cfg_attr(model.config, "vocab_size")
+        if t_vocab != s_vocab:
+            raise ValueError(
+                f"Teacher/student vocab mismatch ({t_vocab} vs {s_vocab}); "
+                f"logit distillation requires a shared vocab."
+            )
+        rank0_print(f"[GRACE] teacher = {grace_args.teacher_model_path} "
+                    f"(layers={_llm_cfg_attr(teacher.config, 'num_hidden_layers')}, frozen BF16)")
 
     # ---- data ----
     data_module = make_supervised_data_module(processor, data_args=data_args)
@@ -484,6 +704,18 @@ def train(attn_implementation="flash_attention_2"):
     )
     trainer.add_callback(SaveProcessorCallback(processor))
     trainer.add_callback(GraceStateCallback(ib))
+    trainer.add_callback(
+        GraceProfilerCallback(
+            trainer.grace_profiler,
+            profile_deepspeed_comms=grace_args.profile_deepspeed_comms,
+        )
+    )
+    trainer.add_callback(
+        GraceLearningDiagnosticsCallback(trainer.learning_diagnostics)
+    )
+
+    pause_callback = CheckpointPauseCallback()
+    trainer.add_callback(pause_callback)
 
     if list(pathlib.Path(training_args.output_dir).glob("checkpoint-*")):
         logging.info("checkpoint found, resume training")
@@ -492,30 +724,77 @@ def train(attn_implementation="flash_attention_2"):
         trainer.train()
     trainer.save_state()
 
+    if pause_callback.paused:
+        rank0_print("[GRACE] Paused after checkpoint; skipping final merged export.")
+        _close_distributed_process_group()
+        return
+
+    if grace_args.skip_final_export:
+        rank0_print(
+            "[GRACE-PROFILE] Skipping final merge/bake/export as requested."
+        )
+        _close_distributed_process_group()
+        return
+
     model.config.use_cache = True
+
+    # The replicated 8B teacher is no longer needed. Releasing it before the
+    # merge leaves headroom for the chunked LoRA delta and QAT bake.
+    trainer.teacher = None
+    teacher = None
+    teacher_pen_buf = None
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+
+    is_zero3 = is_deepspeed_zero3_enabled()
+
+    # ---- merge native LoRA into the dense base before quantization bake ----
+    if training_args.lora_enable:
+        n_lora = merge_lora_weights_inplace(model, is_zero3=is_zero3)
+        model.config.qat_lora["merged"] = True
+        rank0_print(f"[GRACE-LoRA] Merged {n_lora} adapters into base weights.")
 
     # ---- bake fake-quantized weights, then save (same as QAT path) ----
     if qat_args.qat_enable:
-        is_zero3 = bool(getattr(trainer, "deepspeed", None)) and \
-            getattr(trainer.args, "deepspeed", None) is not None
         try:
             n = bake_qat_weights_inplace(model, is_zero3=is_zero3)
             rank0_print(f"[QAT] Baked fake-quantized weights into {n} linear layers.")
         except Exception as e:
+            if training_args.lora_enable:
+                raise RuntimeError(
+                    "QAT bake failed after LoRA merge; refusing to save a "
+                    "partially exported final model."
+                ) from e
             rank0_print(f"[QAT] Weight baking failed: {e}")
 
     safe_save_model_for_hf_trainer(trainer=trainer, output_dir=training_args.output_dir)
-    processor.save_pretrained(training_args.output_dir)
+    if dist.is_available() and dist.is_initialized():
+        dist.barrier()
+    if _is_world_process_zero():
+        processor.save_pretrained(training_args.output_dir)
 
-    if qat_args.qat_enable and (training_args.local_rank in (-1, 0)):
+    if qat_args.qat_enable and _is_world_process_zero():
         try:
-            removed = strip_log_scale_from_checkpoint_dir(training_args.output_dir)
-            rank0_print(f"[QAT] Stripped {removed} log_scale entries from checkpoint.")
+            if training_args.lora_enable:
+                removed = strip_qat_lora_from_checkpoint_dir(training_args.output_dir)
+                rank0_print(
+                    f"[GRACE-LoRA] Stripped {removed} scale/adapter entries "
+                    "from merged checkpoint."
+                )
+            else:
+                removed = strip_log_scale_from_checkpoint_dir(training_args.output_dir)
+                rank0_print(f"[QAT] Stripped {removed} log_scale entries from checkpoint.")
         except Exception as e:
+            if training_args.lora_enable:
+                raise RuntimeError(
+                    "Could not remove merged LoRA/QAT auxiliary tensors from "
+                    "the final model."
+                ) from e
             rank0_print(f"[QAT] log_scale strip failed: {e}")
 
     if qat_args.qat_enable and qat_args.qat_save_quantized and \
-            (training_args.local_rank in (-1, 0)):
+            _is_world_process_zero():
         try:
             qsd = materialize_quantized_state_dict(model)
             out = os.path.join(training_args.output_dir, "qat_quantized_weights.bin")
@@ -523,6 +802,8 @@ def train(attn_implementation="flash_attention_2"):
             rank0_print(f"[QAT] Saved fake-quantized weights + scales to {out}")
         except Exception as e:
             rank0_print(f"[QAT] Quantized state-dict export failed: {e}")
+
+    _close_distributed_process_group()
 
 
 if __name__ == "__main__":

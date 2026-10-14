@@ -1,0 +1,16 @@
+{
+  "method": "qat",
+  "complete": true,
+  "profile": true,
+  "stop_reason": null,
+  "global_step": 3,
+  "metrics": {
+    "train_runtime": 57.2006,
+    "train_samples_per_second": 0.21,
+    "train_steps_per_second": 0.052,
+    "total_flos": 542007827103744.0,
+    "train_loss": 0.014998994767665863
+  },
+  "peak_reserved_gib": 13.076171875,
+  "native_checkpoint": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w4/attempt_20261005T082638481657Z/profiles/qat/checkpoint-3"
+}

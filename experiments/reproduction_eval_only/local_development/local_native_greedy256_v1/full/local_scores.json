@@ -1,0 +1,871 @@
+{
+  "artifact_ready": false,
+  "note": "Artifact readiness only; unresolved answers count as wrong and capped outputs remain visible. No paper-score gate. No claim of judge-equivalent semantic extraction.",
+  "protocol": "local_native_greedy256_v1",
+  "rows": [
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "vanilla_2b",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 62.44464127546502,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "vanilla_2b",
+      "status": "missing",
+      "suite": "mmbench"
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4237,
+        "length": 4
+      },
+      "generated_tokens": 37924,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "vanilla_2b",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 83.25866540910162,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 4,
+      "unresolved": 10
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 15803,
+      "metric": "accuracy_test",
+      "model": "vanilla_2b",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 76.58678756476684,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 3
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 725,
+        "length": 175
+      },
+      "generated_tokens": 52452,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "vanilla_2b",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 39.666666666666664,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 175,
+      "unresolved": 133
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 81732,
+      "metric": "accuracy_image_subset",
+      "model": "vanilla_2b",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 76.79336752617158,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1268,
+        "length": 232
+      },
+      "generated_tokens": 74743,
+      "metric": "overall_accuracy_1500",
+      "model": "vanilla_2b",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 47.599999999999994,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 232,
+      "unresolved": 181
+    },
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "vanilla_8b_teacher",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 72.8963684676705,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "vanilla_8b_teacher",
+      "status": "missing",
+      "suite": "mmbench"
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4231,
+        "length": 10
+      },
+      "generated_tokens": 26857,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "vanilla_8b_teacher",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 92.7375618957793,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 10,
+      "unresolved": 17
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3087,
+        "length": 1
+      },
+      "generated_tokens": 15596,
+      "metric": "accuracy_test",
+      "model": "vanilla_8b_teacher",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 83.970207253886,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 1,
+      "unresolved": 3
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 876,
+        "length": 24
+      },
+      "generated_tokens": 14702,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "vanilla_8b_teacher",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 53.22222222222223,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 24,
+      "unresolved": 22
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 82173,
+      "metric": "accuracy_image_subset",
+      "model": "vanilla_8b_teacher",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 79.36485631982013,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 5
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1473,
+        "length": 27
+      },
+      "generated_tokens": 11694,
+      "metric": "overall_accuracy_1500",
+      "model": "vanilla_8b_teacher",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 62.73333333333333,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 27,
+      "unresolved": 22
+    },
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "released_bf16",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 67.0504871567759,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "released_bf16",
+      "status": "missing",
+      "suite": "mmbench"
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4241
+      },
+      "generated_tokens": 8482,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "released_bf16",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 86.18250412638528,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 6176,
+      "metric": "accuracy_test",
+      "model": "released_bf16",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 81.12046632124353,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 900
+      },
+      "generated_tokens": 1953,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "released_bf16",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 72.0,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 28466,
+      "metric": "accuracy_image_subset",
+      "model": "released_bf16",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 76.280474952575,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1500
+      },
+      "generated_tokens": 3000,
+      "metric": "overall_accuracy_1500",
+      "model": "released_bf16",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 68.0,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "released_grace_w4",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 64.5704162976085,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "released_grace_w4",
+      "status": "missing",
+      "suite": "mmbench"
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4241
+      },
+      "generated_tokens": 8493,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "released_grace_w4",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 84.08394246639944,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 6176,
+      "metric": "accuracy_test",
+      "model": "released_grace_w4",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 79.40414507772022,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 900
+      },
+      "generated_tokens": 1959,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "released_grace_w4",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 61.55555555555555,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 28466,
+      "metric": "accuracy_image_subset",
+      "model": "released_grace_w4",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 73.86355652357199,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1500
+      },
+      "generated_tokens": 3000,
+      "metric": "overall_accuracy_1500",
+      "model": "released_grace_w4",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 66.2,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2259,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "released_grace_w8",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 59.167404782993806,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 8
+    },
+    {
+      "model": "released_grace_w8",
+      "status": "missing",
+      "suite": "mmbench"
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4241
+      },
+      "generated_tokens": 8482,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "released_grace_w8",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 82.48054704079226,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 6176,
+      "metric": "accuracy_test",
+      "model": "released_grace_w8",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 75.93911917098445,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 899,
+        "length": 1
+      },
+      "generated_tokens": 2194,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "released_grace_w8",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 58.111111111111114,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 1,
+      "unresolved": 0
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 28466,
+      "metric": "accuracy_image_subset",
+      "model": "released_grace_w8",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 70.0836085154219,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1500
+      },
+      "generated_tokens": 3000,
+      "metric": "overall_accuracy_1500",
+      "model": "released_grace_w8",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 63.66666666666667,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "qat_w4",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 63.86182462356067,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "qat_w4",
+      "status": "missing",
+      "suite": "mmbench"
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4241
+      },
+      "generated_tokens": 8482,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "qat_w4",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 82.88139589719405,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 6176,
+      "metric": "accuracy_test",
+      "model": "qat_w4",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 79.37176165803109,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 900
+      },
+      "generated_tokens": 1956,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "qat_w4",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 66.33333333333333,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 28466,
+      "metric": "accuracy_image_subset",
+      "model": "qat_w4",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 72.43729361343357,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1500
+      },
+      "generated_tokens": 3000,
+      "metric": "overall_accuracy_1500",
+      "model": "qat_w4",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 63.866666666666674,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "grace_w4",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 64.92471213463243,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "grace_w4",
+      "status": "missing",
+      "suite": "mmbench"
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4241
+      },
+      "generated_tokens": 8482,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "grace_w4",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 83.73025229898609,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 6176,
+      "metric": "accuracy_test",
+      "model": "grace_w4",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 79.0479274611399,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 900
+      },
+      "generated_tokens": 1955,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "grace_w4",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 64.66666666666666,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 28466,
+      "metric": "accuracy_image_subset",
+      "model": "grace_w4",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 73.04152322068433,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1500
+      },
+      "generated_tokens": 3000,
+      "metric": "overall_accuracy_1500",
+      "model": "grace_w4",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 55.400000000000006,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "qat_w8",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 64.92471213463243,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "qat_w8",
+      "status": "missing",
+      "suite": "mmbench"
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4236,
+        "length": 5
+      },
+      "generated_tokens": 17922,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "qat_w8",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 84.88564017920301,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 5,
+      "unresolved": 6
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 6176,
+      "metric": "accuracy_test",
+      "model": "qat_w8",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 80.76424870466322,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 900
+      },
+      "generated_tokens": 1960,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "qat_w8",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 70.66666666666667,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 28466,
+      "metric": "accuracy_image_subset",
+      "model": "qat_w8",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 72.62699360640764,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1500
+      },
+      "generated_tokens": 3000,
+      "metric": "overall_accuracy_1500",
+      "model": "qat_w8",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 65.73333333333333,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1129,
+      "finish_reasons": {
+        "eos": 1129
+      },
+      "generated_tokens": 2258,
+      "metric": "rule_aAcc_all_image_and_text_rows",
+      "model": "grace_w8",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "score_percent": 66.43046944198406,
+      "status": "complete",
+      "suite": "hallusionbench",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "grace_w8",
+      "status": "missing",
+      "suite": "mmbench"
+    },
+    {
+      "count": 4241,
+      "finish_reasons": {
+        "eos": 4241
+      },
+      "generated_tokens": 8482,
+      "metric": "accuracy_test_all_image_and_text_rows",
+      "model": "grace_w8",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "score_percent": 85.71091723650083,
+      "status": "complete",
+      "suite": "scienceqa",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 3088,
+      "finish_reasons": {
+        "eos": 3088
+      },
+      "generated_tokens": 6176,
+      "metric": "accuracy_test",
+      "model": "grace_w8",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "score_percent": 79.43652849740933,
+      "status": "complete",
+      "suite": "ai2d",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 900,
+      "finish_reasons": {
+        "eos": 900
+      },
+      "generated_tokens": 1948,
+      "metric": "mc_and_open_micro_accuracy_validation",
+      "model": "grace_w8",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "score_percent": 67.44444444444444,
+      "status": "complete",
+      "suite": "mmmu",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 14233,
+      "finish_reasons": {
+        "eos": 14233
+      },
+      "generated_tokens": 28466,
+      "metric": "accuracy_image_subset",
+      "model": "grace_w8",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "score_percent": 72.77453804538749,
+      "status": "complete",
+      "suite": "seedbench_img",
+      "truncated": 0,
+      "unresolved": 0
+    },
+    {
+      "count": 1500,
+      "finish_reasons": {
+        "eos": 1500
+      },
+      "generated_tokens": 3000,
+      "metric": "overall_accuracy_1500",
+      "model": "grace_w8",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "score_percent": 53.2,
+      "status": "complete",
+      "suite": "mmstar",
+      "truncated": 0,
+      "unresolved": 0
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-05",
+  "subset_records_sha256": "3cab4012409207fb29f1461eb1d1c9f8e0c6135f2283dfd34cfee1585dbd2342",
+  "definition": "Nonvisual = all input tokens except expanded image_pad tokens; includes user text, assistant answers, role/turn delimiters and vision boundary tokens. No padding. Not just supervised answer tokens.",
+  "method": "Retained sequence lengths from checksum-verified manifest. Render/tokenize every conversation with fingerprint-verified original processor; remove its one image placeholder for nonvisual count; infer visual count by subtraction. Full image preprocessing and saved token hashes verified on longest 16 plus every 1024th row.",
+  "count": 32768,
+  "full_preprocess_checks": 48,
+  "total": {
+    "count": 32768,
+    "minimum": 69,
+    "mean": 314.4980163574219,
+    "median": 234.0,
+    "p90": 600.0,
+    "p95": 612.0,
+    "p99": 751.0,
+    "maximum": 1858
+  },
+  "nonvisual": {
+    "count": 32768,
+    "minimum": 27,
+    "mean": 224.21401977539062,
+    "median": 144.0,
+    "p90": 509.0,
+    "p95": 521.0,
+    "p99": 660.0,
+    "maximum": 1777
+  },
+  "visual": {
+    "count": 32768,
+    "minimum": 9,
+    "mean": 90.28399658203125,
+    "median": 88.0,
+    "p90": 96.0,
+    "p95": 96.0,
+    "p99": 96.0,
+    "maximum": 98
+  },
+  "total_at_least": {
+    "1024": 91,
+    "1536": 5,
+    "1800": 1,
+    "1950": 0,
+    "2000": 0,
+    "2048": 0
+  },
+  "longest_records": [
+    {
+      "index": 457689,
+      "total": 1858,
+      "nonvisual": 1777,
+      "visual": 81,
+      "retained_turn_pairs": 75
+    },
+    {
+      "index": 455308,
+      "total": 1769,
+      "nonvisual": 1673,
+      "visual": 96,
+      "retained_turn_pairs": 72
+    },
+    {
+      "index": 455283,
+      "total": 1685,
+      "nonvisual": 1597,
+      "visual": 88,
+      "retained_turn_pairs": 72
+    },
+    {
+      "index": 469062,
+      "total": 1585,
+      "nonvisual": 1489,
+      "visual": 96,
+      "retained_turn_pairs": 65
+    },
+    {
+      "index": 464428,
+      "total": 1557,
+      "nonvisual": 1469,
+      "visual": 88,
+      "retained_turn_pairs": 61
+    },
+    {
+      "index": 461856,
+      "total": 1492,
+      "nonvisual": 1396,
+      "visual": 96,
+      "retained_turn_pairs": 62
+    },
+    {
+      "index": 452722,
+      "total": 1480,
+      "nonvisual": 1399,
+      "visual": 81,
+      "retained_turn_pairs": 62
+    },
+    {
+      "index": 462525,
+      "total": 1473,
+      "nonvisual": 1385,
+      "visual": 88,
+      "retained_turn_pairs": 57
+    },
+    {
+      "index": 451428,
+      "total": 1455,
+      "nonvisual": 1367,
+      "visual": 88,
+      "retained_turn_pairs": 61
+    },
+    {
+      "index": 209414,
+      "total": 1453,
+      "nonvisual": 1365,
+      "visual": 88,
+      "retained_turn_pairs": 71
+    },
+    {
+      "index": 463735,
+      "total": 1451,
+      "nonvisual": 1363,
+      "visual": 88,
+      "retained_turn_pairs": 58
+    },
+    {
+      "index": 215098,
+      "total": 1448,
+      "nonvisual": 1352,
+      "visual": 96,
+      "retained_turn_pairs": 71
+    },
+    {
+      "index": 471724,
+      "total": 1447,
+      "nonvisual": 1359,
+      "visual": 88,
+      "retained_turn_pairs": 61
+    },
+    {
+      "index": 472694,
+      "total": 1438,
+      "nonvisual": 1350,
+      "visual": 88,
+      "retained_turn_pairs": 54
+    },
+    {
+      "index": 468446,
+      "total": 1434,
+      "nonvisual": 1346,
+      "visual": 88,
+      "retained_turn_pairs": 56
+    },
+    {
+      "index": 454920,
+      "total": 1415,
+      "nonvisual": 1327,
+      "visual": 88,
+      "retained_turn_pairs": 60
+    }
+  ],
+  "max_nonvisual_record": {
+    "index": 457689,
+    "total": 1858,
+    "nonvisual": 1777,
+    "visual": 81,
+    "retained_turn_pairs": 75
+  },
+  "retained_conversations_trimmed": 0,
+  "trimmed_details": [],
+  "removed_turn_pairs": 0,
+  "preparation_rejections": {
+    "not_single_image": 40688,
+    "ValueError: First complete question/answer pair exceeds token budget": 1,
+    "FileNotFoundError: [Errno 2] No such file or directory: '/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/ShareGPT": 14
+  },
+  "hypothetical_all_images_576": {
+    "count_over_2048": 4,
+    "maximum_total": 2353,
+    "note": "Upper-bound scenario for these already-retained conversations only; actual dynamic visual counts can be smaller. Not a re-preparation of the original annotation pool."
+  }
+}

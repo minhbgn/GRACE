@@ -59,7 +59,9 @@ def update_processor_pixels(processor, data_args):
         rank0_print(f"✅ Updated image_processor min_pixels to {data_args.min_pixels}")
         rank0_print(f"✅ Updated image_processor max_pixels to {data_args.max_pixels}")
 
-    if hasattr(ip, "size") and isinstance(ip.size, dict):
+    # Transformers 5 uses SizeDict, which supports item assignment but is not
+    # a dict. Both representations must receive the actual pixel limits.
+    if hasattr(ip, "size") and hasattr(ip.size, "__setitem__"):
         ip.size["shortest_edge"] = data_args.min_pixels
         ip.size["longest_edge"] = data_args.max_pixels
         rank0_print(
@@ -113,7 +115,7 @@ def update_processor_pixels(processor, data_args):
             vp.fps = data_args.video_fps
             rank0_print(f"✅ Updated video_processor fps to {data_args.video_fps}")
 
-        if hasattr(vp, "size") and isinstance(vp.size, dict):
+        if hasattr(vp, "size") and hasattr(vp.size, "__setitem__"):
             vp.size["shortest_edge"] = data_args.video_min_pixels
             vp.size["longest_edge"] = data_args.video_max_pixels
             rank0_print(
@@ -202,6 +204,7 @@ def _build_messages(item: Dict[str, Any], base_path: Path) -> List[Dict[str, Any
 def preprocess_qwen_visual(
     sources,
     processor,
+    truncate=True,
 ) -> Dict:
     if len(sources) != 1:
         raise ValueError(f"Expected 1 source, got {len(sources)}")
@@ -211,7 +214,17 @@ def preprocess_qwen_visual(
     messages = _build_messages(source, base_path)
 
     full_result = processor.apply_chat_template(
-        messages, tokenize=True, return_dict=True, return_tensors="pt"
+        messages,
+        tokenize=True,
+        return_dict=True,
+        return_tensors="pt",
+        # The flattened collator does not truncate. Enforce the configured
+        # per-sample limit during multimodal tokenization so a lazy dataset
+        # outlier cannot unexpectedly create a 16k-token training example.
+        processor_kwargs={
+            "truncation": truncate,
+            "max_length": processor.tokenizer.model_max_length,
+        },
     )
 
     input_ids = full_result["input_ids"]

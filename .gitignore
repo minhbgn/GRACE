@@ -69,3 +69,13 @@ ShareGPT4V/
 .env.*
 *.token
 secrets.yaml
+
+# Models to avoid saving large files to git
+models/
+# Isolated pinned evaluation environment and source checkout
+.venv-lmms-eval/
+third_party/lmms-eval-v0.7.1/
+
+# Benchmark datasets over 50 MB (keep local; Git cannot ignore by file size).
+/evaluation/MMBench/mmbench_dev_en_20231003.tsv
+/evaluation/MMStar/MMStar.tsv

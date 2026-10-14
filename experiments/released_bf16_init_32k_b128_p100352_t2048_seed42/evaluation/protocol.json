@@ -1,0 +1,257 @@
+{
+  "attention": "flash_attention_2",
+  "comparisons": [
+    {
+      "label": "W4: distillation gain",
+      "left": "grace_w4",
+      "right": "qat_w4"
+    },
+    {
+      "label": "W4: gap to full method",
+      "left": "released_grace_w4",
+      "right": "grace_w4"
+    },
+    {
+      "label": "W4: gap to BF16 initialization",
+      "left": "released_bf16",
+      "right": "grace_w4"
+    },
+    {
+      "label": "W4: gain over vanilla 2B",
+      "left": "grace_w4",
+      "right": "vanilla_2b"
+    },
+    {
+      "label": "W4: difference from teacher",
+      "left": "grace_w4",
+      "right": "vanilla_8b_teacher"
+    },
+    {
+      "label": "W4: difference from previous SFT",
+      "left": "grace_w4",
+      "right": "sft_2b"
+    },
+    {
+      "label": "W8: distillation gain",
+      "left": "grace_w8",
+      "right": "qat_w8"
+    },
+    {
+      "label": "W8: gap to full method",
+      "left": "released_grace_w8",
+      "right": "grace_w8"
+    },
+    {
+      "label": "W8: gap to BF16 initialization",
+      "left": "released_bf16",
+      "right": "grace_w8"
+    },
+    {
+      "label": "W8: gain over vanilla 2B",
+      "left": "grace_w8",
+      "right": "vanilla_2b"
+    },
+    {
+      "label": "W8: difference from teacher",
+      "left": "grace_w8",
+      "right": "vanilla_8b_teacher"
+    },
+    {
+      "label": "W8: difference from previous SFT",
+      "left": "grace_w8",
+      "right": "sft_2b"
+    }
+  ],
+  "context": "no truncation; native model context",
+  "datasets": {
+    "image_inventory_policy": "relative path, byte size and mtime_ns; image pixels are not hashed",
+    "image_inventory_sha256": "659ae8d5b615c0acbdcecb79569dcd66470e43a5d48a27d459fcadef6bf44344",
+    "question_assets_sha256": {
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/AI2D/data/test-00000-of-00002.parquet": "450ecfa95b0c475ba214cd9a33b7ec5d1d782e7321a54fc652453d8776743702",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/AI2D/data/test-00001-of-00002.parquet": "13f5813136e51902cc4048bf48c53104b29dbe7ac7d31b170c0e9c36bceed06b",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/HallusionBench/data/image-00000-of-00001.parquet": "fd46946fa6b3f15ab8c8e2e0dacf54bc801db7915f17a47cec5ca872f30de2a9",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/HallusionBench/data/non_image-00000-of-00001.parquet": "a5e4a0030188432ae0766ae75161e06d74cbe05476db9b98124107e64659d114",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/MMBench/mmbench_dev_en_20231003.tsv": "b0b7b9be2bddbaac0f4b4d463b27b03273b936e1b49d9a78d845d46bcb591115",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/MMStar/MMStar.tsv": "38a99f4a33743665e6990961a9a0072b07f7ac6a74d1555b43c4f82145377cb4",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/SEEDBench/data/SEED-Bench.json": "ebd4aab3f602e5e7826c29824a0e63fe803308bf628dce2787972c523664d567",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/ScienceQA/data/pid_splits.json": "85c7820b9f136e572579a01dab2c77a7f8140b59211e421fa5182491d45ee3a7",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/ScienceQA/data/problems.json": "4d9b598da966d9736dd79e430a97da861a2216aeb7483a5092350e823ab20ce7",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Accounting/validation-00000-of-00001.parquet": "f1bedfc8ad70d24f8c1daa50a309d9b3b88ea14caea60299b648c69049fa870f",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Agriculture/validation-00000-of-00001.parquet": "f95765c549ebaeedd89c14bfe39d1deefcb9ec6b8b082f5945ffc547f2c4e20c",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Architecture_and_Engineering/validation-00000-of-00001.parquet": "09792c72c949565ba9378366562818d9687eba5b4f6fc3e84482a8862cf4dd9c",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Art/validation-00000-of-00001.parquet": "d86be1080d7a33a76e9b98f0df0d7ebacbd37b1c29927bbf592489cc4b996c57",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Art_Theory/validation-00000-of-00001.parquet": "ba4e709ace78695df3b2ed8859e7cfb36e3cd9c60abd5a0fade9800653b695d6",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Basic_Medical_Science/validation-00000-of-00001.parquet": "577102f6f742471a947a82579df0ffa8b7bfd1b10dc2eadbf90f9ea5ff0cddd4",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Biology/validation-00000-of-00001.parquet": "644e5b10eb90689a0e41a7c738526113551f59ab5e66c44a870e6bca52d39e08",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Chemistry/validation-00000-of-00001.parquet": "ff62af1b99c6f60d2b2228bf438152d9e44c06e42455d5eb5e229954aa95b00b",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Clinical_Medicine/validation-00000-of-00001.parquet": "2c3d29a6c838e279974731ea92fa459e15107f9213970a9a4f9312c1f102bd58",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Computer_Science/validation-00000-of-00001.parquet": "73c8ef8ba23a050b85c524363614801cdc73db36ad7a7348643006766da037f5",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Design/validation-00000-of-00001.parquet": "c69b48ecde9ad80bb8b530dec4da99ae051b17f90abefd2b98230313580c5b7f",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Diagnostics_and_Laboratory_Medicine/validation-00000-of-00001.parquet": "cefb7363510a05284dd8a0b12cb7cc7f20843c65d6b7101eefe3929d4061a592",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Economics/validation-00000-of-00001.parquet": "1a6b0ef6edf3eb76f2fae37cbff28d6723eec4bd94d4b3d6e676aa4ea924d95b",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Electronics/validation-00000-of-00001.parquet": "558d6970c95c9961c63da8b1ebd7a885524059a83838fa67e6be8c6522a536ba",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Energy_and_Power/validation-00000-of-00001.parquet": "46f8d320be746b990145c4e2bf6b88fc493f0e8e322759ee2a9e2fcc8ee404b5",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Finance/validation-00000-of-00001.parquet": "194f838578ac4fe08c0784b833bfbd89087a0bd2e83dc02c89e7d4e9d5b6d326",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Geography/validation-00000-of-00001.parquet": "536505f8dc6199713effcd7cf9b8ae2da2325e51ec17d0fcfabc75956965701c",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/History/validation-00000-of-00001.parquet": "fe6ba5fa13133d43afbd63abfe75b49ac45c5de566ac896fbc370cb1492c8f82",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Literature/validation-00000-of-00001.parquet": "3ad02815b3af320c574b254c7a2134f31288a360c0168035ee051c8946cb8b1b",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Manage/validation-00000-of-00001.parquet": "838ecee5c3c9708b3fb70e414b83bfee35725814290908a853b24d06bbd832fe",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Marketing/validation-00000-of-00001.parquet": "0b4854d8a509e8e0f401255d5788fd83e489e4d5d5207826856dcffa1157feb2",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Materials/validation-00000-of-00001.parquet": "6881364f70c6911f0610005ad5aaf10f4394a7f578ead566e528b574da534e54",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Math/validation-00000-of-00001.parquet": "ebe73665a3b1db2bfd33ae67a00efcf86b6d817463a12d995e30716d69aae8e7",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Mechanical_Engineering/validation-00000-of-00001.parquet": "8381e04c04dc8e0b3a21404e251a1fc2deb52d3f5b2485e5e8bc99e4907d21d7",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Music/validation-00000-of-00001.parquet": "132f8e3965276788f1b5388c39565d5475b8eb61af3142522be446e9a131af8f",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Pharmacy/validation-00000-of-00001.parquet": "93bc3de041d8f69b9e7cd29886ad68f26ac5b11bdf221cabb5f84b8b8d8ca6a9",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Physics/validation-00000-of-00001.parquet": "649a7c85ae9f1aa0762059eca0c082e3862f669f07a1283c36ada31def2c391d",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Psychology/validation-00000-of-00001.parquet": "16101fe448e07ce654d95b5ef5793988fb6e7f5fe42b94575c33c9ffbd4ad919",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Public_Health/validation-00000-of-00001.parquet": "c8525f7af4a47ffd3c2959816147911203782c8e1116267f4e6e54026ef0f923",
+      "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data/Sociology/validation-00000-of-00001.parquet": "a38e31036b6cfb6df82c069f2715b8df0158969405e86a08c1732c334638ac32"
+    }
+  },
+  "do_sample": false,
+  "experiment_config_sha256": "9b0903b6e72306b06384c92ce8788545a4cd02bacf82a6b4321d962f5427a334",
+  "implementation_sha256": {
+    "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/AI2D/eval_ai2d.py": "fac80b5a3ea0dc1b629d41e22144921b5f1ded2e8f51d51d4a16fcad94076e02",
+    "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/HallusionBench/eval_hallusion.py": "b16262d7c806cfb5a4b477bcb0595a2e7740d641a43c9961cbcb49c4a776f63d",
+    "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/MMBench/eval_mmbench.py": "3467a6b0ceb73e3db72f136e7858028ca2be12017032342636a48011d30ac22c",
+    "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/MMStar/eval_mmstar.py": "11ff368af44921808fbfa0d4bd5bf23336ec5d456eff3db67c05755691eeb00c",
+    "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/SEEDBench/eval_seedbench.py": "5cc648b3b43b0baa0f6602eae9f5fc78f7d975248438d4e6665c95a01b806060",
+    "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/ScienceQA/eval_scienceqa.py": "e71fd3a3168721aabba8c37dbad0ec93a935d7d4df9aa4c07a97647144a2424d",
+    "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/matched_protocol.py": "8b042d68cbdb4b2e851c09f91bb60668ca27dedb89a5e2edc2b061b10c1d8f8a",
+    "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/eval_mmmu.py": "ab786e1ef81ba213b18eb701e5addfbc3122d1b7379f449727fa58b437108173",
+    "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/run_constrained_matrix_evals.py": "6dd7c19994cc215197dfdbda45ebc130f59c9f24c5951da284df22d740be82b0",
+    "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/summarize_constrained_evals.py": "de68f1b34f90e77e1ff49e42883d4f0d12618686d7b0e1f44aa7746249a0bbad",
+    "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/qwen-vl-finetune/scripts/constrained_experiment.py": "186c9297ae51cb54d944b7cb54554d545e7f3c19b2b1a1cba97f5bf41d0da851"
+  },
+  "max_pixels": 100352,
+  "min_pixels": 4096,
+  "models": {
+    "grace_w4": {
+      "model": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace",
+      "processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace"
+    },
+    "grace_w8": {
+      "model": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace",
+      "processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace"
+    },
+    "qat_w4": {
+      "model": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat",
+      "processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat"
+    },
+    "qat_w8": {
+      "model": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat",
+      "processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat"
+    },
+    "released_bf16": {
+      "model": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+      "processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16"
+    },
+    "released_grace_w4": {
+      "model": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128",
+      "processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128"
+    },
+    "released_grace_w8": {
+      "model": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W8G128",
+      "processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W8G128"
+    },
+    "sft_2b": {
+      "model": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft",
+      "processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft"
+    },
+    "vanilla_2b": {
+      "model": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+      "processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct"
+    },
+    "vanilla_8b_teacher": {
+      "model": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+      "processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct"
+    }
+  },
+  "num_beams": 1,
+  "repetition_penalty": 1.0,
+  "report_note": "sft_2b is the previous vanilla-initialized local SFT export; the four new low-bit runs start independently from released_bf16.",
+  "report_title": "Released-BF16 comparison",
+  "suites": {
+    "ai2d": {
+      "arguments": [
+        "--data_dir",
+        "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/AI2D/data"
+      ],
+      "expected_n": 3088,
+      "max_new_tokens": 8,
+      "multiple_choice_max_new_tokens": 8,
+      "script": "AI2D/eval_ai2d.py"
+    },
+    "hallusionbench": {
+      "arguments": [
+        "--data_dir",
+        "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/HallusionBench/data"
+      ],
+      "expected_n": 1129,
+      "max_new_tokens": 8,
+      "multiple_choice_max_new_tokens": 8,
+      "script": "HallusionBench/eval_hallusion.py"
+    },
+    "mmbench": {
+      "arguments": [
+        "--tsv",
+        "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/MMBench/mmbench_dev_en_20231003.tsv"
+      ],
+      "expected_n": 4329,
+      "max_new_tokens": 8,
+      "multiple_choice_max_new_tokens": 8,
+      "script": "MMBench/eval_mmbench.py"
+    },
+    "mmmu": {
+      "arguments": [
+        "--data_dir",
+        "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/mmmu/data",
+        "--split",
+        "validation"
+      ],
+      "expected_n": 900,
+      "max_new_tokens": 32,
+      "multiple_choice_max_new_tokens": 8,
+      "script": "mmmu/eval_mmmu.py"
+    },
+    "mmstar": {
+      "arguments": [
+        "--tsv",
+        "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/MMStar/MMStar.tsv"
+      ],
+      "expected_n": 1500,
+      "max_new_tokens": 8,
+      "multiple_choice_max_new_tokens": 8,
+      "script": "MMStar/eval_mmstar.py"
+    },
+    "scienceqa": {
+      "arguments": [
+        "--problems",
+        "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/ScienceQA/data/problems.json",
+        "--splits",
+        "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/ScienceQA/data/pid_splits.json",
+        "--image_root",
+        "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/ScienceQA/data/images",
+        "--split",
+        "test"
+      ],
+      "expected_n": 4241,
+      "max_new_tokens": 8,
+      "multiple_choice_max_new_tokens": 8,
+      "script": "ScienceQA/eval_scienceqa.py"
+    },
+    "seedbench_img": {
+      "arguments": [
+        "--json_path",
+        "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/SEEDBench/data/SEED-Bench.json",
+        "--image_dir",
+        "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/SEEDBench/data/SEED-Bench-image"
+      ],
+      "expected_n": 14233,
+      "max_new_tokens": 8,
+      "multiple_choice_max_new_tokens": 8,
+      "script": "SEEDBench/eval_seedbench.py"
+    }
+  },
+  "version": 1
+}

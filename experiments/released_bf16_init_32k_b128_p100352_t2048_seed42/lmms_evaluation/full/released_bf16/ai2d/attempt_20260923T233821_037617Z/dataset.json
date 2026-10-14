@@ -1,0 +1,14 @@
+{
+  "evaluation_rows": 3088,
+  "source": {
+    "repo": "lmms-lab-encoder/ai2d",
+    "requested_repo": "lmms-lab/ai2d",
+    "revision": "c83a9b9692933aff8349157c88a413df9d02c4e5"
+  },
+  "splits": {
+    "test": {
+      "fingerprint": "e35d266d92deee31",
+      "rows": 3088
+    }
+  }
+}

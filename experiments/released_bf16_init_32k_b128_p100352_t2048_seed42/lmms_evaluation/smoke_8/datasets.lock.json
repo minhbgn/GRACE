@@ -1,0 +1,37 @@
+{
+  "ai2d": {
+    "repo": "lmms-lab-encoder/ai2d",
+    "requested_repo": "lmms-lab/ai2d",
+    "revision": "c83a9b9692933aff8349157c88a413df9d02c4e5"
+  },
+  "hallusionbench": {
+    "repo": "lmms-lab-encoder/HallusionBench",
+    "requested_repo": "lmms-lab/HallusionBench",
+    "revision": "cd417161857aefb23d878d42cf1bb53aa9dd646f"
+  },
+  "mmbench": {
+    "repo": "lmms-lab-encoder/MMBench",
+    "requested_repo": "lmms-lab/MMBench",
+    "revision": "56ba1af8954932c4804bd3f522e05ed96e63b654"
+  },
+  "mmmu": {
+    "repo": "lmms-lab-encoder/MMMU",
+    "requested_repo": "lmms-lab/MMMU",
+    "revision": "364f2e2eb107b36e07ff4c5a15f5947a759cef47"
+  },
+  "mmstar": {
+    "repo": "Lin-Chen/MMStar",
+    "requested_repo": "Lin-Chen/MMStar",
+    "revision": "bc98d668301da7b14f648724866e57302778ab27"
+  },
+  "scienceqa": {
+    "repo": "lmms-lab-encoder/ScienceQA",
+    "requested_repo": "lmms-lab/ScienceQA",
+    "revision": "69dd4d6b67373d38f96a5badd5d24d0eb5bcdc50"
+  },
+  "seedbench": {
+    "repo": "lmms-lab-encoder/SEED-Bench",
+    "requested_repo": "lmms-lab/SEED-Bench",
+    "revision": "74c4ea0cee96786739e4ccb97d227818a05ae752"
+  }
+}

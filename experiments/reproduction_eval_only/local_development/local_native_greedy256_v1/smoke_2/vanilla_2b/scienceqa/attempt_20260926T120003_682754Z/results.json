@@ -1,0 +1,151 @@
+{
+  "summary": {
+    "evaluation_protocol": {
+      "version": 1,
+      "min_pixels": null,
+      "max_pixels": null,
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "num_beams": 1,
+      "repetition_penalty": 1.0,
+      "context": "no truncation; native model context",
+      "attention": "flash_attention_2"
+    },
+    "model_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+    "processor_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+    "image_processor_size": {
+      "longest_edge": 16777216,
+      "shortest_edge": 65536
+    },
+    "split": "test",
+    "total": 2,
+    "correct": 2,
+    "overall_acc": 1.0,
+    "parse_fail": 0,
+    "by_subject": {
+      "language science": {
+        "acc": 1.0,
+        "correct": 1,
+        "total": 1
+      },
+      "natural science": {
+        "acc": 1.0,
+        "correct": 1,
+        "total": 1
+      }
+    },
+    "by_modality": {
+      "image": {
+        "acc": 1.0,
+        "correct": 1,
+        "total": 1
+      },
+      "text": {
+        "acc": 1.0,
+        "correct": 1,
+        "total": 1
+      }
+    },
+    "by_category": {
+      "Engineering practices": {
+        "acc": 1.0,
+        "correct": 1,
+        "total": 1
+      },
+      "Literary devices": {
+        "acc": 1.0,
+        "correct": 1,
+        "total": 1
+      }
+    },
+    "scorer": "deterministic_local_v1",
+    "primary_metric": "accuracy_test_all_image_and_text_rows",
+    "unresolved": 0,
+    "errors": 0,
+    "generation_unknown": 0,
+    "finish_reasons": {
+      "eos": 2
+    },
+    "truncated": 0,
+    "hit_token_cap": 0,
+    "generated_tokens": 27,
+    "primary_score": 1.0
+  },
+  "results": [
+    {
+      "pid": "4",
+      "pred": 1,
+      "gold": 1,
+      "correct": true,
+      "raw": "(B) apostrophe",
+      "generation": {
+        "token_ids": [
+          5349,
+          8,
+          38471,
+          47883,
+          151645
+        ],
+        "generated_tokens": 5,
+        "max_new_tokens": 256,
+        "finish_reason": "eos",
+        "hit_token_cap": false,
+        "truncated": false
+      },
+      "subject": "language science",
+      "topic": "figurative-language",
+      "category": "Literary devices",
+      "has_image": false,
+      "n_choices": 2,
+      "error": null,
+      "extraction_method": "leading",
+      "unresolved": false
+    },
+    {
+      "pid": "5",
+      "pred": 1,
+      "gold": 1,
+      "correct": true,
+      "raw": "(B) how steady a parachute with a 1 m vent was at 200 km per hour",
+      "generation": {
+        "token_ids": [
+          5349,
+          8,
+          1246,
+          24020,
+          264,
+          98120,
+          448,
+          264,
+          220,
+          16,
+          296,
+          10378,
+          572,
+          518,
+          220,
+          17,
+          15,
+          15,
+          13136,
+          817,
+          6460,
+          151645
+        ],
+        "generated_tokens": 22,
+        "max_new_tokens": 256,
+        "finish_reason": "eos",
+        "hit_token_cap": false,
+        "truncated": false
+      },
+      "subject": "natural science",
+      "topic": "science-and-engineering-practices",
+      "category": "Engineering practices",
+      "has_image": true,
+      "n_choices": 3,
+      "error": null,
+      "extraction_method": "leading",
+      "unresolved": false
+    }
+  ]
+}

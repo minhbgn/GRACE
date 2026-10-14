@@ -1,0 +1,44 @@
+{
+  "artifact": "memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w8/attempt_20261005T082204868025Z",
+  "bits": 8,
+  "complete": true,
+  "device_peak_used_gib": {
+    "0": 32.923828125,
+    "4": 32.943359375
+  },
+  "envelope": {
+    "accumulation": 2,
+    "grid": [
+      [
+        1,
+        48,
+        48
+      ]
+    ],
+    "rcka_warmup_steps": 1,
+    "sequence_tokens": 4096,
+    "supervised_tokens": 3506,
+    "synthetic_answer": true,
+    "updates": 3,
+    "visual_tokens": 576
+  },
+  "evidence_sha256": {
+    "comparison_recipe.json": "77f96570e7e9ea0fda22fa89cd0c7157b07582e80b8981881e222ebd3e7a1cff",
+    "device_memory.csv": "a9f0e7fded9bc2910f173a91f6b9c30a7a296ee0596c3b0b4a3c3fbb4ec607c8",
+    "input_envelope.json": "e635d6aed016dc127842d3365362cc277efce6eb63d9483fe6d75e6a8094e3f5",
+    "profiles/grace/EXPORT_COMPLETE": "79cbe861df37205166c4caef495e503c49315002f1db3492b536f3efa667c87f",
+    "profiles/grace/config.json": "06f9bff87b3230678fdf07c316bd755654f7385716262fac456b3aa9f5b19408",
+    "profiles/grace/invocations.jsonl": "fcb2424be9419027b5d062509816e068bf505e91fe6403ac4be0983bd4356187",
+    "profiles/grace/launch_recipe.json": "2e0ed9cb4bddb9653296ddef2cb64599415b3a8941e2e5050aa6dc050e88d752",
+    "profiles/grace/run_summary.json": "b26af9e695edfda38b373ef6d6a739ffaea83816750dc763c75c2a3cf7c2dccb",
+    "profiles/grace/step_metrics.jsonl": "c587ec4dcf8d0324976a7561a309fb48cfb39abb6598386303bcee60698ea3e2",
+    "student_provenance.json": "58377cf0d20c1293d8a75d46dd7be6d6c745a34f1ca4329fa1c92ea925881a5a",
+    "teacher_provenance.json": "6226ff8938599fa2b2393e0ffa2f4be0b5b93bcdc954c9bb86331e251e4e3338"
+  },
+  "fingerprint": "4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5",
+  "launch_wall_seconds": 228.8073365688324,
+  "method": "grace",
+  "peak_allocated_gib": 29.312450885772705,
+  "peak_reserved_gib": 31.888671875,
+  "updates": 3
+}

@@ -1,0 +1,73 @@
+{
+  "source": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/third_party/lmms-eval-v0.7.1",
+  "commit": "88b23e2bfa16a1edbc16e9e238ed82130b3a4f56",
+  "environment": {
+    "python": "3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:27:40) [GCC 11.3.0]",
+    "packages": {
+      "lmms-eval": "0.7.1",
+      "torch": "2.5.1+cu121",
+      "transformers": "5.9.0",
+      "datasets": "4.8.5",
+      "accelerate": "1.13.0",
+      "qwen-vl-utils": "0.0.14",
+      "decord": "0.6.0",
+      "numpy": "2.4.4",
+      "Pillow": "12.2.0",
+      "huggingface-hub": "1.15.0",
+      "evaluate": "0.4.6",
+      "requests": "2.34.2",
+      "filelock": "3.29.0"
+    }
+  },
+  "models_checked": [
+    "vanilla_2b",
+    "vanilla_8b_teacher",
+    "released_bf16",
+    "released_grace_w4",
+    "released_grace_w8"
+  ],
+  "tasks_checked": {
+    "scienceqa": {
+      "task": "scienceqa_img",
+      "dataset": "lmms-lab/ScienceQA",
+      "split": "test",
+      "max_new_tokens": 16
+    },
+    "ai2d": {
+      "task": "ai2d",
+      "dataset": "lmms-lab/ai2d",
+      "split": "test",
+      "max_new_tokens": 16
+    },
+    "mmmu": {
+      "task": "mmmu_val",
+      "dataset": "lmms-lab/MMMU",
+      "split": "validation",
+      "max_new_tokens": 128
+    },
+    "mmstar": {
+      "task": "mmstar",
+      "dataset": "Lin-Chen/MMStar",
+      "split": "val",
+      "max_new_tokens": 128
+    },
+    "seedbench": {
+      "task": "seedbench",
+      "dataset": "lmms-lab/SEED-Bench",
+      "split": "test",
+      "max_new_tokens": 128
+    },
+    "hallusionbench": {
+      "task": "hallusion_bench_image",
+      "dataset": "lmms-lab/HallusionBench",
+      "split": "image",
+      "max_new_tokens": 128
+    },
+    "mmbench": {
+      "task": "mmbench_en_dev",
+      "dataset": "lmms-lab/MMBench",
+      "split": "dev",
+      "max_new_tokens": 1024
+    }
+  }
+}
