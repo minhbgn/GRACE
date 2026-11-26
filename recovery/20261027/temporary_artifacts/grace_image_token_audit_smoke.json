@@ -1,0 +1,218 @@
+{
+  "processor_path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat",
+  "processor_config_sha256": {
+    "processor_config.json": "6940b26e0bd531d790c0c95d0028f92004bd5c0b727b1a3711a55c4bd8bef631"
+  },
+  "transformers_version": "5.9.0",
+  "image_size": {
+    "longest_edge": 589824,
+    "shortest_edge": 4096
+  },
+  "patch_size": 16,
+  "merge_size": 2,
+  "per_image_ceiling": 576,
+  "limit_per_suite": 2,
+  "measurement": "CPU reconstruction from current source images and native processor; not saved inference telemetry",
+  "averaging": "Question-weighted; text-only questions contribute zero; repeated image occurrences count each time",
+  "suites": {
+    "hallusionbench": {
+      "per_question": {
+        "count": 2,
+        "total": 1134,
+        "mean": 567.0,
+        "min": 567,
+        "max": 567,
+        "p50": 567,
+        "p95": 567
+      },
+      "per_image": {
+        "count": 2,
+        "total": 1134,
+        "mean": 567.0,
+        "min": 567,
+        "max": 567,
+        "p50": 567,
+        "p95": 567
+      },
+      "text_only_questions": 0,
+      "images_at_ceiling": 0,
+      "fraction_images_at_ceiling": 0.0,
+      "questions_above_single_image_ceiling": 0,
+      "questions_verified_against_processor_grids": 2
+    },
+    "mmbench": {
+      "per_question": {
+        "count": 2,
+        "total": 126,
+        "mean": 63.0,
+        "min": 63,
+        "max": 63,
+        "p50": 63,
+        "p95": 63
+      },
+      "per_image": {
+        "count": 2,
+        "total": 126,
+        "mean": 63.0,
+        "min": 63,
+        "max": 63,
+        "p50": 63,
+        "p95": 63
+      },
+      "text_only_questions": 0,
+      "images_at_ceiling": 0,
+      "fraction_images_at_ceiling": 0.0,
+      "questions_above_single_image_ceiling": 0,
+      "questions_verified_against_processor_grids": 2
+    },
+    "scienceqa": {
+      "per_question": {
+        "count": 2,
+        "total": 63,
+        "mean": 31.5,
+        "min": 0,
+        "max": 63,
+        "p50": 0,
+        "p95": 63
+      },
+      "per_image": {
+        "count": 1,
+        "total": 63,
+        "mean": 63.0,
+        "min": 63,
+        "max": 63,
+        "p50": 63,
+        "p95": 63
+      },
+      "text_only_questions": 1,
+      "images_at_ceiling": 0,
+      "fraction_images_at_ceiling": 0.0,
+      "questions_above_single_image_ceiling": 0,
+      "questions_verified_against_processor_grids": 1
+    },
+    "ai2d": {
+      "per_question": {
+        "count": 2,
+        "total": 532,
+        "mean": 266.0,
+        "min": 266,
+        "max": 266,
+        "p50": 266,
+        "p95": 266
+      },
+      "per_image": {
+        "count": 2,
+        "total": 532,
+        "mean": 266.0,
+        "min": 266,
+        "max": 266,
+        "p50": 266,
+        "p95": 266
+      },
+      "text_only_questions": 0,
+      "images_at_ceiling": 0,
+      "fraction_images_at_ceiling": 0.0,
+      "questions_above_single_image_ceiling": 0,
+      "questions_verified_against_processor_grids": 2
+    },
+    "mmmu": {
+      "per_question": {
+        "count": 2,
+        "total": 271,
+        "mean": 135.5,
+        "min": 110,
+        "max": 161,
+        "p50": 110,
+        "p95": 161
+      },
+      "per_image": {
+        "count": 2,
+        "total": 271,
+        "mean": 135.5,
+        "min": 110,
+        "max": 161,
+        "p50": 110,
+        "p95": 161
+      },
+      "text_only_questions": 0,
+      "images_at_ceiling": 0,
+      "fraction_images_at_ceiling": 0.0,
+      "questions_above_single_image_ceiling": 0,
+      "questions_verified_against_processor_grids": 2
+    },
+    "seedbench_img": {
+      "per_question": {
+        "count": 2,
+        "total": 1091,
+        "mean": 545.5,
+        "min": 540,
+        "max": 551,
+        "p50": 540,
+        "p95": 551
+      },
+      "per_image": {
+        "count": 2,
+        "total": 1091,
+        "mean": 545.5,
+        "min": 540,
+        "max": 551,
+        "p50": 540,
+        "p95": 551
+      },
+      "text_only_questions": 0,
+      "images_at_ceiling": 0,
+      "fraction_images_at_ceiling": 0.0,
+      "questions_above_single_image_ceiling": 0,
+      "questions_verified_against_processor_grids": 2
+    },
+    "mmstar": {
+      "per_question": {
+        "count": 2,
+        "total": 368,
+        "mean": 184.0,
+        "min": 176,
+        "max": 192,
+        "p50": 176,
+        "p95": 192
+      },
+      "per_image": {
+        "count": 2,
+        "total": 368,
+        "mean": 184.0,
+        "min": 176,
+        "max": 192,
+        "p50": 176,
+        "p95": 192
+      },
+      "text_only_questions": 0,
+      "images_at_ceiling": 0,
+      "fraction_images_at_ceiling": 0.0,
+      "questions_above_single_image_ceiling": 0,
+      "questions_verified_against_processor_grids": 2
+    }
+  },
+  "aggregate": {
+    "per_question": {
+      "count": 14,
+      "total": 3585,
+      "mean": 256.07142857142856,
+      "min": 0,
+      "max": 567,
+      "p50": 176,
+      "p95": 567
+    },
+    "per_image": {
+      "count": 13,
+      "total": 3585,
+      "mean": 275.7692307692308,
+      "min": 63,
+      "max": 567,
+      "p50": 192,
+      "p95": 567
+    },
+    "text_only_questions": 1,
+    "images_at_ceiling": 0,
+    "fraction_images_at_ceiling": 0.0,
+    "questions_above_single_image_ceiling": 0
+  }
+}

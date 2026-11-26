@@ -1,0 +1,1391 @@
+{
+  "threshold_bytes": 50000000,
+  "large_files": [
+    {
+      "path": "reproduction/GRACE/ShareGPT4V/data/ocr_vqa/dataset.json",
+      "bytes": 112962519,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/ShareGPT4V/sharegpt4v_instruct_gpt4-vision_cap100k.json",
+      "bytes": 133866626,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/ShareGPT4V/sharegpt4v_mix665k_cap23k_coco-ap9k_lcs3k_sam9k_div2k.json",
+      "bytes": 1230418359,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/evaluation/AI2D/data/test-00000-of-00002.parquet",
+      "bytes": 62292686,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/evaluation/AI2D/data/test-00001-of-00002.parquet",
+      "bytes": 77173738,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/evaluation/HallusionBench/data/image-00000-of-00001.parquet",
+      "bytes": 146530754,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/evaluation/MMBench/mmbench_dev_en_20231003.tsv",
+      "bytes": 136350939,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/evaluation/MMStar/MMStar.tsv",
+      "bytes": 59559119,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/evaluation/SEEDBench/data/SEED-Bench-image.zip",
+      "bytes": 1678769671,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/evaluation/ScienceQA/data/images/test.zip",
+      "bytes": 206009461,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/evaluation/mmmu/data/Agriculture/validation-00000-of-00001.parquet",
+      "bytes": 119223107,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/profiles/grace/checkpoint-10/global_step10/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/profiles/grace/checkpoint-10/global_step10/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/profiles/grace/checkpoint-10/global_step10/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/profiles/grace/checkpoint-10/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/profiles/grace/checkpoint-9/global_step9/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/profiles/grace/checkpoint-9/global_step9/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/profiles/grace/checkpoint-9/global_step9/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/profiles/grace/checkpoint-9/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/profiles/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/profiles/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/grace/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/grace/checkpoint-250/global_step250/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/grace/checkpoint-250/global_step250/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/grace/checkpoint-250/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/grace/checkpoint-256/global_step256/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/grace/checkpoint-256/global_step256/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/grace/checkpoint-256/global_step256/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/grace/checkpoint-256/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/qat/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/qat/checkpoint-250/global_step250/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/qat/checkpoint-250/global_step250/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/qat/checkpoint-250/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/qat/checkpoint-256/global_step256/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/qat/checkpoint-256/global_step256/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/qat/checkpoint-256/global_step256/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/qat/checkpoint-256/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/qat/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/qat/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 228129840,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft/checkpoint-250/global_step250/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 228129968,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft/checkpoint-250/global_step250/mp_rank_00_model_states.pt",
+      "bytes": 8497134746,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft/checkpoint-250/model.safetensors",
+      "bytes": 4908709480,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft/checkpoint-256/global_step256/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 228129840,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft/checkpoint-256/global_step256/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 228129968,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft/checkpoint-256/global_step256/mp_rank_00_model_states.pt",
+      "bytes": 8497134746,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft/checkpoint-256/model.safetensors",
+      "bytes": 4908709480,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/grace/checkpoint-2/global_step2/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/grace/checkpoint-2/global_step2/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/grace/checkpoint-2/global_step2/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/grace/checkpoint-2/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/grace/checkpoint-3/global_step3/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/grace/checkpoint-3/global_step3/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/grace/checkpoint-3/global_step3/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/grace/checkpoint-3/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/qat/checkpoint-2/global_step2/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/qat/checkpoint-2/global_step2/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/qat/checkpoint-2/global_step2/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/qat/checkpoint-2/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/qat/checkpoint-3/global_step3/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/qat/checkpoint-3/global_step3/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/qat/checkpoint-3/global_step3/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/qat/checkpoint-3/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/qat/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/qat/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/sft/checkpoint-2/global_step2/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 228129840,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/sft/checkpoint-2/global_step2/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 228129968,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/sft/checkpoint-2/global_step2/mp_rank_00_model_states.pt",
+      "bytes": 8497134746,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/sft/checkpoint-2/model.safetensors",
+      "bytes": 4908709480,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/sft/checkpoint-3/global_step3/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 228129840,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/sft/checkpoint-3/global_step3/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 228129968,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/sft/checkpoint-3/global_step3/mp_rank_00_model_states.pt",
+      "bytes": 8497134746,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/sft/checkpoint-3/model.safetensors",
+      "bytes": 4908709480,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/profiles/sft/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/grace/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/grace/checkpoint-500/global_step500/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/grace/checkpoint-500/global_step500/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/grace/checkpoint-500/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/grace/checkpoint-512/global_step512/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/grace/checkpoint-512/global_step512/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/grace/checkpoint-512/global_step512/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/grace/checkpoint-512/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/qat/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/qat/checkpoint-500/global_step500/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/qat/checkpoint-500/global_step500/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/qat/checkpoint-500/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/qat/checkpoint-512/global_step512/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/qat/checkpoint-512/global_step512/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/qat/checkpoint-512/global_step512/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/qat/checkpoint-512/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/qat/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/qat/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/sft/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 228129840,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/sft/checkpoint-500/global_step500/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 228129968,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/sft/checkpoint-500/global_step500/mp_rank_00_model_states.pt",
+      "bytes": 8497134746,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/sft/checkpoint-500/model.safetensors",
+      "bytes": 4908709480,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/sft/checkpoint-512/global_step512/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 228129840,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/sft/checkpoint-512/global_step512/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 228129968,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/sft/checkpoint-512/global_step512/mp_rank_00_model_states.pt",
+      "bytes": 8497134746,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/sft/checkpoint-512/model.safetensors",
+      "bytes": 4908709480,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/sft/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace/checkpoint-250/global_step250/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace/checkpoint-250/global_step250/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace/checkpoint-250/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace/checkpoint-256/global_step256/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace/checkpoint-256/global_step256/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace/checkpoint-256/global_step256/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace/checkpoint-256/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat/checkpoint-250/global_step250/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat/checkpoint-250/global_step250/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat/checkpoint-250/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat/checkpoint-256/global_step256/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat/checkpoint-256/global_step256/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat/checkpoint-256/global_step256/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat/checkpoint-256/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace/checkpoint-250/global_step250/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace/checkpoint-250/global_step250/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace/checkpoint-250/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace/checkpoint-256/global_step256/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace/checkpoint-256/global_step256/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace/checkpoint-256/global_step256/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace/checkpoint-256/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat/checkpoint-250/global_step250/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat/checkpoint-250/global_step250/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat/checkpoint-250/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat/checkpoint-256/global_step256/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat/checkpoint-256/global_step256/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat/checkpoint-256/global_step256/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat/checkpoint-256/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w4/attempt_20261005T081745225532Z/profiles/grace/checkpoint-2/global_step2/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w4/attempt_20261005T081745225532Z/profiles/grace/checkpoint-2/global_step2/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w4/attempt_20261005T081745225532Z/profiles/grace/checkpoint-2/global_step2/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w4/attempt_20261005T081745225532Z/profiles/grace/checkpoint-2/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w4/attempt_20261005T081745225532Z/profiles/grace/checkpoint-3/global_step3/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w4/attempt_20261005T081745225532Z/profiles/grace/checkpoint-3/global_step3/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w4/attempt_20261005T081745225532Z/profiles/grace/checkpoint-3/global_step3/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w4/attempt_20261005T081745225532Z/profiles/grace/checkpoint-3/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w4/attempt_20261005T081745225532Z/profiles/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w4/attempt_20261005T081745225532Z/profiles/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w8/attempt_20261005T082204868025Z/profiles/grace/checkpoint-2/global_step2/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w8/attempt_20261005T082204868025Z/profiles/grace/checkpoint-2/global_step2/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w8/attempt_20261005T082204868025Z/profiles/grace/checkpoint-2/global_step2/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w8/attempt_20261005T082204868025Z/profiles/grace/checkpoint-2/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w8/attempt_20261005T082204868025Z/profiles/grace/checkpoint-3/global_step3/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w8/attempt_20261005T082204868025Z/profiles/grace/checkpoint-3/global_step3/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w8/attempt_20261005T082204868025Z/profiles/grace/checkpoint-3/global_step3/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w8/attempt_20261005T082204868025Z/profiles/grace/checkpoint-3/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w8/attempt_20261005T082204868025Z/profiles/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/grace_w8/attempt_20261005T082204868025Z/profiles/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w4/attempt_20261005T082638481657Z/profiles/qat/checkpoint-2/global_step2/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w4/attempt_20261005T082638481657Z/profiles/qat/checkpoint-2/global_step2/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w4/attempt_20261005T082638481657Z/profiles/qat/checkpoint-2/global_step2/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w4/attempt_20261005T082638481657Z/profiles/qat/checkpoint-2/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w4/attempt_20261005T082638481657Z/profiles/qat/checkpoint-3/global_step3/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w4/attempt_20261005T082638481657Z/profiles/qat/checkpoint-3/global_step3/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w4/attempt_20261005T082638481657Z/profiles/qat/checkpoint-3/global_step3/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w4/attempt_20261005T082638481657Z/profiles/qat/checkpoint-3/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w4/attempt_20261005T082638481657Z/profiles/qat/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w4/attempt_20261005T082638481657Z/profiles/qat/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w8/attempt_20261005T083057877140Z/profiles/qat/checkpoint-2/global_step2/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w8/attempt_20261005T083057877140Z/profiles/qat/checkpoint-2/global_step2/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w8/attempt_20261005T083057877140Z/profiles/qat/checkpoint-2/global_step2/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w8/attempt_20261005T083057877140Z/profiles/qat/checkpoint-2/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w8/attempt_20261005T083057877140Z/profiles/qat/checkpoint-3/global_step3/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w8/attempt_20261005T083057877140Z/profiles/qat/checkpoint-3/global_step3/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w8/attempt_20261005T083057877140Z/profiles/qat/checkpoint-3/global_step3/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w8/attempt_20261005T083057877140Z/profiles/qat/checkpoint-3/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w8/attempt_20261005T083057877140Z/profiles/qat/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/4970820da848284fcdd4637cd44bf7fe714819f8240de11bf26df5814fc992b5/qat_w8/attempt_20261005T083057877140Z/profiles/qat/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w4_20261005T072630065075Z/profiles/grace/checkpoint-2/global_step2/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w4_20261005T072630065075Z/profiles/grace/checkpoint-2/global_step2/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w4_20261005T072630065075Z/profiles/grace/checkpoint-2/global_step2/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w4_20261005T072630065075Z/profiles/grace/checkpoint-2/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w4_20261005T072630065075Z/profiles/grace/checkpoint-3/global_step3/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w4_20261005T072630065075Z/profiles/grace/checkpoint-3/global_step3/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w4_20261005T072630065075Z/profiles/grace/checkpoint-3/global_step3/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w4_20261005T072630065075Z/profiles/grace/checkpoint-3/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w4_20261005T072630065075Z/profiles/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w4_20261005T072630065075Z/profiles/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w8_20261005T073441840651Z/profiles/grace/checkpoint-2/global_step2/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w8_20261005T073441840651Z/profiles/grace/checkpoint-2/global_step2/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w8_20261005T073441840651Z/profiles/grace/checkpoint-2/global_step2/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w8_20261005T073441840651Z/profiles/grace/checkpoint-2/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w8_20261005T073441840651Z/profiles/grace/checkpoint-3/global_step3/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w8_20261005T073441840651Z/profiles/grace/checkpoint-3/global_step3/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w8_20261005T073441840651Z/profiles/grace/checkpoint-3/global_step3/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w8_20261005T073441840651Z/profiles/grace/checkpoint-3/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w8_20261005T073441840651Z/profiles/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/grace_w8_20261005T073441840651Z/profiles/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w4_20261005T073903145713Z/profiles/qat/checkpoint-2/global_step2/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w4_20261005T073903145713Z/profiles/qat/checkpoint-2/global_step2/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w4_20261005T073903145713Z/profiles/qat/checkpoint-2/global_step2/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w4_20261005T073903145713Z/profiles/qat/checkpoint-2/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w4_20261005T073903145713Z/profiles/qat/checkpoint-3/global_step3/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w4_20261005T073903145713Z/profiles/qat/checkpoint-3/global_step3/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w4_20261005T073903145713Z/profiles/qat/checkpoint-3/global_step3/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w4_20261005T073903145713Z/profiles/qat/checkpoint-3/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w4_20261005T073903145713Z/profiles/qat/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w4_20261005T073903145713Z/profiles/qat/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w8_20261005T074338504949Z/profiles/qat/checkpoint-2/global_step2/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w8_20261005T074338504949Z/profiles/qat/checkpoint-2/global_step2/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w8_20261005T074338504949Z/profiles/qat/checkpoint-2/global_step2/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w8_20261005T074338504949Z/profiles/qat/checkpoint-2/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w8_20261005T074338504949Z/profiles/qat/checkpoint-3/global_step3/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w8_20261005T074338504949Z/profiles/qat/checkpoint-3/global_step3/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w8_20261005T074338504949Z/profiles/qat/checkpoint-3/global_step3/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w8_20261005T074338504949Z/profiles/qat/checkpoint-3/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w8_20261005T074338504949Z/profiles/qat/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/memory_checks/qat_w8_20261005T074338504949Z/profiles/qat/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/grace/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/grace/checkpoint-250/global_step250/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/grace/checkpoint-250/global_step250/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/grace/checkpoint-250/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/grace/checkpoint-256/global_step256/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/grace/checkpoint-256/global_step256/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/grace/checkpoint-256/global_step256/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/grace/checkpoint-256/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat/checkpoint-250/global_step250/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat/checkpoint-250/global_step250/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat/checkpoint-250/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat/checkpoint-256/global_step256/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat/checkpoint-256/global_step256/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat/checkpoint-256/global_step256/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat/checkpoint-256/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/grace/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/grace/checkpoint-250/global_step250/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/grace/checkpoint-250/global_step250/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/grace/checkpoint-250/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/grace/checkpoint-256/global_step256/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/grace/checkpoint-256/global_step256/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/grace/checkpoint-256/global_step256/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/grace/checkpoint-256/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/grace/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/grace/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/qat/checkpoint-250/global_step250/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/qat/checkpoint-250/global_step250/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/qat/checkpoint-250/global_step250/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/qat/checkpoint-250/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/qat/checkpoint-256/global_step256/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt",
+      "bytes": 244651634,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/qat/checkpoint-256/global_step256/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bytes": 244651826,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/qat/checkpoint-256/global_step256/mp_rank_00_model_states.pt",
+      "bytes": 8524666749,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/qat/checkpoint-256/model.safetensors",
+      "bytes": 4925235304,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/qat/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w8g128/runs/qat/qat_quantized_weights.bin",
+      "bytes": 2840728202,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W8G128/model.safetensors",
+      "bytes": 4877470336,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/models/Qwen3-VL-2B-Instruct/model.safetensors",
+      "bytes": 4255140312,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/models/Qwen3-VL-8B-Instruct/model-00001-of-00004.safetensors",
+      "bytes": 4902275944,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/models/Qwen3-VL-8B-Instruct/model-00002-of-00004.safetensors",
+      "bytes": 4915962496,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/models/Qwen3-VL-8B-Instruct/model-00003-of-00004.safetensors",
+      "bytes": 4999831048,
+      "tracked": false
+    },
+    {
+      "path": "reproduction/GRACE/models/Qwen3-VL-8B-Instruct/model-00004-of-00004.safetensors",
+      "bytes": 2716270024,
+      "tracked": false
+    }
+  ],
+  "instructions": [],
+  "nested_repositories": [
+    "./reproduction/GRACE",
+    "./reproduction/GRACE/third_party/lmms-eval-v0.7.1"
+  ],
+  "errors": []
+}

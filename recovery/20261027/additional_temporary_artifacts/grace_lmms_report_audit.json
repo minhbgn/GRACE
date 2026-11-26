@@ -1,0 +1,320 @@
+{
+  "verified_jobs": 40,
+  "source_files_hashed": 333,
+  "counts": {
+    "scienceqa": {
+      "evaluated": 2017,
+      "scored": 2017,
+      "groups": {
+        "all": 2017
+      }
+    },
+    "ai2d": {
+      "evaluated": 3088,
+      "scored": 3088,
+      "groups": {
+        "all": 3088
+      }
+    },
+    "seedbench": {
+      "evaluated": 17990,
+      "scored": 14233,
+      "groups": {
+        "all": 14233
+      }
+    },
+    "mmstar": {
+      "evaluated": 1500,
+      "scored": 1500,
+      "groups": {
+        "image scene and topic": 141,
+        "image emotion": 31,
+        "image style & quality": 78,
+        "recognition": 118,
+        "object counting": 92,
+        "localization": 40,
+        "cross-instance attribute reasoning": 89,
+        "single-instance reasoning": 99,
+        "cross-instance relation reasoning": 62,
+        "common reasoning": 101,
+        "diagram reasoning": 110,
+        "code & sequence reasoning": 39,
+        "geometry": 116,
+        "numeric commonsense and calculation": 48,
+        "statistical reasoning": 86,
+        "biology & chemistry & physics": 146,
+        "electronics & energy & mechanical eng.": 46,
+        "geography & earth science & agriculture": 58
+      }
+    }
+  },
+  "scores": {
+    "vanilla_2b": {
+      "scienceqa": 87.2583044124938,
+      "ai2d": 76.13341968911918,
+      "seedbench": 76.09077495960092,
+      "mmstar": 55.08011163235324,
+      "mean4": 73.64065267339178
+    },
+    "vanilla_8b_teacher": {
+      "scienceqa": 94.6950917203768,
+      "ai2d": 84.00259067357513,
+      "seedbench": 78.55687486826389,
+      "mmstar": 64.5489943433801,
+      "mean4": 80.45088790139899
+    },
+    "sft_2b": {
+      "scienceqa": 86.76251859196827,
+      "ai2d": 77.52590673575129,
+      "seedbench": 76.68095271552026,
+      "mmstar": 56.102964565710664,
+      "mean4": 74.26808565223763
+    },
+    "released_bf16": {
+      "scienceqa": 88.29945463559741,
+      "ai2d": 81.80051813471503,
+      "seedbench": 76.27344902690929,
+      "mmstar": 69.39261588793948,
+      "mean4": 78.9415094212903
+    },
+    "released_grace_w4": {
+      "scienceqa": 87.10956866633614,
+      "ai2d": 80.4080310880829,
+      "seedbench": 75.69732312232136,
+      "mmstar": 67.49297239107729,
+      "mean4": 77.67697381695443
+    },
+    "released_grace_w8": {
+      "scienceqa": 86.66336142786317,
+      "ai2d": 79.56606217616581,
+      "seedbench": 75.45141572402164,
+      "mmstar": 65.19746562974163,
+      "mean4": 76.71957623944806
+    },
+    "qat_w4": {
+      "scienceqa": 86.11799702528508,
+      "ai2d": 80.63471502590673,
+      "seedbench": 76.38586383756059,
+      "mmstar": 68.28952210822276,
+      "mean4": 77.85702449924378
+    },
+    "grace_w4": {
+      "scienceqa": 86.71294000991571,
+      "ai2d": 79.56606217616581,
+      "seedbench": 77.08845640413125,
+      "mmstar": 63.98050241648132,
+      "mean4": 76.83699025167353
+    },
+    "qat_w8": {
+      "scienceqa": 87.7045116509668,
+      "ai2d": 82.31865284974094,
+      "seedbench": 76.73013419518021,
+      "mmstar": 70.65910131265841,
+      "mean4": 79.35310000213659
+    },
+    "grace_w8": {
+      "scienceqa": 87.95240456122954,
+      "ai2d": 81.02331606217616,
+      "seedbench": 77.13763788379119,
+      "mmstar": 64.98783200328388,
+      "mean4": 77.77529762762019
+    }
+  },
+  "pairs": {
+    "grace_w4_minus_qat_w4": {
+      "scienceqa": {
+        "delta_pp": 0.5949429846306344,
+        "bootstrap_95_ci_pp": [
+          -0.495785820525533,
+          1.685671789786812
+        ],
+        "wins": 69,
+        "losses": 57
+      },
+      "ai2d": {
+        "delta_pp": -1.0686528497409142,
+        "bootstrap_95_ci_pp": [
+          -2.072538860103627,
+          -0.032383419689119175
+        ],
+        "wins": 114,
+        "losses": 147
+      },
+      "seedbench": {
+        "delta_pp": 0.702592566570658,
+        "bootstrap_95_ci_pp": [
+          0.2880629522939647,
+          1.1171221808473266
+        ],
+        "wins": 495,
+        "losses": 395
+      },
+      "mmstar": {
+        "delta_pp": -4.309019691741433,
+        "bootstrap_95_ci_pp": [
+          -6.217738791819173,
+          -2.3858282064695557
+        ],
+        "wins": 60,
+        "losses": 139
+      },
+      "mean4_delta_pp": -1.0200342475702513
+    },
+    "grace_w8_minus_qat_w8": {
+      "scienceqa": {
+        "delta_pp": 0.24789291026274896,
+        "bootstrap_95_ci_pp": [
+          -0.842835894893406,
+          1.3882002974714922
+        ],
+        "wins": 68,
+        "losses": 63
+      },
+      "ai2d": {
+        "delta_pp": -1.2953367875647785,
+        "bootstrap_95_ci_pp": [
+          -2.3639896373056994,
+          -0.22668393782383417
+        ],
+        "wins": 120,
+        "losses": 160
+      },
+      "seedbench": {
+        "delta_pp": 0.40750368861097286,
+        "bootstrap_95_ci_pp": [
+          -0.0491814796599452,
+          0.8641888568818942
+        ],
+        "wins": 582,
+        "losses": 524
+      },
+      "mmstar": {
+        "delta_pp": -5.671269309374523,
+        "bootstrap_95_ci_pp": [
+          -7.717349364709419,
+          -3.5873061689470433
+        ],
+        "wins": 64,
+        "losses": 155
+      },
+      "mean4_delta_pp": -1.577802374516395
+    },
+    "released_grace_w4_minus_released_grace_w8": {
+      "scienceqa": {
+        "delta_pp": 0.4462072384729794,
+        "bootstrap_95_ci_pp": [
+          -0.5949429846306395,
+          1.487357461576599
+        ],
+        "wins": 63,
+        "losses": 54
+      },
+      "ai2d": {
+        "delta_pp": 0.8419689119170783,
+        "bootstrap_95_ci_pp": [
+          0.06476683937823835,
+          1.6515544041450776
+        ],
+        "wins": 93,
+        "losses": 67
+      },
+      "seedbench": {
+        "delta_pp": 0.24590739829972108,
+        "bootstrap_95_ci_pp": [
+          -0.15457036464554205,
+          0.6393592355792876
+        ],
+        "wins": 425,
+        "losses": 390
+      },
+      "mmstar": {
+        "delta_pp": 2.295506761335659,
+        "bootstrap_95_ci_pp": [
+          0.48241247784103863,
+          4.112967564448102
+        ],
+        "wins": 92,
+        "losses": 59
+      },
+      "mean4_delta_pp": 0.9573975775063701
+    },
+    "grace_w4_minus_released_grace_w4": {
+      "scienceqa": {
+        "delta_pp": -0.39662865642043243,
+        "bootstrap_95_ci_pp": [
+          -1.8344075359444718,
+          1.0411502231036194
+        ],
+        "wins": 109,
+        "losses": 117
+      },
+      "ai2d": {
+        "delta_pp": -0.8419689119170783,
+        "bootstrap_95_ci_pp": [
+          -2.1696891191709846,
+          0.45336787564766834
+        ],
+        "wins": 204,
+        "losses": 230
+      },
+      "seedbench": {
+        "delta_pp": 1.3911332818098856,
+        "bootstrap_95_ci_pp": [
+          0.8712147825476007,
+          1.9180777067378627
+        ],
+        "wins": 828,
+        "losses": 630
+      },
+      "mmstar": {
+        "delta_pp": -3.512469974595966,
+        "bootstrap_95_ci_pp": [
+          -6.114930518534532,
+          -0.8721952753519412
+        ],
+        "wins": 137,
+        "losses": 204
+      },
+      "mean4_delta_pp": -0.8399835652809031
+    },
+    "grace_w8_minus_released_grace_w8": {
+      "scienceqa": {
+        "delta_pp": 1.289043133366377,
+        "bootstrap_95_ci_pp": [
+          -0.1487357461576599,
+          2.7764005949429844
+        ],
+        "wins": 127,
+        "losses": 101
+      },
+      "ai2d": {
+        "delta_pp": 1.4572538860103492,
+        "bootstrap_95_ci_pp": [
+          0.09715025906735751,
+          2.8173575129533677
+        ],
+        "wins": 247,
+        "losses": 202
+      },
+      "seedbench": {
+        "delta_pp": 1.6862221597695424,
+        "bootstrap_95_ci_pp": [
+          1.1592777348415655,
+          2.227218436028947
+        ],
+        "wins": 885,
+        "losses": 645
+      },
+      "mmstar": {
+        "delta_pp": -0.20963362645774453,
+        "bootstrap_95_ci_pp": [
+          -2.645484102608881,
+          2.2471503097052064
+        ],
+        "wins": 143,
+        "losses": 157
+      },
+      "mean4_delta_pp": 1.055721388172131
+    }
+  }
+}

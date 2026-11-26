@@ -1,0 +1,2354 @@
+{
+  "snapshot": "2026-11-09T13:11:18.926737+08:00",
+  "original_protocol_sha256": "84cdf2afd58fcfce79c7c6ce0e10153da46bd5a8217d5eb0794ad7a9931b65d3",
+  "recovery_protocol_sha256": "9ee33c582e0db2df70af129563105a174dedec33efdeee5f792168a81baef486",
+  "controller_lock_held": true,
+  "completed_video_jobs": 17,
+  "completed_recovery_jobs": 12,
+  "jobs": [
+    {
+      "suite": "tempcompass",
+      "config": "baseline_r100",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261105T043214_315475Z",
+        "count": 1580,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+        "score_percent": 61.32911392405064,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "584038a24266eeb34a7f7b3651eddd4f739fb48d720bff4dd779b68eb080439f",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "3cbf5dada497f3502dbee7706210ddf8d42373ee1b003263d4b6f2fc14049668",
+          "results.json": "badef18b9c49990275400cb294a1d2ca3a326f24dbe88d182075cf02f92848ce",
+          "runtime.json": "4837dedb1d085dfe93486057781e6154119e54096d9aa26461198757b586a451",
+          "samples.jsonl": "088aa9a990338e2302702c3fc193b85e377aa950ceae49813e3c03fff6f1d489",
+          "telemetry.jsonl": "17b0ad87ae9ddedeea7d3aebd1055fa5a4cdde44477b86634254a8fa3d516165",
+          "validated.json": "87ac6b0071c635366ff3e3ff7b8322e6eb60bbc5e39151a0205ed27249e6bd30",
+          "video_inputs.jsonl": "448ad5dbc820d45e379a08352526b5665fa03c4a870b20d56a99ed28b6f5ee45"
+        },
+        "telemetry": {
+          "actual_retention": 1.0,
+          "decode_seconds": {
+            "max": 0.1174059808254242,
+            "mean": 0.08264924684374393,
+            "total": 130.5858100131154
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 4.0011172691981,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 365,
+            "mean": 153.13101265822786,
+            "total": 241947
+          },
+          "input_visual_tokens": {
+            "max": 10080,
+            "mean": 2716.353164556962,
+            "total": 4291838
+          },
+          "model_seconds": {
+            "max": 10.49434594810009,
+            "mean": 3.0207986418252126,
+            "total": 4772.861854083836
+          },
+          "original_input_visual_tokens": {
+            "max": 10080,
+            "mean": 2716.353164556962,
+            "total": 4291838
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3160
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 3392639488,
+            "mean": 2533458564.8607593,
+            "total": 4002864532480
+          },
+          "prefill_seconds": {
+            "max": 9.439096473157406,
+            "mean": 2.6247593051364904,
+            "total": 4147.119702115655
+          },
+          "reduction_seconds": {
+            "max": 0.027612842619419098,
+            "mean": 0.004659062675848792,
+            "total": 7.361319027841091
+          },
+          "vision_and_embedding_seconds": {
+            "max": 1.9942328035831451,
+            "mean": 0.3084858934100293,
+            "total": 487.4077115878463
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 0,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 10365,
+          "max_adaptive_baseline_visual_tokens": 10080,
+          "max_original_policy_visual_tokens": 10080,
+          "original_policy_retention": 1.0,
+          "questions": 1580
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/baseline_r100",
+      "marker_sha256": "adfb752cfe3bfeef4c57eb375dfde5bf4459cd1dbee3dc7bb8310badb7251b0a",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/baseline_r100/attempt_20261105T043214_315475Z",
+      "wall_hours": 1.5334793263888888,
+      "p50_model_seconds": 2.648061826825142,
+      "p95_model_seconds": 5.842918664216995,
+      "delta_pp": 0.0,
+      "population_model_speedup": 1.0,
+      "fixed_32_token_speedup": 1.0,
+      "wall_speedup": 1.0,
+      "paired": {
+        "gained": 0,
+        "lost": 0,
+        "net": 0,
+        "groups": {
+          "action": {
+            "count": 338,
+            "baseline_correct": 324,
+            "reduced_correct": 324
+          },
+          "direction": {
+            "count": 335,
+            "baseline_correct": 149,
+            "reduced_correct": 149
+          },
+          "speed": {
+            "count": 317,
+            "baseline_correct": 138,
+            "reduced_correct": 138
+          },
+          "order": {
+            "count": 302,
+            "baseline_correct": 173,
+            "reduced_correct": 173
+          },
+          "attribute_change": {
+            "count": 288,
+            "baseline_correct": 185,
+            "reduced_correct": 185
+          }
+        }
+      }
+    },
+    {
+      "suite": "tempcompass",
+      "config": "resolution_r050",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261105T060420_690345Z",
+        "count": 1580,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+        "score_percent": 60.56962025316456,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "584038a24266eeb34a7f7b3651eddd4f739fb48d720bff4dd779b68eb080439f",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "03198ddcf493379d5821f02e0d5cda5a89ce528c6949f55e245a1445482cd2b9",
+          "results.json": "c1f0a23eb65c52f435dc88ac366c82a638e327f664903e9401dce44879c11122",
+          "runtime.json": "00e885af6c7c8f1ef60a4184c4d95f8b3d9176e9f7c71bf0f1e3086bbc6bb766",
+          "samples.jsonl": "945fe2ee88591f5c26658e7d9fec90f944b2fbbc0543d848c1292a485e8fc959",
+          "telemetry.jsonl": "fd854a5b6fc3fdd7de5a584e3a52461ca0afb5d5562a43e7c6c80c148adca9c8",
+          "validated.json": "af9bb76b3f9ac67638d4129e00eb5f86023803f12dc3809edee12f8645489edd",
+          "video_inputs.jsonl": "44f49533d1fa29b832b8b2dbf8b370575a4d7151ba338c6866ac39f255b11856"
+        },
+        "telemetry": {
+          "actual_retention": 0.46101507093231386,
+          "decode_seconds": {
+            "max": 0.11673536151647568,
+            "mean": 0.08185044283259518,
+            "total": 129.3236996755004
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 3.269197502070003,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 365,
+            "mean": 153.13101265822786,
+            "total": 241947
+          },
+          "input_visual_tokens": {
+            "max": 4560,
+            "mean": 1252.2797468354431,
+            "total": 1978602
+          },
+          "model_seconds": {
+            "max": 5.0494434684515,
+            "mean": 1.678600837610945,
+            "total": 2652.189323425293
+          },
+          "original_input_visual_tokens": {
+            "max": 10080,
+            "mean": 2716.353164556962,
+            "total": 4291838
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3160
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 2751538176,
+            "mean": 2364748143.797468,
+            "total": 3736302067200
+          },
+          "prefill_seconds": {
+            "max": 4.428812399506569,
+            "mean": 1.3046447533548255,
+            "total": 2061.3387103006244
+          },
+          "reduction_seconds": {
+            "max": 0.024604611098766327,
+            "mean": 0.0024751703195934056,
+            "total": 3.9107691049575806
+          },
+          "vision_and_embedding_seconds": {
+            "max": 1.649144008755684,
+            "mean": 0.28940764777833905,
+            "total": 457.26408348977566
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 0,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 4845,
+          "max_adaptive_baseline_visual_tokens": 10080,
+          "max_original_policy_visual_tokens": 10080,
+          "original_policy_retention": 0.46101507093231386,
+          "questions": 1580
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r050",
+      "marker_sha256": "257b44072504f78a427b45b3d9dde53181ed52e49421991d197db9404ef4c38c",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r050/attempt_20261105T060420_690345Z",
+      "wall_hours": 0.9395659519444444,
+      "p50_model_seconds": 1.5195132419466972,
+      "p95_model_seconds": 3.0595100075006485,
+      "delta_pp": -0.75949367088608,
+      "population_model_speedup": 1.7995931934149036,
+      "fixed_32_token_speedup": 1.2238836187366036,
+      "wall_speedup": 1.6321146197511018,
+      "paired": {
+        "gained": 36,
+        "lost": 48,
+        "net": -12,
+        "groups": {
+          "action": {
+            "count": 338,
+            "baseline_correct": 324,
+            "reduced_correct": 318
+          },
+          "direction": {
+            "count": 335,
+            "baseline_correct": 149,
+            "reduced_correct": 153
+          },
+          "speed": {
+            "count": 317,
+            "baseline_correct": 138,
+            "reduced_correct": 139
+          },
+          "order": {
+            "count": 302,
+            "baseline_correct": 173,
+            "reduced_correct": 166
+          },
+          "attribute_change": {
+            "count": 288,
+            "baseline_correct": 185,
+            "reduced_correct": 181
+          }
+        }
+      }
+    },
+    {
+      "suite": "tempcompass",
+      "config": "resolution_r025",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261105T070048_729739Z",
+        "count": 1580,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+        "score_percent": 60.189873417721515,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "584038a24266eeb34a7f7b3651eddd4f739fb48d720bff4dd779b68eb080439f",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "4b4e9c1f902b98c3b8f77b1f95d607e5c6e2e6a6010bc2aa8c4e3b5ffd5b58ea",
+          "results.json": "b1c22ebd935d3fa03b5a657fd7662a7d8cec2fc840135d829feb60a244490df2",
+          "runtime.json": "13754c282531fe6f66d046a8ca3c981a124e2a64262eac66fa615eb16722248e",
+          "samples.jsonl": "269ce6445f3c26ce2bd66e683e9091ad9dc85c60296101ac1552fff9528b9e34",
+          "telemetry.jsonl": "9244cfc9b0c2ec36c5f04f671845af4566745647d5e384b9c13bfef950501c0a",
+          "validated.json": "cd19f6de7606c55792fe3c839203b04c1ea7a2f43c27ec6d64250f2b8332fcb0",
+          "video_inputs.jsonl": "9d939ca51ddc3b4b4aec6cc38ea284fca75d9e71c72b1910f0b4fb898c231087"
+        },
+        "telemetry": {
+          "actual_retention": 0.24201356155567846,
+          "decode_seconds": {
+            "max": 0.11651205271482468,
+            "mean": 0.08180750552329082,
+            "total": 129.2558587267995
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 3.0725803590483136,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 365,
+            "mean": 153.13101265822786,
+            "total": 241947
+          },
+          "input_visual_tokens": {
+            "max": 2352,
+            "mean": 657.3943037974684,
+            "total": 1038683
+          },
+          "model_seconds": {
+            "max": 3.2632844001054764,
+            "mean": 1.1321598114422229,
+            "total": 1788.812502078712
+          },
+          "original_input_visual_tokens": {
+            "max": 10080,
+            "mean": 2716.353164556962,
+            "total": 4291838
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3160
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 2508489216,
+            "mean": 2295584340.9012656,
+            "total": 3627023258624
+          },
+          "prefill_seconds": {
+            "max": 2.4564279913902283,
+            "mean": 0.7705096775689457,
+            "total": 1217.4052905589342
+          },
+          "reduction_seconds": {
+            "max": 0.009679548442363739,
+            "mean": 0.0015285243150554126,
+            "total": 2.415068417787552
+          },
+          "vision_and_embedding_seconds": {
+            "max": 1.1388790979981422,
+            "mean": 0.2780998218898909,
+            "total": 439.3977185860276
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 0,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 2637,
+          "max_adaptive_baseline_visual_tokens": 10080,
+          "max_original_policy_visual_tokens": 10080,
+          "original_policy_retention": 0.24201356155567846,
+          "questions": 1580
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r025",
+      "marker_sha256": "5808c05f664e791eab77da97a0b021f2352ad3ccb1fa17ddc65265e17f8f0c7b",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r025/attempt_20261105T070048_729739Z",
+      "wall_hours": 0.6880375700000001,
+      "p50_model_seconds": 1.0041148886084557,
+      "p95_model_seconds": 2.0215400606393814,
+      "delta_pp": -1.1392405063291235,
+      "population_model_speedup": 2.668173354411081,
+      "fixed_32_token_speedup": 1.3022010172705092,
+      "wall_speedup": 2.228772661918576,
+      "paired": {
+        "gained": 47,
+        "lost": 65,
+        "net": -18,
+        "groups": {
+          "action": {
+            "count": 338,
+            "baseline_correct": 324,
+            "reduced_correct": 316
+          },
+          "direction": {
+            "count": 335,
+            "baseline_correct": 149,
+            "reduced_correct": 150
+          },
+          "speed": {
+            "count": 317,
+            "baseline_correct": 138,
+            "reduced_correct": 134
+          },
+          "order": {
+            "count": 302,
+            "baseline_correct": 173,
+            "reduced_correct": 169
+          },
+          "attribute_change": {
+            "count": 288,
+            "baseline_correct": 185,
+            "reduced_correct": 182
+          }
+        }
+      }
+    },
+    {
+      "suite": "tempcompass",
+      "config": "resolution_r010",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261105T074211_659887Z",
+        "count": 1580,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+        "score_percent": 58.35443037974684,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "584038a24266eeb34a7f7b3651eddd4f739fb48d720bff4dd779b68eb080439f",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "a5d12d2cc919ddd0050dd50468cb0b90bf14ae7f883f5839e71a87675454b4ea",
+          "results.json": "9ca9914cf5a670eebc08333fb3caa30a99b9425b0bdb1ecdd858d2ffa2b8c6ce",
+          "runtime.json": "110ca4b4411e7d1b4e5f7adca94e46404765479a61ef51ea82ffd0979dead616",
+          "samples.jsonl": "f6514a9f6ec13f9cdf837a6c8f6e9409a67757c1e22c29b20f2c1dd4d1fcc16c",
+          "telemetry.jsonl": "ec508b287525d5be3e442558410553e26aec3e5744dee7d6a344b9d211d4fd15",
+          "validated.json": "846a1834d39917ca124c76da831dfc301bd48f75d00c49681805ae96aaad4642",
+          "video_inputs.jsonl": "a5979cc55d02faad407da5a9b67fbbcfc139f286bbb1193c65330fdf252f1902"
+        },
+        "telemetry": {
+          "actual_retention": 0.08199563916438599,
+          "decode_seconds": {
+            "max": 0.14236193150281906,
+            "mean": 0.0817514814294969,
+            "total": 129.1673406586051
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 2.8815260156989098,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 365,
+            "mean": 153.13101265822786,
+            "total": 241947
+          },
+          "input_visual_tokens": {
+            "max": 768,
+            "mean": 222.72911392405064,
+            "total": 351912
+          },
+          "model_seconds": {
+            "max": 2.1986997351050377,
+            "mean": 0.7274298230728394,
+            "total": 1149.3391204550862
+          },
+          "original_input_visual_tokens": {
+            "max": 10080,
+            "mean": 2716.353164556962,
+            "total": 4291838
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3160
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 2330900992,
+            "mean": 2241518726.156962,
+            "total": 3541599587328
+          },
+          "prefill_seconds": {
+            "max": 1.096222773194313,
+            "mean": 0.3747627912018495,
+            "total": 592.1252100989223
+          },
+          "reduction_seconds": {
+            "max": 0.006397873163223267,
+            "mean": 0.0007670330425983742,
+            "total": 1.2119122073054314
+          },
+          "vision_and_embedding_seconds": {
+            "max": 1.2691985443234444,
+            "mean": 0.26994631445577627,
+            "total": 426.5151768401265
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 0,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 1053,
+          "max_adaptive_baseline_visual_tokens": 10080,
+          "max_original_policy_visual_tokens": 10080,
+          "original_policy_retention": 0.08199563916438599,
+          "questions": 1580
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r010",
+      "marker_sha256": "5554afd3f27cb7dfcf12022bbaa16f3c875c3635de0d2127e68ebe898f524efb",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r010/attempt_20261105T074211_659887Z",
+      "wall_hours": 0.5039091627777778,
+      "p50_model_seconds": 0.6510801613330841,
+      "p95_model_seconds": 1.262614518404007,
+      "delta_pp": -2.974683544303801,
+      "population_model_speedup": 4.152701121139946,
+      "fixed_32_token_speedup": 1.3885410880899631,
+      "wall_speedup": 3.043166188794126,
+      "paired": {
+        "gained": 68,
+        "lost": 115,
+        "net": -47,
+        "groups": {
+          "action": {
+            "count": 338,
+            "baseline_correct": 324,
+            "reduced_correct": 310
+          },
+          "direction": {
+            "count": 335,
+            "baseline_correct": 149,
+            "reduced_correct": 149
+          },
+          "speed": {
+            "count": 317,
+            "baseline_correct": 138,
+            "reduced_correct": 125
+          },
+          "order": {
+            "count": 302,
+            "baseline_correct": 173,
+            "reduced_correct": 163
+          },
+          "attribute_change": {
+            "count": 288,
+            "baseline_correct": 185,
+            "reduced_correct": 175
+          }
+        }
+      }
+    },
+    {
+      "suite": "tempcompass",
+      "config": "uniform_r050",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261105T081231_754086Z",
+        "count": 1580,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+        "score_percent": 61.83544303797468,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "584038a24266eeb34a7f7b3651eddd4f739fb48d720bff4dd779b68eb080439f",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "0011c29b818f68381be0e95163330bc151055a32534dd165188cea9b1a6648c2",
+          "results.json": "0d1258eb345977ec65b9db25292b7ad3156ac7bd8588b2ac201d995ce773bd02",
+          "runtime.json": "e2aa0af53328db31e35c011fa08562db96f6e74069049b8aba45171714728d91",
+          "samples.jsonl": "b7e119e4844b475fb941c9574f46143b27debe9b2ee799a12988c5eb376b25c7",
+          "telemetry.jsonl": "df1b4379fa0a5b4eb2ea8d5f69b0b60b081ca4f3d7e1b0f7abf243b4f905d752",
+          "validated.json": "c97506634b83513c38c7bc2a198e57567ca2f976c14b439306c4512dca05b130",
+          "video_inputs.jsonl": "6854d9a6b28da7efedd0a0d8b210a21399ba00caaad73011dcf496853e8f29ca"
+        },
+        "telemetry": {
+          "actual_retention": 0.5,
+          "decode_seconds": {
+            "max": 0.14308808743953705,
+            "mean": 0.08192634984285016,
+            "total": 129.44363275170326
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 3.4236406361063323,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 365,
+            "mean": 153.13101265822786,
+            "total": 241947
+          },
+          "input_visual_tokens": {
+            "max": 5040,
+            "mean": 1358.176582278481,
+            "total": 2145919
+          },
+          "model_seconds": {
+            "max": 6.11187794059515,
+            "mean": 1.790924522450453,
+            "total": 2829.660745471716
+          },
+          "original_input_visual_tokens": {
+            "max": 10080,
+            "mean": 2716.353164556962,
+            "total": 4291838
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3160
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 2806751232,
+            "mean": 2376398441.316456,
+            "total": 3754709537280
+          },
+          "prefill_seconds": {
+            "max": 4.876166179776192,
+            "mean": 1.3995538863766042,
+            "total": 2211.2951404750347
+          },
+          "reduction_seconds": {
+            "max": 0.20672782510519028,
+            "mean": 0.005625681470655188,
+            "total": 8.888576723635197
+          },
+          "vision_and_embedding_seconds": {
+            "max": 1.708392322063446,
+            "mean": 0.3035908882140736,
+            "total": 479.6736033782363
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 0,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 5325,
+          "max_adaptive_baseline_visual_tokens": 10080,
+          "max_original_policy_visual_tokens": 10080,
+          "original_policy_retention": 0.5,
+          "questions": 1580
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r050",
+      "marker_sha256": "c5d02fcbc59b97a194117c262d92d5f59e46aceb9f71cf19c8d5ba3a36543765",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r050/attempt_20261105T081231_754086Z",
+      "wall_hours": 0.9945261994444445,
+      "p50_model_seconds": 1.5565675050020218,
+      "p95_model_seconds": 3.3014338240027428,
+      "delta_pp": 0.5063291139240391,
+      "population_model_speedup": 1.6867258245433874,
+      "fixed_32_token_speedup": 1.1686732617324362,
+      "wall_speedup": 1.5419194861286818,
+      "paired": {
+        "gained": 40,
+        "lost": 32,
+        "net": 8,
+        "groups": {
+          "action": {
+            "count": 338,
+            "baseline_correct": 324,
+            "reduced_correct": 324
+          },
+          "direction": {
+            "count": 335,
+            "baseline_correct": 149,
+            "reduced_correct": 152
+          },
+          "speed": {
+            "count": 317,
+            "baseline_correct": 138,
+            "reduced_correct": 148
+          },
+          "order": {
+            "count": 302,
+            "baseline_correct": 173,
+            "reduced_correct": 172
+          },
+          "attribute_change": {
+            "count": 288,
+            "baseline_correct": 185,
+            "reduced_correct": 181
+          }
+        }
+      }
+    },
+    {
+      "suite": "tempcompass",
+      "config": "uniform_r025",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261105T091218_307752Z",
+        "count": 1580,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+        "score_percent": 61.64556962025316,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "584038a24266eeb34a7f7b3651eddd4f739fb48d720bff4dd779b68eb080439f",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "cda2fd5d75d2f32b3ee59dcb3d690e38d139aed46ea5d453afd49cbdac86512d",
+          "results.json": "7bb6f345af25beeedd7dc803b0630112b9915b00cde684dbf1e14913d728c286",
+          "runtime.json": "7153ae52b3f548eea0d1eae09d0df136c94d2fb0a907c917a2159acb26c30c5b",
+          "samples.jsonl": "5174f5b5048d313e65cc21a591d1a8fc22b1168e1260bbd1720e736e056f1e43",
+          "telemetry.jsonl": "9036dd14d86a26f30473fc2161508b245fc21c02bde7d5e0c29f7e6773aea176",
+          "validated.json": "d987c2fe7d147f965b7e1614e557364aa43d88ea1eb29fc63809fd7446a460d0",
+          "video_inputs.jsonl": "8a39da98ff8f469284987dd81149fd8d218d5cd22f04516b574904f8a395b43e"
+        },
+        "telemetry": {
+          "actual_retention": 0.25082377293830754,
+          "decode_seconds": {
+            "max": 0.14930042624473572,
+            "mean": 0.08192600560716436,
+            "total": 129.4430888593197
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 3.1204755488369202,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 365,
+            "mean": 153.13101265822786,
+            "total": 241947
+          },
+          "input_visual_tokens": {
+            "max": 2520,
+            "mean": 681.3259493670886,
+            "total": 1076495
+          },
+          "model_seconds": {
+            "max": 3.3639922216534615,
+            "mean": 1.1731007724717448,
+            "total": 1853.4992205053568
+          },
+          "original_input_visual_tokens": {
+            "max": 10080,
+            "mean": 2716.353164556962,
+            "total": 4291838
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3160
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 2517485056,
+            "mean": 2298310601.8835444,
+            "total": 3631330750976
+          },
+          "prefill_seconds": {
+            "max": 2.5737475529313087,
+            "mean": 0.7898352651184872,
+            "total": 1247.93971888721
+          },
+          "reduction_seconds": {
+            "max": 0.19586297869682312,
+            "mean": 0.003514255885081955,
+            "total": 5.552524298429489
+          },
+          "vision_and_embedding_seconds": {
+            "max": 1.1811233162879944,
+            "mean": 0.29760086566587035,
+            "total": 470.2093677520752
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 0,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 2805,
+          "max_adaptive_baseline_visual_tokens": 10080,
+          "max_original_policy_visual_tokens": 10080,
+          "original_policy_retention": 0.25082377293830754,
+          "questions": 1580
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r025",
+      "marker_sha256": "9b500fe44d10428c0bbe9304eab3f3e463f7bd45c77ebc468f928862e938f97c",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r025/attempt_20261105T091218_307752Z",
+      "wall_hours": 0.7147628524999999,
+      "p50_model_seconds": 1.0742249712347984,
+      "p95_model_seconds": 2.073601372539997,
+      "delta_pp": 0.31645569620252445,
+      "population_model_speedup": 2.575054686444656,
+      "fixed_32_token_speedup": 1.2822139467458469,
+      "wall_speedup": 2.1454379183603263,
+      "paired": {
+        "gained": 52,
+        "lost": 47,
+        "net": 5,
+        "groups": {
+          "action": {
+            "count": 338,
+            "baseline_correct": 324,
+            "reduced_correct": 322
+          },
+          "direction": {
+            "count": 335,
+            "baseline_correct": 149,
+            "reduced_correct": 150
+          },
+          "speed": {
+            "count": 317,
+            "baseline_correct": 138,
+            "reduced_correct": 149
+          },
+          "order": {
+            "count": 302,
+            "baseline_correct": 173,
+            "reduced_correct": 178
+          },
+          "attribute_change": {
+            "count": 288,
+            "baseline_correct": 185,
+            "reduced_correct": 175
+          }
+        }
+      }
+    },
+    {
+      "suite": "tempcompass",
+      "config": "uniform_r010",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261105T095517_988997Z",
+        "count": 1580,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+        "score_percent": 59.367088607594944,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "584038a24266eeb34a7f7b3651eddd4f739fb48d720bff4dd779b68eb080439f",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "cc4cbc922e5e242650a111d6a4378d40afaa12e4fb04ba76529b1b9672779840",
+          "results.json": "336270ad3e0fd6a41806327bbaae8b2e874e1d941034cc0624670b6c499fd0c2",
+          "runtime.json": "ca17ef09ecaeaed14848966ced1d5908d6bbf8a601c919a5f7dafca79d08339b",
+          "samples.jsonl": "4b93cf573c0ee8fab5b7f8f94a7bafd5410c4f3a770073e7ffb1e02728cb4eb3",
+          "telemetry.jsonl": "2c3a0e4444344721eb89c1195e50b8f8ef04e8bb34bd046276b4cdbf46d593c4",
+          "validated.json": "77d57d1ac842000c5ce97ec14dac5df00eb0406ba58de6d6baa10157c7f25933",
+          "video_inputs.jsonl": "28daa866971f8fa035ed75463926482cd42b69b3e0af2738583949609895d78f"
+        },
+        "telemetry": {
+          "actual_retention": 0.10055994657766673,
+          "decode_seconds": {
+            "max": 0.13286645710468292,
+            "mean": 0.08187250929259801,
+            "total": 129.35856468230486
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 3.022245551976893,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 365,
+            "mean": 153.13101265822786,
+            "total": 241947
+          },
+          "input_visual_tokens": {
+            "max": 1008,
+            "mean": 273.1563291139241,
+            "total": 431587
+          },
+          "model_seconds": {
+            "max": 2.7323221936821938,
+            "mean": 0.8043750786375773,
+            "total": 1270.9126242473722
+          },
+          "original_input_visual_tokens": {
+            "max": 10080,
+            "mean": 2716.353164556962,
+            "total": 4291838
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3160
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 2427481088,
+            "mean": 2255266769.012658,
+            "total": 3563321495040
+          },
+          "prefill_seconds": {
+            "max": 1.1932028606534004,
+            "mean": 0.4223480868848819,
+            "total": 667.3099772781134
+          },
+          "reduction_seconds": {
+            "max": 0.020792201161384583,
+            "mean": 0.0023250455626204042,
+            "total": 3.673571988940239
+          },
+          "vision_and_embedding_seconds": {
+            "max": 1.7244680374860764,
+            "mean": 0.29761200331245796,
+            "total": 470.2269652336836
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 0,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 1293,
+          "max_adaptive_baseline_visual_tokens": 10080,
+          "max_original_policy_visual_tokens": 10080,
+          "original_policy_retention": 0.10055994657766673,
+          "questions": 1580
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r010",
+      "marker_sha256": "b8d2e8919c264ae67651c8fe932710e406876f9dbe914afdcc4a4997df359d16",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r010/attempt_20261105T095517_988997Z",
+      "wall_hours": 0.5552372225,
+      "p50_model_seconds": 0.7081512287259102,
+      "p95_model_seconds": 1.4175956919789314,
+      "delta_pp": -1.9620253164556942,
+      "population_model_speedup": 3.755460259835172,
+      "fixed_32_token_speedup": 1.3238888767925934,
+      "wall_speedup": 2.7618453234894367,
+      "paired": {
+        "gained": 76,
+        "lost": 107,
+        "net": -31,
+        "groups": {
+          "action": {
+            "count": 338,
+            "baseline_correct": 324,
+            "reduced_correct": 321
+          },
+          "direction": {
+            "count": 335,
+            "baseline_correct": 149,
+            "reduced_correct": 154
+          },
+          "speed": {
+            "count": 317,
+            "baseline_correct": 138,
+            "reduced_correct": 139
+          },
+          "order": {
+            "count": 302,
+            "baseline_correct": 173,
+            "reduced_correct": 160
+          },
+          "attribute_change": {
+            "count": 288,
+            "baseline_correct": 185,
+            "reduced_correct": 164
+          }
+        }
+      }
+    },
+    {
+      "suite": "tempcompass",
+      "config": "merge_r050",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261105T102843_374807Z",
+        "count": 1580,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+        "score_percent": 61.58227848101265,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "584038a24266eeb34a7f7b3651eddd4f739fb48d720bff4dd779b68eb080439f",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "4b3c7a8819af41eb67d0596e881fc01137efadc49fe6025851af7689d0c468b6",
+          "results.json": "3e5598f2d5ae3bbff6eb530fe2b5aa793f18600af5fa216604689cf7afd8ca27",
+          "runtime.json": "e2aa0af53328db31e35c011fa08562db96f6e74069049b8aba45171714728d91",
+          "samples.jsonl": "ef0d27ce29ff1b38e7e898aa5f8039d3bc5d2d97040e7b8be99818060cc96f5c",
+          "telemetry.jsonl": "259c2abb50685981a1ed8ca416f56ebfea8b1cc11bcf8a813c6d7483d61c2a10",
+          "validated.json": "cb64bca599c93d4308f1ccf319c61f900af44443ed085118bb9048924ac4c10d",
+          "video_inputs.jsonl": "5b221e9be9864cc304372ae88962e35edc97c6359f3dd124f45312585a21c2c6"
+        },
+        "telemetry": {
+          "actual_retention": 0.5,
+          "decode_seconds": {
+            "max": 0.10824064910411835,
+            "mean": 0.08198724143395696,
+            "total": 129.539841465652
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 3.3794506415724754,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 365,
+            "mean": 153.13101265822786,
+            "total": 241947
+          },
+          "input_visual_tokens": {
+            "max": 5040,
+            "mean": 1358.176582278481,
+            "total": 2145919
+          },
+          "model_seconds": {
+            "max": 5.6582977920770645,
+            "mean": 1.7878306973631246,
+            "total": 2824.772501833737
+          },
+          "original_input_visual_tokens": {
+            "max": 10080,
+            "mean": 2716.353164556962,
+            "total": 4291838
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3160
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 2806751232,
+            "mean": 2376398441.316456,
+            "total": 3754709537280
+          },
+          "prefill_seconds": {
+            "max": 4.872230738401413,
+            "mean": 1.3995688623171063,
+            "total": 2211.318802461028
+          },
+          "reduction_seconds": {
+            "max": 0.1986769139766693,
+            "mean": 0.007021153039192852,
+            "total": 11.093421801924706
+          },
+          "vision_and_embedding_seconds": {
+            "max": 1.3994025141000748,
+            "mean": 0.2990293803471553,
+            "total": 472.4664209485054
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 0,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 5325,
+          "max_adaptive_baseline_visual_tokens": 10080,
+          "max_original_policy_visual_tokens": 10080,
+          "original_policy_retention": 0.5,
+          "questions": 1580
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/merge_r050",
+      "marker_sha256": "8befb6255ee1ee4bee3b2746d69234111249bed520c14a22a2e4cfe632d8252d",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/merge_r050/attempt_20261105T102843_374807Z",
+      "wall_hours": 0.9875772372222222,
+      "p50_model_seconds": 1.5514034405350685,
+      "p95_model_seconds": 3.2975939437747,
+      "delta_pp": 0.25316455696201245,
+      "population_model_speedup": 1.689644688549422,
+      "fixed_32_token_speedup": 1.1839549363373332,
+      "wall_speedup": 1.5527690074167122,
+      "paired": {
+        "gained": 40,
+        "lost": 36,
+        "net": 4,
+        "groups": {
+          "action": {
+            "count": 338,
+            "baseline_correct": 324,
+            "reduced_correct": 322
+          },
+          "direction": {
+            "count": 335,
+            "baseline_correct": 149,
+            "reduced_correct": 151
+          },
+          "speed": {
+            "count": 317,
+            "baseline_correct": 138,
+            "reduced_correct": 146
+          },
+          "order": {
+            "count": 302,
+            "baseline_correct": 173,
+            "reduced_correct": 175
+          },
+          "attribute_change": {
+            "count": 288,
+            "baseline_correct": 185,
+            "reduced_correct": 179
+          }
+        }
+      }
+    },
+    {
+      "suite": "tempcompass",
+      "config": "merge_r025",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261105T112805_235555Z",
+        "count": 1580,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+        "score_percent": 61.32911392405064,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "584038a24266eeb34a7f7b3651eddd4f739fb48d720bff4dd779b68eb080439f",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "a3b760d03c45b60576b769d3c6d93a19ca338f227099a92c354d16a82044e0ea",
+          "results.json": "7c957b7183c00bb2de980fb3f03c4392655f70d86931a88c4017829651777aaa",
+          "runtime.json": "7153ae52b3f548eea0d1eae09d0df136c94d2fb0a907c917a2159acb26c30c5b",
+          "samples.jsonl": "a86f56d40d8c0f194d6642128e34b9f49d9e38699253f3018bf32122d95efc66",
+          "telemetry.jsonl": "15e0f88e4158a529808480bfb6b2e481c4ece7abcbc01b2c77bb0cf1b3be794f",
+          "validated.json": "ad975049c95a8b7e2cbb443013ce88551a153f27d7a4b83904599e957f3418bc",
+          "video_inputs.jsonl": "8308730e3781be86bce3a8d38c23774981565971a5412538cfb305d9ebb524ca"
+        },
+        "telemetry": {
+          "actual_retention": 0.25082377293830754,
+          "decode_seconds": {
+            "max": 0.10872209072113037,
+            "mean": 0.08174554914047447,
+            "total": 129.15796764194965
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 3.088913802471426,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 365,
+            "mean": 153.13101265822786,
+            "total": 241947
+          },
+          "input_visual_tokens": {
+            "max": 2520,
+            "mean": 681.3259493670886,
+            "total": 1076495
+          },
+          "model_seconds": {
+            "max": 3.394819311797619,
+            "mean": 1.1694981668238775,
+            "total": 1847.8071035817266
+          },
+          "original_input_visual_tokens": {
+            "max": 10080,
+            "mean": 2716.353164556962,
+            "total": 4291838
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3160
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 2517485056,
+            "mean": 2298310601.8835444,
+            "total": 3631330750976
+          },
+          "prefill_seconds": {
+            "max": 2.581121005117893,
+            "mean": 0.7896390099691439,
+            "total": 1247.6296357512474
+          },
+          "reduction_seconds": {
+            "max": 0.19543295353651047,
+            "mean": 0.00517269902025597,
+            "total": 8.172864452004433
+          },
+          "vision_and_embedding_seconds": {
+            "max": 1.1090448051691055,
+            "mean": 0.29272465622877775,
+            "total": 462.5049568414688
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 0,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 2805,
+          "max_adaptive_baseline_visual_tokens": 10080,
+          "max_original_policy_visual_tokens": 10080,
+          "original_policy_retention": 0.25082377293830754,
+          "questions": 1580
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/merge_r025",
+      "marker_sha256": "54707501b377b99649c55c5b68fa757df8e8341eac4e2fd7e94adf8cd75b6373",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/merge_r025/attempt_20261105T112805_235555Z",
+      "wall_hours": 0.7127561127777777,
+      "p50_model_seconds": 1.075259506702423,
+      "p95_model_seconds": 2.068650044500828,
+      "delta_pp": 0.0,
+      "population_model_speedup": 2.5829870687434218,
+      "fixed_32_token_speedup": 1.2953152872044613,
+      "wall_speedup": 2.151478323226945,
+      "paired": {
+        "gained": 71,
+        "lost": 71,
+        "net": 0,
+        "groups": {
+          "action": {
+            "count": 338,
+            "baseline_correct": 324,
+            "reduced_correct": 320
+          },
+          "direction": {
+            "count": 335,
+            "baseline_correct": 149,
+            "reduced_correct": 156
+          },
+          "speed": {
+            "count": 317,
+            "baseline_correct": 138,
+            "reduced_correct": 148
+          },
+          "order": {
+            "count": 302,
+            "baseline_correct": 173,
+            "reduced_correct": 171
+          },
+          "attribute_change": {
+            "count": 288,
+            "baseline_correct": 185,
+            "reduced_correct": 174
+          }
+        }
+      }
+    },
+    {
+      "suite": "tempcompass",
+      "config": "merge_r010",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261105T121057_808651Z",
+        "count": 1580,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+        "score_percent": 56.32911392405063,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "584038a24266eeb34a7f7b3651eddd4f739fb48d720bff4dd779b68eb080439f",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "5778a3547303f4dfc390a09ebc0314e47509cfef998f8fb367246014378f21bc",
+          "results.json": "0e29555195a2cab07559112c6e2371332415507c6e9e9bd0e54756ae4ecd5bf0",
+          "runtime.json": "ca17ef09ecaeaed14848966ced1d5908d6bbf8a601c919a5f7dafca79d08339b",
+          "samples.jsonl": "475a5713eaca40a2cc87ba8276e124332f694271bb72ac724e9bb2c27ffd711c",
+          "telemetry.jsonl": "62d0d02b4eea62f1c3d982d2671c543b9e22a7f4526d2853a6ab6b2426128935",
+          "validated.json": "f6545564031c7bcff5e6a85a5e82b85250f021576b4c1839dafb349f5236c10e",
+          "video_inputs.jsonl": "d3b5d53dbd2643bf99cedfb965d74071aed606ae165d8217a19df5f29b759c03"
+        },
+        "telemetry": {
+          "actual_retention": 0.10055994657766673,
+          "decode_seconds": {
+            "max": 0.10669106990098953,
+            "mean": 0.08166963855111146,
+            "total": 129.0380289107561
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 2.9803900495171547,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 365,
+            "mean": 153.13101265822786,
+            "total": 241947
+          },
+          "input_visual_tokens": {
+            "max": 1008,
+            "mean": 273.1563291139241,
+            "total": 431587
+          },
+          "model_seconds": {
+            "max": 2.4819817692041397,
+            "mean": 0.8069073580865619,
+            "total": 1274.9136257767677
+          },
+          "original_input_visual_tokens": {
+            "max": 10080,
+            "mean": 2716.353164556962,
+            "total": 4291838
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3160
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 2427481088,
+            "mean": 2255266769.012658,
+            "total": 3563321495040
+          },
+          "prefill_seconds": {
+            "max": 1.1941590309143066,
+            "mean": 0.4221774529052686,
+            "total": 667.0403755903244
+          },
+          "reduction_seconds": {
+            "max": 0.013308949768543243,
+            "mean": 0.004571652902832514,
+            "total": 7.223211586475372
+          },
+          "vision_and_embedding_seconds": {
+            "max": 1.7560968473553658,
+            "mean": 0.2982736203630891,
+            "total": 471.2723201736808
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 0,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 1293,
+          "max_adaptive_baseline_visual_tokens": 10080,
+          "max_original_policy_visual_tokens": 10080,
+          "original_policy_retention": 0.10055994657766673,
+          "questions": 1580
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/merge_r010",
+      "marker_sha256": "41e142fb0ef895957ca5e9cd1ff24ffafcf9fadf69ef2088f2074249e5a9ffc4",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/tempcompass/merge_r010/attempt_20261105T121057_808651Z",
+      "wall_hours": 0.5526878613888889,
+      "p50_model_seconds": 0.712133914232254,
+      "p95_model_seconds": 1.4234775081276894,
+      "delta_pp": -5.000000000000007,
+      "population_model_speedup": 3.7436746753536894,
+      "fixed_32_token_speedup": 1.342481085603648,
+      "wall_speedup": 2.774584776541498,
+      "paired": {
+        "gained": 79,
+        "lost": 158,
+        "net": -79,
+        "groups": {
+          "action": {
+            "count": 338,
+            "baseline_correct": 324,
+            "reduced_correct": 314
+          },
+          "direction": {
+            "count": 335,
+            "baseline_correct": 149,
+            "reduced_correct": 143
+          },
+          "speed": {
+            "count": 317,
+            "baseline_correct": 138,
+            "reduced_correct": 136
+          },
+          "order": {
+            "count": 302,
+            "baseline_correct": 173,
+            "reduced_correct": 146
+          },
+          "attribute_change": {
+            "count": 288,
+            "baseline_correct": 185,
+            "reduced_correct": 151
+          }
+        }
+      }
+    },
+    {
+      "suite": "videomme",
+      "config": "baseline_r100",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261105T124414_467683Z",
+        "count": 1800,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "f2d93a4c1c114017e45c8a1e3bf9de1f9db9049ea33c0b91e3082062fa13c9f6",
+        "score_percent": 61.5,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "ff29b33136f618f421f4ed52c54235b6cf98794a39f39c642f9d2452eb649d38",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "65d99dbb02b784bf721602943563d9693e695e7431542a7eabadc2b27ca15f0f",
+          "results.json": "54661d388f2cd995f7ccfd605aefd715461b7c08067cd31b6c9b118f1df0bd7a",
+          "runtime.json": "5dd371527852ae45ff9aae8bcc1ffb12271bd0e42416e5e1f5a074d2035b966a",
+          "samples.jsonl": "78a316cc5053d5999a7887a1e47e0eb0bff3eef13b9114d7d8e925665a9e5798",
+          "telemetry.jsonl": "8125dd2a9aaf4d3281388edf66897b2fa6c65fccb358d9f71e3ed017475f77e1",
+          "validated.json": "72a11e34b793dba10b9ce2828446166ff8d48e4df3cb17b280930f8e76ef360a",
+          "video_inputs.jsonl": "b2351563ef18cf9810d49de87d15b4ee00e68b0850a039a8bfe11e54f68922fc"
+        },
+        "telemetry": {
+          "actual_retention": 1.0,
+          "decode_seconds": {
+            "max": 0.15387367457151413,
+            "mean": 0.11551698288569848,
+            "total": 207.93056919425726
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 47.5739823927482,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 10985,
+            "mean": 2959.1666666666665,
+            "total": 5326500
+          },
+          "input_visual_tokens": {
+            "max": 126350,
+            "mean": 78494.01333333334,
+            "total": 141289224
+          },
+          "model_seconds": {
+            "max": 157.87753465026617,
+            "mean": 90.4793019823316,
+            "total": 162862.7435681969
+          },
+          "original_input_visual_tokens": {
+            "max": 126350,
+            "mean": 78494.01333333334,
+            "total": 141289224
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3600
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 17362001408,
+            "mean": 11700104426.382223,
+            "total": 21060187967488
+          },
+          "prefill_seconds": {
+            "max": 135.24557623267174,
+            "mean": 82.309561045294,
+            "total": 148157.2098815292
+          },
+          "reduction_seconds": {
+            "max": 0.8202202841639519,
+            "mean": 0.4103219903301862,
+            "total": 738.5795825943351
+          },
+          "vision_and_embedding_seconds": {
+            "max": 27.06697443127632,
+            "mean": 7.641099168335398,
+            "total": 13753.978503003716
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 846,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 129920,
+          "max_adaptive_baseline_visual_tokens": 126350,
+          "max_original_policy_visual_tokens": 552288,
+          "original_policy_retention": 0.5013709656093753,
+          "questions": 1800
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/videomme/baseline_r100",
+      "marker_sha256": "35fc212dc9b3807485bd36377c2abf663303ad537e277f238fd99fde6fdd385f",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/videomme/baseline_r100/attempt_20261105T124414_467683Z",
+      "wall_hours": 55.403823610277776,
+      "p50_model_seconds": 73.05191719532013,
+      "p95_model_seconds": 146.30628852546215,
+      "delta_pp": 0.0,
+      "population_model_speedup": 1.0,
+      "fixed_32_token_speedup": 1.0,
+      "wall_speedup": 1.0,
+      "paired": {
+        "gained": 0,
+        "lost": 0,
+        "net": 0,
+        "groups": {
+          "short": {
+            "count": 900,
+            "baseline_correct": 617,
+            "reduced_correct": 617
+          },
+          "medium": {
+            "count": 900,
+            "baseline_correct": 490,
+            "reduced_correct": 490
+          }
+        }
+      }
+    },
+    {
+      "suite": "videomme",
+      "config": "resolution_r050",
+      "status": "complete",
+      "origin": "retry",
+      "result": {
+        "attempt": "attempt_20261107T200836_141303Z",
+        "count": 1800,
+        "execution": {
+          "adaptation": "shared per-clip spatial baseline; preserve full duration and 2 fps",
+          "adaptive_baseline_decoder_tokens": 131072,
+          "cache": "full GPU KV; no eviction",
+          "decoder_features": "CPU, staged per prefill chunk",
+          "prefill_chunk_tokens": 512,
+          "timing_protocol": "streamed_video_v1",
+          "video_pixels": "CPU, staged per vision chunk",
+          "vision_temporal_group_chunk": 1
+        },
+        "output_cutoffs": 0,
+        "sample_identity": "f2d93a4c1c114017e45c8a1e3bf9de1f9db9049ea33c0b91e3082062fa13c9f6",
+        "score_percent": 61.22222222222222,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "ff29b33136f618f421f4ed52c54235b6cf98794a39f39c642f9d2452eb649d38",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "e499576e0931e6b9115da847d76b0ae3ce0374bed1319d7a942074565a4d2191",
+          "results.json": "a71fa6d9136e687588db9f81f764186d2c9bb31c4f7631b1a0acf386333da04e",
+          "runtime.json": "f4553ca71a90221615868094c749bfa741b0907d2670ccab40b6e642081690b6",
+          "samples.jsonl": "7396b8c8c16e9e80838e57ac1c7e28a773fa6c94128e191463993b9cd0c419b1",
+          "telemetry.jsonl": "564fe61c66d54335d7a4a1c65d61f8b782e2588087bd7c3f83ee3619d6eb0d87",
+          "validated.json": "9c5ef4ff132f62c022d920ccfa3d05da9bce5a285aa9a79e5ef44463840c7d1e",
+          "video_inputs.jsonl": "6a9dd7925b5e55a5fbb294ee7de948f4da450ef47f0a8854b96e20304b323e5d"
+        },
+        "telemetry": {
+          "actual_retention": 0.4565994289840533,
+          "decode_seconds": {
+            "max": 0.13782815635204315,
+            "mean": 0.09659992013954453,
+            "total": 173.87985625118017
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 24.008789738847145,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 10985,
+            "mean": 2959.1666666666665,
+            "total": 5326500
+          },
+          "input_visual_tokens": {
+            "max": 60336,
+            "mean": 35840.32166666666,
+            "total": 64512579
+          },
+          "model_seconds": {
+            "max": 83.22859630733728,
+            "mean": 43.9428409810654,
+            "total": 79097.11376591772
+          },
+          "original_input_visual_tokens": {
+            "max": 126350,
+            "mean": 78494.01333333334,
+            "total": 141289224
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3600
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 9824737280,
+            "mean": 6719251136.853333,
+            "total": 12094652046336
+          },
+          "prefill_seconds": {
+            "max": 63.391825534403324,
+            "mean": 36.908486718320184,
+            "total": 66435.27609297633
+          },
+          "reduction_seconds": {
+            "max": 0.4770500287413597,
+            "mean": 0.21118430777142444,
+            "total": 380.131753988564
+          },
+          "vision_and_embedding_seconds": {
+            "max": 24.35129178315401,
+            "mean": 6.725188650099768,
+            "total": 12105.339570179582
+          }
+        },
+        "video_adaptation": {
+          "adapted_questions": 846,
+          "frame_policy": "unchanged 2 fps, full duration",
+          "max_actual_decoder_input_tokens": 65385,
+          "max_adaptive_baseline_visual_tokens": 126350,
+          "max_original_policy_visual_tokens": 552288,
+          "original_policy_retention": 0.22892569660642417,
+          "questions": 1800
+        }
+      },
+      "directory": "results_video_retry_gpu1/full/qat_w4/videomme/resolution_r050",
+      "marker_sha256": "ec7e79988a87a7b39a04725ad76b5f8533a22ea5d79f3c48d171dd5bb6d46a94",
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/videomme/resolution_r050/attempt_20261107T200836_141303Z",
+      "wall_hours": 30.486754466388888,
+      "p50_model_seconds": 34.87731886655092,
+      "p95_model_seconds": 75.40905555337667,
+      "delta_pp": -0.27777777777777857,
+      "population_model_speedup": 2.0590225839362177,
+      "fixed_32_token_speedup": 1.9815235549242063,
+      "wall_speedup": 1.8173080270436632,
+      "paired": {
+        "gained": 69,
+        "lost": 74,
+        "net": -5,
+        "groups": {
+          "short": {
+            "count": 900,
+            "baseline_correct": 617,
+            "reduced_correct": 618
+          },
+          "medium": {
+            "count": 900,
+            "baseline_correct": 490,
+            "reduced_correct": 484
+          }
+        }
+      }
+    },
+    {
+      "suite": "videomme",
+      "config": "resolution_r025",
+      "status": "complete",
+      "origin": "original",
+      "result": {
+        "attempt": "attempt_20261102T041600_375035Z",
+        "count": 1800,
+        "output_cutoffs": 0,
+        "sample_identity": "f2d93a4c1c114017e45c8a1e3bf9de1f9db9049ea33c0b91e3082062fa13c9f6",
+        "score_percent": 61.72222222222222,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "ff29b33136f618f421f4ed52c54235b6cf98794a39f39c642f9d2452eb649d38",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "f0bea98816e5a5ced1d382c9b6a0944bce4dc4a75a0afa77c9e3707357e2f190",
+          "results.json": "9d9c37f6077879d8116ca8aa6a8bf052c3efb141fc8a4ad46e68e8f0f9448b76",
+          "runtime.json": "4046efbb986f2e2a19e2b89a8f2170467645765e7f6f7bb522b76609dab6f5f5",
+          "samples.jsonl": "e82531d2c9fecdd690b9f3bbdbdfa0608fc0a44184ea99859cb94c8fd31385fa",
+          "telemetry.jsonl": "7fb74cdb5b9f7271e4cc431a83b02beced9c53ba2c79f771c3a072245c2c8642",
+          "validated.json": "1a40272fed82fddcdc38628daf6a40a5780ccdf4e329b7264978f3895fa579c4",
+          "video_inputs.jsonl": "3a2d530c50c3ca62f49cfed51ea901dfd6149241a9116a5b0ad10aa7f0424bdf"
+        },
+        "telemetry": {
+          "actual_retention": 0.24842458505354306,
+          "decode_seconds": {
+            "max": 0.1642742156982422,
+            "mean": 0.09954609630422459,
+            "total": 179.18297334760427
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 12.519665147695276,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 10985,
+            "mean": 2959.1666666666665,
+            "total": 5326500
+          },
+          "input_visual_tokens": {
+            "max": 133888,
+            "mean": 38893.043333333335,
+            "total": 70007478
+          },
+          "model_seconds": {
+            "max": 135.5638670399785,
+            "mean": 37.53060713445561,
+            "total": 67555.0928420201
+          },
+          "original_input_visual_tokens": {
+            "max": 552288,
+            "mean": 156558.75333333333,
+            "total": 281805756
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3600
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 32035073536,
+            "mean": 10836693833.102222,
+            "total": 19506048899584
+          },
+          "prefill_seconds": {
+            "max": 131.45907642692327,
+            "mean": 36.22380761803852,
+            "total": 65202.85371246934
+          },
+          "reduction_seconds": {
+            "max": 0.0005450770258903503,
+            "mean": 7.608858661519157e-05,
+            "total": 0.13695945590734482
+          },
+          "vision_and_embedding_seconds": {
+            "max": 3.959913305938244,
+            "mean": 1.2068594006490376,
+            "total": 2172.3469211682677
+          }
+        }
+      },
+      "directory": "results/full/qat_w4/videomme/resolution_r025",
+      "marker_sha256": "6f4d8136b107a83a4117f7bbeea91b5121403c25b322c97a01d1c6efc816061a",
+      "attempt_directory": "results/full/qat_w4/videomme/resolution_r025/attempt_20261102T041600_375035Z",
+      "wall_hours": 32.9522152525,
+      "p50_model_seconds": 15.921913042664528,
+      "p95_model_seconds": 105.5825633853674
+    },
+    {
+      "suite": "videomme",
+      "config": "resolution_r010",
+      "status": "complete",
+      "origin": "original",
+      "result": {
+        "attempt": "attempt_20261102T073411_698811Z",
+        "count": 1800,
+        "output_cutoffs": 0,
+        "sample_identity": "f2d93a4c1c114017e45c8a1e3bf9de1f9db9049ea33c0b91e3082062fa13c9f6",
+        "score_percent": 59.0,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "ff29b33136f618f421f4ed52c54235b6cf98794a39f39c642f9d2452eb649d38",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "9ed35d13f4dbebb3b01f56bf66d395eef9bba9149cd4e3137125779e4e9b053d",
+          "results.json": "9eb4de8bd270c469f43a9c5650b8325c172ebf4000852fa627920d16a69dc861",
+          "runtime.json": "4046efbb986f2e2a19e2b89a8f2170467645765e7f6f7bb522b76609dab6f5f5",
+          "samples.jsonl": "a038780e558e7a8e964373833eb51b47a21126e1e07996eb8e1ca7e01d48c147",
+          "telemetry.jsonl": "aeb49d0f7bb4909f50406d62a3ee051343d4f7f80ee5915b841f2b4be6b1cd42",
+          "validated.json": "e6d5169c23d9acdd202773f44082fbca3e25d38d9d6b4ea02d122f121a730a13",
+          "video_inputs.jsonl": "bc81d02b3877be5c047fb4bf6d225c1096f92ebc581ec3d6ed503b570f924be9"
+        },
+        "telemetry": {
+          "actual_retention": 0.08659425324158389,
+          "decode_seconds": {
+            "max": 0.1445315033197403,
+            "mean": 0.08847746922738023,
+            "total": 159.2594446092844
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 6.441356360084481,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 10985,
+            "mean": 2959.1666666666665,
+            "total": 5326500
+          },
+          "input_visual_tokens": {
+            "max": 52300,
+            "mean": 13557.088333333333,
+            "total": 24402759
+          },
+          "model_seconds": {
+            "max": 56.979707196354866,
+            "mean": 14.468970751489202,
+            "total": 26044.147352680564
+          },
+          "original_input_visual_tokens": {
+            "max": 552288,
+            "mean": 156558.75333333333,
+            "total": 281805756
+          },
+          "output_text_tokens": {
+            "max": 2,
+            "mean": 2.0,
+            "total": 3600
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 14941326848,
+            "mean": 5528486427.875556,
+            "total": 9951275570176
+          },
+          "prefill_seconds": {
+            "max": 53.89579075574875,
+            "mean": 13.855252127154834,
+            "total": 24939.4538288787
+          },
+          "reduction_seconds": {
+            "max": 0.0005486607551574707,
+            "mean": 7.24392260114352e-05,
+            "total": 0.13039060682058334
+          },
+          "vision_and_embedding_seconds": {
+            "max": 2.974231220781803,
+            "mean": 0.5248707023552722,
+            "total": 944.76726423949
+          }
+        }
+      },
+      "directory": "results/full/qat_w4/videomme/resolution_r010",
+      "marker_sha256": "7b9c6bf3cd84526d529ec004b1c6f935940b81356434fb34a938de22c6631c3c",
+      "attempt_directory": "results/full/qat_w4/videomme/resolution_r010/attempt_20261102T073411_698811Z",
+      "wall_hours": 20.03887435527778,
+      "p50_model_seconds": 6.539563089609146,
+      "p95_model_seconds": 39.27606192231178
+    },
+    {
+      "suite": "videomme",
+      "config": "uniform_r050",
+      "status": "in progress / uncommitted",
+      "origin": null,
+      "partial_questions": 296,
+      "expected_questions": 1800,
+      "attempt_directory": "results_video_retry_gpu1/full/qat_w4/videomme/uniform_r050/attempt_20261109T023755_583079Z"
+    },
+    {
+      "suite": "videomme",
+      "config": "uniform_r025",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videomme",
+      "config": "uniform_r010",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videomme",
+      "config": "merge_r050",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videomme",
+      "config": "merge_r025",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videomme",
+      "config": "merge_r010",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_perception",
+      "config": "baseline_r100",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_perception",
+      "config": "resolution_r050",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_perception",
+      "config": "resolution_r025",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_perception",
+      "config": "resolution_r010",
+      "status": "complete",
+      "origin": "original",
+      "result": {
+        "attempt": "attempt_20261104T000219_526911Z",
+        "count": 300,
+        "output_cutoffs": 1,
+        "sample_identity": "9b59ddda0b6e9f353c2c9792e49eda39b7972f6a0324556be9a69c5af19dde45",
+        "score_percent": 38.0,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "8f830d38f1d7fd2fd1ba9a0a6f54929b6fc0305ab9c42c6c321fea9201de9cb5",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "fa5f3959cd61b72b6563c384b2544c20afd97fb53f718afbb104dda569916e76",
+          "results.json": "a1fea6d4346ee2c261185b4295dc7cef41d6c806236187e242301ecde38b46f1",
+          "runtime.json": "4c2aa0cda2dbd9664bc89a3fd28b45ace5e99884d6a227b637197872065dfbe7",
+          "samples.jsonl": "38def0a03203ad7579f4f0d452f7bfc9d5c9e2896b8a8f986ff13988c54ac12e",
+          "telemetry.jsonl": "5cd1bb884e39eb3c394e1873d55a8a7340df7bb050668ae0b395245a67f211f8",
+          "validated.json": "50f345943fcdefbf6344d447579248f657408407a5454146912ee4f265b17a1d",
+          "video_inputs.jsonl": "50769b0ef4a2b6cfcb22d2b9f2e68af345b8ee8a191a1270548b6d1fd659ad8e"
+        },
+        "telemetry": {
+          "actual_retention": 0.08671503949847818,
+          "decode_seconds": {
+            "max": 23.02346334606409,
+            "mean": 0.19693223183353742,
+            "total": 59.079669550061226
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 55.85784482045307,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 21460,
+            "mean": 5178.966666666666,
+            "total": 1553690
+          },
+          "input_visual_tokens": {
+            "max": 101500,
+            "mean": 24842.913333333334,
+            "total": 7452874
+          },
+          "model_seconds": {
+            "max": 113.60816022008657,
+            "mean": 26.387781913504003,
+            "total": 7916.334574051201
+          },
+          "original_input_visual_tokens": {
+            "max": 1169280,
+            "mean": 286489.0966666667,
+            "total": 85946729
+          },
+          "output_text_tokens": {
+            "max": 256,
+            "mean": 3.1233333333333335,
+            "total": 937
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 27146916864,
+            "mean": 8276253987.84,
+            "total": 2482876196352
+          },
+          "prefill_seconds": {
+            "max": 110.17892888188362,
+            "mean": 25.306648332178593,
+            "total": 7591.994499653578
+          },
+          "reduction_seconds": {
+            "max": 9.964406490325928e-05,
+            "mean": 7.305840651194255e-05,
+            "total": 0.021917521953582764
+          },
+          "vision_and_embedding_seconds": {
+            "max": 3.294029153883457,
+            "mean": 0.883810459425052,
+            "total": 265.1431378275156
+          }
+        }
+      },
+      "directory": "results/full/qat_w4/videommmu_perception/resolution_r010",
+      "marker_sha256": "dcafcb4dc694ad91c6a27b201b1d6418ef4979bc5cf19b4064809ac3a170b7e0",
+      "attempt_directory": "results/full/qat_w4/videommmu_perception/resolution_r010/attempt_20261104T000219_526911Z",
+      "wall_hours": 7.445174101666667,
+      "p50_model_seconds": 24.632442206144333,
+      "p95_model_seconds": 52.43609907478094
+    },
+    {
+      "suite": "videommmu_perception",
+      "config": "uniform_r050",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_perception",
+      "config": "uniform_r025",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_perception",
+      "config": "uniform_r010",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_perception",
+      "config": "merge_r050",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_perception",
+      "config": "merge_r025",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_perception",
+      "config": "merge_r010",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_comprehension",
+      "config": "baseline_r100",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r050",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r025",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r010",
+      "status": "complete",
+      "origin": "original",
+      "result": {
+        "attempt": "attempt_20261104T025611_717969Z",
+        "count": 300,
+        "output_cutoffs": 4,
+        "sample_identity": "fc2605fd0efd931d446051a74c9a0d4cbab680365b6a0fc81276f65f86ec74be",
+        "score_percent": 21.667,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "831baa5f34e24c0de06389c79f920e1c75a40d6c0033e6bfbbe85a089bf354e6",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "6660ad305f60d667284e03e732e761b1449f84549ac47fab00fd1c17d6f77ecd",
+          "results.json": "7d4c0645e8fef30030a4fc63ea0382d1609e03a60cf055ff267effa278441d7b",
+          "runtime.json": "f870c5a3236b55f26a38e529dbae973ed17b6facc2e832f5f57ed65f6e37108e",
+          "samples.jsonl": "4ed96a27c876b00704715ac7941821d25067cdd60588ad5bf3088f7292765c0a",
+          "telemetry.jsonl": "23261303090c0e9065fdd0c293e8dfd41adefc301459f99dde4810f94c6afc8c",
+          "validated.json": "13d8a31752257fe02fbeda3da36f8b31f82150280c57905d538b86af7d942289",
+          "video_inputs.jsonl": "50769b0ef4a2b6cfcb22d2b9f2e68af345b8ee8a191a1270548b6d1fd659ad8e"
+        },
+        "telemetry": {
+          "actual_retention": 0.08671503949847818,
+          "decode_seconds": {
+            "max": 34.27527965605259,
+            "mean": 0.7121422232190768,
+            "total": 213.64266696572304
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 55.793017763230544,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 21382,
+            "mean": 5182.033333333334,
+            "total": 1554610
+          },
+          "input_visual_tokens": {
+            "max": 101500,
+            "mean": 24842.913333333334,
+            "total": 7452874
+          },
+          "model_seconds": {
+            "max": 148.030270524323,
+            "mean": 26.929102239931623,
+            "total": 8078.730671979487
+          },
+          "original_input_visual_tokens": {
+            "max": 1169280,
+            "mean": 286489.0966666667,
+            "total": 85946729
+          },
+          "output_text_tokens": {
+            "max": 256,
+            "mean": 8.07,
+            "total": 2421
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 27133454848,
+            "mean": 8276783458.986667,
+            "total": 2483035037696
+          },
+          "prefill_seconds": {
+            "max": 110.40265455842018,
+            "mean": 25.32239871551593,
+            "total": 7596.719614654779
+          },
+          "reduction_seconds": {
+            "max": 0.0002146512269973755,
+            "mean": 7.56082683801651e-05,
+            "total": 0.02268248051404953
+          },
+          "vision_and_embedding_seconds": {
+            "max": 3.3510655015707016,
+            "mean": 0.89411705215772,
+            "total": 268.235115647316
+          }
+        }
+      },
+      "directory": "results/full/qat_w4/videommmu_comprehension/resolution_r010",
+      "marker_sha256": "39c526f65ecbbd7a53f15b6e8717fd78222e791e6116fd19812db3fb2e06ef14",
+      "attempt_directory": "results/full/qat_w4/videommmu_comprehension/resolution_r010/attempt_20261104T025611_717969Z",
+      "wall_hours": 7.374637816666667,
+      "p50_model_seconds": 24.958239555358887,
+      "p95_model_seconds": 53.84188146144152
+    },
+    {
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r050",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r025",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r010",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_comprehension",
+      "config": "merge_r050",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_comprehension",
+      "config": "merge_r025",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_comprehension",
+      "config": "merge_r010",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_adaptation",
+      "config": "baseline_r100",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r050",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r025",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r010",
+      "status": "complete",
+      "origin": "original",
+      "result": {
+        "attempt": "attempt_20261104T094545_262087Z",
+        "count": 300,
+        "output_cutoffs": 40,
+        "sample_identity": "7742f209ca3d51ddd6ec367c5d24db8653b2a5f2aaf2cf67eee81dded367b25b",
+        "score_percent": 27.667,
+        "sha256": {
+          "GPU_GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "GPU_READY": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataset.json": "898ff263f4f9b405f0f69b1e553fab7ea3f0fd257c21baa4a5e4ecbc4ac45125",
+          "exit.json": "1e3f6691f455051e8adb15d961e4bf3c7a17e83dd88b2afdd13315cc288250bb",
+          "job.json": "5baea260b05f24f912d041de79adf5c7a42bf63f8c383079ecf7725a23ed93b5",
+          "results.json": "2fb2130a3e9d5f0d0a17309c76034695ccadc181c731de57e1792d8e017965a6",
+          "runtime.json": "0ad4e7392facd2c5473472ff5d5bf8cdf410e4b70e8524794d5e11c6fbd26fd6",
+          "samples.jsonl": "4eeb0e237bb3211381c63163d484a949bf88bc0ef3824e6a0155a90a15d7b617",
+          "telemetry.jsonl": "1dd8350906a7e67db7e01dbde0860a56466badca9680fba8a9479a9b73bb1bb6",
+          "validated.json": "47b5aab28faa73995d13d25ddfc7eab62b927c9c935e7b2156472820964aa3e1",
+          "video_inputs.jsonl": "50769b0ef4a2b6cfcb22d2b9f2e68af345b8ee8a191a1270548b6d1fd659ad8e"
+        },
+        "telemetry": {
+          "actual_retention": 0.08671503949847818,
+          "decode_seconds": {
+            "max": 29.26846906542778,
+            "mean": 5.2829628087083496,
+            "total": 1584.888842612505
+          },
+          "fixed_output_profile": {
+            "mean_seconds": 55.78809303790331,
+            "samples": 3
+          },
+          "input_text_tokens": {
+            "max": 21515,
+            "mean": 5160.696666666667,
+            "total": 1548209
+          },
+          "input_visual_tokens": {
+            "max": 101500,
+            "mean": 24842.913333333334,
+            "total": 7452874
+          },
+          "model_seconds": {
+            "max": 122.1040228009224,
+            "mean": 31.45210304198166,
+            "total": 9435.630912594497
+          },
+          "original_input_visual_tokens": {
+            "max": 1169280,
+            "mean": 286489.0966666667,
+            "total": 85946729
+          },
+          "output_text_tokens": {
+            "max": 256,
+            "mean": 58.513333333333335,
+            "total": 17554
+          },
+          "peak_gpu_allocated_bytes": {
+            "max": 27156413440,
+            "mean": 8273100120.746667,
+            "total": 2481930036224
+          },
+          "prefill_seconds": {
+            "max": 110.26131414622068,
+            "mean": 25.284112787867585,
+            "total": 7585.233836360276
+          },
+          "reduction_seconds": {
+            "max": 0.0001223236322402954,
+            "mean": 7.157718141873677e-05,
+            "total": 0.021473154425621033
+          },
+          "vision_and_embedding_seconds": {
+            "max": 3.4259847179055214,
+            "mean": 0.8844542001187802,
+            "total": 265.33626003563404
+          }
+        }
+      },
+      "directory": "results/full/qat_w4/videommmu_adaptation/resolution_r010",
+      "marker_sha256": "71769b93f612134518c27ee7fb065cb9b6b6b87d6352c648bef84cd4f7784024",
+      "attempt_directory": "results/full/qat_w4/videommmu_adaptation/resolution_r010/attempt_20261104T094545_262087Z",
+      "wall_hours": 7.36746363,
+      "p50_model_seconds": 28.886522002518177,
+      "p95_model_seconds": 63.206833466887474
+    },
+    {
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r050",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r025",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r010",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_adaptation",
+      "config": "merge_r050",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_adaptation",
+      "config": "merge_r025",
+      "status": "pending",
+      "origin": null
+    },
+    {
+      "suite": "videommmu_adaptation",
+      "config": "merge_r010",
+      "status": "pending",
+      "origin": null
+    }
+  ]
+}

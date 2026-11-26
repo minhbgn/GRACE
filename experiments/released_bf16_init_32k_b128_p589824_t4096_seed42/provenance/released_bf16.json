@@ -1,0 +1,102 @@
+{
+  "config": {
+    "architectures": [
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "bos_token_id": null,
+    "dtype": "bfloat16",
+    "eos_token_id": 151645,
+    "image_token_id": 151655,
+    "model_type": "qwen3_vl",
+    "pad_token_id": 151643,
+    "text_config": {
+      "attention_bias": false,
+      "attention_dropout": 0.0,
+      "bos_token_id": 151643,
+      "dtype": "bfloat16",
+      "eos_token_id": 151645,
+      "head_dim": 128,
+      "hidden_act": "silu",
+      "hidden_size": 2048,
+      "initializer_range": 0.02,
+      "intermediate_size": 6144,
+      "max_position_embeddings": 262144,
+      "model_type": "qwen3_vl_text",
+      "num_attention_heads": 16,
+      "num_hidden_layers": 28,
+      "num_key_value_heads": 8,
+      "pad_token_id": null,
+      "rms_norm_eps": 1e-06,
+      "rope_parameters": {
+        "mrope_interleaved": true,
+        "mrope_section": [
+          24,
+          20,
+          20
+        ],
+        "rope_theta": 5000000,
+        "rope_type": "default"
+      },
+      "tie_word_embeddings": true,
+      "use_cache": true,
+      "vocab_size": 151936
+    },
+    "tie_word_embeddings": true,
+    "transformers_version": "5.9.0",
+    "use_cache": true,
+    "video_token_id": 151656,
+    "vision_config": {
+      "deepstack_visual_indexes": [
+        5,
+        11,
+        17
+      ],
+      "depth": 24,
+      "dtype": "bfloat16",
+      "hidden_act": "gelu_pytorch_tanh",
+      "hidden_size": 1024,
+      "in_channels": 3,
+      "initializer_range": 0.02,
+      "intermediate_size": 4096,
+      "model_type": "qwen3_vl_vision",
+      "num_heads": 16,
+      "num_position_embeddings": 2304,
+      "out_hidden_size": 2048,
+      "patch_size": 16,
+      "spatial_merge_size": 2,
+      "temporal_patch_size": 2
+    },
+    "vision_end_token_id": 151653,
+    "vision_start_token_id": 151652
+  },
+  "files_sha256": {
+    "README.md": "b9948639bac771c5a169dcf60791a65aa05be983e30188b37f6d4c1056e41b0c",
+    "chat_template.jinja": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+    "config.json": "63f0e7827a19da447a1cc9258d348bbaa0a17933f19fc294a517531b50b1d752",
+    "generation_config.json": "f8b689677eaf828e409db5b063a055c92c17c58b12a4338f872858fb31c491c2",
+    "model.safetensors": "4b522cda73d4ebd792e97a89cbca51091287b65c87e705be53f56c035715bfd3",
+    "processor_config.json": "479b624a5b02852c3947d0b88e2570bb10464d583ad45092e2028099614bd820",
+    "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "tokenizer_config.json": "02d21d5b995f73c8757b09343c4b5e9294ef9413e36ebe37e01de8f225e490f4",
+    "trainer_state.json": "e8d0b0c77e6780c2bbbc8e306d081ff9d02ebbcba9bdbbd61235c859dd4117e7"
+  },
+  "generation_config": {
+    "do_sample": true,
+    "eos_token_id": [
+      151645,
+      151645,
+      151643
+    ],
+    "pad_token_id": 151643,
+    "repetition_penalty": 1.0,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "transformers_version": "5.9.0"
+  },
+  "identity_verification": "pinned weight SHA256",
+  "loading_format": "unpacked floating-point safetensors, Transformers Qwen3VL",
+  "path": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+  "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-BF16",
+  "revision": "82f9a267340f65a3619be0e19daf6582d3998a5f"
+}

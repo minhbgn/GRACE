@@ -1,3 +1,5 @@
+> **Local experiment workspace — updated 2026-11-25:** Start with the [experiment README](experiments/README.md) for all twelve evaluation suites, the [combined report](experiments/REPORT.md), and [merged JSON/CSV results](reports/SUMMARY.md). From this directory: `bash evaluate.sh plan`, `check`, `summarize`, or `run --gpus 0,2`. The upstream project documentation follows below.
+
 <p align="center">
   <img src="assets/swan.png" alt="GRACE" width="200"/>
 </p>
@@ -451,13 +453,43 @@ GRACE-specific knobs (defaults follow the paper):
 <a id="evaluation"></a>
 ## 📈 Evaluation
 
-We score every checkpoint with [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval).
-The per-benchmark configs live under
-[evaluation/](https://github.com/ForeverBlue816/GRACE/tree/main/evaluation).
+The per-benchmark scripts live under [evaluation/](evaluation/). The seven
+`eval_*.py` scripts used below run Transformers inference and local scoring.
+They read local benchmark files (TSV, Parquet, or JSON plus images); they do not
+invoke `lmms-eval` or automatically download those files.
+
+For the matched vanilla baseline / SFT / QAT / GRACE comparison, launch from this GRACE directory:
+
+```bash
+conda activate grace
+export CUDA_VISIBLE_DEVICES=0,1  # select available GPUs
+export NPROC=2
+bash evaluation/runners/run_all_constrained_evals.sh --dry-run
+bash evaluation/runners/run_all_constrained_evals.sh --check
+# Once model and dataset checks pass:
+bash evaluation/runners/run_all_constrained_evals.sh
+```
+
+The launcher includes the original Qwen3-VL-2B-Instruct baseline by default.
+Use `METHODS=baseline` to add only its seven results to an existing experiment,
+then run `python evaluation/audits/summarize_constrained_evals.py --write`.
+See [vanilla baseline instructions](evaluation/docs/README_vanilla_baseline.md) for
+checkpoint selection and matching the saved evaluation image budget.
+
+Dataset paths default to benchmark folders inside `evaluation/`, independently
+of the ShareGPT4V training data. Downloaded benchmark assets are not bundled
+with the repository. Follow the [evaluation dataset download guide](evaluation/docs/README_datasets.md)
+to prepare all seven suites. See the [constrained evaluation instructions](qwen-vl-finetune/scripts/README_constrained.md#evaluate-the-actual-exported-models)
+for the exact layouts, path overrides, model exports, and output locations.
+Some additional workflows, such as `mmmu/run_mmmu.py`, use vLLM and TSV download
+helpers; they have different input formats from the local `eval_*.py` scripts.
+
+The existing SLURM launchers require adapting their cluster modules, environment,
+and data paths before submission. Their model override is `MODEL_PATH`:
 
 ```bash
 # Example: evaluate the released W4 checkpoint on ScienceQA
-sbatch --export=ALL,MODEL=ForeverBlue/Qwen3-VL-2B-GRACE-W4G128 \
+sbatch --export=ALL,MODEL_PATH=ForeverBlue/Qwen3-VL-2B-GRACE-W4G128 \
        evaluation/ScienceQA/eval_scienceqa.slurm
 ```
 

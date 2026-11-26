@@ -9,6 +9,10 @@
 #SBATCH --job-name=qwen3vl_bf16
 #SBATCH --output=%x_%j.out
 #SBATCH --error=%x_%j.err
+# Replace the address below before submitting. Slurm will send mail when the
+# job fails (including a non-zero exit propagated by srun/torchrun).
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=<your_email_address>
 
 # ============================================================
 # Qwen3-VL-2B BF16 fine-tuning (NO quantization).

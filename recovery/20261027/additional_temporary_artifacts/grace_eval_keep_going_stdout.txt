@@ -1,0 +1,56 @@
+
+[baseline / hallusionbench]
+
+[baseline / mmbench]
+
+[baseline / scienceqa]
+
+[baseline / ai2d]
+
+[baseline / mmmu]
+
+[baseline / seedbench_img]
+
+[baseline / mmstar]
+
+[sft / hallusionbench]
+
+[sft / mmbench]
+
+[sft / scienceqa]
+
+[sft / ai2d]
+
+[sft / mmmu]
+
+[sft / seedbench_img]
+
+[sft / mmstar]
+
+[qat / hallusionbench]
+
+[qat / mmbench]
+
+[qat / scienceqa]
+
+[qat / ai2d]
+
+[qat / mmmu]
+
+[qat / seedbench_img]
+
+[qat / mmstar]
+
+[grace / hallusionbench]
+
+[grace / mmbench]
+
+[grace / scienceqa]
+
+[grace / ai2d]
+
+[grace / mmmu]
+
+[grace / seedbench_img]
+
+[grace / mmstar]

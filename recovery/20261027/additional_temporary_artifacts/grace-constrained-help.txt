@@ -1,0 +1,734 @@
+usage: train_qwen_constrained.py [-h]
+                                 [--model_name_or_path MODEL_NAME_OR_PATH]
+                                 [--tune_mm_llm [TUNE_MM_LLM]]
+                                 [--tune_mm_mlp [TUNE_MM_MLP]]
+                                 [--tune_mm_vision [TUNE_MM_VISION]]
+                                 [--dataset_use DATASET_USE]
+                                 [--data_flatten [DATA_FLATTEN]]
+                                 [--data_packing [DATA_PACKING]]
+                                 [--base_interval BASE_INTERVAL]
+                                 [--max_pixels MAX_PIXELS]
+                                 [--min_pixels MIN_PIXELS]
+                                 [--video_max_frames VIDEO_MAX_FRAMES]
+                                 [--video_min_frames VIDEO_MIN_FRAMES]
+                                 [--video_max_pixels VIDEO_MAX_PIXELS]
+                                 [--video_min_pixels VIDEO_MIN_PIXELS]
+                                 [--video_fps VIDEO_FPS]
+                                 [--output_dir OUTPUT_DIR]
+                                 [--per_device_train_batch_size PER_DEVICE_TRAIN_BATCH_SIZE]
+                                 [--num_train_epochs NUM_TRAIN_EPOCHS]
+                                 [--max_steps MAX_STEPS]
+                                 [--learning_rate LEARNING_RATE]
+                                 [--lr_scheduler_type {linear,cosine,cosine_with_restarts,polynomial,constant,constant_with_warmup,inverse_sqrt,reduce_lr_on_plateau,cosine_with_min_lr,cosine_warmup_with_min_lr,warmup_stable_decay,greedy}]
+                                 [--lr_scheduler_kwargs LR_SCHEDULER_KWARGS]
+                                 [--warmup_steps WARMUP_STEPS] [--optim OPTIM]
+                                 [--optim_args OPTIM_ARGS]
+                                 [--weight_decay WEIGHT_DECAY]
+                                 [--adam_beta1 ADAM_BETA1]
+                                 [--adam_beta2 ADAM_BETA2]
+                                 [--adam_epsilon ADAM_EPSILON]
+                                 [--optim_target_modules OPTIM_TARGET_MODULES]
+                                 [--gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS]
+                                 [--average_tokens_across_devices [AVERAGE_TOKENS_ACROSS_DEVICES]]
+                                 [--no_average_tokens_across_devices]
+                                 [--max_grad_norm MAX_GRAD_NORM]
+                                 [--label_smoothing_factor LABEL_SMOOTHING_FACTOR]
+                                 [--bf16 [BF16]] [--fp16 [FP16]]
+                                 [--bf16_full_eval [BF16_FULL_EVAL]]
+                                 [--fp16_full_eval [FP16_FULL_EVAL]]
+                                 [--tf32 TF32]
+                                 [--gradient_checkpointing [GRADIENT_CHECKPOINTING]]
+                                 [--gradient_checkpointing_kwargs GRADIENT_CHECKPOINTING_KWARGS]
+                                 [--torch_compile [TORCH_COMPILE]]
+                                 [--torch_compile_backend TORCH_COMPILE_BACKEND]
+                                 [--torch_compile_mode TORCH_COMPILE_MODE]
+                                 [--use_liger_kernel [USE_LIGER_KERNEL]]
+                                 [--liger_kernel_config LIGER_KERNEL_CONFIG]
+                                 [--use_cache [USE_CACHE]]
+                                 [--neftune_noise_alpha NEFTUNE_NOISE_ALPHA]
+                                 [--torch_empty_cache_steps TORCH_EMPTY_CACHE_STEPS]
+                                 [--auto_find_batch_size [AUTO_FIND_BATCH_SIZE]]
+                                 [--logging_strategy {no,steps,epoch}]
+                                 [--logging_steps LOGGING_STEPS]
+                                 [--logging_first_step [LOGGING_FIRST_STEP]]
+                                 [--log_on_each_node [LOG_ON_EACH_NODE]]
+                                 [--no_log_on_each_node]
+                                 [--logging_nan_inf_filter [LOGGING_NAN_INF_FILTER]]
+                                 [--no_logging_nan_inf_filter]
+                                 [--include_num_input_tokens_seen [INCLUDE_NUM_INPUT_TOKENS_SEEN]]
+                                 [--log_level {detail,debug,info,warning,error,critical,passive}]
+                                 [--log_level_replica {detail,debug,info,warning,error,critical,passive}]
+                                 [--disable_tqdm DISABLE_TQDM]
+                                 [--report_to REPORT_TO] [--run_name RUN_NAME]
+                                 [--project PROJECT]
+                                 [--trackio_space_id TRACKIO_SPACE_ID]
+                                 [--trackio_bucket_id TRACKIO_BUCKET_ID]
+                                 [--trackio_static_space_id TRACKIO_STATIC_SPACE_ID]
+                                 [--eval_strategy {no,steps,epoch}]
+                                 [--eval_steps EVAL_STEPS]
+                                 [--eval_delay EVAL_DELAY]
+                                 [--per_device_eval_batch_size PER_DEVICE_EVAL_BATCH_SIZE]
+                                 [--prediction_loss_only [PREDICTION_LOSS_ONLY]]
+                                 [--eval_on_start [EVAL_ON_START]]
+                                 [--eval_do_concat_batches [EVAL_DO_CONCAT_BATCHES]]
+                                 [--no_eval_do_concat_batches]
+                                 [--eval_use_gather_object [EVAL_USE_GATHER_OBJECT]]
+                                 [--eval_accumulation_steps EVAL_ACCUMULATION_STEPS]
+                                 [--include_for_metrics INCLUDE_FOR_METRICS [INCLUDE_FOR_METRICS ...]]
+                                 [--batch_eval_metrics [BATCH_EVAL_METRICS]]
+                                 [--save_only_model [SAVE_ONLY_MODEL]]
+                                 [--save_strategy {no,steps,epoch,best}]
+                                 [--save_steps SAVE_STEPS]
+                                 [--save_on_each_node [SAVE_ON_EACH_NODE]]
+                                 [--save_total_limit SAVE_TOTAL_LIMIT]
+                                 [--enable_jit_checkpoint [ENABLE_JIT_CHECKPOINT]]
+                                 [--push_to_hub [PUSH_TO_HUB]]
+                                 [--hub_token HUB_TOKEN]
+                                 [--hub_private_repo HUB_PRIVATE_REPO]
+                                 [--hub_model_id HUB_MODEL_ID]
+                                 [--hub_strategy {end,every_save,checkpoint,all_checkpoints}]
+                                 [--hub_always_push [HUB_ALWAYS_PUSH]]
+                                 [--hub_revision HUB_REVISION]
+                                 [--load_best_model_at_end [LOAD_BEST_MODEL_AT_END]]
+                                 [--metric_for_best_model METRIC_FOR_BEST_MODEL]
+                                 [--greater_is_better GREATER_IS_BETTER]
+                                 [--ignore_data_skip [IGNORE_DATA_SKIP]]
+                                 [--restore_callback_states_from_checkpoint [RESTORE_CALLBACK_STATES_FROM_CHECKPOINT]]
+                                 [--full_determinism [FULL_DETERMINISM]]
+                                 [--seed SEED] [--data_seed DATA_SEED]
+                                 [--use_cpu [USE_CPU]]
+                                 [--accelerator_config ACCELERATOR_CONFIG]
+                                 [--parallelism_config PARALLELISM_CONFIG]
+                                 [--dataloader_drop_last [DATALOADER_DROP_LAST]]
+                                 [--dataloader_num_workers DATALOADER_NUM_WORKERS]
+                                 [--dataloader_pin_memory [DATALOADER_PIN_MEMORY]]
+                                 [--no_dataloader_pin_memory]
+                                 [--dataloader_persistent_workers [DATALOADER_PERSISTENT_WORKERS]]
+                                 [--dataloader_prefetch_factor DATALOADER_PREFETCH_FACTOR]
+                                 [--remove_unused_columns [REMOVE_UNUSED_COLUMNS]]
+                                 [--no_remove_unused_columns]
+                                 [--label_names LABEL_NAMES [LABEL_NAMES ...]]
+                                 [--train_sampling_strategy {random,sequential,group_by_length}]
+                                 [--length_column_name LENGTH_COLUMN_NAME]
+                                 [--ddp_find_unused_parameters DDP_FIND_UNUSED_PARAMETERS]
+                                 [--ddp_bucket_cap_mb DDP_BUCKET_CAP_MB]
+                                 [--ddp_broadcast_buffers DDP_BROADCAST_BUFFERS]
+                                 [--ddp_static_graph DDP_STATIC_GRAPH]
+                                 [--ddp_backend {nccl,gloo,mpi,xccl,hccl,cncl,mccl}]
+                                 [--ddp_timeout DDP_TIMEOUT] [--fsdp FSDP]
+                                 [--fsdp_config FSDP_CONFIG]
+                                 [--deepspeed DEEPSPEED]
+                                 [--debug DEBUG [DEBUG ...]]
+                                 [--skip_memory_metrics [SKIP_MEMORY_METRICS]]
+                                 [--no_skip_memory_metrics]
+                                 [--do_train [DO_TRAIN]] [--do_eval [DO_EVAL]]
+                                 [--do_predict [DO_PREDICT]]
+                                 [--resume_from_checkpoint RESUME_FROM_CHECKPOINT]
+                                 [--warmup_ratio WARMUP_RATIO]
+                                 [--logging_dir LOGGING_DIR]
+                                 [--local_rank LOCAL_RANK]
+                                 [--cache_dir CACHE_DIR]
+                                 [--model_max_length MODEL_MAX_LENGTH]
+                                 [--mm_projector_lr MM_PROJECTOR_LR]
+                                 [--vision_tower_lr VISION_TOWER_LR]
+                                 [--group_by_modality_length [GROUP_BY_MODALITY_LENGTH]]
+                                 [--lora_enable [LORA_ENABLE]]
+                                 [--lora_r LORA_R] [--lora_alpha LORA_ALPHA]
+                                 [--lora_dropout LORA_DROPOUT]
+                                 [--lora_target_modules LORA_TARGET_MODULES]
+                                 [--qat_enable [QAT_ENABLE]] [--no_qat_enable]
+                                 [--qat_bits QAT_BITS]
+                                 [--qat_group_size QAT_GROUP_SIZE]
+                                 [--qat_scale_lr QAT_SCALE_LR]
+                                 [--qat_skip_extra QAT_SKIP_EXTRA]
+                                 [--qat_save_quantized [QAT_SAVE_QUANTIZED]]
+                                 [--no_qat_save_quantized]
+                                 [--grace_enable [GRACE_ENABLE]]
+                                 [--no_grace_enable]
+                                 [--teacher_model_path TEACHER_MODEL_PATH]
+                                 [--teacher_attn TEACHER_ATTN]
+                                 [--dkd_temperature DKD_TEMPERATURE]
+                                 [--dkd_alpha DKD_ALPHA] [--dkd_beta DKD_BETA]
+                                 [--dkd_chunk_size DKD_CHUNK_SIZE]
+                                 [--dkd_checkpoint_chunks [DKD_CHECKPOINT_CHUNKS]]
+                                 [--rcka_weight RCKA_WEIGHT]
+                                 [--rcka_layer RCKA_LAYER] [--ib_tau IB_TAU]
+                                 [--ib_eta IB_ETA]
+                                 [--ib_beta_init IB_BETA_INIT]
+                                 [--ib_beta_min IB_BETA_MIN]
+                                 [--ib_beta_max IB_BETA_MAX]
+                                 [--ib_ema_decay IB_EMA_DECAY]
+                                 [--dkd_warmup_steps DKD_WARMUP_STEPS]
+                                 [--rcka_warmup_steps RCKA_WARMUP_STEPS]
+                                 [--profile_steps PROFILE_STEPS]
+                                 [--profile_deepspeed_comms [PROFILE_DEEPSPEED_COMMS]]
+                                 [--skip_final_export [SKIP_FINAL_EXPORT]]
+                                 [--learning_diagnostics_steps LEARNING_DIAGNOSTICS_STEPS]
+                                 [--method METHOD]
+                                 [--subset_manifest SUBSET_MANIFEST]
+                                 [--profile_run [PROFILE_RUN]]
+                                 [--max_train_hours MAX_TRAIN_HOURS]
+                                 [--peak_memory_gib PEAK_MEMORY_GIB]
+                                 [--resume_run [RESUME_RUN]]
+
+options:
+  -h, --help            show this help message and exit
+  --model_name_or_path MODEL_NAME_OR_PATH, --model-name-or-path MODEL_NAME_OR_PATH
+  --tune_mm_llm [TUNE_MM_LLM], --tune-mm-llm [TUNE_MM_LLM]
+  --tune_mm_mlp [TUNE_MM_MLP], --tune-mm-mlp [TUNE_MM_MLP]
+  --tune_mm_vision [TUNE_MM_VISION], --tune-mm-vision [TUNE_MM_VISION]
+  --dataset_use DATASET_USE, --dataset-use DATASET_USE
+  --data_flatten [DATA_FLATTEN], --data-flatten [DATA_FLATTEN]
+  --data_packing [DATA_PACKING], --data-packing [DATA_PACKING]
+  --base_interval BASE_INTERVAL, --base-interval BASE_INTERVAL
+  --max_pixels MAX_PIXELS, --max-pixels MAX_PIXELS
+  --min_pixels MIN_PIXELS, --min-pixels MIN_PIXELS
+  --video_max_frames VIDEO_MAX_FRAMES, --video-max-frames VIDEO_MAX_FRAMES
+  --video_min_frames VIDEO_MIN_FRAMES, --video-min-frames VIDEO_MIN_FRAMES
+  --video_max_pixels VIDEO_MAX_PIXELS, --video-max-pixels VIDEO_MAX_PIXELS
+  --video_min_pixels VIDEO_MIN_PIXELS, --video-min-pixels VIDEO_MIN_PIXELS
+  --video_fps VIDEO_FPS, --video-fps VIDEO_FPS
+  --output_dir OUTPUT_DIR, --output-dir OUTPUT_DIR
+                        The output directory where the model predictions and
+                        checkpoints will be written. (default: None)
+  --per_device_train_batch_size PER_DEVICE_TRAIN_BATCH_SIZE, --per-device-train-batch-size PER_DEVICE_TRAIN_BATCH_SIZE
+                        The batch size per device for training. (default: 8)
+  --num_train_epochs NUM_TRAIN_EPOCHS, --num-train-epochs NUM_TRAIN_EPOCHS
+                        Total number of training epochs to perform. (default:
+                        3.0)
+  --max_steps MAX_STEPS, --max-steps MAX_STEPS
+                        Overrides `num_train_epochs`. If set to a positive
+                        number, the total number of training steps to perform.
+                        (default: -1)
+  --learning_rate LEARNING_RATE, --learning-rate LEARNING_RATE
+                        The initial learning rate for the optimizer. (default:
+                        5e-05)
+  --lr_scheduler_type {linear,cosine,cosine_with_restarts,polynomial,constant,constant_with_warmup,inverse_sqrt,reduce_lr_on_plateau,cosine_with_min_lr,cosine_warmup_with_min_lr,warmup_stable_decay,greedy}, --lr-scheduler-type {linear,cosine,cosine_with_restarts,polynomial,constant,constant_with_warmup,inverse_sqrt,reduce_lr_on_plateau,cosine_with_min_lr,cosine_warmup_with_min_lr,warmup_stable_decay,greedy}
+                        The learning rate scheduler type to use. See
+                        `SchedulerType` for all possible values. (default:
+                        linear)
+  --lr_scheduler_kwargs LR_SCHEDULER_KWARGS, --lr-scheduler-kwargs LR_SCHEDULER_KWARGS
+                        The extra arguments for the lr_scheduler. See the
+                        documentation of each scheduler for possible values.
+                        (default: None)
+  --warmup_steps WARMUP_STEPS, --warmup-steps WARMUP_STEPS
+                        Number of steps for a linear warmup from 0 to
+                        `learning_rate`. Can be an integer (exact steps) or a
+                        float in [0, 1) (ratio of total steps). (default: 0)
+  --optim OPTIM
+  --optim_args OPTIM_ARGS, --optim-args OPTIM_ARGS
+                        Optional arguments supplied to optimizers such as
+                        AnyPrecisionAdamW, AdEMAMix, and GaLore. (default:
+                        None)
+  --weight_decay WEIGHT_DECAY, --weight-decay WEIGHT_DECAY
+                        Weight decay coefficient applied by the optimizer.
+                        Automatically excluded from bias and LayerNorm
+                        parameters. (default: 0.0)
+  --adam_beta1 ADAM_BETA1, --adam-beta1 ADAM_BETA1
+                        The exponential decay rate for the first moment
+                        estimates (momentum) in Adam-based optimizers.
+                        (default: 0.9)
+  --adam_beta2 ADAM_BETA2, --adam-beta2 ADAM_BETA2
+                        The exponential decay rate for the second moment
+                        estimates (variance) in Adam-based optimizers.
+                        (default: 0.999)
+  --adam_epsilon ADAM_EPSILON, --adam-epsilon ADAM_EPSILON
+                        Epsilon value for numerical stability in Adam-based
+                        optimizers. (default: 1e-08)
+  --optim_target_modules OPTIM_TARGET_MODULES, --optim-target-modules OPTIM_TARGET_MODULES
+                        The target modules to optimize. Currently used for the
+                        GaLore and APOLLO algorithms. (default: None)
+  --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS, --gradient-accumulation-steps GRADIENT_ACCUMULATION_STEPS
+                        Number of update steps to accumulate gradients before
+                        performing a backward/update pass. Effective batch
+                        size = per_device_train_batch_size * num_devices *
+                        gradient_accumulation_steps. (default: 1)
+  --average_tokens_across_devices [AVERAGE_TOKENS_ACROSS_DEVICES], --average-tokens-across-devices [AVERAGE_TOKENS_ACROSS_DEVICES]
+                        Whether or not to average tokens across devices. If
+                        enabled, will use all_reduce to synchronize
+                        num_tokens_in_batch for precise loss calculation.
+                        Reference: https://github.com/huggingface/transformers
+                        /issues/34242 (default: True)
+  --no_average_tokens_across_devices, --no-average-tokens-across-devices
+                        Whether or not to average tokens across devices. If
+                        enabled, will use all_reduce to synchronize
+                        num_tokens_in_batch for precise loss calculation.
+                        Reference: https://github.com/huggingface/transformers
+                        /issues/34242 (default: False)
+  --max_grad_norm MAX_GRAD_NORM, --max-grad-norm MAX_GRAD_NORM
+                        Maximum gradient norm for gradient clipping. Set to 0
+                        to disable. (default: 1.0)
+  --label_smoothing_factor LABEL_SMOOTHING_FACTOR, --label-smoothing-factor LABEL_SMOOTHING_FACTOR
+                        Label smoothing factor to prevent overconfidence. Zero
+                        means no smoothing. (default: 0.0)
+  --bf16 [BF16]         Enable bfloat16 (BF16) mixed precision training.
+                        Generally preferred over FP16 due to better numerical
+                        stability. (default: False)
+  --fp16 [FP16]         Enable float16 (FP16) mixed precision training.
+                        Consider using BF16 instead if your hardware supports
+                        it. (default: False)
+  --bf16_full_eval [BF16_FULL_EVAL], --bf16-full-eval [BF16_FULL_EVAL]
+                        Use full BF16 precision for evaluation (not just mixed
+                        precision). Faster and saves memory. (default: False)
+  --fp16_full_eval [FP16_FULL_EVAL], --fp16-full-eval [FP16_FULL_EVAL]
+                        Use full FP16 precision for evaluation (not just mixed
+                        precision). Faster and saves memory. (default: False)
+  --tf32 TF32           Enable TF32 mode on Ampere and newer GPUs. Provides up
+                        to 8x speedup with negligible accuracy loss. (default:
+                        None)
+  --gradient_checkpointing [GRADIENT_CHECKPOINTING], --gradient-checkpointing [GRADIENT_CHECKPOINTING]
+                        Enable gradient checkpointing to trade compute for
+                        memory. Reduces memory at the cost of ~20% slower
+                        training. (default: False)
+  --gradient_checkpointing_kwargs GRADIENT_CHECKPOINTING_KWARGS, --gradient-checkpointing-kwargs GRADIENT_CHECKPOINTING_KWARGS
+                        Keyword arguments passed to
+                        `gradient_checkpointing_enable()`. (default: None)
+  --torch_compile [TORCH_COMPILE], --torch-compile [TORCH_COMPILE]
+                        Compile the model using `torch.compile()` for faster
+                        training. (default: False)
+  --torch_compile_backend TORCH_COMPILE_BACKEND, --torch-compile-backend TORCH_COMPILE_BACKEND
+                        Backend for `torch.compile()`. If set, automatically
+                        enables `torch_compile`. (default: None)
+  --torch_compile_mode TORCH_COMPILE_MODE, --torch-compile-mode TORCH_COMPILE_MODE
+                        Compilation mode for `torch.compile()`. If set,
+                        automatically enables `torch_compile`. (default: None)
+  --use_liger_kernel [USE_LIGER_KERNEL], --use-liger-kernel [USE_LIGER_KERNEL]
+                        Enable Liger Kernel optimizations. Increases
+                        throughput by ~20% and reduces memory by ~60%.
+                        (default: False)
+  --liger_kernel_config LIGER_KERNEL_CONFIG, --liger-kernel-config LIGER_KERNEL_CONFIG
+                        Configuration for Liger Kernel. Passed as kwargs to
+                        `_apply_liger_kernel_to_instance()`. If None, uses
+                        default configuration. (default: None)
+  --use_cache [USE_CACHE], --use-cache [USE_CACHE]
+                        Whether or not to use cache for the model For
+                        training, this is usually not needed apart from some
+                        PEFT methods that uses `past_key_values`. (default:
+                        False)
+  --neftune_noise_alpha NEFTUNE_NOISE_ALPHA, --neftune-noise-alpha NEFTUNE_NOISE_ALPHA
+                        If not None, activates NEFTune noise embeddings. Can
+                        drastically improve performance for instruction fine-
+                        tuning. Typical range: [5.0, 15.0]. (default: None)
+  --torch_empty_cache_steps TORCH_EMPTY_CACHE_STEPS, --torch-empty-cache-steps TORCH_EMPTY_CACHE_STEPS
+                        Number of steps to wait before calling
+                        `torch.<device>.empty_cache()`. Helps avoid CUDA OOM
+                        at a cost of ~10% slower performance. If None, cache
+                        will not be emptied. (default: None)
+  --auto_find_batch_size [AUTO_FIND_BATCH_SIZE], --auto-find-batch-size [AUTO_FIND_BATCH_SIZE]
+                        Whether to find a batch size that will fit into memory
+                        automatically through exponential decay, avoiding CUDA
+                        Out-of-Memory errors. (default: False)
+  --logging_strategy {no,steps,epoch}, --logging-strategy {no,steps,epoch}
+                        The logging strategy to adopt during training.
+                        Options: 'no', 'epoch', 'steps'. (default: steps)
+  --logging_steps LOGGING_STEPS, --logging-steps LOGGING_STEPS
+                        Log every X updates steps. Should be an integer or a
+                        float in range `[0,1)`. If smaller than 1, will be
+                        interpreted as ratio of total training steps.
+                        (default: 500)
+  --logging_first_step [LOGGING_FIRST_STEP], --logging-first-step [LOGGING_FIRST_STEP]
+                        Whether to log the first `global_step` or not.
+                        (default: False)
+  --log_on_each_node [LOG_ON_EACH_NODE], --log-on-each-node [LOG_ON_EACH_NODE]
+                        When doing a multinode distributed training, whether
+                        to log once per node or just once on the main node.
+                        (default: True)
+  --no_log_on_each_node, --no-log-on-each-node
+                        When doing a multinode distributed training, whether
+                        to log once per node or just once on the main node.
+                        (default: False)
+  --logging_nan_inf_filter [LOGGING_NAN_INF_FILTER], --logging-nan-inf-filter [LOGGING_NAN_INF_FILTER]
+                        Filter out NaN and Inf losses when logging. Does not
+                        affect gradient computation, only logging. (default:
+                        True)
+  --no_logging_nan_inf_filter, --no-logging-nan-inf-filter
+                        Filter out NaN and Inf losses when logging. Does not
+                        affect gradient computation, only logging. (default:
+                        False)
+  --include_num_input_tokens_seen [INCLUDE_NUM_INPUT_TOKENS_SEEN], --include-num-input-tokens-seen [INCLUDE_NUM_INPUT_TOKENS_SEEN]
+                        Whether to track the number of input tokens seen. Must
+                        be one of [`all`, `non_padding`, `no`] or a boolean
+                        value which map to `all` or `no` (default: no)
+  --log_level {detail,debug,info,warning,error,critical,passive}, --log-level {detail,debug,info,warning,error,critical,passive}
+                        Logging level for the main process. Options: 'debug',
+                        'info', 'warning', 'error', 'critical', 'passive'.
+                        (default: passive)
+  --log_level_replica {detail,debug,info,warning,error,critical,passive}, --log-level-replica {detail,debug,info,warning,error,critical,passive}
+                        Logging level for replica processes in distributed
+                        training. Same options as `log_level`. (default:
+                        warning)
+  --disable_tqdm DISABLE_TQDM, --disable-tqdm DISABLE_TQDM
+                        Disable tqdm progress bars. Defaults to True if
+                        log_level is warning or lower. (default: None)
+  --report_to REPORT_TO, --report-to REPORT_TO
+                        The list of integrations to report the results and
+                        logs to. Use 'all' for all installed integrations,
+                        'none' for no integrations. (default: none)
+  --run_name RUN_NAME, --run-name RUN_NAME
+                        An optional descriptor for the run. Notably used for
+                        trackio, wandb, mlflow comet and swanlab logging.
+                        (default: None)
+  --project PROJECT     The name of the project to use for logging. Currently,
+                        only used by Trackio. (default: huggingface)
+  --trackio_space_id TRACKIO_SPACE_ID, --trackio-space-id TRACKIO_SPACE_ID
+                        Hugging Face Space id for live Gradio-based Trackio
+                        logging (read/write Bucket access). Use
+                        'username/reponame', 'orgname/reponame', or 'reponame'
+                        (current user's namespace). None: log only locally, no
+                        Space. Prefer trackio_static_space_id for stable post-
+                        training dashboard links. Public unless
+                        hub_private_repo=True or org default. (default: None)
+  --trackio_bucket_id TRACKIO_BUCKET_ID, --trackio-bucket-id TRACKIO_BUCKET_ID
+                        Optional HF Bucket id when using a Trackio Space; if
+                        unset, Trackio picks a default. (default: None)
+  --trackio_static_space_id TRACKIO_STATIC_SPACE_ID, --trackio-static-space-id TRACKIO_STATIC_SPACE_ID
+                        Static read-only Trackio Space over the Bucket (stable
+                        model-card links). False: no static sync on Hub push
+                        and no freeze after training. None/str: allow static
+                        Space; for local-only logging, Hub push runs
+                        sync(static); after training, freeze runs only if
+                        trackio_space_id was set (Gradio Space). str sets
+                        explicit static Space id. Public unless
+                        hub_private_repo=True or org default. (default: None)
+  --eval_strategy {no,steps,epoch}, --eval-strategy {no,steps,epoch}
+                        When to run evaluation. Options: 'no', 'steps',
+                        'epoch'. (default: no)
+  --eval_steps EVAL_STEPS, --eval-steps EVAL_STEPS
+                        Number of update steps between evaluations if
+                        `eval_strategy='steps'`. Defaults to `logging_steps`
+                        if not set. Should be an integer or a float in range
+                        `[0,1)`. If smaller than 1, will be interpreted as
+                        ratio of total training steps. (default: None)
+  --eval_delay EVAL_DELAY, --eval-delay EVAL_DELAY
+                        Number of epochs or steps to wait for before the first
+                        evaluation can be performed, depending on the
+                        eval_strategy. (default: 0)
+  --per_device_eval_batch_size PER_DEVICE_EVAL_BATCH_SIZE, --per-device-eval-batch-size PER_DEVICE_EVAL_BATCH_SIZE
+                        The batch size per device (GPU/TPU core/CPU) for
+                        evaluation. (default: 8)
+  --prediction_loss_only [PREDICTION_LOSS_ONLY], --prediction-loss-only [PREDICTION_LOSS_ONLY]
+                        When performing evaluation and generating predictions,
+                        only returns the loss. (default: False)
+  --eval_on_start [EVAL_ON_START], --eval-on-start [EVAL_ON_START]
+                        Whether to run through the entire `evaluation` step at
+                        the very beginning of training as a sanity check.
+                        (default: False)
+  --eval_do_concat_batches [EVAL_DO_CONCAT_BATCHES], --eval-do-concat-batches [EVAL_DO_CONCAT_BATCHES]
+                        Whether to recursively concat
+                        inputs/losses/labels/predictions across batches. If
+                        `False`, will instead store them as lists, with each
+                        batch kept separate. (default: True)
+  --no_eval_do_concat_batches, --no-eval-do-concat-batches
+                        Whether to recursively concat
+                        inputs/losses/labels/predictions across batches. If
+                        `False`, will instead store them as lists, with each
+                        batch kept separate. (default: False)
+  --eval_use_gather_object [EVAL_USE_GATHER_OBJECT], --eval-use-gather-object [EVAL_USE_GATHER_OBJECT]
+                        Whether to run recursively gather object in a nested
+                        list/tuple/dictionary of objects from all devices.
+                        (default: False)
+  --eval_accumulation_steps EVAL_ACCUMULATION_STEPS, --eval-accumulation-steps EVAL_ACCUMULATION_STEPS
+                        Number of predictions steps to accumulate the output
+                        tensors for, before moving the results to the CPU. If
+                        unset, predictions are accumulated on the accelerator
+                        before being moved to the CPU. (default: None)
+  --include_for_metrics INCLUDE_FOR_METRICS [INCLUDE_FOR_METRICS ...], --include-for-metrics INCLUDE_FOR_METRICS [INCLUDE_FOR_METRICS ...]
+                        Include additional data in the `compute_metrics`
+                        function. Options: 'inputs', 'loss'. (default: [])
+  --batch_eval_metrics [BATCH_EVAL_METRICS], --batch-eval-metrics [BATCH_EVAL_METRICS]
+                        Break eval metrics calculation into batches to save
+                        memory. (default: False)
+  --save_only_model [SAVE_ONLY_MODEL], --save-only-model [SAVE_ONLY_MODEL]
+                        Save only model weights, not optimizer/scheduler/RNG
+                        state. Prevents resuming training from checkpoint.
+                        (default: False)
+  --save_strategy {no,steps,epoch,best}, --save-strategy {no,steps,epoch,best}
+                        The checkpoint save strategy to adopt during training.
+                        Options: 'no', 'epoch', 'steps', 'best'. (default:
+                        steps)
+  --save_steps SAVE_STEPS, --save-steps SAVE_STEPS
+                        Save checkpoint every X updates steps. Should be an
+                        integer or a float in range `[0,1)`. If smaller than
+                        1, will be interpreted as ratio of total training
+                        steps. (default: 500)
+  --save_on_each_node [SAVE_ON_EACH_NODE], --save-on-each-node [SAVE_ON_EACH_NODE]
+                        When doing multi-node distributed training, whether to
+                        save models and checkpoints on each node, or only on
+                        the main one (default: False)
+  --save_total_limit SAVE_TOTAL_LIMIT, --save-total-limit SAVE_TOTAL_LIMIT
+                        Maximum number of checkpoints to keep. Deletes older
+                        checkpoints in `output_dir`. The best checkpoint is
+                        always retained when `load_best_model_at_end=True`.
+                        (default: None)
+  --enable_jit_checkpoint [ENABLE_JIT_CHECKPOINT], --enable-jit-checkpoint [ENABLE_JIT_CHECKPOINT]
+                        Enable JIT checkpointing on SIGTERM signal for
+                        graceful termination on preemptible workloads.
+                        Configure your orchestrator's graceful shutdown period
+                        accordingly. (default: False)
+  --push_to_hub [PUSH_TO_HUB], --push-to-hub [PUSH_TO_HUB]
+                        Whether or not to push the model to the Hub every time
+                        the model is saved. (default: False)
+  --hub_token HUB_TOKEN, --hub-token HUB_TOKEN
+                        The token to use to push the model to the Hub.
+                        Defaults to the token from `hf auth login`. (default:
+                        None)
+  --hub_private_repo HUB_PRIVATE_REPO, --hub-private-repo HUB_PRIVATE_REPO
+                        Whether to make the repo private. If `None` (default),
+                        the repo will be public unless the organization's
+                        default is private. This value is ignored if the repo
+                        already exists. If reporting to Trackio Spaces created
+                        or synced (including on Hub push when
+                        `trackio_space_id` is None) use the same logic for
+                        whether the Space is private. (default: None)
+  --hub_model_id HUB_MODEL_ID, --hub-model-id HUB_MODEL_ID
+                        The name of the repository to keep in sync with the
+                        local `output_dir`. (default: None)
+  --hub_strategy {end,every_save,checkpoint,all_checkpoints}, --hub-strategy {end,every_save,checkpoint,all_checkpoints}
+                        Defines what and when to push to Hub. Options: 'end',
+                        'every_save', 'checkpoint', 'all_checkpoints'.
+                        (default: every_save)
+  --hub_always_push [HUB_ALWAYS_PUSH], --hub-always-push [HUB_ALWAYS_PUSH]
+                        Unless `True`, the Trainer will skip pushes if the
+                        previous one wasn't finished yet. (default: False)
+  --hub_revision HUB_REVISION, --hub-revision HUB_REVISION
+                        The revision to use when pushing to the Hub. Can be a
+                        branch name, a tag, or a commit hash. (default: None)
+  --load_best_model_at_end [LOAD_BEST_MODEL_AT_END], --load-best-model-at-end [LOAD_BEST_MODEL_AT_END]
+                        Load the best checkpoint at the end of training.
+                        Requires `eval_strategy` to be set. (default: False)
+  --metric_for_best_model METRIC_FOR_BEST_MODEL, --metric-for-best-model METRIC_FOR_BEST_MODEL
+                        Metric to use for comparing models when
+                        `load_best_model_at_end=True`. Defaults to 'loss'.
+                        (default: None)
+  --greater_is_better GREATER_IS_BETTER, --greater-is-better GREATER_IS_BETTER
+                        Whether higher metric values are better. Defaults
+                        based on `metric_for_best_model`. (default: None)
+  --ignore_data_skip [IGNORE_DATA_SKIP], --ignore-data-skip [IGNORE_DATA_SKIP]
+                        When resuming training, skip fast-forwarding through
+                        the dataset to reach the previous state. If True,
+                        training starts from the beginning of the dataset.
+                        (default: False)
+  --restore_callback_states_from_checkpoint [RESTORE_CALLBACK_STATES_FROM_CHECKPOINT], --restore-callback-states-from-checkpoint [RESTORE_CALLBACK_STATES_FROM_CHECKPOINT]
+                        Whether to restore the callback states from the
+                        checkpoint. If `True`, will override callbacks passed
+                        to the `Trainer` if they exist in the checkpoint.
+                        (default: False)
+  --full_determinism [FULL_DETERMINISM], --full-determinism [FULL_DETERMINISM]
+                        Whether to call enable_full_determinism instead of
+                        set_seed for reproducibility in distributed training.
+                        Important: this will negatively impact the
+                        performance, so only use it for debugging. (default:
+                        False)
+  --seed SEED           Random seed that will be set at the beginning of
+                        training. (default: 42)
+  --data_seed DATA_SEED, --data-seed DATA_SEED
+                        Random seed to be used with data samplers. If not set,
+                        uses the same seed as `seed`. (default: None)
+  --use_cpu [USE_CPU], --use-cpu [USE_CPU]
+                        Whether or not to use cpu. If set to False, we will
+                        use the available torch device/backend. (default:
+                        False)
+  --accelerator_config ACCELERATOR_CONFIG, --accelerator-config ACCELERATOR_CONFIG
+                        Configuration for the internal Accelerate integration.
+                        Can be a path to a JSON config file or a dict.
+                        (default: None)
+  --parallelism_config PARALLELISM_CONFIG, --parallelism-config PARALLELISM_CONFIG
+                        Parallelism configuration for the training run.
+                        Requires Accelerate `1.10.1`. (default: None)
+  --dataloader_drop_last [DATALOADER_DROP_LAST], --dataloader-drop-last [DATALOADER_DROP_LAST]
+                        Drop the last incomplete batch if it is not divisible
+                        by the batch size. (default: False)
+  --dataloader_num_workers DATALOADER_NUM_WORKERS, --dataloader-num-workers DATALOADER_NUM_WORKERS
+                        Number of subprocesses to use for data loading
+                        (PyTorch only). 0 means that the data will be loaded
+                        in the main process. (default: 0)
+  --dataloader_pin_memory [DATALOADER_PIN_MEMORY], --dataloader-pin-memory [DATALOADER_PIN_MEMORY]
+                        Whether or not to pin memory for DataLoader. (default:
+                        True)
+  --no_dataloader_pin_memory, --no-dataloader-pin-memory
+                        Whether or not to pin memory for DataLoader. (default:
+                        False)
+  --dataloader_persistent_workers [DATALOADER_PERSISTENT_WORKERS], --dataloader-persistent-workers [DATALOADER_PERSISTENT_WORKERS]
+                        If True, the data loader will not shut down the worker
+                        processes after a dataset has been consumed once. This
+                        allows to maintain the workers Dataset instances
+                        alive. Can potentially speed up training, but will
+                        increase RAM usage. (default: False)
+  --dataloader_prefetch_factor DATALOADER_PREFETCH_FACTOR, --dataloader-prefetch-factor DATALOADER_PREFETCH_FACTOR
+                        Number of batches loaded in advance by each worker. 2
+                        means there will be a total of 2 * num_workers batches
+                        prefetched across all workers. (default: None)
+  --remove_unused_columns [REMOVE_UNUSED_COLUMNS], --remove-unused-columns [REMOVE_UNUSED_COLUMNS]
+                        Whether or not to automatically remove the columns
+                        unused by the model forward method. (default: True)
+  --no_remove_unused_columns, --no-remove-unused-columns
+                        Whether or not to automatically remove the columns
+                        unused by the model forward method. (default: False)
+  --label_names LABEL_NAMES [LABEL_NAMES ...], --label-names LABEL_NAMES [LABEL_NAMES ...]
+                        The list of keys in your dictionary of inputs that
+                        correspond to the labels. (default: None)
+  --train_sampling_strategy {random,sequential,group_by_length}, --train-sampling-strategy {random,sequential,group_by_length}
+                        Sampler for training: 'random' (default),
+                        'sequential', or 'group_by_length'. (default: random)
+  --length_column_name LENGTH_COLUMN_NAME, --length-column-name LENGTH_COLUMN_NAME
+                        Column name for precomputed lengths. Ignored unless
+                        `train_sampling_strategy` is 'group_by_length'.
+                        (default: length)
+  --ddp_find_unused_parameters DDP_FIND_UNUSED_PARAMETERS, --ddp-find-unused-parameters DDP_FIND_UNUSED_PARAMETERS
+                        When using distributed training, the value of the flag
+                        `find_unused_parameters` passed to
+                        `DistributedDataParallel`. (default: None)
+  --ddp_bucket_cap_mb DDP_BUCKET_CAP_MB, --ddp-bucket-cap-mb DDP_BUCKET_CAP_MB
+                        When using distributed training, the value of the flag
+                        `bucket_cap_mb` passed to `DistributedDataParallel`.
+                        (default: None)
+  --ddp_broadcast_buffers DDP_BROADCAST_BUFFERS, --ddp-broadcast-buffers DDP_BROADCAST_BUFFERS
+                        When using distributed training, the value of the flag
+                        `broadcast_buffers` passed to
+                        `DistributedDataParallel`. (default: None)
+  --ddp_static_graph DDP_STATIC_GRAPH, --ddp-static-graph DDP_STATIC_GRAPH
+                        When using distributed training, the value of the flag
+                        `static_graph` passed to `DistributedDataParallel`.
+                        (default: None)
+  --ddp_backend {nccl,gloo,mpi,xccl,hccl,cncl,mccl}, --ddp-backend {nccl,gloo,mpi,xccl,hccl,cncl,mccl}
+                        The backend to use for distributed training. Must be
+                        one of 'nccl', 'mpi', 'xccl', 'gloo', 'hccl'.
+                        (default: None)
+  --ddp_timeout DDP_TIMEOUT, --ddp-timeout DDP_TIMEOUT
+                        The timeout for `torch.distributed.init_process_group`
+                        calls (in seconds). (default: 1800)
+  --fsdp FSDP           Enable PyTorch FSDP for distributed training. Options:
+                        'full_shard', 'shard_grad_op', 'hybrid_shard',
+                        'hybrid_shard_zero2', 'offload', 'auto_wrap'.
+                        (default: None)
+  --fsdp_config FSDP_CONFIG, --fsdp-config FSDP_CONFIG
+                        Config to be used with FSDP (Pytorch Fully Sharded
+                        Data Parallel). The value is either a fsdp json config
+                        file (e.g., `fsdp_config.json`) or an already loaded
+                        json file as `dict`. (default: None)
+  --deepspeed DEEPSPEED
+                        Enable DeepSpeed integration. Value is a path to a
+                        JSON config file or a dict. (default: None)
+  --debug DEBUG [DEBUG ...]
+                        Enable one or more debug features. Options:
+                        'underflow_overflow' (detect overflow in model I/O),
+                        'tpu_metrics_debug' (print TPU metrics). (default:
+                        None)
+  --skip_memory_metrics [SKIP_MEMORY_METRICS], --skip-memory-metrics [SKIP_MEMORY_METRICS]
+                        Whether to skip adding memory profiler reports to
+                        metrics. Skipped by default because it slows down
+                        training. (default: True)
+  --no_skip_memory_metrics, --no-skip-memory-metrics
+                        Whether to skip adding memory profiler reports to
+                        metrics. Skipped by default because it slows down
+                        training. (default: False)
+  --do_train [DO_TRAIN], --do-train [DO_TRAIN]
+                        Whether to run training. Not directly used by Trainer;
+                        intended for training/evaluation scripts. (default:
+                        False)
+  --do_eval [DO_EVAL], --do-eval [DO_EVAL]
+                        Whether to run evaluation. Not directly used by
+                        Trainer; intended for training/evaluation scripts.
+                        (default: False)
+  --do_predict [DO_PREDICT], --do-predict [DO_PREDICT]
+                        Whether to run predictions on the test set. Not
+                        directly used by Trainer; intended for
+                        training/evaluation scripts. (default: False)
+  --resume_from_checkpoint RESUME_FROM_CHECKPOINT, --resume-from-checkpoint RESUME_FROM_CHECKPOINT
+                        Path to a folder with a valid checkpoint for your
+                        model. Not directly used by Trainer; intended for
+                        training/evaluation scripts. (default: None)
+  --warmup_ratio WARMUP_RATIO, --warmup-ratio WARMUP_RATIO
+                        This argument is deprecated and will be removed in
+                        v5.2. Use `warmup_steps` instead as it also works with
+                        float values. (default: None)
+  --logging_dir LOGGING_DIR, --logging-dir LOGGING_DIR
+                        Deprecated and will be removed in v5.2. Set env var
+                        `TENSORBOARD_LOGGING_DIR` instead. TensorBoard log
+                        directory. (default: None)
+  --local_rank LOCAL_RANK, --local-rank LOCAL_RANK
+                        When using torch.distributed.launch (Deprecated), it
+                        will pass `local_rank` in the script, so we need this
+                        for the parser. To get the local rank, prefer using
+                        the property `local_process_index` (default: -1)
+  --cache_dir CACHE_DIR, --cache-dir CACHE_DIR
+  --model_max_length MODEL_MAX_LENGTH, --model-max-length MODEL_MAX_LENGTH
+                        Maximum sequence length. Sequences will be right
+                        padded (and possibly truncated). (default: 512)
+  --mm_projector_lr MM_PROJECTOR_LR, --mm-projector-lr MM_PROJECTOR_LR
+  --vision_tower_lr VISION_TOWER_LR, --vision-tower-lr VISION_TOWER_LR
+  --group_by_modality_length [GROUP_BY_MODALITY_LENGTH], --group-by-modality-length [GROUP_BY_MODALITY_LENGTH]
+  --lora_enable [LORA_ENABLE], --lora-enable [LORA_ENABLE]
+  --lora_r LORA_R, --lora-r LORA_R
+  --lora_alpha LORA_ALPHA, --lora-alpha LORA_ALPHA
+  --lora_dropout LORA_DROPOUT, --lora-dropout LORA_DROPOUT
+  --lora_target_modules LORA_TARGET_MODULES, --lora-target-modules LORA_TARGET_MODULES
+                        Comma-separated Linear leaf names to adapt with LoRA.
+                        (default: q_proj,k_proj,v_proj,o_proj)
+  --qat_enable [QAT_ENABLE], --qat-enable [QAT_ENABLE]
+  --no_qat_enable, --no-qat-enable
+  --qat_bits QAT_BITS, --qat-bits QAT_BITS
+                        Weight bit-width: 4 or 8. (default: 4)
+  --qat_group_size QAT_GROUP_SIZE, --qat-group-size QAT_GROUP_SIZE
+  --qat_scale_lr QAT_SCALE_LR, --qat-scale-lr QAT_SCALE_LR
+                        LR for log-scale params. Defaults to base
+                        learning_rate. (default: None)
+  --qat_skip_extra QAT_SKIP_EXTRA, --qat-skip-extra QAT_SKIP_EXTRA
+                        Comma-separated extra module-name keywords to skip.
+                        (default: )
+  --qat_save_quantized [QAT_SAVE_QUANTIZED], --qat-save-quantized [QAT_SAVE_QUANTIZED]
+                        Also dump a fake-quantized state dict + scales at the
+                        end. (default: True)
+  --no_qat_save_quantized, --no-qat-save-quantized
+                        Also dump a fake-quantized state dict + scales at the
+                        end. (default: False)
+  --grace_enable [GRACE_ENABLE], --grace-enable [GRACE_ENABLE]
+  --no_grace_enable, --no-grace-enable
+  --teacher_model_path TEACHER_MODEL_PATH, --teacher-model-path TEACHER_MODEL_PATH
+                        Path to the frozen BF16 teacher (Qwen3-VL-8B).
+                        (default: )
+  --teacher_attn TEACHER_ATTN, --teacher-attn TEACHER_ATTN
+  --dkd_temperature DKD_TEMPERATURE, --dkd-temperature DKD_TEMPERATURE
+  --dkd_alpha DKD_ALPHA, --dkd-alpha DKD_ALPHA
+                        TCKD weight. (default: 1.0)
+  --dkd_beta DKD_BETA, --dkd-beta DKD_BETA
+                        NCKD weight. (default: 4.0)
+  --dkd_chunk_size DKD_CHUNK_SIZE, --dkd-chunk-size DKD_CHUNK_SIZE
+                        Valid-token chunk for the KL pass. (default: 2048)
+  --dkd_checkpoint_chunks [DKD_CHECKPOINT_CHUNKS], --dkd-checkpoint-chunks [DKD_CHECKPOINT_CHUNKS]
+                        Recompute DKD chunks in backward to bound retained KL
+                        intermediates. (default: False)
+  --rcka_weight RCKA_WEIGHT, --rcka-weight RCKA_WEIGHT
+                        omega. (default: 1.0)
+  --rcka_layer RCKA_LAYER, --rcka-layer RCKA_LAYER
+                        hidden_states index (penultimate = -2). (default: -2)
+  --ib_tau IB_TAU, --ib-tau IB_TAU
+  --ib_eta IB_ETA, --ib-eta IB_ETA
+  --ib_beta_init IB_BETA_INIT, --ib-beta-init IB_BETA_INIT
+  --ib_beta_min IB_BETA_MIN, --ib-beta-min IB_BETA_MIN
+  --ib_beta_max IB_BETA_MAX, --ib-beta-max IB_BETA_MAX
+  --ib_ema_decay IB_EMA_DECAY, --ib-ema-decay IB_EMA_DECAY
+  --dkd_warmup_steps DKD_WARMUP_STEPS, --dkd-warmup-steps DKD_WARMUP_STEPS
+                        Linear warmup (in optimizer steps) for the GDKD term.
+                        (default: 0)
+  --rcka_warmup_steps RCKA_WARMUP_STEPS, --rcka-warmup-steps RCKA_WARMUP_STEPS
+                        Linear warmup (in optimizer steps) for the RCKA term.
+                        (default: 0)
+  --profile_steps PROFILE_STEPS, --profile-steps PROFILE_STEPS
+                        Profile the first N optimizer steps; 0 disables
+                        profiling. (default: 0)
+  --profile_deepspeed_comms [PROFILE_DEEPSPEED_COMMS], --profile-deepspeed-comms [PROFILE_DEEPSPEED_COMMS]
+                        Print the DeepSpeed collective summary at train end.
+                        (default: False)
+  --skip_final_export [SKIP_FINAL_EXPORT], --skip-final-export [SKIP_FINAL_EXPORT]
+                        Skip merge/bake/model export after a profiling-only
+                        run. (default: False)
+  --learning_diagnostics_steps LEARNING_DIAGNOSTICS_STEPS, --learning-diagnostics-steps LEARNING_DIAGNOSTICS_STEPS
+                        Record gradient/update/loss-connectivity checks for N
+                        steps. (default: 0)
+  --method METHOD
+  --subset_manifest SUBSET_MANIFEST, --subset-manifest SUBSET_MANIFEST
+  --profile_run [PROFILE_RUN], --profile-run [PROFILE_RUN]
+  --max_train_hours MAX_TRAIN_HOURS, --max-train-hours MAX_TRAIN_HOURS
+  --peak_memory_gib PEAK_MEMORY_GIB, --peak-memory-gib PEAK_MEMORY_GIB
+  --resume_run [RESUME_RUN], --resume-run [RESUME_RUN]

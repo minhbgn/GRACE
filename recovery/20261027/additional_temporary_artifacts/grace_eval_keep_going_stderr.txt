@@ -1,0 +1,10 @@
+Evaluation failed: baseline/hallusionbench (exit 3)
+Evaluation failed: sft/hallusionbench (exit 3)
+Evaluation failed: qat/hallusionbench (exit 3)
+Evaluation failed: grace/hallusionbench (exit 3)
+
+4 evaluation(s) failed; all selected evaluations were attempted:
+  - baseline/hallusionbench (exit 3)
+  - sft/hallusionbench (exit 3)
+  - qat/hallusionbench (exit 3)
+  - grace/hallusionbench (exit 3)

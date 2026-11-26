@@ -1,0 +1,1159 @@
+[
+  {
+    "repository": "datasets--lmms-lab-encoder--ScienceQA",
+    "snapshot_files": [
+      {
+        "path": "snapshots/69dd4d6b67373d38f96a5badd5d24d0eb5bcdc50/README.md",
+        "bytes": 3060
+      },
+      {
+        "path": "snapshots/69dd4d6b67373d38f96a5badd5d24d0eb5bcdc50/ScienceQA-IMG/test-00000-of-00001.parquet",
+        "bytes": 130143301
+      },
+      {
+        "path": "snapshots/69dd4d6b67373d38f96a5badd5d24d0eb5bcdc50/ScienceQA-IMG/validation-00000-of-00001.parquet",
+        "bytes": 133191644
+      }
+    ],
+    "available": true
+  },
+  {
+    "repository": "datasets--lmms-lab-encoder--ai2d",
+    "snapshot_files": [
+      {
+        "path": "snapshots/c83a9b9692933aff8349157c88a413df9d02c4e5/README.md",
+        "bytes": 700
+      },
+      {
+        "path": "snapshots/c83a9b9692933aff8349157c88a413df9d02c4e5/data/test-00000-of-00002.parquet",
+        "bytes": 62292686
+      },
+      {
+        "path": "snapshots/c83a9b9692933aff8349157c88a413df9d02c4e5/data/test-00001-of-00002.parquet",
+        "bytes": 77173738
+      }
+    ],
+    "available": true
+  },
+  {
+    "repository": "datasets--Lin-Chen--MMStar",
+    "snapshot_files": [
+      {
+        "path": "snapshots/bc98d668301da7b14f648724866e57302778ab27/README.md",
+        "bytes": 4224
+      },
+      {
+        "path": "snapshots/bc98d668301da7b14f648724866e57302778ab27/mmstar.parquet",
+        "bytes": 41798712
+      }
+    ],
+    "available": true
+  },
+  {
+    "repository": "datasets--lmms-lab-encoder--SEED-Bench",
+    "snapshot_files": [
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/README.md",
+        "bytes": 1618
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00045-of-00273.parquet",
+        "bytes": 26532986
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00221-of-00273.parquet",
+        "bytes": 47950168
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00089-of-00273.parquet",
+        "bytes": 13914492
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00164-of-00273.parquet",
+        "bytes": 14734222
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00218-of-00273.parquet",
+        "bytes": 46062574
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00224-of-00273.parquet",
+        "bytes": 50703278
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00149-of-00273.parquet",
+        "bytes": 17822239
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00203-of-00273.parquet",
+        "bytes": 35342580
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00115-of-00273.parquet",
+        "bytes": 15447273
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00077-of-00273.parquet",
+        "bytes": 20124434
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00119-of-00273.parquet",
+        "bytes": 18816909
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00175-of-00273.parquet",
+        "bytes": 12896477
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00162-of-00273.parquet",
+        "bytes": 23591467
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00150-of-00273.parquet",
+        "bytes": 24506688
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00173-of-00273.parquet",
+        "bytes": 13796871
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00022-of-00273.parquet",
+        "bytes": 23791102
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00003-of-00273.parquet",
+        "bytes": 19843791
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00065-of-00273.parquet",
+        "bytes": 35244561
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00101-of-00273.parquet",
+        "bytes": 15408931
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00228-of-00273.parquet",
+        "bytes": 51673321
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00037-of-00273.parquet",
+        "bytes": 13166185
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00184-of-00273.parquet",
+        "bytes": 14978937
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00005-of-00273.parquet",
+        "bytes": 14894688
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00138-of-00273.parquet",
+        "bytes": 19678841
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00009-of-00273.parquet",
+        "bytes": 13087845
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00169-of-00273.parquet",
+        "bytes": 33069494
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00142-of-00273.parquet",
+        "bytes": 18547053
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00128-of-00273.parquet",
+        "bytes": 18272725
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00265-of-00273.parquet",
+        "bytes": 47784466
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00140-of-00273.parquet",
+        "bytes": 13067703
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00055-of-00273.parquet",
+        "bytes": 16069224
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00041-of-00273.parquet",
+        "bytes": 16517418
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00160-of-00273.parquet",
+        "bytes": 15367469
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00083-of-00273.parquet",
+        "bytes": 22593597
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00230-of-00273.parquet",
+        "bytes": 48301775
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00044-of-00273.parquet",
+        "bytes": 14861135
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00062-of-00273.parquet",
+        "bytes": 22327099
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00124-of-00273.parquet",
+        "bytes": 28425840
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00248-of-00273.parquet",
+        "bytes": 1113665246
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00109-of-00273.parquet",
+        "bytes": 32419935
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00207-of-00273.parquet",
+        "bytes": 16535786
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00208-of-00273.parquet",
+        "bytes": 23515906
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00143-of-00273.parquet",
+        "bytes": 13317932
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00074-of-00273.parquet",
+        "bytes": 19466778
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00015-of-00273.parquet",
+        "bytes": 17830707
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00076-of-00273.parquet",
+        "bytes": 19150518
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00057-of-00273.parquet",
+        "bytes": 13369407
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00100-of-00273.parquet",
+        "bytes": 18350386
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00111-of-00273.parquet",
+        "bytes": 12049782
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00259-of-00273.parquet",
+        "bytes": 46783506
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00113-of-00273.parquet",
+        "bytes": 16816699
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00110-of-00273.parquet",
+        "bytes": 18322895
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00170-of-00273.parquet",
+        "bytes": 19880197
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00059-of-00273.parquet",
+        "bytes": 18105036
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00104-of-00273.parquet",
+        "bytes": 23532549
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00032-of-00273.parquet",
+        "bytes": 15358358
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00168-of-00273.parquet",
+        "bytes": 35920982
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00223-of-00273.parquet",
+        "bytes": 48288246
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00122-of-00273.parquet",
+        "bytes": 19140646
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00087-of-00273.parquet",
+        "bytes": 13347007
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00013-of-00273.parquet",
+        "bytes": 25906171
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00121-of-00273.parquet",
+        "bytes": 22000136
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00047-of-00273.parquet",
+        "bytes": 16388766
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00147-of-00273.parquet",
+        "bytes": 17037138
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00246-of-00273.parquet",
+        "bytes": 1053009739
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00133-of-00273.parquet",
+        "bytes": 14313711
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00188-of-00273.parquet",
+        "bytes": 16876692
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00120-of-00273.parquet",
+        "bytes": 11331106
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00067-of-00273.parquet",
+        "bytes": 13596796
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00156-of-00273.parquet",
+        "bytes": 13974163
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00261-of-00273.parquet",
+        "bytes": 46577644
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00017-of-00273.parquet",
+        "bytes": 18547096
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00241-of-00273.parquet",
+        "bytes": 1150911769
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00171-of-00273.parquet",
+        "bytes": 22476856
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00266-of-00273.parquet",
+        "bytes": 46579173
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00267-of-00273.parquet",
+        "bytes": 47001909
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00103-of-00273.parquet",
+        "bytes": 14193330
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00136-of-00273.parquet",
+        "bytes": 16580817
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00053-of-00273.parquet",
+        "bytes": 13169937
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00264-of-00273.parquet",
+        "bytes": 47379298
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00197-of-00273.parquet",
+        "bytes": 12450881
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00043-of-00273.parquet",
+        "bytes": 17505206
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00085-of-00273.parquet",
+        "bytes": 16588826
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00035-of-00273.parquet",
+        "bytes": 26981402
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00046-of-00273.parquet",
+        "bytes": 12764683
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00152-of-00273.parquet",
+        "bytes": 13787728
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00178-of-00273.parquet",
+        "bytes": 16109440
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00061-of-00273.parquet",
+        "bytes": 14645058
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00225-of-00273.parquet",
+        "bytes": 48980538
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00090-of-00273.parquet",
+        "bytes": 18514365
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00006-of-00273.parquet",
+        "bytes": 13339621
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00174-of-00273.parquet",
+        "bytes": 14553712
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00252-of-00273.parquet",
+        "bytes": 1109734985
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00155-of-00273.parquet",
+        "bytes": 11899563
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00180-of-00273.parquet",
+        "bytes": 14972491
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00099-of-00273.parquet",
+        "bytes": 19787898
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00200-of-00273.parquet",
+        "bytes": 22243683
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00159-of-00273.parquet",
+        "bytes": 23453228
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00125-of-00273.parquet",
+        "bytes": 14380591
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00137-of-00273.parquet",
+        "bytes": 13352488
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00034-of-00273.parquet",
+        "bytes": 28148882
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00227-of-00273.parquet",
+        "bytes": 48422987
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00240-of-00273.parquet",
+        "bytes": 1092928905
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00182-of-00273.parquet",
+        "bytes": 14599618
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00199-of-00273.parquet",
+        "bytes": 15843422
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00131-of-00273.parquet",
+        "bytes": 31139174
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00233-of-00273.parquet",
+        "bytes": 51916172
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00217-of-00273.parquet",
+        "bytes": 52500576
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00269-of-00273.parquet",
+        "bytes": 46612717
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00092-of-00273.parquet",
+        "bytes": 15175488
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00204-of-00273.parquet",
+        "bytes": 20627913
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00108-of-00273.parquet",
+        "bytes": 19698087
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00255-of-00273.parquet",
+        "bytes": 1145664186
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00195-of-00273.parquet",
+        "bytes": 22936510
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00094-of-00273.parquet",
+        "bytes": 24617774
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00231-of-00273.parquet",
+        "bytes": 48606070
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00073-of-00273.parquet",
+        "bytes": 15412411
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00021-of-00273.parquet",
+        "bytes": 26423529
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00194-of-00273.parquet",
+        "bytes": 22544738
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00105-of-00273.parquet",
+        "bytes": 14547998
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00213-of-00273.parquet",
+        "bytes": 18764309
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00056-of-00273.parquet",
+        "bytes": 14253731
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00209-of-00273.parquet",
+        "bytes": 14904862
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00183-of-00273.parquet",
+        "bytes": 18650180
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00157-of-00273.parquet",
+        "bytes": 20700049
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00116-of-00273.parquet",
+        "bytes": 21383548
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00154-of-00273.parquet",
+        "bytes": 14304912
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00258-of-00273.parquet",
+        "bytes": 46262056
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00081-of-00273.parquet",
+        "bytes": 15416415
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00186-of-00273.parquet",
+        "bytes": 20553179
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00068-of-00273.parquet",
+        "bytes": 15360076
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00219-of-00273.parquet",
+        "bytes": 45782445
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00185-of-00273.parquet",
+        "bytes": 18312997
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00202-of-00273.parquet",
+        "bytes": 18794908
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00063-of-00273.parquet",
+        "bytes": 18805979
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00153-of-00273.parquet",
+        "bytes": 16571524
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00151-of-00273.parquet",
+        "bytes": 33055961
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00206-of-00273.parquet",
+        "bytes": 25746165
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00070-of-00273.parquet",
+        "bytes": 16527487
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00029-of-00273.parquet",
+        "bytes": 19446717
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00000-of-00273.parquet",
+        "bytes": 25105995
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00139-of-00273.parquet",
+        "bytes": 15248648
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00210-of-00273.parquet",
+        "bytes": 25988527
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00025-of-00273.parquet",
+        "bytes": 16391287
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00172-of-00273.parquet",
+        "bytes": 22507246
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00192-of-00273.parquet",
+        "bytes": 19476510
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00236-of-00273.parquet",
+        "bytes": 48281977
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00023-of-00273.parquet",
+        "bytes": 16650861
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00042-of-00273.parquet",
+        "bytes": 20584263
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00079-of-00273.parquet",
+        "bytes": 14948655
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00235-of-00273.parquet",
+        "bytes": 44789025
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00222-of-00273.parquet",
+        "bytes": 48079469
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00158-of-00273.parquet",
+        "bytes": 22761403
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00086-of-00273.parquet",
+        "bytes": 33082329
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00144-of-00273.parquet",
+        "bytes": 33149166
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00072-of-00273.parquet",
+        "bytes": 26841912
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00220-of-00273.parquet",
+        "bytes": 49237527
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00080-of-00273.parquet",
+        "bytes": 19049505
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00106-of-00273.parquet",
+        "bytes": 16813394
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00002-of-00273.parquet",
+        "bytes": 25982989
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00234-of-00273.parquet",
+        "bytes": 47086984
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00260-of-00273.parquet",
+        "bytes": 46369656
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00191-of-00273.parquet",
+        "bytes": 17046966
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00163-of-00273.parquet",
+        "bytes": 17513879
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00244-of-00273.parquet",
+        "bytes": 1109678123
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00049-of-00273.parquet",
+        "bytes": 14224426
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00179-of-00273.parquet",
+        "bytes": 24370737
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00141-of-00273.parquet",
+        "bytes": 14207561
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00018-of-00273.parquet",
+        "bytes": 19549842
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00226-of-00273.parquet",
+        "bytes": 47464826
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00129-of-00273.parquet",
+        "bytes": 19919381
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00091-of-00273.parquet",
+        "bytes": 16736253
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00010-of-00273.parquet",
+        "bytes": 15696291
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00193-of-00273.parquet",
+        "bytes": 56663400
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00254-of-00273.parquet",
+        "bytes": 1136143908
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00247-of-00273.parquet",
+        "bytes": 1083112463
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00251-of-00273.parquet",
+        "bytes": 1126937517
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00011-of-00273.parquet",
+        "bytes": 19015238
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00027-of-00273.parquet",
+        "bytes": 14526089
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00064-of-00273.parquet",
+        "bytes": 27666371
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00014-of-00273.parquet",
+        "bytes": 14734478
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00038-of-00273.parquet",
+        "bytes": 24745661
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00148-of-00273.parquet",
+        "bytes": 24714846
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00263-of-00273.parquet",
+        "bytes": 45890916
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00245-of-00273.parquet",
+        "bytes": 1097067976
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00161-of-00273.parquet",
+        "bytes": 24950682
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00093-of-00273.parquet",
+        "bytes": 14694285
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00117-of-00273.parquet",
+        "bytes": 18501606
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00190-of-00273.parquet",
+        "bytes": 18105487
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00126-of-00273.parquet",
+        "bytes": 13645248
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00229-of-00273.parquet",
+        "bytes": 48523613
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00084-of-00273.parquet",
+        "bytes": 26417151
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00048-of-00273.parquet",
+        "bytes": 14939502
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00250-of-00273.parquet",
+        "bytes": 1169761096
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00268-of-00273.parquet",
+        "bytes": 47862786
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00214-of-00273.parquet",
+        "bytes": 12200347
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00016-of-00273.parquet",
+        "bytes": 18870340
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00166-of-00273.parquet",
+        "bytes": 13963352
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00001-of-00273.parquet",
+        "bytes": 15506348
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00189-of-00273.parquet",
+        "bytes": 38213552
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00096-of-00273.parquet",
+        "bytes": 17289142
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00146-of-00273.parquet",
+        "bytes": 20639092
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00058-of-00273.parquet",
+        "bytes": 14750546
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00078-of-00273.parquet",
+        "bytes": 14034148
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00201-of-00273.parquet",
+        "bytes": 21584145
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00026-of-00273.parquet",
+        "bytes": 13813408
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00215-of-00273.parquet",
+        "bytes": 29149596
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00060-of-00273.parquet",
+        "bytes": 21371211
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00024-of-00273.parquet",
+        "bytes": 19081444
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00256-of-00273.parquet",
+        "bytes": 1343682008
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00102-of-00273.parquet",
+        "bytes": 17926926
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00052-of-00273.parquet",
+        "bytes": 16196634
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00039-of-00273.parquet",
+        "bytes": 25233019
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00118-of-00273.parquet",
+        "bytes": 28340253
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00051-of-00273.parquet",
+        "bytes": 27352529
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00008-of-00273.parquet",
+        "bytes": 17420114
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00196-of-00273.parquet",
+        "bytes": 55837683
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00097-of-00273.parquet",
+        "bytes": 12945665
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00177-of-00273.parquet",
+        "bytes": 16110492
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00066-of-00273.parquet",
+        "bytes": 14027252
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00242-of-00273.parquet",
+        "bytes": 1128063386
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00243-of-00273.parquet",
+        "bytes": 1167297801
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00004-of-00273.parquet",
+        "bytes": 14971362
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00028-of-00273.parquet",
+        "bytes": 24097207
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00031-of-00273.parquet",
+        "bytes": 12969121
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00132-of-00273.parquet",
+        "bytes": 19699416
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00007-of-00273.parquet",
+        "bytes": 17451248
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00107-of-00273.parquet",
+        "bytes": 16477142
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00012-of-00273.parquet",
+        "bytes": 15657387
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00211-of-00273.parquet",
+        "bytes": 16253024
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00050-of-00273.parquet",
+        "bytes": 17537833
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00030-of-00273.parquet",
+        "bytes": 21325624
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00054-of-00273.parquet",
+        "bytes": 21504375
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00135-of-00273.parquet",
+        "bytes": 24288233
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00239-of-00273.parquet",
+        "bytes": 1115960267
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00088-of-00273.parquet",
+        "bytes": 17839797
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00123-of-00273.parquet",
+        "bytes": 30740777
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00232-of-00273.parquet",
+        "bytes": 48075469
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00270-of-00273.parquet",
+        "bytes": 44574553
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00253-of-00273.parquet",
+        "bytes": 1045106884
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00272-of-00273.parquet",
+        "bytes": 43122561
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00257-of-00273.parquet",
+        "bytes": 317786337
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00071-of-00273.parquet",
+        "bytes": 21547990
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00249-of-00273.parquet",
+        "bytes": 1026885513
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00130-of-00273.parquet",
+        "bytes": 21561923
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00098-of-00273.parquet",
+        "bytes": 55423524
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00216-of-00273.parquet",
+        "bytes": 47670466
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00114-of-00273.parquet",
+        "bytes": 17135418
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00020-of-00273.parquet",
+        "bytes": 27181332
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00262-of-00273.parquet",
+        "bytes": 47107198
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00187-of-00273.parquet",
+        "bytes": 15717028
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00205-of-00273.parquet",
+        "bytes": 13950405
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00095-of-00273.parquet",
+        "bytes": 22104695
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00145-of-00273.parquet",
+        "bytes": 17229338
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00165-of-00273.parquet",
+        "bytes": 28328129
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00198-of-00273.parquet",
+        "bytes": 25626207
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00040-of-00273.parquet",
+        "bytes": 20035635
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00082-of-00273.parquet",
+        "bytes": 17790004
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00238-of-00273.parquet",
+        "bytes": 587787039
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00176-of-00273.parquet",
+        "bytes": 14511161
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00127-of-00273.parquet",
+        "bytes": 32976655
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00033-of-00273.parquet",
+        "bytes": 29729003
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00167-of-00273.parquet",
+        "bytes": 20546727
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00075-of-00273.parquet",
+        "bytes": 17805761
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00036-of-00273.parquet",
+        "bytes": 15535506
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00069-of-00273.parquet",
+        "bytes": 15998806
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00181-of-00273.parquet",
+        "bytes": 18927872
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00237-of-00273.parquet",
+        "bytes": 49890548
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00134-of-00273.parquet",
+        "bytes": 13676745
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00112-of-00273.parquet",
+        "bytes": 12845372
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00019-of-00273.parquet",
+        "bytes": 18853213
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00271-of-00273.parquet",
+        "bytes": 45975559
+      },
+      {
+        "path": "snapshots/74c4ea0cee96786739e4ccb97d227818a05ae752/data/test-00212-of-00273.parquet",
+        "bytes": 18984295
+      }
+    ],
+    "available": true
+  },
+  {
+    "repository": "datasets--Lin-Chen--ShareGPT4V",
+    "snapshot_files": [],
+    "available": false
+  }
+]

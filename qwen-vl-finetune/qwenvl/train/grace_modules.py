@@ -20,9 +20,9 @@ Notes / deviations from the paper, with rationale:
   * DKD is evaluated only on valid (non-ignored, label-bearing) positions
     rather than every token. This matches the supervised-token convention
     of the trainer and slashes the KL memory footprint (V ~= 1.5e5).
-  * gated_dkd_loss processes the valid-token axis in chunks so the
-    transient (chunk, vocab) tensors stay bounded even for long packed
-    sequences.
+  * gated_dkd_loss chunks the KL computation. With checkpoint_chunks=True,
+    selection and softmax intermediates are recomputed during backward;
+    without it, autograd retains intermediates across all chunks.
   * RCKA is computed per image (split via image_grid_thw) and averaged,
     matching the paper's intra-sample formulation under data-flattening
     where one micro-batch holds several images in a single sequence.
@@ -35,6 +35,7 @@ from typing import Optional
 
 import torch
 import torch.nn.functional as F
+from torch.utils.checkpoint import checkpoint
 
 
 # ======================================================================
@@ -110,6 +111,7 @@ def gated_dkd_loss(
     beta_dkd: float = 4.0,
     ignore_index: int = -100,
     chunk_size: int = 2048,
+    checkpoint_chunks: bool = False,
 ) -> torch.Tensor:
     """Confidence-gated DKD over valid, next-token-shifted positions.
 
@@ -117,7 +119,47 @@ def gated_dkd_loss(
     labels: (B, S)  — token id at supervised positions, ignore_index else.
 
     L_GDKD = sum_i g_i * L_i / sum_i g_i   (Eq. 6 of the paper)
+
+    checkpoint_chunks recomputes KL intermediates in backward. Selection of
+    supervised positions happens inside the checkpoint, so neither a full
+    (valid_tokens, vocab) copy nor every chunk's softmax graph is retained.
+    Full model logits and their gradients still scale with sequence length.
     """
+    if chunk_size <= 0:
+        raise ValueError("dkd_chunk_size must be positive")
+
+    if checkpoint_chunks:
+        def chunk_loss(sc, tc, targets):
+            valid = targets != ignore_index
+            sc, tc, targets = sc[valid], tc[valid], targets[valid]
+            per_tok = decoupled_kd_per_token(
+                sc, tc, targets, temperature, alpha, beta_dkd
+            )
+            gates = confidence_weights(tc)
+            return (gates * per_tok).sum(), gates.sum()
+
+        # Slice each sequence before selecting valid positions. These views
+        # share the original logits' storage, including for noncontiguous B>1
+        # inputs. Do not reshape/copy the entire shifted vocabulary tensor.
+        num = student_logits.new_zeros((), dtype=torch.float32)
+        den = student_logits.new_zeros((), dtype=torch.float32)
+        for batch in range(labels.shape[0]):
+            for start in range(0, labels.shape[1] - 1, chunk_size):
+                end = min(start + chunk_size, labels.shape[1] - 1)
+                targets = labels[batch, start + 1:end + 1]
+                if not (targets != ignore_index).any():
+                    continue
+                args = (student_logits[batch, start:end],
+                        teacher_logits[batch, start:end], targets)
+                if torch.is_grad_enabled() and any(x.requires_grad for x in args):
+                    n, d = checkpoint(chunk_loss, *args, use_reentrant=False,
+                                      preserve_rng_state=False)
+                else:
+                    n, d = chunk_loss(*args)
+                num = num + n
+                den = den + d
+        return num / den.clamp_min(1e-8)
+
     # Next-token shift, matching HuggingFace's CE convention.
     s = student_logits[:, :-1, :]
     t = teacher_logits[:, :-1, :]

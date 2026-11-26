@@ -1,0 +1,157 @@
+{
+  "summary": {
+    "model_path": "reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+    "processor_path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/sft",
+    "image_processor_size": {
+      "longest_edge": 50176,
+      "shortest_edge": 4096
+    },
+    "data_dir": "reproduction/GRACE/evaluation/HallusionBench/data",
+    "total": 8,
+    "correct": 4,
+    "aAcc": 0.5,
+    "qAcc": 0.5,
+    "qAcc_correct_groups": 4,
+    "qAcc_total_groups": 8,
+    "fAcc": 0.0,
+    "fAcc_correct_groups": 0,
+    "fAcc_total_groups": 2,
+    "parse_fail": 0,
+    "errors": 0,
+    "by_modality": {
+      "image": {
+        "acc": 0.5,
+        "correct": 4,
+        "total": 8
+      }
+    },
+    "by_category": {
+      "VS": {
+        "acc": 0.5,
+        "correct": 4,
+        "total": 8
+      }
+    },
+    "by_subcategory": {
+      "VS/chart": {
+        "acc": 0.5,
+        "correct": 4,
+        "total": 8
+      }
+    }
+  },
+  "results": [
+    {
+      "category": "VS",
+      "subcategory": "chart",
+      "set_id": "0",
+      "figure_id": "1",
+      "question_id": "0",
+      "visual_input": "1",
+      "has_image": true,
+      "pred": "1",
+      "gold": "0",
+      "correct": false,
+      "raw": "Yes",
+      "error": null
+    },
+    {
+      "category": "VS",
+      "subcategory": "chart",
+      "set_id": "0",
+      "figure_id": "1",
+      "question_id": "1",
+      "visual_input": "1",
+      "has_image": true,
+      "pred": "0",
+      "gold": "1",
+      "correct": false,
+      "raw": "No",
+      "error": null
+    },
+    {
+      "category": "VS",
+      "subcategory": "chart",
+      "set_id": "0",
+      "figure_id": "1",
+      "question_id": "2",
+      "visual_input": "1",
+      "has_image": true,
+      "pred": "0",
+      "gold": "0",
+      "correct": true,
+      "raw": "No",
+      "error": null
+    },
+    {
+      "category": "VS",
+      "subcategory": "chart",
+      "set_id": "0",
+      "figure_id": "1",
+      "question_id": "3",
+      "visual_input": "1",
+      "has_image": true,
+      "pred": "0",
+      "gold": "0",
+      "correct": true,
+      "raw": "No",
+      "error": null
+    },
+    {
+      "category": "VS",
+      "subcategory": "chart",
+      "set_id": "1",
+      "figure_id": "1",
+      "question_id": "0",
+      "visual_input": "1",
+      "has_image": true,
+      "pred": "1",
+      "gold": "0",
+      "correct": false,
+      "raw": "Yes",
+      "error": null
+    },
+    {
+      "category": "VS",
+      "subcategory": "chart",
+      "set_id": "1",
+      "figure_id": "1",
+      "question_id": "1",
+      "visual_input": "1",
+      "has_image": true,
+      "pred": "1",
+      "gold": "1",
+      "correct": true,
+      "raw": "Yes",
+      "error": null
+    },
+    {
+      "category": "VS",
+      "subcategory": "chart",
+      "set_id": "1",
+      "figure_id": "1",
+      "question_id": "2",
+      "visual_input": "1",
+      "has_image": true,
+      "pred": "1",
+      "gold": "1",
+      "correct": true,
+      "raw": "Yes",
+      "error": null
+    },
+    {
+      "category": "VS",
+      "subcategory": "chart",
+      "set_id": "1",
+      "figure_id": "1",
+      "question_id": "3",
+      "visual_input": "1",
+      "has_image": true,
+      "pred": "1",
+      "gold": "0",
+      "correct": false,
+      "raw": "Yes",
+      "error": null
+    }
+  ]
+}

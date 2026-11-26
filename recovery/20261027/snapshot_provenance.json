@@ -1,0 +1,623 @@
+[
+  {
+    "path": "qwen-vl-finetune/scripts/grace_resume_recipe.py",
+    "sha256": "3d549fe678fe8292a5ea64fd43128244e5313cd654ff4cf12ddac87dae59f343",
+    "timestamp": "2026-09-09T07:16:04.900Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T15-11-15-01a08501-b10b-7423-8cd8-7ad15662c42f.jsonl",
+    "line": 53,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "qwen-vl-finetune/qwenvl/train/grace_resume.py",
+    "sha256": "88d348b143de04401eb0ec903a23098fd01fb0270d34568f815e95f410938357",
+    "timestamp": "2026-09-09T07:16:04.900Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T15-11-15-01a08501-b10b-7423-8cd8-7ad15662c42f.jsonl",
+    "line": 53,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "tests/test_grace_resume.py",
+    "sha256": "e1214702711a948f0168dc859ad9670df7881253661068bfbf4f91323adce390",
+    "timestamp": "2026-09-09T07:17:23.595Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T15-11-15-01a08501-b10b-7423-8cd8-7ad15662c42f.jsonl",
+    "line": 70,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "qwen-vl-finetune/scripts/README_grace_gpu_switch.md",
+    "sha256": "c10d744a3ee1eb2de3ce08591a3664c1b112c83a800153bee73ec095118f7371",
+    "timestamp": "2026-09-09T07:18:26.283Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T15-11-15-01a08501-b10b-7423-8cd8-7ad15662c42f.jsonl",
+    "line": 79,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/common.py",
+    "sha256": "0a6e339f1e20543c8352233222d9899959e18b29fba05e11b271d71b87516ef8",
+    "timestamp": "2026-09-21T04:26:13.545Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 53,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/training.py",
+    "sha256": "b36ad7707f023a01e698bd81c5642012ceaa82aded07f0e9bb38ba5709eb2269",
+    "timestamp": "2026-09-21T04:27:26.091Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 60,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/matched_protocol.py",
+    "sha256": "8cafc30d50717262d47cf6f5d3d58cbfec2593ce56033cc04f865b98112acb67",
+    "timestamp": "2026-09-21T04:28:02.441Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 65,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/evaluate.py",
+    "sha256": "ce1a57e836ce157103d5c0fcdf80f0df60bbb910e2d4554b7104e87aaf1e2ed7",
+    "timestamp": "2026-09-21T04:30:29.389Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 75,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/prepare_models.py",
+    "sha256": "de55ddb00650f321f20fedc025584dae956d8f319e29111b4ab4c6a6d7b2d854",
+    "timestamp": "2026-09-21T04:31:16.152Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 90,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/test_launchers.py",
+    "sha256": "cf77c4e0e7dd683d554b645f36bdc0e828b13ce9210f778c1b4c7fe4b1b3f233",
+    "timestamp": "2026-09-21T04:33:55.994Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 124,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/summarize_runtime.py",
+    "sha256": "75928def2e60a80e999304cd2bb87c6817b60dd5fbbefe45e1a2075ef4fe81f4",
+    "timestamp": "2026-09-21T04:35:24.163Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 141,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/run_lmms_matrix.py",
+    "sha256": "3a6f13ea5ea5ad92f54bdc3b8b7c41ae1088710c90d4117a36a96b25e42915e9",
+    "timestamp": "2026-09-23T14:47:24.863Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 308,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/lmms_worker.py",
+    "sha256": "55947207d5441d90b3d5fb07406165fd113bf63e52f8cd8a63ecb9518ae15197",
+    "timestamp": "2026-09-23T14:47:24.863Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 308,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/lmms_protocol.json",
+    "sha256": "2a924ba5a25f2bd1df7383428f6fd9cfd4493345148c20e735312d7ab7a97ac7",
+    "timestamp": "2026-09-23T14:47:24.863Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 308,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/run_lmms_evaluation.sh",
+    "sha256": "624e79c52480ce1aa2bcfce7057c8a21ae44a56b140ce5bb3892fb3229fbc99b",
+    "timestamp": "2026-09-23T14:47:24.863Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 308,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/prepare_lmms_eval.sh",
+    "sha256": "ae72003bc00125dedcb89ea1a89940861a1737c40e3858aec46286e70686c254",
+    "timestamp": "2026-09-23T15:16:50.660Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 327,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/tests/test_lmms_matrix.py",
+    "sha256": "55d13b1c64ef2c4b126d71b707deaa02f4ba916531d197d74815ffd23a1f0b5f",
+    "timestamp": "2026-09-23T15:16:50.660Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 327,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/lmms_evaluation.md",
+    "sha256": "2dc2edd76020fb3a281efb5d8c6db13464cd1ea4372822aa626e84e8b34ce421",
+    "timestamp": "2026-09-23T15:22:16.435Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 366,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/compile_lmms_four_suite_report.py",
+    "sha256": "96de2af09b2e3a34077c362661bbc7088d70b534e2f420a2ce0eb8cddf5c77b0",
+    "timestamp": "2026-09-25T03:23:03.131Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 512,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/audit/audit_checkpoints.py",
+    "sha256": "79bf18e783951ac36d2dec6755ad6baf286f968590cc071ecbd02ee65d7e5257",
+    "timestamp": "2026-09-25T03:39:55.332Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 611,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/audit/audit_datasets.py",
+    "sha256": "8bb8e39c6ebec80b328c1d5dad268c80daed2df62e20c073c933e765f6f97f1d",
+    "timestamp": "2026-09-25T03:50:08.752Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 645,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/audit/audit_loading.py",
+    "sha256": "4ea8119ced706dd815489f853b491310825bc097f57656f649e940857c4e1ab6",
+    "timestamp": "2026-09-25T03:51:16.323Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 652,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/audit/audit_evaluation.py",
+    "sha256": "ec872f573761d717b6845df156bffce135c865c6a5f225a809a0ec05dac60c2f",
+    "timestamp": "2026-09-25T03:53:02.865Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 672,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/evaluation_integrity_audit.md",
+    "sha256": "7bf96684d4c46100c70ce3fd407e88df9f8189ffba3c80c1f6961070dc39cbf6",
+    "timestamp": "2026-09-25T03:59:23.428Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 729,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/paper_acceptance.py",
+    "sha256": "707fe94f7d84487e7295de83df360d135fdc6c762ca968782b22aaf2548355cd",
+    "timestamp": "2026-09-25T08:42:56.173Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 110,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/run_upstream_matrix.py",
+    "sha256": "0f45253643b60c0bf55c1ab349c8d8fc6f181677d045a3620b5fcf3c0b6617ae",
+    "timestamp": "2026-09-25T08:42:56.173Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 110,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/tests/cpu_mmmu_integration.py",
+    "sha256": "28b08fafd49f83bd825ee1318aa85d17d819be00d20b12c7af8e9f1b41c60a79",
+    "timestamp": "2026-09-25T08:44:48.369Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 122,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/tests/test_paper_protocol.py",
+    "sha256": "ec80d0264fadd0fb5eb6db47ce1da6a11355f6f60acec8e4625f2a2193cc9b05",
+    "timestamp": "2026-09-25T08:44:48.369Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 122,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/README_paper_protocol.md",
+    "sha256": "17c81a12d8ac5a75e629921a0870b94a1eb7fd72583e81c337ab241bd069e8cf",
+    "timestamp": "2026-09-25T08:51:56.793Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 178,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/check_re_evaluation_gate.py",
+    "sha256": "b61cb082697c6e97d01d43351ca1826f727ab7b5f9ef1652e9b97c6c0bc7af22",
+    "timestamp": "2026-09-25T09:05:51.989Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 236,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/run_re_evaluation.sh",
+    "sha256": "6670b60b5b30dc5eba94e3289f7ff829841a7624e976d7262e1ff3f8d05fd2ce",
+    "timestamp": "2026-09-25T09:05:51.989Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 236,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/tests/test_re_evaluation_gate.py",
+    "sha256": "e7ac2a71e94f3ad36d41b01029433035d931eee8fc47baf55e1357eaa14ec2fa",
+    "timestamp": "2026-09-25T09:06:57.862Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 241,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/README_re_evaluation.md",
+    "sha256": "339e4005f62810c8ee5f737b13af8d603da9b6d1cc94d67f40b4c67a47795d84",
+    "timestamp": "2026-09-25T09:08:19.905Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 246,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/diagnosis/analyze_saved_answers.py",
+    "sha256": "8aeedeb595cf5b7fad483856f1512d96ae34bc1ad593e8d8ab7676b9f2ff4683",
+    "timestamp": "2026-09-26T01:12:31.901Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 308,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/diagnosis/diagnosis_report.md",
+    "sha256": "aa15b681da83ec6c6d68c630b9c6d869bf11198c09ad4c219b112029adfb69a0",
+    "timestamp": "2026-09-26T01:15:37.428Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 334,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/diagnosis/analyze_four_suites.py",
+    "sha256": "805a9f5b3bb67f68af186788bf95773835847f98b78c0356165cd2566a42c5c5",
+    "timestamp": "2026-09-26T01:42:35.906Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 424,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/diagnosis/four_suite_followup.md",
+    "sha256": "d776101d339ea444d8d75673caf60913188948039a83c96b6835779780ae8d37",
+    "timestamp": "2026-09-26T01:46:32.622Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 452,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/differences_from_org.md",
+    "sha256": "d440520edf352e12371647fd7084be445d9da226fa96c1381948a3ffc953fc4c",
+    "timestamp": "2026-09-26T06:57:44.701Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T10-01-54-01a0db72-94f0-7b72-bcf7-7556efe8b6d4.jsonl",
+    "line": 98,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/reproduction_eval_only/metric_protocol_findings.md",
+    "sha256": "4de092601f260b805ba3b7bac0b7a4c90c7f7a64f79292aeae4beb4882526eeb",
+    "timestamp": "2026-09-26T08:11:47.134Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T16-03-46-01a0dcbd-e25f-7d20-b3b7-cb89b7c453c8.jsonl",
+    "line": 92,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/local_scoring.py",
+    "sha256": "d7462f3ec2aa823139bc14ab5d868dc6514af609ccfd65340796fd8dbf1e2ded",
+    "timestamp": "2026-09-26T11:46:00.539Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T19-42-02-01a0dd85-b3e4-74c3-869d-59e0bde5c06e.jsonl",
+    "line": 63,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/run_local_development.py",
+    "sha256": "9a4859a21d47b6659a63f24cfbfc57e54698ebfac540ca62d7ff82e356f7b41f",
+    "timestamp": "2026-09-26T11:47:27.366Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T19-42-02-01a0dd85-b3e4-74c3-869d-59e0bde5c06e.jsonl",
+    "line": 73,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/tests/test_local_scoring.py",
+    "sha256": "00f76962e8518eda5ff8631d50323609152d857dba92d0bf18caa87be08f1a88",
+    "timestamp": "2026-09-26T11:48:08.861Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T19-42-02-01a0dd85-b3e4-74c3-869d-59e0bde5c06e.jsonl",
+    "line": 80,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/audit_local_scoring.py",
+    "sha256": "9998aacf3dac2c9575132260a08ae371550fa8cbfb692718ed47de0363f7f44a",
+    "timestamp": "2026-09-26T11:48:49.852Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T19-42-02-01a0dd85-b3e4-74c3-869d-59e0bde5c06e.jsonl",
+    "line": 90,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/tests/test_local_workers.py",
+    "sha256": "efa72c06dc1fe304bf160b508e583cde29e875af81ce5419b0452f64efc15a42",
+    "timestamp": "2026-09-26T11:50:33.685Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T19-42-02-01a0dd85-b3e4-74c3-869d-59e0bde5c06e.jsonl",
+    "line": 110,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/reproduction_eval_only/run_local_development.sh",
+    "sha256": "a5586189f20ec0a5925723975897afb744f0c288581af6ebd1f1d2f4b06f9ebd",
+    "timestamp": "2026-09-26T11:53:12.978Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T19-42-02-01a0dd85-b3e4-74c3-869d-59e0bde5c06e.jsonl",
+    "line": 142,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/README_local_development.md",
+    "sha256": "642c4872a443467cf0e4a2b3e550da82b74033bb3629f5d040217bcbc3cb3d29",
+    "timestamp": "2026-09-26T11:53:12.978Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T19-42-02-01a0dd85-b3e4-74c3-869d-59e0bde5c06e.jsonl",
+    "line": 142,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/audit_token_lengths.py",
+    "sha256": "acc94f528815cfdc8522ae02aa30a6c26f379a8938e5e3bf9fcd982023dfb1d4",
+    "timestamp": "2026-10-05T07:55:17.962Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 609,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/run_memory_checks.py",
+    "sha256": "700b734e1e267cf86bffd6b0eedae1c7cf2fb3cdeadb1c27a26cb7bf00af2a9a",
+    "timestamp": "2026-10-05T08:16:14.085Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 722,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/test_memory_checks.py",
+    "sha256": "f56b4623c093b45ce761392efbb0944f8ab4c887e067a7a6f7c8e42a78796586",
+    "timestamp": "2026-10-05T08:20:05.410Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 747,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/reports/compile_comparison.py",
+    "sha256": "1e483f1958c3cbbf304d4f364aed9cb5d69742d8117b01048b397df63d338b33",
+    "timestamp": "2026-10-12T04:55:54.141Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 939,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/reports/audit_training_tokens.py",
+    "sha256": "fedb1054497579214a0428262b55b48b340ef255b7d1a9e352dc9e9bb2e289b3",
+    "timestamp": "2026-10-12T04:56:18.463Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 945,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/reports/render_comparison.py",
+    "sha256": "fb22f112680872719c46ffceb3c587d4dc2852752e75dbb533b9e9180c422e56",
+    "timestamp": "2026-10-12T05:00:51.357Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 994,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/run_video_evaluation_parallel.sh",
+    "sha256": "b64dba088df7fa519424d55b77e20950608ae7db77823adae8cd5465c7ece34b",
+    "timestamp": "2026-10-23T08:09:49.596Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 382,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reports/validate_video_runtime_20261023.py",
+    "sha256": "78f5ed0e3ae585f62ab8b72f27477796dca7f5c8e7ada5e79ea05b850aae0893",
+    "timestamp": "2026-10-23T08:13:32.345Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 424,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reports/validate_video_long_case_20261023.py",
+    "sha256": "eb4d37da535e63d3d0583e0c39aed712e06f8e2fb6f8dd5a61a043c8b6636689",
+    "timestamp": "2026-10-23T08:16:34.211Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 466,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/tests/cpu_lmms_video_integration.py",
+    "sha256": "46892d51b90ca0485bb44fba5a950c23f153c70b8b6977029df668ac5f3a5698",
+    "timestamp": "2026-10-26T06:25:28.766Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 77,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/tests/test_lmms_video.py",
+    "sha256": "3f9bf8df0e386393ee8a84f36d9201862b9e14089f4cdfa6730a7e747d02067a",
+    "timestamp": "2026-10-26T06:26:39.204Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 87,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/tests/cpu_lmms_video_integration.py",
+    "sha256": "f158a762d3f5690c88ffa03dcc6e1a08533e06ad38c26c848d2533db73c4162f",
+    "timestamp": "2026-10-26T06:31:59.599Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 182,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/protocols/token_reduction_runtime.py",
+    "sha256": "ba8a4e0c501d9f195e7c584179d11a488a783910ab595fc67f48063dd50abc04",
+    "timestamp": "2026-10-26T07:25:37.833Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 450,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/protocols/token_reduction_runtime.py",
+    "sha256": "317584e96a98b5e5f10263cf526318172aaa9370fe5f5fca4ed8447aac021110",
+    "timestamp": "2026-10-26T07:27:51.174Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 459,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/runners/run_token_reduction_matrix.py",
+    "sha256": "74bf5c295bf1d5407f22f8bcd9af7e5179958020f1a21173bc88cb1c19a2fa2b",
+    "timestamp": "2026-10-26T07:27:51.174Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 459,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/qat_int4_token_reduction_576_seed42/run_experiment.sh",
+    "sha256": "b6d4db2b0a8520c1ea5fe3e43291a0ec2d6e9c4859e660261bcef16ee2a15db3",
+    "timestamp": "2026-10-26T07:27:51.174Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 459,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/protocols/int4_gemm.py",
+    "sha256": "4f8f96918a951ede4cf04acf4f49080d1846b610ea1cdbb3fb576456de47281d",
+    "timestamp": "2026-10-26T07:30:20.739Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 493,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/tests/test_token_reduction.py",
+    "sha256": "e0ca05c6b218af9bd821446472362319e0ed0ca376106e75607234089f502a1f",
+    "timestamp": "2026-10-26T07:30:20.739Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 493,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "evaluation/tests/check_int4_kernel.py",
+    "sha256": "af4b64366788791db568fce5a34059b1e29646f6959b423dd3039d0664665076",
+    "timestamp": "2026-10-26T07:32:37.441Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 516,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/qat_int4_token_reduction_576_seed42/.gitignore",
+    "sha256": "22802e27206c9dc0b3c7d49337c2f4b48aceedf043230bcbe6474d9e7973898f",
+    "timestamp": "2026-10-26T07:42:21.521Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 645,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/qat_int4_token_reduction_576_seed42/experiment_README.md",
+    "sha256": "447afe2e3e8bdb37165c6405759e4e253821bf89e214b4670fd0d7a45a2b32cf",
+    "timestamp": "2026-10-26T07:42:21.521Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 645,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/qat_int4_token_reduction_576_seed42/run_images.sh",
+    "sha256": "7dd0f20a3fcfe82bf7cf3fb6c3ad6c4c3877052676eec330d0933c6b55c0da42",
+    "timestamp": "2026-10-26T07:58:41.659Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 808,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  },
+  {
+    "path": "experiments/qat_int4_token_reduction_576_seed42/run_videos.sh",
+    "sha256": "191087996c4a35df49a29a901ab456ab3ea3aec3978d02ab6bcafdac7731c7a3",
+    "timestamp": "2026-10-26T07:58:41.659Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 808,
+    "tool": "exec",
+    "source": "quoted heredoc"
+  }
+]

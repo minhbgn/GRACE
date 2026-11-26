@@ -1,0 +1,750 @@
+{
+  "snapshot_sgt": "2026-11-11T14:10:28.381170+08:00",
+  "source_checks": [
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/AI2D/eval_ai2d.py",
+      "sha256": "bd618835ed66a52baf7115a9100964e87aa28729484cee97d95716b06695f992"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/HallusionBench/eval_hallusion.py",
+      "sha256": "d09941c64d66d17a52a531aa01680bc4b18db60633bf3ec6ad4e93d0f3f57b3b"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/MMBench/eval_mmbench.py",
+      "sha256": "f927f0ced5e3e5976fa92d47db064f8f06d78284534b4681eb88c13180832a4c"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/MMStar/eval_mmstar.py",
+      "sha256": "faa44068119a34cbfc45fef0ff8200807b523305d65680001704beb9815975cf"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/SEEDBench/eval_seedbench.py",
+      "sha256": "2c7a3d28f82bd26aacd2b2419c590cb6a731d771021991d8e8c8a77f837c4177"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/ScienceQA/eval_scienceqa.py",
+      "sha256": "91ece4732a8f9afbc59a18473e99af3df97e1450f4b7cf618cf2c17b43787db9"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/audits/summarize_constrained_evals.py",
+      "sha256": "76501a9e24b3663ec0cee1459bcd5b6b7f974e8b67694a71c7a209a992b683cf"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/mmmu/eval_mmmu.py",
+      "sha256": "60cb7336d9c8ee215f7f9d0dcfaa32171f146d719584f7ee299f074e16b22163"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/paths.py",
+      "sha256": "bf66d3a9c848f1ead7d0a23d7a9bb88f5b50d3e21d32244971c8f5a942deb5d8"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/protocols/gpu_job_queue.py",
+      "sha256": "de3fe780d738b0b43ce221e3fc6814504daefb4a8812bb38c6cde114f92636b5"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/protocols/gpu_reservation.py",
+      "sha256": "45f589b89bae951ada9686046bc30cd9075d07c0e6483c2692d72499bfd30de8"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/protocols/int4_gemm.py",
+      "sha256": "03ccf59666d649496063a7bce11eb817d10ab09ef156fbc64f1376a40f7feb86"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/protocols/local_scoring.py",
+      "sha256": "d78063f024b4efa7044806b8113fbfecaf530c2799309cf0d2c1ed3c80a9090b"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/protocols/matched_protocol.py",
+      "sha256": "9a35a0d15afac76e1c02a4562b1cc5be63c76777da680910c445e1438b1a7986"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/protocols/token_reduction_runtime.py",
+      "sha256": "534c80dc41bfff624163aa4f699ab6cad63c60fbc599464dd22494b429a762ff"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/protocols/video_population.py",
+      "sha256": "e3273075073e97766904f37999280765fe4f2efa466b4b03fc5b4efc21922661"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/protocols/video_protocol.py",
+      "sha256": "1ee9a308a23a72c159c2be1ebc6bd386e1bb8bc699bf4a1e660ff50636a05816"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/runners/run_constrained_matrix_evals.py",
+      "sha256": "6ddeef1add9fc246d6f73f95ac38b89a9cbb11f35ee7d99800a30b860453ea8e"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/runners/run_lmms_matrix.py",
+      "sha256": "b1a1c6618c49c07c1f3e61e9364edb0f991a4099857797499a2a15cad05eedc0"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/runners/run_local_development.py",
+      "sha256": "b13ea6e32c0fa0aa3100ae7a601d2e9d86edf98c783487cc98987252b1aeea4f"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/runners/run_token_reduction_matrix.py",
+      "sha256": "49d7e29d72c419dc5b62ab4e6b8cec79d609f6bf66b3793980d4581ebf528e14"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "evaluation/tests/check_int4_kernel.py",
+      "sha256": "8ab0f0f9c8feb30036b5d08f1a7915d3610b4726d995bdabe83af1dd79689905"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "qwen-vl-finetune/qwenvl/quantize/awq_linear.py",
+      "sha256": "444e1ad8bdcafbc17afc763ecd908ef7a8ca51eb884eb87a7d75666dbc53e02a"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "qwen-vl-finetune/qwenvl/quantize/qat_to_awq.py",
+      "sha256": "e97d97a89d5768ebee8944d5229623a34ea904969f4eb2b53d699f0e19415a79"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "source_code",
+      "file": "qwen-vl-finetune/scripts/constrained_experiment.py",
+      "sha256": "186c9297ae51cb54d944b7cb54554d545e7f3c19b2b1a1cba97f5bf41d0da851"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "repair_code",
+      "file": "evaluation/protocols/video_memory_runtime.py",
+      "sha256": "fed0d9f94bd3cd4f5538d47321d5c3a63a83726c9852919e7b670aabda9da3c9"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "repair_code",
+      "file": "evaluation/runners/run_token_reduction_video_retry.py",
+      "sha256": "13543bf9fd063b51e8cce47f5ccbf87d57a657afb71ac629a57f11a6fa230c18"
+    },
+    {
+      "manifest": "protocol.json",
+      "group": "repair_code",
+      "file": "evaluation/tests/test_video_memory_runtime.py",
+      "sha256": "d9a657af555f796686aa57f25f16ead87e442d9ef87c2ddbbc5011ffa0139cbf"
+    },
+    {
+      "manifest": "parallel_implementation.json",
+      "group": "code",
+      "file": "evaluation/protocols/evaluation_checkpoints.py",
+      "sha256": "4c7529316f39fa70c5408aaf53b1f9844291dc38d57cc7ec6146e31fabec4281"
+    },
+    {
+      "manifest": "parallel_implementation.json",
+      "group": "code",
+      "file": "evaluation/protocols/parallel_evaluation.py",
+      "sha256": "c5f6b0348518cc7299b38d71bc134f27db1787e4e4f2101f08727bd03db7de00"
+    },
+    {
+      "manifest": "parallel_implementation.json",
+      "group": "code",
+      "file": "evaluation/runners/run_parallel_video_evaluation.py",
+      "sha256": "ada72accac5ad81ea13d5bd37769321b78e820b8fc3dc30b799bb156b41bffee"
+    },
+    {
+      "manifest": "parallel_implementation.json",
+      "group": "code",
+      "file": "evaluation/workers/parallel_video_worker.py",
+      "sha256": "5b3cfdfa8c75b56806b60e7d21d32b05c10ededd6aa63378ba484c2d500a2a07"
+    }
+  ],
+  "verified_completion_artifacts": 144,
+  "completed_retry_jobs": [
+    {
+      "suite": "tempcompass",
+      "config": "baseline_r100",
+      "count": 1580
+    },
+    {
+      "suite": "tempcompass",
+      "config": "merge_r010",
+      "count": 1580
+    },
+    {
+      "suite": "tempcompass",
+      "config": "merge_r025",
+      "count": 1580
+    },
+    {
+      "suite": "tempcompass",
+      "config": "merge_r050",
+      "count": 1580
+    },
+    {
+      "suite": "tempcompass",
+      "config": "resolution_r010",
+      "count": 1580
+    },
+    {
+      "suite": "tempcompass",
+      "config": "resolution_r025",
+      "count": 1580
+    },
+    {
+      "suite": "tempcompass",
+      "config": "resolution_r050",
+      "count": 1580
+    },
+    {
+      "suite": "tempcompass",
+      "config": "uniform_r010",
+      "count": 1580
+    },
+    {
+      "suite": "tempcompass",
+      "config": "uniform_r025",
+      "count": 1580
+    },
+    {
+      "suite": "tempcompass",
+      "config": "uniform_r050",
+      "count": 1580
+    },
+    {
+      "suite": "videomme",
+      "config": "baseline_r100",
+      "count": 1800
+    },
+    {
+      "suite": "videomme",
+      "config": "resolution_r050",
+      "count": 1800
+    },
+    {
+      "suite": "videomme",
+      "config": "uniform_r025",
+      "count": 1800
+    }
+  ],
+  "tempcompass": [
+    {
+      "config": "baseline_r100",
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/baseline_r100/attempt_20261105T043214_315475Z",
+      "score_percent": 61.32911392405064,
+      "count": 1580,
+      "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+      "actual_retention": 1.0,
+      "means": {
+        "model_seconds": 3.0207986418252126,
+        "vision_and_embedding_seconds": 0.3084858934100293,
+        "reduction_seconds": 0.004659062675848792,
+        "prefill_seconds": 2.6247593051364904,
+        "decode_seconds": 0.08264924684374393,
+        "input_visual_tokens": 2716.353164556962,
+        "input_text_tokens": 153.13101265822786,
+        "output_text_tokens": 2
+      },
+      "approximate_wall_seconds": 5520.525575399399,
+      "fixed_output_profile": {
+        "mean_seconds": 4.0011172691981,
+        "samples": 3
+      }
+    },
+    {
+      "config": "merge_r010",
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/merge_r010/attempt_20261105T121057_808651Z",
+      "score_percent": 56.32911392405063,
+      "count": 1580,
+      "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+      "actual_retention": 0.10055994657766673,
+      "means": {
+        "model_seconds": 0.8069073580865619,
+        "vision_and_embedding_seconds": 0.2982736203630891,
+        "reduction_seconds": 0.004571652902832514,
+        "prefill_seconds": 0.4221774529052686,
+        "decode_seconds": 0.08166963855111146,
+        "input_visual_tokens": 273.1563291139241,
+        "input_text_tokens": 153.13101265822786,
+        "output_text_tokens": 2
+      },
+      "approximate_wall_seconds": 1989.6763010025024,
+      "fixed_output_profile": {
+        "mean_seconds": 2.9803900495171547,
+        "samples": 3
+      }
+    },
+    {
+      "config": "merge_r025",
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/merge_r025/attempt_20261105T112805_235555Z",
+      "score_percent": 61.32911392405064,
+      "count": 1580,
+      "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+      "actual_retention": 0.25082377293830754,
+      "means": {
+        "model_seconds": 1.1694981668238775,
+        "vision_and_embedding_seconds": 0.29272465622877775,
+        "reduction_seconds": 0.00517269902025597,
+        "prefill_seconds": 0.7896390099691439,
+        "decode_seconds": 0.08174554914047447,
+        "input_visual_tokens": 681.3259493670886,
+        "input_text_tokens": 153.13101265822786,
+        "output_text_tokens": 2
+      },
+      "approximate_wall_seconds": 2565.9220061302185,
+      "fixed_output_profile": {
+        "mean_seconds": 3.088913802471426,
+        "samples": 3
+      }
+    },
+    {
+      "config": "merge_r050",
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/merge_r050/attempt_20261105T102843_374807Z",
+      "score_percent": 61.58227848101265,
+      "count": 1580,
+      "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+      "actual_retention": 0.5,
+      "means": {
+        "model_seconds": 1.7878306973631246,
+        "vision_and_embedding_seconds": 0.2990293803471553,
+        "reduction_seconds": 0.007021153039192852,
+        "prefill_seconds": 1.3995688623171063,
+        "decode_seconds": 0.08198724143395696,
+        "input_visual_tokens": 1358.176582278481,
+        "input_text_tokens": 153.13101265822786,
+        "output_text_tokens": 2
+      },
+      "approximate_wall_seconds": 3555.2780537605286,
+      "fixed_output_profile": {
+        "mean_seconds": 3.3794506415724754,
+        "samples": 3
+      }
+    },
+    {
+      "config": "resolution_r010",
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r010/attempt_20261105T074211_659887Z",
+      "score_percent": 58.35443037974684,
+      "count": 1580,
+      "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+      "actual_retention": 0.08199563916438599,
+      "means": {
+        "model_seconds": 0.7274298230728394,
+        "vision_and_embedding_seconds": 0.26994631445577627,
+        "reduction_seconds": 0.0007670330425983742,
+        "prefill_seconds": 0.3747627912018495,
+        "decode_seconds": 0.0817514814294969,
+        "input_visual_tokens": 222.72911392405064,
+        "input_text_tokens": 153.13101265822786,
+        "output_text_tokens": 2
+      },
+      "approximate_wall_seconds": 1814.072986125946,
+      "fixed_output_profile": {
+        "mean_seconds": 2.8815260156989098,
+        "samples": 3
+      }
+    },
+    {
+      "config": "resolution_r025",
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r025/attempt_20261105T070048_729739Z",
+      "score_percent": 60.189873417721515,
+      "count": 1580,
+      "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+      "actual_retention": 0.24201356155567846,
+      "means": {
+        "model_seconds": 1.1321598114422229,
+        "vision_and_embedding_seconds": 0.2780998218898909,
+        "reduction_seconds": 0.0015285243150554126,
+        "prefill_seconds": 0.7705096775689457,
+        "decode_seconds": 0.08180750552329082,
+        "input_visual_tokens": 657.3943037974684,
+        "input_text_tokens": 153.13101265822786,
+        "output_text_tokens": 2
+      },
+      "approximate_wall_seconds": 2476.9352519512177,
+      "fixed_output_profile": {
+        "mean_seconds": 3.0725803590483136,
+        "samples": 3
+      }
+    },
+    {
+      "config": "resolution_r050",
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r050/attempt_20261105T060420_690345Z",
+      "score_percent": 60.56962025316456,
+      "count": 1580,
+      "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+      "actual_retention": 0.46101507093231386,
+      "means": {
+        "model_seconds": 1.678600837610945,
+        "vision_and_embedding_seconds": 0.28940764777833905,
+        "reduction_seconds": 0.0024751703195934056,
+        "prefill_seconds": 1.3046447533548255,
+        "decode_seconds": 0.08185044283259518,
+        "input_visual_tokens": 1252.2797468354431,
+        "input_text_tokens": 153.13101265822786,
+        "output_text_tokens": 2
+      },
+      "approximate_wall_seconds": 3382.437427043915,
+      "fixed_output_profile": {
+        "mean_seconds": 3.269197502070003,
+        "samples": 3
+      }
+    },
+    {
+      "config": "uniform_r010",
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r010/attempt_20261105T095517_988997Z",
+      "score_percent": 59.367088607594944,
+      "count": 1580,
+      "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+      "actual_retention": 0.10055994657766673,
+      "means": {
+        "model_seconds": 0.8043750786375773,
+        "vision_and_embedding_seconds": 0.29761200331245796,
+        "reduction_seconds": 0.0023250455626204042,
+        "prefill_seconds": 0.4223480868848819,
+        "decode_seconds": 0.08187250929259801,
+        "input_visual_tokens": 273.1563291139241,
+        "input_text_tokens": 153.13101265822786,
+        "output_text_tokens": 2
+      },
+      "approximate_wall_seconds": 1998.8540012836456,
+      "fixed_output_profile": {
+        "mean_seconds": 3.022245551976893,
+        "samples": 3
+      }
+    },
+    {
+      "config": "uniform_r025",
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r025/attempt_20261105T091218_307752Z",
+      "score_percent": 61.64556962025316,
+      "count": 1580,
+      "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+      "actual_retention": 0.25082377293830754,
+      "means": {
+        "model_seconds": 1.1731007724717448,
+        "vision_and_embedding_seconds": 0.29760086566587035,
+        "reduction_seconds": 0.003514255885081955,
+        "prefill_seconds": 0.7898352651184872,
+        "decode_seconds": 0.08192600560716436,
+        "input_visual_tokens": 681.3259493670886,
+        "input_text_tokens": 153.13101265822786,
+        "output_text_tokens": 2
+      },
+      "approximate_wall_seconds": 2573.1462695598602,
+      "fixed_output_profile": {
+        "mean_seconds": 3.1204755488369202,
+        "samples": 3
+      }
+    },
+    {
+      "config": "uniform_r050",
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r050/attempt_20261105T081231_754086Z",
+      "score_percent": 61.83544303797468,
+      "count": 1580,
+      "sample_identity": "6884ed73d5c4c789b50e46290933a9966dd2b51b8ac85ce7910bb4eeebb625c0",
+      "actual_retention": 0.5,
+      "means": {
+        "model_seconds": 1.790924522450453,
+        "vision_and_embedding_seconds": 0.3035908882140736,
+        "reduction_seconds": 0.005625681470655188,
+        "prefill_seconds": 1.3995538863766042,
+        "decode_seconds": 0.08192634984285016,
+        "input_visual_tokens": 1358.176582278481,
+        "input_text_tokens": 153.13101265822786,
+        "output_text_tokens": 2
+      },
+      "approximate_wall_seconds": 3580.294317960739,
+      "fixed_output_profile": {
+        "mean_seconds": 3.4236406361063323,
+        "samples": 3
+      }
+    }
+  ],
+  "tempcompass_pairs": [
+    {
+      "nominal_retention": 0.5,
+      "uniform_to_resolution_model_ratio": 1.0669150654061224,
+      "component_differences": {
+        "model_seconds": 0.11232368483950816,
+        "vision_and_embedding_seconds": 0.014183240435734545,
+        "reduction_seconds": 0.0031505111510617824,
+        "prefill_seconds": 0.09490913302177861,
+        "decode_seconds": 7.590701025497748e-05
+      },
+      "visual_token_ratio": 1.0845632421275222,
+      "score_difference_pp": 1.2658227848101191
+    },
+    {
+      "nominal_retention": 0.25,
+      "uniform_to_resolution_model_ratio": 1.0361618215164947,
+      "component_differences": {
+        "model_seconds": 0.04094096102952194,
+        "vision_and_embedding_seconds": 0.019501043775979443,
+        "reduction_seconds": 0.0019857315700265426,
+        "prefill_seconds": 0.0193255875495415,
+        "decode_seconds": 0.00011850008387354061
+      },
+      "visual_token_ratio": 1.036403792109816,
+      "score_difference_pp": 1.455696202531648
+    },
+    {
+      "nominal_retention": 0.1,
+      "uniform_to_resolution_model_ratio": 1.1057768778845256,
+      "component_differences": {
+        "model_seconds": 0.07694525556473786,
+        "vision_and_embedding_seconds": 0.02766568885668169,
+        "reduction_seconds": 0.0015580125200220299,
+        "prefill_seconds": 0.04758529568303238,
+        "decode_seconds": 0.00012102786310111413
+      },
+      "visual_token_ratio": 1.2264060333265134,
+      "score_difference_pp": 1.0126582278481067
+    }
+  ],
+  "videomme_same_method_serial_parallel": {
+    "count": 443,
+    "serial_attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/uniform_r050/attempt_20261109T023755_583079Z",
+    "parallel_attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/uniform_r050/attempt_20261109T063011_815670Z",
+    "serial": {
+      "model_seconds": 23.553303268521553,
+      "vision_and_embedding_seconds": 2.4437895764346584,
+      "reduction_seconds": 0.18096479438833943,
+      "prefill_seconds": 20.83794499809263,
+      "decode_seconds": 0.08945387490850538,
+      "input_visual_tokens": 21730.212189616253,
+      "input_text_tokens": 787.0857787810384,
+      "output_text_tokens": 2
+    },
+    "parallel": {
+      "model_seconds": 52.621224753087716,
+      "vision_and_embedding_seconds": 15.94161992158497,
+      "reduction_seconds": 0.2138608785064441,
+      "prefill_seconds": 36.23391376388665,
+      "decode_seconds": 0.1781954958395818,
+      "input_visual_tokens": 21730.212189616253,
+      "input_text_tokens": 787.0857787810384,
+      "output_text_tokens": 2
+    },
+    "slowdown": {
+      "model_seconds": 2.234133537583867,
+      "vision_and_embedding_seconds": 6.523319386950996,
+      "reduction_seconds": 1.1817816787474789,
+      "prefill_seconds": 1.7388429505502228,
+      "decode_seconds": 1.9920377515433796
+    },
+    "sampling_and_generated_tokens_identical": true
+  },
+  "fresh_serial_segments": [
+    {
+      "config": "uniform_r050",
+      "start_index": 926,
+      "stop_index_exclusive": 1585,
+      "questions": 659,
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/uniform_r050/attempt_20261110T064111_096667Z",
+      "uniform": {
+        "model_seconds": 78.04086122240119,
+        "vision_and_embedding_seconds": 16.614429031274025,
+        "reduction_seconds": 0.4975889103094254,
+        "prefill_seconds": 60.80793236569136,
+        "decode_seconds": 0.10714905927231894,
+        "input_visual_tokens": 57672.072837632775,
+        "input_text_tokens": 5101.496206373293,
+        "output_text_tokens": 2
+      },
+      "baseline": {
+        "model_seconds": 137.48369886806412,
+        "vision_and_embedding_seconds": 12.653768565217442,
+        "reduction_seconds": 0.5609870731536644,
+        "prefill_seconds": 124.13287067322884,
+        "decode_seconds": 0.13302518956487566,
+        "input_visual_tokens": 115215.09104704097,
+        "input_text_tokens": 5101.496206373293,
+        "output_text_tokens": 2
+      },
+      "resolution50": {
+        "model_seconds": 67.41317637999612,
+        "vision_and_embedding_seconds": 11.444362836888509,
+        "reduction_seconds": 0.31323070991473423,
+        "prefill_seconds": 55.54935276187244,
+        "decode_seconds": 0.10462891503784111,
+        "input_visual_tokens": 52687.80880121396,
+        "input_text_tokens": 5101.496206373293,
+        "output_text_tokens": 2
+      },
+      "checkpoint_replayed_prefix": 926,
+      "prefix_means": {
+        "model_seconds": 53.91431234512261,
+        "vision_and_embedding_seconds": 18.226899925772237,
+        "reduction_seconds": 0.22422381008514575,
+        "prefill_seconds": 35.23727148488872,
+        "decode_seconds": 0.17072231767469812,
+        "input_visual_tokens": 22122.52159827214,
+        "input_text_tokens": 868.72030237581,
+        "output_text_tokens": 2
+      },
+      "same_frames_and_adaptive_baseline": true
+    },
+    {
+      "config": "uniform_r025",
+      "start_index": 984,
+      "stop_index_exclusive": 1800,
+      "questions": 816,
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/uniform_r025/attempt_20261110T064111_150483Z",
+      "uniform": {
+        "model_seconds": 48.6803130755274,
+        "vision_and_embedding_seconds": 16.46933701095701,
+        "reduction_seconds": 0.22742252635276494,
+        "prefill_seconds": 31.87738162740225,
+        "decode_seconds": 0.09419994803109005,
+        "input_visual_tokens": 28830.78676470588,
+        "input_text_tokens": 5232.553921568628,
+        "output_text_tokens": 2
+      },
+      "baseline": {
+        "model_seconds": 137.47016336269422,
+        "vision_and_embedding_seconds": 12.986579666799848,
+        "reduction_seconds": 0.5526066593478853,
+        "prefill_seconds": 123.79485459328976,
+        "decode_seconds": 0.13285502841623098,
+        "input_visual_tokens": 114781.44485294117,
+        "input_text_tokens": 5232.553921568628,
+        "output_text_tokens": 2
+      },
+      "resolution50": {
+        "model_seconds": 67.54690876517299,
+        "vision_and_embedding_seconds": 11.7139172655092,
+        "reduction_seconds": 0.31675241649260416,
+        "prefill_seconds": 55.410054141673825,
+        "decode_seconds": 0.1045944167246275,
+        "input_visual_tokens": 52418.82720588235,
+        "input_text_tokens": 5232.553921568628,
+        "output_text_tokens": 2
+      },
+      "checkpoint_replayed_prefix": 984,
+      "prefix_means": {
+        "model_seconds": 44.62838423408083,
+        "vision_and_embedding_seconds": 22.02387518020786,
+        "reduction_seconds": 0.12581425781051317,
+        "prefill_seconds": 22.258141494363667,
+        "decode_seconds": 0.18742493303810678,
+        "input_visual_tokens": 12108.783536585366,
+        "input_text_tokens": 1073.918699186992,
+        "output_text_tokens": 2
+      },
+      "same_frames_and_adaptive_baseline": true
+    },
+    {
+      "config": "uniform_r010",
+      "start_index": 1032,
+      "stop_index_exclusive": 1146,
+      "questions": 114,
+      "attempt": "experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/uniform_r010/attempt_20261111T040346_447239Z",
+      "uniform": {
+        "model_seconds": 29.86327220832831,
+        "vision_and_embedding_seconds": 14.40934444055484,
+        "reduction_seconds": 0.12648800956575493,
+        "prefill_seconds": 15.234582840154568,
+        "decode_seconds": 0.08755641476365558,
+        "input_visual_tokens": 11689.78947368421,
+        "input_text_tokens": 4868.675438596491,
+        "output_text_tokens": 2
+      },
+      "baseline": {
+        "model_seconds": 136.9279532458045,
+        "vision_and_embedding_seconds": 12.112561410391017,
+        "reduction_seconds": 0.5385049478918836,
+        "prefill_seconds": 124.14015818217345,
+        "decode_seconds": 0.13313151248975805,
+        "input_visual_tokens": 115422.5,
+        "input_text_tokens": 4868.675438596491,
+        "output_text_tokens": 2
+      },
+      "resolution50": {
+        "model_seconds": 66.91032145120073,
+        "vision_and_embedding_seconds": 10.945287478140049,
+        "reduction_seconds": 0.32238856618080225,
+        "prefill_seconds": 55.53666121375404,
+        "decode_seconds": 0.10439980664012725,
+        "input_visual_tokens": 52910.81578947369,
+        "input_text_tokens": 4868.675438596491,
+        "output_text_tokens": 2
+      },
+      "checkpoint_replayed_prefix": 1032,
+      "prefix_means": {
+        "model_seconds": 39.0418616851734,
+        "vision_and_embedding_seconds": 26.535528660506415,
+        "reduction_seconds": 0.06937684365656487,
+        "prefill_seconds": 12.221671272199167,
+        "decode_seconds": 0.20669000784238412,
+        "input_visual_tokens": 5192.331395348837,
+        "input_text_tokens": 1280.8711240310076,
+        "output_text_tokens": 2
+      },
+      "same_frames_and_adaptive_baseline": true
+    }
+  ],
+  "answer_snapshots": [
+    {
+      "config": "uniform_r050",
+      "answers": 1585,
+      "checkpoint_bytes": 9550225,
+      "last_answer_sgt": "2026-11-11T14:07:52.735031+08:00",
+      "complete": false
+    },
+    {
+      "config": "uniform_r025",
+      "answers": 1800,
+      "checkpoint_bytes": 11619338,
+      "last_answer_sgt": "2026-11-11T12:03:36.740278+08:00",
+      "complete": true
+    },
+    {
+      "config": "uniform_r010",
+      "answers": 1146,
+      "checkpoint_bytes": 5438110,
+      "last_answer_sgt": "2026-11-11T14:08:12.139266+08:00",
+      "complete": false
+    }
+  ],
+  "caveats": [
+    "Per-question model timers exclude video decoding/preprocessing, harness and answer fsync.",
+    "Completed Uniform25 aggregates mix 984 historical answers with 816 fresh serial answers.",
+    "Segment comparisons match questions but were measured on different dates, not a randomized A/B.",
+    "Approximate wall times use attempt-name start and exit.json filesystem modification time.",
+    "A live answer may finish after this snapshot. No workload or policy was changed."
+  ]
+}

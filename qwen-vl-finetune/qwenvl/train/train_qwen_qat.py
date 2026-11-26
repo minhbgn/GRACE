@@ -171,6 +171,7 @@ def train(attn_implementation="flash_attention_2"):
     )
 
     processor = AutoProcessor.from_pretrained(model_args.model_name_or_path)
+    processor.tokenizer.model_max_length = training_args.model_max_length
 
     if data_args.data_flatten or data_args.data_packing:
         replace_qwen2_vl_attention_class()

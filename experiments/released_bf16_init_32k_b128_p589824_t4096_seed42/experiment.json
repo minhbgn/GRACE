@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "student": "released_bf16",
+  "teacher": "vanilla_8b_teacher",
+  "bit_widths": [
+    4,
+    8
+  ],
+  "previous_experiment": "experiments/released_bf16_init_32k_b128_p100352_t2048_seed42",
+  "models": {
+    "vanilla_2b": {
+      "path": "models/Qwen3-VL-2B-Instruct",
+      "repository": "Qwen/Qwen3-VL-2B-Instruct"
+    },
+    "vanilla_8b_teacher": {
+      "path": "models/Qwen3-VL-8B-Instruct",
+      "repository": "Qwen/Qwen3-VL-8B-Instruct",
+      "environment": "TEACHER_MODEL_PATH"
+    },
+    "sft_2b": {
+      "path": "experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft",
+      "environment": "SFT_MODEL_DIR",
+      "kind": "export",
+      "expected_steps": 256
+    },
+    "released_bf16": {
+      "path": "models/Qwen3-VL-2B-GRACE-BF16",
+      "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-BF16",
+      "environment": "BASE_MODEL_DIR",
+      "download": true,
+      "revision": "82f9a267340f65a3619be0e19daf6582d3998a5f",
+      "weights_sha256": "4b522cda73d4ebd792e97a89cbca51091287b65c87e705be53f56c035715bfd3"
+    },
+    "released_grace_w4": {
+      "path": "models/Qwen3-VL-2B-GRACE-W4G128",
+      "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-W4G128",
+      "download": true
+    },
+    "released_grace_w8": {
+      "path": "models/Qwen3-VL-2B-GRACE-W8G128",
+      "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-W8G128",
+      "download": true
+    },
+    "qat_w4": {
+      "path": "w4g128/runs/qat",
+      "relative_to": "experiment",
+      "kind": "trained",
+      "bits": 4,
+      "method": "qat",
+      "expected_steps": 256
+    },
+    "grace_w4": {
+      "path": "w4g128/runs/grace",
+      "relative_to": "experiment",
+      "kind": "trained",
+      "bits": 4,
+      "method": "grace",
+      "expected_steps": 256
+    },
+    "qat_w8": {
+      "path": "w8g128/runs/qat",
+      "relative_to": "experiment",
+      "kind": "trained",
+      "bits": 8,
+      "method": "qat",
+      "expected_steps": 256
+    },
+    "grace_w8": {
+      "path": "w8g128/runs/grace",
+      "relative_to": "experiment",
+      "kind": "trained",
+      "bits": 8,
+      "method": "grace",
+      "expected_steps": 256
+    }
+  },
+  "comparisons": [
+    {
+      "left": "grace_w4",
+      "right": "qat_w4",
+      "label": "W4: distillation gain"
+    },
+    {
+      "left": "released_grace_w4",
+      "right": "grace_w4",
+      "label": "W4: gap to full method"
+    },
+    {
+      "left": "released_bf16",
+      "right": "grace_w4",
+      "label": "W4: gap to BF16 initialization"
+    },
+    {
+      "left": "grace_w4",
+      "right": "vanilla_2b",
+      "label": "W4: gain over vanilla 2B"
+    },
+    {
+      "left": "grace_w4",
+      "right": "vanilla_8b_teacher",
+      "label": "W4: difference from teacher"
+    },
+    {
+      "left": "grace_w4",
+      "right": "sft_2b",
+      "label": "W4: difference from previous SFT"
+    },
+    {
+      "left": "grace_w8",
+      "right": "qat_w8",
+      "label": "W8: distillation gain"
+    },
+    {
+      "left": "released_grace_w8",
+      "right": "grace_w8",
+      "label": "W8: gap to full method"
+    },
+    {
+      "left": "released_bf16",
+      "right": "grace_w8",
+      "label": "W8: gap to BF16 initialization"
+    },
+    {
+      "left": "grace_w8",
+      "right": "vanilla_2b",
+      "label": "W8: gain over vanilla 2B"
+    },
+    {
+      "left": "grace_w8",
+      "right": "vanilla_8b_teacher",
+      "label": "W8: difference from teacher"
+    },
+    {
+      "left": "grace_w8",
+      "right": "sft_2b",
+      "label": "W8: difference from previous SFT"
+    }
+  ],
+  "report_title": "Released-BF16 SFT initialization: 576-visual-token ceiling",
+  "report_note": "New independent QAT/GRACE W4/W8 runs from the same released SFT initialization; maximum image area 589824 pixels (at most 576 merged Qwen3-VL visual tokens), total training input limit 4096. Compare with the previous experiment using its saved predictions only under explicitly labeled protocols; resolution and retained conversations may differ.",
+  "visual_budget": {
+    "max_pixels": 589824,
+    "min_pixels": 4096,
+    "merged_token_ceiling": 576,
+    "patch_size": 16,
+    "merge_size": 2,
+    "model_max_length": 4096
+  }
+}
