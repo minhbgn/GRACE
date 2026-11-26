@@ -1,0 +1,1377 @@
+{
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_grace_4gpu.sh": {
+    "timestamp": "2026-08-28T06:25:16.178Z",
+    "session": "/home/air/.codex/sessions/2026/08/28/rollout-2026-08-28T14-13-32-01a04700-8869-7db0-9eca-a4ee4308758a.jsonl",
+    "line": 184
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_bf16_4gpu.sh": {
+    "timestamp": "2026-08-31T09:18:27.949Z",
+    "session": "/home/air/.codex/sessions/2026/08/31/rollout-2026-08-31T16-59-50-01a0570b-dba9-75f1-aee3-8a004cba3625.jsonl",
+    "line": 314
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_qat_4gpu.sh": {
+    "timestamp": "2026-08-28T06:25:16.178Z",
+    "session": "/home/air/.codex/sessions/2026/08/28/rollout-2026-08-28T14-13-32-01a04700-8869-7db0-9eca-a4ee4308758a.jsonl",
+    "line": 184
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_bf16.slurm": {
+    "timestamp": "2026-08-31T09:10:56.375Z",
+    "session": "/home/air/.codex/sessions/2026/08/31/rollout-2026-08-31T16-59-50-01a0570b-dba9-75f1-aee3-8a004cba3625.jsonl",
+    "line": 206
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/qwenvl/data/data_processor.py": {
+    "timestamp": "2026-09-13T02:49:02.384Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T16-05-50-01a08533-aad0-7473-ac99-1785d71d5777.jsonl",
+    "line": 222
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/send_failure_email.py": {
+    "timestamp": "2026-08-31T09:18:13.287Z",
+    "session": "/home/air/.codex/sessions/2026/08/31/rollout-2026-08-31T16-59-50-01a0570b-dba9-75f1-aee3-8a004cba3625.jsonl",
+    "line": 300
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_bf16_4gpu_memory_safe.sh": {
+    "timestamp": "2026-08-31T16:39:10.405Z",
+    "session": "/home/air/.codex/sessions/2026/09/01/rollout-2026-09-01T00-03-15-01a0588f-83a0-7f92-a0ab-948055716d66.jsonl",
+    "line": 416
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_grace_4gpu_memory_safe.sh": {
+    "timestamp": "2026-09-04T07:08:07.591Z",
+    "session": "/home/air/.codex/sessions/2026/09/04/rollout-2026-09-04T11-14-44-01a06a69-591c-71b3-ba4f-17fe38c0665a.jsonl",
+    "line": 344
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/qwenvl/train/train_qwen_grace.py": {
+    "timestamp": "2026-09-15T08:03:31.136Z",
+    "session": "/home/air/.codex/sessions/2026/09/15/rollout-2026-09-15T15-06-40-01a0a3e3-a65d-7b12-acb6-8e8408709d65.jsonl",
+    "line": 165
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/qwenvl/train/grace_profiler.py": {
+    "timestamp": "2026-09-15T08:02:59.186Z",
+    "session": "/home/air/.codex/sessions/2026/09/15/rollout-2026-09-15T15-06-40-01a0a3e3-a65d-7b12-acb6-8e8408709d65.jsonl",
+    "line": 154
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/zero3_profile_comms.json": {
+    "timestamp": "2026-09-01T09:47:36.066Z",
+    "session": "/home/air/.codex/sessions/2026/09/01/rollout-2026-09-01T17-24-19-01a05c48-a314-7a71-abe5-df62fdee5abc.jsonl",
+    "line": 225
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/profile_qwen3vl_2b_grace_10steps.sh": {
+    "timestamp": "2026-09-01T09:49:35.232Z",
+    "session": "/home/air/.codex/sessions/2026/09/01/rollout-2026-09-01T17-24-19-01a05c48-a314-7a71-abe5-df62fdee5abc.jsonl",
+    "line": 277
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/qwenvl/train/qat_modules.py": {
+    "timestamp": "2026-09-15T08:02:59.186Z",
+    "session": "/home/air/.codex/sessions/2026/09/15/rollout-2026-09-15T15-06-40-01a0a3e3-a65d-7b12-acb6-8e8408709d65.jsonl",
+    "line": 154
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/qwenvl/train/argument.py": {
+    "timestamp": "2026-09-04T03:20:39.424Z",
+    "session": "/home/air/.codex/sessions/2026/09/04/rollout-2026-09-04T11-14-44-01a06a69-591c-71b3-ba4f-17fe38c0665a.jsonl",
+    "line": 121
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_grace_lora_4gpu_memory_safe.sh": {
+    "timestamp": "2026-09-07T05:39:07.361Z",
+    "session": "/home/air/.codex/sessions/2026/09/04/rollout-2026-09-04T11-14-44-01a06a69-591c-71b3-ba4f-17fe38c0665a.jsonl",
+    "line": 1203
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/profile_qwen3vl_2b_grace_lora_3gpu.sh": {
+    "timestamp": "2026-09-07T04:43:03.211Z",
+    "session": "/home/air/.codex/sessions/2026/09/04/rollout-2026-09-04T11-14-44-01a06a69-591c-71b3-ba4f-17fe38c0665a.jsonl",
+    "line": 710
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/validate_qwen3vl_2b_grace_lora_learning_3gpu.sh": {
+    "timestamp": "2026-09-07T05:14:09.354Z",
+    "session": "/home/air/.codex/sessions/2026/09/04/rollout-2026-09-04T11-14-44-01a06a69-591c-71b3-ba4f-17fe38c0665a.jsonl",
+    "line": 1064
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/validate_grace_lora_merge.py": {
+    "timestamp": "2026-09-07T05:12:06.397Z",
+    "session": "/home/air/.codex/sessions/2026/09/04/rollout-2026-09-04T11-14-44-01a06a69-591c-71b3-ba4f-17fe38c0665a.jsonl",
+    "line": 1006
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_grace_lora_2gpu.sh": {
+    "timestamp": "2026-09-07T07:20:05.152Z",
+    "session": "/home/air/.codex/sessions/2026/09/04/rollout-2026-09-04T11-14-44-01a06a69-591c-71b3-ba4f-17fe38c0665a.jsonl",
+    "line": 1361
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_grace_lora_ngpu.sh": {
+    "timestamp": "2026-09-09T07:19:36.035Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T15-11-15-01a08501-b10b-7423-8cd8-7ad15662c42f.jsonl",
+    "line": 98
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/qwenvl/train/grace_modules.py": {
+    "timestamp": "2026-09-08T14:20:43.705Z",
+    "session": "/home/air/.codex/sessions/2026/09/08/rollout-2026-09-08T22-12-14-01a0815c-c137-70b1-b18c-4bcf0c38f5d9.jsonl",
+    "line": 77
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/zero2_lora_memory_safe.json": {
+    "timestamp": "2026-09-08T14:18:58.709Z",
+    "session": "/home/air/.codex/sessions/2026/09/08/rollout-2026-09-08T22-12-14-01a0815c-c137-70b1-b18c-4bcf0c38f5d9.jsonl",
+    "line": 58
+  },
+  "workspace/reproduction/GRACE/tests/test_grace_dkd_memory.py": {
+    "timestamp": "2026-09-08T14:19:44.342Z",
+    "session": "/home/air/.codex/sessions/2026/09/08/rollout-2026-09-08T22-12-14-01a0815c-c137-70b1-b18c-4bcf0c38f5d9.jsonl",
+    "line": 64
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/README_lora_memory_safe.md": {
+    "timestamp": "2026-09-08T14:20:43.705Z",
+    "session": "/home/air/.codex/sessions/2026/09/08/rollout-2026-09-08T22-12-14-01a0815c-c137-70b1-b18c-4bcf0c38f5d9.jsonl",
+    "line": 77
+  },
+  "tmp/edit_grace_resume.py": {
+    "timestamp": "2026-09-09T07:15:30.234Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T15-11-15-01a08501-b10b-7423-8cd8-7ad15662c42f.jsonl",
+    "line": 49
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/grace_resume_recipe.py": {
+    "timestamp": "2026-09-09T07:20:24.290Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T15-11-15-01a08501-b10b-7423-8cd8-7ad15662c42f.jsonl",
+    "line": 115
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/qwenvl/train/grace_resume.py": {
+    "timestamp": "2026-09-09T07:16:04.900Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T15-11-15-01a08501-b10b-7423-8cd8-7ad15662c42f.jsonl",
+    "line": 53
+  },
+  "tmp/test_grace_portable.py": {
+    "timestamp": "2026-09-09T07:16:47.045Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T15-11-15-01a08501-b10b-7423-8cd8-7ad15662c42f.jsonl",
+    "line": 65
+  },
+  "workspace/reproduction/GRACE/tests/test_grace_resume.py": {
+    "timestamp": "2026-09-09T07:17:23.595Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T15-11-15-01a08501-b10b-7423-8cd8-7ad15662c42f.jsonl",
+    "line": 70
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/README_grace_gpu_switch.md": {
+    "timestamp": "2026-09-09T07:20:24.290Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T15-11-15-01a08501-b10b-7423-8cd8-7ad15662c42f.jsonl",
+    "line": 115
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/qwenvl/train/train_qwen_qat.py": {
+    "timestamp": "2026-09-13T02:39:46.487Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T16-05-50-01a08533-aad0-7473-ac99-1785d71d5777.jsonl",
+    "line": 122
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/qwenvl/data/constrained_data.py": {
+    "timestamp": "2026-09-13T02:41:15.326Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T16-05-50-01a08533-aad0-7473-ac99-1785d71d5777.jsonl",
+    "line": 129
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/qwenvl/train/train_qwen_constrained.py": {
+    "timestamp": "2026-09-15T08:02:59.186Z",
+    "session": "/home/air/.codex/sessions/2026/09/15/rollout-2026-09-15T15-06-40-01a0a3e3-a65d-7b12-acb6-8e8408709d65.jsonl",
+    "line": 154
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/run_constrained.py": {
+    "timestamp": "2026-09-21T04:52:11.716Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 239
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_sft_lora_constrained.sh": {
+    "timestamp": "2026-09-13T02:46:01.955Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T16-05-50-01a08533-aad0-7473-ac99-1785d71d5777.jsonl",
+    "line": 152
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_qat_lora_constrained.sh": {
+    "timestamp": "2026-09-13T02:46:01.955Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T16-05-50-01a08533-aad0-7473-ac99-1785d71d5777.jsonl",
+    "line": 152
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_grace_lora_constrained.sh": {
+    "timestamp": "2026-09-13T02:46:01.955Z",
+    "session": "/home/air/.codex/sessions/2026/09/09/rollout-2026-09-09T16-05-50-01a08533-aad0-7473-ac99-1785d71d5777.jsonl",
+    "line": 152
+  },
+  "workspace/reproduction/GRACE/tests/test_constrained_training.py": {
+    "timestamp": "2026-09-15T08:03:49.237Z",
+    "session": "/home/air/.codex/sessions/2026/09/15/rollout-2026-09-15T15-06-40-01a0a3e3-a65d-7b12-acb6-8e8408709d65.jsonl",
+    "line": 176
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/README_constrained.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "tmp/gpu_watch_live_fixtures.json": {
+    "timestamp": "2026-09-13T03:32:40.849Z",
+    "session": "/home/air/.codex/sessions/2026/09/13/rollout-2026-09-13T11-15-21-01a098c3-252f-7653-8355-0afdc37df116.jsonl",
+    "line": 70
+  },
+  "workspace/reproduction/GRACE/evaluation/run_all_constrained_evals.sh": {
+    "timestamp": "2026-09-20T09:43:45.122Z",
+    "session": "/home/air/.codex/sessions/2026/09/19/rollout-2026-09-19T15-51-50-01a0b8a6-6e40-7951-961a-e7116c188bc9.jsonl",
+    "line": 142
+  },
+  "workspace/reproduction/GRACE/README.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/README_datasets.md": {
+    "timestamp": "2026-10-17T07:22:08.968Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 175
+  },
+  "workspace/reproduction/GRACE/evaluation/README_lmms_constrained.md": {
+    "timestamp": "2026-09-23T15:22:16.435Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 366
+  },
+  "workspace/reproduction/GRACE/evaluation/summarize_constrained_evals.py": {
+    "timestamp": "2026-09-21T04:58:29.337Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 295
+  },
+  "workspace/reproduction/GRACE/experiments/constrained_32k_seed42/experiment_report.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/recipes/constrained_32k_b128_p100352_t2048_seed42.env": {
+    "timestamp": "2026-09-17T06:57:43.221Z",
+    "session": "/home/air/.codex/sessions/2026/09/17/rollout-2026-09-17T14-35-10-01a0ae13-8740-7041-8c34-088c60506e01.jsonl",
+    "line": 120
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/run_constrained_b128_p100352_t2048.sh": {
+    "timestamp": "2026-09-17T06:57:59.539Z",
+    "session": "/home/air/.codex/sessions/2026/09/17/rollout-2026-09-17T14-35-10-01a0ae13-8740-7041-8c34-088c60506e01.jsonl",
+    "line": 128
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/summarize_constrained_runtime.py": {
+    "timestamp": "2026-09-21T04:58:29.337Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 295
+  },
+  "workspace/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/README.md": {
+    "timestamp": "2026-09-20T09:42:32.726Z",
+    "session": "/home/air/.codex/sessions/2026/09/19/rollout-2026-09-19T15-51-50-01a0b8a6-6e40-7951-961a-e7116c188bc9.jsonl",
+    "line": 91
+  },
+  "workspace/reproduction/GRACE/evaluation/HallusionBench/eval_hallusion.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/MMBench/eval_mmbench.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/ScienceQA/eval_scienceqa.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/AI2D/eval_ai2d.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/mmmu/eval_mmmu.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/SEEDBench/eval_seedbench.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/MMStar/eval_mmstar.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/OCRBench/eval_ocrbench.py": {
+    "timestamp": "2026-09-17T08:22:14.690Z",
+    "session": "/home/air/.codex/sessions/2026/09/17/rollout-2026-09-17T16-15-58-01a0ae6f-d041-75c3-a995-6d9cd07b1655.jsonl",
+    "line": 68
+  },
+  "workspace/reproduction/GRACE/evaluation/mmmu/eval_utils.py": {
+    "timestamp": "2026-09-17T08:22:14.690Z",
+    "session": "/home/air/.codex/sessions/2026/09/17/rollout-2026-09-17T16-15-58-01a0ae6f-d041-75c3-a995-6d9cd07b1655.jsonl",
+    "line": 68
+  },
+  "workspace/reproduction/GRACE/evaluation/RealWorldQA/eval_utils.py": {
+    "timestamp": "2026-09-17T08:22:14.690Z",
+    "session": "/home/air/.codex/sessions/2026/09/17/rollout-2026-09-17T16-15-58-01a0ae6f-d041-75c3-a995-6d9cd07b1655.jsonl",
+    "line": 68
+  },
+  "workspace/reproduction/GRACE/evaluation/MathVista/eval_mathvista.py": {
+    "timestamp": "2026-09-17T08:22:14.690Z",
+    "session": "/home/air/.codex/sessions/2026/09/17/rollout-2026-09-17T16-15-58-01a0ae6f-d041-75c3-a995-6d9cd07b1655.jsonl",
+    "line": 68
+  },
+  "workspace/reproduction/GRACE/evaluation/MathVision/eval_utils.py": {
+    "timestamp": "2026-09-17T08:22:14.690Z",
+    "session": "/home/air/.codex/sessions/2026/09/17/rollout-2026-09-17T16-15-58-01a0ae6f-d041-75c3-a995-6d9cd07b1655.jsonl",
+    "line": 68
+  },
+  "workspace/reproduction/GRACE/evaluation/VideoMME/eval_utils.py": {
+    "timestamp": "2026-09-17T08:22:14.690Z",
+    "session": "/home/air/.codex/sessions/2026/09/17/rollout-2026-09-17T16-15-58-01a0ae6f-d041-75c3-a995-6d9cd07b1655.jsonl",
+    "line": 68
+  },
+  "workspace/reproduction/GRACE/evaluation/ODinW-13/eval_utils.py": {
+    "timestamp": "2026-09-17T08:22:14.690Z",
+    "session": "/home/air/.codex/sessions/2026/09/17/rollout-2026-09-17T16-15-58-01a0ae6f-d041-75c3-a995-6d9cd07b1655.jsonl",
+    "line": 68
+  },
+  "workspace/reproduction/GRACE/evaluation/README_vanilla_baseline.md": {
+    "timestamp": "2026-09-17T08:23:08.675Z",
+    "session": "/home/air/.codex/sessions/2026/09/17/rollout-2026-09-17T16-15-58-01a0ae6f-d041-75c3-a995-6d9cd07b1655.jsonl",
+    "line": 80
+  },
+  "tmp/append_grace_code_validation.py": {
+    "timestamp": "2026-09-18T06:55:34.690Z",
+    "session": "/home/air/.codex/sessions/2026/09/17/rollout-2026-09-17T16-15-58-01a0ae6f-d041-75c3-a995-6d9cd07b1655.jsonl",
+    "line": 211
+  },
+  "workspace/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/run_local_evaluation.sh": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "tmp/grace_eval_mock_python.sh": {
+    "timestamp": "2026-09-20T09:43:20.412Z",
+    "session": "/home/air/.codex/sessions/2026/09/19/rollout-2026-09-19T15-51-50-01a0b8a6-6e40-7951-961a-e7116c188bc9.jsonl",
+    "line": 116
+  },
+  "workspace/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/experiment_report.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/implementation_and_next_steps.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/README.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/run_training.sh": {
+    "timestamp": "2026-09-21T04:52:59.431Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 246
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/run_local_evaluation.sh": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/common.py": {
+    "timestamp": "2026-09-21T04:32:00.594Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 103
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/training.py": {
+    "timestamp": "2026-09-21T04:35:24.163Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 141
+  },
+  "workspace/reproduction/GRACE/evaluation/matched_protocol.py": {
+    "timestamp": "2026-09-26T11:51:34.391Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T19-42-02-01a0dd85-b3e4-74c3-869d-59e0bde5c06e.jsonl",
+    "line": 132
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/evaluate.py": {
+    "timestamp": "2026-09-21T04:37:56.101Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 162
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/prepare_models.py": {
+    "timestamp": "2026-09-21T04:31:16.152Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 90
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/test_launchers.py": {
+    "timestamp": "2026-09-21T04:38:25.289Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 168
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/summarize_runtime.py": {
+    "timestamp": "2026-09-21T04:35:24.163Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 141
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/experiment.json": {
+    "timestamp": "2026-09-21T04:58:29.337Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 295
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/constrained_experiment.py": {
+    "timestamp": "2026-09-21T04:51:35.965Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 234
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/run_constrained_matrix.py": {
+    "timestamp": "2026-09-21T04:52:59.431Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 246
+  },
+  "workspace/reproduction/GRACE/evaluation/run_constrained_matrix_evals.py": {
+    "timestamp": "2026-09-21T04:58:29.337Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 295
+  },
+  "workspace/reproduction/GRACE/qwen-vl-finetune/scripts/prepare_constrained_models.py": {
+    "timestamp": "2026-09-21T04:54:40.880Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 256
+  },
+  "workspace/reproduction/GRACE/tests/test_constrained_matrix.py": {
+    "timestamp": "2026-09-21T04:59:08.084Z",
+    "session": "/home/air/.codex/sessions/2026/09/21/rollout-2026-09-21T12-19-50-01a0c231-1207-7fb3-9ffa-1c16368ccc91.jsonl",
+    "line": 300
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/experiment_report.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/run_lmms_matrix.py": {
+    "timestamp": "2026-09-25T08:51:56.793Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 178
+  },
+  "workspace/reproduction/GRACE/evaluation/lmms_worker.py": {
+    "timestamp": "2026-09-25T08:40:53.290Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 105
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/lmms_protocol.json": {
+    "timestamp": "2026-09-23T14:47:24.863Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 308
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/run_lmms_evaluation.sh": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/.gitignore": {
+    "timestamp": "2026-10-17T07:25:33.510Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 231
+  },
+  "workspace/reproduction/GRACE/evaluation/prepare_lmms_eval.sh": {
+    "timestamp": "2026-09-23T15:16:50.660Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 327
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_lmms_matrix.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/lmms_evaluation.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "tmp/grace_lmms_cpu_integration.py": {
+    "timestamp": "2026-09-23T15:24:33.180Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 388
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/cpu_lmms_integration.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/compile_lmms_four_suite_report.py": {
+    "timestamp": "2026-09-25T03:28:45.577Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 545
+  },
+  "tmp/write_grace_lmms_report.py": {
+    "timestamp": "2026-09-25T03:31:41.332Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 552
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/audit/audit_checkpoints.py": {
+    "timestamp": "2026-09-25T03:56:53.991Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 722
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/audit/audit_datasets.py": {
+    "timestamp": "2026-09-25T03:52:19.252Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 666
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/audit/audit_loading.py": {
+    "timestamp": "2026-09-25T03:51:16.323Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 652
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/audit/audit_evaluation.py": {
+    "timestamp": "2026-09-25T03:54:49.858Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 695
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/evaluation_integrity_audit.md": {
+    "timestamp": "2026-09-25T03:59:23.428Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 729
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/audit/manifest.json": {
+    "timestamp": "2026-09-25T03:59:23.428Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 729
+  },
+  "tmp/add_grace_paper_comparison.py": {
+    "timestamp": "2026-09-25T04:13:23.500Z",
+    "session": "/home/air/.codex/sessions/2026/09/23/rollout-2026-09-23T21-46-07-01a0ce84-3c1f-7b33-8e2d-251349909181.jsonl",
+    "line": 783
+  },
+  "workspace/reproduction/GRACE/evaluation/paper_acceptance.py": {
+    "timestamp": "2026-09-25T08:51:56.793Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 178
+  },
+  "workspace/reproduction/GRACE/evaluation/run_upstream_matrix.py": {
+    "timestamp": "2026-09-25T08:45:51.681Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 132
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/paper_standard_protocol.json": {
+    "timestamp": "2026-09-25T08:47:45.411Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 155
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/run_paper_standard_evaluation.sh": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/cpu_mmmu_integration.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_paper_protocol.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/README_paper_protocol.md": {
+    "timestamp": "2026-09-25T08:54:22.957Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 195
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/protocol_recovery/validation.json": {
+    "timestamp": "2026-09-25T08:54:22.957Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 195
+  },
+  "workspace/reproduction/GRACE/evaluation/check_re_evaluation_gate.py": {
+    "timestamp": "2026-09-25T09:06:57.862Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 241
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/run_re_evaluation.sh": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_re_evaluation_gate.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/README_re_evaluation.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/README.md": {
+    "timestamp": "2026-09-25T09:08:19.905Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 246
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/diagnosis/analyze_saved_answers.py": {
+    "timestamp": "2026-09-26T01:12:31.901Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 308
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/diagnosis/diagnosis_report.md": {
+    "timestamp": "2026-09-26T01:46:32.622Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 452
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/diagnosis/analyze_four_suites.py": {
+    "timestamp": "2026-09-26T01:42:35.906Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 424
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/diagnosis/four_suite_followup.md": {
+    "timestamp": "2026-09-26T01:46:32.622Z",
+    "session": "/home/air/.codex/sessions/2026/09/25/rollout-2026-09-25T13-05-47-01a0d6f4-9001-77f3-a35a-7448e50654ef.jsonl",
+    "line": 452
+  },
+  "workspace/reproduction/GRACE/evaluation/differences_from_org.md": {
+    "timestamp": "2026-09-26T06:57:44.701Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T10-01-54-01a0db72-94f0-7b72-bcf7-7556efe8b6d4.jsonl",
+    "line": 98
+  },
+  "workspace/reproduction/GRACE/evaluation/rescore_saved_protocols.py": {
+    "timestamp": "2026-09-26T08:09:30.715Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T16-03-46-01a0dcbd-e25f-7d20-b3b7-cb89b7c453c8.jsonl",
+    "line": 80
+  },
+  "workspace/reproduction/GRACE/experiments/reproduction_eval_only/metric_protocol_findings.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "tmp/update_grace_eval_readme.py": {
+    "timestamp": "2026-09-26T08:49:37.776Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T16-03-46-01a0dcbd-e25f-7d20-b3b7-cb89b7c453c8.jsonl",
+    "line": 201
+  },
+  "workspace/reproduction/GRACE/evaluation/local_scoring.py": {
+    "timestamp": "2026-09-26T11:49:54.180Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T19-42-02-01a0dd85-b3e4-74c3-869d-59e0bde5c06e.jsonl",
+    "line": 105
+  },
+  "workspace/reproduction/GRACE/evaluation/run_local_development.py": {
+    "timestamp": "2026-10-05T07:26:22.055Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 349
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_local_scoring.py": {
+    "timestamp": "2026-10-17T07:49:54.205Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 370
+  },
+  "workspace/reproduction/GRACE/evaluation/audit_local_scoring.py": {
+    "timestamp": "2026-09-26T11:54:04.167Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T19-42-02-01a0dd85-b3e4-74c3-869d-59e0bde5c06e.jsonl",
+    "line": 152
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_local_workers.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/experiments/reproduction_eval_only/run_local_development.sh": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/README_local_development.md": {
+    "timestamp": "2026-09-26T11:55:03.068Z",
+    "session": "/home/air/.codex/sessions/2026/09/26/rollout-2026-09-26T19-42-02-01a0dd85-b3e4-74c3-869d-59e0bde5c06e.jsonl",
+    "line": 165
+  },
+  "tmp/audit_grace_report.py": {
+    "timestamp": "2026-09-29T03:47:35.948Z",
+    "session": "/home/air/.codex/sessions/2026/09/29/rollout-2026-09-29T11-37-28-01a0eb3d-2867-7f43-8e4b-45d5fe295397.jsonl",
+    "line": 71
+  },
+  "tmp/write_grace_report.py": {
+    "timestamp": "2026-09-29T03:51:00.867Z",
+    "session": "/home/air/.codex/sessions/2026/09/29/rollout-2026-09-29T11-37-28-01a0eb3d-2867-7f43-8e4b-45d5fe295397.jsonl",
+    "line": 83
+  },
+  "workspace/reproduction/GRACE/experiments/reproduction_eval_only/experiment_report.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "tmp/create_visual_budget_experiment.py": {
+    "timestamp": "2026-10-05T04:01:10.964Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 274
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/experiment.json": {
+    "timestamp": "2026-10-05T08:16:14.085Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 722
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/recipe.env": {
+    "timestamp": "2026-10-05T07:32:13.367Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 402
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/run_training.sh": {
+    "timestamp": "2026-10-05T04:01:10.964Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 274
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/run_local_evaluation.sh": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/profile_memory.sh": {
+    "timestamp": "2026-10-05T04:01:10.964Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 274
+  },
+  "tmp/setup_576_profile.py": {
+    "timestamp": "2026-10-05T07:25:50.086Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 342
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/profile_memory.py": {
+    "timestamp": "2026-10-05T08:16:14.085Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 722
+  },
+  "tmp/document_576_experiment.py": {
+    "timestamp": "2026-10-05T07:32:13.367Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 402
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/README.md": {
+    "timestamp": "2026-10-12T05:03:25.240Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 1048
+  },
+  "tmp/check_576_setup.py": {
+    "timestamp": "2026-10-05T07:35:40.714Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 434
+  },
+  "tmp/audit_576_tokens.py": {
+    "timestamp": "2026-10-05T07:37:11.742Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 445
+  },
+  "tmp/finalize_576_docs.py": {
+    "timestamp": "2026-10-05T07:39:22.863Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 463
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/experiment_report.md": {
+    "timestamp": "2026-10-05T08:40:44.347Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 859
+  },
+  "tmp/write_576_memory_report.py": {
+    "timestamp": "2026-10-05T07:44:15.256Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 499
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/memory_results.json": {
+    "timestamp": "2026-10-05T07:48:41.662Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 552
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/memory_report.md": {
+    "timestamp": "2026-10-05T07:48:41.662Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 552
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/audit_token_lengths.py": {
+    "timestamp": "2026-10-05T07:55:17.962Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 609
+  },
+  "tmp/document_old_token_audit.py": {
+    "timestamp": "2026-10-05T08:00:15.628Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 648
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/reports/token_lengths.md": {
+    "timestamp": "2026-10-05T08:00:15.628Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 648
+  },
+  "tmp/update_memory_runner.py": {
+    "timestamp": "2026-10-05T08:16:14.085Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 722
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/run_memory_checks.py": {
+    "timestamp": "2026-10-05T08:16:14.085Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 722
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/run_memory_checks.sh": {
+    "timestamp": "2026-10-05T08:16:14.085Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 722
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/test_memory_checks.py": {
+    "timestamp": "2026-10-05T08:20:05.410Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 747
+  },
+  "tmp/document_4096_memory_workflow.py": {
+    "timestamp": "2026-10-05T08:22:28.132Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 763
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/training_dry_run.txt": {
+    "timestamp": "2026-10-05T08:22:28.132Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 763
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/reports/compile_comparison.py": {
+    "timestamp": "2026-10-12T05:01:43.403Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 1008
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/reports/audit_training_tokens.py": {
+    "timestamp": "2026-10-12T04:56:18.463Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 945
+  },
+  "tmp/verify_new_report_provenance.py": {
+    "timestamp": "2026-10-12T04:58:33.488Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 987
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/reports/render_comparison.py": {
+    "timestamp": "2026-10-12T05:02:08.472Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 1024
+  },
+  "tmp/update_completed_experiment_notes.py": {
+    "timestamp": "2026-10-12T05:03:25.240Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 1048
+  },
+  "tmp/update_llmc_plan.py": {
+    "timestamp": "2026-10-12T05:53:12.600Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 1196
+  },
+  "tmp/update_llmc_todo.py": {
+    "timestamp": "2026-10-12T05:54:39.429Z",
+    "session": "/home/air/.codex/sessions/2026/10/05/rollout-2026-10-05T10-57-03-01a109fe-4c61-7170-bc69-65a56c2abc2b.jsonl",
+    "line": 1203
+  },
+  "workspace/reproduction/GRACE/evaluation/audit_image_visual_tokens.py": {
+    "timestamp": "2026-10-15T03:55:15.563Z",
+    "session": "/home/air/.codex/sessions/2026/10/15/rollout-2026-10-15T11-50-34-01a13dae-e65f-7442-a263-b83559002786.jsonl",
+    "line": 85
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/README.md": {
+    "timestamp": "2026-10-26T06:45:16.439Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 307
+  },
+  "workspace/reproduction/GRACE/evaluation/download_video_benchmarks.sh": {
+    "timestamp": "2026-10-15T04:32:59.212Z",
+    "session": "/home/air/.codex/sessions/2026/10/15/rollout-2026-10-15T12-24-48-01a13dce-3b64-7fc2-ac6b-a819b2006d65.jsonl",
+    "line": 61
+  },
+  "workspace/reproduction/GRACE/evaluation/download_video_benchmarks.py": {
+    "timestamp": "2026-10-15T04:40:57.472Z",
+    "session": "/home/air/.codex/sessions/2026/10/15/rollout-2026-10-15T12-24-48-01a13dce-3b64-7fc2-ac6b-a819b2006d65.jsonl",
+    "line": 135
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_video_downloads.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "tmp/download_realtimewam_models.py": {
+    "timestamp": "2026-10-16T07:17:28.883Z",
+    "session": "/home/air/.codex/sessions/2026/10/16/rollout-2026-10-16T15-02-12-01a14384-b2cd-7b91-917e-abd1c1f17760.jsonl",
+    "line": 249
+  },
+  "workspace/reproduction/GRACE/evaluation/video_protocol.py": {
+    "timestamp": "2026-10-17T07:18:02.379Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 88
+  },
+  "workspace/reproduction/GRACE/evaluation/run_video_matrix.py": {
+    "timestamp": "2026-10-17T07:22:59.029Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 191
+  },
+  "workspace/reproduction/GRACE/evaluation/video_worker.py": {
+    "timestamp": "2026-10-17T07:22:59.029Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 191
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/run_video_evaluation.sh": {
+    "timestamp": "2026-10-26T06:25:06.698Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 67
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_video_evaluation.py": {
+    "timestamp": "2026-10-25T08:10:39.175Z",
+    "session": "/home/air/.codex/sessions/2026/10/24/rollout-2026-10-24T12-18-06-01a167fd-e11e-7511-80aa-9639746ab838_01a16c21-5668-7511-b7e7-055220f8e9c5.jsonl",
+    "line": 580
+  },
+  "workspace/reproduction/GRACE/evaluation/README_video_evaluation.md": {
+    "timestamp": "2026-10-17T07:29:09.786Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 276
+  },
+  "tmp/reorganize_grace_evaluation.py": {
+    "timestamp": "2026-10-17T07:48:10.041Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 347
+  },
+  "workspace/reproduction/GRACE/evaluation/runners/__init__.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/workers/__init__.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/protocols/__init__.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/audits/__init__.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/data_tools/__init__.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/__init__.py": {
+    "timestamp": "2026-10-17T07:49:54.205Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 370
+  },
+  "workspace/reproduction/GRACE/evaluation/__init__.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/paths.py": {
+    "timestamp": "2026-10-26T06:31:06.273Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 165
+  },
+  "workspace/reproduction/GRACE/evaluation/runners/run_constrained_matrix_evals.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/runners/run_lmms_matrix.py": {
+    "timestamp": "2026-10-26T06:41:40.662Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 260
+  },
+  "workspace/reproduction/GRACE/evaluation/runners/run_local_development.py": {
+    "timestamp": "2026-10-17T07:49:54.205Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 370
+  },
+  "workspace/reproduction/GRACE/evaluation/runners/run_upstream_matrix.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/runners/run_video_matrix.py": {
+    "timestamp": "2026-10-17T10:10:54.624Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 635
+  },
+  "workspace/reproduction/GRACE/evaluation/workers/lmms_worker.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/workers/video_worker.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/protocols/local_scoring.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/protocols/matched_protocol.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/protocols/paper_acceptance.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/protocols/video_protocol.py": {
+    "timestamp": "2026-10-26T06:23:42.650Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 60
+  },
+  "workspace/reproduction/GRACE/evaluation/audits/audit_image_visual_tokens.py": {
+    "timestamp": "2026-10-25T08:09:31.861Z",
+    "session": "/home/air/.codex/sessions/2026/10/24/rollout-2026-10-24T12-18-06-01a167fd-e11e-7511-80aa-9639746ab838_01a16c21-5668-7511-b7e7-055220f8e9c5.jsonl",
+    "line": 571
+  },
+  "workspace/reproduction/GRACE/evaluation/audits/audit_local_scoring.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/audits/check_re_evaluation_gate.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/audits/rescore_saved_protocols.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/audits/summarize_constrained_evals.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/data_tools/download_video_benchmarks.py": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/runners/run_all_constrained_evals.sh": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/data_tools/download_video_benchmarks.sh": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/data_tools/prepare_lmms_eval.sh": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/run_local_evaluation.sh": {
+    "timestamp": "2026-10-17T07:49:54.205Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 370
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/README_datasets.md": {
+    "timestamp": "2026-10-17T10:11:32.682Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 641
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/README_lmms_constrained.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/README_local_development.md": {
+    "timestamp": "2026-10-17T07:51:56.580Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 399
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/README_paper_protocol.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/README_vanilla_baseline.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/README_video_evaluation.md": {
+    "timestamp": "2026-10-26T07:51:56.313Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 747
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/differences_from_org.md": {
+    "timestamp": "2026-10-17T07:47:09.092Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 326
+  },
+  "workspace/reproduction/GRACE/evaluation/provenance/layout_20261017/manifest.json": {
+    "timestamp": "2026-10-17T07:49:54.205Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 370
+  },
+  "workspace/reproduction/GRACE/evaluation/INDEX.md": {
+    "timestamp": "2026-10-26T06:32:33.785Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 191
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/README.md": {
+    "timestamp": "2026-10-23T08:07:10.503Z",
+    "session": "/home/air/.codex/sessions/2026/10/23/rollout-2026-10-23T15-50-21-01a167bd-4d2e-7f32-9b23-465c68ffdcc9.jsonl",
+    "line": 135
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/benchmarks/MathVision.md": {
+    "timestamp": "2026-10-17T07:49:54.205Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 370
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/benchmarks/RealWorldQA.md": {
+    "timestamp": "2026-10-17T07:49:54.205Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 370
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/benchmarks/ODinW-13.md": {
+    "timestamp": "2026-10-17T07:49:54.205Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 370
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/benchmarks/mmmu.md": {
+    "timestamp": "2026-10-17T07:49:54.205Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 370
+  },
+  "workspace/reproduction/GRACE/evaluation/docs/benchmarks/VideoMME.md": {
+    "timestamp": "2026-10-17T07:49:54.205Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 370
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_layout.py": {
+    "timestamp": "2026-10-17T07:50:25.999Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 376
+  },
+  "tmp/grace_videomme_audit_report.py": {
+    "timestamp": "2026-10-17T09:26:29.223Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 478
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reports/video_resolution_feasibility_20261017.json": {
+    "timestamp": "2026-10-17T09:38:13.875Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 547
+  },
+  "tmp/update_video_default_docs.py": {
+    "timestamp": "2026-10-17T10:11:32.682Z",
+    "session": "/home/air/.codex/sessions/2026/10/17/rollout-2026-10-17T15-09-37-01a148b1-db1b-73b2-8e70-1a43fb54383a.jsonl",
+    "line": 641
+  },
+  "tmp/analyze_grace_video_20261019.py": {
+    "timestamp": "2026-10-19T03:01:58.228Z",
+    "session": "/home/air/.codex/sessions/2026/10/19/rollout-2026-10-19T10-56-35-01a15216-e8d5-72d0-baa2-87c4a6a3bcea.jsonl",
+    "line": 90
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/experiment_report_video.md": {
+    "timestamp": "2026-10-26T06:26:39.204Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 87
+  },
+  "tmp/audit_grace_video_logs_20261019.py": {
+    "timestamp": "2026-10-19T03:23:13.706Z",
+    "session": "/home/air/.codex/sessions/2026/10/19/rollout-2026-10-19T10-56-35-01a15216-e8d5-72d0-baa2-87c4a6a3bcea.jsonl",
+    "line": 158
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/run_video_evaluation_parallel.sh": {
+    "timestamp": "2026-10-26T06:41:40.662Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 260
+  },
+  "tmp/check_grace_video_parallel_launcher.py": {
+    "timestamp": "2026-10-19T03:39:45.971Z",
+    "session": "/home/air/.codex/sessions/2026/10/19/rollout-2026-10-19T10-56-35-01a15216-e8d5-72d0-baa2-87c4a6a3bcea.jsonl",
+    "line": 278
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reports/investigate_video_startup_20261023.py": {
+    "timestamp": "2026-10-23T07:50:38.686Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 212
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reports/video_startup_investigation_20261023.md": {
+    "timestamp": "2026-10-23T08:18:51.860Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 483
+  },
+  "tmp/collect_video_startup_investigation_20261023.py": {
+    "timestamp": "2026-10-23T07:55:29.886Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 265
+  },
+  "workspace/reproduction/GRACE/evaluation/audits/audit_video_token_rates.py": {
+    "timestamp": "2026-10-25T07:00:11.325Z",
+    "session": "/home/air/.codex/sessions/2026/10/24/rollout-2026-10-24T12-18-06-01a167fd-e11e-7511-80aa-9639746ab838_01a16c21-5668-7511-b7e7-055220f8e9c5.jsonl",
+    "line": 478
+  },
+  "workspace/reproduction/GRACE/evaluation/workers/video_runtime.py": {
+    "timestamp": "2026-10-23T08:10:23.360Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 390
+  },
+  "workspace/reproduction/GRACE/evaluation/workers/video_worker_resilient.py": {
+    "timestamp": "2026-10-23T08:08:02.608Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 364
+  },
+  "workspace/reproduction/GRACE/evaluation/runners/run_video_matrix_resilient.py": {
+    "timestamp": "2026-10-23T09:13:08.600Z",
+    "session": "/home/air/.codex/sessions/2026/10/23/rollout-2026-10-23T17-00-53-01a167fd-e11e-7511-80aa-9639746ab838.jsonl",
+    "line": 107
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_video_runtime.py": {
+    "timestamp": "2026-10-23T08:11:34.146Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 397
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reports/validate_video_runtime_20261023.py": {
+    "timestamp": "2026-10-23T08:13:32.345Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 424
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reports/validate_video_long_case_20261023.py": {
+    "timestamp": "2026-10-23T08:16:34.211Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 466
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reports/video_runtime_fix_20261023.md": {
+    "timestamp": "2026-10-23T08:20:53.855Z",
+    "session": "/home/air/.codex/sessions/2026/10/21/rollout-2026-10-21T06-21-28-01a15b67-c097-7b51-85ad-74fc83fe4349.jsonl",
+    "line": 510
+  },
+  "workspace/reproduction/GRACE/evaluation/protocols/video_population.py": {
+    "timestamp": "2026-10-23T09:06:31.368Z",
+    "session": "/home/air/.codex/sessions/2026/10/23/rollout-2026-10-23T17-00-53-01a167fd-e11e-7511-80aa-9639746ab838.jsonl",
+    "line": 52
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/run_video_evaluation_short_medium.sh": {
+    "timestamp": "2026-10-26T06:41:40.662Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 260
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_video_population.py": {
+    "timestamp": "2026-10-23T09:07:37.936Z",
+    "session": "/home/air/.codex/sessions/2026/10/23/rollout-2026-10-23T17-00-53-01a167fd-e11e-7511-80aa-9639746ab838.jsonl",
+    "line": 58
+  },
+  "workspace/reproduction/GRACE/evaluation/workers/video_reuse.py": {
+    "timestamp": "2026-10-23T09:13:08.600Z",
+    "session": "/home/air/.codex/sessions/2026/10/23/rollout-2026-10-23T17-00-53-01a167fd-e11e-7511-80aa-9639746ab838.jsonl",
+    "line": 107
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_video_reuse.py": {
+    "timestamp": "2026-10-23T09:14:33.488Z",
+    "session": "/home/air/.codex/sessions/2026/10/23/rollout-2026-10-23T17-00-53-01a167fd-e11e-7511-80aa-9639746ab838.jsonl",
+    "line": 118
+  },
+  "workspace/reproduction/GRACE/evaluation/runners/reuse_partial_videomme.py": {
+    "timestamp": "2026-10-23T09:22:24.442Z",
+    "session": "/home/air/.codex/sessions/2026/10/23/rollout-2026-10-23T17-00-53-01a167fd-e11e-7511-80aa-9639746ab838.jsonl",
+    "line": 192
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reuse_partial_videomme.sh": {
+    "timestamp": "2026-10-23T09:21:14.232Z",
+    "session": "/home/air/.codex/sessions/2026/10/23/rollout-2026-10-23T17-00-53-01a167fd-e11e-7511-80aa-9639746ab838.jsonl",
+    "line": 186
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_partial_videomme_reuse.py": {
+    "timestamp": "2026-10-23T09:22:24.442Z",
+    "session": "/home/air/.codex/sessions/2026/10/23/rollout-2026-10-23T17-00-53-01a167fd-e11e-7511-80aa-9639746ab838.jsonl",
+    "line": 192
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/run_video_evaluation_from_grace_w4.sh": {
+    "timestamp": "2026-10-24T04:19:09.737Z",
+    "session": "/home/air/.codex/sessions/2026/10/24/rollout-2026-10-24T12-18-06-01a167fd-e11e-7511-80aa-9639746ab838_01a16c21-5668-7511-b7e7-055220f8e9c5.jsonl",
+    "line": 48
+  },
+  "tmp/grace_lmms_video_code.py": {
+    "timestamp": "2026-10-26T06:25:06.698Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 67
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/cpu_lmms_video_integration.py": {
+    "timestamp": "2026-10-26T06:31:59.599Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 182
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_lmms_video.py": {
+    "timestamp": "2026-10-26T06:26:39.204Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 87
+  },
+  "workspace/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reports/lmms_video_720p_validation_20261026/validation.md": {
+    "timestamp": "2026-10-26T06:33:39.968Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 202
+  },
+  "tmp/create_token_experiment.py": {
+    "timestamp": "2026-10-26T07:25:37.833Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 450
+  },
+  "workspace/reproduction/GRACE/evaluation/protocols/token_reduction_runtime.py": {
+    "timestamp": "2026-10-26T07:42:21.521Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 645
+  },
+  "workspace/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/experiment.json": {
+    "timestamp": "2026-10-26T07:42:21.521Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 645
+  },
+  "workspace/reproduction/GRACE/evaluation/runners/run_token_reduction_matrix.py": {
+    "timestamp": "2026-10-26T07:57:44.762Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 792
+  },
+  "workspace/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/run_experiment.sh": {
+    "timestamp": "2026-10-26T07:45:16.777Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 678
+  },
+  "workspace/reproduction/GRACE/evaluation/protocols/int4_gemm.py": {
+    "timestamp": "2026-10-26T07:46:38.199Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 694
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/test_token_reduction.py": {
+    "timestamp": "2026-10-26T07:56:28.299Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 781
+  },
+  "workspace/reproduction/GRACE/evaluation/tests/check_int4_kernel.py": {
+    "timestamp": "2026-10-26T07:46:38.199Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 694
+  },
+  "tmp/triton_copy_check.py": {
+    "timestamp": "2026-10-26T07:35:38.915Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 582
+  },
+  "tmp/compile_int4_sm80.py": {
+    "timestamp": "2026-10-26T07:37:08.257Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 603
+  },
+  "workspace/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/.gitignore": {
+    "timestamp": "2026-10-26T07:42:21.521Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 645
+  },
+  "workspace/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/experiment_README.md": {
+    "timestamp": "2026-10-26T07:58:41.659Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 808
+  },
+  "workspace/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/run_images.sh": {
+    "timestamp": "2026-10-26T07:58:41.659Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 808
+  },
+  "workspace/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/run_videos.sh": {
+    "timestamp": "2026-10-26T07:58:41.659Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 808
+  },
+  "workspace/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/validation.json": {
+    "timestamp": "2026-10-26T07:59:02.484Z",
+    "session": "/home/air/.codex/sessions/2026/10/26/rollout-2026-10-26T14-22-14-01a176df-b23e-7bf3-a2c5-21d693247263.jsonl",
+    "line": 817
+  }
+}

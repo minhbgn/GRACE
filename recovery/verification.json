@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-27",
+  "python_syntax": {
+    "passed": 220
+  },
+  "shell_syntax": {
+    "passed": 98,
+    "editor_overlays": "passed"
+  },
+  "lmms_regression_tests": {
+    "passed": 11
+  },
+  "token_reduction_tests": {
+    "passed": 7,
+    "errors": 1,
+    "error_test": "ProcessorBudget.test_actual_processor_resolution_budget",
+    "reason": "Missing local models/Qwen3-VL-2B-Instruct processor/tokenizer assets"
+  },
+  "installed_plan": {
+    "passed": true,
+    "jobs": 360
+  },
+  "pinned_source_check": {
+    "passed": true,
+    "commit": "88b23e2bfa16a1edbc16e9e238ed82130b3a4f56"
+  },
+  "gpu_tests": "not run",
+  "training_or_benchmark_inference": "not run"
+}

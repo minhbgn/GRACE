@@ -248,14 +248,14 @@ Primary local evidence:
 - [Previous experiment report](../constrained_32k_seed42/experiment_report.md), including its detailed implementation-audit appendix. This report does not revalidate its external paper/release comparisons.
 - Current run summaries: [SFT](runs/sft/run_summary.json), [QAT](runs/qat/run_summary.json), [GRACE](runs/grace/run_summary.json); [GRACE update log](runs/grace/step_metrics.jsonl).
 - Previous summaries: [SFT](../constrained_32k_seed42/runs/sft/run_summary.json), [QAT](../constrained_32k_seed42/runs/qat/run_summary.json), [GRACE](../constrained_32k_seed42/runs/grace/run_summary.json); [previous GRACE log](../constrained_32k_seed42/runs/grace/step_metrics.jsonl).
-- [Current profile diagnostics](profiles/grace/profiling/learning_diagnostics_summary.json), [evaluation validator](../../evaluation/summarize_constrained_evals.py), [GRACE objective/controller integration](../../qwen-vl-finetune/qwenvl/train/train_qwen_grace.py), and [quantization/LoRA/export implementation](../../qwen-vl-finetune/qwenvl/train/qat_modules.py).
+- [Current profile diagnostics](profiles/grace/profiling/learning_diagnostics_summary.json), [evaluation validator](../../evaluation/audits/summarize_constrained_evals.py), [GRACE objective/controller integration](../../qwen-vl-finetune/qwenvl/train/train_qwen_grace.py), and [quantization/LoRA/export implementation](../../qwen-vl-finetune/qwenvl/train/qat_modules.py).
 
 To revalidate either seven-suite comparison without launching inference or changing saved results, run from the workspace root:
 
 ```bash
-python3 reproduction/GRACE/evaluation/summarize_constrained_evals.py \
+python3 reproduction/GRACE/evaluation/audits/summarize_constrained_evals.py \
   --results-dir reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/evaluation
 
-python3 reproduction/GRACE/evaluation/summarize_constrained_evals.py \
+python3 reproduction/GRACE/evaluation/audits/summarize_constrained_evals.py \
   --results-dir reproduction/GRACE/experiments/constrained_32k_seed42/evaluation
 ```

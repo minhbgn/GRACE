@@ -1,0 +1,3651 @@
+{
+  "date": "2026-11-05",
+  "protocol_sha256": "84cdf2afd58fcfce79c7c6ce0e10153da46bd5a8217d5eb0794ad7a9931b65d3",
+  "pinned_code_verified": true,
+  "jobs": [
+    {
+      "model": "qat_w4",
+      "suite": "hallusionbench",
+      "config": "baseline_r100",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/hallusionbench/baseline_r100/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261101T043732_131181Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "hallusionbench",
+      "config": "resolution_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/hallusionbench/resolution_r050/COMPLETE.json",
+      "count": 1129,
+      "gpu": "2",
+      "attempt": "attempt_20261101T043732_131632Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "hallusionbench",
+      "config": "resolution_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/hallusionbench/resolution_r025/COMPLETE.json",
+      "count": 1129,
+      "gpu": "2",
+      "attempt": "attempt_20261101T044513_856330Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "hallusionbench",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/hallusionbench/resolution_r010/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261101T044803_155681Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "hallusionbench",
+      "config": "uniform_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/hallusionbench/uniform_r050/COMPLETE.json",
+      "count": 1129,
+      "gpu": "2",
+      "attempt": "attempt_20261101T045150_145415Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "hallusionbench",
+      "config": "uniform_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/hallusionbench/uniform_r025/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261101T045340_855540Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "hallusionbench",
+      "config": "uniform_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/hallusionbench/uniform_r010/COMPLETE.json",
+      "count": 1129,
+      "gpu": "2",
+      "attempt": "attempt_20261101T045945_216334Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "hallusionbench",
+      "config": "merge_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/hallusionbench/merge_r050/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261101T050012_960426Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "hallusionbench",
+      "config": "merge_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/hallusionbench/merge_r025/COMPLETE.json",
+      "count": 1129,
+      "gpu": "2",
+      "attempt": "attempt_20261101T050530_321370Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "hallusionbench",
+      "config": "merge_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/hallusionbench/merge_r010/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261101T050759_366618Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmbench",
+      "config": "baseline_r100",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmbench/baseline_r100/COMPLETE.json",
+      "count": 4329,
+      "gpu": "2",
+      "attempt": "attempt_20261101T051213_723182Z",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmbench",
+      "config": "resolution_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmbench/resolution_r050/COMPLETE.json",
+      "count": 4329,
+      "gpu": "0",
+      "attempt": "attempt_20261101T051336_111533Z",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmbench",
+      "config": "resolution_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmbench/resolution_r025/COMPLETE.json",
+      "count": 4329,
+      "gpu": "0",
+      "attempt": "attempt_20261101T053641_096703Z",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmbench",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmbench/resolution_r010/COMPLETE.json",
+      "count": 4329,
+      "gpu": "2",
+      "attempt": "attempt_20261101T054053_607153Z",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmbench",
+      "config": "uniform_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmbench/uniform_r050/COMPLETE.json",
+      "count": 4329,
+      "gpu": "0",
+      "attempt": "attempt_20261101T055749_987077Z",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmbench",
+      "config": "uniform_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmbench/uniform_r025/COMPLETE.json",
+      "count": 4329,
+      "gpu": "2",
+      "attempt": "attempt_20261101T060045_161775Z",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmbench",
+      "config": "uniform_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmbench/uniform_r010/COMPLETE.json",
+      "count": 4329,
+      "gpu": "0",
+      "attempt": "attempt_20261101T062024_178084Z",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmbench",
+      "config": "merge_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmbench/merge_r050/COMPLETE.json",
+      "count": 4329,
+      "gpu": "2",
+      "attempt": "attempt_20261101T062102_244488Z",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmbench",
+      "config": "merge_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmbench/merge_r025/COMPLETE.json",
+      "count": 4329,
+      "gpu": "0",
+      "attempt": "attempt_20261101T063930_461288Z",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmbench",
+      "config": "merge_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmbench/merge_r010/COMPLETE.json",
+      "count": 4329,
+      "gpu": "2",
+      "attempt": "attempt_20261101T064402_792296Z",
+      "sample_identity": "73270fdd01df03665e05bd498b8e9f7872c5b0b6fdb32fa798c94d274f52843b",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "scienceqa",
+      "config": "baseline_r100",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/scienceqa/baseline_r100/COMPLETE.json",
+      "count": 4241,
+      "gpu": "0",
+      "attempt": "attempt_20261101T065954_392182Z",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "scienceqa",
+      "config": "resolution_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/scienceqa/resolution_r050/COMPLETE.json",
+      "count": 4241,
+      "gpu": "2",
+      "attempt": "attempt_20261101T070246_296988Z",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "scienceqa",
+      "config": "resolution_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/scienceqa/resolution_r025/COMPLETE.json",
+      "count": 4241,
+      "gpu": "0",
+      "attempt": "attempt_20261101T072120_168194Z",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "scienceqa",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/scienceqa/resolution_r010/COMPLETE.json",
+      "count": 4241,
+      "gpu": "2",
+      "attempt": "attempt_20261101T072156_656606Z",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "scienceqa",
+      "config": "uniform_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/scienceqa/uniform_r050/COMPLETE.json",
+      "count": 4241,
+      "gpu": "2",
+      "attempt": "attempt_20261101T073913_251553Z",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "scienceqa",
+      "config": "uniform_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/scienceqa/uniform_r025/COMPLETE.json",
+      "count": 4241,
+      "gpu": "0",
+      "attempt": "attempt_20261101T073953_197473Z",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "scienceqa",
+      "config": "uniform_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/scienceqa/uniform_r010/COMPLETE.json",
+      "count": 4241,
+      "gpu": "0",
+      "attempt": "attempt_20261101T075802_047349Z",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "scienceqa",
+      "config": "merge_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/scienceqa/merge_r050/COMPLETE.json",
+      "count": 4241,
+      "gpu": "2",
+      "attempt": "attempt_20261101T075830_630508Z",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "scienceqa",
+      "config": "merge_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/scienceqa/merge_r025/COMPLETE.json",
+      "count": 4241,
+      "gpu": "0",
+      "attempt": "attempt_20261101T081534_149595Z",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "scienceqa",
+      "config": "merge_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/scienceqa/merge_r010/COMPLETE.json",
+      "count": 4241,
+      "gpu": "2",
+      "attempt": "attempt_20261101T081733_914925Z",
+      "sample_identity": "1a967ea2ed3b441343ac0dfc9b7230ba95b0ff18d4b98f6db402ba6203e2cc21",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "ai2d",
+      "config": "baseline_r100",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/ai2d/baseline_r100/COMPLETE.json",
+      "count": 3088,
+      "gpu": "0",
+      "attempt": "attempt_20261101T083356_540959Z",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "ai2d",
+      "config": "resolution_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/ai2d/resolution_r050/COMPLETE.json",
+      "count": 3088,
+      "gpu": "2",
+      "attempt": "attempt_20261101T083427_801832Z",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "ai2d",
+      "config": "resolution_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/ai2d/resolution_r025/COMPLETE.json",
+      "count": 3088,
+      "gpu": "2",
+      "attempt": "attempt_20261101T085306_580958Z",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "ai2d",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/ai2d/resolution_r010/COMPLETE.json",
+      "count": 3088,
+      "gpu": "0",
+      "attempt": "attempt_20261101T085854_092911Z",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "ai2d",
+      "config": "uniform_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/ai2d/uniform_r050/COMPLETE.json",
+      "count": 3088,
+      "gpu": "2",
+      "attempt": "attempt_20261101T090933_045071Z",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "ai2d",
+      "config": "uniform_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/ai2d/uniform_r025/COMPLETE.json",
+      "count": 3088,
+      "gpu": "0",
+      "attempt": "attempt_20261101T091341_626672Z",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "ai2d",
+      "config": "uniform_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/ai2d/uniform_r010/COMPLETE.json",
+      "count": 3088,
+      "gpu": "2",
+      "attempt": "attempt_20261101T092823_058228Z",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "ai2d",
+      "config": "merge_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/ai2d/merge_r050/COMPLETE.json",
+      "count": 3088,
+      "gpu": "0",
+      "attempt": "attempt_20261101T092941_240883Z",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "ai2d",
+      "config": "merge_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/ai2d/merge_r025/COMPLETE.json",
+      "count": 3088,
+      "gpu": "2",
+      "attempt": "attempt_20261101T094218_732804Z",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "ai2d",
+      "config": "merge_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/ai2d/merge_r010/COMPLETE.json",
+      "count": 3088,
+      "gpu": "0",
+      "attempt": "attempt_20261101T094838_138171Z",
+      "sample_identity": "c3528f28fa819a6732f4f20403158da42b5f84925d57a99f5335967d0aa6e28f",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmmu",
+      "config": "baseline_r100",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmmu/baseline_r100/COMPLETE.json",
+      "count": 900,
+      "gpu": "2",
+      "attempt": "attempt_20261101T095812_148341Z",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmmu",
+      "config": "resolution_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmmu/resolution_r050/COMPLETE.json",
+      "count": 900,
+      "gpu": "0",
+      "attempt": "attempt_20261101T100252_517666Z",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmmu",
+      "config": "resolution_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmmu/resolution_r025/COMPLETE.json",
+      "count": 900,
+      "gpu": "2",
+      "attempt": "attempt_20261101T100718_914202Z",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmmu",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmmu/resolution_r010/COMPLETE.json",
+      "count": 900,
+      "gpu": "0",
+      "attempt": "attempt_20261101T101016_820499Z",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmmu",
+      "config": "uniform_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmmu/uniform_r050/COMPLETE.json",
+      "count": 900,
+      "gpu": "2",
+      "attempt": "attempt_20261101T101405_558936Z",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmmu",
+      "config": "uniform_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmmu/uniform_r025/COMPLETE.json",
+      "count": 900,
+      "gpu": "0",
+      "attempt": "attempt_20261101T101634_091458Z",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmmu",
+      "config": "uniform_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmmu/uniform_r010/COMPLETE.json",
+      "count": 900,
+      "gpu": "2",
+      "attempt": "attempt_20261101T102121_156491Z",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmmu",
+      "config": "merge_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmmu/merge_r050/COMPLETE.json",
+      "count": 900,
+      "gpu": "0",
+      "attempt": "attempt_20261101T102308_663654Z",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmmu",
+      "config": "merge_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmmu/merge_r025/COMPLETE.json",
+      "count": 900,
+      "gpu": "2",
+      "attempt": "attempt_20261101T102723_120961Z",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmmu",
+      "config": "merge_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmmu/merge_r010/COMPLETE.json",
+      "count": 900,
+      "gpu": "0",
+      "attempt": "attempt_20261101T103027_581006Z",
+      "sample_identity": "2179d18fb49488939ac27dab12ef79f80923792e841a7fc512c51865cc309995",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "seedbench_img",
+      "config": "baseline_r100",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/seedbench_img/baseline_r100/COMPLETE.json",
+      "count": 14233,
+      "gpu": "2",
+      "attempt": "attempt_20261101T103359_058785Z",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "seedbench_img",
+      "config": "resolution_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/seedbench_img/resolution_r050/COMPLETE.json",
+      "count": 14233,
+      "gpu": "0",
+      "attempt": "attempt_20261101T103634_575649Z",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "seedbench_img",
+      "config": "resolution_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/seedbench_img/resolution_r025/COMPLETE.json",
+      "count": 14233,
+      "gpu": "0",
+      "attempt": "attempt_20261101T123057_291493Z",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "seedbench_img",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/seedbench_img/resolution_r010/COMPLETE.json",
+      "count": 14233,
+      "gpu": "2",
+      "attempt": "attempt_20261101T131816_672473Z",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "seedbench_img",
+      "config": "uniform_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/seedbench_img/uniform_r050/COMPLETE.json",
+      "count": 14233,
+      "gpu": "0",
+      "attempt": "attempt_20261101T140458_192887Z",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "seedbench_img",
+      "config": "uniform_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/seedbench_img/uniform_r025/COMPLETE.json",
+      "count": 14233,
+      "gpu": "2",
+      "attempt": "attempt_20261101T143703_294456Z",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "seedbench_img",
+      "config": "uniform_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/seedbench_img/uniform_r010/COMPLETE.json",
+      "count": 14233,
+      "gpu": "0",
+      "attempt": "attempt_20261101T160058_708309Z",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "seedbench_img",
+      "config": "merge_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/seedbench_img/merge_r050/COMPLETE.json",
+      "count": 14233,
+      "gpu": "2",
+      "attempt": "attempt_20261101T160357_583586Z",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "seedbench_img",
+      "config": "merge_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/seedbench_img/merge_r025/COMPLETE.json",
+      "count": 14233,
+      "gpu": "0",
+      "attempt": "attempt_20261101T171720_578731Z",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "seedbench_img",
+      "config": "merge_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/seedbench_img/merge_r010/COMPLETE.json",
+      "count": 14233,
+      "gpu": "2",
+      "attempt": "attempt_20261101T175843_431365Z",
+      "sample_identity": "c6c79f3c6602bcb8b1b552e308cdb215b5bbff9c9e0b2b621f2a93d64b4702ad",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmstar",
+      "config": "baseline_r100",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmstar/baseline_r100/COMPLETE.json",
+      "count": 1500,
+      "gpu": "0",
+      "attempt": "attempt_20261101T184733_533129Z",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmstar",
+      "config": "resolution_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmstar/resolution_r050/COMPLETE.json",
+      "count": 1500,
+      "gpu": "0",
+      "attempt": "attempt_20261101T185849_847770Z",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmstar",
+      "config": "resolution_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmstar/resolution_r025/COMPLETE.json",
+      "count": 1500,
+      "gpu": "0",
+      "attempt": "attempt_20261101T190824_578482Z",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmstar",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmstar/resolution_r010/COMPLETE.json",
+      "count": 1500,
+      "gpu": "2",
+      "attempt": "attempt_20261101T191430_591174Z",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmstar",
+      "config": "uniform_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmstar/uniform_r050/COMPLETE.json",
+      "count": 1500,
+      "gpu": "0",
+      "attempt": "attempt_20261101T191708_168534Z",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmstar",
+      "config": "uniform_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmstar/uniform_r025/COMPLETE.json",
+      "count": 1500,
+      "gpu": "2",
+      "attempt": "attempt_20261101T192203_003117Z",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmstar",
+      "config": "uniform_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmstar/uniform_r010/COMPLETE.json",
+      "count": 1500,
+      "gpu": "0",
+      "attempt": "attempt_20261101T192624_176100Z",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmstar",
+      "config": "merge_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmstar/merge_r050/COMPLETE.json",
+      "count": 1500,
+      "gpu": "2",
+      "attempt": "attempt_20261101T193000_431684Z",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmstar",
+      "config": "merge_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmstar/merge_r025/COMPLETE.json",
+      "count": 1500,
+      "gpu": "0",
+      "attempt": "attempt_20261101T193355_790006Z",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "mmstar",
+      "config": "merge_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/mmstar/merge_r010/COMPLETE.json",
+      "count": 1500,
+      "gpu": "2",
+      "attempt": "attempt_20261101T193852_970969Z",
+      "sample_identity": "365513cc0e86715fd225c86164b5e13935f1a69f4f0747166d675c151748dfc2",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "tempcompass",
+      "config": "baseline_r100",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "missing TempCompass YAML",
+      "last_attempt": "results/full/qat_w4/tempcompass/baseline_r100/attempt_20261101T194217_376147Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "tempcompass",
+      "config": "resolution_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "missing TempCompass YAML",
+      "last_attempt": "results/full/qat_w4/tempcompass/resolution_r050/attempt_20261101T194238_125918Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "tempcompass",
+      "config": "resolution_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "missing TempCompass YAML",
+      "last_attempt": "results/full/qat_w4/tempcompass/resolution_r025/attempt_20261101T194304_770917Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "tempcompass",
+      "config": "resolution_r010",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "missing TempCompass YAML",
+      "last_attempt": "results/full/qat_w4/tempcompass/resolution_r010/attempt_20261101T194316_711202Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "tempcompass",
+      "config": "uniform_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "missing TempCompass YAML",
+      "last_attempt": "results/full/qat_w4/tempcompass/uniform_r050/attempt_20261101T194328_954661Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "tempcompass",
+      "config": "uniform_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "missing TempCompass YAML",
+      "last_attempt": "results/full/qat_w4/tempcompass/uniform_r025/attempt_20261101T194341_694787Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "tempcompass",
+      "config": "uniform_r010",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "missing TempCompass YAML",
+      "last_attempt": "results/full/qat_w4/tempcompass/uniform_r010/attempt_20261101T194407_190867Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "tempcompass",
+      "config": "merge_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "missing TempCompass YAML",
+      "last_attempt": "results/full/qat_w4/tempcompass/merge_r050/attempt_20261101T194428_622732Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "tempcompass",
+      "config": "merge_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "missing TempCompass YAML",
+      "last_attempt": "results/full/qat_w4/tempcompass/merge_r025/attempt_20261101T194441_560543Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "tempcompass",
+      "config": "merge_r010",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "missing TempCompass YAML",
+      "last_attempt": "results/full/qat_w4/tempcompass/merge_r010/attempt_20261101T194456_788335Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videomme",
+      "config": "baseline_r100",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videomme/baseline_r100/attempt_20261101T194526_989034Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videomme",
+      "config": "resolution_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videomme/resolution_r050/attempt_20261101T194619_801428Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videomme",
+      "config": "resolution_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/videomme/resolution_r025/COMPLETE.json",
+      "count": 1800,
+      "gpu": "2",
+      "attempt": "attempt_20261102T041600_375035Z",
+      "sample_identity": "f2d93a4c1c114017e45c8a1e3bf9de1f9db9049ea33c0b91e3082062fa13c9f6",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videomme",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/videomme/resolution_r010/COMPLETE.json",
+      "count": 1800,
+      "gpu": "0",
+      "attempt": "attempt_20261102T073411_698811Z",
+      "sample_identity": "f2d93a4c1c114017e45c8a1e3bf9de1f9db9049ea33c0b91e3082062fa13c9f6",
+      "output_cutoffs": 0,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videomme",
+      "config": "uniform_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videomme/uniform_r050/attempt_20261103T033631_681887Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videomme",
+      "config": "uniform_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videomme/uniform_r025/attempt_20261103T104711_401041Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videomme",
+      "config": "uniform_r010",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videomme/uniform_r010/attempt_20261103T131308_371117Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videomme",
+      "config": "merge_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videomme/merge_r050/attempt_20261103T152325_753501Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videomme",
+      "config": "merge_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videomme/merge_r025/attempt_20261103T162454_066259Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videomme",
+      "config": "merge_r010",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videomme/merge_r010/attempt_20261103T205510_212638Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_perception",
+      "config": "baseline_r100",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_perception/baseline_r100/attempt_20261103T222640_018019Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_perception",
+      "config": "resolution_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_perception/resolution_r050/attempt_20261103T222856_779131Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_perception",
+      "config": "resolution_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_perception/resolution_r025/attempt_20261103T224301_391435Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_perception",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/videommmu_perception/resolution_r010/COMPLETE.json",
+      "count": 300,
+      "gpu": "2",
+      "attempt": "attempt_20261104T000219_526911Z",
+      "sample_identity": "9b59ddda0b6e9f353c2c9792e49eda39b7972f6a0324556be9a69c5af19dde45",
+      "output_cutoffs": 1,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_perception",
+      "config": "uniform_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_perception/uniform_r050/attempt_20261104T003436_717113Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_perception",
+      "config": "uniform_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_perception/uniform_r025/attempt_20261104T003650_790972Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_perception",
+      "config": "uniform_r010",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_perception/uniform_r010/attempt_20261104T003908_657325Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_perception",
+      "config": "merge_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_perception/merge_r050/attempt_20261104T004118_901927Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_perception",
+      "config": "merge_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_perception/merge_r025/attempt_20261104T004312_521244Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_perception",
+      "config": "merge_r010",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_perception/merge_r010/attempt_20261104T004509_750409Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_comprehension",
+      "config": "baseline_r100",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_comprehension/baseline_r100/attempt_20261104T004728_367344Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_comprehension/resolution_r050/attempt_20261104T004945_406288Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_comprehension/resolution_r025/attempt_20261104T010316_866757Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/videommmu_comprehension/resolution_r010/COMPLETE.json",
+      "count": 300,
+      "gpu": "0",
+      "attempt": "attempt_20261104T025611_717969Z",
+      "sample_identity": "fc2605fd0efd931d446051a74c9a0d4cbab680365b6a0fc81276f65f86ec74be",
+      "output_cutoffs": 4,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_comprehension/uniform_r050/attempt_20261104T072902_166186Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_comprehension/uniform_r025/attempt_20261104T073108_261163Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r010",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_comprehension/uniform_r010/attempt_20261104T073315_801942Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_comprehension",
+      "config": "merge_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_comprehension/merge_r050/attempt_20261104T073520_190123Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_comprehension",
+      "config": "merge_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_comprehension/merge_r025/attempt_20261104T073720_729991Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_comprehension",
+      "config": "merge_r010",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_comprehension/merge_r010/attempt_20261104T073922_261202Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_adaptation",
+      "config": "baseline_r100",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_adaptation/baseline_r100/attempt_20261104T074123_165634Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_adaptation/resolution_r050/attempt_20261104T074327_530671Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_adaptation/resolution_r025/attempt_20261104T075642_873980Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/qat_w4/videommmu_adaptation/resolution_r010/COMPLETE.json",
+      "count": 300,
+      "gpu": "2",
+      "attempt": "attempt_20261104T094545_262087Z",
+      "sample_identity": "7742f209ca3d51ddd6ec367c5d24db8653b2a5f2aaf2cf67eee81dded367b25b",
+      "output_cutoffs": 40,
+      "raw_telemetry_verified": true
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_adaptation/uniform_r050/attempt_20261104T101840_427566Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_adaptation/uniform_r025/attempt_20261104T102051_401994Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r010",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_adaptation/uniform_r010/attempt_20261104T102304_110831Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_adaptation",
+      "config": "merge_r050",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_adaptation/merge_r050/attempt_20261104T102515_751349Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_adaptation",
+      "config": "merge_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_adaptation/merge_r025/attempt_20261104T102719_141967Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "qat_w4",
+      "suite": "videommmu_adaptation",
+      "config": "merge_r010",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "CUDA OOM",
+      "last_attempt": "results/full/qat_w4/videommmu_adaptation/merge_r010/attempt_20261104T102925_197551Z",
+      "exit": {
+        "returncode": 1
+      },
+      "validated_present": false
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "hallusionbench",
+      "config": "baseline_r100",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/vanilla_2b/hallusionbench/baseline_r100/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261104T103130_952536Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "hallusionbench",
+      "config": "resolution_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/vanilla_2b/hallusionbench/resolution_r050/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261104T103433_992934Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "hallusionbench",
+      "config": "resolution_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/vanilla_2b/hallusionbench/resolution_r025/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261104T103743_422201Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "hallusionbench",
+      "config": "resolution_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/vanilla_2b/hallusionbench/resolution_r010/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261104T104051_488260Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "hallusionbench",
+      "config": "uniform_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/vanilla_2b/hallusionbench/uniform_r050/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261104T104359_345292Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "hallusionbench",
+      "config": "uniform_r025",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/vanilla_2b/hallusionbench/uniform_r025/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261104T104702_190390Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "hallusionbench",
+      "config": "uniform_r010",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/vanilla_2b/hallusionbench/uniform_r010/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261104T105000_680794Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "hallusionbench",
+      "config": "merge_r050",
+      "status": "complete",
+      "attempts": 1,
+      "marker": "results/full/vanilla_2b/hallusionbench/merge_r050/COMPLETE.json",
+      "count": 1129,
+      "gpu": "0",
+      "attempt": "attempt_20261104T105308_089643Z",
+      "sample_identity": "8a8d5cbf688117ae0829f02f80e8f2cc1e9622f25c0eab191b29a4fea1ac3752",
+      "output_cutoffs": 0
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "hallusionbench",
+      "config": "merge_r025",
+      "status": "incomplete",
+      "attempts": 1,
+      "marker": null,
+      "reason": "interrupted/uncommitted",
+      "last_attempt": "results/full/vanilla_2b/hallusionbench/merge_r025/attempt_20261104T105615_633868Z",
+      "exit": null,
+      "validated_present": true
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "hallusionbench",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmbench",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmbench",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmbench",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmbench",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmbench",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmbench",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmbench",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmbench",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmbench",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmbench",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "scienceqa",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "scienceqa",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "scienceqa",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "scienceqa",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "scienceqa",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "scienceqa",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "scienceqa",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "scienceqa",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "scienceqa",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "scienceqa",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "ai2d",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "ai2d",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "ai2d",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "ai2d",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "ai2d",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "ai2d",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "ai2d",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "ai2d",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "ai2d",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "ai2d",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmmu",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmmu",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmmu",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmmu",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmmu",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmmu",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmmu",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmmu",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmmu",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmmu",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "seedbench_img",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "seedbench_img",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "seedbench_img",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "seedbench_img",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "seedbench_img",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "seedbench_img",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "seedbench_img",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "seedbench_img",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "seedbench_img",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "seedbench_img",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmstar",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmstar",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmstar",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmstar",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmstar",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmstar",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmstar",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmstar",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmstar",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "mmstar",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "tempcompass",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "tempcompass",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "tempcompass",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "tempcompass",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "tempcompass",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "tempcompass",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "tempcompass",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "tempcompass",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "tempcompass",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "tempcompass",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videomme",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videomme",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videomme",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videomme",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videomme",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videomme",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videomme",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videomme",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videomme",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videomme",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_perception",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_perception",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_perception",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_perception",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_perception",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_perception",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_perception",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_perception",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_perception",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_perception",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_comprehension",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_comprehension",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_comprehension",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_comprehension",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_adaptation",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_adaptation",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_adaptation",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "vanilla_2b",
+      "suite": "videommmu_adaptation",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "hallusionbench",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "hallusionbench",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "hallusionbench",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "hallusionbench",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "hallusionbench",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "hallusionbench",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "hallusionbench",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "hallusionbench",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "hallusionbench",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "hallusionbench",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmbench",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmbench",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmbench",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmbench",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmbench",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmbench",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmbench",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmbench",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmbench",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmbench",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "scienceqa",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "scienceqa",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "scienceqa",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "scienceqa",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "scienceqa",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "scienceqa",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "scienceqa",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "scienceqa",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "scienceqa",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "scienceqa",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "ai2d",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "ai2d",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "ai2d",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "ai2d",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "ai2d",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "ai2d",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "ai2d",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "ai2d",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "ai2d",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "ai2d",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmmu",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmmu",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmmu",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmmu",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmmu",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmmu",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmmu",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmmu",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmmu",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmmu",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "seedbench_img",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "seedbench_img",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "seedbench_img",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "seedbench_img",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "seedbench_img",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "seedbench_img",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "seedbench_img",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "seedbench_img",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "seedbench_img",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "seedbench_img",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmstar",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmstar",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmstar",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmstar",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmstar",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmstar",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmstar",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmstar",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmstar",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "mmstar",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "tempcompass",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "tempcompass",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "tempcompass",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "tempcompass",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "tempcompass",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "tempcompass",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "tempcompass",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "tempcompass",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "tempcompass",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "tempcompass",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videomme",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videomme",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videomme",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videomme",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videomme",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videomme",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videomme",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videomme",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videomme",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videomme",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_perception",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_perception",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_perception",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_perception",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_perception",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_perception",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_perception",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_perception",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_perception",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_perception",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_comprehension",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_comprehension",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_comprehension",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_comprehension",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_comprehension",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_comprehension",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_adaptation",
+      "config": "baseline_r100",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_adaptation",
+      "config": "resolution_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_adaptation",
+      "config": "uniform_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_adaptation",
+      "config": "merge_r050",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_adaptation",
+      "config": "merge_r025",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    },
+    {
+      "model": "released_bf16",
+      "suite": "videommmu_adaptation",
+      "config": "merge_r010",
+      "status": "pending",
+      "attempts": 0,
+      "marker": null
+    }
+  ]
+}

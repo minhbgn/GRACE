@@ -1,4 +1,11 @@
 """Exercise all seven real worker mains with fake generation, entirely on CPU."""
+# Support both direct script execution and `python -m evaluation.<group>.<module>`.
+import sys
+from pathlib import Path
+if __package__ in (None, ''):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from evaluation.paths import EVALUATION_ROOT, source_file
+
 import importlib.util
 from pathlib import Path
 import sys
@@ -8,9 +15,8 @@ import unittest
 from unittest.mock import patch
 import json
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from local_scoring import _row_metadata
-from run_constrained_matrix_evals import suites
+from evaluation.protocols.local_scoring import _row_metadata
+from evaluation.runners.run_constrained_matrix_evals import suites
 
 
 class WorkerIntegration(unittest.TestCase):
@@ -63,7 +69,7 @@ class WorkerIntegration(unittest.TestCase):
                     stack.enter_context(patch.object(worker.AutoProcessor, 'from_pretrained', return_value=processor))
                     stack.enter_context(patch.object(worker, 'load_data', return_value=data))
                     stack.enter_context(patch.object(worker, 'build_inputs', return_value={'input_ids':torch.tensor([[1]])}))
-                    stack.enter_context(patch('local_scoring.load_metadata', return_value=meta))
+                    stack.enter_context(patch('evaluation.protocols.local_scoring.load_metadata', return_value=meta))
                     if hasattr(worker, '_decode_image_b64'):
                         stack.enter_context(patch.object(worker, '_decode_image_b64', return_value=Image.new('RGB', (28, 28))))
                     if hasattr(worker, '_decode_image'):

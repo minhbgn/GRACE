@@ -58,3 +58,9 @@ class TrainingArguments(transformers.TrainingArguments):
             "help": "Comma-separated Linear leaf names to adapt with LoRA."
         },
     )
+    lora_target_modules: str = field(
+        default="q_proj,k_proj,v_proj,o_proj",
+        metadata={
+            "help": "Comma-separated Linear leaf names to adapt with LoRA."
+        },
+    )

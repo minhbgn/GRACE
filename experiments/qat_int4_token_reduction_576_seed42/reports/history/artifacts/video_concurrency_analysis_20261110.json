@@ -1,0 +1,299 @@
+{
+  "snapshot_sgt": "2026-11-10T14:18:37.844872+08:00",
+  "scope": "Six currently active VideoMME configurations only; excludes 27 pending Video-MMMU configurations.",
+  "references": {
+    "baseline": {
+      "attempt": "reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/baseline_r100/attempt_20261105T124414_467683Z",
+      "wall_hours": 55.4038236102793,
+      "questions_per_hour": 32.4887324142379,
+      "model_seconds_mean": 90.4793019823316,
+      "model_hours": 45.2396509911658,
+      "residual_seconds": 36020.13364009559
+    },
+    "resolution50": {
+      "attempt": "reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/resolution_r050/attempt_20261107T200836_141303Z",
+      "wall_hours": 30.486754466295242,
+      "questions_per_hour": 59.04203420505116,
+      "model_seconds_mean": 43.9428409810654,
+      "model_hours": 21.9714204905327,
+      "residual_seconds": 30367.096835878987
+    }
+  },
+  "matched_uniform50_443_questions": {
+    "model_seconds": {
+      "single": 23.553303268521553,
+      "three_per_gpu": 52.621224753087716,
+      "slowdown": 2.234133537583867
+    },
+    "vision_and_embedding_seconds": {
+      "single": 2.4437895764346584,
+      "three_per_gpu": 15.94161992158497,
+      "slowdown": 6.523319386950996
+    },
+    "prefill_seconds": {
+      "single": 20.83794499809263,
+      "three_per_gpu": 36.23391376388665,
+      "slowdown": 1.7388429505502228
+    }
+  },
+  "workers": [
+    {
+      "config": "merge_r010",
+      "gpu": "1",
+      "attempt": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/merge_r010/attempt_20261109T063046_055012Z",
+      "saved_answers": 1046,
+      "remaining_answers": 754,
+      "elapsed_hours": 23.797719405558375,
+      "lifetime_questions_per_hour": 43.95379162911251,
+      "lifetime_wall_seconds_per_question": 81.90419680689307,
+      "mean_model_seconds": 37.53882937072055,
+      "medium_mean_model_seconds": 115.88286568714331,
+      "medium_completed": 146,
+      "recent_window_answers": 2,
+      "recent_window_questions_per_hour": 6.109734901980071,
+      "naive_remaining_hours": 17.15437899788816,
+      "remaining_model_hours_estimate": 26.20305655969896,
+      "remaining_outside_model_hours_scenarios": {
+        "total_pixels": 20.191072034829006,
+        "sampled_frames": 35.65803904205681
+      },
+      "remaining_hours_scenarios": [
+        46.39412859452796,
+        61.861095601755764
+      ],
+      "finish_sgt_scenarios": [
+        "2026-11-12T12:42:16.707812+08:00",
+        "2026-11-13T04:10:17.789038+08:00"
+      ],
+      "solo_exploratory_remaining_hours_scenarios": [
+        11.179590993473626,
+        12.418107968926178
+      ]
+    },
+    {
+      "config": "merge_r025",
+      "gpu": "0",
+      "attempt": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/merge_r025/attempt_20261109T063035_545260Z",
+      "saved_answers": 989,
+      "remaining_answers": 811,
+      "elapsed_hours": 23.80063878112369,
+      "lifetime_questions_per_hour": 41.55350657161256,
+      "lifetime_wall_seconds_per_question": 86.63528777759888,
+      "mean_model_seconds": 43.90176742769499,
+      "medium_mean_model_seconds": 135.2959420450785,
+      "medium_completed": 89,
+      "recent_window_answers": 3,
+      "recent_window_questions_per_hour": 9.164602352970107,
+      "naive_remaining_hours": 19.517005107675747,
+      "remaining_model_hours_estimate": 34.22630319816267,
+      "remaining_outside_model_hours_scenarios": {
+        "total_pixels": 22.39193359384545,
+        "sampled_frames": 44.39005280428871
+      },
+      "remaining_hours_scenarios": [
+        56.61823679200812,
+        78.61635600245137
+      ],
+      "finish_sgt_scenarios": [
+        "2026-11-12T22:55:43.497323+08:00",
+        "2026-11-13T20:55:36.726481+08:00"
+      ],
+      "solo_exploratory_remaining_hours_scenarios": [
+        16.286044882549508,
+        17.627083148627797
+      ]
+    },
+    {
+      "config": "merge_r050",
+      "gpu": "1",
+      "attempt": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/merge_r050/attempt_20261109T063019_867133Z",
+      "saved_answers": 924,
+      "remaining_answers": 876,
+      "elapsed_hours": 23.804993816415468,
+      "lifetime_questions_per_hour": 38.81538500391574,
+      "lifetime_wall_seconds_per_question": 92.74672915486546,
+      "mean_model_seconds": 53.560721561248165,
+      "medium_mean_model_seconds": 160.38995014627776,
+      "medium_completed": 24,
+      "recent_window_answers": 3,
+      "recent_window_questions_per_hour": 9.164602352970107,
+      "naive_remaining_hours": 22.568370761017263,
+      "remaining_model_hours_estimate": 44.347618664195096,
+      "remaining_outside_model_hours_scenarios": {
+        "total_pixels": 24.307554649135113,
+        "sampled_frames": 54.86052379178541
+      },
+      "remaining_hours_scenarios": [
+        68.65517331333021,
+        99.20814245598051
+      ],
+      "finish_sgt_scenarios": [
+        "2026-11-13T10:57:56.468800+08:00",
+        "2026-11-14T17:31:07.157714+08:00"
+      ],
+      "solo_exploratory_remaining_hours_scenarios": [
+        25.204072857033424,
+        26.566199035173934
+      ]
+    },
+    {
+      "config": "uniform_r010",
+      "gpu": "0",
+      "attempt": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/uniform_r010/attempt_20261109T063019_814142Z",
+      "saved_answers": 1029,
+      "remaining_answers": 771,
+      "elapsed_hours": 23.805008536113633,
+      "lifetime_questions_per_hour": 43.226197480204426,
+      "lifetime_wall_seconds_per_question": 83.28282869777364,
+      "mean_model_seconds": 38.643276912905094,
+      "medium_mean_model_seconds": 127.98497482204391,
+      "medium_completed": 129,
+      "recent_window_answers": 2,
+      "recent_window_questions_per_hour": 6.109734901980071,
+      "naive_remaining_hours": 17.83640581277319,
+      "remaining_model_hours_estimate": 30.054903719181592,
+      "remaining_outside_model_hours_scenarios": {
+        "total_pixels": 21.196094592829997,
+        "sampled_frames": 38.64883458166966
+      },
+      "remaining_hours_scenarios": [
+        51.25099831201159,
+        68.70373830085126
+      ],
+      "finish_sgt_scenarios": [
+        "2026-11-12T17:33:41.438795+08:00",
+        "2026-11-13T11:00:51.302755+08:00"
+      ],
+      "solo_exploratory_remaining_hours_scenarios": [
+        11.43420683179429,
+        12.70645183639352
+      ]
+    },
+    {
+      "config": "uniform_r025",
+      "gpu": "1",
+      "attempt": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/uniform_r025/attempt_20261109T063011_873947Z",
+      "saved_answers": 980,
+      "remaining_answers": 820,
+      "elapsed_hours": 23.80721414585908,
+      "lifetime_questions_per_hour": 41.16399314912941,
+      "lifetime_wall_seconds_per_question": 87.45507237254357,
+      "mean_model_seconds": 44.38434155219976,
+      "medium_mean_model_seconds": 137.26776411468163,
+      "medium_completed": 80,
+      "recent_window_answers": 3,
+      "recent_window_questions_per_hour": 9.164602352970107,
+      "naive_remaining_hours": 19.9203220404127,
+      "remaining_model_hours_estimate": 35.40666214858561,
+      "remaining_outside_model_hours_scenarios": {
+        "total_pixels": 23.109291845517344,
+        "sampled_frames": 46.66708708659178
+      },
+      "remaining_hours_scenarios": [
+        58.51595399410296,
+        82.07374923517739
+      ],
+      "finish_sgt_scenarios": [
+        "2026-11-13T00:49:35.279251+08:00",
+        "2026-11-14T00:23:03.342119+08:00"
+      ],
+      "solo_exploratory_remaining_hours_scenarios": [
+        16.465822896596595,
+        17.816280808411268
+      ]
+    },
+    {
+      "config": "uniform_r050",
+      "gpu": "0",
+      "attempt": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/uniform_r050/attempt_20261109T063011_815670Z",
+      "saved_answers": 923,
+      "remaining_answers": 877,
+      "elapsed_hours": 23.807230333884558,
+      "lifetime_questions_per_hour": 38.769734532551006,
+      "lifetime_wall_seconds_per_question": 92.85593629684118,
+      "mean_model_seconds": 53.52782167417612,
+      "medium_mean_model_seconds": 174.63998862096796,
+      "medium_completed": 23,
+      "recent_window_answers": 3,
+      "recent_window_questions_per_hour": 9.164602352970107,
+      "naive_remaining_hours": 22.620737814536028,
+      "remaining_model_hours_estimate": 47.94364479005238,
+      "remaining_outside_model_hours_scenarios": {
+        "total_pixels": 24.451368605558468,
+        "sampled_frames": 55.23142330184407
+      },
+      "remaining_hours_scenarios": [
+        72.39501339561085,
+        103.17506809189643
+      ],
+      "finish_sgt_scenarios": [
+        "2026-11-13T14:42:19.893096+08:00",
+        "2026-11-14T21:29:08.090003+08:00"
+      ],
+      "solo_exploratory_remaining_hours_scenarios": [
+        25.233571421522964,
+        26.59348019954684
+      ]
+    }
+  ],
+  "aggregate_lifetime_questions_per_hour": 247.48148585451068,
+  "recent_window_minutes": 19.64078669945399,
+  "recent_window_answers": 16,
+  "solo_gpu_remaining_hours_exploratory": {
+    "0": [
+      52.953823135866756,
+      56.927015184568155
+    ],
+    "1": [
+      52.84948674710364,
+      56.80058781251138
+    ]
+  },
+  "methodology": [
+    "Lifetime wall throughput includes setup, profiling, preprocessing, and checkpoint writes.",
+    "Checkpoint rows contain no per-answer timestamps. Recent measured window uses this session\u2019s earlier 13:58:59 SGT snapshot; few completions make this window noisy.",
+    "Rows 0..899 are short videos and rows 900..1799 medium, verified against standalone sample docs.",
+    "Parallel model remainder: scale each remaining baseline component by current-medium component total / matched baseline-medium component total.",
+    "Outside-model remainder: elapsed minus model timers and estimated profiling; extrapolate by either total pixels or sampled frames. These two scenarios are a sensitivity analysis, not a confidence interval.",
+    "Completion scenarios assume broadly similar contention and no interruptions; future queued workers and changing load can alter them.",
+    "Exploratory solo times interpolate/extrapolate decoder prefill between standalone baseline and resolution50 by decoder token count, use full-resolution baseline vision and baseline residual weighted by frames/pixels. These are not measured solo Uniform/Merge medium runtimes.",
+    "Paired Uniform50 comparison matches the exact first 443 video sampling records. Legacy run was interrupted and has no COMPLETE marker; its telemetry is used only for timing evidence."
+  ],
+  "host_observations": {
+    "logical_cpus": 128,
+    "load_average_1m": 208.38,
+    "worker_thread_counts_range": [
+      362,
+      375
+    ],
+    "worker_cpu_percent_lifetime_range": [
+      1184,
+      1758
+    ],
+    "gpu_40_second_sample_utilization_percent": {
+      "0": [
+        87,
+        99,
+        97,
+        98,
+        82,
+        16,
+        18,
+        33
+      ],
+      "1": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        32,
+        24,
+        24
+      ]
+    },
+    "gpu_0_1_other_occupants": false,
+    "preprocessing": "decord reader uses num_threads=1; frame resize and preprocessing use PyTorch CPU operations. Total process thread counts do not establish active thread counts."
+  },
+  "recommendation": "Prefer a controlled one-worker-per-GPU trial on the remaining medium-video phase. Evidence points to CPU/vision contention, but matched-medium A/B measurement is needed to establish aggregate throughput advantage. No processes were changed."
+}

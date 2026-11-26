@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-27",
+  "tests": {
+    "passed": 16,
+    "network": "localhost synthetic HTTP only",
+    "gpus": false
+  },
+  "shell_syntax": "passed",
+  "dry_run": "passed",
+  "live_checks": {
+    "hallusionbench": {
+      "sha": "cd417161857aefb23d878d42cf1bb53aa9dd646f",
+      "selected_files": 2,
+      "all_patterns_match": true
+    },
+    "ai2d": {
+      "sha": "c83a9b9692933aff8349157c88a413df9d02c4e5",
+      "selected_files": 2,
+      "all_patterns_match": true
+    },
+    "mmmu": {
+      "sha": "98e6ac0cb9b7b2cd2c991b85a50762edc4aedc68",
+      "selected_files": 30,
+      "all_patterns_match": true
+    },
+    "seedbench": {
+      "sha": "81cb1571b8a3a30af2e62073b8d2054418350f0a",
+      "selected_files": 2,
+      "all_patterns_match": true
+    },
+    "mmstar": {
+      "sha": "bc98d668301da7b14f648724866e57302778ab27",
+      "selected_files": 1,
+      "all_patterns_match": true
+    },
+    "tempcompass": {
+      "sha": "c8a67d88a3bc6fd4b2f9ae2f9e112668fbe05722",
+      "selected_files": 2,
+      "all_patterns_match": true
+    },
+    "videomme": {
+      "sha": "ead1408f75b618502df9a1d8e0950166bf0a2a0b",
+      "selected_files": 21,
+      "all_patterns_match": true,
+      "range_0_3": "504b0304"
+    },
+    "videommmu": {
+      "sha": "d1c35ac933123d79e877b7f1b9506afb0309cf1b",
+      "selected_files": 10,
+      "all_patterns_match": true
+    },
+    "coco-http": {
+      "status": 200,
+      "size": "19336861798"
+    },
+    "coco-https": {
+      "error": "SSLError"
+    },
+    "scienceqa": {
+      "status": 200,
+      "size": "206009461"
+    }
+  },
+  "sha256": {
+    "evaluation/data_tools/download_all_data.sh": "d5fa64efe29ecf958eea86364c1b89ab4964e2fa367afea33bc4bda34c1bd535",
+    "evaluation/tests/test_all_data_downloads.py": "de68a336aa29bee81a0e44a7c07d230832919fc4974f9a0f645cc7e1e7289fee"
+  },
+  "limitations": [
+    "No full dataset download was launched",
+    "Drive folder/quota behavior and gated data transfers were not end-to-end exercised",
+    "Full SAM requires fresh official URLs for all 51 shards"
+  ]
+}

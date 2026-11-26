@@ -10,7 +10,7 @@ This follows the [experiment report](experiment_report.md). The main conclusions
 
 ### Actual call paths
 
-The old experiment is the default target of [run_all_constrained_evals.sh](../../evaluation/run_all_constrained_evals.sh). The new [run_local_evaluation.sh](run_local_evaluation.sh) sets its own `EXPERIMENT_DIR`, pins `baseline sft qat grace`, and calls that same shared evaluator. Its resume/keep-going behavior and final summary generation concern orchestration, not scoring.
+The old experiment is the default target of [run_all_constrained_evals.sh](../../evaluation/runners/run_all_constrained_evals.sh). The new [run_local_evaluation.sh](run_local_evaluation.sh) sets its own `EXPERIMENT_DIR`, pins `baseline sft qat grace`, and calls that same shared evaluator. Its resume/keep-going behavior and final summary generation concern orchestration, not scoring.
 
 I generated both sets of dry-run commands with the same Python interpreter and environment. All **28 command pairs differ only in experiment-specific values of `--model_path`, `--processor_path`, and `--output`**. Dataset arguments, evaluator scripts, attention-backend arguments and output-token limits match.
 

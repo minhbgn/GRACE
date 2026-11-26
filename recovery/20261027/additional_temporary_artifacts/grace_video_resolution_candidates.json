@@ -1,0 +1,594 @@
+{
+  "date": "2026-10-17",
+  "method": "Reconstruct candidate geometry from saved 2-fps source-size and frame-count audits; prompt text counts remain unchanged. CPU projection, not GPU inference or fresh video decoding.",
+  "fps": 2,
+  "patch_size": 16,
+  "merge_size": 2,
+  "temporal_patch_size": 2,
+  "context": 262144,
+  "output_reserve": 4096,
+  "inputs": {
+    "tempcompass": {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/video_evaluation/video_unsaturated_v1_6ff1792ea4d2/full/preflight/tempcompass.jsonl",
+      "sha256": "50ec3a8ef015f202297c26678df5a70c532378f39a7cfcd11fbc682657dbce5b"
+    },
+    "videomme": {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/video_evaluation/videomme_complete_20261017/full/preflight/videomme.jsonl",
+      "sha256": "a10d9cbb39040277b1ae7aa7f372d26f923453ad5d007a89371f9c0f20ac796a"
+    },
+    "videommmu_perception": {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/video_evaluation/video_unsaturated_v1_6ff1792ea4d2/full/preflight/videommmu_perception.jsonl",
+      "sha256": "e17d30e33e52c45939876cdf850e0ba52f5d267d28751c2a830a1228fe8d4489"
+    },
+    "videommmu_comprehension": {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/video_evaluation/video_unsaturated_v1_6ff1792ea4d2/full/preflight/videommmu_comprehension.jsonl",
+      "sha256": "33407f7872087cb0dd302966f4d7169169e1e4ed0f90d3c70f5ee7509e35d362"
+    },
+    "videommmu_adaptation": {
+      "path": "reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/video_evaluation/video_unsaturated_v1_6ff1792ea4d2/full/preflight/videommmu_adaptation.jsonl",
+      "sha256": "c6dfed2fa1e587702a111704acfacfe6c2da779d56182c0b65e087901f5f5473"
+    }
+  },
+  "candidates": [
+    {
+      "longest_side": null,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 2875.3607594936707,
+          "max_visual_tokens": 10752,
+          "max_input_tokens": 11037
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 1623,
+          "mean_visual_tokens": 819328.8122222222,
+          "max_visual_tokens": 3150400,
+          "max_input_tokens": 3188754
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 261,
+          "mean_visual_tokens": 1000586.8,
+          "max_visual_tokens": 10118400,
+          "max_input_tokens": 10131101
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 261,
+          "mean_visual_tokens": 1000586.8,
+          "max_visual_tokens": 10118400,
+          "max_input_tokens": 10131076
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 261,
+          "mean_visual_tokens": 1000586.8,
+          "max_visual_tokens": 10118400,
+          "max_input_tokens": 10131062
+        }
+      }
+    },
+    {
+      "longest_side": 960,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 2875.3607594936707,
+          "max_visual_tokens": 10752,
+          "max_input_tokens": 11037
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 1275,
+          "mean_visual_tokens": 485765.9322222222,
+          "max_visual_tokens": 1825800,
+          "max_input_tokens": 1864154
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 138,
+          "mean_visual_tokens": 259572.98666666666,
+          "max_visual_tokens": 1035300,
+          "max_input_tokens": 1056768
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 138,
+          "mean_visual_tokens": 259572.98666666666,
+          "max_visual_tokens": 1035300,
+          "max_input_tokens": 1056690
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 138,
+          "mean_visual_tokens": 259572.98666666666,
+          "max_visual_tokens": 1035300,
+          "max_input_tokens": 1056817
+        }
+      }
+    },
+    {
+      "longest_side": 768,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 2753.1784810126583,
+          "max_visual_tokens": 8064,
+          "max_input_tokens": 8349
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 1002,
+          "mean_visual_tokens": 328708.2922222222,
+          "max_visual_tokens": 1202880,
+          "max_input_tokens": 1241234
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 55,
+          "mean_visual_tokens": 171707.67666666667,
+          "max_visual_tokens": 682080,
+          "max_input_tokens": 703548
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 55,
+          "mean_visual_tokens": 171707.67666666667,
+          "max_visual_tokens": 682080,
+          "max_input_tokens": 703470
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 55,
+          "mean_visual_tokens": 171707.67666666667,
+          "max_visual_tokens": 682080,
+          "max_input_tokens": 703597
+        }
+      }
+    },
+    {
+      "longest_side": 640,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 2597.8607594936707,
+          "max_visual_tokens": 6840,
+          "max_input_tokens": 7205
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 900,
+          "mean_visual_tokens": 224461.42555555556,
+          "max_visual_tokens": 787600,
+          "max_input_tokens": 825954
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 11,
+          "mean_visual_tokens": 113991.35,
+          "max_visual_tokens": 446600,
+          "max_input_tokens": 468068
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 11,
+          "mean_visual_tokens": 113991.35,
+          "max_visual_tokens": 446600,
+          "max_input_tokens": 467990
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 11,
+          "mean_visual_tokens": 113991.35,
+          "max_visual_tokens": 446600,
+          "max_input_tokens": 468117
+        }
+      }
+    },
+    {
+      "longest_side": 576,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 2338.553164556962,
+          "max_visual_tokens": 6480,
+          "max_input_tokens": 6845
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 900,
+          "mean_visual_tokens": 183658.99444444446,
+          "max_visual_tokens": 644400,
+          "max_input_tokens": 682754
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 4,
+          "mean_visual_tokens": 93387.6,
+          "max_visual_tokens": 365400,
+          "max_input_tokens": 386868
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 4,
+          "mean_visual_tokens": 93387.6,
+          "max_visual_tokens": 365400,
+          "max_input_tokens": 386790
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 4,
+          "mean_visual_tokens": 93387.6,
+          "max_visual_tokens": 365400,
+          "max_input_tokens": 386917
+        }
+      }
+    },
+    {
+      "longest_side": 512,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 1861.0227848101265,
+          "max_visual_tokens": 5184,
+          "max_input_tokens": 5549
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 900,
+          "mean_visual_tokens": 146954.25333333333,
+          "max_visual_tokens": 515520,
+          "max_input_tokens": 553874
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 2,
+          "mean_visual_tokens": 74528.37333333334,
+          "max_visual_tokens": 292320,
+          "max_input_tokens": 313788
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 2,
+          "mean_visual_tokens": 74528.37333333334,
+          "max_visual_tokens": 292320,
+          "max_input_tokens": 313710
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 2,
+          "mean_visual_tokens": 74528.37333333334,
+          "max_visual_tokens": 292320,
+          "max_input_tokens": 313837
+        }
+      }
+    },
+    {
+      "longest_side": 448,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 1437.9151898734178,
+          "max_visual_tokens": 4032,
+          "max_input_tokens": 4397
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 600,
+          "mean_visual_tokens": 114205.5911111111,
+          "max_visual_tokens": 400960,
+          "max_input_tokens": 439314
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 57726.293333333335,
+          "max_visual_tokens": 227360,
+          "max_input_tokens": 248828
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 57726.293333333335,
+          "max_visual_tokens": 227360,
+          "max_input_tokens": 248750
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 57726.293333333335,
+          "max_visual_tokens": 227360,
+          "max_input_tokens": 248877
+        }
+      }
+    },
+    {
+      "longest_side": 416,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 1208.8436708860759,
+          "max_visual_tokens": 3276,
+          "max_input_tokens": 3641
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 387,
+          "mean_visual_tokens": 92871.81222222222,
+          "max_visual_tokens": 325780,
+          "max_input_tokens": 364134
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 47417.5,
+          "max_visual_tokens": 184730,
+          "max_input_tokens": 206198
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 47417.5,
+          "max_visual_tokens": 184730,
+          "max_input_tokens": 206120
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 47417.5,
+          "max_visual_tokens": 184730,
+          "max_input_tokens": 206247
+        }
+      }
+    },
+    {
+      "longest_side": 384,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 1080.3949367088608,
+          "max_visual_tokens": 3024,
+          "max_input_tokens": 3389
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 249,
+          "mean_visual_tokens": 85614.34666666666,
+          "max_visual_tokens": 300720,
+          "max_input_tokens": 339074
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 43282.72,
+          "max_visual_tokens": 170520,
+          "max_input_tokens": 191988
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 43282.72,
+          "max_visual_tokens": 170520,
+          "max_input_tokens": 191910
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 43282.72,
+          "max_visual_tokens": 170520,
+          "max_input_tokens": 192037
+        }
+      }
+    },
+    {
+      "longest_side": 352,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 873.2050632911393,
+          "max_visual_tokens": 2376,
+          "max_input_tokens": 2741
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 48,
+          "mean_visual_tokens": 67457.72,
+          "max_visual_tokens": 236280,
+          "max_input_tokens": 274634
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 34211.28333333333,
+          "max_visual_tokens": 133980,
+          "max_input_tokens": 155448
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 34211.28333333333,
+          "max_visual_tokens": 133980,
+          "max_input_tokens": 155370
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 34211.28333333333,
+          "max_visual_tokens": 133980,
+          "max_input_tokens": 155497
+        }
+      }
+    },
+    {
+      "longest_side": 320,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 764.2721518987341,
+          "max_visual_tokens": 2160,
+          "max_input_tokens": 2525
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 0,
+          "mean_visual_tokens": 61121.63333333333,
+          "max_visual_tokens": 214800,
+          "max_input_tokens": 253154
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 30879.233333333334,
+          "max_visual_tokens": 121800,
+          "max_input_tokens": 143268
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 30879.233333333334,
+          "max_visual_tokens": 121800,
+          "max_input_tokens": 143190
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 30879.233333333334,
+          "max_visual_tokens": 121800,
+          "max_input_tokens": 143317
+        }
+      }
+    },
+    {
+      "longest_side": 288,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 593.4075949367088,
+          "max_visual_tokens": 1620,
+          "max_input_tokens": 1985
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 0,
+          "mean_visual_tokens": 45908.06,
+          "max_visual_tokens": 161100,
+          "max_input_tokens": 199454
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 23383.86,
+          "max_visual_tokens": 91350,
+          "max_input_tokens": 112818
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 23383.86,
+          "max_visual_tokens": 91350,
+          "max_input_tokens": 112740
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 23383.86,
+          "max_visual_tokens": 91350,
+          "max_input_tokens": 112867
+        }
+      }
+    },
+    {
+      "longest_side": 256,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 489.11898734177214,
+          "max_visual_tokens": 1440,
+          "max_input_tokens": 1805
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 0,
+          "mean_visual_tokens": 32732.897777777776,
+          "max_visual_tokens": 114560,
+          "max_input_tokens": 152914
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 16939.893333333333,
+          "max_visual_tokens": 67776,
+          "max_input_tokens": 86428
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 16939.893333333333,
+          "max_visual_tokens": 67776,
+          "max_input_tokens": 86350
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 16939.893333333333,
+          "max_visual_tokens": 67776,
+          "max_input_tokens": 86477
+        }
+      }
+    },
+    {
+      "longest_side": 224,
+      "suites": {
+        "tempcompass": {
+          "questions": 1580,
+          "context_overflows": 0,
+          "mean_visual_tokens": 366.2993670886076,
+          "max_visual_tokens": 1008,
+          "max_input_tokens": 1373
+        },
+        "videomme": {
+          "questions": 2700,
+          "context_overflows": 0,
+          "mean_visual_tokens": 28608.494444444445,
+          "max_visual_tokens": 100240,
+          "max_input_tokens": 138594
+        },
+        "videommmu_perception": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 14430.733333333334,
+          "max_visual_tokens": 56840,
+          "max_input_tokens": 78308
+        },
+        "videommmu_comprehension": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 14430.733333333334,
+          "max_visual_tokens": 56840,
+          "max_input_tokens": 78230
+        },
+        "videommmu_adaptation": {
+          "questions": 300,
+          "context_overflows": 0,
+          "mean_visual_tokens": 14430.733333333334,
+          "max_visual_tokens": 56840,
+          "max_input_tokens": 78357
+        }
+      }
+    }
+  ]
+}

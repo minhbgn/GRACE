@@ -144,7 +144,7 @@ def check_gpus():
         "--format=csv,noheader,nounits"], text=True)
     for line in result.strip().splitlines():
         name, free = line.rsplit(",", 1)
-        if "A100" not in name or float(free) < 30 * 1024:
+        if "A100" not in name or float(free) < 36 * 1024:
             raise ValueError(f"Need two available A100s with >=36 GiB free each; observed {line}")
     print(result, flush=True)
 
@@ -153,6 +153,8 @@ def prepare_subset(c, manifest_path):
     """Validate/reuse a CPU subset; caller holds the preparation lock."""
     sys.path.insert(0, str(PROJECT))
     os.environ.setdefault("OMP_NUM_THREADS", "4")
+    os.environ.setdefault("CUDA_DEVICE_ORDER", "PCI_BUS_ID")
+    os.environ.setdefault("TORCH_NCCL_ASYNC_ERROR_HANDLING", "1")
     os.environ.setdefault("CUDA_DEVICE_ORDER", "PCI_BUS_ID")
     os.environ.setdefault("TORCH_NCCL_ASYNC_ERROR_HANDLING", "1")
     # Preparation imports the processor only; it never constructs a model.

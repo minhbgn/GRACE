@@ -2,7 +2,7 @@
 
 The saved answers support a concrete MMBench scoring correction, but do not establish full reproduction. Tolerances remain ≤3 percentage points (pp) preferred, >3 to ≤5 pp barely acceptable for these unjudged results. No GPU inference, resolution changes, judge calls, or gate changes were made.
 
-Numbers below were recomputed from hash-verified native replay artifacts by [rescore_saved_protocols.py](../../evaluation/rescore_saved_protocols.py). [The JSON audit](metric_protocol_audit.json) contains input/scorer/dataset hashes, per-group MMBench extraction evidence, metric comparisons, and MMMU upper bounds. Targets are [GRACE v5 Table 6](https://arxiv.org/html/2601.22709v5#A1.T6).
+Numbers below were recomputed from hash-verified native replay artifacts by [rescore_saved_protocols.py](../../evaluation/audits/rescore_saved_protocols.py). [The JSON audit](metric_protocol_audit.json) contains input/scorer/dataset hashes, per-group MMBench extraction evidence, metric comparisons, and MMMU upper bounds. Targets are [GRACE v5 Table 6](https://arxiv.org/html/2601.22709v5#A1.T6).
 
 ## 1. HallusionBench: aAcc is closest across the five models
 
@@ -99,7 +99,7 @@ The prior official-style open-helper diagnostic recovered **two answers per vani
 Reproduce the CPU audit from the workspace root:
 
 ```bash
-reproduction/GRACE/.venv-lmms-eval/bin/python reproduction/GRACE/evaluation/rescore_saved_protocols.py \
+reproduction/GRACE/.venv-lmms-eval/bin/python reproduction/GRACE/evaluation/audits/rescore_saved_protocols.py \
   --full-root reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/re_evaluation/full \
   --output reproduction/GRACE/experiments/reproduction_eval_only/metric_protocol_audit.json
 ```

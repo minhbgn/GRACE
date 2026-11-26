@@ -13,7 +13,9 @@ PROFILE_RUN_NAME=${PROFILE_RUN_NAME:-Qwen3-VL-2B-GRACE-W4G128-PROFILE-10STEP}
 PROFILE_OUTPUT_DIR=${PROFILE_OUTPUT_DIR:-"${GRACE_ROOT}/models/${PROFILE_RUN_NAME}"}
 RUN_COMM_PROFILE=${RUN_COMM_PROFILE:-1}
 
-export CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-0,1,2,3}
+# This DGX exposes its fourth A100 as physical index 4; index 3 is the small
+# display GPU. Callers can still override the mapping explicitly.
+export CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-0,1,2,4}
 
 mkdir -p "${PROFILE_OUTPUT_DIR}/profiling"
 

@@ -1,0 +1,42 @@
+{
+  "evaluation/audits/compile_results.py": {
+    "current_sha256": "688bb9da5412cd526cdf1ce5c4a95dd95a5febb92355374b6442f6e8715e6a5c",
+    "original_sha256": "630c81b8f01c459e4b4f2e976b760953c086d2a333d0fd2396db8847dd4267bd",
+    "snapshot": "evaluation/provenance/output_layout_20261125/original/evaluation/audits/compile_results.py"
+  },
+  "evaluation/data_tools/consolidate_repository.py": {
+    "current_sha256": "9f33a48806791e0582bac69cb435c7f4c5d62fdd7ba4704232f9be05eccabc78",
+    "original_sha256": "711c95681ada24832f057f87143960609ebe2284b0ef53a0fd0d07d57f024e9b",
+    "snapshot": "evaluation/provenance/output_layout_20261125/original/evaluation/data_tools/consolidate_repository.py"
+  },
+  "evaluation/runners/evaluate.py": {
+    "current_sha256": "af093704136c5ef1c06cc4d6afc6889916c2c1c6cf43e1522be8d497bb5875d9",
+    "original_sha256": "9c892afd153a99303aeecf319093a36aa0479f507c42a73e19f0a5f14e55a7e8",
+    "snapshot": "evaluation/provenance/output_layout_20261125/original/evaluation/runners/evaluate.py"
+  },
+  "evaluation/runners/run_matched_video_evaluation.py": {
+    "current_sha256": "f8ab09710418becefc1e8cfeb22b48d800d2c2e3b0cad8eca467b7ec46e1cde0",
+    "original_sha256": "566eb13052f364d490aafc7bf61062cf22ea322eb9ef44afef02a4065e97a3ce",
+    "snapshot": "evaluation/provenance/output_layout_20261125/original/evaluation/runners/run_matched_video_evaluation.py"
+  },
+  "evaluation/runners/run_parallel_video_evaluation.py": {
+    "current_sha256": "d9f2e9e2791dd1fcabea51952123b5facf7382c6fb371130427c84f2412a6cf4",
+    "original_sha256": "9d9b461bf316ab204cd27c0c421c951acbf59ea0ad451e8fa3dd4d323d38e0b7",
+    "snapshot": "evaluation/provenance/output_layout_20261125/original/evaluation/runners/run_parallel_video_evaluation.py"
+  },
+  "evaluation/runners/run_token_reduction_matrix.py": {
+    "current_sha256": "41b144a76999470971bc0473670d8fc56fa49d2be30d006e97a89cd8ad17addd",
+    "original_sha256": "49d7e29d72c419dc5b62ab4e6b8cec79d609f6bf66b3793980d4581ebf528e14",
+    "snapshot": "evaluation/provenance/output_layout_20261125/original/evaluation/runners/run_token_reduction_matrix.py"
+  },
+  "evaluation/runners/run_token_reduction_video_retry.py": {
+    "current_sha256": "4bcfb53d4c1f22a0b2e7da5332d479783e41507cdab49ae03f2d524b017f2032",
+    "original_sha256": "13543bf9fd063b51e8cce47f5ccbf87d57a657afb71ac629a57f11a6fa230c18",
+    "snapshot": "evaluation/provenance/output_layout_20261125/original/evaluation/runners/run_token_reduction_video_retry.py"
+  },
+  "evaluation/runners/run_videomme_timing_subset.py": {
+    "current_sha256": "7ebbbfc321ee1f05c1e94eb52098c53bc23c618dae57586a3b824fe5c807a1ef",
+    "original_sha256": "ff366eb35c9c7696a7e8c922ef33809637dfa6cce835df12011d1dbc791f5125",
+    "snapshot": "evaluation/provenance/output_layout_20261125/original/evaluation/runners/run_videomme_timing_subset.py"
+  }
+}

@@ -1,0 +1,8 @@
+{"category": "VS", "subcategory": "chart", "set_id": "0", "figure_id": "1", "question_id": "0", "visual_input": "1", "has_image": true, "pred": "1", "gold": "0", "correct": false, "raw": "Yes", "error": null}
+{"category": "VS", "subcategory": "chart", "set_id": "0", "figure_id": "1", "question_id": "1", "visual_input": "1", "has_image": true, "pred": "0", "gold": "1", "correct": false, "raw": "No", "error": null}
+{"category": "VS", "subcategory": "chart", "set_id": "0", "figure_id": "1", "question_id": "2", "visual_input": "1", "has_image": true, "pred": "0", "gold": "0", "correct": true, "raw": "No", "error": null}
+{"category": "VS", "subcategory": "chart", "set_id": "0", "figure_id": "1", "question_id": "3", "visual_input": "1", "has_image": true, "pred": "0", "gold": "0", "correct": true, "raw": "No", "error": null}
+{"category": "VS", "subcategory": "chart", "set_id": "1", "figure_id": "1", "question_id": "0", "visual_input": "1", "has_image": true, "pred": "1", "gold": "0", "correct": false, "raw": "Yes", "error": null}
+{"category": "VS", "subcategory": "chart", "set_id": "1", "figure_id": "1", "question_id": "1", "visual_input": "1", "has_image": true, "pred": "1", "gold": "1", "correct": true, "raw": "Yes", "error": null}
+{"category": "VS", "subcategory": "chart", "set_id": "1", "figure_id": "1", "question_id": "2", "visual_input": "1", "has_image": true, "pred": "1", "gold": "1", "correct": true, "raw": "Yes", "error": null}
+{"category": "VS", "subcategory": "chart", "set_id": "1", "figure_id": "1", "question_id": "3", "visual_input": "1", "has_image": true, "pred": "1", "gold": "0", "correct": false, "raw": "Yes", "error": null}

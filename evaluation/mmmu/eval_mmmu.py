@@ -20,12 +20,18 @@ shard; rank 0 merges and prints metrics at the end.
 
 from __future__ import annotations
 
+# Support both direct script execution and `python -m evaluation.<group>.<module>`.
+import sys
+from pathlib import Path
+if __package__ in (None, ''):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from evaluation.paths import EVALUATION_ROOT, source_file
+
 import argparse
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from matched_protocol import add_protocol_arguments, apply_protocol, protocol_metadata
-from local_scoring import finalize_rows, generation_record, prepare_row
+from evaluation.protocols.matched_protocol import add_protocol_arguments, apply_protocol, protocol_metadata
+from evaluation.protocols.local_scoring import finalize_rows, generation_record, prepare_row
 import ast
 import io
 import json
@@ -146,12 +152,12 @@ def format_prompt_open(question) -> str:
 
 
 def parse_choice(response: str, n_choices: int) -> str:
-    from local_scoring import choice
+    from evaluation.protocols.local_scoring import choice
     return choice(response, LETTERS[:n_choices])[0]
 
 
 def score_open(response: str, gold) -> bool:
-    from local_scoring import open_answer
+    from evaluation.protocols.local_scoring import open_answer
     return open_answer(response, gold)[1]
 
 
@@ -317,6 +323,7 @@ def main():
                 for k, (c, n_) in sorted(d.items())}
 
     summary = {
+        **protocol_metadata(args, multiple_choice_max_new_tokens=args.mc_max_new_tokens),
         **protocol_metadata(args, multiple_choice_max_new_tokens=args.mc_max_new_tokens),
         "model_path": args.model_path,
         "processor_path": args.processor_path or args.model_path,

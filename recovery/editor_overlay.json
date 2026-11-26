@@ -1,0 +1,22 @@
+[
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/experiment_report.md",
+    "timestamp": "2026-10-12T05:29:02.395000Z",
+    "source": "/home/air/.vscode-server/data/User/History/961efca/Uywg.md"
+  },
+  {
+    "path": "qwen-vl-finetune/scripts/finetune_qwen3vl_2b_grace_lora_ngpu.sh",
+    "timestamp": "2026-09-09T07:49:15.386000Z",
+    "source": "/home/air/.vscode-server/data/User/History/1c220694/K2CZ.sh"
+  },
+  {
+    "path": "experiments/released_bf16_init_32k_b128_p589824_t2048_seed42/recipe.env",
+    "timestamp": "2026-10-05T08:08:57.512000Z",
+    "source": "/home/air/.vscode-server/data/User/History/4930a5b1/o7bO.env"
+  },
+  {
+    "path": "qwen-vl-finetune/scripts/finetune_qwen3vl_2b_grace_lora_2gpu.sh",
+    "timestamp": "2026-09-08T13:01:43.351000Z",
+    "source": "/home/air/.vscode-server/data/User/History/-49d3dca8/wRsM.sh"
+  }
+]

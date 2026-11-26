@@ -1,0 +1,189 @@
+{
+  "snapshot_sgt": "2026-11-11T14:58:02.756615+08:00",
+  "definition": "For identical paired question counts: throughput_uniform / throughput_resolution = sum(model_seconds_resolution) / sum(model_seconds_uniform). Excludes constant process setup/teardown and also CPU input preprocessing.",
+  "pairs": [
+    {
+      "suite": "tempcompass",
+      "retention": 0.5,
+      "questions": 1580,
+      "start_index": 0,
+      "stop_index_exclusive": 1580,
+      "uniform_attempt": "reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r050/attempt_20261105T081231_754086Z",
+      "resolution_attempt": "reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r050/attempt_20261105T060420_690345Z",
+      "uniform": {
+        "model_seconds": 1.790924522450453,
+        "vision_and_embedding_seconds": 0.3035908882140736,
+        "reduction_seconds": 0.005625681470655188,
+        "prefill_seconds": 1.3995538863766042,
+        "decode_seconds": 0.08192634984285016,
+        "input_visual_tokens": 1358.176582278481,
+        "input_text_tokens": 153.13101265822786
+      },
+      "resolution": {
+        "model_seconds": 1.678600837610945,
+        "vision_and_embedding_seconds": 0.28940764777833905,
+        "reduction_seconds": 0.0024751703195934056,
+        "prefill_seconds": 1.3046447533548255,
+        "decode_seconds": 0.08185044283259518,
+        "input_visual_tokens": 1252.2797468354431,
+        "input_text_tokens": 153.13101265822786
+      },
+      "uniform_to_resolution_throughput": 0.9372817316243903,
+      "uniform_to_resolution_latency": 1.0669150654061224,
+      "component_extra_seconds": {
+        "model_seconds": 0.11232368483950816,
+        "vision_and_embedding_seconds": 0.014183240435734545,
+        "reduction_seconds": 0.0031505111510617824,
+        "prefill_seconds": 0.09490913302177861,
+        "decode_seconds": 7.590701025497748e-05
+      }
+    },
+    {
+      "suite": "tempcompass",
+      "retention": 0.25,
+      "questions": 1580,
+      "start_index": 0,
+      "stop_index_exclusive": 1580,
+      "uniform_attempt": "reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r025/attempt_20261105T091218_307752Z",
+      "resolution_attempt": "reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r025/attempt_20261105T070048_729739Z",
+      "uniform": {
+        "model_seconds": 1.1731007724717448,
+        "vision_and_embedding_seconds": 0.29760086566587035,
+        "reduction_seconds": 0.003514255885081955,
+        "prefill_seconds": 0.7898352651184872,
+        "decode_seconds": 0.08192600560716436,
+        "input_visual_tokens": 681.3259493670886,
+        "input_text_tokens": 153.13101265822786
+      },
+      "resolution": {
+        "model_seconds": 1.1321598114422229,
+        "vision_and_embedding_seconds": 0.2780998218898909,
+        "reduction_seconds": 0.0015285243150554126,
+        "prefill_seconds": 0.7705096775689457,
+        "decode_seconds": 0.08180750552329082,
+        "input_visual_tokens": 657.3943037974684,
+        "input_text_tokens": 153.13101265822786
+      },
+      "uniform_to_resolution_throughput": 0.9651002181651807,
+      "uniform_to_resolution_latency": 1.0361618215164947,
+      "component_extra_seconds": {
+        "model_seconds": 0.04094096102952194,
+        "vision_and_embedding_seconds": 0.019501043775979443,
+        "reduction_seconds": 0.0019857315700265426,
+        "prefill_seconds": 0.0193255875495415,
+        "decode_seconds": 0.00011850008387354061
+      }
+    },
+    {
+      "suite": "tempcompass",
+      "retention": 0.1,
+      "questions": 1580,
+      "start_index": 0,
+      "stop_index_exclusive": 1580,
+      "uniform_attempt": "reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/uniform_r010/attempt_20261105T095517_988997Z",
+      "resolution_attempt": "reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/tempcompass/resolution_r010/attempt_20261105T074211_659887Z",
+      "uniform": {
+        "model_seconds": 0.8043750786375773,
+        "vision_and_embedding_seconds": 0.29761200331245796,
+        "reduction_seconds": 0.0023250455626204042,
+        "prefill_seconds": 0.4223480868848819,
+        "decode_seconds": 0.08187250929259801,
+        "input_visual_tokens": 273.1563291139241,
+        "input_text_tokens": 153.13101265822786
+      },
+      "resolution": {
+        "model_seconds": 0.7274298230728394,
+        "vision_and_embedding_seconds": 0.26994631445577627,
+        "reduction_seconds": 0.0007670330425983742,
+        "prefill_seconds": 0.3747627912018495,
+        "decode_seconds": 0.0817514814294969,
+        "input_visual_tokens": 222.72911392405064,
+        "input_text_tokens": 153.13101265822786
+      },
+      "uniform_to_resolution_throughput": 0.9043415719752717,
+      "uniform_to_resolution_latency": 1.1057768778845256,
+      "component_extra_seconds": {
+        "model_seconds": 0.07694525556473786,
+        "vision_and_embedding_seconds": 0.02766568885668169,
+        "reduction_seconds": 0.0015580125200220299,
+        "prefill_seconds": 0.04758529568303238,
+        "decode_seconds": 0.00012102786310111413
+      }
+    },
+    {
+      "suite": "videomme",
+      "retention": 0.5,
+      "questions": 682,
+      "start_index": 926,
+      "stop_index_exclusive": 1608,
+      "uniform_attempt": "reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/uniform_r050/attempt_20261110T064111_096667Z",
+      "resolution_attempt": "reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results_video_retry_gpu1/full/qat_w4/videomme/resolution_r050/attempt_20261107T200836_141303Z",
+      "uniform": {
+        "model_seconds": 78.06009378029673,
+        "vision_and_embedding_seconds": 16.59277443462147,
+        "reduction_seconds": 0.49664268627369507,
+        "prefill_seconds": 60.84943440531399,
+        "decode_seconds": 0.10721613578170626,
+        "input_visual_tokens": 57729.690615835774,
+        "input_text_tokens": 5084.021994134898
+      },
+      "resolution": {
+        "model_seconds": 67.41376216000607,
+        "vision_and_embedding_seconds": 11.40752413332506,
+        "reduction_seconds": 0.31445580168116477,
+        "prefill_seconds": 55.585558448369206,
+        "decode_seconds": 0.10464625328211141,
+        "input_visual_tokens": 52741.7991202346,
+        "input_text_tokens": 5084.021994134898
+      },
+      "uniform_to_resolution_throughput": 0.8636136455298762,
+      "uniform_to_resolution_latency": 1.15792519626811,
+      "component_extra_seconds": {
+        "model_seconds": 10.646331620290653,
+        "vision_and_embedding_seconds": 5.185250301296412,
+        "reduction_seconds": 0.1821868845925303,
+        "prefill_seconds": 5.263875956944787,
+        "decode_seconds": 0.002569882499594847
+      }
+    }
+  ],
+  "verified_sources": [
+    "evaluation/AI2D/eval_ai2d.py",
+    "evaluation/HallusionBench/eval_hallusion.py",
+    "evaluation/MMBench/eval_mmbench.py",
+    "evaluation/MMStar/eval_mmstar.py",
+    "evaluation/SEEDBench/eval_seedbench.py",
+    "evaluation/ScienceQA/eval_scienceqa.py",
+    "evaluation/audits/summarize_constrained_evals.py",
+    "evaluation/mmmu/eval_mmmu.py",
+    "evaluation/paths.py",
+    "evaluation/protocols/gpu_job_queue.py",
+    "evaluation/protocols/gpu_reservation.py",
+    "evaluation/protocols/int4_gemm.py",
+    "evaluation/protocols/local_scoring.py",
+    "evaluation/protocols/matched_protocol.py",
+    "evaluation/protocols/token_reduction_runtime.py",
+    "evaluation/protocols/video_population.py",
+    "evaluation/protocols/video_protocol.py",
+    "evaluation/runners/run_constrained_matrix_evals.py",
+    "evaluation/runners/run_lmms_matrix.py",
+    "evaluation/runners/run_local_development.py",
+    "evaluation/runners/run_token_reduction_matrix.py",
+    "evaluation/tests/check_int4_kernel.py",
+    "qwen-vl-finetune/qwenvl/quantize/awq_linear.py",
+    "qwen-vl-finetune/qwenvl/quantize/qat_to_awq.py",
+    "qwen-vl-finetune/scripts/constrained_experiment.py",
+    "evaluation/protocols/video_memory_runtime.py",
+    "evaluation/runners/run_token_reduction_video_retry.py",
+    "evaluation/tests/test_video_memory_runtime.py",
+    "evaluation/protocols/evaluation_checkpoints.py",
+    "evaluation/protocols/parallel_evaluation.py",
+    "evaluation/runners/run_parallel_video_evaluation.py",
+    "evaluation/workers/parallel_video_worker.py"
+  ],
+  "limitations": [
+    "VideoMME pairs use fresh one-worker answers; the two methods were measured on different dates with host loads not controlled.",
+    "No repaired VideoMME resolution25 or resolution10 completion exists; original-policy low-resolution runs are not comparable to the repaired adaptive-policy Uniform runs.",
+    "Ratios describe model timing, not full input-to-answer timing."
+  ]
+}

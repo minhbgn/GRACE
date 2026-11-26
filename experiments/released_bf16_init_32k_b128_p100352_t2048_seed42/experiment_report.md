@@ -1,6 +1,6 @@
 # Experiment report: released_bf16_init_32k_b128_p100352_t2048_seed42
 
-**Protocol recovery update (2026-09-25):** The [source audit and new evaluation workflows](../../evaluation/README_paper_protocol.md) recover all seven upstream script recipes and add a separate corrected standard harness protocol. Confirmed differences include checkpoint-native image budgets and MMStar's 64-token launcher limit; MMMU task loading and open-answer scoring bugs are fixed for the new harness protocol. CPU checks passed; no new GPU results or paper-tolerance claim are included here. Historical scores below are unchanged.
+**Protocol recovery update (2026-09-25):** The [source audit and new evaluation workflows](../../evaluation/docs/README_paper_protocol.md) recover all seven upstream script recipes and add a separate corrected standard harness protocol. Confirmed differences include checkpoint-native image budgets and MMStar's 64-token launcher limit; MMMU task loading and open-answer scoring bugs are fixed for the new harness protocol. CPU checks passed; no new GPU results or paper-tolerance claim are included here. Historical scores below are unchanged.
 
 **GRACE-LoRA is feasible within the two-GPU, five-hour budget and is competitive with the released full-method checkpoints on the seven-suite mean, but the added distillation does not beat matched LoRA-QAT.** Starting from the released BF16 student, GRACE-LoRA scores **73.32% at W4 and 73.92% at W8**. These are **0.54 percentage points below the released W4 model and 1.65 points above the released W8 model**, evaluated locally under the same protocol. However, matched QAT scores **74.44% and 76.15%**, respectively, with lower runtime and memory. GRACE's large MMStar regressions prevent interpreting its near-parity with the releases as uniformly retained quality.
 
@@ -84,11 +84,6 @@ reference model; these are not the later lmms-eval scores.
 
 | Reference model | HallB | MMBench | ScienceQA | AI2D | MMMU | SEED | MMStar | Mean | Δ mean (pp) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Vanilla 2B, BF16 | 51.4 → 59.88 | 78.4 → 83.37 | 81.4 → 82.95 | 76.9 → 74.81 | 53.4 → 40.00 | 71.2 → 72.46 | 58.3 → 44.67 | 67.3 → 65.45 | -1.85 |
-| Vanilla 8B teacher, BF16 | 61.1 → 70.33 | 84.5 → 89.10 | 85.0 → 92.36 | 85.7 → 82.09 | 69.6 → 51.33 | 77.5 → 76.13 | 70.9 → 59.13 | 76.3 → 74.35 | -1.95 |
-| Released BF16 initialization | 66.9 → 66.34 | 86.4 → 92.95 | 86.2 → 85.03 | 81.3 → 80.31 | 72.1 → 70.00 | 76.7 → 72.29 | 67.3 → 65.73 | 76.7 → 76.09 | -0.61 |
-| Released full GRACE W4 | 65.4 → 63.86 | 84.6 → 92.47 | 84.3 → 83.68 | 79.5 → 78.82 | 70.5 → 61.22 | 75.1 → 72.25 | 65.8 → 64.67 | 75.0 → 73.85 | -1.15 |
-| Released full GRACE W8 | 66.1 → 60.85 | 85.5 → 91.55 | 85.3 → 82.95 | 80.4 → 78.11 | 71.3 → 56.89 | 75.9 → 71.99 | 66.5 → 63.60 | 75.9 → 72.28 | -3.62 |
 
 The paper's one-decimal values and reported `Avg.` are retained as published.
 Local scores and differences are calculated from the unrounded
@@ -103,8 +98,6 @@ For the low-bit releases, the per-benchmark differences are **local minus paper*
 
 | Released checkpoint | HallB | MMBench | ScienceQA | AI2D | MMMU | SEED | MMStar | Δ mean |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Released full GRACE W4 | -1.54 | +7.87 | -0.62 | -0.68 | -9.28 | -2.85 | -1.13 | -1.15 |
-| Released full GRACE W8 | -5.25 | +6.05 | -2.35 | -2.29 | -14.41 | -3.91 | -2.90 | -3.62 |
 
 **The seven-suite headline gap is −1.15 pp for W4 and −3.62 pp for W8, with
 substantial cancellation between benchmarks.** MMMU is the largest negative
@@ -317,7 +310,40 @@ Sources are the released [BF16](../../models/Qwen3-VL-2B-GRACE-BF16/trainer_stat
 
 The defensible resource conclusion is that our additional stage **actually completed on two 40GB GPUs in under 2.4 process hours**, compared with a repository reference allocation of sixteen 80GB GPUs. A measured full-method GPU-hour reduction or end-to-end speedup remains unavailable. The cost of producing the released BF16 initialization is inherited and cannot be erased from a from-scratch reproduction claim.
 
-## 7. Evidence, validation and limitations
+## 7. Recommended next steps and decision criteria
+
+### First, use existing artifacts to identify the failure mode
+
+1. **Audit the exported function against the native checkpoint.** Restore the matching native W4/W8 QAT and GRACE wrappers and scales; compare logits, CE and task predictions before merge, after merge and after requantization/HF reload on a fixed development subset. Verify optimizer membership, FP32/master-state behavior and full-tensor scale/merger changes. This distinguishes a training regression from conversion loss before spending more training compute.
+2. **Inspect MMStar and MMMU disagreements with the teacher and initialization.** Prioritize the 211/249 MMStar QAT-correct, GRACE-wrong cases at W4/W8, with a balanced sample of GRACE improvements. Check answer content, teacher correctness/confidence and output format; pair this with term-specific gradient norms/directions on independent diagnostic batches. The goal is to test harmful teacher transfer and objective interaction, not assume them from aggregate scores.
+3. **Audit the released W8 comparison.** Retain the current pinned results. Check the release's recorded configuration, loading semantics and processor behavior, then evaluate selected reference checkpoints under the author's intended protocol in a separate output directory if feasible. Keep that table separate from this fixed low-budget evaluation. The reference reversal is a reason for validation, not a reason to discard an inconvenient score.
+
+### Then, spend the next training budget on a small matched objective study
+
+Start with **W8**, where QAT already preserves the BF16 mean and the large GRACE deficit persists despite finer quantization. Hold initialization, exact subset/order, batch, learning rates, export and evaluation fixed. Use a separate development set for selecting the loss configuration; these seven suites have already been inspected and should not become an unacknowledged tuning set.
+
+| Arm | Objective / change | Question |
+| --- | --- | --- |
+| Existing QAT | CE only | Zero-distillation reference |
+| GDKD-only diagnostic | CE + fixed 0.1 or 0.25 × GDKD; RCKA disabled; choose one coefficient in advance | Can weak prediction guidance help without visual alignment? |
+| RCKA-only diagnostic | CE + current warmed-up 3 × RCKA; GDKD disabled | Does relational guidance retain the HallusionBench benefit without the prediction-matching cost? |
+| Existing GRACE | CE + saturated adaptive GDKD + warmed-up RCKA | Combined-objective reference |
+
+These coefficient values are diagnostic proposals, not tuned optima. The weak GDKD arm changes both coefficient policy and RCKA presence relative to current GRACE, so it measures whether that alternative helps rather than isolating one factor. If strict component attribution is the priority, first use the existing adaptive GDKD policy in the GDKD-only arm, then change its strength separately. Do not simultaneously change strength, warmup and LoRA targets. Disabled terms should actually be skipped if measuring their compute savings, with initialization and RNG behavior checked for a fair comparison. If an implementation fix affects existing controls, rerun the affected QAT/GRACE pair.
+
+At the observed full-GRACE process cost, **two additional arms would require roughly 4.8 process hours / 9.6 GPU-hours** as a planning estimate; actual component-only costs require measurement. This is a more focused use of the budget than repeating the full four-run matrix or increasing dataset size immediately. If one arm helps, transfer it to W4 and test a delayed GDKD schedule separately. A teacher-free no-training W4/W8 quantization control is also valuable for measuring how much QAT recovers beyond immediate rounding; a BF16 continued LoRA-SFT arm would separate ordinary adaptation from quantization effects.
+
+### Confirm before scaling or claiming success
+
+The original intended outcome required positive GRACE−QAT gain at **both** precisions. **That condition is not met.** The acceptable decrease relative to full GRACE, and any per-suite limits, remain for supervisor discussion. A 0.54 pp mean W4 gap cannot be called acceptable automatically when MMStar is 9.27 pp lower. Record any acceptance rule chosen after observing this pilot as retrospective, then freeze it for a confirmatory run.
+
+For confirmation, require the selected GRACE recipe to beat its matched QAT control on the prespecified aggregate, satisfy agreed per-suite regression limits and remain within the actual two-GPU/runtime budget. Repeat the selected pair with at least two additional training seeds, reporting training variation separately from paired, appropriately grouped benchmark uncertainty. Only then consider more data, longer training, broader LoRA targets or a stronger/calibrated teacher, changing one factor at a time. Validate packed export, peak inference memory, latency and quality separately before making deployment-efficiency claims.
+
+## 8. Supervisor-ready description
+
+> We completed four constrained W4/W8 QAT and GRACE-LoRA runs from the author's released BF16 student, using 32,768 examples, one pass and two A100 40GB GPUs. All ten reference/trained models were evaluated on the same seven local suites. GRACE-LoRA averages 73.32% at W4 and 73.92% at W8, versus 73.85% and 72.28% for the released full-method checkpoints. Each GRACE stage takes about 2.39 hours and peaks at 26.07 GiB reserved memory per GPU. This establishes feasibility and competitive mean scores under our constraints, conditional on inheriting the released initialization. However, matched QAT is better at 74.44% and 76.15%, uses only 8.47 GiB reserved memory, and completes in about 1.93 hours. GRACE improves HallusionBench consistency and ScienceQA relative to QAT but loses heavily on MMStar. Its distillation controller reaches maximum weight within five updates, and the teacher is weaker than the initialization on several affected tasks. We propose native/export and parameter-update checks, followed by a small loss-component and strength study. We have not demonstrated a positive average distillation benefit, a measured full-pipeline speedup, or packed low-bit inference savings.
+
+## 9. Evidence, validation and limitations
 
 The report audit revalidated **70 merged result files**, including expected counts, unique question identities, matching gold labels, correct totals/accuracies, model/processor paths, and the saved evaluation policy. Regenerating the complete comparison in memory matched `evaluation/comparison.md` exactly. There are **zero recorded inference errors across all ten models**. Reported parse failures total 0 for the four local low-bit models, BF16, released W4 and SFT; 9 for released W8, 4 for vanilla 2B and 2 for the teacher. MMMU does not supply a separate parse-failure count. This validates consistency of saved results, not every scoring decision or historical inference operation.
 
@@ -333,12 +359,12 @@ Primary evidence:
 - Full-run summaries: [QAT W4](w4g128/runs/qat/run_summary.json), [GRACE W4](w4g128/runs/grace/run_summary.json), [QAT W8](w8g128/runs/qat/run_summary.json), [GRACE W8](w8g128/runs/grace/run_summary.json).
 - GRACE step logs: [W4](w4g128/runs/grace/step_metrics.jsonl), [W8](w8g128/runs/grace/step_metrics.jsonl).
 - Release provenance: [BF16](provenance/released_bf16.json), [W4](provenance/released_grace_w4.json), [W8](provenance/released_grace_w8.json); archived cards: [BF16](provenance/released_bf16_model_card.md), [W4](provenance/released_grace_w4_model_card.md), [W8](provenance/released_grace_w8_model_card.md).
-- [Evaluation validator](../../evaluation/summarize_constrained_evals.py), [GRACE objective integration](../../qwen-vl-finetune/qwenvl/train/train_qwen_grace.py), [IB controller](../../qwen-vl-finetune/qwenvl/train/grace_modules.py), and [quantization/LoRA/export implementation](../../qwen-vl-finetune/qwenvl/train/qat_modules.py).
+- [Evaluation validator](../../evaluation/audits/summarize_constrained_evals.py), [GRACE objective integration](../../qwen-vl-finetune/qwenvl/train/train_qwen_grace.py), [IB controller](../../qwen-vl-finetune/qwenvl/train/grace_modules.py), and [quantization/LoRA/export implementation](../../qwen-vl-finetune/qwenvl/train/qat_modules.py).
 
 To revalidate the complete evaluation comparison on CPU without rewriting results, run from the workspace root:
 
 ```bash
-python3 reproduction/GRACE/evaluation/summarize_constrained_evals.py \
+python3 reproduction/GRACE/evaluation/audits/summarize_constrained_evals.py \
   --matrix \
   --results-dir reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/evaluation
 ```

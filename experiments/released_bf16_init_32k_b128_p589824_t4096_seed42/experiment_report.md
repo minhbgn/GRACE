@@ -19,21 +19,16 @@ All **28/28 new evaluation pairs** have valid completion evidence. The nine hist
 
 All means weight the seven benchmark metrics equally; they are not pooled accuracy or the LLMC+ aggregate. Scores and deltas are calculated at full precision before rounding. “Old” means the evaluation-only baseline’s latest local protocol, not the older training report’s evaluation recipe.
 
-| Checkpoint | Mean % | Hallusion | MMBench | ScienceQA | AI2D | MMMU | SEED image | MMStar |
+| Checkpoint | Hallusion | MMBench | ScienceQA | AI2D | MMMU | SEED image | MMStar | Mean |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Vanilla 2B | 66.16 | 62.44 | 76.80 | 83.26 | 76.59 | 39.67 | 76.79 | 47.60 |
-| Vanilla 8B teacher | 75.66 | 72.90 | 84.71 | 92.74 | 83.97 | 53.22 | 79.36 | 62.73 |
-| Released BF16 SFT | 77.40 | 67.05 | 91.15 | 86.18 | 81.12 | 72.00 | 76.28 | 68.00 |
-| Released GRACE W4 | 74.05 | 64.57 | 88.66 | 84.08 | 79.40 | 61.56 | 73.86 | 66.20 |
-| Released GRACE W8 | 71.12 | 59.17 | 88.40 | 82.48 | 75.94 | 58.11 | 70.08 | 63.67 |
-| Old QAT W4 | 73.77 | 63.86 | 87.63 | 82.88 | 79.37 | 66.33 | 72.44 | 63.87 |
-| New QAT W4 | 75.77 | 65.72 | 89.43 | 83.64 | 80.70 | 67.78 | 75.42 | 67.73 |
-| Old GRACE W4 | 72.61 | 64.92 | 87.46 | 83.73 | 79.05 | 64.67 | 73.04 | 55.40 |
-| New GRACE W4 | 74.56 | 66.16 | 88.32 | 85.12 | 79.86 | 66.22 | 76.44 | 59.80 |
-| Old QAT W8 | 75.54 | 64.92 | 89.18 | 84.89 | 80.76 | 70.67 | 72.63 | 65.73 |
-| New QAT W8 | 77.37 | 65.28 | 90.64 | 85.83 | 81.83 | 72.44 | 75.83 | 69.73 |
-| Old GRACE W8 | 73.34 | 66.43 | 88.40 | 85.71 | 79.44 | 67.44 | 72.77 | 53.20 |
-| New GRACE W8 | 74.86 | 66.34 | 88.92 | 86.49 | 80.70 | 68.33 | 76.72 | 56.53 |
+| Old QAT W4 | 63.86 | 87.63 | 82.88 | 79.37 | 66.33 | 72.44 | 63.87 | 73.77 |
+| New QAT W4 | 65.72 | 89.43 | 83.64 | 80.70 | 67.78 | 75.42 | 67.73 | 75.77 |
+| Old GRACE W4 | 64.92 | 87.46 | 83.73 | 79.05 | 64.67 | 73.04 | 55.40 | 72.61 |
+| New GRACE W4 | 66.16 | 88.32 | 85.12 | 79.86 | 66.22 | 76.44 | 59.80 | 74.56 |
+| Old QAT W8 | 64.92 | 89.18 | 84.89 | 80.76 | 70.67 | 72.63 | 65.73 | 75.54 |
+| New QAT W8 | 65.28 | 90.64 | 85.83 | 81.83 | 72.44 | 75.83 | 69.73 | 77.37 |
+| Old GRACE W8 | 66.43 | 88.40 | 85.71 | 79.44 | 67.44 | 72.77 | 53.20 | 73.34 |
+| New GRACE W8 | 66.34 | 88.92 | 86.49 | 80.70 | 68.33 | 76.72 | 56.53 | 74.86 |
 
 ### Per task change from the previous controls
 
@@ -61,7 +56,15 @@ Moving W4 → W8 improves QAT’s mean by **1.59 pp**, but GRACE’s by only **0
 
 ## Comparison with frozen reference checkpoints
 
-The frozen references in the combined table above are reused from the evaluation-only baseline; they were not rerun in the new experiment. New GRACE exceeds the matching released GRACE mean by **+0.51 pp at W4** and **+3.74 pp at W8**, but still underperforms the stronger matched local QAT controls.
+| Frozen baseline reference | Hallusion | MMBench | ScienceQA | AI2D | MMMU | SEED image | MMStar | Mean |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Vanilla 2B | 62.44 | 76.80 | 83.26 | 76.59 | 39.67 | 76.79 | 47.60 | 66.16 |
+| Vanilla 8B teacher | 72.90 | 84.71 | 92.74 | 83.97 | 53.22 | 79.36 | 62.73 | 75.66 |
+| Released BF16 SFT | 67.05 | 91.15 | 86.18 | 81.12 | 72.00 | 76.28 | 68.00 | 77.40 |
+| Released GRACE W4 | 64.57 | 88.66 | 84.08 | 79.40 | 61.56 | 73.86 | 66.20 | 74.05 |
+| Released GRACE W8 | 59.17 | 88.40 | 82.48 | 75.94 | 58.11 | 70.08 | 63.67 | 71.12 |
+
+These references are reused from the evaluation-only baseline; they were not rerun in the new experiment. New GRACE exceeds the matching released GRACE mean by **+0.51 pp at W4** and **+3.74 pp at W8**, but still underperforms the stronger matched local QAT controls.
 
 QAT W8 is **0.03 pp below released BF16 on the mean**, with task-specific gains and losses. It improves AI2D (+0.71), MMMU (+0.44) and MMStar (+1.73), while falling on HallusionBench (−1.77), MMBench (−0.52), ScienceQA (−0.35) and SEED (−0.45). This is near-equality of the observed aggregate, not demonstrated statistical or functional equivalence.
 

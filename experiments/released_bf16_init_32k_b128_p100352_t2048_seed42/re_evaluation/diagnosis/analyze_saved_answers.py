@@ -14,7 +14,7 @@ from run_lmms_matrix import read, sha, verified_completion, write
 from run_upstream_matrix import validate, source_check
 from check_re_evaluation_gate import REFERENCES
 from constrained_experiment import Experiment
-from paper_acceptance import PAPER
+from evaluation.protocols.paper_acceptance import PAPER
 from transformers import AutoTokenizer
 
 # These pure scoring helpers need no model or judge. Load the exact pinned

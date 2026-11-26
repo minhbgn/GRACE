@@ -70,6 +70,7 @@ from qwenvl.train.grace_modules import (
     rcka_loss,
 )
 from qwenvl.train.grace_resume import CheckpointPauseCallback
+from qwenvl.train.grace_resume import CheckpointPauseCallback
 from qwenvl.train.grace_profiler import (
     GraceLearningDiagnostics,
     GraceLearningDiagnosticsCallback,
@@ -717,12 +718,20 @@ def train(attn_implementation="flash_attention_2"):
     pause_callback = CheckpointPauseCallback()
     trainer.add_callback(pause_callback)
 
+    pause_callback = CheckpointPauseCallback()
+    trainer.add_callback(pause_callback)
+
     if list(pathlib.Path(training_args.output_dir).glob("checkpoint-*")):
         logging.info("checkpoint found, resume training")
         trainer.train(resume_from_checkpoint=True)
     else:
         trainer.train()
     trainer.save_state()
+
+    if pause_callback.paused:
+        rank0_print("[GRACE] Paused after checkpoint; skipping final merged export.")
+        _close_distributed_process_group()
+        return
 
     if pause_callback.paused:
         rank0_print("[GRACE] Paused after checkpoint; skipping final merged export.")

@@ -4,11 +4,13 @@ import argparse
 import os
 from pathlib import Path
 import shlex
+import signal
 import subprocess
 import sys
 
 from constrained_experiment import Experiment, PROJECT, check_processor_compatibility, pin, read, sha
 import run_constrained as shared
+from gpu_preparation_hold import PreparationGPUHold
 
 
 def prepare(spec, c):
@@ -53,6 +55,8 @@ def main():
     modes.add_argument('--prepare-only', action='store_true')
     p.add_argument('--dry-run', action='store_true', help='No reads of weights, writes, preparation or GPU access')
     p.add_argument('--resume', action='store_true', help='Only resume native checkpoints from this exact recipe')
+    p.add_argument('--reserve-gpus', action='store_true',
+                   help='Hold selected GPUs in a dummy process during CPU preparation')
     args = p.parse_args()
     if args.resume and (args.prepare_only or args.dry_run):
         p.error('--resume requires a profile or training execution')
@@ -80,39 +84,48 @@ def main():
     os.environ.setdefault('TOKENIZERS_PARALLELISM', 'false')
     os.environ.setdefault('TORCH_NCCL_ASYNC_ERROR_HANDLING', '1')
     os.environ.setdefault('PYTORCH_CUDA_ALLOC_CONF', 'expandable_segments:True')
-    print('Verifying released student bytes and processor compatibility (CPU only)...', flush=True)
-    student = spec.provenance(spec.student)
-    pin(experiment / 'provenance' / f'{spec.student}.json', student)
-    # Validate teacher vocabulary/template even for QAT so both methods share a valid recipe.
-    check_processor_compatibility([paths[spec.student], paths[spec.teacher]])
-    pin(experiment / 'provenance' / f'{spec.teacher}.json', spec.provenance(spec.teacher))
-    manifest = prepare(spec, c)
-    base_recipe = shared.comparison_recipe(c, manifest)
-    base_recipe['implementation'].update({f'scripts/{path.name}': sha(path) for path in
-        (Path(__file__), Path(__file__).with_name('constrained_experiment.py'))})
-    for bits in bits_set:
-        group = experiment / f'w{bits}g128'
-        config = dict(c, qat_bits=bits)
-        recipe = dict(base_recipe, config=config,
-                      experiment_config_sha256=sha(spec.config_path),
-                      student_provenance_sha256=sha(experiment / 'provenance' / f'{spec.student}.json'),
-                      teacher_provenance_sha256=sha(experiment / 'provenance' / f'{spec.teacher}.json'))
-        with shared.lock(group / '.prepare.lock'):
-            shared.pin_recipe(group / 'comparison_recipe.json', recipe)
-        if args.prepare_only:
-            continue
+    if args.reserve_gpus:
         shared.check_gpus()
-        for method in methods:
-            shared.launch_run(method, config, group, recipe, profile, args.resume, record_invocations=True)
+    with PreparationGPUHold(args.reserve_gpus) as holder:
+        print('Verifying released student bytes and processor compatibility (CPU only)...', flush=True)
+        student = spec.provenance(spec.student)
+        pin(experiment / 'provenance' / f'{spec.student}.json', student)
+        # Validate teacher vocabulary/template even for QAT so both methods share a valid recipe.
+        check_processor_compatibility([paths[spec.student], paths[spec.teacher]])
+        pin(experiment / 'provenance' / f'{spec.teacher}.json', spec.provenance(spec.teacher))
+        manifest = prepare(spec, c)
+        base_recipe = shared.comparison_recipe(c, manifest)
+        base_recipe['implementation'].update({f'scripts/{path.name}': sha(path) for path in
+            (Path(__file__), Path(__file__).with_name('constrained_experiment.py'),
+             Path(__file__).with_name('gpu_preparation_hold.py'))})
+        for bits in bits_set:
+            group = experiment / f'w{bits}g128'
+            config = dict(c, qat_bits=bits)
+            recipe = dict(base_recipe, config=config,
+                          experiment_config_sha256=sha(spec.config_path),
+                          student_provenance_sha256=sha(experiment / 'provenance' / f'{spec.student}.json'),
+                          teacher_provenance_sha256=sha(experiment / 'provenance' / f'{spec.teacher}.json'))
+            with shared.lock(group / '.prepare.lock'):
+                shared.pin_recipe(group / 'comparison_recipe.json', recipe)
+            if args.prepare_only:
+                continue
+            holder.release()
+            shared.check_gpus()
+            for method in methods:
+                shared.launch_run(method, config, group, recipe, profile, args.resume, record_invocations=True)
+                subprocess.run([sys.executable, str(PROJECT / 'scripts/summarize_constrained_runtime.py'),
+                                '--experiment', str(group), '--kind', 'profiles' if profile else 'runs',
+                                '--methods', method, '--require-complete'], check=True)
             subprocess.run([sys.executable, str(PROJECT / 'scripts/summarize_constrained_runtime.py'),
                             '--experiment', str(group), '--kind', 'profiles' if profile else 'runs',
-                            '--methods', method, '--require-complete'], check=True)
-        subprocess.run([sys.executable, str(PROJECT / 'scripts/summarize_constrained_runtime.py'),
-                        '--experiment', str(group), '--kind', 'profiles' if profile else 'runs',
-                        '--methods', *methods, '--require-complete'], check=True)
+                            '--methods', *methods, '--require-complete'], check=True)
 
 
 if __name__ == '__main__':
+    def stop_on_term(signum, frame):
+        raise SystemExit(128 + signum)
+
+    signal.signal(signal.SIGTERM, stop_on_term)
     try:
         main()
     except (OSError, ValueError, subprocess.CalledProcessError) as exc:

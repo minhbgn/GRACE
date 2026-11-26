@@ -1,0 +1,5 @@
+{
+  "summary": {
+    "model_path": "reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+    "processor_path": "reproduction/GRACE/experiments/constrained_32k_seed42/runs/sft",
+    "image_processor_size": 

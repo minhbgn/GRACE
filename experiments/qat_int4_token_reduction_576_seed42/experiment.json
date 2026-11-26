@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "student": "released_bf16",
+  "bit_widths": [
+    4
+  ],
+  "models": {
+    "qat_w4": {
+      "path": "experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat",
+      "kind": "trained",
+      "bits": 4,
+      "method": "qat",
+      "expected_steps": 256,
+      "runtime": "strict_triton_packed_int4_w4a16"
+    },
+    "vanilla_2b": {
+      "path": "models/Qwen3-VL-2B-Instruct",
+      "repository": "Qwen/Qwen3-VL-2B-Instruct"
+    },
+    "released_bf16": {
+      "path": "models/Qwen3-VL-2B-GRACE-BF16",
+      "repository": "ForeverBlue/Qwen3-VL-2B-GRACE-BF16",
+      "download": true,
+      "revision": "82f9a267340f65a3619be0e19daf6582d3998a5f",
+      "weights_sha256": "4b522cda73d4ebd792e97a89cbca51091287b65c87e705be53f56c035715bfd3"
+    }
+  },
+  "comparisons": [
+    {
+      "left": "qat_w4",
+      "right": "released_bf16",
+      "label": "QAT INT4 vs matched BF16 initialization"
+    },
+    {
+      "left": "qat_w4",
+      "right": "vanilla_2b",
+      "label": "QAT INT4 vs vanilla 2B"
+    }
+  ],
+  "report_title": "576-token image/video inference: realized INT4 and visual token reduction",
+  "design": {
+    "retentions": [
+      1.0,
+      0.5,
+      0.25,
+      0.1
+    ],
+    "methods": [
+      "resolution",
+      "uniform",
+      "merge"
+    ],
+    "image_max_pixels": 589824,
+    "image_min_pixels": 4096,
+    "video_max_pixels_per_frame": 589824,
+    "video_fps": 2,
+    "max_new_tokens": 256,
+    "seed": 42,
+    "video_population": "VideoMME short + medium; TempCompass MC; Video-MMMU three splits",
+    "merge_method": "deterministic contiguous spatial bin mean, within each image or temporal patch group",
+    "baseline": "one shared 100% job per model/suite; methods identical at retention=1",
+    "profile_tokens": 32,
+    "profile_samples": 3,
+    "profile_warmup": 1,
+    "profile_repeats": 3,
+    "int4_backend": "strict_triton_awq_layout_w4a16",
+    "video_scoring": {
+      "tempcompass": "Deterministic local MC fallback, not official API-judged score; unresolved wrong",
+      "videomme": "lmms-eval local, short+medium1800 only",
+      "videommmu": "lmms-eval local MC/open across three full splits",
+      "api_judges": "Forbidden; no API credentials required"
+    }
+  },
+  "teacher": "released_bf16"
+}

@@ -1,0 +1,1 @@
+Archived stale implementation recipes and failed launch metadata after the QAT-LoRA duplicate-definition fix. No checkpoints or model weights were present. Shared subset and provenance remain in the experiment root. The launcher regenerates both precision folders.

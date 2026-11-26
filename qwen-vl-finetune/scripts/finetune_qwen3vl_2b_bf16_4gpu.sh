@@ -18,6 +18,10 @@ WARMUP_RATIO=${WARMUP_RATIO:-0.03}
 MAX_GRAD_NORM=${MAX_GRAD_NORM:-1.0}
 NUM_TRAIN_EPOCHS=${NUM_TRAIN_EPOCHS:-1}
 
+# Reference: 16 GPUs x micro-batch 4 x accumulation 4 = 256.
+# Local:      4 GPUs x micro-batch 1 x accumulation 64 = 256.
+# Keep the local micro-batch at 1: with flattened batches, two individually
+# valid 8192-token samples can become one ~16k-token sequence on each GPU.
 NPROC_PER_NODE=${NPROC_PER_NODE:-4}
 PER_DEVICE_BATCH=${PER_DEVICE_BATCH:-1}
 GRAD_ACCUM=${GRAD_ACCUM:-64}
@@ -27,7 +31,7 @@ MAX_PIXELS=${MAX_PIXELS:-200704}
 MIN_PIXELS=${MIN_PIXELS:-784}
 # Save before the first known late-batch outlier (the failed run reached step
 # 234 without a checkpoint). Raise this again after the recipe is stable.
-SAVE_STEPS=${SAVE_STEPS:-50}
+SAVE_STEPS=${SAVE_STEPS:-100}
 SAVE_TOTAL_LIMIT=${SAVE_TOTAL_LIMIT:-3}
 
 RUN_NAME=${RUN_NAME:-Qwen3-VL-2B-SFT-BF16}
@@ -148,3 +152,4 @@ torchrun --standalone --nproc_per_node="${NPROC_PER_NODE}" \
     --remove_unused_columns False \
     --run_name "${RUN_NAME}" \
     --report_to wandb
+

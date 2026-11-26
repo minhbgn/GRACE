@@ -1,4 +1,11 @@
 """CPU regression tests for answer interpretation, grouping and run integrity."""
+# Support both direct script execution and `python -m evaluation.<group>.<module>`.
+import sys
+from pathlib import Path
+if __package__ in (None, ''):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from evaluation.paths import EVALUATION_ROOT, source_file
+
 import copy
 import json
 from pathlib import Path
@@ -6,9 +13,8 @@ import sys
 import unittest
 from unittest.mock import patch
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from local_scoring import choice, yesno, open_answer, generation_record, score_rows, corrected_summary, METRICS
-from run_local_development import validate, command, PROTOCOLS, cap_for
+from evaluation.protocols.local_scoring import choice, yesno, open_answer, generation_record, score_rows, corrected_summary, METRICS
+from evaluation.runners.run_local_development import validate, command, PROTOCOLS, cap_for
 
 
 class ExtractionTests(unittest.TestCase):
@@ -66,8 +72,8 @@ class ExtractionTests(unittest.TestCase):
         self.assertEqual(generation_record([1], 2, 8)['finish_reason'], 'other')
 
     def test_mmb_group_completeness_bounds(self):
-        from rescore_saved_protocols import circular
-        from local_scoring import mmbench_evaluator
+        from evaluation.audits.rescore_saved_protocols import circular
+        from evaluation.protocols.local_scoring import mmbench_evaluator
         meta = {k: dict(A='cat', B='dog', C=float('nan'), D=float('nan'), answer=g)
                 for k, g in [(1, 'A'), (1000001, 'B'), (2, 'A')]}
         rows = [dict(index=k, gold=v['answer'], raw=v['answer'], error=None) for k, v in meta.items()]
@@ -104,9 +110,9 @@ class IntegrityTests(unittest.TestCase):
         return dict(summary=summary, results=rows)
 
     def check(self, payload):
-        with patch('run_local_development.source_samples', return_value=[((0,), 'B')]), \
-             patch.dict('run_local_development.EXPECTED', mmstar=1), \
-             patch('run_local_development.metadata', return_value={}):
+        with patch('evaluation.runners.run_local_development.source_samples', return_value=[((0,), 'B')]), \
+             patch.dict('evaluation.runners.run_local_development.EXPECTED', mmstar=1), \
+             patch('evaluation.runners.run_local_development.metadata', return_value={}):
             return validate(payload, 'mmstar', Path('/model'), 'local_native_greedy256_v1', 'sdpa', None,
                             {'image_size': {'longest_edge': 50176}, 'eos_token_id': 9})
 
@@ -137,9 +143,30 @@ class IntegrityTests(unittest.TestCase):
         summary.update(total=3, correct=3, overall_acc=1.0)
         summary.update(corrected_summary('mmbench', rows, meta))
         payload = json.loads(json.dumps(dict(summary=summary, results=rows)))
-        with patch('run_local_development.source_samples', return_value=[((k,), v['answer']) for k, v in meta.items()]), \
-             patch.dict('run_local_development.EXPECTED', mmbench=3), \
-             patch('run_local_development.metadata', return_value=meta):
+        with patch('evaluation.runners.run_local_development.source_samples', return_value=[((k,), v['answer']) for k, v in meta.items()]), \
+             patch.dict('evaluation.runners.run_local_development.EXPECTED', mmbench=3), \
+             patch('evaluation.runners.run_local_development.metadata', return_value=meta):
+            check = lambda data: validate(data, 'mmbench', Path('/model'),
+                'local_native_greedy256_v1', 'sdpa', None,
+                {'image_size': {'longest_edge': 50176}, 'eos_token_id': 9})
+            self.assertEqual(check(payload)['score_percent'], 100)
+            payload['summary']['primary_score'] = .5
+            with self.assertRaises(ValueError):
+                check(payload)
+
+    def test_mmbench_json_roundtrip_and_histogram_tampering(self):
+        meta = {k: dict(A='cat', B='dog', C=float('nan'), D=float('nan'), answer=g)
+                for k, g in [(1, 'A'), (1000001, 'B'), (2, 'A')]}
+        rows = [dict(index=k, gold=v['answer'], raw=v['answer'], error=None,
+                     generation=generation_record([7, 9], 9, 256)) for k, v in meta.items()]
+        score_rows('mmbench', rows, meta)
+        summary = self.fixture()['summary']
+        summary.update(total=3, correct=3, overall_acc=1.0)
+        summary.update(corrected_summary('mmbench', rows, meta))
+        payload = json.loads(json.dumps(dict(summary=summary, results=rows)))
+        with patch('evaluation.runners.run_local_development.source_samples', return_value=[((k,), v['answer']) for k, v in meta.items()]), \
+             patch.dict('evaluation.runners.run_local_development.EXPECTED', mmbench=3), \
+             patch('evaluation.runners.run_local_development.metadata', return_value=meta):
             check = lambda data: validate(data, 'mmbench', Path('/model'),
                 'local_native_greedy256_v1', 'sdpa', None,
                 {'image_size': {'longest_edge': 50176}, 'eos_token_id': 9})

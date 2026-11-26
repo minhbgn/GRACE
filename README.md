@@ -1,3 +1,5 @@
+> **Local experiment workspace — updated 2026-11-25:** Start with the [experiment README](experiments/README.md) for all twelve evaluation suites, the [combined report](experiments/REPORT.md), and [merged JSON/CSV results](reports/SUMMARY.md). From this directory: `bash evaluate.sh plan`, `check`, `summarize`, or `run --gpus 0,2`. The upstream project documentation follows below.
+
 <p align="center">
   <img src="assets/swan.png" alt="GRACE" width="200"/>
 </p>
@@ -462,21 +464,21 @@ For the matched vanilla baseline / SFT / QAT / GRACE comparison, launch from thi
 conda activate grace
 export CUDA_VISIBLE_DEVICES=0,1  # select available GPUs
 export NPROC=2
-bash evaluation/run_all_constrained_evals.sh --dry-run
-bash evaluation/run_all_constrained_evals.sh --check
+bash evaluation/runners/run_all_constrained_evals.sh --dry-run
+bash evaluation/runners/run_all_constrained_evals.sh --check
 # Once model and dataset checks pass:
-bash evaluation/run_all_constrained_evals.sh
+bash evaluation/runners/run_all_constrained_evals.sh
 ```
 
 The launcher includes the original Qwen3-VL-2B-Instruct baseline by default.
 Use `METHODS=baseline` to add only its seven results to an existing experiment,
-then run `python evaluation/summarize_constrained_evals.py --write`.
-See [vanilla baseline instructions](evaluation/README_vanilla_baseline.md) for
+then run `python evaluation/audits/summarize_constrained_evals.py --write`.
+See [vanilla baseline instructions](evaluation/docs/README_vanilla_baseline.md) for
 checkpoint selection and matching the saved evaluation image budget.
 
 Dataset paths default to benchmark folders inside `evaluation/`, independently
 of the ShareGPT4V training data. Downloaded benchmark assets are not bundled
-with the repository. Follow the [evaluation dataset download guide](evaluation/README_datasets.md)
+with the repository. Follow the [evaluation dataset download guide](evaluation/docs/README_datasets.md)
 to prepare all seven suites. See the [constrained evaluation instructions](qwen-vl-finetune/scripts/README_constrained.md#evaluate-the-actual-exported-models)
 for the exact layouts, path overrides, model exports, and output locations.
 Some additional workflows, such as `mmmu/run_mmmu.py`, use vLLM and TSV download
@@ -828,7 +830,7 @@ A big thank-you to all of these communities.
 **Questions or contributions?** Open an
 [issue](https://github.com/ForeverBlue816/GRACE/issues) or a pull request, or
 reach out to Yanlong Chen at
-[yanlong.chen@ntu.edu.sg](mailto:yanlong.chen@ntu.edu.sg).
+[yanlchen@student.ethz.ch](mailto:yanlchen@student.ethz.ch).
 
 ---
 

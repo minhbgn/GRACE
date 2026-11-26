@@ -1,0 +1,8 @@
+VideoMMMU: check 30 GiB budget minus this dataset's existing files before downloading.
+hf download lmms-eval/VideoMMMU --repo-type dataset --revision d1c35ac933123d79e877b7f1b9506afb0309cf1b --max-workers 4 --include README.md --include '*/test-*.parquet' --include '*.zip' --local-dir /raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/video_benchmarks/VideoMMMU/data
+LongVideoBench: check 320 GiB budget minus this dataset's existing files before downloading.
+hf download longvideobench/LongVideoBench --repo-type dataset --revision 60d1c89c1919a198b73be39c2babb213b29d6a5c --max-workers 4 --include README.md --include lvb_val.json --include 'validation-*.parquet' --include subtitles.tar --include 'videos.tar.part.*' --local-dir /raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/video_benchmarks/LongVideoBench/data
+MLVU: check 300 GiB budget minus this dataset's existing files before downloading.
+hf download MLVU/MVLU --repo-type dataset --revision 06ddc388aa34746b3abba77972b7a7dfd977f7a3 --max-workers 4 --include README.md --include 'MLVU/json/[1-7]_*.json' --include 'MLVU/video/[1-7]_*/*' --local-dir /raid/lvchengtao/Minh/Distillation/reproduction/GRACE/evaluation/video_benchmarks/MLVU/data
+Extract TAR/ZIP archives for selected datasets; retain completed datasets if a later one cannot fit.
+ntfy: https://ntfy.sh/download-videobenchmarks-status; stall timeout: 30 minutes

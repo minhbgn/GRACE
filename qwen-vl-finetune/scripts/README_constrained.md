@@ -78,11 +78,11 @@ preparation fails explicitly. Nothing silently substitutes a different record
 at training time. The first ordinary/profile launch also prepares the subset
 if it does not exist. All later methods reuse it.
 
-Profile all three sequentially on the two selected GPUs, run from /raid/lvchengtao/Minh/Distillation/reproduction/GRACE/qwen-vl-finetune:
+Profile all three sequentially on the two selected GPUs:
 
 ```bash
 for method in sft qat grace; do
-  bash "./scripts/finetune_qwen3vl_2b_${method}_lora_constrained.sh" --profile || break
+  bash "reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_${method}_lora_constrained.sh" --profile || break
 done
 ```
 
@@ -110,10 +110,9 @@ profiling, export, evaluation and contingency. Account for your actual I/O.
 Then run the three training jobs, sequentially:
 
 ```bash
-cd /raid/lvchengtao/Minh/Distillation/reproduction/GRACE/qwen-vl-finetune
-bash ./scripts/finetune_qwen3vl_2b_sft_lora_constrained.sh
-bash ./scripts/finetune_qwen3vl_2b_qat_lora_constrained.sh
-bash ./scripts/finetune_qwen3vl_2b_grace_lora_constrained.sh
+bash reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_sft_lora_constrained.sh
+bash reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_qat_lora_constrained.sh
+bash reproduction/GRACE/qwen-vl-finetune/scripts/finetune_qwen3vl_2b_grace_lora_constrained.sh
 ```
 
 Check each summary for completion before proceeding. A budget pause returns
@@ -168,7 +167,7 @@ before launching any method. The GPU count and micro-batch remain two and one.
 ## Evaluate the actual exported models
 
 For evaluation with the actual **lmms-eval** harness, use the
-[lmms-eval guide](../../evaluation/README_lmms_constrained.md). It includes
+[lmms-eval guide](../../evaluation/docs/README_lmms_constrained.md). It includes
 environment fixes found on this machine, matched smoke/full-run commands,
 benchmark mappings and interpretation of the completed runs. The launcher
 described below remains the separate local Transformers evaluation workflow.
@@ -187,10 +186,10 @@ export PYTHON=python
 export CUDA_VISIBLE_DEVICES=0,1  # replace with two available GPUs
 export NPROC=2
 
-bash evaluation/run_all_constrained_evals.sh --dry-run
-bash evaluation/run_all_constrained_evals.sh --check
+bash evaluation/runners/run_all_constrained_evals.sh --dry-run
+bash evaluation/runners/run_all_constrained_evals.sh --check
 # After the input checks pass:
-bash evaluation/run_all_constrained_evals.sh
+bash evaluation/runners/run_all_constrained_evals.sh
 ```
 
 The launcher resolves scripts and default paths relative to its own location,
@@ -202,7 +201,7 @@ and per-rank predictions under
 not overwritten; use a fresh `OUT_DIR` for a repeat run.
 
 Evaluation datasets must already be downloaded in the following layouts.
-Use the [dataset download guide](../../evaluation/README_datasets.md) for source
+Use the [dataset download guide](../../evaluation/docs/README_datasets.md) for source
 links and commands that populate all seven suites under `evaluation/`.
 `DATA_ROOT` defaults to `reproduction/GRACE/evaluation` (an absolute path
 resolved by the launcher), independently of the ShareGPT4V training data.

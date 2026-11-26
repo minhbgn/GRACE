@@ -2,22 +2,21 @@
 
 **Provenance correction (2026-10-05):** The authors' [BF16 SFT baseline](../../README.md#1-bf16-sft-baseline) is the source of the released `GRACE-BF16` checkpoint. References below to its initialization now identify SFT rather than prior distillation; historical results are unchanged.
 
-This experiment tested whether GRACE's teacher-guided training improves a small, 4-bit vision-language model when training is limited to two A100 40GB GPUs. All three trained methods and the vanilla Qwen3-VL-2B-Instruct baseline were evaluated on the same questions. Under this setup, **GRACE did not improve average accuracy over vanilla, QAT or ordinary supervised fine-tuning**: their seven-suite means were 63.39%, 63.72%, 63.99% and 65.82%, respectively. GRACE nevertheless improved three primary benchmark scores over vanilla and several HallusionBench metrics.
+This experiment tested whether GRACE's teacher-guided training improves a small, 4-bit vision-language model when training is limited to two A100 40GB GPUs. All three methods completed the planned training and were evaluated on the same questions. Under this setup, **GRACE did not improve average accuracy over QAT or ordinary supervised fine-tuning**, although it improved several HallusionBench metrics.
 
 ## 1. What we trained
 
-All trained students started from **Qwen3-VL-2B-Instruct**. Only GRACE used the frozen **Qwen3-VL-8B-Instruct** teacher. **Vanilla** is the original instruction-tuned 2B checkpoint, with no additional training in this experiment; it is distinct from our SFT run.
+All students started from **Qwen3-VL-2B-Instruct**. Only GRACE used the frozen **Qwen3-VL-8B-Instruct** teacher.
 
 | Method | Plain-language description | Training objective | Weight precision |
 | --- | --- | --- | --- |
-| Vanilla | Evaluate the original Qwen3-VL-2B-Instruct checkpoint | No additional training | BF16 |
 | SFT | Learn directly from the dataset's correct answers | Answer prediction loss (CE) | BF16 |
 | QAT | Learn from the answers while simulating 4-bit weight rounding | CE | W4G128 |
 | GRACE | QAT plus guidance from the larger teacher's predictions and visual representations | CE + confidence-gated distillation + visual relationship alignment | W4G128 |
 
 W4G128 means 4-bit weights with one quantization scale per group of 128 weights. The QAT and GRACE exports store those rounded weights in BF16 tensors; these runs measure accuracy, not packed INT4 inference speed or memory savings.
 
-There is **no BF16 GRACE run** in this experiment. Here, “GRACE−QAT” and “GRACE−SFT” mean differences between the trained methods above, rather than separate methods named GRACE-QAT and GRACE-SFT.
+There is **no BF16 GRACE run** in this experiment. Here, “GRACE−QAT” and “GRACE−SFT” mean differences between the three rows above, rather than separate methods named GRACE-QAT and GRACE-SFT.
 
 ## 2. Configuration and differences from the original setup
 
@@ -46,7 +45,7 @@ There are two relevant references: the original paper used LLaVA-1.5 and Qwen2-V
 
 The subset is approximately **4.9% of mix665k**. Sampling preserves image-source proportions, rather than verified task proportions; approximately 56% of retained examples use COCO train images. Text-only and video records are excluded. Long conversations lose complete trailing question/answer pairs until they fit. The full-training launchers use a flattened collator, so their declared sequence lengths should not be treated as equivalent strict input limits.
 
-Our image cap is **75% lower than the GRACE launcher's cap**. With Qwen3-VL's 16-pixel patches and 2 × 2 merging, it permits at most **49 visual tokens**, compared with 196 under the larger cap. The saved evaluation processor uses the same reduced budget. The completed vanilla evaluation loads the original model weights but reuses the SFT processor, including its tokenizer and chat template; all seven baseline result files record a minimum of 4,096 and maximum of 50,176 pixels. This makes vanilla a control under the same local visual budget, rather than a measurement at the upstream processor's original resolution. The reduction affects both what the student can see and what the teacher can teach.
+Our image cap is **75% lower than the GRACE launcher's cap**. With Qwen3-VL's 16-pixel patches and 2 × 2 merging, it permits at most **49 visual tokens**, compared with 196 under the larger cap. The saved evaluation processor uses the same reduced budget. This reduction affects both what the student can see and what the teacher can teach.
 
 For context, the paper reports 1.3M image-text pairs, three epochs, eight GH200 GPUs, an effective batch of 128 and a 2,048-token limit. Its Table 6 specifies RCKA weight 1 and controller settings different from ours: target .35, step size .0015, initial weight 1, bounds [.1, 5]. Thus, this is a constrained adaptation rather than an exact paper reproduction. [Original paper, §4 and Appendix D.1](https://arxiv.org/html/2601.22709v1#S4)
 
@@ -54,71 +53,52 @@ For context, the paper reports 1.3M image-text pairs, three epochs, eight GH200 
 
 Scores below are percentages. A difference of one percentage point (pp) means, for example, moving from 70% to 71%. “Relative change” divides the score difference by the comparison method's score.
 
-| Benchmark | Vanilla | SFT | QAT | GRACE | GRACE−Vanilla (pp) | GRACE−QAT (pp) | GRACE−SFT (pp) |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| HallusionBench aAcc | 57.31 | 59.43 | 55.62 | 57.93 | +0.62 | +2.30 | −1.51 |
-| MMBench English dev, per-row | 82.26 | 82.95 | 81.54 | 80.78 | −1.48 | −0.76 | −2.17 |
-| ScienceQA, full test | 80.90 | 81.35 | 80.71 | 79.86 | −1.04 | −0.85 | −1.49 |
-| AI2D | 72.18 | 72.57 | 69.95 | 69.88 | −2.30 | −0.06 | −2.69 |
-| MMMU validation | 40.67 | 44.33 | 41.89 | 39.11 | −1.56 | −2.78 | −5.22 |
-| SEED-Bench-IMG | 70.22 | 70.95 | 70.74 | 70.86 | +0.65 | +0.12 | −0.08 |
-| MMStar | 42.53 | 49.13 | 47.47 | 45.33 | +2.80 | −2.13 | −3.80 |
-| **Unweighted mean** | **63.72** | **65.82** | **63.99** | **63.39** | **−0.33** | **−0.59** | **−2.42** |
+| Benchmark | SFT | QAT | GRACE | GRACE−QAT (pp) | GRACE−SFT (pp) |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| HallusionBench aAcc | 59.43 | 55.62 | 57.93 | +2.30 | −1.51 |
+| MMBench English dev, per-row | 82.95 | 81.54 | 80.78 | −0.76 | −2.17 |
+| ScienceQA, full test | 81.35 | 80.71 | 79.86 | −0.85 | −1.49 |
+| AI2D | 72.57 | 69.95 | 69.88 | −0.06 | −2.69 |
+| MMMU validation | 44.33 | 41.89 | 39.11 | −2.78 | −5.22 |
+| SEED-Bench-IMG | 70.95 | 70.74 | 70.86 | +0.12 | −0.08 |
+| MMStar | 49.13 | 47.47 | 45.33 | −2.13 | −3.80 |
+| **Unweighted mean** | **65.82** | **63.99** | **63.39** | **−0.59** | **−2.42** |
 
 Deltas use unrounded scores. Each benchmark has equal weight in this descriptive mean.
 
-Against vanilla, SFT improved the mean by **2.09 pp (+3.28% relative)** and improved all seven primary scores. QAT improved the mean by **0.27 pp (+0.42% relative)**, with gains on MMMU, SEED-Bench-IMG and MMStar. GRACE was **0.33 pp lower (−0.52% relative)**, with gains on HallusionBench (+0.62 pp), SEED-Bench-IMG (+0.65 pp) and MMStar (+2.80 pp), offset by losses on MMBench, ScienceQA, AI2D and MMMU. Its largest loss against vanilla was AI2D (−2.30 pp). The ordering is **SFT > QAT > Vanilla > GRACE** on this descriptive mean; the small QAT/vanilla and GRACE/vanilla gaps have not been tested for statistical significance.
-
-Across seven benchmarks, GRACE was **0.93% relatively lower than QAT** and **3.68% relatively lower than SFT**. It exceeded QAT on two benchmarks and fell below SFT on all seven primary metrics. Its largest deficits against the trained controls were on MMMU and MMStar. In particular, GRACE's MMStar gain over vanilla is smaller than QAT's +4.93 pp and SFT's +6.60 pp, so it does not demonstrate a benefit from teacher guidance over the matched training controls.
-
-HallusionBench's stricter grouped metrics improved over all three controls: GRACE qAcc was 24.62%, versus vanilla's 22.64%, QAT's 21.98% and SFT's 23.96%; fAcc was 34.10%, versus vanilla/SFT's 30.92% and QAT's 30.35%. These require all answers within a question or figure group to be correct. The ScienceQA loss against vanilla occurs in both its image subset (−1.64 pp) and text subset (−0.49 pp), so that loss is not confined to image-containing questions.
-
-| Additional metric | Vanilla | SFT | QAT | GRACE | GRACE−Vanilla (pp) | GRACE−QAT (pp) | GRACE−SFT (pp) |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| HallusionBench qAcc | 22.64 | 23.96 | 21.98 | 24.62 | +1.98 | +2.64 | +0.66 |
-| HallusionBench fAcc | 30.92 | 30.92 | 30.35 | 34.10 | +3.18 | +3.76 | +3.18 |
-| ScienceQA test (image) | 81.31 | 81.56 | 80.22 | 79.67 | −1.64 | −0.55 | −1.88 |
-| ScienceQA test (text) | 80.53 | 81.16 | 81.16 | 80.04 | −0.49 | −1.12 | −1.12 |
-
-HallusionBench qAcc/fAcc use 455/346 groups; ScienceQA image/text use 2,017/2,224 questions. Denominators match across all four methods.
+Across seven benchmarks, GRACE was **0.93% relatively lower than QAT** and **3.68% relatively lower than SFT**. It exceeded QAT on two benchmarks and fell below SFT on all seven primary metrics. Its largest deficits were on MMMU and MMStar. However, HallusionBench's stricter grouped metrics improved: qAcc was 24.62% versus QAT's 21.98% and SFT's 23.96%; fAcc was 34.10% versus 30.35% and 30.92%. These require all answers within a question or figure group to be correct.
 
 ### How this differs from the original reported gains
 
 | Experiment/reference | GRACE score | QAT comparison | BF16 comparison | GRACE−QAT | GRACE−BF16 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| **Our seven-suite mean vs. vanilla** | 63.39 | 63.99 | 63.72, vanilla baseline | **−0.59 pp / −0.93% relative** | **−0.33 pp / −0.52% relative** |
-| Our seven-suite mean vs. SFT | 63.39 | 63.99 | 65.82, matched SFT | −0.59 pp / −0.93% relative | −2.42 pp / −3.68% relative |
+| **Our seven-suite mean** | 63.39 | 63.99 | 65.82, matched SFT | **−0.59 pp / −0.93% relative** | **−2.42 pp / −3.68% relative** |
 | Paper Table 2: LLaVA-1.5-7B, INT4 | 67.2 | 65.9 | 66.5, baseline | +1.3 pp / +1.97% relative | +0.7 pp / +1.05% relative |
 | Paper Table 4: Qwen2-VL-2B, INT4, three tasks | 77.2 | 71.3 | 72.7, baseline | +5.9 pp / +8.27% relative | +4.5 pp / +6.19% relative |
-| Repository release: Qwen3-VL-2B, W4G128 | 75.0 | Not reported | 67.3, vanilla baseline | Not reported | +7.7 pp / +11.44% relative |
 
-Paper values come from [Tables 2 and 4](https://arxiv.org/html/2601.22709v1#S4). The original BF16 rows are labeled **baseline**, not a separately documented SFT run matched to ours. Different backbones, training and evaluation prevent a controlled comparison of effect sizes. The completed vanilla control now lets us distinguish improvement over the starting checkpoint from differences among trained methods: our GRACE mean is below both vanilla and matched SFT, whereas the paper reports gains over its BF16 baselines.
+Paper values come from [Tables 2 and 4](https://arxiv.org/html/2601.22709v1#S4). The original BF16 rows are labeled **baseline**, not a separately documented SFT run matched to ours. Different backbones, training and evaluation prevent a controlled comparison of effect sizes. The meaningful observation is that the paper reports positive gains while our matched pilot produces negative average gaps.
 
-The repository's Qwen3-VL release explicitly uses **vanilla Qwen3-VL-2B-Instruct** as its baseline and reports a mean of **67.3**, compared with **75.0 for W4G128 GRACE** and **76.7 for BF16 GRACE**. Its reported W4 gain over vanilla is +7.7 pp; ours is −0.33 pp. Release deltas use the published rounded means.
-
-Our W4 GRACE mean of 63.39 is numerically **11.61 pp, or 15.47%, below** its W4 result. Our SFT mean is 10.88 pp below the released BF16 SFT result. Both are SFT baselines, but their data, trainable scope, training budgets and evaluation differ. The release table supplies a BF16 SFT reference but no standalone QAT row or SFT control matched to our constrained recipe, so it cannot establish the corresponding controlled Qwen3-VL GRACE−QAT or GRACE−SFT gains. [Repository results](https://github.com/ForeverBlue816/GRACE#-results)
+The repository's Qwen3-VL release reports **75.0 for W4G128 GRACE** and **76.7 for BF16 GRACE**. Our W4 GRACE mean of 63.39 is numerically **11.61 pp, or 15.47%, below** its W4 result. Our SFT mean is 10.88 pp below the released BF16 SFT result. Both are SFT baselines, but their data, trainable scope, training budgets and evaluation differ. The release table supplies a BF16 SFT reference but no standalone QAT row or SFT control matched to our constrained recipe, so it cannot establish the corresponding controlled Qwen3-VL GRACE−QAT or GRACE−SFT gains. [Repository results](https://github.com/ForeverBlue816/GRACE#-results)
 
 The released W4/W8 students initialize from the **released BF16 SFT checkpoint**, named `GRACE-BF16`. The authors' [training README](../../README.md#1-bf16-sft-baseline) explicitly identifies the BF16 SFT launcher as its source. Our pilot runs initialize directly from the original 2B model, omitting that preceding SFT stage. This distinction applies to the released Qwen3-VL pipeline, not automatically to every experiment in the paper.
 
-Our local vanilla mean of 63.72 is itself **3.58 pp below** the release baseline of 67.3. Because vanilla has no additional experiment training, that difference shows that the absolute release/local gap is not solely a property of our GRACE training; evaluation protocol and preprocessing differences must be considered. A vanilla evaluation at the upstream visual budget would help assess resolution effects, but the current data do not isolate their contribution.
-
-These cross-report numbers are indicative, not equivalent leaderboard measurements. Our local evaluation uses rule-based scoring, per-row MMBench accuracy, full-test ScienceQA and a simplified MMMU open-answer scorer. Prompting, answer parsing and benchmark scope can change scores. There were no recorded inference errors in any of the four methods; a small number of parse failures remained in the denominator. Vanilla had four reported parse failures (one ScienceQA, two AI2D, one MMStar); MMMU does not report a separate parse-failure count. One training seed also leaves repeatability unresolved.
+These cross-report numbers are indicative, not equivalent leaderboard measurements. Our local evaluation uses rule-based scoring, per-row MMBench accuracy, full-test ScienceQA and a simplified MMMU open-answer scorer. Prompting, answer parsing and benchmark scope can change scores. There were no recorded inference errors; a small number of parse failures remained in the denominator. One training seed also leaves repeatability unresolved.
 
 ## 4. Possible reasons for the outcome
 
 The following are hypotheses, with the supporting observations stated explicitly.
 
-1. **Teacher guidance may have outweighed learning the correct answers.** The logged distillation weight reached its maximum of 1 at update 7 and stayed there for 506/512 updates. Over the last 50 logged updates, mean GDKD was approximately 7.59 versus CE of 1.30; weighted visual alignment contributed approximately 0.93. GDKD remained above the controller target of 3. This suggests the controller was mostly saturated and the objective was dominated numerically by teacher matching. Loss size alone does not establish gradient dominance or causality, but this is the strongest specific diagnostic from the logs. Vanilla now shows that GRACE did not improve the starting checkpoint on average, while ordinary SFT did; this is consistent with investigating the added objectives, but does not establish that distillation caused the loss.
+1. **Teacher guidance may have outweighed learning the correct answers.** The logged distillation weight reached its maximum of 1 at update 7 and stayed there for 506/512 updates. Over the last 50 logged updates, mean GDKD was approximately 7.59 versus CE of 1.30; weighted visual alignment contributed approximately 0.93. GDKD remained above the controller target of 3. This suggests the controller was mostly saturated and the objective was dominated numerically by teacher matching. Loss size alone does not establish gradient dominance or causality, but this is the strongest specific diagnostic from the logs.
 
-2. **Much less data and training may have limited knowledge transfer.** We used 32,768 examples and one pass, and skipped the released Qwen3-VL pipeline's BF16 SFT initialization stage. A source-proportional subset does not guarantee enough science, diagrams or difficult reasoning examples. A larger teacher's capabilities may require more varied supervision and a longer schedule to transfer. However, SFT improved every primary score over vanilla on this same subset, so limited data did not prevent all useful adaptation.
+2. **Much less data and training may have limited knowledge transfer.** We used 32,768 examples and one pass, and skipped the released Qwen3-VL pipeline's BF16 SFT initialization stage. A source-proportional subset does not guarantee enough science, diagrams or difficult reasoning examples. A larger teacher's capabilities may require more varied supervision and a longer schedule to transfer.
 
-3. **Low resolution removes useful visual detail.** At most 49 image tokens must represent the whole image. Small text, diagram labels and fine spatial relationships can be lost. The teacher also receives the reduced input, so its supervision may be less useful. This could help explain lower absolute scores, but it cannot by itself explain GRACE losing to vanilla, QAT or SFT: all four evaluations use the same image budget. The ScienceQA loss also appears in the text-only subset.
+3. **Low resolution removes useful visual detail.** At most 49 image tokens must represent the whole image. Small text, diagram labels and fine spatial relationships can be lost. The teacher also receives the reduced input, so its supervision may be less useful. This could help explain lower absolute scores, but it cannot by itself explain GRACE losing to QAT: both receive the same image budget.
 
-4. **LoRA gives the student fewer ways to adapt.** Only attention adapters and the visual projector learn, alongside selected quantization scales. QAT/GRACE have about 40.77M trainable parameters, including 12.85M adapter parameters and 2.75M scales. The frozen base and feed-forward weights may restrict adaptation to both the teacher and 4-bit rounding. This differs substantially from updating the full language model. SFT's +2.09 pp mean gain over vanilla shows that these adapters can improve accuracy under the constrained setup; LoRA capacity alone is not enough to explain the lack of a GRACE gain.
+4. **LoRA gives the student fewer ways to adapt.** Only attention adapters and the visual projector learn, alongside selected quantization scales. QAT/GRACE have about 40.77M trainable parameters, including 12.85M adapter parameters and 2.75M scales. The frozen base and feed-forward weights may restrict adaptation to both the teacher and 4-bit rounding. This differs substantially from updating the full language model.
 
-5. **The exported model may behave differently from the training model.** Training applies quantization to the base weights and then adds the LoRA update: `Q(W) + ΔW`. Export merges first and then quantizes: `Q(W + ΔW)`. Rounding makes these expressions unequal. Both QAT and GRACE use this procedure, but their learned updates can incur different conversion losses. Native-versus-export accuracy has not been measured here. A no-training W4 quantization control is also absent, so QAT/GRACE versus vanilla combine training and quantization effects rather than isolating either one.
+5. **The exported model may behave differently from the training model.** Training applies quantization to the base weights and then adds the LoRA update: `Q(W) + ΔW`. Export merges first and then quantizes: `Q(W + ΔW)`. Rounding makes these expressions unequal. Both QAT and GRACE use this procedure, but their learned updates can incur different conversion losses. Native-versus-export accuracy has not been measured here.
 
-6. **Scoring differences and one-seed variation may contribute.** Shared questions and evaluation code make the local comparison useful, but response-format differences can still interact with the local parsers. The few reported parse failures do not explain the mean ordering: even making all reported GRACE parse failures correct would add only about 0.03 pp to its seven-suite mean. MMMU's simplified open-answer scorer still warrants inspection. Cross-report score gaps additionally include protocol and backbone differences.
+6. **Scoring differences and one-seed variation may contribute.** Shared questions and evaluation code make the local comparison useful, but response-format differences can still interact with the local parsers. Cross-report score gaps additionally include protocol and backbone differences.
 
 ## 5. Suggested next experiments
 
@@ -128,26 +108,24 @@ Next, test weaker distillation or a longer distillation warmup, recording CE, GD
 
 | Method | Recorded training-loop time | Recorded peak PyTorch reserved memory |
 | --- | ---: | ---: |
-| Vanilla | No experiment training | Not measured for training |
 | SFT | 1.45 h | 6.59 GiB |
 | QAT | 1.90 h | 6.64 GiB |
 | GRACE | 2.37 h | 24.13 GiB |
 
-These are recorded run-summary measurements, not total end-to-end time or total GPU occupancy. All three trained methods completed 512 updates and produced final exports; vanilla underwent no experiment training.
+These are recorded run-summary measurements, not total end-to-end time or total GPU occupancy. All methods completed 512 updates and produced final exports.
 
 ## Supervisor-ready description
 
-> We ran a resource-constrained GRACE experiment using a Qwen3-VL-2B student and an 8B teacher on two A100 40GB GPUs. To fit the available resources, we trained attention LoRA adapters and the visual projector, used 32,768 examples, limited inputs to 1,024 tokens and reduced images to at most 50,176 pixels. SFT, QAT and GRACE shared the same data and effective batch of 64, completing 512 updates each. We also evaluated the original Qwen3-VL-2B-Instruct weights with the same saved processor and questions. Vanilla averaged 63.72%, SFT 65.82%, QAT 63.99% and GRACE 63.39%. GRACE was −0.33 pp below vanilla, −0.59 pp below QAT and −2.42 pp below SFT, while SFT improved all seven primary scores over vanilla. GRACE improved three primary scores over vanilla and HallusionBench grouped consistency over all controls, but showed no average improvement over the starting checkpoint. This differs from the positive gains reported in the original paper, although the setups are not directly comparable. Its distillation controller stayed at maximum weight for almost the entire run. We suspect the loss balance, limited training capacity, smaller dataset and low resolution contributed. We propose checking export/scoring effects and testing weaker teacher guidance before scaling up.
+> We ran a resource-constrained GRACE experiment using a Qwen3-VL-2B student and an 8B teacher on two A100 40GB GPUs. To fit the available resources, we trained attention LoRA adapters and the visual projector, used 32,768 examples, limited inputs to 1,024 tokens and reduced images to at most 50,176 pixels. SFT, QAT and GRACE shared the same data and effective batch of 64, completing 512 updates each. GRACE averaged 63.39%, compared with 63.99% for QAT and 65.82% for SFT: gaps of −0.59 and −2.42 percentage points. This differs from the positive gains reported in the original paper, although the setups are not directly comparable. GRACE improved hallucination consistency, but its distillation controller stayed at maximum weight for almost the entire run. We suspect the loss balance, limited training capacity, smaller dataset and low resolution contributed. We propose checking export/scoring effects and testing weaker teacher guidance before scaling up.
 
 ## Local evidence
 
 - [Pinned experiment configuration](comparison_recipe.json)
-- [Detailed evaluation comparison](evaluation/comparison.md), based on the 28 merged result files across vanilla, SFT, QAT and GRACE
-- [Vanilla evaluation configuration and protocol](../../evaluation/README_vanilla_baseline.md); original weights and processor budget recorded in `evaluation/baseline/*.json`
+- [Detailed evaluation comparison](evaluation/comparison.md), based on the 21 merged result files
 - Training summaries and per-update logs under `runs/{sft,qat,grace}/`
 - [Constrained-training documentation](../../qwen-vl-finetune/scripts/README_constrained.md)
 - [Full-training GRACE launcher](../../qwen-vl-finetune/scripts/finetune_qwen3vl_2b_grace.slurm)
-- [Evaluation protocol notes](../../evaluation/README_lmms_constrained.md)
+- [Evaluation protocol notes](../../evaluation/docs/README_lmms_constrained.md)
 
 ## 6. Validate configuration and training behavior in code
 
@@ -273,5 +251,5 @@ The native [GRACE checkpoint-512](runs/grace/checkpoint-512/) retains adapters, 
 
 Compare a fixed validation batch in three states: the reconstructed native model before merge, after LoRA merge, and after QAT bake/HF reload. Switch to evaluation mode, freeze dropout/RNG choices, use the same processor, weights and inputs, and measure next-token logits, CE and task predictions in addition to accuracy. Export mutates the model in place, so use separate copies/restorations for each state. The merge is [qat_modules.py:456](/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/qwen-vl-finetune/qwenvl/train/qat_modules.py:456) and the bake is [qat_modules.py:518](/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/qwen-vl-finetune/qwenvl/train/qat_modules.py:518): native QAT uses `Q(W) + delta`, while the merged export uses `Q(W + delta)`. Equality is not guaranteed because rounding is nonlinear; an observed difference must be measured rather than inferred to be the cause of a benchmark loss. SFT's merge should preserve its evaluation-mode linear function up to numerical precision.
 
-Finally, check that the HF export has merged adapters, ordinary floating-point weights, the expected quantization sidecar, matching processor settings and no leftover adapter/scale keys in its HF weight file. Packed INT4 deployment requires a separate conversion and kernel validation. The [evaluation summarizer](../../evaluation/summarize_constrained_evals.py) validates final predictions and matching questions, but it does not test any of the training-gradient, optimizer-update or native-versus-export properties above. Only the combined evidence supports a claim about what the implementation actually learned.
+Finally, check that the HF export has merged adapters, ordinary floating-point weights, the expected quantization sidecar, matching processor settings and no leftover adapter/scale keys in its HF weight file. Packed INT4 deployment requires a separate conversion and kernel validation. The [evaluation summarizer](../../evaluation/audits/summarize_constrained_evals.py) validates final predictions and matching questions, but it does not test any of the training-gradient, optimizer-update or native-versus-export properties above. Only the combined evidence supports a claim about what the implementation actually learned.
 

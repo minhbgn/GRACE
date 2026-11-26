@@ -1,0 +1,114 @@
+{
+  "protocol": "local_native_greedy256_v1",
+  "processors": {
+    "vanilla_2b": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 16777216,
+        "shortest_edge": 65536,
+        "max_height": null,
+        "max_width": null
+      },
+      "eos_token_id": 151645
+    },
+    "vanilla_8b_teacher": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 16777216,
+        "shortest_edge": 65536,
+        "max_height": null,
+        "max_width": null
+      },
+      "eos_token_id": 151645
+    },
+    "released_bf16": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 16777216,
+        "shortest_edge": 65536,
+        "max_height": null,
+        "max_width": null
+      },
+      "eos_token_id": 151645
+    },
+    "released_grace_w4": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 200704,
+        "shortest_edge": 784,
+        "max_height": null,
+        "max_width": null
+      },
+      "eos_token_id": 151645
+    },
+    "released_grace_w8": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 50176,
+        "shortest_edge": 784,
+        "max_height": null,
+        "max_width": null
+      },
+      "eos_token_id": 151645
+    },
+    "qat_w4": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 100352,
+        "shortest_edge": 4096,
+        "max_height": null,
+        "max_width": null
+      },
+      "eos_token_id": 151645
+    },
+    "grace_w4": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 100352,
+        "shortest_edge": 4096,
+        "max_height": null,
+        "max_width": null
+      },
+      "eos_token_id": 151645
+    },
+    "qat_w8": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 100352,
+        "shortest_edge": 4096,
+        "max_height": null,
+        "max_width": null
+      },
+      "eos_token_id": 151645
+    },
+    "grace_w8": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 100352,
+        "shortest_edge": 4096,
+        "max_height": null,
+        "max_width": null
+      },
+      "eos_token_id": 151645
+    }
+  },
+  "suites": [
+    "hallusionbench",
+    "mmbench",
+    "scienceqa",
+    "ai2d",
+    "mmmu",
+    "seedbench_img",
+    "mmstar"
+  ],
+  "status": "CPU preflight passed; no inference"
+}

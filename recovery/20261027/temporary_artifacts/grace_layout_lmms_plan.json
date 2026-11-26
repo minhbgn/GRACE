@@ -1,0 +1,54 @@
+{
+  "jobs": 70,
+  "methods": {
+    "vanilla_2b": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+    "vanilla_8b_teacher": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-8B-Instruct",
+    "sft_2b": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/constrained_32k_b128_p100352_t2048_seed42/runs/sft",
+    "released_bf16": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16",
+    "released_grace_w4": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W4G128",
+    "released_grace_w8": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-W8G128",
+    "qat_w4": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/qat",
+    "grace_w4": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w4g128/runs/grace",
+    "qat_w8": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/qat",
+    "grace_w8": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/w8g128/runs/grace"
+  },
+  "tasks": {
+    "scienceqa": "scienceqa_img",
+    "ai2d": "ai2d",
+    "mmmu": "mmmu_val",
+    "mmstar": "mmstar",
+    "seedbench": "seedbench",
+    "hallusionbench": "hallusion_bench_image",
+    "mmbench": "mmbench_en_dev"
+  },
+  "output": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p100352_t2048_seed42/lmms_evaluation/full",
+  "protocol": {
+    "name": "lmms_eval_v0.7.1_qwen3_vl_harness_defaults_v1",
+    "status": "Independent pinned harness protocol; exact author protocol is not published",
+    "harness_commit": "88b23e2bfa16a1edbc16e9e238ed82130b3a4f56",
+    "model_args": {
+      "min_pixels": 200704,
+      "max_pixels": 1605632,
+      "attn_implementation": "sdpa",
+      "system_prompt": "You are a helpful assistant.",
+      "interleave_visuals": false
+    },
+    "judges": {
+      "hallusionbench": "gpt-4",
+      "mmbench": "gpt-4o-2024-11-20"
+    },
+    "judge_endpoint": "https://api.openai.com/v1/chat/completions",
+    "bootstrap_iters": 1000,
+    "seed": 42,
+    "notes": [
+      "BF16 inference on merged grid-projected research weights; no additional quantization and no packed INT4/INT8 performance claim.",
+      "Zero-shot, greedy, batch size one, one GPU; pinned task-specific prompts, output caps, filters and scorers.",
+      "Image limits are the pinned qwen3_vl backend defaults, not the old constrained protocol or a recovered author setting.",
+      "SDPA explicitly selected for portability; source backend leaves attention implementation unspecified by default.",
+      "Public dataset token=True changed to optional cached authentication (token=None); revisions and fingerprints pinned.",
+      "Bootstrap iterations affect uncertainty estimates, not primary point estimates.",
+      "Judge model IDs are harness defaults. API availability and author judge identity are unverified."
+    ]
+  },
+  "limit": null
+}

@@ -1,10 +1,16 @@
+# Support both direct script execution and `python -m evaluation.<group>.<module>`.
+import sys
+from pathlib import Path
+if __package__ in (None, ''):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from evaluation.paths import EVALUATION_ROOT, source_file
+
 import copy
 import sys
 from pathlib import Path
 import unittest
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from paper_acceptance import assess
-from run_upstream_matrix import command, validate, source_check
+from evaluation.protocols.paper_acceptance import assess
+from evaluation.runners.run_upstream_matrix import command, validate, source_check
 
 class PaperProtocolTests(unittest.TestCase):
     def test_tolerances_and_missing_results(self):

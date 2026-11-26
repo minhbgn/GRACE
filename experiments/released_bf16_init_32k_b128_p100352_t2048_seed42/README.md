@@ -2,7 +2,7 @@
 
 **Two-stage local re-evaluation:** [Commands and model lists](README_re_evaluation.md), using [run_re_evaluation.sh](run_re_evaluation.sh). Stage one evaluates the five published references; stage two evaluates the four LoRA checkpoints after the per-suite paper-gap gate passes. All new outputs go under `re_evaluation/`.
 
-**Protocol recovery update (2026-09-25):** The [source audit and new evaluation workflows](../../evaluation/README_paper_protocol.md) recover all seven upstream script recipes and add a separate corrected standard harness protocol. Confirmed differences include checkpoint-native image budgets and MMStar's 64-token launcher limit; MMMU task loading and open-answer scoring bugs are fixed for the new harness protocol. CPU checks passed; no new GPU results or paper-tolerance claim are included here. Historical scores below are unchanged.
+**Protocol recovery update (2026-09-25):** The [source audit and new evaluation workflows](../../evaluation/docs/README_paper_protocol.md) recover all seven upstream script recipes and add a separate corrected standard harness protocol. Confirmed differences include checkpoint-native image budgets and MMStar's 64-token launcher limit; MMMU task loading and open-answer scoring bugs are fixed for the new harness protocol. CPU checks passed; no new GPU results or paper-tolerance claim are included here. Historical scores below are unchanged.
 
 **lmms-eval follow-up:** The separate [pinned harness workflow](lmms_evaluation.md) and [launcher](run_lmms_evaluation.sh) cover all ten models and seven benchmarks. New outputs are isolated from the completed custom-protocol results. All 40 GPU evaluations across ScienceQA-image, AI2D, SEED-image and MMStar are complete; the workflow now includes the four-suite analysis and paper comparison. MMMU and the two judge-based suites remain pending.
 
@@ -265,9 +265,9 @@ run_training.sh
   -> torch.distributed.run -m qwenvl.train.train_qwen_constrained
 
 run_local_evaluation.sh
-  -> evaluation/run_constrained_matrix_evals.py --config experiment.json
+  -> evaluation/runners/run_constrained_matrix_evals.py --config experiment.json
   -> evaluation/{suite}/eval_*.py
-  -> evaluation/summarize_constrained_evals.py (matrix report functions)
+  -> evaluation/audits/summarize_constrained_evals.py (matrix report functions)
 ```
 
 Shared model/provenance checks live in
@@ -276,7 +276,7 @@ The acquisition utility is
 [prepare_constrained_models.py](../../qwen-vl-finetune/scripts/prepare_constrained_models.py).
 The existing [runtime summarizer](../../qwen-vl-finetune/scripts/summarize_constrained_runtime.py)
 supports `--config` for matrix reports; its original `--experiment` interface is
-unchanged. The existing [evaluation summarizer](../../evaluation/summarize_constrained_evals.py)
+unchanged. The existing [evaluation summarizer](../../evaluation/audits/summarize_constrained_evals.py)
 supports `--matrix --results-dir ... --write`, which the matrix runner also calls
 automatically once all results validate. Regression tests live in
 [tests/test_constrained_matrix.py](../../tests/test_constrained_matrix.py).

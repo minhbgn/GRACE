@@ -1,0 +1,11 @@
+{
+  "model": "grace_w4",
+  "question_id": "635",
+  "native_tokenizer_model_max_length": 4096,
+  "actual_counts": {
+    "input_visual_tokens": 10752,
+    "input_text_tokens": 245,
+    "input_tokens": 10997
+  },
+  "passed": true
+}

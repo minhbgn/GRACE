@@ -4,8 +4,8 @@ set -euo pipefail
 
 EXPERIMENT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 GRACE_ROOT=$(cd -- "$EXPERIMENT_DIR/../.." && pwd)
-EVALUATOR="$GRACE_ROOT/evaluation/run_all_constrained_evals.sh"
-SUMMARIZER="$GRACE_ROOT/evaluation/summarize_constrained_evals.py"
+EVALUATOR="$GRACE_ROOT/evaluation/runners/run_all_constrained_evals.sh"
+SUMMARIZER="$GRACE_ROOT/evaluation/audits/summarize_constrained_evals.py"
 
 # Match constrained_32k_seed42: vanilla plus every final training export. Pin the
 # set here so a stale METHODS value in the calling shell cannot omit a model.

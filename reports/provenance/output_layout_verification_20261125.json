@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-25 Asia/Singapore",
+  "experiment": "qat_int4_token_reduction_576_seed42",
+  "raw_runs": "experiments/qat_int4_token_reduction_576_seed42/outputs",
+  "curated_reports": "experiments/qat_int4_token_reduction_576_seed42/reports",
+  "merged_results": "reports/merged_results.json",
+  "surface_markdown": [
+    "README.md",
+    "REPORT.md"
+  ],
+  "removed_surface_aliases": 11,
+  "removed_surface_markdown": 5,
+  "verification": {
+    "relocated_files_verified": 3220,
+    "matrix_metric_parity": "exact match for 120 full configurations; only artifact paths changed",
+    "timing_metric_parity": "exact match for 10 configurations; only artifact paths changed",
+    "selected_timing_questions": "same 50 questions and strata after fresh preparation",
+    "cpu_preflight": "all twelve suites passed",
+    "targeted_tests_run": 31,
+    "targeted_tests_passed": 31,
+    "raw_artifacts_gitignored": true,
+    "curated_reports_versionable": true,
+    "documentation_links": "passed",
+    "shell_syntax": "passed"
+  },
+  "gpu_inference_rerun": false,
+  "provenance": "evaluation/provenance/output_layout_20261125/",
+  "notes": [
+    "Original prediction, completion, protocol and report snapshot bytes were preserved.",
+    "Current source paths are updated; explicit source snapshots and old/current hashes preserve historical validation.",
+    "Historical root paths are resolved by artifact_layout.py; obsolete surface aliases are removed."
+  ]
+}

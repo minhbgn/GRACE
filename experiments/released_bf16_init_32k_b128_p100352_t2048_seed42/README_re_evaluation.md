@@ -3,7 +3,7 @@
 Use [run_re_evaluation.sh](run_re_evaluation.sh). It runs the recovered upstream
 **local** protocol on all seven suites, with checkpoint-native image settings,
 the authors' prompts/scorers and their per-suite token limits. There are no API
-judge calls. See the [protocol audit](../../evaluation/README_paper_protocol.md)
+judge calls. See the [protocol audit](../../evaluation/docs/README_paper_protocol.md)
 for the differences from the standardized harness and the remaining uncertainty
 about the paper's exact recipe.
 

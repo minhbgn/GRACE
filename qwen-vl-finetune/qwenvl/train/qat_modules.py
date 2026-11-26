@@ -213,11 +213,11 @@ class QuantizedLinear(nn.Module):
 class QATLoraLinear(QuantizedLinear):
     """QAT linear with a trainable low-rank residual over a frozen base.
 
-    Training evaluates ``fake_quant(base_weight) @ x + LoRA(x)``. This is
+    Training evaluates ``fake_quant(base_weight) @ x + LoRA(x)``.  This is
     the efficient QLoRA-style formulation: it avoids materializing a dense
-    ``base_weight + B @ A`` tensor on every forward. ``log_scale`` remains
+    ``base_weight + B @ A`` tensor on every forward.  ``log_scale`` remains
     trainable for these adapted layers, so the quantizer can follow the new
-    effective transformation. At export, :func:`merge_lora_weights_inplace`
+    effective transformation.  At export, :func:`merge_lora_weights_inplace`
     folds ``B @ A`` into the base weight before the usual QAT bake.
 
     Non-target linears use :class:`QuantizedLinear` with both their base
@@ -258,7 +258,7 @@ class QATLoraLinear(QuantizedLinear):
         nn.init.kaiming_uniform_(self.lora_A, a=math.sqrt(5))
 
         # LoRA changes the layer through A/B; the pretrained dense weight and
-        # bias never receive gradients. The layer's QAT scale is intentionally
+        # bias never receive gradients.  The layer's QAT scale is intentionally
         # trainable and is placed in its own optimizer group by the collector.
         self.weight.requires_grad_(False)
         if self.bias is not None:
@@ -463,6 +463,55 @@ def merge_lora_weights_inplace(
     The output-row chunks cap temporary memory during ``B @ A``. Adapter
     parameters are zeroed after merging, making the operation idempotent for
     the remainder of the process. Under ZeRO-3, parameters are gathered and
+    the rank-0 modification is redistributed on context exit.
+    """
+    if output_chunk_size <= 0:
+        raise ValueError("output_chunk_size must be positive")
+
+    def _merge(module: QATLoraLinear) -> None:
+        for start in range(0, module.out_features, output_chunk_size):
+            end = min(start + output_chunk_size, module.out_features)
+            delta = torch.matmul(module.lora_B[start:end], module.lora_A)
+            delta = delta.mul(module.lora_scaling).to(module.weight.dtype)
+            module.weight.data[start:end].add_(delta)
+        module.lora_A.zero_()
+        module.lora_B.zero_()
+
+    count = 0
+    if is_zero3:
+        import deepspeed
+        try:
+            rank = torch.distributed.get_rank()
+        except Exception:
+            rank = 0
+        for _, module in model.named_modules():
+            if not isinstance(module, QATLoraLinear):
+                continue
+            params = [module.weight, module.lora_A, module.lora_B]
+            with deepspeed.zero.GatheredParameters(params, modifier_rank=0):
+                if rank == 0:
+                    _merge(module)
+            count += 1
+    else:
+        for _, module in model.named_modules():
+            if not isinstance(module, QATLoraLinear):
+                continue
+            _merge(module)
+            count += 1
+    return count
+
+
+@torch.no_grad()
+def merge_lora_weights_inplace(
+    model: nn.Module,
+    is_zero3: bool = False,
+    output_chunk_size: int = 1024,
+) -> int:
+    """Fold every QAT-LoRA residual into its frozen dense base weight.
+
+    The output-row chunks cap temporary memory during ``B @ A``.  Adapter
+    parameters are zeroed after merging, making the operation idempotent for
+    the remainder of the process.  Under ZeRO-3, parameters are gathered and
     the rank-0 modification is redistributed on context exit.
     """
     if output_chunk_size <= 0:

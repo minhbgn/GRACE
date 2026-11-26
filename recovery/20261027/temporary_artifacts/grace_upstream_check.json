@@ -1,0 +1,150 @@
+{
+  "source_commit": "b73fa9b4d427aa64ed3ad274def641efb3145877",
+  "processors": {
+    "vanilla_2b": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 16777216,
+        "shortest_edge": 65536,
+        "max_height": null,
+        "max_width": null
+      },
+      "generation_config": {
+        "bos_token_id": 151643,
+        "pad_token_id": 151643,
+        "do_sample": true,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "top_p": 0.8,
+        "top_k": 20,
+        "temperature": 0.7,
+        "repetition_penalty": 1.0,
+        "transformers_version": "4.56.0"
+      }
+    },
+    "vanilla_8b_teacher": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 16777216,
+        "shortest_edge": 65536,
+        "max_height": null,
+        "max_width": null
+      },
+      "generation_config": {
+        "bos_token_id": 151643,
+        "pad_token_id": 151643,
+        "do_sample": true,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "top_k": 20,
+        "top_p": 0.8,
+        "repetition_penalty": 1.0,
+        "temperature": 0.7,
+        "transformers_version": "4.56.0"
+      }
+    },
+    "released_bf16": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 16777216,
+        "shortest_edge": 65536,
+        "max_height": null,
+        "max_width": null
+      },
+      "generation_config": {
+        "do_sample": true,
+        "eos_token_id": [
+          151645,
+          151645,
+          151643
+        ],
+        "pad_token_id": 151643,
+        "repetition_penalty": 1.0,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8,
+        "transformers_version": "5.9.0"
+      }
+    },
+    "released_grace_w4": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 200704,
+        "shortest_edge": 784,
+        "max_height": null,
+        "max_width": null
+      },
+      "generation_config": {
+        "do_sample": true,
+        "eos_token_id": [
+          151645,
+          151645,
+          151643
+        ],
+        "pad_token_id": 151643,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8,
+        "transformers_version": "4.57.0"
+      }
+    },
+    "released_grace_w8": {
+      "image_size": {
+        "height": null,
+        "width": null,
+        "longest_edge": 50176,
+        "shortest_edge": 784,
+        "max_height": null,
+        "max_width": null
+      },
+      "generation_config": {
+        "do_sample": true,
+        "eos_token_id": [
+          151645,
+          151645,
+          151643
+        ],
+        "pad_token_id": 151643,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8,
+        "transformers_version": "4.57.0"
+      }
+    }
+  },
+  "suites": [
+    "hallusionbench",
+    "mmbench",
+    "scienceqa",
+    "ai2d",
+    "mmmu",
+    "seedbench_img",
+    "mmstar"
+  ],
+  "environment": {
+    "python": "3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:27:40) [GCC 11.3.0]",
+    "packages": {
+      "lmms-eval": "0.7.1",
+      "torch": "2.5.1+cu121",
+      "transformers": "5.9.0",
+      "datasets": "4.8.5",
+      "accelerate": "1.13.0",
+      "qwen-vl-utils": "0.0.14",
+      "decord": "0.6.0",
+      "numpy": "2.4.4",
+      "Pillow": "12.2.0",
+      "huggingface-hub": "1.15.0",
+      "evaluate": "0.4.6",
+      "requests": "2.34.2",
+      "filelock": "3.29.0"
+    }
+  }
+}

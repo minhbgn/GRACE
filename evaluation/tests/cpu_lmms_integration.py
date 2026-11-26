@@ -1,8 +1,14 @@
 """Run explicitly with .venv-lmms-eval; uses synthetic data and no GPU/judge."""
+# Support both direct script execution and `python -m evaluation.<group>.<module>`.
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from run_lmms_matrix import source_check, task_config, validate_result
+if __package__ in (None, ''):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from evaluation.paths import EVALUATION_ROOT, source_file
+
+import sys
+from pathlib import Path
+from evaluation.runners.run_lmms_matrix import source_check, task_config, validate_result
 source_check()
 from unittest.mock import patch
 from types import SimpleNamespace

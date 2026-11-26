@@ -89,12 +89,11 @@ class GraceStepProfiler:
     def _event() -> torch.cuda.Event:
         return torch.cuda.Event(enable_timing=True)
 
-    def install_model_hooks(self, student, teacher=None) -> None:
+    def install_model_hooks(self, student, teacher) -> None:
         if not self.enabled:
             return
         self._install_pair(student, "student")
-        if teacher is not None:
-            self._install_pair(teacher, "teacher")
+        self._install_pair(teacher, "teacher")
 
     def _install_pair(self, wrapper, prefix: str) -> None:
         backbone = getattr(wrapper, "model", None)

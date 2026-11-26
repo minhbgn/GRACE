@@ -1,12 +1,18 @@
 """Exercise both real task-loading passes, MC/open prompts and scoring without credentials."""
+# Support both direct script execution and `python -m evaluation.<group>.<module>`.
+import sys
+from pathlib import Path
+if __package__ in (None, ''):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from evaluation.paths import EVALUATION_ROOT, source_file
+
 import os
 from pathlib import Path
 import sys
 from types import SimpleNamespace
 from unittest.mock import patch
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from run_lmms_matrix import local_mmmu_judge_guard, source_check, task_config, validate_result
+from evaluation.runners.run_lmms_matrix import local_mmmu_judge_guard, source_check, task_config, validate_result
 source_check()
 import datasets
 from lmms_eval import evaluator

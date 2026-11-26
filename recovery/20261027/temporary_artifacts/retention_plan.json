@@ -1,0 +1,92 @@
+{
+  "jobs": 360,
+  "models": {
+    "qat_w4": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat",
+    "vanilla_2b": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-Instruct",
+    "released_bf16": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/models/Qwen3-VL-2B-GRACE-BF16"
+  },
+  "suites": [
+    "hallusionbench",
+    "mmbench",
+    "scienceqa",
+    "ai2d",
+    "mmmu",
+    "seedbench_img",
+    "mmstar",
+    "tempcompass",
+    "videomme",
+    "videommmu_perception",
+    "videommmu_comprehension",
+    "videommmu_adaptation"
+  ],
+  "configurations": [
+    [
+      "baseline",
+      1.0
+    ],
+    [
+      "resolution",
+      0.5
+    ],
+    [
+      "resolution",
+      0.25
+    ],
+    [
+      "resolution",
+      0.1
+    ],
+    [
+      "uniform",
+      0.5
+    ],
+    [
+      "uniform",
+      0.25
+    ],
+    [
+      "uniform",
+      0.1
+    ],
+    [
+      "merge",
+      0.5
+    ],
+    [
+      "merge",
+      0.25
+    ],
+    [
+      "merge",
+      0.1
+    ]
+  ],
+  "policy": {
+    "retentions": [
+      1.0,
+      0.5,
+      0.25,
+      0.1
+    ],
+    "methods": [
+      "resolution",
+      "uniform",
+      "merge"
+    ],
+    "image_max_pixels": 589824,
+    "image_min_pixels": 4096,
+    "video_max_pixels_per_frame": 589824,
+    "video_fps": 2,
+    "max_new_tokens": 256,
+    "seed": 42,
+    "video_population": "VideoMME short + medium; TempCompass MC; Video-MMMU three splits",
+    "merge_method": "deterministic contiguous spatial bin mean, within each image or temporal patch group",
+    "baseline": "one shared 100% job per model/suite; methods identical at retention=1",
+    "profile_tokens": 32,
+    "profile_samples": 3,
+    "profile_warmup": 1,
+    "profile_repeats": 3,
+    "attention": "flash_attention_2"
+  },
+  "output": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/qat_int4_token_reduction_576_seed42/results/full"
+}

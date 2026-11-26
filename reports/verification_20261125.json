@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-25 Asia/Singapore",
+  "gpu_inference_rerun": false,
+  "artifact_audit": {
+    "verified_full_configurations": 120,
+    "scored_inferences": 337000,
+    "timing_configurations": 10,
+    "historical_report_only_rows": 215,
+    "source_reports": 39,
+    "source_hash_checks": 37,
+    "relocated_files": 3220
+  },
+  "parity": {
+    "matrix_all_preexisting_fields": "exact_match",
+    "timing_all_rows": "exact_match",
+    "reference": "results/qat_int4_token_reduction_576_seed42/evidence/reports/"
+  },
+  "preflight": {
+    "token_reduction_all_twelve_suites": "passed",
+    "controls_images_all_four_exports": "passed",
+    "timing_subset_prepare": "passed; all 50 selected questions and full manifest exactly match the completed timing sweep"
+  },
+  "tests": {
+    "targeted": {
+      "run": 27,
+      "passed": 27,
+      "command": "/home/air/miniconda3/envs/grace/bin/python -m unittest evaluation.tests.test_evaluation_workflow evaluation.tests.test_token_reduction evaluation.tests.test_matched_video_evaluation evaluation.tests.test_video_timing_subset <five applicable layout checks> -v"
+    },
+    "broader": {
+      "run": 165,
+      "passed": 155,
+      "skipped": 1,
+      "errors": 9,
+      "error_cause": "Pre-existing missing evaluation/provenance/upstream_20260925/manifest.json; legacy replay/layout/acceptance checks only",
+      "command": "/home/air/miniconda3/envs/grace/bin/python -m unittest discover -s evaluation/tests -v"
+    }
+  },
+  "documentation_links": "passed",
+  "shell_syntax": "passed",
+  "notes": [
+    "No numerical evaluator source, checkpoint, prediction, COMPLETE marker, or protocol was rewritten.",
+    "Historical scores remain report_only where raw artifacts are absent.",
+    "Fresh run comparison enforces matching full population/policy/execution before applying configurable score tolerance."
+  ]
+}

@@ -123,3 +123,4 @@ torchrun --standalone --nproc_per_node="${NPROC_PER_NODE}" \
     --qat_group_size "${QAT_GROUP_SIZE}" \
     --qat_scale_lr "${QAT_SCALE_LR}" \
     --qat_save_quantized True
+

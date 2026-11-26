@@ -1,4 +1,11 @@
 """Stage two must not launch on missing, tampered or out-of-tolerance references."""
+# Support both direct script execution and `python -m evaluation.<group>.<module>`.
+import sys
+from pathlib import Path
+if __package__ in (None, ''):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from evaluation.paths import EVALUATION_ROOT, source_file
+
 import json
 from pathlib import Path
 import sys
@@ -6,12 +13,11 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from check_re_evaluation_gate import REFERENCES, check_gate
-from paper_acceptance import ORDER, PAPER
-from run_lmms_matrix import sha, write
-from run_upstream_matrix import EXPECTED, SUITES, TOKENS, source_check, validate
-from summarize_constrained_evals import ID_FIELDS
+from evaluation.audits.check_re_evaluation_gate import REFERENCES, check_gate
+from evaluation.protocols.paper_acceptance import ORDER, PAPER
+from evaluation.runners.run_lmms_matrix import sha, write
+from evaluation.runners.run_upstream_matrix import EXPECTED, SUITES, TOKENS, source_check, validate
+from evaluation.audits.summarize_constrained_evals import ID_FIELDS
 
 
 class GateTests(unittest.TestCase):

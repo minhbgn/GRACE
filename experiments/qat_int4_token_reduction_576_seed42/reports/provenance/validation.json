@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-26",
+  "status": "cpu_validated_gpu_validation_pending",
+  "matrix_jobs": 360,
+  "image_jobs": 210,
+  "video_jobs": 150,
+  "source_population_counts": {
+    "hallusionbench": 1129,
+    "mmbench": 4329,
+    "scienceqa": 4241,
+    "ai2d": 3088,
+    "mmmu": 900,
+    "seedbench_img": 14233,
+    "mmstar": 1500,
+    "tempcompass": 1580,
+    "videomme": 1800,
+    "videommmu_perception": 300,
+    "videommmu_comprehension": 300,
+    "videommmu_adaptation": 300
+  },
+  "cpu_check": "CPU checks passed; fused CUDA execution still requires GPU smoke",
+  "focused_tests": {
+    "passed": 8,
+    "log_summary": "Packing integer-code equality and cache reuse; actual processor budget; image/video 100% Hugging Face generation equivalence; compact KV cache; text/DeepStack alignment; merging/budgets."
+  },
+  "existing_lmms_tests": {
+    "passed": 11
+  },
+  "offline_kernel_compilation": {
+    "target": "A100 SM80",
+    "passed": true,
+    "ptx_bytes": 69389,
+    "cuda_execution_tested": false
+  },
+  "syntax_checks": "Python compile and all three bash launchers passed",
+  "gpu_numerical_check": "not run; all compute GPUs occupied",
+  "full_checkpoint_int4_conversion": "not run; conversion/equality checks and cache creation occur on first QAT run",
+  "full_checkpoint_smoke_inference": "not run",
+  "benchmark_results": "not run; no accuracy, memory saving, or speedup claimed",
+  "runtime_safeguards": [
+    "Numerical CUDA packed-kernel gate before QAT jobs",
+    "Integer-code equality on conversion",
+    "Strict fused W4A16 execution without dense fallback",
+    "Source/policy/model/sidecar pins",
+    "Question coverage and telemetry checks",
+    "Exclusive output and GPU locks",
+    "Occupied-GPU rejection"
+  ],
+  "recovery": {
+    "date": "2026-10-27",
+    "note": "Recreated from a recorded generator. Historical validation claims below describe the original session, not successful restoration of checkpoints or datasets. Hashes were recomputed from reconstructed sources."
+  },
+  "reconstructed_code_sha256": {
+    "evaluation/runners/run_token_reduction_matrix.py": "83e1f176a88d1f3a838eaccde7db90368e539051480926b8fa9c4acaa4001b56",
+    "evaluation/protocols/token_reduction_runtime.py": "a41f26b02f86136a02f40b9574649e8eff14f2590962b770b6bbd5c0ac506958",
+    "evaluation/protocols/int4_gemm.py": "03ccf59666d649496063a7bce11eb817d10ab09ef156fbc64f1376a40f7feb86",
+    "evaluation/tests/test_token_reduction.py": "0fe1adc8dda49ab228b49a0aa8557632a0a1b96129072db368fc840ada1d0e45",
+    "evaluation/tests/check_int4_kernel.py": "97ea489436b35dd144eb8bba1759be2a25fa941802918ea177ac8b08da3bbf2c",
+    "experiments/qat_int4_token_reduction_576_seed42/experiment.json": "3cab5d76b7e82a35b24bc98c654fa33637b47f3c228b8a3a75a555e053a325aa",
+    "experiments/qat_int4_token_reduction_576_seed42/run_experiment.sh": "947d1e7719a73e5bdc143bf1338a65f9e4889536f88600d6af8b250e173dac62",
+    "experiments/qat_int4_token_reduction_576_seed42/run_images.sh": "7dd0f20a3fcfe82bf7cf3fb6c3ad6c4c3877052676eec330d0933c6b55c0da42",
+    "experiments/qat_int4_token_reduction_576_seed42/run_videos.sh": "191087996c4a35df49a29a901ab456ab3ea3aec3978d02ab6bcafdac7731c7a3"
+  },
+  "follow_up_2026_11_01": {
+    "status": "two_gpu_scheduler_cpu_validated_full_checkpoint_cuda_pending",
+    "qat_training": {
+      "complete": true,
+      "global_step": 256,
+      "checkpoint_and_sidecar_present": true
+    },
+    "released_bf16_checkpoint_present": true,
+    "vanilla_2b_checkpoint_present": false,
+    "evaluation_venv_present": false,
+    "tested_python": "/home/air/miniconda3/envs/grace/bin/python",
+    "current_cpu_check": {
+      "models": [
+        "qat_w4",
+        "released_bf16"
+      ],
+      "suites": 12,
+      "passed": true
+    },
+    "full_three_model_check": "blocked: models/Qwen3-VL-2B-Instruct/config.json missing",
+    "scheduler_tests": {
+      "passed": 3,
+      "command": "python3 -m unittest discover -s reproduction/GRACE/evaluation/tests -p test_gpu_job_queue.py -v"
+    },
+    "plan": {
+      "jobs": 360,
+      "default_gpus": [
+        "0",
+        "1"
+      ],
+      "passed": true
+    },
+    "gpu_observation": {
+      "0": "workspace poll_gpu_hold.py reservation; PID 1697111, also on GPU 2",
+      "1": "Raymond CARLA; PID 1232144; cwd /home/raymond/vbev-reproduction-20261031/carla/CarlaUE4/Binaries/Linux"
+    },
+    "gpu_jobs_launched": false,
+    "processes_stopped": false,
+    "benchmark_results": "No results directory; CUDA gate and full-checkpoint smoke pending",
+    "code_sha256": {
+      "evaluation/runners/run_token_reduction_matrix.py": "bc1e8ec34bf67f970a39b3b42b3488db4d1a612859f14bf9df696b8696a45da6",
+      "evaluation/protocols/gpu_job_queue.py": "de3fe780d738b0b43ce221e3fc6814504daefb4a8812bb38c6cde114f92636b5",
+      "evaluation/tests/test_gpu_job_queue.py": "c6eb76a196f18516cbb50f707a87fd9d17bd0bc519c66bac3328f2b974bf4bec"
+    }
+  },
+  "reservation_and_parser_follow_up_2026_11_01": {
+    "status": "two_model_ai2d_gpu_smoke_passed_full_matrix_pending",
+    "image_parsers": {
+      "scripts": 7,
+      "all_help_checks_passed": true,
+      "repair": "Removed duplicated processor/protocol arguments and duplicate protocol application/metadata/imports"
+    },
+    "scheduler_and_reservation_cpu_tests": {
+      "passed": 7
+    },
+    "selected_gpus": [
+      "0",
+      "2"
+    ],
+    "reservation_default": true,
+    "cuda_kernel_numerical_checks": {
+      "0": {
+        "passed": true,
+        "max_abs_error": 0.0078125
+      },
+      "2": {
+        "passed": true,
+        "max_abs_error": 0.0078125
+      }
+    },
+    "smoke_output": "results_reserved_gpu02/smoke_1",
+    "smoke": {
+      "qat_w4": {
+        "gpu": "0",
+        "questions": 1,
+        "status": "complete",
+        "fused_int4_calls": 392
+      },
+      "released_bf16": {
+        "gpu": "2",
+        "questions": 1,
+        "status": "complete"
+      }
+    },
+    "all_pinned_sources_match": true,
+    "reservations_released_verified": true,
+    "foreign_processes_stopped": false,
+    "limitations": "One AI2D baseline question per model only; no full accuracy, reduction or speedup study. VRAM reservations are best effort, not scheduler exclusivity."
+  }
+}

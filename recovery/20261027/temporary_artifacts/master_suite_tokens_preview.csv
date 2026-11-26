@@ -1,0 +1,14 @@
+suite,label,modality,questions,mean_visual_input_tokens,mean_text_input_tokens,reference_model,measurement
+scienceqa,ScienceQA,image,4241,76.39353925960859,79.5343079462391,qat_w4,whole-population CPU reconstruction; visual counts from the validated processor cache
+ai2d,AI2D,image,3088,272.78821243523316,53.295336787564764,qat_w4,whole-population CPU reconstruction; visual counts from the validated processor cache
+mmmu,MMMU,image,900,278.64,107.39666666666666,qat_w4,whole-population CPU reconstruction; visual counts from the validated processor cache
+mmstar,MMStar,image,1500,190.128,77.406,qat_w4,whole-population CPU reconstruction; visual counts from the validated processor cache
+seedbench_img,SEEDBench image,image,14233,546.0775662193494,55.01271692545493,qat_w4,whole-population CPU reconstruction; visual counts from the validated processor cache
+hallusionbench,HallusionBench,image,1129,336.72187776793623,41.483613817537645,qat_w4,whole-population CPU reconstruction; visual counts from the validated processor cache
+mmbench,MMBench,image,4329,150.86856086856088,75.05775005775006,qat_w4,whole-population CPU reconstruction; visual counts from the validated processor cache
+tempcompass,TempCompass,video,1580,489.11898734177214,153.13101265822786,vanilla_2b,whole-population saved reference; projection to models using the same input policy
+videomme_short,VideoMME short,video,900,2606.4,781.7633333333333,vanilla_2b,whole-population saved reference; projection to models using the same input policy
+videomme_medium,VideoMME medium,video,900,16656.106666666667,5128.577777777778,vanilla_2b,whole-population saved reference; projection to models using the same input policy
+videommmu_perception,Video-MMMU Perception,video,300,16939.893333333333,5186.776666666667,vanilla_2b,whole-population saved reference; projection to models using the same input policy
+videommmu_comprehension,Video-MMMU Comprehension,video,300,16939.893333333333,5190.003333333333,vanilla_2b,whole-population saved reference; projection to models using the same input policy
+videommmu_adaptation,Video-MMMU Adaptation,video,300,16939.893333333333,5162.193333333334,vanilla_2b,whole-population saved reference; projection to models using the same input policy

@@ -11,12 +11,18 @@ shard; rank 0 merges and prints metrics at the end.
 
 from __future__ import annotations
 
+# Support both direct script execution and `python -m evaluation.<group>.<module>`.
+import sys
+from pathlib import Path
+if __package__ in (None, ''):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from evaluation.paths import EVALUATION_ROOT, source_file
+
 import argparse
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from matched_protocol import add_protocol_arguments, apply_protocol, protocol_metadata
-from local_scoring import finalize_rows, generation_record, prepare_row
+from evaluation.protocols.matched_protocol import add_protocol_arguments, apply_protocol, protocol_metadata
+from evaluation.protocols.local_scoring import finalize_rows, generation_record, prepare_row
 import json
 import os
 import time

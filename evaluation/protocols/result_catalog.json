@@ -1,0 +1,608 @@
+{
+  "date": "2026-11-25",
+  "experiment": "qat_int4_token_reduction_576_seed42",
+  "schema": 1,
+  "selection_policy": "Explicit completed-report precedence; no timestamp discovery",
+  "selections": {
+    "ai2d/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/ai2d/baseline_r100",
+      "marker_sha256": "1c4d1d11e883138e3f431821fc8fe4939f4d2807a52d429e01d562cf368c72e5",
+      "origin": "original"
+    },
+    "ai2d/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/ai2d/merge_r010",
+      "marker_sha256": "639ee6566d4bf35ee1aa245ed9b841e9c17aee19840e31569a2a65e130d70a21",
+      "origin": "original"
+    },
+    "ai2d/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/ai2d/merge_r025",
+      "marker_sha256": "8ad16ecfe25f64cbf3084d43e561b13ab31571287d2d01c9062239aff12ddea8",
+      "origin": "original"
+    },
+    "ai2d/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/ai2d/merge_r050",
+      "marker_sha256": "14499f7f6fdeebcbdda8906badada12d58754fb4c22e14ec1b0700f488db1eed",
+      "origin": "original"
+    },
+    "ai2d/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/ai2d/resolution_r010",
+      "marker_sha256": "981af10d73c14b3a8562c532983d5f25d61f3f21ecf984459f6c3f1b15a69fd8",
+      "origin": "original"
+    },
+    "ai2d/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/ai2d/resolution_r025",
+      "marker_sha256": "4d6e9579b5a1b4dba50610fd13696ef6f83d367ee91c36df31d5cbe78baf511c",
+      "origin": "original"
+    },
+    "ai2d/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/ai2d/resolution_r050",
+      "marker_sha256": "62f529820057e6c7081aeaf43af793c068fad52b6ec72eab816a51e5dd5693d9",
+      "origin": "original"
+    },
+    "ai2d/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/ai2d/uniform_r010",
+      "marker_sha256": "ae041adee51e37d5ef3728d9a35037f2658cdbc1cebae748e92f0082ca3590f7",
+      "origin": "original"
+    },
+    "ai2d/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/ai2d/uniform_r025",
+      "marker_sha256": "47adbde817d6de2e1a9236d6294d6021ca84f0705929506f9ea729c8abcfdf49",
+      "origin": "original"
+    },
+    "ai2d/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/ai2d/uniform_r050",
+      "marker_sha256": "57c2056b6a29b0bb1a86119910e425c827d89b1f1221683fc7f171f9100164aa",
+      "origin": "original"
+    },
+    "hallusionbench/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/hallusionbench/baseline_r100",
+      "marker_sha256": "9cdd9e6ddc056c72f66d4d9dcc3fa939c1d4f2f69b518d3f4fbf6c21d37d8719",
+      "origin": "original"
+    },
+    "hallusionbench/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/hallusionbench/merge_r010",
+      "marker_sha256": "86fa1938f02a774c64dfa77c070eac368405df33e869ed75338545481101370f",
+      "origin": "original"
+    },
+    "hallusionbench/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/hallusionbench/merge_r025",
+      "marker_sha256": "c3ee73de3eef3f02d683de0390abe5dcd8f3bd74829a57bbdecf3e3fff35b5a6",
+      "origin": "original"
+    },
+    "hallusionbench/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/hallusionbench/merge_r050",
+      "marker_sha256": "b9d5d50a542a3c17a818cee6fd40fdd89720bf6ca8a653ba2664d02082b5bec5",
+      "origin": "original"
+    },
+    "hallusionbench/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/hallusionbench/resolution_r010",
+      "marker_sha256": "73a5665acbf580ce6719d3923792896c6933719a4367ea3a9600c73adb76a008",
+      "origin": "original"
+    },
+    "hallusionbench/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/hallusionbench/resolution_r025",
+      "marker_sha256": "e0050a30007eb7dcd4644d1288849f55bb2d3be5215e9936c35a035ad09054d1",
+      "origin": "original"
+    },
+    "hallusionbench/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/hallusionbench/resolution_r050",
+      "marker_sha256": "1b96b6566a55cd5bf79fec5a0eae721e3a425489041f04a1bb33b2b3ceea96d7",
+      "origin": "original"
+    },
+    "hallusionbench/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/hallusionbench/uniform_r010",
+      "marker_sha256": "dd58baa28d90a4a23d16346e8b04e62e681d3c23a43d15dd0e0e1f3ea475a31e",
+      "origin": "original"
+    },
+    "hallusionbench/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/hallusionbench/uniform_r025",
+      "marker_sha256": "428c7dce1dd04e26b841eaceb831b9d9808969be21e6f6542ad1044298458db9",
+      "origin": "original"
+    },
+    "hallusionbench/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/hallusionbench/uniform_r050",
+      "marker_sha256": "a26cfbe57dd6d13a84c0d0b928bb231e2bb877a80cc3fa070e98cedfe8cd9b91",
+      "origin": "original"
+    },
+    "mmbench/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmbench/baseline_r100",
+      "marker_sha256": "d7f8eb444ca18f2f04a7a37cb7bb0757d30b111d482816d7d4e4128014e71a8a",
+      "origin": "original"
+    },
+    "mmbench/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmbench/merge_r010",
+      "marker_sha256": "0003fcaa3600c2b6c4bbb513d6a185aac188277a7881a34d37e61fa2741a503a",
+      "origin": "original"
+    },
+    "mmbench/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmbench/merge_r025",
+      "marker_sha256": "9dea750b33108371d988560b8b8c97ff4bfe0e37e9d13a4584be892872c265c4",
+      "origin": "original"
+    },
+    "mmbench/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmbench/merge_r050",
+      "marker_sha256": "f5800b5785d0642fa0ef7d7432dd5b6d506c98e2a790bb88e4e47e2393cffdd2",
+      "origin": "original"
+    },
+    "mmbench/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmbench/resolution_r010",
+      "marker_sha256": "f90eca29fff4b69e615f6a83bee24eb2d9277b22788d0514a01e2e6fc3688016",
+      "origin": "original"
+    },
+    "mmbench/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmbench/resolution_r025",
+      "marker_sha256": "17cbe7349d564988caea57353cb0daf64cfad275d42278467a4c5e8190477801",
+      "origin": "original"
+    },
+    "mmbench/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmbench/resolution_r050",
+      "marker_sha256": "1c69ce1e1f5a40e2e0919ccc707131efe26c17cac958ea2cb4fd1faf71687cc5",
+      "origin": "original"
+    },
+    "mmbench/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmbench/uniform_r010",
+      "marker_sha256": "30575d59fa1349d0d4f61a30c4fb244102bcd1f81c5a64a1740b85f2214b946f",
+      "origin": "original"
+    },
+    "mmbench/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmbench/uniform_r025",
+      "marker_sha256": "33a47420de300d04db26997c6c3c0a5b23c1001530799e47dbab0a16b3e08ef6",
+      "origin": "original"
+    },
+    "mmbench/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmbench/uniform_r050",
+      "marker_sha256": "3f9b00e0bcee364a17c21dbbd36f4343f16a2fb54890eab13173a1cb16f782a9",
+      "origin": "original"
+    },
+    "mmmu/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmmu/baseline_r100",
+      "marker_sha256": "1a85967aaa3c43ed444b46fb62942caf9f99b6ed9903f003caf38da8ec2409c9",
+      "origin": "original"
+    },
+    "mmmu/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmmu/merge_r010",
+      "marker_sha256": "d55e54047ce6be203fa58da6614885fdfe3c63cb3c8c9a9994de96503a325cb7",
+      "origin": "original"
+    },
+    "mmmu/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmmu/merge_r025",
+      "marker_sha256": "36a75a26fb7a8f6ddc67b80813b3802958608395b36653f9b8d8ac6eb76c9930",
+      "origin": "original"
+    },
+    "mmmu/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmmu/merge_r050",
+      "marker_sha256": "1dd8313e8e0aed6505fdc3562b675ea1d55d318649852aa8d2f1f3bd972d387f",
+      "origin": "original"
+    },
+    "mmmu/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmmu/resolution_r010",
+      "marker_sha256": "63797205ed10c5b08f0c4019adad10c5854918bc524a06c8665319eb6e85201b",
+      "origin": "original"
+    },
+    "mmmu/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmmu/resolution_r025",
+      "marker_sha256": "acd2a9173979b2d14a679e3f270155945d16e038530776d61fe58f7c363f1509",
+      "origin": "original"
+    },
+    "mmmu/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmmu/resolution_r050",
+      "marker_sha256": "ed8624a3cb3fae9dc15052451e8508208ac47900f6349dc33ff008030c313222",
+      "origin": "original"
+    },
+    "mmmu/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmmu/uniform_r010",
+      "marker_sha256": "23598b0bac23f17a20864cc14c778162844b1004534f8309708ae20b169e2062",
+      "origin": "original"
+    },
+    "mmmu/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmmu/uniform_r025",
+      "marker_sha256": "241235649e8d5b8fd5b89cf6424fe604b943947825d8906d06dbb51865e6b9b3",
+      "origin": "original"
+    },
+    "mmmu/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmmu/uniform_r050",
+      "marker_sha256": "d8a712d2ce9efe2f7597984a7e8c3bbe6e6f8362d81d99a9293c756b0ae09ddc",
+      "origin": "original"
+    },
+    "mmstar/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmstar/baseline_r100",
+      "marker_sha256": "d5182f3a500244322d45d187fa4098a113442d9bacfa11193727535a11a3ec08",
+      "origin": "original"
+    },
+    "mmstar/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmstar/merge_r010",
+      "marker_sha256": "d4f68cd41cbc5f942ead67d87e2056463d425d79f34f2ec55bab32f1817e1bdd",
+      "origin": "original"
+    },
+    "mmstar/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmstar/merge_r025",
+      "marker_sha256": "b4483c4e5a5031c3de84cf1709ea97a4d55380f64b43d9b89bd386a89418ed4e",
+      "origin": "original"
+    },
+    "mmstar/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmstar/merge_r050",
+      "marker_sha256": "f008802fd4327d196dc90b11117652cc747053dde23770b3784cb4879fba16ec",
+      "origin": "original"
+    },
+    "mmstar/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmstar/resolution_r010",
+      "marker_sha256": "bdc85838743469e9662e7b5751e324a1363e028a3688758cdd4838a2ecf4d7b2",
+      "origin": "original"
+    },
+    "mmstar/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmstar/resolution_r025",
+      "marker_sha256": "690527dafc64ecdc49e91080c6024f9a5990971269f55467e013fa9e26c309ae",
+      "origin": "original"
+    },
+    "mmstar/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmstar/resolution_r050",
+      "marker_sha256": "26320654d8460437a6bb6b24aa5b2601850fdd64e118f4cf152d9da6706952e0",
+      "origin": "original"
+    },
+    "mmstar/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmstar/uniform_r010",
+      "marker_sha256": "dcbfe83fc27857b66f116cdefabf7acea5d0155181e9c5b10961026f08c56e87",
+      "origin": "original"
+    },
+    "mmstar/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmstar/uniform_r025",
+      "marker_sha256": "13765a9a7844d5d653ea956334990e5692a0c73be1451ca2729199c1f4924e25",
+      "origin": "original"
+    },
+    "mmstar/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/mmstar/uniform_r050",
+      "marker_sha256": "d840c7d39d00f618c4fe15c53f1eeb343c95d7c5f247dd8759aed5cd2c10b706",
+      "origin": "original"
+    },
+    "scienceqa/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/scienceqa/baseline_r100",
+      "marker_sha256": "8ea3da401d85b51092f4350456e7f7126b84b90c88759d153828a90a179fef2b",
+      "origin": "original"
+    },
+    "scienceqa/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/scienceqa/merge_r010",
+      "marker_sha256": "2cfe9618d091f73d7e6877277d0eea6185864bc5d258f9253bd7c23233c00fd9",
+      "origin": "original"
+    },
+    "scienceqa/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/scienceqa/merge_r025",
+      "marker_sha256": "b9db3d1fe18a2e1df6064e70897b424f525916c7dbefc8f54e0d5a115533ef32",
+      "origin": "original"
+    },
+    "scienceqa/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/scienceqa/merge_r050",
+      "marker_sha256": "1b9785d6767f987a4ac567dd1848baf6c73cd849d5504f9d49c00bddaf48c9cc",
+      "origin": "original"
+    },
+    "scienceqa/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/scienceqa/resolution_r010",
+      "marker_sha256": "78323a650d13097fbcc003fdcabb2b1a64719ddd763c0fa4058065d42f8dec97",
+      "origin": "original"
+    },
+    "scienceqa/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/scienceqa/resolution_r025",
+      "marker_sha256": "d5ccd8a204612cfa9965ff5bc69b5c753bc03d5720f4206e856127f61d3e03ac",
+      "origin": "original"
+    },
+    "scienceqa/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/scienceqa/resolution_r050",
+      "marker_sha256": "8b6e43909c5f86b6f3080db877e83059f862e07d5cefda0a6d7dcc783c7f9003",
+      "origin": "original"
+    },
+    "scienceqa/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/scienceqa/uniform_r010",
+      "marker_sha256": "1e7d32151604d238406896c98614238fa3e859f3d6dc82f38667ad048d6c0046",
+      "origin": "original"
+    },
+    "scienceqa/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/scienceqa/uniform_r025",
+      "marker_sha256": "59822254972d6b01731656218d787d999d8769711e59f1c957647beb62bc9ebc",
+      "origin": "original"
+    },
+    "scienceqa/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/scienceqa/uniform_r050",
+      "marker_sha256": "9e6819074cfa99397d371fac521ad473a51b5e65cbafcb973a933b1413ab3d35",
+      "origin": "original"
+    },
+    "seedbench_img/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/seedbench_img/baseline_r100",
+      "marker_sha256": "100f30d5f846039af2df67746db8226657d7d428b3dd13abb4e01215adad333d",
+      "origin": "original"
+    },
+    "seedbench_img/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/seedbench_img/merge_r010",
+      "marker_sha256": "11443dd1a84e577b7772a134974e9e4ffa31cbd2370d2b70eb88d03a71975709",
+      "origin": "original"
+    },
+    "seedbench_img/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/seedbench_img/merge_r025",
+      "marker_sha256": "7c30fb455679f19e282e05ddf467c95e5b8003fdd8f7e8e817a215bef289a01f",
+      "origin": "original"
+    },
+    "seedbench_img/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/seedbench_img/merge_r050",
+      "marker_sha256": "1fa5088c37d3094d775afac89098b1665c5b7eaa8a9d4c9ba9b6b9c3930ff905",
+      "origin": "original"
+    },
+    "seedbench_img/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/seedbench_img/resolution_r010",
+      "marker_sha256": "b867d92f93382220a5d87706fc87cef68c711f1961109d31206fc75cccfa19c6",
+      "origin": "original"
+    },
+    "seedbench_img/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/seedbench_img/resolution_r025",
+      "marker_sha256": "81beece7347c2a190a4f5332351227ddbaa561454bbf8116bbb0948f2ed0e6ef",
+      "origin": "original"
+    },
+    "seedbench_img/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/seedbench_img/resolution_r050",
+      "marker_sha256": "0e3bc57a40e0ebbbaf4861d36f74627eb6c6ca72e30fc3e19be7c7ebca0f2132",
+      "origin": "original"
+    },
+    "seedbench_img/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/seedbench_img/uniform_r010",
+      "marker_sha256": "56d5f4877c2ee9fc9301332bc3b982b2737a7d6430b6863d61929c7128746e02",
+      "origin": "original"
+    },
+    "seedbench_img/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/seedbench_img/uniform_r025",
+      "marker_sha256": "995f293c7df1061f3cd95ceccf8efe8888874ca6c4f96243451cfe652c2062d1",
+      "origin": "original"
+    },
+    "seedbench_img/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/seedbench_img/uniform_r050",
+      "marker_sha256": "4d0ed2659099441601d30152e2f4b807d61be5ab5b7967886c04d5405e20f47d",
+      "origin": "original"
+    },
+    "tempcompass/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/tempcompass/baseline_r100",
+      "marker_sha256": "adfb752cfe3bfeef4c57eb375dfde5bf4459cd1dbee3dc7bb8310badb7251b0a",
+      "origin": "recovery"
+    },
+    "tempcompass/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/tempcompass/merge_r010",
+      "marker_sha256": "41e142fb0ef895957ca5e9cd1ff24ffafcf9fadf69ef2088f2074249e5a9ffc4",
+      "origin": "recovery"
+    },
+    "tempcompass/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/tempcompass/merge_r025",
+      "marker_sha256": "54707501b377b99649c55c5b68fa757df8e8341eac4e2fd7e94adf8cd75b6373",
+      "origin": "recovery"
+    },
+    "tempcompass/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/tempcompass/merge_r050",
+      "marker_sha256": "8befb6255ee1ee4bee3b2746d69234111249bed520c14a22a2e4cfe632d8252d",
+      "origin": "recovery"
+    },
+    "tempcompass/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/tempcompass/resolution_r010",
+      "marker_sha256": "5554afd3f27cb7dfcf12022bbaa16f3c875c3635de0d2127e68ebe898f524efb",
+      "origin": "recovery"
+    },
+    "tempcompass/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/tempcompass/resolution_r025",
+      "marker_sha256": "5808c05f664e791eab77da97a0b021f2352ad3ccb1fa17ddc65265e17f8f0c7b",
+      "origin": "recovery"
+    },
+    "tempcompass/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/tempcompass/resolution_r050",
+      "marker_sha256": "257b44072504f78a427b45b3d9dde53181ed52e49421991d197db9404ef4c38c",
+      "origin": "recovery"
+    },
+    "tempcompass/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/tempcompass/uniform_r010",
+      "marker_sha256": "b8d2e8919c264ae67651c8fe932710e406876f9dbe914afdcc4a4997df359d16",
+      "origin": "recovery"
+    },
+    "tempcompass/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/tempcompass/uniform_r025",
+      "marker_sha256": "9b500fe44d10428c0bbe9304eab3f3e463f7bd45c77ebc468f928862e938f97c",
+      "origin": "recovery"
+    },
+    "tempcompass/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/tempcompass/uniform_r050",
+      "marker_sha256": "c5d02fcbc59b97a194117c262d92d5f59e46aceb9f71cf19c8d5ba3a36543765",
+      "origin": "recovery"
+    },
+    "videomme/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videomme/baseline_r100",
+      "marker_sha256": "35fc212dc9b3807485bd36377c2abf663303ad537e277f238fd99fde6fdd385f",
+      "origin": "recovery"
+    },
+    "videomme/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videomme/merge_r010",
+      "marker_sha256": "353cf837599a42dc7b17cc1a93c975175bf57abade20a584d8fb796966a7322f",
+      "origin": "recovery"
+    },
+    "videomme/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videomme/merge_r025",
+      "marker_sha256": "f0fdaf917312bc056cab345e19f138d0fa3d5b139e9a3e02f4da042c2d5556b6",
+      "origin": "recovery"
+    },
+    "videomme/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videomme/merge_r050",
+      "marker_sha256": "e430a2a888e1e391fba73e54c1fe17e9b1d3a15dd7737a888db98ce46e7c1e0d",
+      "origin": "recovery"
+    },
+    "videomme/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_matched_exclusive/full/qat_w4/videomme/resolution_r010",
+      "marker_sha256": "82e36b6215dc4c76ef4e469c55b9d3b011da1cef1bca1abae9be1f15d73d72ef",
+      "origin": "recovery"
+    },
+    "videomme/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_matched_exclusive/full/qat_w4/videomme/resolution_r025",
+      "marker_sha256": "9f3c91bc3ee6faea1f9cf456f331400dc56b944d56e45b96b0a3d8492d303b83",
+      "origin": "recovery"
+    },
+    "videomme/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videomme/resolution_r050",
+      "marker_sha256": "ec7e79988a87a7b39a04725ad76b5f8533a22ea5d79f3c48d171dd5bb6d46a94",
+      "origin": "recovery"
+    },
+    "videomme/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videomme/uniform_r010",
+      "marker_sha256": "0ddbfebdf468aca04c8a8ac5b4c9511a2e98a11f6cd0c10661fca947ab72f7df",
+      "origin": "recovery"
+    },
+    "videomme/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videomme/uniform_r025",
+      "marker_sha256": "7c6292b64170a3a46a4b3abcab62d7a24e6db045e713338801c8ae10d8bd56f3",
+      "origin": "recovery"
+    },
+    "videomme/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videomme/uniform_r050",
+      "marker_sha256": "0faf3cbd08893a24de8f5649311f1b4ac968b7fb129e2458fc7951899ac481b0",
+      "origin": "recovery"
+    },
+    "videommmu_adaptation/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_adaptation/baseline_r100",
+      "marker_sha256": "3406f27c9aab685008ddebe297b3b307becab59609abf73d55bebd8f30a57c8a",
+      "origin": "recovery"
+    },
+    "videommmu_adaptation/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_adaptation/merge_r010",
+      "marker_sha256": "54978997c8100e0b7e78825c7c8110b3aa0d9ac832de41f3ae872d79724bad13",
+      "origin": "recovery"
+    },
+    "videommmu_adaptation/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_adaptation/merge_r025",
+      "marker_sha256": "3dc730f546aebd56927e658c55f8885e77461249cbdd4b20056c150ed13241f8",
+      "origin": "recovery"
+    },
+    "videommmu_adaptation/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_adaptation/merge_r050",
+      "marker_sha256": "6f6522cee03af998f297dfaa70fd9fcccd0acdcf151493ab29f67be411ee8fb0",
+      "origin": "recovery"
+    },
+    "videommmu_adaptation/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/videommmu_adaptation/resolution_r010",
+      "marker_sha256": "71769b93f612134518c27ee7fb065cb9b6b6b87d6352c648bef84cd4f7784024",
+      "origin": "original"
+    },
+    "videommmu_adaptation/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_adaptation/resolution_r025",
+      "marker_sha256": "7863823b8931d66288b4ef1841f7efd4c51f1778b7a7858ce034fdae66627947",
+      "origin": "recovery"
+    },
+    "videommmu_adaptation/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_adaptation/resolution_r050",
+      "marker_sha256": "5e13bf4d6426bf963a60b2c62cdbf919e8df6a91d5cee9a24c1a0b2be5e1e638",
+      "origin": "recovery"
+    },
+    "videommmu_adaptation/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_adaptation/uniform_r010",
+      "marker_sha256": "2e93106ac18dabab85e47c7cf68a19f90ed2154ee58f5c4e9ae5033f170fe3a2",
+      "origin": "recovery"
+    },
+    "videommmu_adaptation/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_adaptation/uniform_r025",
+      "marker_sha256": "8ce2b801dbcffdc7a3c4140bc61266def47899aa74e20bb40c551441fc465d0d",
+      "origin": "recovery"
+    },
+    "videommmu_adaptation/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_adaptation/uniform_r050",
+      "marker_sha256": "e25799885b013e1624968c28362acde2b0488cb5ccb0347b06a9a1a8360dd5de",
+      "origin": "recovery"
+    },
+    "videommmu_comprehension/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_comprehension/baseline_r100",
+      "marker_sha256": "a47d49917997b29e07f0476a42d41c11b7a6503831d85c07256e0a20a59f625d",
+      "origin": "recovery"
+    },
+    "videommmu_comprehension/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_comprehension/merge_r010",
+      "marker_sha256": "ed77e70ea82f2e974283e100e68a3353e2aabb31d8f2ca7b7a33813296ebd135",
+      "origin": "recovery"
+    },
+    "videommmu_comprehension/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_comprehension/merge_r025",
+      "marker_sha256": "2156b5c2b30864eda263fd821c0a335973c0e17d5493ca6c58f0a5d8cd63aa2f",
+      "origin": "recovery"
+    },
+    "videommmu_comprehension/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_comprehension/merge_r050",
+      "marker_sha256": "131e6daa790acf10a29bf0f0bee8e9b51e81da4202ca0ea2c7d175f7e907bc97",
+      "origin": "recovery"
+    },
+    "videommmu_comprehension/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/videommmu_comprehension/resolution_r010",
+      "marker_sha256": "39c526f65ecbbd7a53f15b6e8717fd78222e791e6116fd19812db3fb2e06ef14",
+      "origin": "original"
+    },
+    "videommmu_comprehension/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_comprehension/resolution_r025",
+      "marker_sha256": "af712bcd2ef11ced8aa2838fa1ddb0539b0e43a2b624a4f5569b2caccd439628",
+      "origin": "recovery"
+    },
+    "videommmu_comprehension/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_comprehension/resolution_r050",
+      "marker_sha256": "9e4787c829d2ecfd085e277e88ac9f3f709b274754685a91b0fedfd9dd667629",
+      "origin": "recovery"
+    },
+    "videommmu_comprehension/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_comprehension/uniform_r010",
+      "marker_sha256": "889b97a5543044baaef4861822eebe1e78fbdf275495d643974c6aab653877ff",
+      "origin": "recovery"
+    },
+    "videommmu_comprehension/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_comprehension/uniform_r025",
+      "marker_sha256": "c506e50693940e7fde2714335d4a9f89aa1bd7c9dece61553189c21c1c882230",
+      "origin": "recovery"
+    },
+    "videommmu_comprehension/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_comprehension/uniform_r050",
+      "marker_sha256": "3b7f7c596988ef33ab9755fd3b0a9dadb92111d01dba0d673428286e4e858911",
+      "origin": "recovery"
+    },
+    "videommmu_perception/baseline_r100": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_perception/baseline_r100",
+      "marker_sha256": "21a0b056552a3deafa159a2e014003f0f7afb3ae4a1fa92ec399d3d5a23fe1b5",
+      "origin": "recovery"
+    },
+    "videommmu_perception/merge_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_perception/merge_r010",
+      "marker_sha256": "1d64982907a52ec524e3e8284f0dd21e2d7d074d009d5cbd558c05d92122216c",
+      "origin": "recovery"
+    },
+    "videommmu_perception/merge_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_perception/merge_r025",
+      "marker_sha256": "7332c83789fd62935b55fd83e1f03e8e0aa0a30b33d01521f74d93bb7cd4a4d3",
+      "origin": "recovery"
+    },
+    "videommmu_perception/merge_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_perception/merge_r050",
+      "marker_sha256": "2f0597ac2eaa65c55cdfed0145040451987ab6cc0e420221ea279fe2344b013a",
+      "origin": "recovery"
+    },
+    "videommmu_perception/resolution_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/original/full/qat_w4/videommmu_perception/resolution_r010",
+      "marker_sha256": "dcafcb4dc694ad91c6a27b201b1d6418ef4979bc5cf19b4064809ac3a170b7e0",
+      "origin": "original"
+    },
+    "videommmu_perception/resolution_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_perception/resolution_r025",
+      "marker_sha256": "667bb093c15af956d0b7afed39293815f809a0767d9111ec2315616ac65196f9",
+      "origin": "recovery"
+    },
+    "videommmu_perception/resolution_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_perception/resolution_r050",
+      "marker_sha256": "0b24834243c49a4e12584335e64491ed1d7b96be684edf6059f89d8d84b735d6",
+      "origin": "recovery"
+    },
+    "videommmu_perception/uniform_r010": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_perception/uniform_r010",
+      "marker_sha256": "0f7193c10c6858407ecd07a0281145f803ecb35247886540776ca1b4a6a26934",
+      "origin": "recovery"
+    },
+    "videommmu_perception/uniform_r025": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_perception/uniform_r025",
+      "marker_sha256": "dd3ac08f07a0342f9328fda94999f941392f30857f1a227e831842e4fca3cab4",
+      "origin": "recovery"
+    },
+    "videommmu_perception/uniform_r050": {
+      "directory": "experiments/qat_int4_token_reduction_576_seed42/outputs/video_recovery_scheduler/full/qat_w4/videommmu_perception/uniform_r050",
+      "marker_sha256": "bd3359e8353236a862667b8487b10c97fcbf0e25d8f44b20e3123f87eae7ba8d",
+      "origin": "recovery"
+    }
+  }
+}

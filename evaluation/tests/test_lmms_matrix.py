@@ -1,4 +1,11 @@
 """Guard against plausible-looking incomplete or mis-scaled evaluation reports."""
+# Support both direct script execution and `python -m evaluation.<group>.<module>`.
+import sys
+from pathlib import Path
+if __package__ in (None, ''):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from evaluation.paths import EVALUATION_ROOT, source_file
+
 import copy
 import json
 from pathlib import Path
@@ -6,8 +13,7 @@ import sys
 import tempfile
 import unittest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from run_lmms_matrix import TASKS, sha, summarize, validate_result, verified_completion, write
+from evaluation.runners.run_lmms_matrix import TASKS, sha, summarize, validate_result, verified_completion, write
 
 
 def fixture(suite='scienceqa', limit=None):

@@ -1,0 +1,365 @@
+{
+  "generated_at_singapore": "2026-10-25 16:11:16 SGT",
+  "auditor_sha256": "8ce0acbf5ed9c631603a285cfb255a54b51e511481b033760fa0ca629ed983bf",
+  "rows": [
+    {
+      "suite": "scienceqa",
+      "label": "ScienceQA",
+      "modality": "image",
+      "questions": 4241,
+      "mean_visual_input_tokens": 76.39353925960859,
+      "mean_text_input_tokens": 79.5343079462391,
+      "reference_model": "qat_w4",
+      "reference_processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat",
+      "measurement": "whole-population CPU reconstruction; visual counts from the validated processor cache",
+      "text_input_tokens_total": 337305,
+      "images": 2017,
+      "text_only_questions": 2224,
+      "evaluator_sha256": "91ece4732a8f9afbc59a18473e99af3df97e1450f4b7cf618cf2c17b43787db9"
+    },
+    {
+      "suite": "ai2d",
+      "label": "AI2D",
+      "modality": "image",
+      "questions": 3088,
+      "mean_visual_input_tokens": 272.78821243523316,
+      "mean_text_input_tokens": 53.295336787564764,
+      "reference_model": "qat_w4",
+      "reference_processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat",
+      "measurement": "whole-population CPU reconstruction; visual counts from the validated processor cache",
+      "text_input_tokens_total": 164576,
+      "images": 3088,
+      "text_only_questions": 0,
+      "evaluator_sha256": "bd618835ed66a52baf7115a9100964e87aa28729484cee97d95716b06695f992"
+    },
+    {
+      "suite": "mmmu",
+      "label": "MMMU",
+      "modality": "image",
+      "questions": 900,
+      "mean_visual_input_tokens": 278.64,
+      "mean_text_input_tokens": 107.39666666666666,
+      "reference_model": "qat_w4",
+      "reference_processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat",
+      "measurement": "whole-population CPU reconstruction; visual counts from the validated processor cache",
+      "text_input_tokens_total": 96657,
+      "images": 925,
+      "text_only_questions": 0,
+      "evaluator_sha256": "3fc843e5b51aad232fda929b4cdd5ac24e3d5874b20403cabfb8ce46d5298b02"
+    },
+    {
+      "suite": "mmstar",
+      "label": "MMStar",
+      "modality": "image",
+      "questions": 1500,
+      "mean_visual_input_tokens": 190.128,
+      "mean_text_input_tokens": 77.406,
+      "reference_model": "qat_w4",
+      "reference_processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat",
+      "measurement": "whole-population CPU reconstruction; visual counts from the validated processor cache",
+      "text_input_tokens_total": 116109,
+      "images": 1500,
+      "text_only_questions": 0,
+      "evaluator_sha256": "faa44068119a34cbfc45fef0ff8200807b523305d65680001704beb9815975cf"
+    },
+    {
+      "suite": "seedbench_img",
+      "label": "SEEDBench image",
+      "modality": "image",
+      "questions": 14233,
+      "mean_visual_input_tokens": 546.0775662193494,
+      "mean_text_input_tokens": 55.01271692545493,
+      "reference_model": "qat_w4",
+      "reference_processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat",
+      "measurement": "whole-population CPU reconstruction; visual counts from the validated processor cache",
+      "text_input_tokens_total": 782996,
+      "images": 14233,
+      "text_only_questions": 0,
+      "evaluator_sha256": "2c7a3d28f82bd26aacd2b2419c590cb6a731d771021991d8e8c8a77f837c4177"
+    },
+    {
+      "suite": "hallusionbench",
+      "label": "HallusionBench",
+      "modality": "image",
+      "questions": 1129,
+      "mean_visual_input_tokens": 336.72187776793623,
+      "mean_text_input_tokens": 41.483613817537645,
+      "reference_model": "qat_w4",
+      "reference_processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat",
+      "measurement": "whole-population CPU reconstruction; visual counts from the validated processor cache",
+      "text_input_tokens_total": 46835,
+      "images": 951,
+      "text_only_questions": 178,
+      "evaluator_sha256": "d09941c64d66d17a52a531aa01680bc4b18db60633bf3ec6ad4e93d0f3f57b3b"
+    },
+    {
+      "suite": "mmbench",
+      "label": "MMBench",
+      "modality": "image",
+      "questions": 4329,
+      "mean_visual_input_tokens": 150.86856086856088,
+      "mean_text_input_tokens": 75.05775005775006,
+      "reference_model": "qat_w4",
+      "reference_processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat",
+      "measurement": "whole-population CPU reconstruction; visual counts from the validated processor cache",
+      "text_input_tokens_total": 324925,
+      "images": 4329,
+      "text_only_questions": 0,
+      "evaluator_sha256": "f927f0ced5e3e5976fa92d47db064f8f06d78284534b4681eb88c13180832a4c"
+    },
+    {
+      "suite": "tempcompass",
+      "label": "TempCompass",
+      "modality": "video",
+      "questions": 1580,
+      "mean_visual_input_tokens": 489.11898734177214,
+      "mean_text_input_tokens": 153.13101265822786,
+      "reference_model": "vanilla_2b",
+      "measurement": "whole-population saved reference; projection to models using the same input policy",
+      "source_matrix": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/video_evaluation/video_resilient_v3_f185cede8bfd/full",
+      "source_attempt": "attempt_20261023T091504.023351Z",
+      "source_completion_sha256": "8af287315ba76a9ac1fe79458f9e5b936bec42ae63c2210af59e8d6a4fdb6cf3",
+      "cross_model_checks": [
+        {
+          "method": "vanilla_2b",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "vanilla_8b_teacher",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "sft_2b",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "released_bf16",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "qat_w4",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "grace_w4",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        }
+      ]
+    },
+    {
+      "suite": "videomme_short",
+      "label": "VideoMME short",
+      "modality": "video",
+      "questions": 900,
+      "mean_visual_input_tokens": 2606.4,
+      "mean_text_input_tokens": 781.7633333333333,
+      "reference_model": "vanilla_2b",
+      "measurement": "whole-population saved reference; projection to models using the same input policy",
+      "source_matrix": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/video_evaluation/video_resilient_v3_f185cede8bfd/full",
+      "source_attempt": "attempt_20261023T091506.318481Z",
+      "source_completion_sha256": "8345a6acf9b878223d35034ba4ca41a5e7a547691b51b7bca0fc71577f50420a",
+      "cross_model_checks": [
+        {
+          "method": "vanilla_2b",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "vanilla_8b_teacher",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "sft_2b",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "qat_w4",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        }
+      ]
+    },
+    {
+      "suite": "videomme_medium",
+      "label": "VideoMME medium",
+      "modality": "video",
+      "questions": 900,
+      "mean_visual_input_tokens": 16656.106666666667,
+      "mean_text_input_tokens": 5128.577777777778,
+      "reference_model": "vanilla_2b",
+      "measurement": "whole-population saved reference; projection to models using the same input policy",
+      "source_matrix": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/video_evaluation/video_resilient_v3_f185cede8bfd/full",
+      "source_attempt": "attempt_20261023T091506.318481Z",
+      "source_completion_sha256": "8345a6acf9b878223d35034ba4ca41a5e7a547691b51b7bca0fc71577f50420a",
+      "cross_model_checks": [
+        {
+          "method": "vanilla_2b",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "vanilla_8b_teacher",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "sft_2b",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "qat_w4",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        }
+      ]
+    },
+    {
+      "suite": "videommmu_perception",
+      "label": "Video-MMMU Perception",
+      "modality": "video",
+      "questions": 300,
+      "mean_visual_input_tokens": 16939.893333333333,
+      "mean_text_input_tokens": 5186.776666666667,
+      "reference_model": "vanilla_2b",
+      "measurement": "whole-population saved reference; projection to models using the same input policy",
+      "source_matrix": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/video_evaluation/video_resilient_v3_f185cede8bfd/full",
+      "source_attempt": "attempt_20261023T091507.275028Z",
+      "source_completion_sha256": "fbde1cf272185577ed51d46af79899fb11c7cbc08d2375d5cf38a91292a20d90",
+      "cross_model_checks": [
+        {
+          "method": "vanilla_2b",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "sft_2b",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "qat_w4",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        }
+      ]
+    },
+    {
+      "suite": "videommmu_comprehension",
+      "label": "Video-MMMU Comprehension",
+      "modality": "video",
+      "questions": 300,
+      "mean_visual_input_tokens": 16939.893333333333,
+      "mean_text_input_tokens": 5190.003333333333,
+      "reference_model": "vanilla_2b",
+      "measurement": "whole-population saved reference; projection to models using the same input policy",
+      "source_matrix": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/video_evaluation/video_resilient_v3_f185cede8bfd/full",
+      "source_attempt": "attempt_20261023T091507.637105Z",
+      "source_completion_sha256": "7a9f8558f08b7b30c8a5deb12d1cc274c7c7a902b895a41519e4eeca5cdadaa6",
+      "cross_model_checks": [
+        {
+          "method": "vanilla_2b",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "sft_2b",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        },
+        {
+          "method": "qat_w4",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        }
+      ]
+    },
+    {
+      "suite": "videommmu_adaptation",
+      "label": "Video-MMMU Adaptation",
+      "modality": "video",
+      "questions": 300,
+      "mean_visual_input_tokens": 16939.893333333333,
+      "mean_text_input_tokens": 5162.193333333334,
+      "reference_model": "vanilla_2b",
+      "measurement": "whole-population saved reference; projection to models using the same input policy",
+      "source_matrix": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/video_evaluation/video_resilient_v3_f185cede8bfd/full",
+      "source_attempt": "attempt_20261023T091507.966973Z",
+      "source_completion_sha256": "de947e5a3e17112ef2d0b52e0abcb382202f19cbae94022ed92cf3502e90cab5",
+      "cross_model_checks": [
+        {
+          "method": "vanilla_2b",
+          "visual_mean_difference": 0.0,
+          "text_mean_difference": 0.0
+        }
+      ]
+    }
+  ],
+  "definitions": {
+    "averaging": "per evaluated question over the full suite; each image/video occurrence counts",
+    "visual": "merged visual input tokens",
+    "text": "all nonvisual input tokens; question/options/hints, instructions, chat and visual boundaries; video includes timestamps",
+    "outputs": "generated answer tokens excluded; these depend on the model",
+    "projection": "input-profile projection across models requires identical preprocessing, tokenizer and chat/prompt policies; never extrapolate a duration-ordered partial prefix"
+  },
+  "image_policy": {
+    "processor": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/w4g128/runs/qat",
+    "image_size": {
+      "longest_edge": 589824,
+      "shortest_edge": 4096
+    },
+    "max_visual_tokens_per_image": 576,
+    "processor_config_sha256": {
+      "processor_config.json": "6940b26e0bd531d790c0c95d0028f92004bd5c0b727b1a3711a55c4bd8bef631"
+    }
+  },
+  "video_policy": {
+    "attention": "flash_attention_2",
+    "audio": false,
+    "cuda_allocator": "expandable_segments:True",
+    "fps": 2,
+    "generation": "greedy, one beam, repetition penalty 1, tokenizer EOS",
+    "loading_format": "merged BF16 export",
+    "longest_side": 256,
+    "max_new_tokens": 4096,
+    "processor_frame_sampling": false,
+    "processor_resize": false,
+    "scoring": "deterministic_local_v1; unresolved counts wrong; no judge",
+    "seed": 42,
+    "spatial_policy": "fixed longest-side downsample, rounded to patch grid",
+    "subtitles": false,
+    "temporal_sampling": "uniform over entire clip, both endpoints; no max_frames",
+    "tokenizer_truncation": false,
+    "version": "video_resilient_v3",
+    "videomme_population": {
+      "excluded_category": "long",
+      "excluded_questions": 900,
+      "name": "short_medium",
+      "selected_questions": 1800,
+      "source_questions": 2700
+    }
+  },
+  "excluded_suites": [
+    {
+      "suite": "videomme_long",
+      "questions": 900,
+      "reason": "Excluded by the current evaluation policy; not included in the master table"
+    }
+  ],
+  "sources": {
+    "image_visual_cache": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reports/inference_image_visual_tokens.json",
+    "image_visual_cache_sha256": "8b3b8517e155af42a9f9c917dcd4f7508027b3675815fb1c39c27b88c15c7143",
+    "image_matrix": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/local_development/local_native_greedy256_v1/full",
+    "image_protocol_sha256": "82a085a26af60b9040812dc047d615280f89e1af1c0e8e05fbad6915d0feed5c",
+    "video_report": "/raid/lvchengtao/Minh/Distillation/reproduction/GRACE/experiments/released_bf16_init_32k_b128_p589824_t4096_seed42/reports/video_token_rates_20261023.json",
+    "video_report_sha256": "a73e0e857e8bbb4fd741d0fccb728bcdd941cf921d1196784cf02af4aaddbeb3"
+  }
+}

@@ -5,8 +5,8 @@ EXPERIMENT_PATH="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 GRACE_PATH="$(cd -- "$EXPERIMENT_PATH/../.." && pwd)"
 PYTHON_PATH="${LMMS_PYTHON:-$GRACE_PATH/.venv-lmms-eval/bin/python}"
 OUTPUT_PATH="$EXPERIMENT_PATH/re_evaluation"
-RUNNER_PATH="$GRACE_PATH/evaluation/run_upstream_matrix.py"
-GATE_PATH="$GRACE_PATH/evaluation/check_re_evaluation_gate.py"
+RUNNER_PATH="$GRACE_PATH/evaluation/runners/run_upstream_matrix.py"
+GATE_PATH="$GRACE_PATH/evaluation/audits/check_re_evaluation_gate.py"
 REFERENCE_MODELS=vanilla_2b,vanilla_8b_teacher,released_bf16,released_grace_w4,released_grace_w8
 LORA_MODELS=qat_w4,grace_w4,qat_w8,grace_w8
 
