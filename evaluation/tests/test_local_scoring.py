@@ -165,7 +165,7 @@ class IntegrityTests(unittest.TestCase):
         summary.update(corrected_summary('mmbench', rows, meta))
         payload = json.loads(json.dumps(dict(summary=summary, results=rows)))
         with patch('evaluation.runners.run_local_development.source_samples', return_value=[((k,), v['answer']) for k, v in meta.items()]), \
-             patch.dict('run_local_development.EXPECTED', mmbench=3), \
+             patch.dict('evaluation.runners.run_local_development.EXPECTED', mmbench=3), \
              patch('evaluation.runners.run_local_development.metadata', return_value=meta):
             check = lambda data: validate(data, 'mmbench', Path('/model'),
                 'local_native_greedy256_v1', 'sdpa', None,
